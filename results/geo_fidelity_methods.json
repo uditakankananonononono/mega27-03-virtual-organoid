@@ -1,0 +1,212 @@
+{
+ "n_series": 151,
+ "variants": {
+  "S3000": {
+   "top1": 0.271523178807947,
+   "top5": 0.48344370860927155,
+   "median_rank": 6.0,
+   "analytic_chance_top1": 0.06193279372087317,
+   "perm_top1_mean": 0.05982317880794702,
+   "perm_top1_p": 9.999000099990002e-05,
+   "top_best_tissues": {
+    "Pancreas": 35,
+    "Cells - Cultured fibroblasts": 34,
+    "Brain - Hypothalamus": 9,
+    "Esophagus - Mucosa": 9,
+    "Prostate": 8
+   },
+   "per_organ_top1": {
+    "Brain - Cortex": {
+     "count": 20,
+     "mean": 0.65
+    },
+    "Breast - Mammary Tissue": {
+     "count": 7,
+     "mean": 0.0
+    },
+    "Colon - Transverse": {
+     "count": 48,
+     "mean": 0.167
+    },
+    "Esophagus - Mucosa": {
+     "count": 1,
+     "mean": 0.0
+    },
+    "Heart - Left Ventricle": {
+     "count": 5,
+     "mean": 0.6
+    },
+    "Kidney - Cortex": {
+     "count": 11,
+     "mean": 0.364
+    },
+    "Liver": {
+     "count": 23,
+     "mean": 0.174
+    },
+    "Lung": {
+     "count": 11,
+     "mean": 0.091
+    },
+    "Pancreas": {
+     "count": 8,
+     "mean": 0.0
+    },
+    "Prostate": {
+     "count": 9,
+     "mean": 0.667
+    },
+    "Skin - Sun Exposed (Lower leg)": {
+     "count": 2,
+     "mean": 0.5
+    },
+    "Stomach": {
+     "count": 3,
+     "mean": 0.333
+    },
+    "Uterus": {
+     "count": 3,
+     "mean": 0.0
+    }
+   }
+  },
+  "SALL": {
+   "top1": 0.33112582781456956,
+   "top5": 0.5894039735099338,
+   "median_rank": 4.0,
+   "analytic_chance_top1": 0.06193279372087317,
+   "perm_top1_mean": 0.0803046357615894,
+   "perm_top1_p": 9.999000099990002e-05,
+   "top_best_tissues": {
+    "Cells - Cultured fibroblasts": 38,
+    "Colon - Transverse": 16,
+    "Esophagus - Mucosa": 16,
+    "Brain - Hypothalamus": 15,
+    "Stomach": 12
+   },
+   "per_organ_top1": {
+    "Brain - Cortex": {
+     "count": 20,
+     "mean": 0.75
+    },
+    "Breast - Mammary Tissue": {
+     "count": 7,
+     "mean": 0.0
+    },
+    "Colon - Transverse": {
+     "count": 48,
+     "mean": 0.396
+    },
+    "Esophagus - Mucosa": {
+     "count": 1,
+     "mean": 0.0
+    },
+    "Heart - Left Ventricle": {
+     "count": 5,
+     "mean": 0.4
+    },
+    "Kidney - Cortex": {
+     "count": 11,
+     "mean": 0.364
+    },
+    "Liver": {
+     "count": 23,
+     "mean": 0.174
+    },
+    "Lung": {
+     "count": 11,
+     "mean": 0.091
+    },
+    "Pancreas": {
+     "count": 8,
+     "mean": 0.0
+    },
+    "Prostate": {
+     "count": 9,
+     "mean": 0.222
+    },
+    "Skin - Sun Exposed (Lower leg)": {
+     "count": 2,
+     "mean": 0.5
+    },
+    "Stomach": {
+     "count": 3,
+     "mean": 0.667
+    },
+    "Uterus": {
+     "count": 3,
+     "mean": 0.0
+    }
+   }
+  },
+  "CENT": {
+   "top1": 0.25165562913907286,
+   "top5": 0.5033112582781457,
+   "median_rank": 5.0,
+   "analytic_chance_top1": 0.06193279372087317,
+   "perm_top1_mean": 0.05659668874172186,
+   "perm_top1_p": 9.999000099990002e-05,
+   "top_best_tissues": {
+    "Cells - Cultured fibroblasts": 52,
+    "Cells - EBV-transformed lymphocytes": 22,
+    "Pancreas": 18,
+    "Esophagus - Mucosa": 17,
+    "Brain - Cerebellar Hemisphere": 10
+   },
+   "per_organ_top1": {
+    "Brain - Cortex": {
+     "count": 20,
+     "mean": 0.55
+    },
+    "Breast - Mammary Tissue": {
+     "count": 7,
+     "mean": 0.0
+    },
+    "Colon - Transverse": {
+     "count": 48,
+     "mean": 0.292
+    },
+    "Esophagus - Mucosa": {
+     "count": 1,
+     "mean": 0.0
+    },
+    "Heart - Left Ventricle": {
+     "count": 5,
+     "mean": 0.4
+    },
+    "Kidney - Cortex": {
+     "count": 11,
+     "mean": 0.091
+    },
+    "Liver": {
+     "count": 23,
+     "mean": 0.261
+    },
+    "Lung": {
+     "count": 11,
+     "mean": 0.091
+    },
+    "Pancreas": {
+     "count": 8,
+     "mean": 0.125
+    },
+    "Prostate": {
+     "count": 9,
+     "mean": 0.111
+    },
+    "Skin - Sun Exposed (Lower leg)": {
+     "count": 2,
+     "mean": 0.0
+    },
+    "Stomach": {
+     "count": 3,
+     "mean": 0.333
+    },
+    "Uterus": {
+     "count": 3,
+     "mean": 0.0
+    }
+   }
+  }
+ }
+}

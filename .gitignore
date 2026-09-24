@@ -3,3 +3,4 @@ __pycache__/
 .pytest_cache/
 results/log_*.txt
 results/ckpt_seg*.pt
+data/geo/profiles/

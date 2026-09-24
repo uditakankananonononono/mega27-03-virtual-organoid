@@ -1,0 +1,454 @@
+gse,organ,method,rank_match
+GSE278954,Liver,S3000,29
+GSE347768,Colon - Transverse,S3000,7
+GSE343459,Skin - Sun Exposed (Lower leg),S3000,7
+GSE329052,Colon - Transverse,S3000,2
+GSE346894,Pancreas,S3000,39
+GSE341690,Brain - Cortex,S3000,1
+GSE331309,Colon - Transverse,S3000,11
+GSE330696,Colon - Transverse,S3000,11
+GSE335920,Brain - Cortex,S3000,1
+GSE313206,Brain - Cortex,S3000,1
+GSE303837,Lung,S3000,19
+GSE338895,Colon - Transverse,S3000,20
+GSE305512,Brain - Cortex,S3000,1
+GSE305319,Brain - Cortex,S3000,6
+GSE301846,Liver,S3000,21
+GSE304208,Lung,S3000,11
+GSE304206,Lung,S3000,12
+GSE304203,Lung,S3000,12
+GSE304202,Lung,S3000,13
+GSE277920,Kidney - Cortex,S3000,19
+GSE316654,Colon - Transverse,S3000,7
+GSE336415,Colon - Transverse,S3000,1
+GSE335053,Stomach,S3000,1
+GSE323363,Pancreas,S3000,2
+GSE311632,Colon - Transverse,S3000,12
+GSE292601,Colon - Transverse,S3000,10
+GSE314639,Liver,S3000,1
+GSE314657,Brain - Cortex,S3000,3
+GSE335562,Prostate,S3000,1
+GSE310948,Prostate,S3000,15
+GSE331395,Brain - Cortex,S3000,1
+GSE334500,Heart - Left Ventricle,S3000,1
+GSE312713,Liver,S3000,19
+GSE312711,Liver,S3000,34
+GSE312708,Liver,S3000,39
+GSE298420,Liver,S3000,34
+GSE298419,Liver,S3000,29
+GSE261998,Liver,S3000,38
+GSE298933,Brain - Cortex,S3000,21
+GSE248031,Pancreas,S3000,5
+GSE330358,Prostate,S3000,1
+GSE319208,Colon - Transverse,S3000,23
+GSE309917,Colon - Transverse,S3000,8
+GSE290744,Lung,S3000,23
+GSE276230,Liver,S3000,14
+GSE289072,Colon - Transverse,S3000,11
+GSE331048,Prostate,S3000,3
+GSE312700,Lung,S3000,8
+GSE303838,Brain - Cortex,S3000,2
+GSE320151,Colon - Transverse,S3000,6
+GSE316631,Pancreas,S3000,28
+GSE309669,Pancreas,S3000,3
+GSE319859,Brain - Cortex,S3000,1
+GSE278562,Kidney - Cortex,S3000,2
+GSE269571,Heart - Left Ventricle,S3000,1
+GSE229907,Colon - Transverse,S3000,5
+GSE319878,Colon - Transverse,S3000,1
+GSE319169,Colon - Transverse,S3000,9
+GSE288724,Colon - Transverse,S3000,11
+GSE299913,Brain - Cortex,S3000,1
+GSE325553,Uterus,S3000,4
+GSE322610,Liver,S3000,1
+GSE304936,Kidney - Cortex,S3000,31
+GSE282444,Colon - Transverse,S3000,12
+GSE306080,Lung,S3000,12
+GSE302756,Kidney - Cortex,S3000,1
+GSE292624,Brain - Cortex,S3000,1
+GSE316426,Pancreas,S3000,30
+GSE298876,Breast - Mammary Tissue,S3000,7
+GSE307568,Uterus,S3000,14
+GSE286416,Heart - Left Ventricle,S3000,5
+GSE263840,Heart - Left Ventricle,S3000,1
+GSE299477,Colon - Transverse,S3000,4
+GSE303090,Liver,S3000,7
+GSE317332,Colon - Transverse,S3000,5
+GSE316780,Liver,S3000,17
+GSE302327,Colon - Transverse,S3000,1
+GSE310408,Colon - Transverse,S3000,11
+GSE315569,Colon - Transverse,S3000,18
+GSE285905,Colon - Transverse,S3000,12
+GSE303677,Colon - Transverse,S3000,9
+GSE310492,Colon - Transverse,S3000,1
+GSE230046,Liver,S3000,2
+GSE284761,Colon - Transverse,S3000,9
+GSE284755,Colon - Transverse,S3000,11
+GSE309755,Brain - Cortex,S3000,1
+GSE288008,Kidney - Cortex,S3000,1
+GSE311760,Colon - Transverse,S3000,1
+GSE306057,Prostate,S3000,1
+GSE274325,Colon - Transverse,S3000,4
+GSE310845,Colon - Transverse,S3000,1
+GSE309795,Heart - Left Ventricle,S3000,3
+GSE300073,Colon - Transverse,S3000,4
+GSE298600,Colon - Transverse,S3000,6
+GSE291524,Colon - Transverse,S3000,2
+GSE306909,Colon - Transverse,S3000,15
+GSE287262,Lung,S3000,34
+GSE280918,Breast - Mammary Tissue,S3000,8
+GSE217044,Colon - Transverse,S3000,8
+GSE248844,Prostate,S3000,6
+GSE297090,Colon - Transverse,S3000,9
+GSE285503,Colon - Transverse,S3000,1
+GSE216198,Esophagus - Mucosa,S3000,3
+GSE294532,Prostate,S3000,1
+GSE286890,Breast - Mammary Tissue,S3000,13
+GSE186249,Liver,S3000,1
+GSE309532,Colon - Transverse,S3000,15
+GSE292512,Pancreas,S3000,4
+GSE288179,Colon - Transverse,S3000,6
+GSE308083,Colon - Transverse,S3000,5
+GSE306982,Colon - Transverse,S3000,5
+GSE266030,Brain - Cortex,S3000,1
+GSE214340,Brain - Cortex,S3000,2
+GSE284019,Colon - Transverse,S3000,8
+GSE266551,Stomach,S3000,8
+GSE276170,Colon - Transverse,S3000,1
+GSE282649,Liver,S3000,33
+GSE307124,Brain - Cortex,S3000,1
+GSE300013,Kidney - Cortex,S3000,2
+GSE305958,Liver,S3000,38
+GSE212099,Liver,S3000,4
+GSE305923,Liver,S3000,4
+GSE301725,Brain - Cortex,S3000,1
+GSE300839,Breast - Mammary Tissue,S3000,12
+GSE236379,Kidney - Cortex,S3000,2
+GSE304110,Colon - Transverse,S3000,17
+GSE303741,Uterus,S3000,4
+GSE265851,Lung,S3000,1
+GSE246793,Breast - Mammary Tissue,S3000,12
+GSE288661,Colon - Transverse,S3000,14
+GSE281080,Kidney - Cortex,S3000,5
+GSE287183,Prostate,S3000,1
+GSE298576,Liver,S3000,1
+GSE271315,Kidney - Cortex,S3000,1
+GSE208684,Colon - Transverse,S3000,10
+GSE274584,Lung,S3000,21
+GSE271749,Breast - Mammary Tissue,S3000,6
+GSE269871,Skin - Sun Exposed (Lower leg),S3000,1
+GSE296672,Kidney - Cortex,S3000,23
+GSE280257,Stomach,S3000,2
+GSE289912,Brain - Cortex,S3000,1
+GSE298818,Breast - Mammary Tissue,S3000,8
+GSE269369,Colon - Transverse,S3000,15
+GSE288165,Brain - Cortex,S3000,22
+GSE285436,Liver,S3000,2
+GSE248110,Liver,S3000,4
+GSE252464,Liver,S3000,8
+GSE252055,Kidney - Cortex,S3000,1
+GSE291768,Brain - Cortex,S3000,27
+GSE293756,Pancreas,S3000,11
+GSE287925,Prostate,S3000,1
+GSE278954,Liver,SALL,50
+GSE347768,Colon - Transverse,SALL,1
+GSE343459,Skin - Sun Exposed (Lower leg),SALL,20
+GSE329052,Colon - Transverse,SALL,1
+GSE346894,Pancreas,SALL,41
+GSE341690,Brain - Cortex,SALL,1
+GSE331309,Colon - Transverse,SALL,2
+GSE330696,Colon - Transverse,SALL,2
+GSE335920,Brain - Cortex,SALL,1
+GSE313206,Brain - Cortex,SALL,1
+GSE303837,Lung,SALL,21
+GSE338895,Colon - Transverse,SALL,20
+GSE305512,Brain - Cortex,SALL,1
+GSE305319,Brain - Cortex,SALL,1
+GSE301846,Liver,SALL,36
+GSE304208,Lung,SALL,9
+GSE304206,Lung,SALL,9
+GSE304203,Lung,SALL,12
+GSE304202,Lung,SALL,11
+GSE277920,Kidney - Cortex,SALL,26
+GSE316654,Colon - Transverse,SALL,1
+GSE336415,Colon - Transverse,SALL,4
+GSE335053,Stomach,SALL,1
+GSE323363,Pancreas,SALL,2
+GSE311632,Colon - Transverse,SALL,3
+GSE292601,Colon - Transverse,SALL,5
+GSE314639,Liver,SALL,5
+GSE314657,Brain - Cortex,SALL,1
+GSE335562,Prostate,SALL,30
+GSE310948,Prostate,SALL,2
+GSE331395,Brain - Cortex,SALL,1
+GSE334500,Heart - Left Ventricle,SALL,1
+GSE312713,Liver,SALL,25
+GSE312711,Liver,SALL,37
+GSE312708,Liver,SALL,39
+GSE298420,Liver,SALL,38
+GSE298419,Liver,SALL,37
+GSE261998,Liver,SALL,43
+GSE298933,Brain - Cortex,SALL,27
+GSE248031,Pancreas,SALL,24
+GSE330358,Prostate,SALL,2
+GSE319208,Colon - Transverse,SALL,14
+GSE309917,Colon - Transverse,SALL,1
+GSE290744,Lung,SALL,32
+GSE276230,Liver,SALL,20
+GSE289072,Colon - Transverse,SALL,2
+GSE331048,Prostate,SALL,4
+GSE312700,Lung,SALL,13
+GSE303838,Brain - Cortex,SALL,3
+GSE320151,Colon - Transverse,SALL,1
+GSE316631,Pancreas,SALL,45
+GSE309669,Pancreas,SALL,6
+GSE319859,Brain - Cortex,SALL,1
+GSE278562,Kidney - Cortex,SALL,12
+GSE269571,Heart - Left Ventricle,SALL,5
+GSE229907,Colon - Transverse,SALL,4
+GSE319878,Colon - Transverse,SALL,1
+GSE319169,Colon - Transverse,SALL,3
+GSE288724,Colon - Transverse,SALL,1
+GSE299913,Brain - Cortex,SALL,1
+GSE325553,Uterus,SALL,4
+GSE322610,Liver,SALL,1
+GSE304936,Kidney - Cortex,SALL,35
+GSE282444,Colon - Transverse,SALL,2
+GSE306080,Lung,SALL,16
+GSE302756,Kidney - Cortex,SALL,1
+GSE292624,Brain - Cortex,SALL,1
+GSE316426,Pancreas,SALL,19
+GSE298876,Breast - Mammary Tissue,SALL,15
+GSE307568,Uterus,SALL,9
+GSE286416,Heart - Left Ventricle,SALL,5
+GSE263840,Heart - Left Ventricle,SALL,1
+GSE299477,Colon - Transverse,SALL,1
+GSE303090,Liver,SALL,6
+GSE317332,Colon - Transverse,SALL,7
+GSE316780,Liver,SALL,18
+GSE302327,Colon - Transverse,SALL,1
+GSE310408,Colon - Transverse,SALL,5
+GSE315569,Colon - Transverse,SALL,9
+GSE285905,Colon - Transverse,SALL,6
+GSE303677,Colon - Transverse,SALL,1
+GSE310492,Colon - Transverse,SALL,1
+GSE230046,Liver,SALL,28
+GSE284761,Colon - Transverse,SALL,3
+GSE284755,Colon - Transverse,SALL,2
+GSE309755,Brain - Cortex,SALL,1
+GSE288008,Kidney - Cortex,SALL,1
+GSE311760,Colon - Transverse,SALL,1
+GSE306057,Prostate,SALL,7
+GSE274325,Colon - Transverse,SALL,2
+GSE310845,Colon - Transverse,SALL,1
+GSE309795,Heart - Left Ventricle,SALL,9
+GSE300073,Colon - Transverse,SALL,1
+GSE298600,Colon - Transverse,SALL,2
+GSE291524,Colon - Transverse,SALL,1
+GSE306909,Colon - Transverse,SALL,14
+GSE287262,Lung,SALL,40
+GSE280918,Breast - Mammary Tissue,SALL,8
+GSE217044,Colon - Transverse,SALL,2
+GSE248844,Prostate,SALL,3
+GSE297090,Colon - Transverse,SALL,1
+GSE285503,Colon - Transverse,SALL,1
+GSE216198,Esophagus - Mucosa,SALL,3
+GSE294532,Prostate,SALL,1
+GSE286890,Breast - Mammary Tissue,SALL,8
+GSE186249,Liver,SALL,1
+GSE309532,Colon - Transverse,SALL,8
+GSE292512,Pancreas,SALL,5
+GSE288179,Colon - Transverse,SALL,3
+GSE308083,Colon - Transverse,SALL,7
+GSE306982,Colon - Transverse,SALL,2
+GSE266030,Brain - Cortex,SALL,1
+GSE214340,Brain - Cortex,SALL,2
+GSE284019,Colon - Transverse,SALL,10
+GSE266551,Stomach,SALL,2
+GSE276170,Colon - Transverse,SALL,1
+GSE282649,Liver,SALL,40
+GSE307124,Brain - Cortex,SALL,1
+GSE300013,Kidney - Cortex,SALL,2
+GSE305958,Liver,SALL,38
+GSE212099,Liver,SALL,12
+GSE305923,Liver,SALL,12
+GSE301725,Brain - Cortex,SALL,1
+GSE300839,Breast - Mammary Tissue,SALL,6
+GSE236379,Kidney - Cortex,SALL,1
+GSE304110,Colon - Transverse,SALL,5
+GSE303741,Uterus,SALL,4
+GSE265851,Lung,SALL,1
+GSE246793,Breast - Mammary Tissue,SALL,17
+GSE288661,Colon - Transverse,SALL,12
+GSE281080,Kidney - Cortex,SALL,2
+GSE287183,Prostate,SALL,4
+GSE298576,Liver,SALL,1
+GSE271315,Kidney - Cortex,SALL,1
+GSE208684,Colon - Transverse,SALL,1
+GSE274584,Lung,SALL,14
+GSE271749,Breast - Mammary Tissue,SALL,4
+GSE269871,Skin - Sun Exposed (Lower leg),SALL,1
+GSE296672,Kidney - Cortex,SALL,27
+GSE280257,Stomach,SALL,1
+GSE289912,Brain - Cortex,SALL,1
+GSE298818,Breast - Mammary Tissue,SALL,6
+GSE269369,Colon - Transverse,SALL,6
+GSE288165,Brain - Cortex,SALL,23
+GSE285436,Liver,SALL,1
+GSE248110,Liver,SALL,21
+GSE252464,Liver,SALL,30
+GSE252055,Kidney - Cortex,SALL,2
+GSE291768,Brain - Cortex,SALL,4
+GSE293756,Pancreas,SALL,11
+GSE287925,Prostate,SALL,1
+GSE278954,Liver,CENT,7
+GSE347768,Colon - Transverse,CENT,5
+GSE343459,Skin - Sun Exposed (Lower leg),CENT,13
+GSE329052,Colon - Transverse,CENT,5
+GSE346894,Pancreas,CENT,5
+GSE341690,Brain - Cortex,CENT,1
+GSE331309,Colon - Transverse,CENT,1
+GSE330696,Colon - Transverse,CENT,4
+GSE335920,Brain - Cortex,CENT,1
+GSE313206,Brain - Cortex,CENT,1
+GSE303837,Lung,CENT,13
+GSE338895,Colon - Transverse,CENT,20
+GSE305512,Brain - Cortex,CENT,1
+GSE305319,Brain - Cortex,CENT,4
+GSE301846,Liver,CENT,13
+GSE304208,Lung,CENT,12
+GSE304206,Lung,CENT,12
+GSE304203,Lung,CENT,12
+GSE304202,Lung,CENT,12
+GSE277920,Kidney - Cortex,CENT,18
+GSE316654,Colon - Transverse,CENT,1
+GSE336415,Colon - Transverse,CENT,2
+GSE335053,Stomach,CENT,1
+GSE323363,Pancreas,CENT,21
+GSE311632,Colon - Transverse,CENT,25
+GSE292601,Colon - Transverse,CENT,5
+GSE314639,Liver,CENT,2
+GSE314657,Brain - Cortex,CENT,2
+GSE335562,Prostate,CENT,36
+GSE310948,Prostate,CENT,8
+GSE331395,Brain - Cortex,CENT,3
+GSE334500,Heart - Left Ventricle,CENT,1
+GSE312713,Liver,CENT,5
+GSE312711,Liver,CENT,11
+GSE312708,Liver,CENT,6
+GSE298420,Liver,CENT,34
+GSE298419,Liver,CENT,33
+GSE261998,Liver,CENT,30
+GSE298933,Brain - Cortex,CENT,1
+GSE248031,Pancreas,CENT,11
+GSE330358,Prostate,CENT,12
+GSE319208,Colon - Transverse,CENT,13
+GSE309917,Colon - Transverse,CENT,1
+GSE290744,Lung,CENT,18
+GSE276230,Liver,CENT,15
+GSE289072,Colon - Transverse,CENT,2
+GSE331048,Prostate,CENT,14
+GSE312700,Lung,CENT,25
+GSE303838,Brain - Cortex,CENT,3
+GSE320151,Colon - Transverse,CENT,1
+GSE316631,Pancreas,CENT,1
+GSE309669,Pancreas,CENT,6
+GSE319859,Brain - Cortex,CENT,3
+GSE278562,Kidney - Cortex,CENT,4
+GSE269571,Heart - Left Ventricle,CENT,20
+GSE229907,Colon - Transverse,CENT,10
+GSE319878,Colon - Transverse,CENT,1
+GSE319169,Colon - Transverse,CENT,3
+GSE288724,Colon - Transverse,CENT,2
+GSE299913,Brain - Cortex,CENT,1
+GSE325553,Uterus,CENT,4
+GSE322610,Liver,CENT,1
+GSE304936,Kidney - Cortex,CENT,42
+GSE282444,Colon - Transverse,CENT,4
+GSE306080,Lung,CENT,11
+GSE302756,Kidney - Cortex,CENT,2
+GSE292624,Brain - Cortex,CENT,1
+GSE316426,Pancreas,CENT,34
+GSE298876,Breast - Mammary Tissue,CENT,34
+GSE307568,Uterus,CENT,10
+GSE286416,Heart - Left Ventricle,CENT,5
+GSE263840,Heart - Left Ventricle,CENT,1
+GSE299477,Colon - Transverse,CENT,1
+GSE303090,Liver,CENT,3
+GSE317332,Colon - Transverse,CENT,11
+GSE316780,Liver,CENT,12
+GSE302327,Colon - Transverse,CENT,1
+GSE310408,Colon - Transverse,CENT,6
+GSE315569,Colon - Transverse,CENT,12
+GSE285905,Colon - Transverse,CENT,8
+GSE303677,Colon - Transverse,CENT,1
+GSE310492,Colon - Transverse,CENT,1
+GSE230046,Liver,CENT,9
+GSE284761,Colon - Transverse,CENT,4
+GSE284755,Colon - Transverse,CENT,4
+GSE309755,Brain - Cortex,CENT,1
+GSE288008,Kidney - Cortex,CENT,8
+GSE311760,Colon - Transverse,CENT,12
+GSE306057,Prostate,CENT,11
+GSE274325,Colon - Transverse,CENT,22
+GSE310845,Colon - Transverse,CENT,1
+GSE309795,Heart - Left Ventricle,CENT,15
+GSE300073,Colon - Transverse,CENT,3
+GSE298600,Colon - Transverse,CENT,5
+GSE291524,Colon - Transverse,CENT,25
+GSE306909,Colon - Transverse,CENT,9
+GSE287262,Lung,CENT,22
+GSE280918,Breast - Mammary Tissue,CENT,9
+GSE217044,Colon - Transverse,CENT,2
+GSE248844,Prostate,CENT,22
+GSE297090,Colon - Transverse,CENT,1
+GSE285503,Colon - Transverse,CENT,1
+GSE216198,Esophagus - Mucosa,CENT,3
+GSE294532,Prostate,CENT,1
+GSE286890,Breast - Mammary Tissue,CENT,25
+GSE186249,Liver,CENT,1
+GSE309532,Colon - Transverse,CENT,29
+GSE292512,Pancreas,CENT,12
+GSE288179,Colon - Transverse,CENT,7
+GSE308083,Colon - Transverse,CENT,7
+GSE306982,Colon - Transverse,CENT,4
+GSE266030,Brain - Cortex,CENT,3
+GSE214340,Brain - Cortex,CENT,3
+GSE284019,Colon - Transverse,CENT,12
+GSE266551,Stomach,CENT,8
+GSE276170,Colon - Transverse,CENT,1
+GSE282649,Liver,CENT,26
+GSE307124,Brain - Cortex,CENT,1
+GSE300013,Kidney - Cortex,CENT,3
+GSE305958,Liver,CENT,32
+GSE212099,Liver,CENT,1
+GSE305923,Liver,CENT,3
+GSE301725,Brain - Cortex,CENT,1
+GSE300839,Breast - Mammary Tissue,CENT,18
+GSE236379,Kidney - Cortex,CENT,4
+GSE304110,Colon - Transverse,CENT,15
+GSE303741,Uterus,CENT,3
+GSE265851,Lung,CENT,1
+GSE246793,Breast - Mammary Tissue,CENT,38
+GSE288661,Colon - Transverse,CENT,14
+GSE281080,Kidney - Cortex,CENT,20
+GSE287183,Prostate,CENT,10
+GSE298576,Liver,CENT,1
+GSE271315,Kidney - Cortex,CENT,1
+GSE208684,Colon - Transverse,CENT,1
+GSE274584,Lung,CENT,22
+GSE271749,Breast - Mammary Tissue,CENT,19
+GSE269871,Skin - Sun Exposed (Lower leg),CENT,20
+GSE296672,Kidney - Cortex,CENT,11
+GSE280257,Stomach,CENT,11
+GSE289912,Brain - Cortex,CENT,1
+GSE298818,Breast - Mammary Tissue,CENT,9
+GSE269369,Colon - Transverse,CENT,9
+GSE288165,Brain - Cortex,CENT,2
+GSE285436,Liver,CENT,1
+GSE248110,Liver,CENT,1
+GSE252464,Liver,CENT,2
+GSE252055,Kidney - Cortex,CENT,3
+GSE291768,Brain - Cortex,CENT,28
+GSE293756,Pancreas,CENT,12
+GSE287925,Prostate,CENT,7
