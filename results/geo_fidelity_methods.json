@@ -621,9 +621,148 @@
      "mean": 0.0
     }
    }
+  },
+  "SALL_PC": {
+   "top1": 0.2847682119205298,
+   "top5": 0.5298013245033113,
+   "median_rank": 5.0,
+   "analytic_chance_top1": 0.06193279372087317,
+   "perm_top1_mean": 0.07696225165562914,
+   "perm_top1_p": 9.999000099990002e-05,
+   "top_best_tissues": {
+    "Cells - Cultured fibroblasts": 67,
+    "Colon - Transverse": 21,
+    "Stomach": 10,
+    "Esophagus - Mucosa": 9,
+    "Small Intestine - Terminal Ileum": 7
+   },
+   "per_organ_top1": {
+    "Brain - Cortex": {
+     "count": 20,
+     "mean": 0.35
+    },
+    "Breast - Mammary Tissue": {
+     "count": 7,
+     "mean": 0.0
+    },
+    "Colon - Transverse": {
+     "count": 48,
+     "mean": 0.5
+    },
+    "Esophagus - Mucosa": {
+     "count": 1,
+     "mean": 0.0
+    },
+    "Heart - Left Ventricle": {
+     "count": 5,
+     "mean": 0.4
+    },
+    "Kidney - Cortex": {
+     "count": 11,
+     "mean": 0.091
+    },
+    "Liver": {
+     "count": 23,
+     "mean": 0.174
+    },
+    "Lung": {
+     "count": 11,
+     "mean": 0.091
+    },
+    "Pancreas": {
+     "count": 8,
+     "mean": 0.0
+    },
+    "Prostate": {
+     "count": 9,
+     "mean": 0.111
+    },
+    "Skin - Sun Exposed (Lower leg)": {
+     "count": 2,
+     "mean": 0.5
+    },
+    "Stomach": {
+     "count": 3,
+     "mean": 0.667
+    },
+    "Uterus": {
+     "count": 3,
+     "mean": 0.0
+    }
+   }
+  },
+  "CENT_PC": {
+   "top1": 0.2980132450331126,
+   "top5": 0.5165562913907285,
+   "median_rank": 4.0,
+   "analytic_chance_top1": 0.06193279372087317,
+   "perm_top1_mean": 0.06739006622516557,
+   "perm_top1_p": 9.999000099990002e-05,
+   "top_best_tissues": {
+    "Cells - Cultured fibroblasts": 42,
+    "Cells - EBV-transformed lymphocytes": 32,
+    "Pancreas": 14,
+    "Colon - Transverse": 11,
+    "Small Intestine - Terminal Ileum": 10
+   },
+   "per_organ_top1": {
+    "Brain - Cortex": {
+     "count": 20,
+     "mean": 0.55
+    },
+    "Breast - Mammary Tissue": {
+     "count": 7,
+     "mean": 0.0
+    },
+    "Colon - Transverse": {
+     "count": 48,
+     "mean": 0.417
+    },
+    "Esophagus - Mucosa": {
+     "count": 1,
+     "mean": 0.0
+    },
+    "Heart - Left Ventricle": {
+     "count": 5,
+     "mean": 0.4
+    },
+    "Kidney - Cortex": {
+     "count": 11,
+     "mean": 0.091
+    },
+    "Liver": {
+     "count": 23,
+     "mean": 0.261
+    },
+    "Lung": {
+     "count": 11,
+     "mean": 0.091
+    },
+    "Pancreas": {
+     "count": 8,
+     "mean": 0.25
+    },
+    "Prostate": {
+     "count": 9,
+     "mean": 0.111
+    },
+    "Skin - Sun Exposed (Lower leg)": {
+     "count": 2,
+     "mean": 0.0
+    },
+    "Stomach": {
+     "count": 3,
+     "mean": 0.333
+    },
+    "Uterus": {
+     "count": 3,
+     "mean": 0.0
+    }
+   }
   }
  },
  "n_culture_genes_removed": 853,
  "n_nonparenchymal_genes_removed": 7595,
- "n_parenchymal_only_genes": 9699
+ "n_parenchymal_only_genes": 9699,
+ "n_protein_coding_genes": 19254
 }

@@ -43,3 +43,8 @@ pipeline (src/geo_fidelity.py). The tool excludes them. The effect on rank corre
   (1) Mitotic cell cycle, top term p_adj = 7.8e-56 (66 genes; TOP2A, MKI67, CCNB1, CDK1, BIRC5).
   (2) Immune/complement genes that the tissue has and the organoid lacks: adaptive immune response p_adj = 9.5e-15; complement cascade 5.9e-10 (C1QA, LY86, CTSG).
 - Interpretation: the attractor combines culture proliferation with missing non-parenchymal signal. Removing either gene family alone (Hallmark culture sets; HPA non-parenchymal) leaves it in place, so neither alone explains it. It stays a named candidate with a mechanism hypothesis, not a claimed discovery.
+
+## Protein-coding-only robustness (HGNC locus groups; results/geo_fidelity_clean.json, results/geo_mcnemar.json)
+- Restricted to 19,254 HGNC protein-coding genes (_PC). The fibroblast best-match share on the clean subset is 44% [35, 53] (SALL_PC) and 28% [20, 36] (CENT_PC). The attractor is not a non-coding/pseudogene artefact.
+- Recovery changes: SALL 33% -> 28% (McNemar p = 0.23), CENT 25% -> 30% (p = 0.016).
+- Ensembl REST (about 50 s per 500 IDs) and BioMart (timeout) were tried and abandoned for this lookup. HGNC was used instead. Neither Ensembl route is counted as a tool.

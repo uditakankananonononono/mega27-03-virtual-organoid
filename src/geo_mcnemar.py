@@ -4,7 +4,7 @@ from statsmodels.stats.contingency_tables import mcnemar
 R = pd.read_csv("results/geo_fidelity_methods_ranks.csv"); W = R.pivot(index="gse", columns="method", values="rank_match") == 1
 out = {}
 for base in ["SALL", "CENT"]:
-    for v in ["NOCULT", "NONPAR", "PARONLY"]:
+    for v in ["NOCULT", "NONPAR", "PARONLY", "PC"]:
         a, b = W[base], W[f"{base}_{v}"]
         t = [[int((a & b).sum()), int((a & ~b).sum())], [int((~a & b).sum()), int((~a & ~b).sum())]]
         r = mcnemar(t, exact=True)

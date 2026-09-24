@@ -33,11 +33,13 @@ NONPAR = {"B-cells", "T-cells", "NK-cells", "Macrophages", "monocytes", "cDC", "
           "Endometrial stromal cells", "Ovarian stromal cells", "Mesothelial cells", "Schwann cells"}
 hpa = pd.read_csv("data/ref/hpa_single_cell_type_v_api.tsv.gz", sep="\t"); hpa.columns = ["gene", "ens", "spec", "types"]
 hpa = hpa.dropna(subset=["types"]); ht = hpa.types.str.split(";").map(lambda L: {x.split(":")[0].strip() for x in L})
+hg = pd.read_csv("data/ref/hgnc_locus_groups.csv.gz"); pc_ens = set(hg.ensembl_gene_id[hg.locus_group == "protein-coding gene"])  # HGNC
 nonpar_ens = set(hpa.ens[ht.map(lambda S: bool(S & NONPAR))]); par_ens = set(hpa.ens[ht.map(lambda S: not (S & NONPAR))])
 def rhos(p, method):
     c = p.index.intersection(G.index)
     if method.endswith("_NOCULT"): c = c.difference(pd.Index(list(cult_ens))); method = method[:-7]
     if method.endswith("_NONPAR"): c = c.difference(pd.Index(list(nonpar_ens))); method = method[:-7]
+    if method.endswith("_PC"): c = c.intersection(pd.Index(list(pc_ens))); method = method[:-3]
     if method.endswith("_PARONLY"): c = c.intersection(pd.Index(list(par_ens))); method = method[:-8]
     if method == "S3000":
         c = c.intersection(var_top); return np.array([spearmanr(p[c], G.loc[c, t])[0] for t in T])
@@ -51,7 +53,7 @@ def rhos(p, method):
 res = {"n_series": int(len(d)), "variants": {}}
 rng = np.random.default_rng(0)
 rows = []
-for m in ["S3000", "SALL", "CENT", "SALL_NOCULT", "CENT_NOCULT", "SALL_NONPAR", "CENT_NONPAR", "SALL_PARONLY", "CENT_PARONLY"]:
+for m in ["S3000", "SALL", "CENT", "SALL_NOCULT", "CENT_NOCULT", "SALL_NONPAR", "CENT_NONPAR", "SALL_PARONLY", "CENT_PARONLY", "SALL_PC", "CENT_PC"]:
     R = np.array([rhos(P[s], m) for s in d.gse])
     order = np.argsort(-R, axis=1)
     pos = np.argsort(order, axis=1) + 1  # pos[i, t] = rank of tissue t in series i
@@ -68,6 +70,6 @@ for m in ["S3000", "SALL", "CENT", "SALL_NOCULT", "CENT_NOCULT", "SALL_NONPAR", 
         "per_organ_top1": pd.DataFrame({"o": d.organ, "t": rk == 1}).groupby("o").t.agg(["count", "mean"]).round(3).to_dict("index")}
     for s, o, r in zip(d.gse, d.organ, rk): rows.append({"gse": s, "organ": o, "method": m, "rank_match": int(r), "best_tissue": T[order[list(d.gse).index(s)][0]]})
     print(m, res["variants"][m]["top1"], res["variants"][m]["perm_top1_mean"], res["variants"][m]["perm_top1_p"], flush=True)
-res["n_culture_genes_removed"] = len(cult_ens); res["n_nonparenchymal_genes_removed"] = len(nonpar_ens); res["n_parenchymal_only_genes"] = len(par_ens)
+res["n_culture_genes_removed"] = len(cult_ens); res["n_nonparenchymal_genes_removed"] = len(nonpar_ens); res["n_parenchymal_only_genes"] = len(par_ens); res["n_protein_coding_genes"] = len(pc_ens)
 json.dump(res, open("results/geo_fidelity_methods.json", "w"), indent=1)
 pd.DataFrame(rows).to_csv("results/geo_fidelity_methods_ranks.csv", index=False)

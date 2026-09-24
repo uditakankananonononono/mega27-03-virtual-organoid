@@ -256,6 +256,70 @@
    }
   }
  },
+ "CENT_PC": {
+  "n": 113,
+  "top1": 0.30973451327433627,
+  "top5": 0.5221238938053098,
+  "fibroblast_best_frac": 0.2831858407079646,
+  "fibroblast_best_ci95": [
+   0.20353982300884957,
+   0.36283185840707965
+  ],
+  "fibroblast_best_by_organ": {
+   "Brain - Cortex": {
+    "count": 16,
+    "sum": 5
+   },
+   "Breast - Mammary Tissue": {
+    "count": 5,
+    "sum": 3
+   },
+   "Colon - Transverse": {
+    "count": 32,
+    "sum": 4
+   },
+   "Esophagus - Mucosa": {
+    "count": 1,
+    "sum": 0
+   },
+   "Heart - Left Ventricle": {
+    "count": 3,
+    "sum": 2
+   },
+   "Kidney - Cortex": {
+    "count": 10,
+    "sum": 7
+   },
+   "Liver": {
+    "count": 21,
+    "sum": 5
+   },
+   "Lung": {
+    "count": 6,
+    "sum": 0
+   },
+   "Pancreas": {
+    "count": 6,
+    "sum": 2
+   },
+   "Prostate": {
+    "count": 8,
+    "sum": 1
+   },
+   "Skin - Sun Exposed (Lower leg)": {
+    "count": 1,
+    "sum": 1
+   },
+   "Stomach": {
+    "count": 2,
+    "sum": 0
+   },
+   "Uterus": {
+    "count": 2,
+    "sum": 2
+   }
+  }
+ },
  "S3000": {
   "n": 113,
   "top1": 0.3008849557522124,
@@ -263,7 +327,7 @@
   "fibroblast_best_frac": 0.23008849557522124,
   "fibroblast_best_ci95": [
    0.1504424778761062,
-   0.3008849557522124
+   0.30973451327433627
   ],
   "fibroblast_best_by_organ": {
    "Brain - Cortex": {
@@ -327,7 +391,7 @@
   "fibroblast_best_frac": 0.25663716814159293,
   "fibroblast_best_ci95": [
    0.17699115044247787,
-   0.336283185840708
+   0.34513274336283184
   ],
   "fibroblast_best_by_organ": {
    "Brain - Cortex": {
@@ -519,7 +583,7 @@
   "fibroblast_best_frac": 0.2831858407079646,
   "fibroblast_best_ci95": [
    0.20353982300884957,
-   0.3630530973451315
+   0.37168141592920356
   ],
   "fibroblast_best_by_organ": {
    "Brain - Cortex": {
@@ -573,6 +637,70 @@
    "Uterus": {
     "count": 2,
     "sum": 1
+   }
+  }
+ },
+ "SALL_PC": {
+  "n": 113,
+  "top1": 0.2831858407079646,
+  "top5": 0.5398230088495575,
+  "fibroblast_best_frac": 0.4424778761061947,
+  "fibroblast_best_ci95": [
+   0.35398230088495575,
+   0.5309734513274337
+  ],
+  "fibroblast_best_by_organ": {
+   "Brain - Cortex": {
+    "count": 16,
+    "sum": 6
+   },
+   "Breast - Mammary Tissue": {
+    "count": 5,
+    "sum": 5
+   },
+   "Colon - Transverse": {
+    "count": 32,
+    "sum": 11
+   },
+   "Esophagus - Mucosa": {
+    "count": 1,
+    "sum": 0
+   },
+   "Heart - Left Ventricle": {
+    "count": 3,
+    "sum": 2
+   },
+   "Kidney - Cortex": {
+    "count": 10,
+    "sum": 7
+   },
+   "Liver": {
+    "count": 21,
+    "sum": 6
+   },
+   "Lung": {
+    "count": 6,
+    "sum": 0
+   },
+   "Pancreas": {
+    "count": 6,
+    "sum": 3
+   },
+   "Prostate": {
+    "count": 8,
+    "sum": 7
+   },
+   "Skin - Sun Exposed (Lower leg)": {
+    "count": 1,
+    "sum": 1
+   },
+   "Stomach": {
+    "count": 2,
+    "sum": 0
+   },
+   "Uterus": {
+    "count": 2,
+    "sum": 2
    }
   }
  }
