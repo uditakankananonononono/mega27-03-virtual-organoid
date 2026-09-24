@@ -15,3 +15,6 @@ Status: candidate, not yet confirmed. Open checks: segmentation-error model, lum
 Well-level readouts: raw mean log fold; per-well regression predicted at global median size (adj); size-band mean (band).
 Per-donor standardized separation (Trikafta vs DMSO wells), 17 donors: median raw 4.73, adj 4.35, band 4.39; adj > raw in 8/17.
 Result: NEGATIVE. Size adjustment does not improve donor-level modulator discrimination; the size effect is real but does not change theratyping calls at this assay's well counts.
+
+## Replication check on FIS set: not possible
+FIS_database.csv holds one area value per well per time point (868 rows, 7 time points, one position per well), i.e. summed organoid area, not single organoids. It cannot test per-organoid size dependence. Replication needs another single-organoid dataset (candidate: OrganoID time-lapse data, Matthews et al. 2022).
