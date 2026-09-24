@@ -128,6 +128,134 @@
    }
   }
  },
+ "CENT_NONPAR": {
+  "n": 113,
+  "top1": 0.34513274336283184,
+  "top5": 0.5752212389380531,
+  "fibroblast_best_frac": 0.37168141592920356,
+  "fibroblast_best_ci95": [
+   0.2831858407079646,
+   0.46017699115044247
+  ],
+  "fibroblast_best_by_organ": {
+   "Brain - Cortex": {
+    "count": 16,
+    "sum": 6
+   },
+   "Breast - Mammary Tissue": {
+    "count": 5,
+    "sum": 4
+   },
+   "Colon - Transverse": {
+    "count": 32,
+    "sum": 9
+   },
+   "Esophagus - Mucosa": {
+    "count": 1,
+    "sum": 0
+   },
+   "Heart - Left Ventricle": {
+    "count": 3,
+    "sum": 2
+   },
+   "Kidney - Cortex": {
+    "count": 10,
+    "sum": 5
+   },
+   "Liver": {
+    "count": 21,
+    "sum": 5
+   },
+   "Lung": {
+    "count": 6,
+    "sum": 0
+   },
+   "Pancreas": {
+    "count": 6,
+    "sum": 3
+   },
+   "Prostate": {
+    "count": 8,
+    "sum": 5
+   },
+   "Skin - Sun Exposed (Lower leg)": {
+    "count": 1,
+    "sum": 1
+   },
+   "Stomach": {
+    "count": 2,
+    "sum": 0
+   },
+   "Uterus": {
+    "count": 2,
+    "sum": 2
+   }
+  }
+ },
+ "CENT_PARONLY": {
+  "n": 113,
+  "top1": 0.39823008849557523,
+  "top5": 0.6548672566371682,
+  "fibroblast_best_frac": 0.22123893805309736,
+  "fibroblast_best_ci95": [
+   0.1504424778761062,
+   0.2920353982300885
+  ],
+  "fibroblast_best_by_organ": {
+   "Brain - Cortex": {
+    "count": 16,
+    "sum": 4
+   },
+   "Breast - Mammary Tissue": {
+    "count": 5,
+    "sum": 3
+   },
+   "Colon - Transverse": {
+    "count": 32,
+    "sum": 3
+   },
+   "Esophagus - Mucosa": {
+    "count": 1,
+    "sum": 0
+   },
+   "Heart - Left Ventricle": {
+    "count": 3,
+    "sum": 2
+   },
+   "Kidney - Cortex": {
+    "count": 10,
+    "sum": 4
+   },
+   "Liver": {
+    "count": 21,
+    "sum": 4
+   },
+   "Lung": {
+    "count": 6,
+    "sum": 0
+   },
+   "Pancreas": {
+    "count": 6,
+    "sum": 2
+   },
+   "Prostate": {
+    "count": 8,
+    "sum": 1
+   },
+   "Skin - Sun Exposed (Lower leg)": {
+    "count": 1,
+    "sum": 1
+   },
+   "Stomach": {
+    "count": 2,
+    "sum": 0
+   },
+   "Uterus": {
+    "count": 2,
+    "sum": 1
+   }
+  }
+ },
  "S3000": {
   "n": 113,
   "top1": 0.3008849557522124,
@@ -135,7 +263,7 @@
   "fibroblast_best_frac": 0.23008849557522124,
   "fibroblast_best_ci95": [
    0.1504424778761062,
-   0.30973451327433627
+   0.3008849557522124
   ],
   "fibroblast_best_by_organ": {
    "Brain - Cortex": {
@@ -305,6 +433,134 @@
    "Prostate": {
     "count": 8,
     "sum": 3
+   },
+   "Skin - Sun Exposed (Lower leg)": {
+    "count": 1,
+    "sum": 1
+   },
+   "Stomach": {
+    "count": 2,
+    "sum": 0
+   },
+   "Uterus": {
+    "count": 2,
+    "sum": 1
+   }
+  }
+ },
+ "SALL_NONPAR": {
+  "n": 113,
+  "top1": 0.39823008849557523,
+  "top5": 0.5929203539823009,
+  "fibroblast_best_frac": 0.20353982300884957,
+  "fibroblast_best_ci95": [
+   0.13274336283185842,
+   0.2831858407079646
+  ],
+  "fibroblast_best_by_organ": {
+   "Brain - Cortex": {
+    "count": 16,
+    "sum": 0
+   },
+   "Breast - Mammary Tissue": {
+    "count": 5,
+    "sum": 4
+   },
+   "Colon - Transverse": {
+    "count": 32,
+    "sum": 5
+   },
+   "Esophagus - Mucosa": {
+    "count": 1,
+    "sum": 0
+   },
+   "Heart - Left Ventricle": {
+    "count": 3,
+    "sum": 1
+   },
+   "Kidney - Cortex": {
+    "count": 10,
+    "sum": 2
+   },
+   "Liver": {
+    "count": 21,
+    "sum": 6
+   },
+   "Lung": {
+    "count": 6,
+    "sum": 0
+   },
+   "Pancreas": {
+    "count": 6,
+    "sum": 2
+   },
+   "Prostate": {
+    "count": 8,
+    "sum": 1
+   },
+   "Skin - Sun Exposed (Lower leg)": {
+    "count": 1,
+    "sum": 1
+   },
+   "Stomach": {
+    "count": 2,
+    "sum": 0
+   },
+   "Uterus": {
+    "count": 2,
+    "sum": 1
+   }
+  }
+ },
+ "SALL_PARONLY": {
+  "n": 113,
+  "top1": 0.3893805309734513,
+  "top5": 0.5309734513274337,
+  "fibroblast_best_frac": 0.2831858407079646,
+  "fibroblast_best_ci95": [
+   0.20353982300884957,
+   0.3630530973451315
+  ],
+  "fibroblast_best_by_organ": {
+   "Brain - Cortex": {
+    "count": 16,
+    "sum": 5
+   },
+   "Breast - Mammary Tissue": {
+    "count": 5,
+    "sum": 4
+   },
+   "Colon - Transverse": {
+    "count": 32,
+    "sum": 5
+   },
+   "Esophagus - Mucosa": {
+    "count": 1,
+    "sum": 0
+   },
+   "Heart - Left Ventricle": {
+    "count": 3,
+    "sum": 1
+   },
+   "Kidney - Cortex": {
+    "count": 10,
+    "sum": 3
+   },
+   "Liver": {
+    "count": 21,
+    "sum": 5
+   },
+   "Lung": {
+    "count": 6,
+    "sum": 0
+   },
+   "Pancreas": {
+    "count": 6,
+    "sum": 2
+   },
+   "Prostate": {
+    "count": 8,
+    "sum": 5
    },
    "Skin - Sun Exposed (Lower leg)": {
     "count": 1,

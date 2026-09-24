@@ -754,3 +754,607 @@ GSE252055,Kidney - Cortex,CENT_NOCULT,2,Pancreas
 GSE291768,Brain - Cortex,CENT_NOCULT,27,Cells - Cultured fibroblasts
 GSE293756,Pancreas,CENT_NOCULT,12,Cells - Cultured fibroblasts
 GSE287925,Prostate,CENT_NOCULT,4,Cells - Cultured fibroblasts
+GSE278954,Liver,SALL_NONPAR,48,Pituitary
+GSE347768,Colon - Transverse,SALL_NONPAR,1,Small Intestine - Terminal Ileum
+GSE343459,Skin - Sun Exposed (Lower leg),SALL_NONPAR,21,Cells - Cultured fibroblasts
+GSE329052,Colon - Transverse,SALL_NONPAR,1,Colon - Transverse
+GSE346894,Pancreas,SALL_NONPAR,33,Testis
+GSE341690,Brain - Cortex,SALL_NONPAR,1,Brain - Cerebellum
+GSE331309,Colon - Transverse,SALL_NONPAR,1,Colon - Transverse
+GSE330696,Colon - Transverse,SALL_NONPAR,3,Prostate
+GSE335920,Brain - Cortex,SALL_NONPAR,1,Brain - Hypothalamus
+GSE313206,Brain - Cortex,SALL_NONPAR,2,Pituitary
+GSE303837,Lung,SALL_NONPAR,12,Skin - Not Sun Exposed (Suprapubic)
+GSE338895,Colon - Transverse,SALL_NONPAR,20,Pancreas
+GSE305512,Brain - Cortex,SALL_NONPAR,1,Brain - Hypothalamus
+GSE305319,Brain - Cortex,SALL_NONPAR,1,Brain - Substantia nigra
+GSE301846,Liver,SALL_NONPAR,37,Cells - Cultured fibroblasts
+GSE304208,Lung,SALL_NONPAR,8,Esophagus - Mucosa
+GSE304206,Lung,SALL_NONPAR,6,Esophagus - Mucosa
+GSE304203,Lung,SALL_NONPAR,8,Esophagus - Mucosa
+GSE304202,Lung,SALL_NONPAR,8,Esophagus - Mucosa
+GSE277920,Kidney - Cortex,SALL_NONPAR,29,Cervix - Endocervix
+GSE316654,Colon - Transverse,SALL_NONPAR,1,Colon - Transverse
+GSE336415,Colon - Transverse,SALL_NONPAR,2,Cells - Cultured fibroblasts
+GSE335053,Stomach,SALL_NONPAR,1,Stomach
+GSE323363,Pancreas,SALL_NONPAR,4,Pituitary
+GSE311632,Colon - Transverse,SALL_NONPAR,1,Colon - Transverse
+GSE292601,Colon - Transverse,SALL_NONPAR,1,Colon - Transverse
+GSE314639,Liver,SALL_NONPAR,7,Cells - Cultured fibroblasts
+GSE314657,Brain - Cortex,SALL_NONPAR,1,Brain - Hypothalamus
+GSE335562,Prostate,SALL_NONPAR,31,Brain - Amygdala
+GSE310948,Prostate,SALL_NONPAR,2,Pituitary
+GSE331395,Brain - Cortex,SALL_NONPAR,1,Brain - Hypothalamus
+GSE334500,Heart - Left Ventricle,SALL_NONPAR,1,Heart - Atrial Appendage
+GSE312713,Liver,SALL_NONPAR,18,Stomach
+GSE312711,Liver,SALL_NONPAR,33,Esophagus - Mucosa
+GSE312708,Liver,SALL_NONPAR,34,Cells - Cultured fibroblasts
+GSE298420,Liver,SALL_NONPAR,38,Esophagus - Mucosa
+GSE298419,Liver,SALL_NONPAR,38,Esophagus - Mucosa
+GSE261998,Liver,SALL_NONPAR,48,Esophagus - Mucosa
+GSE298933,Brain - Cortex,SALL_NONPAR,29,Colon - Transverse
+GSE248031,Pancreas,SALL_NONPAR,33,Prostate
+GSE330358,Prostate,SALL_NONPAR,1,Prostate
+GSE319208,Colon - Transverse,SALL_NONPAR,11,Prostate
+GSE309917,Colon - Transverse,SALL_NONPAR,1,Small Intestine - Terminal Ileum
+GSE290744,Lung,SALL_NONPAR,22,Cells - Cultured fibroblasts
+GSE276230,Liver,SALL_NONPAR,33,Stomach
+GSE289072,Colon - Transverse,SALL_NONPAR,1,Colon - Transverse
+GSE331048,Prostate,SALL_NONPAR,1,Prostate
+GSE312700,Lung,SALL_NONPAR,3,Minor Salivary Gland
+GSE303838,Brain - Cortex,SALL_NONPAR,2,Pituitary
+GSE320151,Colon - Transverse,SALL_NONPAR,1,Small Intestine - Terminal Ileum
+GSE316631,Pancreas,SALL_NONPAR,44,Testis
+GSE309669,Pancreas,SALL_NONPAR,8,Minor Salivary Gland
+GSE319859,Brain - Cortex,SALL_NONPAR,2,Pituitary
+GSE278562,Kidney - Cortex,SALL_NONPAR,23,Cells - Cultured fibroblasts
+GSE269571,Heart - Left Ventricle,SALL_NONPAR,9,Pituitary
+GSE229907,Colon - Transverse,SALL_NONPAR,3,Minor Salivary Gland
+GSE319878,Colon - Transverse,SALL_NONPAR,1,Colon - Transverse
+GSE319169,Colon - Transverse,SALL_NONPAR,3,Cells - Cultured fibroblasts
+GSE288724,Colon - Transverse,SALL_NONPAR,1,Colon - Transverse
+GSE299913,Brain - Cortex,SALL_NONPAR,1,Brain - Hypothalamus
+GSE325553,Uterus,SALL_NONPAR,2,Cells - Cultured fibroblasts
+GSE322610,Liver,SALL_NONPAR,1,Liver
+GSE304936,Kidney - Cortex,SALL_NONPAR,26,Brain - Hypothalamus
+GSE282444,Colon - Transverse,SALL_NONPAR,1,Colon - Transverse
+GSE306080,Lung,SALL_NONPAR,1,Lung
+GSE302756,Kidney - Cortex,SALL_NONPAR,1,Kidney - Cortex
+GSE292624,Brain - Cortex,SALL_NONPAR,1,Brain - Hippocampus
+GSE316426,Pancreas,SALL_NONPAR,32,Cells - Cultured fibroblasts
+GSE298876,Breast - Mammary Tissue,SALL_NONPAR,21,Cells - Cultured fibroblasts
+GSE307568,Uterus,SALL_NONPAR,10,Vagina
+GSE286416,Heart - Left Ventricle,SALL_NONPAR,5,Pancreas
+GSE263840,Heart - Left Ventricle,SALL_NONPAR,1,Heart - Atrial Appendage
+GSE299477,Colon - Transverse,SALL_NONPAR,1,Colon - Transverse
+GSE303090,Liver,SALL_NONPAR,7,Small Intestine - Terminal Ileum
+GSE317332,Colon - Transverse,SALL_NONPAR,9,Cells - Cultured fibroblasts
+GSE316780,Liver,SALL_NONPAR,13,Stomach
+GSE302327,Colon - Transverse,SALL_NONPAR,1,Small Intestine - Terminal Ileum
+GSE310408,Colon - Transverse,SALL_NONPAR,3,Esophagus - Mucosa
+GSE315569,Colon - Transverse,SALL_NONPAR,10,Pituitary
+GSE285905,Colon - Transverse,SALL_NONPAR,6,Cells - Cultured fibroblasts
+GSE303677,Colon - Transverse,SALL_NONPAR,1,Small Intestine - Terminal Ileum
+GSE310492,Colon - Transverse,SALL_NONPAR,1,Colon - Transverse
+GSE230046,Liver,SALL_NONPAR,29,Lung
+GSE284761,Colon - Transverse,SALL_NONPAR,1,Colon - Transverse
+GSE284755,Colon - Transverse,SALL_NONPAR,1,Colon - Transverse
+GSE309755,Brain - Cortex,SALL_NONPAR,1,Brain - Hypothalamus
+GSE288008,Kidney - Cortex,SALL_NONPAR,13,Brain - Hypothalamus
+GSE311760,Colon - Transverse,SALL_NONPAR,1,Colon - Transverse
+GSE306057,Prostate,SALL_NONPAR,5,Cells - Cultured fibroblasts
+GSE274325,Colon - Transverse,SALL_NONPAR,1,Colon - Transverse
+GSE310845,Colon - Transverse,SALL_NONPAR,1,Colon - Transverse
+GSE309795,Heart - Left Ventricle,SALL_NONPAR,13,Cells - Cultured fibroblasts
+GSE300073,Colon - Transverse,SALL_NONPAR,1,Colon - Transverse
+GSE298600,Colon - Transverse,SALL_NONPAR,1,Colon - Transverse
+GSE291524,Colon - Transverse,SALL_NONPAR,1,Colon - Transverse
+GSE306909,Colon - Transverse,SALL_NONPAR,8,Cells - Cultured fibroblasts
+GSE287262,Lung,SALL_NONPAR,19,Pituitary
+GSE280918,Breast - Mammary Tissue,SALL_NONPAR,2,Cells - Cultured fibroblasts
+GSE217044,Colon - Transverse,SALL_NONPAR,2,Prostate
+GSE248844,Prostate,SALL_NONPAR,2,Pituitary
+GSE297090,Colon - Transverse,SALL_NONPAR,1,Small Intestine - Terminal Ileum
+GSE285503,Colon - Transverse,SALL_NONPAR,1,Colon - Transverse
+GSE216198,Esophagus - Mucosa,SALL_NONPAR,3,Stomach
+GSE294532,Prostate,SALL_NONPAR,1,Prostate
+GSE286890,Breast - Mammary Tissue,SALL_NONPAR,2,Cells - Cultured fibroblasts
+GSE186249,Liver,SALL_NONPAR,1,Liver
+GSE309532,Colon - Transverse,SALL_NONPAR,12,Cells - Cultured fibroblasts
+GSE292512,Pancreas,SALL_NONPAR,8,Stomach
+GSE288179,Colon - Transverse,SALL_NONPAR,1,Colon - Transverse
+GSE308083,Colon - Transverse,SALL_NONPAR,7,Cells - Cultured fibroblasts
+GSE306982,Colon - Transverse,SALL_NONPAR,2,Stomach
+GSE266030,Brain - Cortex,SALL_NONPAR,1,Brain - Hypothalamus
+GSE214340,Brain - Cortex,SALL_NONPAR,3,Pituitary
+GSE284019,Colon - Transverse,SALL_NONPAR,18,Cells - Cultured fibroblasts
+GSE266551,Stomach,SALL_NONPAR,2,Colon - Transverse
+GSE276170,Colon - Transverse,SALL_NONPAR,1,Colon - Transverse
+GSE282649,Liver,SALL_NONPAR,45,Stomach
+GSE307124,Brain - Cortex,SALL_NONPAR,1,Brain - Hypothalamus
+GSE300013,Kidney - Cortex,SALL_NONPAR,1,Kidney - Cortex
+GSE305958,Liver,SALL_NONPAR,37,Cells - Cultured fibroblasts
+GSE212099,Liver,SALL_NONPAR,8,Cells - Cultured fibroblasts
+GSE305923,Liver,SALL_NONPAR,31,Cells - Cultured fibroblasts
+GSE301725,Brain - Cortex,SALL_NONPAR,1,Brain - Hypothalamus
+GSE300839,Breast - Mammary Tissue,SALL_NONPAR,2,Esophagus - Mucosa
+GSE236379,Kidney - Cortex,SALL_NONPAR,1,Kidney - Cortex
+GSE304110,Colon - Transverse,SALL_NONPAR,3,Stomach
+GSE303741,Uterus,SALL_NONPAR,2,Cells - Cultured fibroblasts
+GSE265851,Lung,SALL_NONPAR,1,Lung
+GSE246793,Breast - Mammary Tissue,SALL_NONPAR,16,Cells - Cultured fibroblasts
+GSE288661,Colon - Transverse,SALL_NONPAR,5,Stomach
+GSE281080,Kidney - Cortex,SALL_NONPAR,2,Pituitary
+GSE287183,Prostate,SALL_NONPAR,1,Prostate
+GSE298576,Liver,SALL_NONPAR,1,Liver
+GSE271315,Kidney - Cortex,SALL_NONPAR,1,Kidney - Medulla
+GSE208684,Colon - Transverse,SALL_NONPAR,1,Small Intestine - Terminal Ileum
+GSE274584,Lung,SALL_NONPAR,15,Cells - EBV-transformed lymphocytes
+GSE271749,Breast - Mammary Tissue,SALL_NONPAR,2,Cells - Cultured fibroblasts
+GSE269871,Skin - Sun Exposed (Lower leg),SALL_NONPAR,1,Skin - Not Sun Exposed (Suprapubic)
+GSE296672,Kidney - Cortex,SALL_NONPAR,24,Brain - Amygdala
+GSE280257,Stomach,SALL_NONPAR,1,Stomach
+GSE289912,Brain - Cortex,SALL_NONPAR,1,Brain - Hypothalamus
+GSE298818,Breast - Mammary Tissue,SALL_NONPAR,6,Skin - Not Sun Exposed (Suprapubic)
+GSE269369,Colon - Transverse,SALL_NONPAR,5,Prostate
+GSE288165,Brain - Cortex,SALL_NONPAR,10,Colon - Sigmoid
+GSE285436,Liver,SALL_NONPAR,1,Liver
+GSE248110,Liver,SALL_NONPAR,23,Kidney - Cortex
+GSE252464,Liver,SALL_NONPAR,31,Colon - Transverse
+GSE252055,Kidney - Cortex,SALL_NONPAR,2,Cells - Cultured fibroblasts
+GSE291768,Brain - Cortex,SALL_NONPAR,1,Brain - Hypothalamus
+GSE293756,Pancreas,SALL_NONPAR,31,Cells - Cultured fibroblasts
+GSE287925,Prostate,SALL_NONPAR,1,Prostate
+GSE278954,Liver,CENT_NONPAR,26,Cells - Cultured fibroblasts
+GSE347768,Colon - Transverse,CENT_NONPAR,6,Cells - EBV-transformed lymphocytes
+GSE343459,Skin - Sun Exposed (Lower leg),CENT_NONPAR,13,Cells - Cultured fibroblasts
+GSE329052,Colon - Transverse,CENT_NONPAR,1,Colon - Transverse
+GSE346894,Pancreas,CENT_NONPAR,9,Testis
+GSE341690,Brain - Cortex,CENT_NONPAR,1,Brain - Cerebellar Hemisphere
+GSE331309,Colon - Transverse,CENT_NONPAR,1,Colon - Transverse
+GSE330696,Colon - Transverse,CENT_NONPAR,1,Colon - Transverse
+GSE335920,Brain - Cortex,CENT_NONPAR,1,Brain - Frontal Cortex (BA9)
+GSE313206,Brain - Cortex,CENT_NONPAR,1,Brain - Cerebellar Hemisphere
+GSE303837,Lung,CENT_NONPAR,9,Cells - Cultured fibroblasts
+GSE338895,Colon - Transverse,CENT_NONPAR,20,Pancreas
+GSE305512,Brain - Cortex,CENT_NONPAR,1,Brain - Cerebellar Hemisphere
+GSE305319,Brain - Cortex,CENT_NONPAR,18,Cells - Cultured fibroblasts
+GSE301846,Liver,CENT_NONPAR,18,Esophagus - Mucosa
+GSE304208,Lung,CENT_NONPAR,8,Esophagus - Mucosa
+GSE304206,Lung,CENT_NONPAR,7,Esophagus - Mucosa
+GSE304203,Lung,CENT_NONPAR,9,Esophagus - Mucosa
+GSE304202,Lung,CENT_NONPAR,9,Esophagus - Mucosa
+GSE277920,Kidney - Cortex,CENT_NONPAR,30,Cells - Cultured fibroblasts
+GSE316654,Colon - Transverse,CENT_NONPAR,1,Colon - Transverse
+GSE336415,Colon - Transverse,CENT_NONPAR,1,Colon - Transverse
+GSE335053,Stomach,CENT_NONPAR,2,Colon - Transverse
+GSE323363,Pancreas,CENT_NONPAR,35,Cells - Cultured fibroblasts
+GSE311632,Colon - Transverse,CENT_NONPAR,22,Whole Blood
+GSE292601,Colon - Transverse,CENT_NONPAR,1,Colon - Transverse
+GSE314639,Liver,CENT_NONPAR,2,Cells - Cultured fibroblasts
+GSE314657,Brain - Cortex,CENT_NONPAR,6,Cells - Cultured fibroblasts
+GSE335562,Prostate,CENT_NONPAR,39,Whole Blood
+GSE310948,Prostate,CENT_NONPAR,4,Cells - Cultured fibroblasts
+GSE331395,Brain - Cortex,CENT_NONPAR,3,Cells - Cultured fibroblasts
+GSE334500,Heart - Left Ventricle,CENT_NONPAR,1,Heart - Atrial Appendage
+GSE312713,Liver,CENT_NONPAR,9,Pancreas
+GSE312711,Liver,CENT_NONPAR,20,Esophagus - Mucosa
+GSE312708,Liver,CENT_NONPAR,7,Cells - Cultured fibroblasts
+GSE298420,Liver,CENT_NONPAR,39,Esophagus - Mucosa
+GSE298419,Liver,CENT_NONPAR,37,Esophagus - Mucosa
+GSE261998,Liver,CENT_NONPAR,37,Esophagus - Mucosa
+GSE298933,Brain - Cortex,CENT_NONPAR,3,Small Intestine - Terminal Ileum
+GSE248031,Pancreas,CENT_NONPAR,35,Cells - Cultured fibroblasts
+GSE330358,Prostate,CENT_NONPAR,3,Cells - Cultured fibroblasts
+GSE319208,Colon - Transverse,CENT_NONPAR,12,Cells - Cultured fibroblasts
+GSE309917,Colon - Transverse,CENT_NONPAR,1,Small Intestine - Terminal Ileum
+GSE290744,Lung,CENT_NONPAR,11,Cells - Cultured fibroblasts
+GSE276230,Liver,CENT_NONPAR,30,Minor Salivary Gland
+GSE289072,Colon - Transverse,CENT_NONPAR,1,Colon - Transverse
+GSE331048,Prostate,CENT_NONPAR,3,Cells - Cultured fibroblasts
+GSE312700,Lung,CENT_NONPAR,10,Minor Salivary Gland
+GSE303838,Brain - Cortex,CENT_NONPAR,3,Cells - Cultured fibroblasts
+GSE320151,Colon - Transverse,CENT_NONPAR,1,Small Intestine - Terminal Ileum
+GSE316631,Pancreas,CENT_NONPAR,3,Whole Blood
+GSE309669,Pancreas,CENT_NONPAR,8,Minor Salivary Gland
+GSE319859,Brain - Cortex,CENT_NONPAR,3,Cells - Cultured fibroblasts
+GSE278562,Kidney - Cortex,CENT_NONPAR,3,Cells - EBV-transformed lymphocytes
+GSE269571,Heart - Left Ventricle,CENT_NONPAR,25,Cells - Cultured fibroblasts
+GSE229907,Colon - Transverse,CENT_NONPAR,8,Pancreas
+GSE319878,Colon - Transverse,CENT_NONPAR,1,Colon - Transverse
+GSE319169,Colon - Transverse,CENT_NONPAR,1,Colon - Transverse
+GSE288724,Colon - Transverse,CENT_NONPAR,1,Colon - Transverse
+GSE299913,Brain - Cortex,CENT_NONPAR,1,Brain - Cerebellar Hemisphere
+GSE325553,Uterus,CENT_NONPAR,2,Cells - Cultured fibroblasts
+GSE322610,Liver,CENT_NONPAR,1,Liver
+GSE304936,Kidney - Cortex,CENT_NONPAR,43,Cells - Cultured fibroblasts
+GSE282444,Colon - Transverse,CENT_NONPAR,1,Colon - Transverse
+GSE306080,Lung,CENT_NONPAR,1,Lung
+GSE302756,Kidney - Cortex,CENT_NONPAR,2,Cells - Cultured fibroblasts
+GSE292624,Brain - Cortex,CENT_NONPAR,1,Brain - Cerebellar Hemisphere
+GSE316426,Pancreas,CENT_NONPAR,39,Cells - Cultured fibroblasts
+GSE298876,Breast - Mammary Tissue,CENT_NONPAR,20,Esophagus - Mucosa
+GSE307568,Uterus,CENT_NONPAR,14,Cells - Cultured fibroblasts
+GSE286416,Heart - Left Ventricle,CENT_NONPAR,5,Pancreas
+GSE263840,Heart - Left Ventricle,CENT_NONPAR,1,Heart - Atrial Appendage
+GSE299477,Colon - Transverse,CENT_NONPAR,1,Colon - Transverse
+GSE303090,Liver,CENT_NONPAR,4,Small Intestine - Terminal Ileum
+GSE317332,Colon - Transverse,CENT_NONPAR,5,Cells - Cultured fibroblasts
+GSE316780,Liver,CENT_NONPAR,19,Esophagus - Mucosa
+GSE302327,Colon - Transverse,CENT_NONPAR,1,Small Intestine - Terminal Ileum
+GSE310408,Colon - Transverse,CENT_NONPAR,1,Colon - Transverse
+GSE315569,Colon - Transverse,CENT_NONPAR,12,Cells - Cultured fibroblasts
+GSE285905,Colon - Transverse,CENT_NONPAR,4,Cells - Cultured fibroblasts
+GSE303677,Colon - Transverse,CENT_NONPAR,1,Small Intestine - Terminal Ileum
+GSE310492,Colon - Transverse,CENT_NONPAR,1,Colon - Transverse
+GSE230046,Liver,CENT_NONPAR,22,Cells - EBV-transformed lymphocytes
+GSE284761,Colon - Transverse,CENT_NONPAR,1,Colon - Transverse
+GSE284755,Colon - Transverse,CENT_NONPAR,1,Colon - Transverse
+GSE309755,Brain - Cortex,CENT_NONPAR,1,Brain - Cerebellar Hemisphere
+GSE288008,Kidney - Cortex,CENT_NONPAR,10,Whole Blood
+GSE311760,Colon - Transverse,CENT_NONPAR,10,Pancreas
+GSE306057,Prostate,CENT_NONPAR,3,Cells - EBV-transformed lymphocytes
+GSE274325,Colon - Transverse,CENT_NONPAR,21,Whole Blood
+GSE310845,Colon - Transverse,CENT_NONPAR,1,Colon - Transverse
+GSE309795,Heart - Left Ventricle,CENT_NONPAR,18,Cells - Cultured fibroblasts
+GSE300073,Colon - Transverse,CENT_NONPAR,1,Small Intestine - Terminal Ileum
+GSE298600,Colon - Transverse,CENT_NONPAR,1,Colon - Transverse
+GSE291524,Colon - Transverse,CENT_NONPAR,21,Whole Blood
+GSE306909,Colon - Transverse,CENT_NONPAR,6,Cells - Cultured fibroblasts
+GSE287262,Lung,CENT_NONPAR,10,Vagina
+GSE280918,Breast - Mammary Tissue,CENT_NONPAR,4,Cells - Cultured fibroblasts
+GSE217044,Colon - Transverse,CENT_NONPAR,2,Cells - Cultured fibroblasts
+GSE248844,Prostate,CENT_NONPAR,18,Cells - Cultured fibroblasts
+GSE297090,Colon - Transverse,CENT_NONPAR,1,Small Intestine - Terminal Ileum
+GSE285503,Colon - Transverse,CENT_NONPAR,1,Colon - Transverse
+GSE216198,Esophagus - Mucosa,CENT_NONPAR,4,Stomach
+GSE294532,Prostate,CENT_NONPAR,1,Prostate
+GSE286890,Breast - Mammary Tissue,CENT_NONPAR,6,Cells - Cultured fibroblasts
+GSE186249,Liver,CENT_NONPAR,1,Liver
+GSE309532,Colon - Transverse,CENT_NONPAR,15,Cells - Cultured fibroblasts
+GSE292512,Pancreas,CENT_NONPAR,18,Minor Salivary Gland
+GSE288179,Colon - Transverse,CENT_NONPAR,3,Cells - Cultured fibroblasts
+GSE308083,Colon - Transverse,CENT_NONPAR,4,Cells - EBV-transformed lymphocytes
+GSE306982,Colon - Transverse,CENT_NONPAR,1,Small Intestine - Terminal Ileum
+GSE266030,Brain - Cortex,CENT_NONPAR,3,Cells - Cultured fibroblasts
+GSE214340,Brain - Cortex,CENT_NONPAR,6,Cells - Cultured fibroblasts
+GSE284019,Colon - Transverse,CENT_NONPAR,10,Cells - EBV-transformed lymphocytes
+GSE266551,Stomach,CENT_NONPAR,9,Colon - Transverse
+GSE276170,Colon - Transverse,CENT_NONPAR,1,Colon - Transverse
+GSE282649,Liver,CENT_NONPAR,36,Cells - Cultured fibroblasts
+GSE307124,Brain - Cortex,CENT_NONPAR,1,Brain - Frontal Cortex (BA9)
+GSE300013,Kidney - Cortex,CENT_NONPAR,5,Cells - Cultured fibroblasts
+GSE305958,Liver,CENT_NONPAR,38,Cells - Cultured fibroblasts
+GSE212099,Liver,CENT_NONPAR,1,Liver
+GSE305923,Liver,CENT_NONPAR,10,Cells - Cultured fibroblasts
+GSE301725,Brain - Cortex,CENT_NONPAR,1,Brain - Frontal Cortex (BA9)
+GSE300839,Breast - Mammary Tissue,CENT_NONPAR,8,Cells - Cultured fibroblasts
+GSE236379,Kidney - Cortex,CENT_NONPAR,6,Cells - Cultured fibroblasts
+GSE304110,Colon - Transverse,CENT_NONPAR,6,Cells - Cultured fibroblasts
+GSE303741,Uterus,CENT_NONPAR,3,Cells - Cultured fibroblasts
+GSE265851,Lung,CENT_NONPAR,4,Whole Blood
+GSE246793,Breast - Mammary Tissue,CENT_NONPAR,11,Cells - Cultured fibroblasts
+GSE288661,Colon - Transverse,CENT_NONPAR,4,Cells - Cultured fibroblasts
+GSE281080,Kidney - Cortex,CENT_NONPAR,14,Uterus
+GSE287183,Prostate,CENT_NONPAR,3,Cells - Cultured fibroblasts
+GSE298576,Liver,CENT_NONPAR,1,Liver
+GSE271315,Kidney - Cortex,CENT_NONPAR,1,Kidney - Medulla
+GSE208684,Colon - Transverse,CENT_NONPAR,1,Colon - Transverse
+GSE274584,Lung,CENT_NONPAR,29,Cells - EBV-transformed lymphocytes
+GSE271749,Breast - Mammary Tissue,CENT_NONPAR,10,Cells - Cultured fibroblasts
+GSE269871,Skin - Sun Exposed (Lower leg),CENT_NONPAR,19,Whole Blood
+GSE296672,Kidney - Cortex,CENT_NONPAR,8,Whole Blood
+GSE280257,Stomach,CENT_NONPAR,8,Whole Blood
+GSE289912,Brain - Cortex,CENT_NONPAR,1,Brain - Cerebellar Hemisphere
+GSE298818,Breast - Mammary Tissue,CENT_NONPAR,6,Vagina
+GSE269369,Colon - Transverse,CENT_NONPAR,4,Esophagus - Mucosa
+GSE288165,Brain - Cortex,CENT_NONPAR,2,Cells - Cultured fibroblasts
+GSE285436,Liver,CENT_NONPAR,1,Liver
+GSE248110,Liver,CENT_NONPAR,1,Liver
+GSE252464,Liver,CENT_NONPAR,2,Pancreas
+GSE252055,Kidney - Cortex,CENT_NONPAR,1,Kidney - Medulla
+GSE291768,Brain - Cortex,CENT_NONPAR,32,Cells - Cultured fibroblasts
+GSE293756,Pancreas,CENT_NONPAR,35,Cells - Cultured fibroblasts
+GSE287925,Prostate,CENT_NONPAR,3,Cells - Cultured fibroblasts
+GSE278954,Liver,SALL_PARONLY,36,Cells - Cultured fibroblasts
+GSE347768,Colon - Transverse,SALL_PARONLY,16,Cells - EBV-transformed lymphocytes
+GSE343459,Skin - Sun Exposed (Lower leg),SALL_PARONLY,23,Cells - Cultured fibroblasts
+GSE329052,Colon - Transverse,SALL_PARONLY,1,Colon - Transverse
+GSE346894,Pancreas,SALL_PARONLY,45,Brain - Cerebellum
+GSE341690,Brain - Cortex,SALL_PARONLY,1,Brain - Amygdala
+GSE331309,Colon - Transverse,SALL_PARONLY,1,Colon - Transverse
+GSE330696,Colon - Transverse,SALL_PARONLY,1,Colon - Transverse
+GSE335920,Brain - Cortex,SALL_PARONLY,1,Brain - Hypothalamus
+GSE313206,Brain - Cortex,SALL_PARONLY,7,Colon - Sigmoid
+GSE303837,Lung,SALL_PARONLY,6,Cells - Cultured fibroblasts
+GSE338895,Colon - Transverse,SALL_PARONLY,20,Pancreas
+GSE305512,Brain - Cortex,SALL_PARONLY,1,Brain - Hypothalamus
+GSE305319,Brain - Cortex,SALL_PARONLY,21,Cells - Cultured fibroblasts
+GSE301846,Liver,SALL_PARONLY,36,Minor Salivary Gland
+GSE304208,Lung,SALL_PARONLY,7,Esophagus - Mucosa
+GSE304206,Lung,SALL_PARONLY,6,Esophagus - Mucosa
+GSE304203,Lung,SALL_PARONLY,6,Esophagus - Mucosa
+GSE304202,Lung,SALL_PARONLY,7,Esophagus - Mucosa
+GSE277920,Kidney - Cortex,SALL_PARONLY,28,Cervix - Endocervix
+GSE316654,Colon - Transverse,SALL_PARONLY,1,Small Intestine - Terminal Ileum
+GSE336415,Colon - Transverse,SALL_PARONLY,2,Cells - Cultured fibroblasts
+GSE335053,Stomach,SALL_PARONLY,1,Stomach
+GSE323363,Pancreas,SALL_PARONLY,17,Breast - Mammary Tissue
+GSE311632,Colon - Transverse,SALL_PARONLY,1,Colon - Transverse
+GSE292601,Colon - Transverse,SALL_PARONLY,1,Colon - Transverse
+GSE314639,Liver,SALL_PARONLY,5,Cells - Cultured fibroblasts
+GSE314657,Brain - Cortex,SALL_PARONLY,19,Cells - Cultured fibroblasts
+GSE335562,Prostate,SALL_PARONLY,2,Cells - Cultured fibroblasts
+GSE310948,Prostate,SALL_PARONLY,2,Cells - Cultured fibroblasts
+GSE331395,Brain - Cortex,SALL_PARONLY,3,Cells - Cultured fibroblasts
+GSE334500,Heart - Left Ventricle,SALL_PARONLY,1,Heart - Left Ventricle
+GSE312713,Liver,SALL_PARONLY,39,Stomach
+GSE312711,Liver,SALL_PARONLY,41,Esophagus - Mucosa
+GSE312708,Liver,SALL_PARONLY,41,Cells - Cultured fibroblasts
+GSE298420,Liver,SALL_PARONLY,40,Minor Salivary Gland
+GSE298419,Liver,SALL_PARONLY,40,Esophagus - Mucosa
+GSE261998,Liver,SALL_PARONLY,41,Minor Salivary Gland
+GSE298933,Brain - Cortex,SALL_PARONLY,27,Colon - Transverse
+GSE248031,Pancreas,SALL_PARONLY,31,Breast - Mammary Tissue
+GSE330358,Prostate,SALL_PARONLY,1,Prostate
+GSE319208,Colon - Transverse,SALL_PARONLY,18,Cells - Cultured fibroblasts
+GSE309917,Colon - Transverse,SALL_PARONLY,1,Small Intestine - Terminal Ileum
+GSE290744,Lung,SALL_PARONLY,10,Cells - Cultured fibroblasts
+GSE276230,Liver,SALL_PARONLY,36,Stomach
+GSE289072,Colon - Transverse,SALL_PARONLY,1,Colon - Transverse
+GSE331048,Prostate,SALL_PARONLY,3,Cells - Cultured fibroblasts
+GSE312700,Lung,SALL_PARONLY,2,Minor Salivary Gland
+GSE303838,Brain - Cortex,SALL_PARONLY,17,Cells - Cultured fibroblasts
+GSE320151,Colon - Transverse,SALL_PARONLY,1,Small Intestine - Terminal Ileum
+GSE316631,Pancreas,SALL_PARONLY,6,Liver
+GSE309669,Pancreas,SALL_PARONLY,8,Minor Salivary Gland
+GSE319859,Brain - Cortex,SALL_PARONLY,9,Cells - Cultured fibroblasts
+GSE278562,Kidney - Cortex,SALL_PARONLY,21,Cells - Cultured fibroblasts
+GSE269571,Heart - Left Ventricle,SALL_PARONLY,8,Uterus
+GSE229907,Colon - Transverse,SALL_PARONLY,3,Minor Salivary Gland
+GSE319878,Colon - Transverse,SALL_PARONLY,1,Colon - Transverse
+GSE319169,Colon - Transverse,SALL_PARONLY,1,Colon - Transverse
+GSE288724,Colon - Transverse,SALL_PARONLY,1,Colon - Transverse
+GSE299913,Brain - Cortex,SALL_PARONLY,1,Brain - Substantia nigra
+GSE325553,Uterus,SALL_PARONLY,2,Cells - Cultured fibroblasts
+GSE322610,Liver,SALL_PARONLY,1,Liver
+GSE304936,Kidney - Cortex,SALL_PARONLY,37,Cells - Cultured fibroblasts
+GSE282444,Colon - Transverse,SALL_PARONLY,1,Colon - Transverse
+GSE306080,Lung,SALL_PARONLY,1,Lung
+GSE302756,Kidney - Cortex,SALL_PARONLY,1,Kidney - Medulla
+GSE292624,Brain - Cortex,SALL_PARONLY,1,Brain - Amygdala
+GSE316426,Pancreas,SALL_PARONLY,34,Cells - Cultured fibroblasts
+GSE298876,Breast - Mammary Tissue,SALL_PARONLY,2,Cells - Cultured fibroblasts
+GSE307568,Uterus,SALL_PARONLY,9,Breast - Mammary Tissue
+GSE286416,Heart - Left Ventricle,SALL_PARONLY,5,Pancreas
+GSE263840,Heart - Left Ventricle,SALL_PARONLY,1,Heart - Atrial Appendage
+GSE299477,Colon - Transverse,SALL_PARONLY,1,Colon - Transverse
+GSE303090,Liver,SALL_PARONLY,8,Small Intestine - Terminal Ileum
+GSE317332,Colon - Transverse,SALL_PARONLY,6,Cells - Cultured fibroblasts
+GSE316780,Liver,SALL_PARONLY,37,Stomach
+GSE302327,Colon - Transverse,SALL_PARONLY,1,Small Intestine - Terminal Ileum
+GSE310408,Colon - Transverse,SALL_PARONLY,1,Small Intestine - Terminal Ileum
+GSE315569,Colon - Transverse,SALL_PARONLY,10,Breast - Mammary Tissue
+GSE285905,Colon - Transverse,SALL_PARONLY,1,Small Intestine - Terminal Ileum
+GSE303677,Colon - Transverse,SALL_PARONLY,1,Small Intestine - Terminal Ileum
+GSE310492,Colon - Transverse,SALL_PARONLY,1,Colon - Transverse
+GSE230046,Liver,SALL_PARONLY,35,Cells - EBV-transformed lymphocytes
+GSE284761,Colon - Transverse,SALL_PARONLY,1,Small Intestine - Terminal Ileum
+GSE284755,Colon - Transverse,SALL_PARONLY,1,Colon - Transverse
+GSE309755,Brain - Cortex,SALL_PARONLY,7,Colon - Sigmoid
+GSE288008,Kidney - Cortex,SALL_PARONLY,1,Kidney - Cortex
+GSE311760,Colon - Transverse,SALL_PARONLY,1,Colon - Transverse
+GSE306057,Prostate,SALL_PARONLY,4,Cells - Cultured fibroblasts
+GSE274325,Colon - Transverse,SALL_PARONLY,1,Colon - Transverse
+GSE310845,Colon - Transverse,SALL_PARONLY,1,Colon - Transverse
+GSE309795,Heart - Left Ventricle,SALL_PARONLY,19,Cells - Cultured fibroblasts
+GSE300073,Colon - Transverse,SALL_PARONLY,1,Small Intestine - Terminal Ileum
+GSE298600,Colon - Transverse,SALL_PARONLY,2,Stomach
+GSE291524,Colon - Transverse,SALL_PARONLY,1,Colon - Transverse
+GSE306909,Colon - Transverse,SALL_PARONLY,5,Breast - Mammary Tissue
+GSE287262,Lung,SALL_PARONLY,2,Colon - Transverse
+GSE280918,Breast - Mammary Tissue,SALL_PARONLY,2,Cells - Cultured fibroblasts
+GSE217044,Colon - Transverse,SALL_PARONLY,1,Colon - Transverse
+GSE248844,Prostate,SALL_PARONLY,21,Cells - Cultured fibroblasts
+GSE297090,Colon - Transverse,SALL_PARONLY,1,Small Intestine - Terminal Ileum
+GSE285503,Colon - Transverse,SALL_PARONLY,1,Colon - Transverse
+GSE216198,Esophagus - Mucosa,SALL_PARONLY,6,Stomach
+GSE294532,Prostate,SALL_PARONLY,1,Prostate
+GSE286890,Breast - Mammary Tissue,SALL_PARONLY,2,Cells - Cultured fibroblasts
+GSE186249,Liver,SALL_PARONLY,1,Liver
+GSE309532,Colon - Transverse,SALL_PARONLY,16,Cells - Cultured fibroblasts
+GSE292512,Pancreas,SALL_PARONLY,8,Stomach
+GSE288179,Colon - Transverse,SALL_PARONLY,1,Colon - Transverse
+GSE308083,Colon - Transverse,SALL_PARONLY,7,Cells - Cultured fibroblasts
+GSE306982,Colon - Transverse,SALL_PARONLY,1,Small Intestine - Terminal Ileum
+GSE266030,Brain - Cortex,SALL_PARONLY,17,Cells - Cultured fibroblasts
+GSE214340,Brain - Cortex,SALL_PARONLY,24,Cells - Cultured fibroblasts
+GSE284019,Colon - Transverse,SALL_PARONLY,19,Cells - Cultured fibroblasts
+GSE266551,Stomach,SALL_PARONLY,3,Small Intestine - Terminal Ileum
+GSE276170,Colon - Transverse,SALL_PARONLY,1,Colon - Transverse
+GSE282649,Liver,SALL_PARONLY,42,Bladder
+GSE307124,Brain - Cortex,SALL_PARONLY,1,Brain - Hypothalamus
+GSE300013,Kidney - Cortex,SALL_PARONLY,10,Breast - Mammary Tissue
+GSE305958,Liver,SALL_PARONLY,41,Cells - Cultured fibroblasts
+GSE212099,Liver,SALL_PARONLY,19,Cells - Cultured fibroblasts
+GSE305923,Liver,SALL_PARONLY,29,Cells - Cultured fibroblasts
+GSE301725,Brain - Cortex,SALL_PARONLY,1,Brain - Hypothalamus
+GSE300839,Breast - Mammary Tissue,SALL_PARONLY,1,Breast - Mammary Tissue
+GSE236379,Kidney - Cortex,SALL_PARONLY,11,Cells - Cultured fibroblasts
+GSE304110,Colon - Transverse,SALL_PARONLY,5,Cells - Cultured fibroblasts
+GSE303741,Uterus,SALL_PARONLY,2,Cells - Cultured fibroblasts
+GSE265851,Lung,SALL_PARONLY,1,Lung
+GSE246793,Breast - Mammary Tissue,SALL_PARONLY,2,Cells - Cultured fibroblasts
+GSE288661,Colon - Transverse,SALL_PARONLY,10,Stomach
+GSE281080,Kidney - Cortex,SALL_PARONLY,18,Cervix - Endocervix
+GSE287183,Prostate,SALL_PARONLY,1,Prostate
+GSE298576,Liver,SALL_PARONLY,1,Liver
+GSE271315,Kidney - Cortex,SALL_PARONLY,1,Kidney - Medulla
+GSE208684,Colon - Transverse,SALL_PARONLY,1,Small Intestine - Terminal Ileum
+GSE274584,Lung,SALL_PARONLY,22,Cells - EBV-transformed lymphocytes
+GSE271749,Breast - Mammary Tissue,SALL_PARONLY,7,Cells - Cultured fibroblasts
+GSE269871,Skin - Sun Exposed (Lower leg),SALL_PARONLY,1,Skin - Not Sun Exposed (Suprapubic)
+GSE296672,Kidney - Cortex,SALL_PARONLY,29,Cells - Cultured fibroblasts
+GSE280257,Stomach,SALL_PARONLY,1,Stomach
+GSE289912,Brain - Cortex,SALL_PARONLY,1,Brain - Hypothalamus
+GSE298818,Breast - Mammary Tissue,SALL_PARONLY,6,Esophagus - Mucosa
+GSE269369,Colon - Transverse,SALL_PARONLY,1,Colon - Transverse
+GSE288165,Brain - Cortex,SALL_PARONLY,21,Colon - Sigmoid
+GSE285436,Liver,SALL_PARONLY,2,Small Intestine - Terminal Ileum
+GSE248110,Liver,SALL_PARONLY,20,Small Intestine - Terminal Ileum
+GSE252464,Liver,SALL_PARONLY,30,Colon - Transverse
+GSE252055,Kidney - Cortex,SALL_PARONLY,1,Kidney - Medulla
+GSE291768,Brain - Cortex,SALL_PARONLY,26,Cells - Cultured fibroblasts
+GSE293756,Pancreas,SALL_PARONLY,31,Cells - Cultured fibroblasts
+GSE287925,Prostate,SALL_PARONLY,1,Prostate
+GSE278954,Liver,CENT_PARONLY,14,Cells - Cultured fibroblasts
+GSE347768,Colon - Transverse,CENT_PARONLY,7,Cells - EBV-transformed lymphocytes
+GSE343459,Skin - Sun Exposed (Lower leg),CENT_PARONLY,13,Cells - Cultured fibroblasts
+GSE329052,Colon - Transverse,CENT_PARONLY,1,Colon - Transverse
+GSE346894,Pancreas,CENT_PARONLY,3,Whole Blood
+GSE341690,Brain - Cortex,CENT_PARONLY,1,Brain - Frontal Cortex (BA9)
+GSE331309,Colon - Transverse,CENT_PARONLY,1,Colon - Transverse
+GSE330696,Colon - Transverse,CENT_PARONLY,1,Colon - Transverse
+GSE335920,Brain - Cortex,CENT_PARONLY,1,Brain - Cerebellar Hemisphere
+GSE313206,Brain - Cortex,CENT_PARONLY,1,Brain - Cerebellar Hemisphere
+GSE303837,Lung,CENT_PARONLY,9,Cells - Cultured fibroblasts
+GSE338895,Colon - Transverse,CENT_PARONLY,20,Pancreas
+GSE305512,Brain - Cortex,CENT_PARONLY,1,Brain - Cerebellar Hemisphere
+GSE305319,Brain - Cortex,CENT_PARONLY,23,Cells - Cultured fibroblasts
+GSE301846,Liver,CENT_PARONLY,19,Minor Salivary Gland
+GSE304208,Lung,CENT_PARONLY,7,Esophagus - Mucosa
+GSE304206,Lung,CENT_PARONLY,6,Esophagus - Mucosa
+GSE304203,Lung,CENT_PARONLY,8,Esophagus - Mucosa
+GSE304202,Lung,CENT_PARONLY,8,Esophagus - Mucosa
+GSE277920,Kidney - Cortex,CENT_PARONLY,27,Cells - Cultured fibroblasts
+GSE316654,Colon - Transverse,CENT_PARONLY,1,Colon - Transverse
+GSE336415,Colon - Transverse,CENT_PARONLY,1,Colon - Transverse
+GSE335053,Stomach,CENT_PARONLY,2,Colon - Transverse
+GSE323363,Pancreas,CENT_PARONLY,19,Pituitary
+GSE311632,Colon - Transverse,CENT_PARONLY,16,Whole Blood
+GSE292601,Colon - Transverse,CENT_PARONLY,1,Colon - Transverse
+GSE314639,Liver,CENT_PARONLY,1,Liver
+GSE314657,Brain - Cortex,CENT_PARONLY,9,Cells - Cultured fibroblasts
+GSE335562,Prostate,CENT_PARONLY,27,Whole Blood
+GSE310948,Prostate,CENT_PARONLY,3,Cells - EBV-transformed lymphocytes
+GSE331395,Brain - Cortex,CENT_PARONLY,4,Cells - EBV-transformed lymphocytes
+GSE334500,Heart - Left Ventricle,CENT_PARONLY,1,Heart - Atrial Appendage
+GSE312713,Liver,CENT_PARONLY,15,Colon - Transverse
+GSE312711,Liver,CENT_PARONLY,22,Esophagus - Mucosa
+GSE312708,Liver,CENT_PARONLY,17,Cells - Cultured fibroblasts
+GSE298420,Liver,CENT_PARONLY,36,Esophagus - Mucosa
+GSE298419,Liver,CENT_PARONLY,35,Esophagus - Mucosa
+GSE261998,Liver,CENT_PARONLY,32,Esophagus - Mucosa
+GSE298933,Brain - Cortex,CENT_PARONLY,3,Small Intestine - Terminal Ileum
+GSE248031,Pancreas,CENT_PARONLY,33,Cells - Cultured fibroblasts
+GSE330358,Prostate,CENT_PARONLY,3,Cells - EBV-transformed lymphocytes
+GSE319208,Colon - Transverse,CENT_PARONLY,15,Cells - Cultured fibroblasts
+GSE309917,Colon - Transverse,CENT_PARONLY,1,Small Intestine - Terminal Ileum
+GSE290744,Lung,CENT_PARONLY,9,Cells - Cultured fibroblasts
+GSE276230,Liver,CENT_PARONLY,19,Colon - Transverse
+GSE289072,Colon - Transverse,CENT_PARONLY,1,Colon - Transverse
+GSE331048,Prostate,CENT_PARONLY,3,Cells - EBV-transformed lymphocytes
+GSE312700,Lung,CENT_PARONLY,3,Minor Salivary Gland
+GSE303838,Brain - Cortex,CENT_PARONLY,3,Cells - EBV-transformed lymphocytes
+GSE320151,Colon - Transverse,CENT_PARONLY,1,Small Intestine - Terminal Ileum
+GSE316631,Pancreas,CENT_PARONLY,3,Whole Blood
+GSE309669,Pancreas,CENT_PARONLY,6,Minor Salivary Gland
+GSE319859,Brain - Cortex,CENT_PARONLY,3,Cells - Cultured fibroblasts
+GSE278562,Kidney - Cortex,CENT_PARONLY,3,Cells - EBV-transformed lymphocytes
+GSE269571,Heart - Left Ventricle,CENT_PARONLY,4,Cells - Cultured fibroblasts
+GSE229907,Colon - Transverse,CENT_PARONLY,6,Pancreas
+GSE319878,Colon - Transverse,CENT_PARONLY,1,Colon - Transverse
+GSE319169,Colon - Transverse,CENT_PARONLY,1,Colon - Transverse
+GSE288724,Colon - Transverse,CENT_PARONLY,1,Colon - Transverse
+GSE299913,Brain - Cortex,CENT_PARONLY,1,Brain - Frontal Cortex (BA9)
+GSE325553,Uterus,CENT_PARONLY,2,Cells - Cultured fibroblasts
+GSE322610,Liver,CENT_PARONLY,1,Liver
+GSE304936,Kidney - Cortex,CENT_PARONLY,43,Cells - Cultured fibroblasts
+GSE282444,Colon - Transverse,CENT_PARONLY,1,Colon - Transverse
+GSE306080,Lung,CENT_PARONLY,1,Lung
+GSE302756,Kidney - Cortex,CENT_PARONLY,1,Kidney - Medulla
+GSE292624,Brain - Cortex,CENT_PARONLY,1,Brain - Frontal Cortex (BA9)
+GSE316426,Pancreas,CENT_PARONLY,36,Cells - Cultured fibroblasts
+GSE298876,Breast - Mammary Tissue,CENT_PARONLY,10,Esophagus - Mucosa
+GSE307568,Uterus,CENT_PARONLY,19,Minor Salivary Gland
+GSE286416,Heart - Left Ventricle,CENT_PARONLY,5,Pancreas
+GSE263840,Heart - Left Ventricle,CENT_PARONLY,1,Heart - Atrial Appendage
+GSE299477,Colon - Transverse,CENT_PARONLY,1,Colon - Transverse
+GSE303090,Liver,CENT_PARONLY,3,Small Intestine - Terminal Ileum
+GSE317332,Colon - Transverse,CENT_PARONLY,4,Cells - Cultured fibroblasts
+GSE316780,Liver,CENT_PARONLY,19,Colon - Transverse
+GSE302327,Colon - Transverse,CENT_PARONLY,1,Small Intestine - Terminal Ileum
+GSE310408,Colon - Transverse,CENT_PARONLY,1,Colon - Transverse
+GSE315569,Colon - Transverse,CENT_PARONLY,7,Esophagus - Mucosa
+GSE285905,Colon - Transverse,CENT_PARONLY,1,Small Intestine - Terminal Ileum
+GSE303677,Colon - Transverse,CENT_PARONLY,1,Small Intestine - Terminal Ileum
+GSE310492,Colon - Transverse,CENT_PARONLY,1,Colon - Transverse
+GSE230046,Liver,CENT_PARONLY,6,Cells - EBV-transformed lymphocytes
+GSE284761,Colon - Transverse,CENT_PARONLY,1,Colon - Transverse
+GSE284755,Colon - Transverse,CENT_PARONLY,1,Colon - Transverse
+GSE309755,Brain - Cortex,CENT_PARONLY,1,Brain - Cerebellar Hemisphere
+GSE288008,Kidney - Cortex,CENT_PARONLY,9,Whole Blood
+GSE311760,Colon - Transverse,CENT_PARONLY,4,Pancreas
+GSE306057,Prostate,CENT_PARONLY,3,Cells - EBV-transformed lymphocytes
+GSE274325,Colon - Transverse,CENT_PARONLY,10,Pancreas
+GSE310845,Colon - Transverse,CENT_PARONLY,1,Colon - Transverse
+GSE309795,Heart - Left Ventricle,CENT_PARONLY,22,Cells - Cultured fibroblasts
+GSE300073,Colon - Transverse,CENT_PARONLY,1,Small Intestine - Terminal Ileum
+GSE298600,Colon - Transverse,CENT_PARONLY,1,Colon - Transverse
+GSE291524,Colon - Transverse,CENT_PARONLY,10,Whole Blood
+GSE306909,Colon - Transverse,CENT_PARONLY,4,Cells - EBV-transformed lymphocytes
+GSE287262,Lung,CENT_PARONLY,9,Small Intestine - Terminal Ileum
+GSE280918,Breast - Mammary Tissue,CENT_PARONLY,6,Cells - Cultured fibroblasts
+GSE217044,Colon - Transverse,CENT_PARONLY,1,Colon - Transverse
+GSE248844,Prostate,CENT_PARONLY,29,Cells - Cultured fibroblasts
+GSE297090,Colon - Transverse,CENT_PARONLY,1,Small Intestine - Terminal Ileum
+GSE285503,Colon - Transverse,CENT_PARONLY,1,Colon - Transverse
+GSE216198,Esophagus - Mucosa,CENT_PARONLY,4,Stomach
+GSE294532,Prostate,CENT_PARONLY,1,Prostate
+GSE286890,Breast - Mammary Tissue,CENT_PARONLY,7,Cells - EBV-transformed lymphocytes
+GSE186249,Liver,CENT_PARONLY,1,Liver
+GSE309532,Colon - Transverse,CENT_PARONLY,10,Cells - EBV-transformed lymphocytes
+GSE292512,Pancreas,CENT_PARONLY,15,Colon - Transverse
+GSE288179,Colon - Transverse,CENT_PARONLY,1,Colon - Transverse
+GSE308083,Colon - Transverse,CENT_PARONLY,4,Cells - EBV-transformed lymphocytes
+GSE306982,Colon - Transverse,CENT_PARONLY,1,Small Intestine - Terminal Ileum
+GSE266030,Brain - Cortex,CENT_PARONLY,5,Cells - Cultured fibroblasts
+GSE214340,Brain - Cortex,CENT_PARONLY,6,Cells - Cultured fibroblasts
+GSE284019,Colon - Transverse,CENT_PARONLY,10,Cells - EBV-transformed lymphocytes
+GSE266551,Stomach,CENT_PARONLY,6,Small Intestine - Terminal Ileum
+GSE276170,Colon - Transverse,CENT_PARONLY,1,Colon - Transverse
+GSE282649,Liver,CENT_PARONLY,31,Cells - Cultured fibroblasts
+GSE307124,Brain - Cortex,CENT_PARONLY,1,Brain - Cerebellar Hemisphere
+GSE300013,Kidney - Cortex,CENT_PARONLY,3,Cells - Cultured fibroblasts
+GSE305958,Liver,CENT_PARONLY,35,Cells - Cultured fibroblasts
+GSE212099,Liver,CENT_PARONLY,1,Liver
+GSE305923,Liver,CENT_PARONLY,4,Cells - Cultured fibroblasts
+GSE301725,Brain - Cortex,CENT_PARONLY,1,Brain - Frontal Cortex (BA9)
+GSE300839,Breast - Mammary Tissue,CENT_PARONLY,5,Cells - Cultured fibroblasts
+GSE236379,Kidney - Cortex,CENT_PARONLY,3,Cells - Cultured fibroblasts
+GSE304110,Colon - Transverse,CENT_PARONLY,3,Cells - EBV-transformed lymphocytes
+GSE303741,Uterus,CENT_PARONLY,2,Cells - Cultured fibroblasts
+GSE265851,Lung,CENT_PARONLY,1,Lung
+GSE246793,Breast - Mammary Tissue,CENT_PARONLY,5,Cells - EBV-transformed lymphocytes
+GSE288661,Colon - Transverse,CENT_PARONLY,5,Cells - Cultured fibroblasts
+GSE281080,Kidney - Cortex,CENT_PARONLY,4,Thyroid
+GSE287183,Prostate,CENT_PARONLY,3,Cells - EBV-transformed lymphocytes
+GSE298576,Liver,CENT_PARONLY,1,Liver
+GSE271315,Kidney - Cortex,CENT_PARONLY,1,Kidney - Medulla
+GSE208684,Colon - Transverse,CENT_PARONLY,1,Colon - Transverse
+GSE274584,Lung,CENT_PARONLY,16,Cells - EBV-transformed lymphocytes
+GSE271749,Breast - Mammary Tissue,CENT_PARONLY,12,Cells - Cultured fibroblasts
+GSE269871,Skin - Sun Exposed (Lower leg),CENT_PARONLY,4,Pancreas
+GSE296672,Kidney - Cortex,CENT_PARONLY,8,Cells - EBV-transformed lymphocytes
+GSE280257,Stomach,CENT_PARONLY,6,Pancreas
+GSE289912,Brain - Cortex,CENT_PARONLY,1,Brain - Cerebellar Hemisphere
+GSE298818,Breast - Mammary Tissue,CENT_PARONLY,6,Vagina
+GSE269369,Colon - Transverse,CENT_PARONLY,1,Colon - Transverse
+GSE288165,Brain - Cortex,CENT_PARONLY,2,Cells - Cultured fibroblasts
+GSE285436,Liver,CENT_PARONLY,1,Liver
+GSE248110,Liver,CENT_PARONLY,2,Small Intestine - Terminal Ileum
+GSE252464,Liver,CENT_PARONLY,4,Small Intestine - Terminal Ileum
+GSE252055,Kidney - Cortex,CENT_PARONLY,1,Kidney - Medulla
+GSE291768,Brain - Cortex,CENT_PARONLY,33,Cells - Cultured fibroblasts
+GSE293756,Pancreas,CENT_PARONLY,34,Cells - Cultured fibroblasts
+GSE287925,Prostate,CENT_PARONLY,1,Prostate

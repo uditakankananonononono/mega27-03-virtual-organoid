@@ -28,3 +28,10 @@ pipeline (src/geo_fidelity.py). The tool excludes them. The effect on rank corre
 - Remaining alternative, not excluded: cell-type purity. GTEx tissues contain blood, immune, vascular and stromal cells, while cultured fibroblasts
   and organoids are purified cultures. The match may reflect missing non-parenchymal signal rather than mesenchymal identity. A deconvolution-
   or epithelium-only-gene test is the next falsification step. Status: named candidate, not a claimed discovery.
+
+## Purity test with Human Protein Atlas single-cell types (results/geo_fidelity_clean.json, results/geo_mcnemar.json)
+- Gene sets from the HPA single-cell type enhancement API: 7,595 genes enhanced in any immune, blood, vascular or stromal type (NONPAR, removed), and 9,699 genes enhanced only in parenchymal types (PARONLY, kept alone).
+- Pre-stated prediction (paper v3): with epithelium/parenchyma-only genes, the fibroblast best-match share in the clean subset stays above 15%.
+  Result: SALL_PARONLY 28% [20, 36] and CENT_PARONLY 22% [15, 29]. The prediction held, but CENT's lower bound sits exactly at 15%. The purity explanation is weakened, not excluded.
+- Method result: removing non-parenchymal genes raises organ-of-origin top-1 recovery on all 151 series. SALL goes 33% -> 42% (McNemar exact p = 0.0044) and CENT 25% -> 38% with PARONLY (p = 0.00031).
+  Removing the Hallmark culture genes does not change recovery (p = 1). Interpretation: organoid-vs-tissue fidelity scores are depressed by stromal/immune genes that organoids lack by design. A purity-restricted score is fairer.
