@@ -11,3 +11,10 @@ Strict series = all GSMs annotated organoid (45; results/geo_sample_meta.csv). R
   - Faithful colon/brain organoids lack mainly stroma, vascular and immune genes (colon: peritubular myoid / smooth muscle; brain: oligodendrocytes, microglia, complement C1q).
 - Mechanism test (negative/inconclusive): HPA parenchymal-only share of deficit genes, unfaithful vs faithful organs, OR=1.45, p=0.061 (results/strict_organ_parenchymal.json). Liver (0.68) and kidney (0.55) deficits are parenchymal; lung (0.15) is not.
 Named candidate, not claimed: "metabolic-parenchyma gap" - liver and kidney organoids fail to match their tissue because they lack mature metabolic epithelium (hepatocyte, proximal tubule), whereas intestinal and cortical organoids match despite lacking stroma. Falsifiable: in a new set of strict liver/kidney organoid series, restoring or scoring only hepatocyte/proximal-tubule genes should explain most of the rank gap. Caveats: small n per organ; organ confounded with lab and protocol (PSC-derived vs adult stem cell), not tested.
+
+## Protocol confound (src/strict_protocol.py, results/strict_protocol.csv, results/strict_protocol.json)
+Each strict series was classified from series + GSM text (GEOparse) by keyword counts as PSC-derived (16), adult/tissue-derived (22) or unclear (7). Classification is regex-based and not manually validated.
+- Derivation alone: top-1 0.44 (PSC) vs 0.73 (adult), Fisher p=0.099.
+- Organ effect within derivation: PSC faithful-organ 7/11 vs unfaithful 0/5 (p=0.034); adult 16/16 vs 0/5 (p=4.9e-5). CMH (Haldane 0.5) pooled OR=46, p=5.8e-5.
+- Unfaithful organs fail regardless of derivation (0/5 PSC, 0/5 adult).
+Verdict: the organ split is not explained by PSC vs adult derivation. Brain organoids are all PSC-derived, so derivation cannot be separated from organ for brain. The "metabolic-parenchyma gap" stays a named candidate (post hoc grouping, small n).

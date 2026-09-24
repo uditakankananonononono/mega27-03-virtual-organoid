@@ -1,0 +1,110 @@
+{
+ "counts": {
+  "PSC": {
+   "Brain - Cortex": 9,
+   "Colon - Transverse": 2,
+   "Esophagus - Mucosa": 0,
+   "Kidney - Cortex": 3,
+   "Liver": 2,
+   "Lung": 0,
+   "Stomach": 0,
+   "Uterus": 0
+  },
+  "adult": {
+   "Brain - Cortex": 0,
+   "Colon - Transverse": 16,
+   "Esophagus - Mucosa": 0,
+   "Kidney - Cortex": 0,
+   "Liver": 1,
+   "Lung": 4,
+   "Stomach": 0,
+   "Uterus": 1
+  },
+  "unclear": {
+   "Brain - Cortex": 0,
+   "Colon - Transverse": 1,
+   "Esophagus - Mucosa": 1,
+   "Kidney - Cortex": 1,
+   "Liver": 3,
+   "Lung": 0,
+   "Stomach": 1,
+   "Uterus": 0
+  }
+ },
+ "top1_by_derivation": {
+  "mean": {
+   "PSC": 0.4375,
+   "adult": 0.7272727272727273,
+   "unclear": 0.14285714285714285
+  },
+  "size": {
+   "PSC": 16,
+   "adult": 22,
+   "unclear": 7
+  }
+ },
+ "fisher_psc_vs_adult_top1": {
+  "table": [
+   [
+    7,
+    9
+   ],
+   [
+    16,
+    6
+   ]
+  ],
+  "p": 0.09866284527018679
+ },
+ "within_faithful_organ": {
+  "mean": {
+   "PSC": 0.6363636363636364,
+   "adult": 1.0
+  },
+  "size": {
+   "PSC": 11,
+   "adult": 16
+  }
+ },
+ "within_unfaithful_organ": {
+  "mean": {
+   "PSC": 0.0,
+   "adult": 0.0
+  },
+  "size": {
+   "PSC": 5,
+   "adult": 5
+  }
+ },
+ "organ_effect_within_PSC": {
+  "table": [
+   [
+    7,
+    4
+   ],
+   [
+    0,
+    5
+   ]
+  ],
+  "fisher_p": 0.03365384615384616
+ },
+ "organ_effect_within_adult": {
+  "table": [
+   [
+    16,
+    0
+   ],
+   [
+    0,
+    5
+   ]
+  ],
+  "fisher_p": 4.9142464003145115e-05
+ },
+ "cmh_organ_effect_given_derivation": {
+  "pooled_OR_haldane": 45.906666666666666,
+  "p": 5.7731352675727265e-05,
+  "note": "0.5 Haldane correction for zero cells"
+ }
+}
