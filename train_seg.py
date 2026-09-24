@@ -10,7 +10,12 @@ X = torch.tensor(np.stack([t[0] for t in tr]))[:, None]; Y = torch.tensor(np.sta
 print("train imgs", len(X), flush=True)
 torch.manual_seed(0); net = UNet(); opt = torch.optim.Adam(net.parameters(), 2e-3)
 w = torch.tensor([1.0, 1.0, 3.0]); t0 = time.time()
-for ep in range(EPOCHS):
+import os
+CK = f"results/ckpt_seg{TAG}.pt"; start = 0
+if os.path.exists(CK):
+    ck = torch.load(CK); net.load_state_dict(ck["net"]); opt.load_state_dict(ck["opt"]); start = ck["ep"] + 1
+    torch.set_rng_state(ck["rng"]); np.random.seed(start); print("resumed at epoch", start, flush=True)
+for ep in range(start, EPOCHS):
     net.train(); perm = torch.randperm(len(X)); tot = 0
     for b in range(0, len(X), 2):
         i = perm[b:b + 2]; x, y = X[i], Y[i]
@@ -21,6 +26,7 @@ for ep in range(EPOCHS):
         k = np.random.randint(4); x, y = torch.rot90(x, k, (-2, -1)), torch.rot90(y, k, (-2, -1))
         opt.zero_grad(); loss = F.cross_entropy(net(x), y.long(), weight=w); loss.backward(); opt.step(); tot += loss.item()
     print(f"ep {ep} loss {tot:.3f} t {time.time()-t0:.0f}s", flush=True)
+    if ep % 3 == 2: torch.save({"net": net.state_dict(), "opt": opt.state_dict(), "ep": ep, "rng": torch.get_rng_state()}, CK)
 torch.save(net.state_dict(), f"results/unet_organoid{TAG}.pt")
 net.eval(); aps = []
 for img, msk in list_pairs("eval"):
