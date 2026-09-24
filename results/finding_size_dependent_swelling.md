@@ -27,3 +27,6 @@ DMSO-controlled, donor-matched curve (drug minus DMSO mean log fold per size oct
 - VX770 (5): -0.153 -> 0.31-0.42; top minus bottom 0.462 [0.335, 0.572].
 Named candidate: "small-organoid attenuation" - CFTR-modulator-induced swelling is suppressed in the smallest organoids and saturates above a size threshold (~1,000-1,400 px in these images). This replaces the earlier alpha>1 power-law reading, which the large-organoid checks contradict.
 Follow-up (post hoc threshold, so exploratory only): excluding organoids <1,069 px does not improve per-donor Trikafta-vs-DMSO separation (median 4.73 -> 4.75, better in 9/17, Wilcoxon p=0.68). Negative for the clinical readout, again.
+
+## Per-donor attenuation (Trikafta minus DMSO, smallest vs largest quartile of starting size)
+Attenuation (large-quartile effect minus small-quartile effect) > 0 in 13/17 donors; it does not track overall response size (Spearman rho 0.24, p = 0.35). Exceptions: 2 of 3 X/X donors and one F508del/R117H donor.
