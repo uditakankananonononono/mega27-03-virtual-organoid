@@ -29,7 +29,7 @@ Named candidate: "small-organoid attenuation" - CFTR-modulator-induced swelling 
 Follow-up (post hoc threshold, so exploratory only): excluding organoids <1,069 px does not improve per-donor Trikafta-vs-DMSO separation (median 4.73 -> 4.75, better in 9/17, Wilcoxon p=0.68). Negative for the clinical readout, again.
 
 ## Per-donor attenuation (Trikafta minus DMSO, smallest vs largest quartile of starting size)
-Attenuation (large-quartile effect minus small-quartile effect) > 0 in 13/17 donors; it does not track overall response size (Spearman rho 0.24, p = 0.35). Exceptions: 2 of 3 X/X donors and one F508del/R117H donor.
+Attenuation (large-quartile effect minus small-quartile effect) > 0 in 14/17 donors (CORRECTED from 13/17 - miscount; see results/per_donor_attenuation.csv); it does not track overall response size (Spearman rho 0.24, p = 0.35). Exceptions: 2 of 3 X/X donors and one F508del/R117H donor.
 
 ## Novelty check (web search, 2026-09-24)
 - OrgaSegment (Commun Biol 2024, https://www.nature.com/articles/s42003-024-05966-4): uses total and luminal size, but the full text we fetched does not report whether the modulator response depends on starting size.
