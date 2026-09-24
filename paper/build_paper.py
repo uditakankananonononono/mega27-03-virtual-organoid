@@ -17,7 +17,7 @@ for don, g in m.groupby("donor"):
 R = pd.DataFrame(rows, columns=["donor", "genotype", "n_trikafta", "n_dmso", "eff_small", "eff_large", "attenuation", "overall"])
 R.to_csv("results/per_donor_attenuation.csv", index=False)
 rho, pv = spearmanr(R.overall, R.attenuation)
-S1 = json.load(open("results/seg_eval.json")); S2 = json.load(open("results/seg_eval_tuned_256.json"))
+S1 = json.load(open("results/seg_eval.json")); S2 = json.load(open("results/seg_eval_tuned_256.json")); S3 = json.load(open("results/seg_eval_512.json")); S4 = json.load(open("results/seg_eval_tuned_512.json"))
 
 P = Paper("Small-Organoid Attenuation of CFTR-Modulator Swelling in Patient-Derived Intestinal Organoids: "
           "a Single-Organoid Re-Analysis with a Biophysical Swelling Twin",
@@ -36,8 +36,8 @@ P.p(f"Finding (candidate). Modulator-induced swelling is attenuated in the small
     "measurement artefact.")
 P.p(f"Negatives. Size-adjusted and size-filtered readouts do not improve per-donor Trikafta-vs-DMSO separation, so the finding does not "
     f"change theratyping calls at this assay's well counts. Replication on the public FIS time series is impossible because it is "
-    f"well-level. Our U-Net segmentation reaches mAP@0.5 = {S2['eval_mAP50']:.3f} +/- {S2['eval_sd']:.3f} on the OrgaSegment eval split "
-    f"(published 0.76 +/- 0.12): below the state of the art.")
+    f"well-level. Our best U-Net segmentation (512 px, tuned) reaches mAP@0.5 = {S4['eval_mAP50']:.3f} +/- {S4['eval_sd']:.3f} on the OrgaSegment eval split "
+    f"(published 0.76 +/- 0.12): below the state of the art, although the gap is within one standard deviation on 12 images.")
 
 P.h("1. Introduction")
 P.p("CFTR moves chloride and bicarbonate across the apical membrane of epithelial cells; water follows, and in a closed organoid the lumen "
@@ -109,10 +109,14 @@ P.h("4.5 Segmentation benchmark", 2)
 P.table(["model", "eval mAP@0.5", "sd", "source file"], [
     ["U-Net v1, 256 px, default post-processing", round(S1["mAP50"], 3), round(S1["sd"], 3), "results/seg_eval.json"],
     ["U-Net v1 + val-tuned post-processing + flip TTA", round(S2["eval_mAP50"], 3), round(S2["eval_sd"], 3), "results/seg_eval_tuned_256.json"],
+    ["U-Net v2, 512 px, 60 epochs, default post-processing", round(S3["mAP50"], 3), round(S3["sd"], 3), "results/seg_eval_512.json"],
+    ["U-Net v2 + val-tuned post-processing + flip TTA", round(S4["eval_mAP50"], 3), round(S4["eval_sd"], 3), "results/seg_eval_tuned_512.json"],
     ["OrgaSegment (published, Mask R-CNN)", 0.76, 0.12, "Lefferts et al. 2024"],
 ], "Instance segmentation on the OrgaSegment eval split (12 images).")
 P.p("Caveat: the validation images used for tuning were also in the training set, so the tuning signal is optimistic; the eval split was "
-    "scored once. A 512-px model was killed by an out-of-memory error at epoch 18 and has been restarted; it is not reported.")
+    "scored once. The 512-px model (resumed from checkpoint after an out-of-memory kill at epoch 18) raises the tuned score from "
+    f"{S2['eval_mAP50']:.3f} to {S4['eval_mAP50']:.3f}, still below the published mean. With 12 eval images and sd near 0.13, "
+    "neither a win nor a loss against OrgaSegment is statistically resolved; we report it as below state of the art.")
 
 P.h("5. Negative results (kept by design)")
 for t in ["The initial power-law (alpha > 1) interpretation was withdrawn after large-organoid checks contradicted it.",
