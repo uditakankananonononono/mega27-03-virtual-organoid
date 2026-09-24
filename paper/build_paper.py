@@ -2,7 +2,7 @@
 import json, sys
 import numpy as np, pandas as pd
 from scipy.stats import spearmanr
-sys.path.insert(0, "/home/sandbox/repos/shared")
+sys.path.insert(0, "paper")
 from paperkit import Paper
 
 # per-donor attenuation table, recomputed from raw per-organoid data and saved as a results file
