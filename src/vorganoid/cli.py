@@ -1,0 +1,57 @@
+"""vorganoid command-line tool.
+
+  vorganoid sizeaware TABLE --drug NAME [--control DMSO] [--bins 4] [--forskolin-col COL]
+      Size-stratified CFTR-modulator effect from a per-organoid FIS table (CSV with donor, condition, A0, swelling).
+  vorganoid segment IMAGE --model unet.pt [--size 256] [--out labels.png]
+      Instance-segment organoids in a brightfield image with the trained U-Net + watershed.
+"""
+from __future__ import annotations
+
+import argparse, json, sys
+
+import numpy as np
+import pandas as pd
+
+from .sizeaware import size_effects, attenuation
+
+
+def cmd_sizeaware(a):
+    df = pd.read_csv(a.table)
+    if a.forskolin_col: df = df[df[a.forskolin_col] > 0]
+    need = {"donor", "condition", "A0", "swelling"}
+    if not need <= set(df.columns): sys.exit(f"table needs columns {sorted(need)}")
+    per, edges = size_effects(df, a.drug, a.control, a.bins)
+    res = attenuation(per) | {"bin_edges_A0": [float(e) for e in edges], "drug": a.drug, "control": a.control}
+    print(per.round(3).to_string(index=False)); print(json.dumps(res, indent=1))
+    return 0
+
+
+def cmd_segment(a):
+    import torch, torch.nn.functional as F
+    from PIL import Image
+    from .seg import UNet, instances_from_probs
+    net = UNet(); net.load_state_dict(torch.load(a.model, map_location="cpu")); net.eval()
+    img = np.asarray(Image.open(a.image).convert("L"), dtype=np.float32)
+    x = np.asarray(Image.fromarray(img).resize((a.size, a.size)), dtype=np.float32)
+    x = (x - x.mean()) / (x.std() + 1e-6)
+    with torch.no_grad():
+        p = torch.softmax(net(torch.tensor(x)[None, None]), 1)
+    p = F.interpolate(p, size=img.shape, mode="bilinear")[0].numpy()
+    lab = instances_from_probs(p, min_size=int(20 * (img.shape[0] / a.size) ** 2))
+    Image.fromarray(lab.astype(np.uint16)).save(a.out)
+    areas = np.bincount(lab.ravel())[1:]
+    print(json.dumps({"n_organoids": int((areas > 0).sum()), "median_area_px": float(np.median(areas[areas > 0])) if (areas > 0).any() else 0}))
+    return 0
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(prog="vorganoid"); sp = ap.add_subparsers(dest="cmd", required=True)
+    s = sp.add_parser("sizeaware"); s.add_argument("table"); s.add_argument("--drug", required=True); s.add_argument("--control", default="DMSO")
+    s.add_argument("--bins", type=int, default=4); s.add_argument("--forskolin-col"); s.set_defaults(f=cmd_sizeaware)
+    g = sp.add_parser("segment"); g.add_argument("image"); g.add_argument("--model", required=True); g.add_argument("--size", type=int, default=256)
+    g.add_argument("--out", default="labels.png"); g.set_defaults(f=cmd_segment)
+    a = ap.parse_args(argv); return a.f(a)
+
+
+if __name__ == "__main__":
+    sys.exit(main())

@@ -1,0 +1,10 @@
+[project]
+name = "vorganoid"
+version = "0.1.0"
+description = "Size-aware FIS analysis and organoid segmentation for CF patient-derived organoids"
+requires-python = ">=3.9"
+dependencies = ["numpy", "scipy", "pandas", "scikit-image", "torch", "pillow"]
+[project.scripts]
+vorganoid = "vorganoid.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
