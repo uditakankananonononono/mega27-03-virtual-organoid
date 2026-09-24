@@ -13,3 +13,4 @@ Git + GitHub,service,repo hosting and pushes
 NCBI E-utilities (esearch/esummary),web API,src/geo_candidates.py
 NCBI GEO FTP/HTTPS supplementary files,data service,src/geo_fidelity.py
 GTEx v8 gene median TPM (GTEx portal bucket),reference data service,data/ref/gtex_v8_median_tpm.gct.gz; src/geo_fidelity.py
+MSigDB Hallmark gene sets v2023.2 (Broad GSEA-MSigDB),gene-set resource,data/ref/h.all.v2023.2.Hs.symbols.gmt; src/geo_fidelity_methods.py (culture-confound test)

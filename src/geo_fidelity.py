@@ -58,7 +58,7 @@ def match_genes(df, g):
     df = df[~df.index.duplicated()]
     return df, key
 def score(df, key, g, tissues):
-    X = df.clip(lower=0)
+    X = df[~df.index.astype(str).str.startswith('__')].clip(lower=0)  # drop HTSeq summary rows
     X = X.loc[:, X.sum() > 1e5]  # require library-scale columns (drops fold-change / p-value tables)
     if X.shape[1] == 0 or X.shape[0] < 5000: return None
     lcpm = np.log1p(X / X.sum() * 1e6).mean(axis=1)

@@ -11,7 +11,7 @@ for _, r in d.iterrows():
     if os.path.exists(out): continue
     try:
         url, _ = list_suppl(r.gse); df = parse(fetch(url + r.file), r.file); df, key = match_genes(df, g)
-        X = df.clip(lower=0); X = X.loc[:, X.sum() > 1e5]
+        X = df[~df.index.astype(str).str.startswith('__')].clip(lower=0); X = X.loc[:, X.sum() > 1e5]
         prof = np.log1p(X / X.sum() * 1e6).mean(axis=1)
         if key == "Description":  # map symbols to Ensembl for a common index
             m = g.drop_duplicates("Description").set_index("Description").ens

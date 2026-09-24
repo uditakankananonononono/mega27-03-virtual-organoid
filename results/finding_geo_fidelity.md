@@ -20,3 +20,11 @@ GTEx cultured fibroblasts than to their organ of origin. It should hold after re
 Real-data run on GSE278954 raw counts (results/tool_fidelity_GSE278954.json): intended tissue Liver ranks 50/54; fibroblast rank 20.
 Known issue found while building the tool: HTSeq summary rows ("__no_feature" etc.) were included in CPM denominators in the scan
 pipeline (src/geo_fidelity.py). The tool excludes them. The effect on rank correlations is a per-sample scale factor, expected to be small; a rescan is pending.
+
+## HTSeq-row fix and culture-confound test (results/geo_fidelity_methods.json, results/geo_fidelity_clean.json)
+- HTSeq "__" rows removed and profiles re-cached. Top-1 recovery rates are unchanged (27.2% / 33.1% / 25.2%), so the bug had no material effect.
+- Removed 853 Hallmark proliferation/MYC/EMT genes (MSigDB v2023.2: E2F, G2M, mitotic spindle, MYC v1/v2, EMT).
+  Clean-subset fibroblast best match: 25% [17, 33] (SALL_NOCULT) and 42% [34, 51] (CENT_NOCULT). The attractor is NOT explained by these gene sets.
+- Remaining alternative, not excluded: cell-type purity. GTEx tissues contain blood, immune, vascular and stromal cells, while cultured fibroblasts
+  and organoids are purified cultures. The match may reflect missing non-parenchymal signal rather than mesenchymal identity. A deconvolution-
+  or epithelium-only-gene test is the next falsification step. Status: named candidate, not a claimed discovery.

@@ -17,8 +17,16 @@ for f in glob.glob("data/geo/profiles/*.csv.gz"):
     P[f.split("/")[-1][:-7]] = pd.read_csv(f, index_col=0).lcpm
 d = d[d.gse.isin(P)].reset_index(drop=True)
 var_top = G.var(axis=1).sort_values().index[-3000:]
+# culture/proliferation confound gene set (MSigDB Hallmark v2023.2): E2F, G2M, mitotic spindle, MYC v1/v2, EMT
+CULT = {"HALLMARK_E2F_TARGETS", "HALLMARK_G2M_CHECKPOINT", "HALLMARK_MITOTIC_SPINDLE", "HALLMARK_MYC_TARGETS_V1", "HALLMARK_MYC_TARGETS_V2", "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION"}
+sym = set()
+for line in open("data/ref/h.all.v2023.2.Hs.symbols.gmt"):
+    f = line.rstrip("\n").split("\t")
+    if f[0] in CULT: sym |= set(f[2:])
+cult_ens = set(g.ens[g.Description.isin(sym)])
 def rhos(p, method):
     c = p.index.intersection(G.index)
+    if method.endswith("_NOCULT"): c = c.difference(pd.Index(list(cult_ens))); method = method[:-7]
     if method == "S3000":
         c = c.intersection(var_top); return np.array([spearmanr(p[c], G.loc[c, t])[0] for t in T])
     if method == "SALL":
@@ -31,7 +39,7 @@ def rhos(p, method):
 res = {"n_series": int(len(d)), "variants": {}}
 rng = np.random.default_rng(0)
 rows = []
-for m in ["S3000", "SALL", "CENT"]:
+for m in ["S3000", "SALL", "CENT", "SALL_NOCULT", "CENT_NOCULT"]:
     R = np.array([rhos(P[s], m) for s in d.gse])
     order = np.argsort(-R, axis=1)
     pos = np.argsort(order, axis=1) + 1  # pos[i, t] = rank of tissue t in series i
@@ -48,5 +56,6 @@ for m in ["S3000", "SALL", "CENT"]:
         "per_organ_top1": pd.DataFrame({"o": d.organ, "t": rk == 1}).groupby("o").t.agg(["count", "mean"]).round(3).to_dict("index")}
     for s, o, r in zip(d.gse, d.organ, rk): rows.append({"gse": s, "organ": o, "method": m, "rank_match": int(r), "best_tissue": T[order[list(d.gse).index(s)][0]]})
     print(m, res["variants"][m]["top1"], res["variants"][m]["perm_top1_mean"], res["variants"][m]["perm_top1_p"], flush=True)
+res["n_culture_genes_removed"] = len(cult_ens)
 json.dump(res, open("results/geo_fidelity_methods.json", "w"), indent=1)
 pd.DataFrame(rows).to_csv("results/geo_fidelity_methods_ranks.csv", index=False)

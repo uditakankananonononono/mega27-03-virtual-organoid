@@ -144,12 +144,12 @@
    "top5": 0.5033112582781457,
    "median_rank": 5.0,
    "analytic_chance_top1": 0.06193279372087317,
-   "perm_top1_mean": 0.05659668874172186,
+   "perm_top1_mean": 0.056238410596026495,
    "perm_top1_p": 9.999000099990002e-05,
    "top_best_tissues": {
     "Cells - Cultured fibroblasts": 52,
-    "Cells - EBV-transformed lymphocytes": 22,
-    "Pancreas": 18,
+    "Cells - EBV-transformed lymphocytes": 23,
+    "Pancreas": 17,
     "Esophagus - Mucosa": 17,
     "Brain - Cerebellar Hemisphere": 10
    },
@@ -207,6 +207,145 @@
      "mean": 0.0
     }
    }
+  },
+  "SALL_NOCULT": {
+   "top1": 0.33112582781456956,
+   "top5": 0.6026490066225165,
+   "median_rank": 3.0,
+   "analytic_chance_top1": 0.06193279372087317,
+   "perm_top1_mean": 0.07918476821192053,
+   "perm_top1_p": 9.999000099990002e-05,
+   "top_best_tissues": {
+    "Cells - Cultured fibroblasts": 37,
+    "Colon - Transverse": 16,
+    "Brain - Hypothalamus": 15,
+    "Stomach": 13,
+    "Esophagus - Mucosa": 12
+   },
+   "per_organ_top1": {
+    "Brain - Cortex": {
+     "count": 20,
+     "mean": 0.75
+    },
+    "Breast - Mammary Tissue": {
+     "count": 7,
+     "mean": 0.0
+    },
+    "Colon - Transverse": {
+     "count": 48,
+     "mean": 0.396
+    },
+    "Esophagus - Mucosa": {
+     "count": 1,
+     "mean": 0.0
+    },
+    "Heart - Left Ventricle": {
+     "count": 5,
+     "mean": 0.4
+    },
+    "Kidney - Cortex": {
+     "count": 11,
+     "mean": 0.364
+    },
+    "Liver": {
+     "count": 23,
+     "mean": 0.174
+    },
+    "Lung": {
+     "count": 11,
+     "mean": 0.091
+    },
+    "Pancreas": {
+     "count": 8,
+     "mean": 0.0
+    },
+    "Prostate": {
+     "count": 9,
+     "mean": 0.222
+    },
+    "Skin - Sun Exposed (Lower leg)": {
+     "count": 2,
+     "mean": 0.5
+    },
+    "Stomach": {
+     "count": 3,
+     "mean": 0.667
+    },
+    "Uterus": {
+     "count": 3,
+     "mean": 0.0
+    }
+   }
+  },
+  "CENT_NOCULT": {
+   "top1": 0.2582781456953642,
+   "top5": 0.5165562913907285,
+   "median_rank": 5.0,
+   "analytic_chance_top1": 0.06193279372087317,
+   "perm_top1_mean": 0.058523178807947024,
+   "perm_top1_p": 9.999000099990002e-05,
+   "top_best_tissues": {
+    "Cells - Cultured fibroblasts": 63,
+    "Pancreas": 19,
+    "Esophagus - Mucosa": 15,
+    "Cells - EBV-transformed lymphocytes": 9,
+    "Small Intestine - Terminal Ileum": 9
+   },
+   "per_organ_top1": {
+    "Brain - Cortex": {
+     "count": 20,
+     "mean": 0.55
+    },
+    "Breast - Mammary Tissue": {
+     "count": 7,
+     "mean": 0.0
+    },
+    "Colon - Transverse": {
+     "count": 48,
+     "mean": 0.312
+    },
+    "Esophagus - Mucosa": {
+     "count": 1,
+     "mean": 0.0
+    },
+    "Heart - Left Ventricle": {
+     "count": 5,
+     "mean": 0.4
+    },
+    "Kidney - Cortex": {
+     "count": 11,
+     "mean": 0.091
+    },
+    "Liver": {
+     "count": 23,
+     "mean": 0.261
+    },
+    "Lung": {
+     "count": 11,
+     "mean": 0.091
+    },
+    "Pancreas": {
+     "count": 8,
+     "mean": 0.125
+    },
+    "Prostate": {
+     "count": 9,
+     "mean": 0.111
+    },
+    "Skin - Sun Exposed (Lower leg)": {
+     "count": 2,
+     "mean": 0.0
+    },
+    "Stomach": {
+     "count": 3,
+     "mean": 0.333
+    },
+    "Uterus": {
+     "count": 3,
+     "mean": 0.0
+    }
+   }
   }
- }
+ },
+ "n_culture_genes_removed": 853
 }

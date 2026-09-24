@@ -64,6 +64,70 @@
    }
   }
  },
+ "CENT_NOCULT": {
+  "n": 113,
+  "top1": 0.2743362831858407,
+  "top5": 0.5221238938053098,
+  "fibroblast_best_frac": 0.4247787610619469,
+  "fibroblast_best_ci95": [
+   0.336283185840708,
+   0.5132743362831859
+  ],
+  "fibroblast_best_by_organ": {
+   "Brain - Cortex": {
+    "count": 16,
+    "sum": 6
+   },
+   "Breast - Mammary Tissue": {
+    "count": 5,
+    "sum": 5
+   },
+   "Colon - Transverse": {
+    "count": 32,
+    "sum": 13
+   },
+   "Esophagus - Mucosa": {
+    "count": 1,
+    "sum": 0
+   },
+   "Heart - Left Ventricle": {
+    "count": 3,
+    "sum": 2
+   },
+   "Kidney - Cortex": {
+    "count": 10,
+    "sum": 6
+   },
+   "Liver": {
+    "count": 21,
+    "sum": 6
+   },
+   "Lung": {
+    "count": 6,
+    "sum": 0
+   },
+   "Pancreas": {
+    "count": 6,
+    "sum": 3
+   },
+   "Prostate": {
+    "count": 8,
+    "sum": 4
+   },
+   "Skin - Sun Exposed (Lower leg)": {
+    "count": 1,
+    "sum": 1
+   },
+   "Stomach": {
+    "count": 2,
+    "sum": 0
+   },
+   "Uterus": {
+    "count": 2,
+    "sum": 2
+   }
+  }
+ },
  "S3000": {
   "n": 113,
   "top1": 0.3008849557522124,
@@ -141,6 +205,70 @@
    "Brain - Cortex": {
     "count": 16,
     "sum": 2
+   },
+   "Breast - Mammary Tissue": {
+    "count": 5,
+    "sum": 4
+   },
+   "Colon - Transverse": {
+    "count": 32,
+    "sum": 6
+   },
+   "Esophagus - Mucosa": {
+    "count": 1,
+    "sum": 0
+   },
+   "Heart - Left Ventricle": {
+    "count": 3,
+    "sum": 1
+   },
+   "Kidney - Cortex": {
+    "count": 10,
+    "sum": 2
+   },
+   "Liver": {
+    "count": 21,
+    "sum": 7
+   },
+   "Lung": {
+    "count": 6,
+    "sum": 0
+   },
+   "Pancreas": {
+    "count": 6,
+    "sum": 2
+   },
+   "Prostate": {
+    "count": 8,
+    "sum": 3
+   },
+   "Skin - Sun Exposed (Lower leg)": {
+    "count": 1,
+    "sum": 1
+   },
+   "Stomach": {
+    "count": 2,
+    "sum": 0
+   },
+   "Uterus": {
+    "count": 2,
+    "sum": 1
+   }
+  }
+ },
+ "SALL_NOCULT": {
+  "n": 113,
+  "top1": 0.3274336283185841,
+  "top5": 0.6017699115044248,
+  "fibroblast_best_frac": 0.24778761061946902,
+  "fibroblast_best_ci95": [
+   0.168141592920354,
+   0.3274336283185841
+  ],
+  "fibroblast_best_by_organ": {
+   "Brain - Cortex": {
+    "count": 16,
+    "sum": 1
    },
    "Breast - Mammary Tissue": {
     "count": 5,
