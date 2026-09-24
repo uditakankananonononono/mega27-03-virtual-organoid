@@ -118,11 +118,39 @@ P.p("Caveat: the validation images used for tuning were also in the training set
     f"{S2['eval_mAP50']:.3f} to {S4['eval_mAP50']:.3f}, still below the published mean. With 12 eval images and sd near 0.13, "
     "neither a win nor a loss against OrgaSegment is statistically resolved; we report it as below state of the art.")
 
+P.h("4.6 Organoid-to-tissue fidelity across 151 GEO series", 2)
+GM = json.load(open("results/geo_fidelity_methods.json")); GC = json.load(open("results/geo_fidelity_clean.json"))
+P.p(f"To test organoid fidelity at scale, we searched GEO through NCBI E-utilities for human organoid bulk RNA-seq series (2,838 hits; 1,545 with "
+    f"text count matrices). For {GM['n_series']} series with a usable gene-level matrix and a title naming a single organ, each sample was converted to "
+    "log counts per million and averaged. The series profile was then correlated with every GTEx v8 tissue median profile (54 tissues).")
+P.equation("CPM_gs = 10^6 x_gs / sum_g x_gs,   p_g = (1/S) sum_s log(1 + CPM_gs)")
+P.equation("r_t^cent = <p - mu_p - (m - mu_m), G_t - m - mean(G_t - m)> / (||.|| ||.||),   m_g = mean_t G_gt")
+P.p("The permutation p-value for the top-1 recovery rate reshuffles organ labels across series, B = 10,000 times:")
+P.equation("p_perm = (1 + #{b : top1_b >= top1_obs}) / (1 + B)")
+P.p("Uncertainty on shares uses a series-level percentile bootstrap:")
+P.equation("CI_95 = [q_0.025, q_0.975] of { f(D*_b) },  D*_b drawn with replacement from the series set, b = 1..2000")
+rowsm = [[m, GM["variants"][m]["top1"], GM["variants"][m]["perm_top1_mean"], GM["variants"][m]["perm_top1_p"], GC[m]["top1"], GC[m]["fibroblast_best_frac"],
+          f"[{GC[m]['fibroblast_best_ci95'][0]:.2f}, {GC[m]['fibroblast_best_ci95'][1]:.2f}]"] for m in GM["variants"]]
+P.table(["method", "top-1 (all)", "null top-1", "p_perm", "top-1 (clean)", "fibroblast best (clean)", "95% CI"],
+        [[r[0]] + [round(x, 3) if isinstance(x, float) and x > 0.001 else (f"{x:.0e}" if isinstance(x, float) else x) for x in r[1:]] for r in rowsm],
+        "Tissue recovery and fibroblast best-match share. S3000: Spearman on the 3,000 most tissue-variable genes; SALL: all genes; CENT: GTEx-centred Pearson; "
+        f"_NOCULT: {GM['n_culture_genes_removed']} MSigDB Hallmark proliferation/MYC/EMT genes removed. Clean subset: {GC['n_clean']} series whose summary confirms a single organ and "
+        "mentions organoids (113 with profiles). Files: results/geo_fidelity_methods.json, results/geo_fidelity_clean.json.")
+P.figure("results/figures/fig_geo_fidelity.png", "Per-organ share of clean-subset series whose organ of origin (blue) or GTEx cultured fibroblasts (orange) is the top-1 match. Organs with n >= 3.")
+P.p("Organ of origin is recovered four to five times above chance. Brain organoids are the most faithful, and lung, breast and pancreas the least. "
+    "Across every method, the most frequent best match is GTEx cultured fibroblasts, which we name the culture-fibroblast attractor. It survives the label audit and the removal of "
+    "proliferation and EMT genes. It is not yet a discovery: GTEx tissues contain immune, vascular and stromal cells, while organoids and cultured "
+    "fibroblasts are purified cultures, so cell-type purity is an unexcluded explanation. Falsifiable prediction: restricted to epithelium-specific "
+    "genes, the fibroblast best-match share in the clean subset will stay above 15%. The tool vorganoid fidelity scores any count matrix this way.")
+
 P.h("5. Negative results (kept by design)")
 for t in ["The initial power-law (alpha > 1) interpretation was withdrawn after large-organoid checks contradicted it.",
           "Size-adjusted and size-filtered readouts do not improve donor-level modulator discrimination.",
           "Replication on the public FIS time series is impossible: it is well-level.",
-          "Our segmentation is below the published state of the art."]:
+          "Our segmentation is below the published state of the art.",
+          "Fidelity: 'Pancreas' as best match (35/151 series with S3000) disappears with other methods, so it is a method artefact.",
+          "Fidelity: a 'liver disease' series (GSE278954) ranks Liver 50th of 54, and lung and breast organoids are rarely matched to their organ.",
+          "Fidelity: organ labels come from text, and series profiles average all samples, including any non-organoid controls."]:
     P.p("- " + t)
 P.h("6. Discussion")
 P.p("Small organoids respond less to CFTR modulators, relative to DMSO, than large ones, and the response saturates above a size threshold. "
@@ -136,12 +164,14 @@ P.p("Novelty. We did not find this effect reported for intestinal FIS in the lit
     "which sums area per well). Related: nasal 2D-derived organoids show swelling variation concentrated in large structures "
     "(bioRxiv 2021.07.20.453105). This was not a systematic review.")
 P.h("7. Tools used")
-P.table(["tool", "role"], [["Python 3.10", "language"], ["NumPy", "arrays, bootstrap"], ["pandas", "data"], ["SciPy", "statistics, labelling"],
-    ["scikit-image", "watershed"], ["PyTorch", "U-Net"], ["Pillow", "image IO"], ["matplotlib", "figures"], ["pytest", "tests"],
-    ["python-docx", "paper"], ["git / GitHub", "version control"]], "Tools table (honest count: 11). Target of 40 not reached.")
+TL = pd.read_csv("results/tools_ledger.csv")
+P.table(["tool", "kind", "where used"], TL.values.tolist(), f"Tools genuinely used (results/tools_ledger.csv): {len(TL)}. Target of 40 not reached.")
 P.h("References")
 for r in ["Lefferts JW, et al. OrgaSegment: deep-learning based organoid segmentation to quantify CFTR dependent fluid secretion. Commun Biol 2024. https://www.nature.com/articles/s42003-024-05966-4",
           "Boj SF, Vonk AM, et al. Forskolin-induced swelling in intestinal organoids: an in vitro assay for assessing drug response in cystic fibrosis patients. J Vis Exp 2017. https://pmc.ncbi.nlm.nih.gov/articles/PMC5408767/",
+          "GTEx Consortium. The GTEx Consortium atlas of genetic regulatory effects across human tissues. Science 2020. https://gtexportal.org",
+          "Liberzon A, et al. The Molecular Signatures Database Hallmark gene set collection. Cell Syst 2015. https://www.gsea-msigdb.org",
+          "Barrett T, et al. NCBI GEO: archive for functional genomics data sets. Nucleic Acids Res 2013. https://www.ncbi.nlm.nih.gov/geo/",
           "Botelho HM. FIS_analysis. https://github.com/hmbotelho/FIS_analysis",
           "Measuring cystic fibrosis drug responses in organoids derived from 2D differentiated nasal epithelia. bioRxiv 2021. https://www.biorxiv.org/content/10.1101/2021.07.20.453105v2"]:
     P.p(r)
