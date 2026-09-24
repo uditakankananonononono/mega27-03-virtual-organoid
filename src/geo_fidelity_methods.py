@@ -46,7 +46,7 @@ for m in ["S3000", "SALL", "CENT"]:
         "analytic_chance_top1": chance1, "perm_top1_mean": float(perm1.mean()), "perm_top1_p": float((1 + (perm1 >= (rk == 1).mean()).sum()) / (1 + len(perm1))),
         "top_best_tissues": best.head(5).to_dict(),
         "per_organ_top1": pd.DataFrame({"o": d.organ, "t": rk == 1}).groupby("o").t.agg(["count", "mean"]).round(3).to_dict("index")}
-    for s, o, r in zip(d.gse, d.organ, rk): rows.append({"gse": s, "organ": o, "method": m, "rank_match": int(r)})
+    for s, o, r in zip(d.gse, d.organ, rk): rows.append({"gse": s, "organ": o, "method": m, "rank_match": int(r), "best_tissue": T[order[list(d.gse).index(s)][0]]})
     print(m, res["variants"][m]["top1"], res["variants"][m]["perm_top1_mean"], res["variants"][m]["perm_top1_p"], flush=True)
 json.dump(res, open("results/geo_fidelity_methods.json", "w"), indent=1)
 pd.DataFrame(rows).to_csv("results/geo_fidelity_methods_ranks.csv", index=False)

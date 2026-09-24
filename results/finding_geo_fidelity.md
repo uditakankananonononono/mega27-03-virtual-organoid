@@ -9,3 +9,9 @@ Caveats: organ labels come from series titles (not yet audited against summaries
 non-organoid controls, 2D cultures or cell lines. Counts vs TPM inputs are mixed.
 Candidate (named, falsifiable, not yet claimed): "culture-fibroblast attractor". A large share of organoid transcriptomes are closer to
 GTEx cultured fibroblasts than to their organ of origin. It should hold after restricting to organoid-only samples and audited labels.
+
+## Label audit and clean-subset re-test (results/geo_label_audit.csv, results/geo_fidelity_clean.json)
+- The title-derived organ is confirmed by the GSE summary in 144/152 series. The clean subset (confirmed, single organ, "organoid" in summary) has 114 series; 113 have cached profiles.
+- Tissue recovery on the clean subset: top-1 30% / 33% / 27% (S3000 / SALL / CENT).
+- Fibroblast best match on the clean subset: 23% [15, 31] / 26% [18, 34] / 36% [27, 45] (bootstrap 95% CI). The one-of-54-columns chance level is 1.9%. The attractor survives the label audit.
+- Alternative explanation, not yet excluded: GTEx has only two in-vitro references (cultured fibroblasts, EBV lymphocytes), so a generic culture/proliferation signature could drive the match rather than a mesenchymal identity. Next test: remove proliferation/ECM gene sets, or compare with non-organoid 2D cultures of the same organ.
