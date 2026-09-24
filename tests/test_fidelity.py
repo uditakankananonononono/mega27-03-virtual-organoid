@@ -24,3 +24,12 @@ def test_htseq_summary_rows_excluded():
     extra = pd.DataFrame({"s": [1e9]}, index=["__no_feature"])
     a = mean_log_cpm(counts); b = mean_log_cpm(pd.concat([counts, extra]))
     assert np.allclose(a.values, b.loc[a.index].values)
+
+def test_parenchymal_genes_and_restriction(tmp_path):
+    from vorganoid.fidelity import parenchymal_genes
+    ref = _ref(); ids = list(ref.index)
+    rows = ["Gene\tEnsembl\tspec\ttypes"] + [f"G{i}\t{ids[i]}\tenh\t{'Hepatocytes: 5.0' if i % 2 else 'T-cells: 3.0;Hepatocytes: 1.0'}" for i in range(800)]
+    f = tmp_path / "hpa.tsv"; f.write_text("\n".join(rows))
+    par = parenchymal_genes(str(f)); assert len(par) == 400 and ids[1] in par and ids[0] not in par
+    rng = np.random.default_rng(2); counts = pd.DataFrame({"s": rng.poisson(ref["B"] * 200)}, index=ref.index)
+    sc = fidelity_scores(mean_log_cpm(counts), ref, genes=par, min_genes=300); assert sc.index[0] == "B"

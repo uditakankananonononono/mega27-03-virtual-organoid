@@ -1,0 +1,12 @@
+{
+ "top": {
+  "Cells - Cultured fibroblasts": 0.7855,
+  "Bladder": 0.7818,
+  "Breast - Mammary Tissue": 0.7771,
+  "Ovary": 0.7754,
+  "Adipose - Visceral (Omentum)": 0.7753
+ },
+ "fibroblast_rank": 1,
+ "culture_attractor": true,
+ "organ_tissue_rank": 36
+}

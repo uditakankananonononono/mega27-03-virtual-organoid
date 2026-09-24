@@ -35,3 +35,4 @@ pipeline (src/geo_fidelity.py). The tool excludes them. The effect on rank corre
   Result: SALL_PARONLY 28% [20, 36] and CENT_PARONLY 22% [15, 29]. The prediction held, but CENT's lower bound sits exactly at 15%. The purity explanation is weakened, not excluded.
 - Method result: removing non-parenchymal genes raises organ-of-origin top-1 recovery on all 151 series. SALL goes 33% -> 42% (McNemar exact p = 0.0044) and CENT 25% -> 38% with PARONLY (p = 0.00031).
   Removing the Hallmark culture genes does not change recovery (p = 1). Interpretation: organoid-vs-tissue fidelity scores are depressed by stromal/immune genes that organoids lack by design. A purity-restricted score is fairer.
+- Tool: `vorganoid fidelity --purity HPA_TSV` restricts scoring to HPA parenchymal-only genes. Real run on GSE278954 (results/tool_fidelity_GSE278954_purity.json): Liver rank improves 50 -> 36 of 54, and the fibroblast match becomes top-1 in this series.
