@@ -36,3 +36,10 @@ pipeline (src/geo_fidelity.py). The tool excludes them. The effect on rank corre
 - Method result: removing non-parenchymal genes raises organ-of-origin top-1 recovery on all 151 series. SALL goes 33% -> 42% (McNemar exact p = 0.0044) and CENT 25% -> 38% with PARONLY (p = 0.00031).
   Removing the Hallmark culture genes does not change recovery (p = 1). Interpretation: organoid-vs-tissue fidelity scores are depressed by stromal/immune genes that organoids lack by design. A purity-restricted score is fairer.
 - Tool: `vorganoid fidelity --purity HPA_TSV` restricts scoring to HPA parenchymal-only genes. Real run on GSE278954 (results/tool_fidelity_GSE278954_purity.json): Liver rank improves 50 -> 36 of 54, and the fibroblast match becomes top-1 in this series.
+
+## What drives the attractor? g:Profiler enrichment (results/attractor_genes.csv, results/attractor_gprofiler.csv)
+- 29 clean-subset series whose SALL best match is fibroblasts. Top 300 genes by d_g = mean_s z(p_sg)(z(G_fib) - z(G_organ)), tested against all scored genes with g:SCS correction.
+- Two components:
+  (1) Mitotic cell cycle, top term p_adj = 7.8e-56 (66 genes; TOP2A, MKI67, CCNB1, CDK1, BIRC5).
+  (2) Immune/complement genes that the tissue has and the organoid lacks: adaptive immune response p_adj = 9.5e-15; complement cascade 5.9e-10 (C1QA, LY86, CTSG).
+- Interpretation: the attractor combines culture proliferation with missing non-parenchymal signal. Removing either gene family alone (Hallmark culture sets; HPA non-parenchymal) leaves it in place, so neither alone explains it. It stays a named candidate with a mechanism hypothesis, not a claimed discovery.

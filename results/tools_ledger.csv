@@ -17,3 +17,4 @@ MSigDB Hallmark gene sets v2023.2 (Broad GSEA-MSigDB),gene-set resource,data/ref
 matplotlib,library,"src/fig_geo_fidelity.py; paper figures (fig_size_attenuation.png, fig_geo_fidelity.png)",True,
 Human Protein Atlas single-cell type API,database/web API,data/ref/hpa_single_cell_type_v_api.tsv.gz; src/geo_fidelity_methods.py (purity gene sets),True,
 statsmodels,library,src/geo_mcnemar.py (exact McNemar tests),True,
+"g:Profiler g:GOSt API (GO, Reactome, KEGG)",web API/database,src/geo_attractor_genes.py (enrichment of attractor-driving genes),True,

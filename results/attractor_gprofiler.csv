@@ -1,0 +1,676 @@
+source,term_id,name,p_adj,term_size,intersection
+GO:BP,GO:0008150,biological_process,4.2415904266098116e-78,20215,269
+REAC,REAC:0000000,REACTOME root term,5.1280525698471406e-64,11012,198
+GO:BP,GO:0009987,cellular process,6.4204284367679175e-59,19504,247
+GO:BP,GO:0050896,response to stimulus,4.5650655312730095e-58,8934,175
+GO:BP,GO:1903047,mitotic cell cycle process,7.76481413465272e-56,743,66
+GO:BP,GO:0050789,regulation of biological process,9.487170780082134e-56,12062,197
+GO:BP,GO:0000278,mitotic cell cycle,1.382773991328259e-54,889,69
+GO:BP,GO:0050794,regulation of cellular process,3.1451623971979136e-54,11633,192
+GO:BP,GO:0065007,biological regulation,3.508322201943549e-54,12461,198
+GO:BP,GO:0022402,cell cycle process,3.6119356379087556e-53,1283,77
+GO:BP,GO:0007049,cell cycle,1.2769414493993339e-51,1655,83
+GO:BP,GO:0140014,mitotic nuclear division,6.149380463302182e-44,281,42
+GO:BP,GO:0007059,chromosome segregation,5.0187749629439264e-43,428,47
+GO:BP,GO:0098813,nuclear chromosome segregation,7.402395997985332e-43,322,43
+GO:BP,GO:0048518,positive regulation of biological process,1.567610431686086e-42,6098,130
+GO:BP,GO:0000280,nuclear division,3.9777825492396694e-42,447,47
+GO:BP,GO:0000070,mitotic sister chromatid segregation,4.763107769574249e-41,192,36
+GO:BP,GO:0000819,sister chromatid segregation,5.192019727389243e-41,233,38
+GO:BP,GO:0048285,organelle fission,4.09732476760813e-40,493,47
+REAC,REAC:R-HSA-69278,"Cell Cycle, Mitotic",1.0310585730636561e-38,544,47
+GO:BP,GO:0051301,cell division,2.5162108961285613e-38,648,50
+GO:BP,GO:0051716,cellular response to stimulus,3.000550650088594e-38,7328,136
+REAC,REAC:R-HSA-1640170,Cell Cycle,4.6387394290302224e-38,675,50
+GO:BP,GO:0048522,positive regulation of cellular process,7.476316616760466e-38,5695,120
+GO:BP,GO:0051726,regulation of cell cycle,2.5867854227016485e-37,1081,59
+GO:BP,GO:0010564,regulation of cell cycle process,3.958186171441933e-37,726,51
+KEGG,KEGG:00000,KEGG root term,2.832743282595548e-35,8599,141
+GO:BP,GO:0023052,signaling,3.4310561521148534e-35,6477,124
+GO:BP,GO:0007154,cell communication,3.3286431325822335e-34,6516,123
+GO:BP,GO:0006950,response to stress,8.111448724841016e-33,3946,95
+GO:BP,GO:0044772,mitotic cell cycle phase transition,4.0782892155589876e-32,426,39
+GO:BP,GO:0002376,immune system process,1.1154555006554035e-31,2887,81
+GO:BP,GO:0051276,chromosome organization,6.36053064270979e-31,569,42
+GO:BP,GO:0006996,organelle organization,3.242436968982162e-30,3535,87
+GO:BP,GO:0051983,regulation of chromosome segregation,1.3135238486172387e-29,132,26
+GO:BP,GO:0044770,cell cycle phase transition,1.4318870848886723e-29,534,40
+GO:BP,GO:0016043,cellular component organization,1.4757233675281177e-29,8197,131
+GO:BP,GO:0071840,cellular component organization or biogenesis,4.3610361399789924e-29,8405,132
+GO:BP,GO:1905818,regulation of chromosome separation,1.0738650164762473e-28,77,22
+GO:BP,GO:0007165,signal transduction,1.3978773273950033e-28,5984,110
+GO:BP,GO:0051304,chromosome separation,9.557733935734795e-28,84,22
+GO:BP,GO:0051179,localization,1.5184857315484175e-27,5407,103
+GO:BP,GO:0007010,cytoskeleton organization,2.355954276224565e-27,1519,57
+GO:BP,GO:0000226,microtubule cytoskeleton organization,7.512837913320373e-27,672,41
+GO:BP,GO:0051128,regulation of cellular component organization,7.10748539579048e-26,2419,68
+GO:BP,GO:0007088,regulation of mitotic nuclear division,1.4478435955167935e-25,121,23
+REAC,REAC:R-HSA-168256,Immune System,2.856134959982555e-25,2074,62
+GO:BP,GO:1902850,microtubule cytoskeleton organization involved in mitosis,3.2516971603665606e-25,167,25
+GO:BP,GO:0007346,regulation of mitotic cell cycle,6.917655422624354e-25,489,35
+REAC,REAC:R-HSA-68886,M Phase,1.4627596631199324e-24,403,32
+GO:BP,GO:1901990,regulation of mitotic cell cycle phase transition,3.527654599477295e-24,327,30
+GO:BP,GO:0006955,immune response,1.3802992729041458e-23,2097,61
+GO:BP,GO:0051783,regulation of nuclear division,1.7034074944245422e-23,147,23
+GO:BP,GO:0033043,regulation of organelle organization,2.2355629166402746e-23,1162,47
+GO:BP,GO:0035556,intracellular signal transduction,3.4174138972468273e-23,2946,71
+GO:BP,GO:0090068,positive regulation of cell cycle process,4.822343091264086e-23,259,27
+GO:BP,GO:0007051,spindle organization,6.556796547609387e-23,205,25
+GO:BP,GO:0033044,regulation of chromosome organization,1.6766615783147113e-22,241,26
+REAC,REAC:R-HSA-68877,Mitotic Prometaphase,2.430561808520298e-22,200,24
+GO:BP,GO:0051234,establishment of localization,5.672252374658198e-22,4719,88
+GO:BP,GO:1901987,regulation of cell cycle phase transition,8.231351094278457e-22,432,31
+GO:BP,GO:0033045,regulation of sister chromatid segregation,8.233571294977012e-22,107,20
+GO:BP,GO:0010965,regulation of mitotic sister chromatid separation,2.2703528949800463e-21,62,17
+GO:BP,GO:0007052,mitotic spindle organization,2.7186573473039873e-21,134,21
+GO:BP,GO:0007017,microtubule-based process,3.341273079627873e-21,1001,42
+GO:BP,GO:0007093,mitotic cell cycle checkpoint signaling,4.431107352538726e-21,137,21
+GO:BP,GO:0007091,metaphase/anaphase transition of mitotic cell cycle,4.880215859993399e-21,97,19
+GO:BP,GO:0051306,mitotic sister chromatid separation,5.649859205008862e-21,65,17
+REAC,REAC:R-HSA-68882,Mitotic Anaphase,5.911151095978142e-21,228,24
+GO:BP,GO:0045787,positive regulation of cell cycle,6.497425649126242e-21,346,28
+REAC,REAC:R-HSA-2555396,Mitotic Metaphase and Anaphase,6.571085624067084e-21,229,24
+GO:BP,GO:0044784,metaphase/anaphase transition of cell cycle,9.114046298103601e-21,100,19
+GO:BP,GO:0048523,negative regulation of cellular process,1.2622596431449354e-20,5365,92
+GO:BP,GO:0033047,regulation of mitotic sister chromatid segregation,3.4855659100065433e-20,57,16
+GO:BP,GO:0045839,negative regulation of mitotic nuclear division,6.539942887692835e-20,59,16
+GO:BP,GO:0048519,negative regulation of biological process,6.922552222603809e-20,5607,93
+REAC,REAC:R-HSA-69620,Cell Cycle Checkpoints,9.206879257761667e-20,289,25
+GO:BP,GO:0030071,regulation of mitotic metaphase/anaphase transition,1.0000039155528654e-19,93,18
+GO:BP,GO:0000075,cell cycle checkpoint signaling,1.2861091742050038e-19,186,22
+GO:BP,GO:0008283,cell population proliferation,1.7088493978268654e-19,1951,54
+REAC,REAC:R-HSA-2500257,Resolution of Sister Chromatid Cohesion,1.7524358506838158e-19,124,19
+GO:BP,GO:1902099,regulation of metaphase/anaphase transition of cell cycle,1.850693126365591e-19,96,18
+GO:BP,GO:0007094,mitotic spindle assembly checkpoint signaling,1.8811639789608184e-19,49,15
+GO:BP,GO:0071174,mitotic spindle checkpoint signaling,1.8811639789608184e-19,49,15
+GO:BP,GO:0071173,spindle assembly checkpoint signaling,1.8811639789608184e-19,49,15
+GO:BP,GO:0031577,spindle checkpoint signaling,2.6742306858007636e-19,50,15
+GO:BP,GO:0051784,negative regulation of nuclear division,3.7509183886510867e-19,65,16
+GO:BP,GO:0033048,negative regulation of mitotic sister chromatid segregation,3.7699605193440475e-19,51,15
+GO:BP,GO:0045841,negative regulation of mitotic metaphase/anaphase transition,3.7699605193440475e-19,51,15
+GO:BP,GO:2000816,negative regulation of mitotic sister chromatid separation,3.7699605193440475e-19,51,15
+GO:BP,GO:0033046,negative regulation of sister chromatid segregation,3.7699605193440475e-19,51,15
+GO:BP,GO:0032501,multicellular organismal process,5.377702742770205e-19,7293,106
+GO:BP,GO:1901991,negative regulation of mitotic cell cycle phase transition,7.081958153577046e-19,173,21
+GO:BP,GO:1905819,negative regulation of chromosome separation,7.317643170052948e-19,53,15
+GO:BP,GO:0051985,negative regulation of chromosome segregation,7.317643170052948e-19,53,15
+GO:BP,GO:1902100,negative regulation of metaphase/anaphase transition of cell cycle,7.317643170052948e-19,53,15
+GO:BP,GO:0032502,developmental process,8.194013183586429e-19,6498,99
+GO:BP,GO:0006810,transport,3.5160645078439634e-18,4302,78
+KEGG,KEGG:04110,Cell cycle,4.26349985528226e-18,158,19
+GO:BP,GO:0048856,anatomical structure development,4.0619760968450336e-17,5917,91
+GO:BP,GO:1901988,negative regulation of cell cycle phase transition,8.110124605950125e-17,249,22
+GO:BP,GO:0051225,spindle assembly,1.1828512668169418e-16,135,18
+GO:BP,GO:0010948,negative regulation of cell cycle process,1.3023880870827223e-16,290,23
+GO:BP,GO:0045930,negative regulation of mitotic cell cycle,1.5364117528173997e-16,223,21
+GO:BP,GO:0048583,regulation of response to stimulus,1.8145799949724606e-16,3970,72
+GO:BP,GO:1905820,positive regulation of chromosome separation,1.9909171538895387e-16,32,12
+GO:BP,GO:0051239,regulation of multicellular organismal process,2.447474577690193e-16,2917,61
+GO:BP,GO:0140694,membraneless organelle assembly,4.0818960287903717e-16,429,26
+GO:BP,GO:0009605,response to external stimulus,4.347983864232088e-16,2410,55
+REAC,REAC:R-HSA-2467813,Separation of Sister Chromatids,5.805134218642397e-16,188,19
+GO:BP,GO:0044419,biological process involved in interspecies interaction between organisms,5.831523513212646e-16,1761,47
+GO:BP,GO:0050000,chromosome localization,6.779088418940761e-16,123,17
+GO:BP,GO:0051310,metaphase chromosome alignment,1.268540084029719e-15,104,16
+GO:BP,GO:0008152,metabolic process,2.6046106358927435e-15,13470,144
+GO:BP,GO:0045786,negative regulation of cell cycle,2.7564326003333375e-15,374,24
+GO:BP,GO:0006952,defense response,5.7405217578738914e-15,1867,47
+GO:BP,GO:0007275,multicellular organism development,6.2109640603595505e-15,4667,76
+REAC,REAC:R-HSA-109582,Hemostasis,7.386255824582544e-15,671,29
+GO:BP,GO:0042221,response to chemical,7.560672968792297e-15,3833,68
+GO:BP,GO:0051984,positive regulation of chromosome segregation,9.150671491108468e-15,30,11
+GO:BP,GO:0002250,adaptive immune response,9.543311543950885e-15,756,31
+GO:BP,GO:0090307,mitotic spindle assembly,1.1201247078921725e-14,75,14
+GO:BP,GO:0002682,regulation of immune system process,1.1843519909633349e-14,1583,43
+GO:BP,GO:0000281,mitotic cytokinesis,1.2403728210841795e-14,96,15
+GO:BP,GO:2001251,negative regulation of chromosome organization,1.4600934342404418e-14,97,15
+GO:BP,GO:0051130,positive regulation of cellular component organization,1.736051673086616e-14,1090,36
+REAC,REAC:R-HSA-69618,Mitotic Spindle Checkpoint,2.2583997332976888e-14,109,15
+REAC,REAC:R-HSA-5663220,RHO GTPases Activate Formins,2.670187734866405e-14,136,16
+GO:BP,GO:0042127,regulation of cell population proliferation,3.546808180040223e-14,1632,43
+REAC,REAC:R-HSA-9648025,EML4 and NUDC in mitotic spindle formation,5.176205979150861e-14,115,15
+GO:BP,GO:0007155,cell adhesion,6.151055440014001e-14,1501,41
+GO:BP,GO:0010639,negative regulation of organelle organization,1.4905415613146928e-13,354,22
+GO:BP,GO:0070887,cellular response to chemical stimulus,4.982889262751706e-13,2186,48
+GO:BP,GO:0061640,cytoskeleton-dependent cytokinesis,6.593445153591426e-13,124,15
+GO:BP,GO:0010646,regulation of cell communication,8.008067446625546e-13,3464,61
+REAC,REAC:R-HSA-1280218,Adaptive Immune System,8.950199730797384e-13,807,29
+REAC,REAC:R-HSA-174143,APC/C-mediated degradation of cell cycle proteins,1.066252758417167e-12,88,13
+REAC,REAC:R-HSA-453276,Regulation of mitotic cell cycle,1.066252758417167e-12,88,13
+GO:BP,GO:0030261,chromosome condensation,1.2001952110390083e-12,44,11
+GO:BP,GO:0000910,cytokinesis,1.3186213842021277e-12,191,17
+REAC,REAC:R-HSA-166786,Creation of C4 and C2 activators,1.3467422176897078e-12,68,12
+REAC,REAC:R-HSA-194315,Signaling by Rho GTPases,1.3761610513732511e-12,696,27
+REAC,REAC:R-HSA-141424,Amplification of signal from the kinetochores,1.9444832313331307e-12,92,13
+REAC,REAC:R-HSA-141444,Amplification  of signal from unattached  kinetochores via a MAD2  inhibitory signal,1.9444832313331307e-12,92,13
+REAC,REAC:R-HSA-9716542,"Signaling by Rho GTPases, Miro GTPases and RHOBTB3",2.299992843366692e-12,711,27
+REAC,REAC:R-HSA-162582,Signal Transduction,2.6715759238504163e-12,2559,50
+GO:BP,GO:0023051,regulation of signaling,2.802145184659129e-12,3457,60
+GO:BP,GO:0051707,response to other organism,2.8122367340654062e-12,1598,40
+GO:BP,GO:0043207,response to external biotic stimulus,2.9910921194534833e-12,1601,40
+GO:BP,GO:0051231,spindle elongation,3.545548826560887e-12,14,8
+GO:BP,GO:0051129,negative regulation of cellular component organization,4.625200158865192e-12,691,27
+GO:BP,GO:0140546,defense response to symbiont,5.295686637012838e-12,1091,33
+REAC,REAC:R-HSA-166663,Initial triggering of complement,5.517774986413814e-12,76,12
+GO:BP,GO:0009607,response to biotic stimulus,6.5813421283602895e-12,1640,40
+GO:BP,GO:0002684,positive regulation of immune system process,6.8498884071553065e-12,1101,33
+GO:BP,GO:0032879,regulation of localization,8.468142693694953e-12,1907,43
+REAC,REAC:R-HSA-69275,G2/M Transition,8.487501530827931e-12,195,16
+GO:BP,GO:0098542,defense response to other organism,9.061753567246257e-12,1112,33
+REAC,REAC:R-HSA-453274,Mitotic G2-G2/M phases,9.960703043350795e-12,197,16
+REAC,REAC:R-HSA-168249,Innate Immune System,1.0316516786389613e-11,1100,32
+GO:BP,GO:0008608,attachment of spindle microtubules to kinetochore,1.4269458995342649e-11,54,11
+GO:BP,GO:0022411,cellular component disassembly,1.465696306744978e-11,442,22
+GO:BP,GO:0051640,organelle localization,1.5158159619432922e-11,606,25
+GO:BP,GO:0016310,phosphorylation,1.6249308463239958e-11,1063,32
+GO:BP,GO:0048584,positive regulation of response to stimulus,1.6435030707085627e-11,2305,47
+GO:BP,GO:0010638,positive regulation of organelle organization,1.8100551451591435e-11,499,23
+REAC,REAC:R-HSA-2514853,Condensation of Prometaphase Chromosomes,1.833667306634873e-11,11,7
+GO:BP,GO:0019538,protein metabolic process,1.94840592497617e-11,4375,67
+GO:BP,GO:0051240,positive regulation of multicellular organismal process,2.9216876108232916e-11,1633,39
+GO:BP,GO:0140013,meiotic nuclear division,4.3133355642960196e-11,198,16
+GO:BP,GO:0006468,protein phosphorylation,5.502319580654105e-11,968,30
+GO:BP,GO:1902531,regulation of intracellular signal transduction,6.96017736251505e-11,1939,42
+GO:BP,GO:0019222,regulation of metabolic process,7.170815184627899e-11,6662,85
+GO:BP,GO:0043170,macromolecule metabolic process,7.216162035771576e-11,11442,120
+GO:BP,GO:0051256,mitotic spindle midzone assembly,7.334669226539492e-11,11,7
+GO:BP,GO:0006259,DNA metabolic process,7.55480239965749e-11,980,30
+GO:BP,GO:0007080,mitotic metaphase chromosome alignment,8.786908828690569e-11,63,11
+REAC,REAC:R-HSA-195258,RHO GTPase Effectors,9.714818278624105e-11,314,18
+REAC,REAC:R-HSA-597592,Post-translational protein modification,1.2734523380114912e-10,1448,35
+GO:BP,GO:0000022,mitotic spindle elongation,1.7520602751428142e-10,12,7
+GO:BP,GO:0009893,positive regulation of metabolic process,1.9543986671323776e-10,3379,56
+REAC,REAC:R-HSA-176814,Activation of APC/C and APC/C:Cdc20 mediated degradation of mitotic proteins,2.226885976177509e-10,77,11
+GO:BP,GO:1903046,meiotic cell cycle process,2.389314499455953e-10,221,16
+GO:BP,GO:0033554,cellular response to stress,2.5729889251040703e-10,1838,40
+GO:BP,GO:0007163,establishment or maintenance of cell polarity,3.377158413780009e-10,226,16
+GO:BP,GO:0012501,programmed cell death,3.646467109784051e-10,1948,41
+GO:BP,GO:0006959,humoral immune response,3.7709263685299137e-10,269,17
+GO:BP,GO:0008219,cell death,3.8947839897656535e-10,1952,41
+GO:BP,GO:0036211,protein modification process,3.9843250940598553e-10,2325,45
+GO:BP,GO:0045132,meiotic chromosome segregation,4.0314464583721874e-10,96,12
+GO:BP,GO:0044839,cell cycle G2/M phase transition,4.2723334312154086e-10,156,14
+GO:BP,GO:0048731,system development,4.795713423056893e-10,4001,61
+GO:BP,GO:0051988,regulation of attachment of spindle microtubules to kinetochore,5.546162771167365e-10,23,8
+REAC,REAC:R-HSA-166658,Complement cascade,5.914293443759908e-10,111,12
+GO:BP,GO:0060255,regulation of macromolecule metabolic process,5.987625903444435e-10,6159,79
+REAC,REAC:R-HSA-173623,Classical antibody-mediated complement activation,6.095880005594349e-10,61,10
+GO:BP,GO:0008284,positive regulation of cell population proliferation,6.173491478704362e-10,919,28
+REAC,REAC:R-HSA-198933,Immunoregulatory interactions between a Lymphoid and a non-Lymphoid cell,7.084839228672511e-10,179,14
+GO:BP,GO:0051255,spindle midzone assembly,7.521180965903696e-10,14,7
+REAC,REAC:R-HSA-5653656,Vesicle-mediated transport,1.1954621794304885e-09,719,24
+GO:BP,GO:0010604,positive regulation of macromolecule metabolic process,1.4367080201490513e-09,3123,52
+GO:BP,GO:0051321,meiotic cell cycle,1.496171788862944e-09,293,17
+GO:BP,GO:0000086,G2/M transition of mitotic cell cycle,1.8022690492769769e-09,139,13
+REAC,REAC:R-HSA-2132295,MHC class II antigen presentation,2.034584004936922e-09,123,12
+GO:BP,GO:0001775,cell activation,2.1279068243907957e-09,1118,30
+GO:BP,GO:0016477,cell migration,2.200144435626395e-09,1525,35
+REAC,REAC:R-HSA-2168880,Scavenging of heme from plasma,2.2114235525259504e-09,69,10
+GO:BP,GO:0006796,phosphate-containing compound metabolic process,2.3651316805861937e-09,2160,42
+GO:BP,GO:0009790,embryo development,2.3785136906790445e-09,1123,30
+GO:BP,GO:0006793,phosphorus metabolic process,2.4728279316497502e-09,2163,42
+GO:BP,GO:0006915,apoptotic process,2.6296095817957845e-09,1888,39
+GO:BP,GO:1901700,response to oxygen-containing compound,2.8762986824416308e-09,1626,36
+GO:BP,GO:0007267,cell-cell signaling,4.48029133429792e-09,1312,32
+GO:BP,GO:0007166,cell surface receptor signaling pathway,5.016954677144051e-09,2809,48
+GO:BP,GO:0043412,macromolecule modification,5.284817294309937e-09,2509,45
+GO:BP,GO:1901992,positive regulation of mitotic cell cycle phase transition,5.894431340265666e-09,91,11
+REAC,REAC:R-HSA-176409,APC/C:Cdc20 mediated degradation of mitotic proteins,6.001402628876579e-09,76,10
+GO:BP,GO:0050793,regulation of developmental process,6.321088202462233e-09,2423,44
+GO:BP,GO:0045931,positive regulation of mitotic cell cycle,8.138336019747687e-09,123,12
+GO:BP,GO:0030010,establishment of cell polarity,1.0112295973292111e-08,159,13
+GO:BP,GO:0030154,cell differentiation,1.0318527989213445e-08,4419,62
+GO:BP,GO:0048869,cellular developmental process,1.0416961990096876e-08,4420,62
+GO:BP,GO:0098609,cell-cell adhesion,1.0583700901061157e-08,961,27
+GO:BP,GO:0007076,mitotic chromosome condensation,1.0785871477609351e-08,19,7
+GO:BP,GO:0009653,anatomical structure morphogenesis,1.4617097331794092e-08,2689,46
+GO:BP,GO:0009966,regulation of signal transduction,1.747392692442051e-08,3017,49
+REAC,REAC:R-HSA-983189,Kinesins,1.8788715100223167e-08,60,9
+GO:BP,GO:0065009,regulation of molecular function,1.95005244972794e-08,1064,28
+GO:BP,GO:1901970,positive regulation of mitotic sister chromatid separation,2.4657539496451814e-08,21,7
+REAC,REAC:R-HSA-202733,Cell surface interactions at the vascular wall,2.5567749241515345e-08,191,13
+GO:BP,GO:0030155,regulation of cell adhesion,2.5824285876076312e-08,780,24
+GO:BP,GO:0033036,macromolecule localization,2.8309960230219575e-08,2847,47
+KEGG,KEGG:05166,Human T-cell leukemia virus 1 infection,2.895710365851486e-08,219,13
+GO:BP,GO:0032101,regulation of response to external stimulus,3.1968491932484476e-08,1087,28
+REAC,REAC:R-HSA-392499,Metabolism of proteins,3.2815800571804245e-08,2056,38
+GO:BP,GO:0048870,cell motility,3.7956801978310474e-08,1782,36
+REAC,REAC:R-HSA-156711,Polo-like kinase mediated events,5.050598349875363e-08,15,6
+GO:BP,GO:1901989,positive regulation of cell cycle phase transition,5.9027655082912995e-08,112,11
+GO:BP,GO:0070925,organelle assembly,7.101919689618772e-08,1046,27
+REAC,REAC:R-HSA-2173782,Binding and Uptake of Ligands by Scavenger Receptors,7.144613199425913e-08,97,10
+GO:BP,GO:0045321,leukocyte activation,7.512975855119562e-08,971,26
+GO:BP,GO:0048468,cell development,7.812090677011475e-08,2828,46
+GO:BP,GO:0051049,regulation of transport,8.329570075106814e-08,1559,33
+REAC,REAC:R-HSA-6811434,COPI-dependent Golgi-to-ER retrograde traffic,8.765442529402556e-08,99,10
+GO:BP,GO:2000026,regulation of multicellular organismal development,9.314893168823955e-08,1390,31
+GO:BP,GO:0007143,female meiotic nuclear division,9.920729274216217e-08,41,8
+GO:BP,GO:0090231,regulation of spindle checkpoint,1.0003534791893068e-07,25,7
+GO:BP,GO:0051315,attachment of mitotic spindle microtubules to kinetochore,1.0003534791893068e-07,25,7
+GO:BP,GO:0050865,regulation of cell activation,1.0103252250346758e-07,625,21
+REAC,REAC:R-HSA-977606,Regulation of Complement cascade,1.070577409021382e-07,101,10
+GO:BP,GO:0141124,intracellular signaling cassette,1.199979613422176e-07,1858,36
+GO:BP,GO:0022414,reproductive process,1.2338695710573837e-07,1583,33
+GO:BP,GO:0048513,animal organ development,1.5450461038884303e-07,2995,47
+GO:BP,GO:0008104,intracellular protein localization,1.7668767516553087e-07,2377,41
+GO:BP,GO:0032465,regulation of cytokinesis,1.8717498234301027e-07,93,10
+GO:BP,GO:0042110,T cell activation,1.9107290193609054e-07,581,20
+REAC,REAC:R-HSA-453279,Mitotic G1 phase and G1/S transition,2.8061153391579405e-07,147,11
+REAC,REAC:R-HSA-176408,Regulation of APC/C activators between G1/S and early anaphase,2.998038574004497e-07,81,9
+GO:BP,GO:0033365,protein localization to organelle,3.1202254078370936e-07,882,24
+REAC,REAC:R-HSA-1643685,Disease,3.4526709783602795e-07,1838,34
+GO:BP,GO:0030097,hemopoiesis,3.7963022465006775e-07,968,25
+GO:BP,GO:0051094,positive regulation of developmental process,4.2133088101603173e-07,1303,29
+GO:BP,GO:1905821,positive regulation of chromosome condensation,4.304674398424634e-07,8,5
+GO:BP,GO:0061844,antimicrobial humoral immune response mediated by antimicrobial peptide,4.7249136095002763e-07,102,10
+GO:BP,GO:0022607,cellular component assembly,5.020891990277983e-07,4737,61
+GO:BP,GO:0010647,positive regulation of cell communication,5.268837479855308e-07,1770,34
+GO:BP,GO:0023056,positive regulation of signaling,5.34597348859585e-07,1771,34
+GO:BP,GO:2001252,positive regulation of chromosome organization,5.734040091966653e-07,104,10
+GO:BP,GO:0010389,regulation of G2/M transition of mitotic cell cycle,5.734040091966653e-07,104,10
+REAC,REAC:R-HSA-5690714,CD22 mediated BCR regulation,6.067860201788574e-07,60,8
+GO:BP,GO:0022407,regulation of cell-cell adhesion,6.511686036356267e-07,493,18
+GO:BP,GO:0050790,regulation of catalytic activity,7.073705331602049e-07,768,22
+GO:BP,GO:0050867,positive regulation of cell activation,7.502123605783371e-07,378,16
+GO:BP,GO:0045087,innate immune response,8.874360221085595e-07,1009,25
+GO:BP,GO:0051249,regulation of lymphocyte activation,9.839915838676644e-07,506,18
+GO:BP,GO:0002694,regulation of leukocyte activation,9.86067307272952e-07,571,19
+GO:BP,GO:0032103,positive regulation of response to external stimulus,1.0483745118779469e-06,641,20
+REAC,REAC:R-HSA-983231,Factors involved in megakaryocyte development and platelet production,1.0858217411074078e-06,167,11
+GO:BP,GO:0044238,primary metabolic process,1.173200596710901e-06,11783,111
+GO:BP,GO:0006954,inflammatory response,1.1999650262961332e-06,866,23
+GO:BP,GO:0019730,antimicrobial humoral response,1.2965866446824143e-06,149,11
+GO:BP,GO:0044085,cellular component biogenesis,1.4450913832198655e-06,4992,62
+REAC,REAC:R-HSA-2029481,FCGR activation,1.4961994449525087e-06,67,8
+GO:BP,GO:0044093,positive regulation of molecular function,1.5111106150216892e-06,586,19
+GO:BP,GO:0098657,import into cell,1.538718033572946e-06,956,24
+GO:BP,GO:0051246,regulation of protein metabolic process,1.5577601941736027e-06,1562,31
+REAC,REAC:R-HSA-8856688,Golgi-to-ER retrograde transport,1.6112202725107412e-06,133,10
+REAC,REAC:R-HSA-69273,Cyclin A/B1/B2 associated events during G2/M transition,1.7064638095486755e-06,25,6
+GO:BP,GO:1902749,regulation of cell cycle G2/M phase transition,1.8403536000515274e-06,117,10
+REAC,REAC:R-HSA-2730905,Role of LAT2/NTAL/LAB on calcium mobilization,1.8999410285566552e-06,69,8
+GO:BP,GO:0007399,nervous system development,1.9477437918834233e-06,2579,41
+GO:BP,GO:0042592,homeostatic process,1.983343679189292e-06,1672,32
+GO:BP,GO:0043009,chordate embryonic development,2.0680500032088243e-06,667,20
+REAC,REAC:R-HSA-179409,APC-Cdc20 mediated degradation of Nek2A,2.2081843037993812e-06,26,6
+GO:BP,GO:0007159,leukocyte cell-cell adhesion,2.67908667912496e-06,413,16
+GO:BP,GO:0009792,embryo development ending in birth or egg hatching,3.249323454620662e-06,685,20
+GO:BP,GO:0006974,DNA damage response,3.330906828288953e-06,914,23
+REAC,REAC:R-HSA-179419,APC:Cdc20 mediated degradation of cell cycle proteins prior to satisfation of the cell cycle checkpoint,3.3442601073225045e-06,74,8
+GO:BP,GO:0002696,positive regulation of leukocyte activation,3.5253600341290944e-06,362,15
+GO:BP,GO:0080090,regulation of primary metabolic process,4.27579408479448e-06,5134,62
+GO:BP,GO:1903504,regulation of mitotic spindle checkpoint,5.2116584645285e-06,24,6
+GO:BP,GO:0090266,regulation of mitotic cell cycle spindle assembly checkpoint,5.2116584645285e-06,24,6
+GO:BP,GO:0051247,positive regulation of protein metabolic process,5.265511911012183e-06,857,22
+REAC,REAC:R-HSA-1474244,Extracellular matrix organization,5.293965968932928e-06,296,13
+REAC,REAC:R-HSA-176417,Phosphorylation of Emi1,5.345473960160291e-06,6,4
+GO:BP,GO:0009611,response to wounding,5.538639672087263e-06,565,18
+GO:BP,GO:1903037,regulation of leukocyte cell-cell adhesion,5.673894702781525e-06,375,15
+KEGG,KEGG:04114,Oocyte meiosis,5.759800973307943e-06,135,9
+GO:BP,GO:0060623,regulation of chromosome condensation,5.979236468149383e-06,12,5
+GO:BP,GO:0009967,positive regulation of signal transduction,6.32627127037616e-06,1563,30
+KEGG,KEGG:04061,Viral protein interaction with cytokine and cytokine receptor,6.471877593537097e-06,98,8
+REAC,REAC:R-HSA-2029485,Role of phospholipids in phagocytosis,6.903704447026824e-06,81,8
+REAC,REAC:R-HSA-6811442,Intra-Golgi and retrograde Golgi-to-ER traffic,7.886039081852025e-06,202,11
+GO:BP,GO:0050863,regulation of T cell activation,8.363450854645265e-06,386,15
+REAC,REAC:R-HSA-2871809,FCERI mediated Ca+2 mobilization,8.386052429620047e-06,83,8
+REAC,REAC:R-HSA-2871796,FCERI mediated MAPK activation,8.386052429620047e-06,83,8
+GO:BP,GO:0043085,positive regulation of catalytic activity,8.488252042285774e-06,448,16
+GO:BP,GO:0050776,regulation of immune response,8.662892951854709e-06,962,23
+REAC,REAC:R-HSA-983695,Antigen activates B Cell Receptor (BCR) leading to generation of second messengers,9.224899083901323e-06,84,8
+GO:BP,GO:0046649,lymphocyte activation,9.989890344354943e-06,809,21
+GO:BP,GO:0034097,response to cytokine,1.0099443905069234e-05,970,23
+GO:BP,GO:0040011,locomotion,1.0112527456179225e-05,1227,26
+GO:BP,GO:0061982,meiosis I cell cycle process,1.1346909596901153e-05,141,10
+KEGG,KEGG:04914,Progesterone-mediated oocyte maturation,1.1941023451623137e-05,106,8
+REAC,REAC:R-HSA-2980767,"Activation of NIMA Kinases NEK9, NEK6, NEK7",1.2418720941558976e-05,7,4
+GO:BP,GO:0051493,regulation of cytoskeleton organization,1.2664088673330822e-05,527,17
+GO:BP,GO:0031109,microtubule polymerization or depolymerization,1.299834213950339e-05,143,10
+GO:BP,GO:1901652,response to peptide,1.3159527765057245e-05,984,23
+REAC,REAC:R-HSA-381426,Regulation of Insulin-like Growth Factor (IGF) transport and uptake by Insulin-like Growth Factor Binding Proteins (IGFBPs),1.3269991454489918e-05,124,9
+GO:BP,GO:0051302,regulation of cell division,1.3421659485365857e-05,186,11
+GO:BP,GO:0051338,regulation of transferase activity,1.536094567930467e-05,404,15
+GO:BP,GO:1901976,regulation of cell cycle checkpoint,1.5970731105583322e-05,49,7
+GO:BP,GO:0009636,response to toxic substance,1.6815524290811982e-05,238,12
+GO:BP,GO:0051383,kinetochore organization,1.797342890085485e-05,29,6
+GO:BP,GO:0006281,DNA repair,1.8005161490429385e-05,610,18
+GO:BP,GO:0002274,myeloid leukocyte activation,1.845587471800823e-05,240,12
+GO:BP,GO:0045595,regulation of cell differentiation,1.8460252316476875e-05,1543,29
+GO:BP,GO:0009889,regulation of biosynthetic process,1.8475160131750242e-05,5597,64
+GO:BP,GO:0007019,microtubule depolymerization,1.8483673659222812e-05,50,7
+REAC,REAC:R-HSA-9664323,FCGR3A-mediated IL10 synthesis,1.8962447255663077e-05,92,8
+REAC,REAC:R-HSA-69206,G1/S Transition,2.00071231120559e-05,130,9
+GO:BP,GO:0007423,sensory organ development,2.142554204079314e-05,617,18
+GO:BP,GO:0045785,positive regulation of cell adhesion,2.4301886804491212e-05,483,16
+GO:BP,GO:0009628,response to abiotic stimulus,2.4510028626574524e-05,1104,24
+GO:BP,GO:0032506,cytokinetic process,2.4525670586138803e-05,52,7
+GO:BP,GO:1902533,positive regulation of intracellular signal transduction,2.53599079869205e-05,1106,24
+REAC,REAC:R-HSA-176412,Phosphorylation of the APC/C,2.822614927355235e-05,20,5
+GO:BP,GO:0009891,positive regulation of biosynthetic process,3.0272833225400715e-05,2619,39
+GO:BP,GO:0010557,positive regulation of macromolecule biosynthetic process,3.150979598372374e-05,2513,38
+GO:BP,GO:0010556,regulation of macromolecule biosynthetic process,3.3463165645066905e-05,5423,62
+GO:BP,GO:0019953,sexual reproduction,3.3774270653708476e-05,1123,24
+REAC,REAC:R-HSA-141405,Inhibition of the proteolytic activity of APC/C required for the onset of anaphase by mitotic spindle checkpoint components,3.68803790986297e-05,21,5
+REAC,REAC:R-HSA-141430,Inactivation of APC/C via direct inhibition of the APC/C complex,3.68803790986297e-05,21,5
+GO:BP,GO:0033993,response to lipid,3.9005927006400966e-05,876,21
+REAC,REAC:R-HSA-9824446,Viral Infection Pathways,3.925771937430219e-05,867,20
+REAC,REAC:R-HSA-2262752,Cellular responses to stress,4.122000304151099e-05,787,19
+GO:BP,GO:0006979,response to oxidative stress,4.203375656218401e-05,373,14
+KEGG,KEGG:04610,Complement and coagulation cascades,4.361401045248158e-05,86,7
+GO:BP,GO:0071345,cellular response to cytokine stimulus,4.378338197606916e-05,882,21
+GO:BP,GO:0051641,cellular localization,4.5615764715130855e-05,2549,38
+REAC,REAC:R-HSA-2995410,Nuclear Envelope (NE) Reassembly,5.0493298175193384e-05,70,7
+REAC,REAC:R-HSA-5663205,Infectious disease,5.15860678804652e-05,1056,22
+GO:BP,GO:0060284,regulation of cell development,5.3551341203792104e-05,811,20
+REAC,REAC:R-HSA-8953897,Cellular responses to stimuli,5.400469006169771e-05,801,19
+GO:BP,GO:0070507,regulation of microtubule cytoskeleton organization,5.7271262345875134e-05,167,10
+GO:BP,GO:0030099,myeloid cell differentiation,5.821150222255744e-05,447,15
+GO:BP,GO:0031401,positive regulation of protein modification process,5.821150222255744e-05,447,15
+GO:BP,GO:1990868,response to chemokine,5.837632485308727e-05,89,8
+GO:BP,GO:1990869,cellular response to chemokine,5.837632485308727e-05,89,8
+GO:BP,GO:0032886,regulation of microtubule-based process,5.98658001345449e-05,267,12
+GO:BP,GO:0007292,female gamete generation,6.0603296762118645e-05,168,10
+REAC,REAC:R-HSA-1566948,Elastic fibre formation,6.230977749048791e-05,44,6
+REAC,REAC:R-HSA-174184,Cdc20:Phospho-APC/C mediated degradation of Cyclin A,6.767128434507332e-05,73,7
+GO:BP,GO:0010628,positive regulation of gene expression,6.910356024546538e-05,1167,24
+GO:BP,GO:0022409,positive regulation of cell-cell adhesion,7.065132668317204e-05,328,13
+REAC,REAC:R-HSA-174178,APC/C:Cdh1 mediated degradation of Cdc20 and other APC/C:Cdh1 targeted proteins in late mitosis/early G1,7.439201822065907e-05,74,7
+REAC,REAC:R-HSA-174048,APC/C:Cdc20 mediated degradation of Cyclin B,7.600055429921832e-05,24,5
+GO:BP,GO:0065008,regulation of biological quality,7.84779657834485e-05,2943,41
+GO:BP,GO:0051251,positive regulation of lymphocyte activation,7.854770960768962e-05,331,13
+GO:BP,GO:2000145,regulation of cell motility,8.232500772979189e-05,1001,22
+GO:BP,GO:0043067,regulation of programmed cell death,8.279144831822406e-05,1459,27
+GO:BP,GO:0051241,negative regulation of multicellular organismal process,8.438309454305551e-05,1090,23
+GO:BP,GO:1904666,regulation of ubiquitin protein ligase activity,8.506064752583872e-05,19,5
+GO:BP,GO:0007127,meiosis I,8.552191003035417e-05,131,9
+GO:BP,GO:0009719,response to endogenous stimulus,8.86796749443751e-05,1464,27
+REAC,REAC:R-HSA-9664417,Leishmania phagocytosis,9.436485725965293e-05,113,8
+REAC,REAC:R-HSA-9664407,Parasite infection,9.436485725965293e-05,113,8
+REAC,REAC:R-HSA-9664422,FCGR3A-mediated phagocytosis,9.436485725965293e-05,113,8
+GO:BP,GO:1901701,cellular response to oxygen-containing compound,9.754540395431141e-05,1189,24
+GO:BP,GO:0010468,regulation of gene expression,0.00010086274279241857,5326,60
+GO:BP,GO:0001701,in utero embryonic development,0.00010923580650720891,403,14
+GO:BP,GO:0050778,positive regulation of immune response,0.0001131488216187223,768,19
+REAC,REAC:R-HSA-2029482,Regulation of actin dynamics for phagocytic cup formation,0.00011549997260594161,116,8
+REAC,REAC:R-HSA-8852276,The role of GTSE1 in G2/M progression after G2 checkpoint,0.00011705600385467373,79,7
+GO:BP,GO:0006897,endocytosis,0.0001201534948896378,692,18
+GO:BP,GO:0030334,regulation of cell migration,0.00013190693093177497,942,21
+REAC,REAC:R-HSA-9679506,SARS-CoV Infections,0.0001320887412110019,459,14
+GO:BP,GO:0009058,biosynthetic process,0.00013479936588799133,10183,94
+GO:BP,GO:0080134,regulation of response to stress,0.00014205010211295024,1402,26
+GO:BP,GO:0002252,immune effector process,0.0001549616277081979,704,18
+GO:BP,GO:0031110,regulation of microtubule polymerization or depolymerization,0.00015780004817638276,101,8
+GO:BP,GO:0051052,regulation of DNA metabolic process,0.00015880342934448038,483,15
+GO:BP,GO:0040012,regulation of locomotion,0.0001643006104048738,1042,22
+REAC,REAC:R-HSA-69481,G2/M Checkpoints,0.00017021924030936192,167,9
+GO:BP,GO:0042981,regulation of apoptotic process,0.00017686886849874084,1418,26
+GO:BP,GO:0000912,assembly of actomyosin apparatus involved in cytokinesis,0.0001772833847320566,9,4
+GO:BP,GO:1902423,regulation of attachment of mitotic spindle microtubules to kinetochore,0.0001772833847320566,9,4
+GO:BP,GO:0000915,actomyosin contractile ring assembly,0.0001772833847320566,9,4
+GO:BP,GO:0007098,centrosome cycle,0.00018204225206033107,143,9
+GO:BP,GO:0010972,negative regulation of G2/M transition of mitotic cell cycle,0.0001826298451018872,69,7
+GO:BP,GO:0097435,supramolecular fiber organization,0.00018525551880378335,793,19
+GO:BP,GO:0043069,negative regulation of programmed cell death,0.0002063612275301062,882,20
+GO:BP,GO:1902750,negative regulation of cell cycle G2/M phase transition,0.00022301636014796533,71,7
+GO:BP,GO:0010605,negative regulation of macromolecule metabolic process,0.00022843867011735185,2946,40
+KEGG,KEGG:04148,Efferocytosis,0.00023752068292275216,157,8
+REAC,REAC:R-HSA-162658,Golgi Cisternae Pericentriolar Stack Reorganization,0.00024717507742086765,13,4
+GO:BP,GO:0030029,actin filament-based process,0.0002610416765381502,811,19
+REAC,REAC:R-HSA-68875,Mitotic Prophase,0.0002763305518864842,130,8
+REAC,REAC:R-HSA-9662851,Anti-inflammatory response favouring Leishmania parasite infection,0.0002929126705452739,131,8
+REAC,REAC:R-HSA-9664433,Leishmania parasite growth and survival,0.0002929126705452739,131,8
+GO:BP,GO:1904668,positive regulation of ubiquitin protein ligase activity,0.00029419249862675195,10,4
+GO:BP,GO:0044837,actomyosin contractile ring organization,0.00029419249862675195,10,4
+GO:BP,GO:0009725,response to hormone,0.000294332997166464,902,20
+GO:BP,GO:0060326,cell chemotaxis,0.00031255329459989274,311,12
+KEGG,KEGG:04115,p53 signaling pathway,0.00032007287797714327,75,6
+GO:BP,GO:0031347,regulation of defense response,0.0003448591634123107,826,19
+GO:BP,GO:0031399,regulation of protein modification process,0.0003484513658151064,744,18
+GO:BP,GO:0045840,positive regulation of mitotic nuclear division,0.00037391306151671693,47,6
+GO:BP,GO:0031023,microtubule organizing center organization,0.00038259374323021677,156,9
+REAC,REAC:R-HSA-2871837,FCERI mediated NF-kB activation,0.0003891725217726774,136,8
+GO:BP,GO:0006325,chromatin organization,0.0003908787389634529,1189,23
+GO:BP,GO:0006302,double-strand break repair,0.0004239096529708828,320,12
+GO:BP,GO:0032467,positive regulation of cytokinesis,0.00042536441407368714,48,6
+GO:BP,GO:0006935,chemotaxis,0.0004395088964966684,452,14
+GO:BP,GO:0009892,negative regulation of metabolic process,0.0004419631179589863,3141,41
+GO:BP,GO:0051987,positive regulation of attachment of spindle microtubules to kinetochore,0.00046030041486996414,11,4
+GO:BP,GO:0042330,taxis,0.0004634083944872622,454,14
+REAC,REAC:R-HSA-2029480,Fcgamma receptor (FCGR) dependent phagocytosis,0.0004844865780467255,140,8
+GO:BP,GO:0070098,chemokine-mediated signaling pathway,0.0005107243855841962,80,7
+GO:BP,GO:0000082,G1/S transition of mitotic cell cycle,0.0005317849747837587,212,10
+GO:BP,GO:0045597,positive regulation of cell differentiation,0.0005408323679183856,851,19
+GO:BP,GO:0051261,protein depolymerization,0.0005622633349391077,119,8
+GO:BP,GO:0032880,regulation of protein localization,0.0006009865098038806,857,19
+REAC,REAC:R-HSA-2995383,Initiation of Nuclear Envelope (NE) Reformation,0.0006210394752089991,16,4
+GO:BP,GO:0042327,positive regulation of phosphorylation,0.0006268175072260558,332,12
+GO:BP,GO:0001906,cell killing,0.0006314153571153685,216,10
+REAC,REAC:R-HSA-69478,G2/M DNA replication checkpoint,0.0006557865006688162,5,3
+GO:BP,GO:0030335,positive regulation of cell migration,0.0006867193168421922,542,15
+GO:BP,GO:0090267,positive regulation of mitotic cell cycle spindle assembly checkpoint,0.0006874610040708725,12,4
+GO:BP,GO:1903490,positive regulation of mitotic cytokinesis,0.0006874610040708725,12,4
+REAC,REAC:R-HSA-176187,Activation of ATR in response to replication stress,0.0007351535508764643,37,5
+REAC,REAC:R-HSA-8980692,RHOA GTPase cycle,0.0007358203682564432,148,8
+GO:BP,GO:1903039,positive regulation of leukocyte cell-cell adhesion,0.0007365496099155754,276,11
+KEGG,KEGG:05150,Staphylococcus aureus infection,0.0007596339345223389,87,6
+REAC,REAC:R-HSA-9679191,Potential therapeutics for SARS,0.0008136392019452974,150,8
+GO:BP,GO:0051258,protein polymerization,0.0008194135641687195,279,11
+REAC,REAC:R-HSA-2299718,Condensation of Prophase Chromosomes,0.0008650464713649632,68,6
+GO:BP,GO:0044818,mitotic G2/M transition checkpoint,0.0008708328665331971,54,6
+GO:BP,GO:0006310,DNA recombination,0.0008844139321116413,343,12
+GO:BP,GO:0030036,actin cytoskeleton organization,0.0008937839583166335,711,17
+REAC,REAC:R-HSA-8957275,Post-translational protein phosphorylation,0.0009236649729655774,107,7
+GO:BP,GO:0019221,cytokine-mediated signaling pathway,0.0009662047203390006,557,15
+GO:BP,GO:0016192,vesicle-mediated transport,0.0009782695660269045,1552,26
+GO:BP,GO:0050808,synapse organization,0.0009880524711764855,558,15
+GO:BP,GO:0090232,positive regulation of spindle checkpoint,0.0009887003096834706,13,4
+REAC,REAC:R-HSA-9013026,RHOB GTPase cycle,0.0010267638532358264,70,6
+GO:BP,GO:0007162,negative regulation of cell adhesion,0.0010819505561820708,287,11
+REAC,REAC:R-HSA-8854518,AURKA Activation by TPX2,0.0011163955236849485,71,6
+KEGG,KEGG:04814,Motor proteins,0.0011225345641007922,194,8
+GO:BP,GO:0048609,multicellular organismal reproductive process,0.0011594123787692756,985,20
+GO:BP,GO:0150146,cell junction disassembly,0.0011775804869171333,31,5
+GO:BP,GO:2000147,positive regulation of cell motility,0.0012323157290681545,568,15
+GO:BP,GO:0051050,positive regulation of transport,0.00131473017113945,816,18
+REAC,REAC:R-HSA-9824443,Parasitic Infection Pathways,0.001330502604244604,214,9
+REAC,REAC:R-HSA-9658195,Leishmania infection,0.001330502604244604,214,9
+GO:BP,GO:0050832,defense response to fungus,0.0013398273936554375,58,6
+GO:BP,GO:0009888,tissue development,0.0013757623110141589,2006,30
+GO:BP,GO:0090235,regulation of metaphase plate congression,0.001378189009059831,14,4
+GO:BP,GO:0090435,protein localization to nuclear envelope,0.001378189009059831,14,4
+GO:BP,GO:0007100,mitotic centrosome separation,0.001378189009059831,14,4
+GO:BP,GO:0019725,cellular homeostasis,0.0013802642618279929,734,17
+GO:BP,GO:0042129,regulation of T cell proliferation,0.0013999455534841297,182,9
+GO:BP,GO:0098869,cellular oxidant detoxification,0.0014331488250323196,93,7
+GO:BP,GO:0010720,positive regulation of cell development,0.001499373624615689,429,13
+REAC,REAC:R-HSA-983705,Signaling by the B Cell Receptor (BCR),0.0015106994632593958,163,8
+GO:BP,GO:0048646,anatomical structure formation involved in morphogenesis,0.0015171563043625891,1190,22
+GO:BP,GO:0034330,cell junction organization,0.0015357184225938058,825,18
+REAC,REAC:R-HSA-4615885,SUMOylation of DNA replication proteins,0.0015802743929788064,43,5
+GO:BP,GO:0044843,cell cycle G1/S phase transition,0.0015873370841716842,239,10
+GO:BP,GO:0050670,regulation of lymphocyte proliferation,0.0015873370841716842,239,10
+GO:BP,GO:0040017,positive regulation of locomotion,0.0017012929719563542,583,15
+GO:BP,GO:0032944,regulation of mononuclear cell proliferation,0.0018440944726922737,243,10
+GO:BP,GO:0010558,negative regulation of macromolecule biosynthetic process,0.00185133613241834,2603,35
+GO:BP,GO:0015671,oxygen transport,0.0018712152560281883,15,4
+GO:BP,GO:0034501,protein localization to kinetochore,0.0018712152560281883,15,4
+GO:BP,GO:1903083,protein localization to condensed chromosome,0.0018712152560281883,15,4
+GO:BP,GO:1902412,regulation of mitotic cytokinesis,0.0018712152560281883,15,4
+GO:BP,GO:0090306,meiotic spindle assembly,0.0018712152560281883,15,4
+GO:BP,GO:0051785,positive regulation of nuclear division,0.0019978189106425706,62,6
+GO:BP,GO:0016032,viral process,0.0020093213804845173,371,12
+GO:BP,GO:0001934,positive regulation of protein phosphorylation,0.002022342609894059,306,11
+GO:BP,GO:0042770,signal transduction in response to DNA damage,0.0020906248345666308,191,9
+GO:BP,GO:0045860,positive regulation of protein kinase activity,0.0020906248345666308,191,9
+GO:BP,GO:0003013,circulatory system process,0.002141256226740635,594,15
+KEGG,KEGG:04218,Cellular senescence,0.0021858576104777853,155,7
+GO:BP,GO:0051438,regulation of ubiquitin-protein transferase activity,0.0022097826334525924,35,5
+GO:BP,GO:0043066,negative regulation of apoptotic process,0.0023767255645041068,851,18
+REAC,REAC:R-HSA-2980766,Nuclear Envelope Breakdown,0.0024734085410271153,47,5
+GO:BP,GO:0098883,synapse pruning,0.0024841579008359964,16,4
+GO:BP,GO:0051299,centrosome separation,0.0024841579008359964,16,4
+GO:BP,GO:0007584,response to nutrient,0.0025239899214965877,145,8
+GO:BP,GO:0031114,regulation of microtubule depolymerization,0.0025546900633620097,36,5
+GO:BP,GO:0007095,mitotic G2 DNA damage checkpoint signaling,0.0025546900633620097,36,5
+GO:BP,GO:0050900,leukocyte migration,0.0027934396763336687,383,12
+GO:BP,GO:0098754,detoxification,0.0027973916865906274,147,8
+GO:BP,GO:0061024,membrane organization,0.002823622397980238,774,17
+GO:BP,GO:0050870,positive regulation of T cell activation,0.0028441721362759916,255,10
+GO:BP,GO:0051653,spindle localization,0.0028989011645388415,66,6
+REAC,REAC:R-HSA-1280215,Cytokine Signaling in Immune system,0.002943244644288551,772,16
+GO:BP,GO:0034504,protein localization to nucleus,0.003024092852177715,319,11
+GO:BP,GO:0033674,positive regulation of kinase activity,0.0031856648345172677,201,9
+REAC,REAC:R-HSA-2565942,Regulation of PLK1 Activity at G2/M Transition,0.0031967142492585815,85,6
+GO:BP,GO:1902969,mitotic DNA replication,0.003234460083337503,17,4
+GO:BP,GO:0045842,positive regulation of mitotic metaphase/anaphase transition,0.003234460083337503,17,4
+GO:BP,GO:0044771,meiotic cell cycle phase transition,0.003234460083337503,17,4
+GO:BP,GO:0002687,positive regulation of leukocyte migration,0.0032545568077811896,150,8
+GO:BP,GO:0009890,negative regulation of biosynthetic process,0.0033218328065533756,2672,35
+GO:BP,GO:1902410,mitotic cytokinetic process,0.003370978821467149,38,5
+REAC,REAC:R-HSA-2454202,Fc epsilon receptor (FCERI) signaling,0.0033983892292397924,182,8
+GO:BP,GO:0034502,protein localization to chromosome,0.003469136118976195,106,7
+GO:BP,GO:0006508,proteolysis,0.0035269014671583197,787,17
+GO:BP,GO:0045937,positive regulation of phosphate metabolic process,0.0035480056876396344,392,12
+GO:BP,GO:0010562,positive regulation of phosphorus metabolic process,0.0035480056876396344,392,12
+GO:BP,GO:0071705,nitrogen compound transport,0.0037101230955180757,790,17
+GO:BP,GO:0009620,response to fungus,0.003772334079779659,69,6
+GO:BP,GO:1902101,positive regulation of metaphase/anaphase transition of cell cycle,0.00414060319534427,18,4
+GO:BP,GO:0070663,regulation of leukocyte proliferation,0.004431853966610623,268,10
+GO:BP,GO:0044773,mitotic DNA damage checkpoint signaling,0.004465582094739794,71,6
+REAC,REAC:R-HSA-199991,Membrane Trafficking,0.004672034918404732,625,14
+REAC,REAC:R-HSA-15869,Metabolism of nucleotides,0.004739652843046718,91,6
+GO:BP,GO:0009059,macromolecule biosynthetic process,0.004742160006885438,9168,82
+REAC,REAC:R-HSA-1538133,G0 and Early G1,0.00488510240543799,26,4
+GO:BP,GO:0002831,regulation of response to biotic stimulus,0.004891050630978076,555,14
+GO:BP,GO:0071459,"protein localization to chromosome, centromeric region",0.0049654813307337545,41,5
+GO:BP,GO:0042325,regulation of phosphorylation,0.004992983478442654,556,14
+REAC,REAC:R-HSA-69052,Switching of origins to a post-replicative state,0.005047102559568107,92,6
+GO:BP,GO:1901978,positive regulation of cell cycle checkpoint,0.005222081208095834,19,4
+GO:BP,GO:0016321,female meiosis chromosome segregation,0.005224910109509897,6,3
+GO:BP,GO:0010032,meiotic chromosome condensation,0.005224910109509897,6,3
+GO:BP,GO:0051649,establishment of localization in cell,0.005234096904689866,1920,28
+GO:BP,GO:0042098,T cell proliferation,0.005322010416978416,214,9
+GO:BP,GO:0008037,cell recognition,0.005514360104175643,161,8
+REAC,REAC:R-HSA-69205,G1/S-Specific Transcription,0.0057099174425264505,27,4
+GO:BP,GO:0044087,regulation of cellular component biogenesis,0.005836514123735225,1001,19
+GO:BP,GO:0007264,small GTPase-mediated signal transduction,0.0058780760943846645,486,13
+GO:BP,GO:0000077,DNA damage checkpoint signaling,0.005980043680698365,115,7
+GO:BP,GO:0044774,mitotic DNA integrity checkpoint signaling,0.00616398413394692,75,6
+GO:BP,GO:0021700,developmental maturation,0.0062254800064490655,344,11
+GO:BP,GO:0031111,negative regulation of microtubule polymerization or depolymerization,0.006321097571915226,43,5
+GO:BP,GO:0015031,protein transport,0.006352351254490194,1403,23
+GO:BP,GO:0040007,growth,0.006390658019529116,914,18
+GO:BP,GO:0150063,visual system development,0.006507908644322615,416,12
+GO:BP,GO:0045184,establishment of protein localization,0.006653428159594322,1834,27
+GO:BP,GO:0018193,peptidyl-amino acid modification,0.006709717430152247,492,13
+GO:BP,GO:1990748,cellular detoxification,0.007504124745386086,119,7
+GO:BP,GO:0019058,viral life cycle,0.0076327693571329215,285,10
+GO:BP,GO:0048880,sensory system development,0.007706093608382504,423,12
+KEGG,KEGG:04062,Chemokine signaling pathway,0.007924027446231892,190,7
+GO:BP,GO:2000403,positive regulation of lymphocyte migration,0.007951200961911783,45,5
+GO:BP,GO:0001932,regulation of protein phosphorylation,0.007979880638942784,500,13
+GO:BP,GO:0051443,positive regulation of ubiquitin-protein transferase activity,0.007993929206599608,21,4
+GO:BP,GO:0048245,eosinophil chemotaxis,0.007993929206599608,21,4
+GO:BP,GO:0002685,regulation of leukocyte migration,0.007996043351713401,225,9
+KEGG,KEGG:04380,Osteoclast differentiation,0.00801336456500173,132,6
+GO:BP,GO:0000165,MAPK cascade,0.008081248261749151,749,16
+GO:BP,GO:1903706,regulation of hemopoiesis,0.008082258775613662,425,12
+GO:BP,GO:0033273,response to vitamin,0.008989856886777529,80,6
+GO:BP,GO:0044785,metaphase/anaphase transition of meiotic cell cycle,0.009106336528817623,7,3
+GO:BP,GO:0006338,chromatin remodeling,0.009499241337533135,1036,19
+GO:BP,GO:0006812,monoatomic cation transport,0.009499241337533135,1036,19
+GO:BP,GO:0030001,metal ion transport,0.009569632117688125,849,17
+GO:BP,GO:0015669,gas transport,0.00972812401106626,22,4
+GO:BP,GO:0000212,meiotic spindle organization,0.00972812401106626,22,4
+GO:BP,GO:0071495,cellular response to endogenous stimulus,0.009738491607914752,1235,21
+GO:BP,GO:0031570,DNA integrity checkpoint signaling,0.009851110225408891,124,7
+GO:BP,GO:0006260,DNA replication,0.010327212248244181,295,10
+GO:BP,GO:0046651,lymphocyte proliferation,0.010327212248244181,295,10
+GO:BP,GO:0031349,positive regulation of defense response,0.010945120463905006,515,13
+GO:BP,GO:0061162,establishment of monopolar cell polarity,0.01172525450094809,23,4
+GO:BP,GO:0042542,response to hydrogen peroxide,0.011938973685056321,84,6
+GO:BP,GO:0051056,regulation of small GTPase mediated signal transduction,0.011958666907367034,300,10
+REAC,REAC:R-HSA-8854521,Interaction between PHLDA1 and AURKA,0.012119988584579836,2,2
+GO:BP,GO:0097237,cellular response to toxic substance,0.012141484841756004,128,7
+KEGG,KEGG:05206,MicroRNAs in cancer,0.01241735190893537,273,8
+GO:BP,GO:0032943,mononuclear cell proliferation,0.012671046526649306,302,10
+GO:BP,GO:0001817,regulation of cytokine production,0.012955853503082768,778,16
+GO:BP,GO:0060322,head development,0.013373100462653217,780,16
+REAC,REAC:R-HSA-69242,S Phase,0.013960712834578068,162,7
+GO:BP,GO:0031145,anaphase-promoting complex-dependent catabolic process,0.014009504957698328,24,4
+GO:BP,GO:0061339,establishment or maintenance of monopolar cell polarity,0.014009504957698328,24,4
+REAC,REAC:R-HSA-176974,Unwinding of DNA,0.014021012687586147,12,3
+GO:BP,GO:1902903,regulation of supramolecular fiber organization,0.014036780314888567,375,11
+GO:BP,GO:0001816,cytokine production,0.014243771635424975,784,16
+GO:BP,GO:0048729,tissue morphogenesis,0.014256733581897971,610,14
+GO:BP,GO:1902425,positive regulation of attachment of mitotic spindle microtubules to kinetochore,0.014510786866052592,8,3
+GO:BP,GO:0002573,myeloid leukocyte differentiation,0.01484911985267642,243,9
+GO:BP,GO:0001501,skeletal system development,0.01639141407238578,535,13
+GO:BP,GO:0051382,kinetochore assembly,0.016605925652938638,25,4
+GO:BP,GO:0072677,eosinophil migration,0.016605925652938638,25,4
+REAC,REAC:R-HSA-9012999,RHO GTPase cycle,0.017895111208989935,448,11
+REAC,REAC:R-HSA-68884,Mitotic Telophase/Cytokinesis,0.018153163970635728,13,3
+REAC,REAC:R-HSA-75035,Chk1/Chk2(Cds1) mediated inactivation of Cyclin B:Cdk1 complex,0.018153163970635728,13,3
+REAC,REAC:R-HSA-4419969,Depolymerization of the Nuclear Lamina,0.018153163970635728,13,3
+KEGG,KEGG:04060,Cytokine-cytokine receptor interaction,0.0187021009741247,290,8
+GO:BP,GO:0002521,leukocyte differentiation,0.019362673982852952,627,14
+GO:BP,GO:0045088,regulation of innate immune response,0.020290406735127286,466,12
+KEGG,KEGG:00240,Pyrimidine metabolism,0.02042315561247073,55,4
+REAC,REAC:R-HSA-2129379,Molecules associated with elastic fibres,0.020578451881739627,37,4
+GO:BP,GO:0002244,hematopoietic progenitor cell differentiation,0.02081793938336922,139,7
+GO:BP,GO:1901879,regulation of protein depolymerization,0.02148187654263384,93,6
+GO:BP,GO:0062033,positive regulation of mitotic sister chromatid segregation,0.021677538606712912,9,3
+GO:BP,GO:0031915,positive regulation of synaptic plasticity,0.021677538606712912,9,3
+GO:BP,GO:0035999,tetrahydrofolate interconversion,0.021677538606712912,9,3
+GO:BP,GO:0046602,regulation of mitotic centrosome separation,0.021677538606712912,9,3
+GO:BP,GO:2000241,regulation of reproductive process,0.02243650810397859,195,8
+REAC,REAC:R-HSA-9013106,RHOC GTPase cycle,0.02301441208355021,74,5
+REAC,REAC:R-HSA-212436,Generic Transcription Pathway,0.023279138123450564,1225,19
+GO:BP,GO:0006874,intracellular calcium ion homeostasis,0.023281100284264528,196,8
+GO:BP,GO:0043408,regulation of MAPK cascade,0.02347173161466065,638,14
+REAC,REAC:R-HSA-69239,Synthesis of DNA,0.02381642902438766,121,6
+REAC,REAC:R-HSA-382551,Transport of small molecules,0.02410278326303342,727,14
+GO:BP,GO:0022408,negative regulation of cell-cell adhesion,0.024152275127493426,197,8
+GO:BP,GO:0045859,regulation of protein kinase activity,0.02453518915766694,326,10
+KEGG,KEGG:05171,Coronavirus disease - COVID-19,0.024902549862513352,229,7
+GO:BP,GO:0051781,positive regulation of cell division,0.02576914379438355,96,6
+GO:BP,GO:1902105,regulation of leukocyte differentiation,0.026538950330926736,329,10
+REAC,REAC:R-HSA-73857,RNA Polymerase II Transcription,0.026758090977437216,1346,20
+GO:BP,GO:0022008,neurogenesis,0.02728175509721007,1758,25
+REAC,REAC:R-HSA-1362300,Transcription of E2F targets under negative control by p107 (RBL1) and p130 (RBL2) in complex with HDAC1,0.028645623345601116,15,3
+GO:BP,GO:0006898,receptor-mediated endocytosis,0.028673241482313643,264,9
+REAC,REAC:R-HSA-6798695,Neutrophil degranulation,0.030128105372007608,475,11
+GO:BP,GO:1902683,regulation of receptor localization to synapse,0.03064333453754382,29,4
+GO:BP,GO:0033313,meiotic cell cycle checkpoint signaling,0.030841829795892717,10,3
+GO:BP,GO:0051307,meiotic chromosome separation,0.030841829795892717,10,3
+GO:BP,GO:2001204,regulation of osteoclast development,0.030841829795892717,10,3
+GO:BP,GO:0010629,negative regulation of gene expression,0.031049423721875236,1550,23
+REAC,REAC:R-HSA-9013149,RAC1 GTPase cycle,0.031222083448407933,184,7
+GO:BP,GO:0048589,developmental growth,0.03186905159502642,656,14
+GO:BP,GO:0002833,positive regulation of response to biotic stimulus,0.03277149500806027,411,11
+GO:BP,GO:0007062,sister chromatid cohesion,0.03323052596342115,60,5
+GO:BP,GO:0006956,complement activation,0.03323052596342115,60,5
+GO:BP,GO:0003018,vascular process in circulatory system,0.03323533784301107,269,9
+GO:BP,GO:0070661,leukocyte proliferation,0.03341718345569481,338,10
+GO:BP,GO:0001654,eye development,0.033508627858699,412,11
+GO:BP,GO:0046785,microtubule polymerization,0.03442929299489205,101,6
+GO:BP,GO:1901698,response to nitrogen compound,0.0346854515226704,939,17
+GO:BP,GO:0006811,monoatomic ion transport,0.034880513911151316,1241,20
+REAC,REAC:R-HSA-196757,Metabolism of folate and pterines,0.035112835007999374,16,3
+GO:BP,GO:0007026,negative regulation of microtubule depolymerization,0.0352050628936868,30,4
+GO:BP,GO:0051293,establishment of spindle localization,0.036035679470987333,61,5
+REAC,REAC:R-HSA-428359,Insulin-like Growth Factor-2 mRNA Binding Proteins (IGF2BPs/IMPs/VICKZs) bind RNA,0.03622773236738461,3,2
+GO:BP,GO:0031346,positive regulation of cell projection organization,0.036934190059142516,342,10
+GO:BP,GO:0044089,positive regulation of cellular component biogenesis,0.03742543368186574,496,12
+REAC,REAC:R-HSA-73894,DNA Repair,0.03745195480827754,327,9
+GO:BP,GO:0042744,hydrogen peroxide catabolic process,0.04024617139839344,31,4
+GO:BP,GO:0042102,positive regulation of T cell proliferation,0.04065878293044419,104,6
+GO:BP,GO:0048732,gland development,0.041706179570617175,422,11
+GO:BP,GO:0042116,macrophage activation,0.04292566502755568,105,6
+GO:BP,GO:0045637,regulation of myeloid cell differentiation,0.04372542427679309,214,8
+GO:BP,GO:0009612,response to mechanical stimulus,0.04372542427679309,214,8
+GO:BP,GO:0043549,regulation of kinase activity,0.04385554164387603,349,10
+GO:BP,GO:0010458,exit from mitosis,0.045797140360299464,32,4
+GO:BP,GO:0099607,lateral attachment of mitotic spindle microtubules to kinetochore,0.048479954338319343,2,2
+GO:BP,GO:0140273,repair of mitotic kinetochore microtubule attachment defect,0.048479954338319343,2,2
+GO:BP,GO:0140274,repair of kinetochore microtubule attachment defect,0.048479954338319343,2,2
