@@ -1,0 +1,15 @@
+tool,kind,where_used
+NumPy,library,src/vorganoid; src/geo_fidelity.py; paper/build_paper.py
+SciPy,library,src/geo_fidelity.py (spearmanr); paper/build_paper.py
+pandas,library,src/geo_fidelity.py; paper/build_paper.py
+scikit-image,library,src/vorganoid (instance post-processing; watershed/labels)
+PyTorch,library,train_seg.py; tune_seg.py (U-Net CNN)
+Pillow,library,train_seg.py image loading
+python-docx,library,paper/paperkit.py
+pytest,test framework,tests/ (hermetic suite)
+LibreOffice (soffice headless),application,paper docx -> pdf render
+poppler pdfinfo,application,page count of rendered paper
+Git + GitHub,service,repo hosting and pushes
+NCBI E-utilities (esearch/esummary),web API,src/geo_candidates.py
+NCBI GEO FTP/HTTPS supplementary files,data service,src/geo_fidelity.py
+GTEx v8 gene median TPM (GTEx portal bucket),reference data service,data/ref/gtex_v8_median_tpm.gct.gz; src/geo_fidelity.py
