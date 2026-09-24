@@ -206,6 +206,39 @@ h = up[up.library == "MSigDB_Hallmark_2020"].iloc[0]; c = up[up.library == "Cell
 P.p(f"Independent annotation of the top 200 driver genes with Enrichr and the Reactome AnalysisService reproduces the g:Profiler picture: Hallmark {h.term} "
     f"(q = {h.q_bh:.1e}), CellMarker '{c.term}' (q = {c.q_bh:.0e}), and Reactome '{r0['name']}' (FDR = {r0.fdr:.1e}) together with mitotic cell cycle. "
     "The driver genes describe what makes a profile look like cultured fibroblasts (proliferation, missing immune and complement programs); they are not an organoid discovery.")
+
+P.h("4.10 Which organoids are faithful? Organ, deficits and protocol on the strict subset", 2)
+REC = pd.read_csv("results/strict_organ_recovery.csv"); SUM = json.load(open("results/strict_organ_summary.json"))
+ENR = pd.read_csv("results/strict_organ_deficit_enrichment.csv"); PAR = json.load(open("results/strict_organ_parenchymal.json")); PRO = json.load(open("results/strict_protocol.json"))
+P.table(["labelled organ", "strict series", "top-1 recovery", "median rank of own tissue"],
+        [[r.organ, int(r.n), f"{r.top1:.2f}", f"{r.median_rank:g}"] for r in REC.sort_values("n", ascending=False).itertuples()],
+        "Organ recovery on the 45 strictly organoid series (SALL_PARONLY; results/strict_organ_recovery.csv).")
+fb = SUM["fisher_colon_brain_vs_liver_kidney_lung"]
+P.p(f"Colon and cortical organoids recover their own tissue ({fb['table'][0][0]} of {sum(fb['table'][0])} top-1); liver, kidney and lung organoids almost never do "
+    f"({fb['table'][1][0]} of {sum(fb['table'][1])}; Fisher p = {fb['p']:.1e}). The grouping was chosen after seeing the table, so this p is descriptive. To see what the "
+    "unfaithful organoids lack we scored, for each series, the deficit of each gene relative to its labelled tissue and averaged within organ:")
+P.equation("delta_g = (1/|S_o|) sum_{s in S_o} [ z(G_g,o) - z(p_sg) ]")
+def top(o, src):
+    x = ENR[(ENR.organ == o) & (ENR.source == src)].sort_values("fdr")
+    return f"{x.iloc[0].term} (q = {x.iloc[0].fdr:.1e})" if len(x) else "none"
+P.p(f"The 100 largest deficits were annotated with STRING functional enrichment and Enrichr PanglaoDB. Liver organoids lack the hepatocyte program "
+    f"({top('Liver', 'Enrichr:PanglaoDB')}; STRING {top('Liver', 'STRING:Process')}); kidney organoids lack proximal tubule "
+    f"({top('Kidney - Cortex', 'Enrichr:PanglaoDB')}); lung organoids lack mainly stroma ({top('Lung', 'Enrichr:PanglaoDB')}). Faithful colon and cortical organoids "
+    f"lack mostly stromal, vascular and immune cells ({top('Colon - Transverse', 'Enrichr:PanglaoDB')}; {top('Brain - Cortex', 'Enrichr:PanglaoDB')}).")
+fp = PAR["fisher_unfaithful_vs_faithful"]
+P.p(f"A direct mechanism test is inconclusive: the share of HPA parenchymal-only genes among the deficits is only modestly higher in unfaithful organs "
+    f"(OR = {fp['odds_ratio']:.2f}, p = {fp['p']:.3f}), because lung deficits are stromal (share {PAR['Lung']['par_share_of_annotated']:.2f}) while liver "
+    f"({PAR['Liver']['par_share_of_annotated']:.2f}) and kidney ({PAR['Kidney - Cortex']['par_share_of_annotated']:.2f}) deficits are parenchymal.")
+cm = PRO["cmh_organ_effect_given_derivation"]; ps = PRO["organ_effect_within_PSC"]; ad = PRO["organ_effect_within_adult"]; fd = PRO["fisher_psc_vs_adult_top1"]
+P.p(f"Protocol. Classifying series from GEO text as PSC-derived or adult-tissue-derived (keyword rules, not manually validated), derivation alone is weakly "
+    f"associated with recovery (Fisher p = {fd['p']:.2f}). The organ effect holds within each stratum (PSC {ps['table'][0][0]}/{sum(ps['table'][0])} vs "
+    f"{ps['table'][1][0]}/{sum(ps['table'][1])}, p = {ps['fisher_p']:.3f}; adult {ad['table'][0][0]}/{sum(ad['table'][0])} vs {ad['table'][1][0]}/{sum(ad['table'][1])}, "
+    f"p = {ad['fisher_p']:.1e}) and in a Cochran-Mantel-Haenszel test:")
+P.equation("OR_MH = sum_k (a_k d_k / n_k) / sum_k (b_k c_k / n_k)")
+P.p(f"(pooled OR = {cm['pooled_OR_haldane']:.0f} with a 0.5 continuity correction, p = {cm['p']:.1e}). We name the candidate the metabolic-parenchyma gap: liver and "
+    "kidney organoids miss their tissue because they lack mature metabolic epithelium, while intestinal and cortical organoids match despite missing stroma. "
+    "It is falsified if, in new strictly organoid liver or kidney series, hepatocyte and proximal-tubule genes do not account for most of the rank gap. "
+    "Brain organoids are all PSC-derived, so organ and protocol cannot be separated there; per-organ n is small.")
 P.h("5. Negative results (kept by design)")
 for t in ["The initial power-law (alpha > 1) interpretation was withdrawn after large-organoid checks contradicted it.",
           "Size-adjusted and size-filtered readouts do not improve donor-level modulator discrimination.",
@@ -214,6 +247,7 @@ for t in ["The initial power-law (alpha > 1) interpretation was withdrawn after 
           "Fidelity: 'Pancreas' as best match (35/151 series with S3000) disappears with other methods, so it is a method artefact.",
           "Fidelity: a 'liver disease' series (GSE278954) ranks Liver 50th of 54, and lung and breast organoids are rarely matched to their organ.",
           "Fidelity: organ labels come from text, and series profiles average all samples, including any non-organoid controls.",
+          "Fidelity: the HPA parenchymal share of deficit genes does not clearly separate faithful from unfaithful organs (p = 0.061); lung organoids break the pattern.",
           "Fidelity: the culture-fibroblast attractor is RETRACTED as a general organoid property: on 45 series whose samples are all organoids it shrinks to 9-29% of series (Section 4.9)."]:
     P.p("- " + t)
 P.h("6. Discussion")
@@ -236,6 +270,7 @@ for r in ["Lefferts JW, et al. OrgaSegment: deep-learning based organoid segment
           "Boj SF, Vonk AM, et al. Forskolin-induced swelling in intestinal organoids: an in vitro assay for assessing drug response in cystic fibrosis patients. J Vis Exp 2017. https://pmc.ncbi.nlm.nih.gov/articles/PMC5408767/",
           "GTEx Consortium. The GTEx Consortium atlas of genetic regulatory effects across human tissues. Science 2020. https://gtexportal.org",
           "Karlsson M, et al. A single-cell type transcriptomics map of human tissues. Sci Adv 2021. https://www.proteinatlas.org",
+          "Szklarczyk D, et al. The STRING database in 2023. Nucleic Acids Res 2023.",
           "Kuleshov MV, et al. Enrichr: a comprehensive gene set enrichment analysis web server 2016 update. Nucleic Acids Res 2016.",
           "Milacic M, et al. The Reactome Pathway Knowledgebase 2024. Nucleic Acids Res 2024.",
           "Gumienny R. GEOparse: Python library to access Gene Expression Omnibus. https://github.com/guma44/GEOparse",
