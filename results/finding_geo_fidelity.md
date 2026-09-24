@@ -15,3 +15,8 @@ GTEx cultured fibroblasts than to their organ of origin. It should hold after re
 - Tissue recovery on the clean subset: top-1 30% / 33% / 27% (S3000 / SALL / CENT).
 - Fibroblast best match on the clean subset: 23% [15, 31] / 26% [18, 34] / 36% [27, 45] (bootstrap 95% CI). The one-of-54-columns chance level is 1.9%. The attractor survives the label audit.
 - Alternative explanation, not yet excluded: GTEx has only two in-vitro references (cultured fibroblasts, EBV lymphocytes), so a generic culture/proliferation signature could drive the match rather than a mesenchymal identity. Next test: remove proliferation/ECM gene sets, or compare with non-organoid 2D cultures of the same organ.
+
+## Tool: `vorganoid fidelity` (src/vorganoid/fidelity.py, tests/test_fidelity.py)
+Real-data run on GSE278954 raw counts (results/tool_fidelity_GSE278954.json): intended tissue Liver ranks 50/54; fibroblast rank 20.
+Known issue found while building the tool: HTSeq summary rows ("__no_feature" etc.) were included in CPM denominators in the scan
+pipeline (src/geo_fidelity.py). The tool excludes them. The effect on rank correlations is a per-sample scale factor, expected to be small; a rescan is pending.

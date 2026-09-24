@@ -1,0 +1,12 @@
+{
+ "top": {
+  "Pituitary": 0.8325,
+  "Thyroid": 0.8322,
+  "Prostate": 0.8306,
+  "Ovary": 0.8305,
+  "Stomach": 0.829
+ },
+ "fibroblast_rank": 20,
+ "culture_attractor": false,
+ "organ_tissue_rank": 50
+}

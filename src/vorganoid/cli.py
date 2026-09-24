@@ -4,6 +4,9 @@
       Size-stratified CFTR-modulator effect from a per-organoid FIS table (CSV with donor, condition, A0, swelling).
   vorganoid segment IMAGE --model unet.pt [--size 256] [--out labels.png]
       Instance-segment organoids in a brightfield image with the trained U-Net + watershed.
+  vorganoid fidelity COUNTS --reference gtex_median_tpm.gct.gz [--organ-tissue "Liver"] [--top 5]
+      Score an organoid gene-count matrix (Ensembl IDs, samples in columns) against reference tissues;
+      reports top matches, rank of the intended tissue, and rank of GTEx cultured fibroblasts (culture-attractor flag).
 """
 from __future__ import annotations
 
@@ -44,12 +47,27 @@ def cmd_segment(a):
     return 0
 
 
+def cmd_fidelity(a):
+    from .fidelity import mean_log_cpm, fidelity_scores, load_gtex
+    sep = "," if ".csv" in a.counts else "\t"
+    df = pd.read_csv(a.counts, sep=sep, index_col=0); df.index = df.index.astype(str).str.split(".").str[0]
+    sc = fidelity_scores(mean_log_cpm(df), load_gtex(a.reference))
+    rank = {t: int(list(sc.index).index(t)) + 1 for t in sc.index}
+    fib = "Cells - Cultured fibroblasts"
+    res = {"top": {t: round(float(v), 4) for t, v in sc.head(a.top).items()}, "fibroblast_rank": rank.get(fib),
+           "culture_attractor": rank.get(fib) == 1}
+    if a.organ_tissue: res["organ_tissue_rank"] = rank.get(a.organ_tissue)
+    print(json.dumps(res, indent=1)); return 0
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="vorganoid"); sp = ap.add_subparsers(dest="cmd", required=True)
     s = sp.add_parser("sizeaware"); s.add_argument("table"); s.add_argument("--drug", required=True); s.add_argument("--control", default="DMSO")
     s.add_argument("--bins", type=int, default=4); s.add_argument("--forskolin-col"); s.set_defaults(f=cmd_sizeaware)
     g = sp.add_parser("segment"); g.add_argument("image"); g.add_argument("--model", required=True); g.add_argument("--size", type=int, default=256)
     g.add_argument("--out", default="labels.png"); g.set_defaults(f=cmd_segment)
+    f = sp.add_parser("fidelity"); f.add_argument("counts"); f.add_argument("--reference", required=True)
+    f.add_argument("--organ-tissue"); f.add_argument("--top", type=int, default=5); f.set_defaults(f=cmd_fidelity)
     a = ap.parse_args(argv); return a.f(a)
 
 
