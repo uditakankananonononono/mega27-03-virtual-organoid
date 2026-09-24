@@ -1,0 +1,46 @@
+{
+ "Brain - Cortex": {
+  "parenchymal_only": 52,
+  "nonparenchymal": 47,
+  "unannotated": 1,
+  "par_share_of_annotated": 0.5252525252525253
+ },
+ "Colon - Transverse": {
+  "parenchymal_only": 23,
+  "nonparenchymal": 77,
+  "unannotated": 0,
+  "par_share_of_annotated": 0.23
+ },
+ "Kidney - Cortex": {
+  "parenchymal_only": 51,
+  "nonparenchymal": 42,
+  "unannotated": 7,
+  "par_share_of_annotated": 0.5483870967741935
+ },
+ "Liver": {
+  "parenchymal_only": 67,
+  "nonparenchymal": 31,
+  "unannotated": 2,
+  "par_share_of_annotated": 0.6836734693877551
+ },
+ "Lung": {
+  "parenchymal_only": 14,
+  "nonparenchymal": 78,
+  "unannotated": 8,
+  "par_share_of_annotated": 0.15217391304347827
+ },
+ "fisher_unfaithful_vs_faithful": {
+  "table": [
+   [
+    132,
+    151
+   ],
+   [
+    75,
+    124
+   ]
+  ],
+  "odds_ratio": 1.445298013245033,
+  "p": 0.061498954762134836
+ }
+}

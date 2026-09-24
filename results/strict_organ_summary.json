@@ -1,0 +1,103 @@
+{
+ "n_strict": 45,
+ "fisher_colon_brain_vs_liver_kidney_lung": {
+  "table": [
+   [
+    23,
+    5
+   ],
+   [
+    1,
+    13
+   ]
+  ],
+  "p": 3.947996511406719e-06
+ },
+ "top_deficit_genes": {
+  "Brain - Cortex": [
+   "HBB",
+   "S100A9",
+   "TESPA1",
+   "SOHLH1",
+   "MT1M",
+   "HBA2",
+   "OPALIN",
+   "COX7A1",
+   "HIGD1B",
+   "GIMAP7",
+   "TMEM265",
+   "GPIHBP1",
+   "C1QB",
+   "RPS4Y1",
+   "MAG"
+  ],
+  "Colon - Transverse": [
+   "F13A1",
+   "RAMP2",
+   "CXCL12",
+   "GPNMB",
+   "STMN2",
+   "BEST2",
+   "MGP",
+   "NXPE1",
+   "VWF",
+   "CLCA1",
+   "ELN",
+   "MS4A12",
+   "KCNJ8",
+   "HCK",
+   "TNS1"
+  ],
+  "Kidney - Cortex": [
+   "ATP6V1G3",
+   "FXYD4",
+   "C1QA",
+   "RAMP3",
+   "C1QB",
+   "ATP6V0D2",
+   "SRGN",
+   "ALDOB",
+   "AQP2",
+   "C1QC",
+   "SLC17A3",
+   "ALB",
+   "SLC22A7",
+   "AGXT2",
+   "MIOX"
+  ],
+  "Liver": [
+   "SLC17A2",
+   "APOF",
+   "CYP4A22",
+   "SLC22A7",
+   "ITIH4",
+   "UPB1",
+   "HGFAC",
+   "APOC2",
+   "UROC1",
+   "DBH",
+   "CD4",
+   "SLC6A13",
+   "RDH16",
+   "SLC25A47",
+   "BHMT2"
+  ],
+  "Lung": [
+   "C1S",
+   "NAPSA",
+   "ENG",
+   "APOC1",
+   "EMILIN1",
+   "CYP27A1",
+   "NID1",
+   "HLA-DRB1",
+   "KPNA2P3",
+   "SRPX",
+   "IFITM2",
+   "PDK4",
+   "BST2",
+   "FBLN5",
+   "PCOLCE"
+  ]
+ }
+}

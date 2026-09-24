@@ -1,0 +1,9 @@
+organ,n,top1,median_rank
+Brain - Cortex,9,0.7777777777777778,1.0
+Colon - Transverse,19,0.8421052631578947,1.0
+Esophagus - Mucosa,1,0.0,6.0
+Kidney - Cortex,4,0.0,14.5
+Liver,6,0.16666666666666666,22.0
+Lung,4,0.0,6.5
+Stomach,1,0.0,3.0
+Uterus,1,0.0,9.0
