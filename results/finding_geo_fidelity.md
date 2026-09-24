@@ -48,3 +48,8 @@ pipeline (src/geo_fidelity.py). The tool excludes them. The effect on rank corre
 - Restricted to 19,254 HGNC protein-coding genes (_PC). The fibroblast best-match share on the clean subset is 44% [35, 53] (SALL_PC) and 28% [20, 36] (CENT_PC). The attractor is not a non-coding/pseudogene artefact.
 - Recovery changes: SALL 33% -> 28% (McNemar p = 0.23), CENT 25% -> 30% (p = 0.016).
 - Ensembl REST (about 50 s per 500 IDs) and BioMart (timeout) were tried and abandoned for this lookup. HGNC was used instead. Neither Ensembl route is counted as a tool.
+
+## Sample-level audit with GEOparse (results/geo_sample_meta.csv, results/geo_fidelity_strict.json)
+GEOparse pulled GSM metadata for all 114 clean series. Only 45 series have every sample annotated as organoid (frac_organoid=1); 59 have no organoid-annotated sample (e.g. GSE343459: fibroblasts isolated from skin organoids; GSE287925: LNCaP 2D cells), despite organoid keywords at series level.
+On the strict 45, the "culture-fibroblast attractor" shrinks: fibroblast-best fraction 0.09-0.29 across 11 method variants (vs 0.28-0.62 in the no-organoid-sample series; Fisher p<0.05 in 10/11 variants). Top-1 tissue recovery on the strict subset is 0.31-0.56.
+Verdict (negative/partial): a large part of the attractor signal came from series-level label contamination, not from organoids. The attractor remains a candidate for a minority (~10-25%) of strict organoid series. Not claimed as a discovery.

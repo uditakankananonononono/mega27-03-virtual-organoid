@@ -1,0 +1,257 @@
+{
+ "n_strict": 45,
+ "n_no_organoid_samples": 59,
+ "CENT": {
+  "strict": {
+   "n": 45,
+   "top1": 0.3333333333333333,
+   "fibroblast_best_frac": 0.24444444444444444,
+   "fibroblast_ci95": [
+    0.13333333333333333,
+    0.37777777777777777
+   ],
+   "fib_count": 11
+  },
+  "no_organoid": {
+   "n": 58,
+   "top1": 0.1896551724137931,
+   "fibroblast_best_frac": 0.46551724137931033,
+   "fibroblast_ci95": [
+    0.3275862068965517,
+    0.5862068965517241
+   ],
+   "fib_count": 27
+  },
+  "fisher_p_strict_vs_none": 0.024694015546948226
+ },
+ "CENT_NOCULT": {
+  "strict": {
+   "n": 45,
+   "top1": 0.3333333333333333,
+   "fibroblast_best_frac": 0.28888888888888886,
+   "fibroblast_ci95": [
+    0.17777777777777778,
+    0.4222222222222222
+   ],
+   "fib_count": 13
+  },
+  "no_organoid": {
+   "n": 58,
+   "top1": 0.1896551724137931,
+   "fibroblast_best_frac": 0.5517241379310345,
+   "fibroblast_ci95": [
+    0.41379310344827586,
+    0.6724137931034483
+   ],
+   "fib_count": 32
+  },
+  "fisher_p_strict_vs_none": 0.009475166948725439
+ },
+ "CENT_NONPAR": {
+  "strict": {
+   "n": 45,
+   "top1": 0.4888888888888889,
+   "fibroblast_best_frac": 0.2,
+   "fibroblast_ci95": [
+    0.08888888888888889,
+    0.3333333333333333
+   ],
+   "fib_count": 9
+  },
+  "no_organoid": {
+   "n": 58,
+   "top1": 0.1896551724137931,
+   "fibroblast_best_frac": 0.5172413793103449,
+   "fibroblast_ci95": [
+    0.39655172413793105,
+    0.6379310344827587
+   ],
+   "fib_count": 30
+  },
+  "fisher_p_strict_vs_none": 0.0011001461560104313
+ },
+ "CENT_PARONLY": {
+  "strict": {
+   "n": 45,
+   "top1": 0.5555555555555556,
+   "fibroblast_best_frac": 0.1111111111111111,
+   "fibroblast_ci95": [
+    0.022222222222222223,
+    0.2
+   ],
+   "fib_count": 5
+  },
+  "no_organoid": {
+   "n": 58,
+   "top1": 0.25862068965517243,
+   "fibroblast_best_frac": 0.29310344827586204,
+   "fibroblast_ci95": [
+    0.1724137931034483,
+    0.41379310344827586
+   ],
+   "fib_count": 17
+  },
+  "fisher_p_strict_vs_none": 0.030238148129283812
+ },
+ "CENT_PC": {
+  "strict": {
+   "n": 45,
+   "top1": 0.4222222222222222,
+   "fibroblast_best_frac": 0.2222222222222222,
+   "fibroblast_ci95": [
+    0.1111111111111111,
+    0.35555555555555557
+   ],
+   "fib_count": 10
+  },
+  "no_organoid": {
+   "n": 58,
+   "top1": 0.1896551724137931,
+   "fibroblast_best_frac": 0.3275862068965517,
+   "fibroblast_ci95": [
+    0.20689655172413793,
+    0.4482758620689655
+   ],
+   "fib_count": 19
+  },
+  "fisher_p_strict_vs_none": 0.2749501084718367
+ },
+ "S3000": {
+  "strict": {
+   "n": 45,
+   "top1": 0.3111111111111111,
+   "fibroblast_best_frac": 0.13333333333333333,
+   "fibroblast_ci95": [
+    0.044444444444444446,
+    0.24444444444444444
+   ],
+   "fib_count": 6
+  },
+  "no_organoid": {
+   "n": 58,
+   "top1": 0.25862068965517243,
+   "fibroblast_best_frac": 0.3103448275862069,
+   "fibroblast_ci95": [
+    0.1896551724137931,
+    0.43103448275862066
+   ],
+   "fib_count": 18
+  },
+  "fisher_p_strict_vs_none": 0.03813845566306831
+ },
+ "SALL": {
+  "strict": {
+   "n": 45,
+   "top1": 0.4222222222222222,
+   "fibroblast_best_frac": 0.08888888888888889,
+   "fibroblast_ci95": [
+    0.022222222222222223,
+    0.17777777777777778
+   ],
+   "fib_count": 4
+  },
+  "no_organoid": {
+   "n": 58,
+   "top1": 0.2413793103448276,
+   "fibroblast_best_frac": 0.3793103448275862,
+   "fibroblast_ci95": [
+    0.25862068965517243,
+    0.5
+   ],
+   "fib_count": 22
+  },
+  "fisher_p_strict_vs_none": 0.0010977227401787147
+ },
+ "SALL_NOCULT": {
+  "strict": {
+   "n": 45,
+   "top1": 0.4222222222222222,
+   "fibroblast_best_frac": 0.08888888888888889,
+   "fibroblast_ci95": [
+    0.022222222222222223,
+    0.17777777777777778
+   ],
+   "fib_count": 4
+  },
+  "no_organoid": {
+   "n": 58,
+   "top1": 0.25862068965517243,
+   "fibroblast_best_frac": 0.3620689655172414,
+   "fibroblast_ci95": [
+    0.2413793103448276,
+    0.5
+   ],
+   "fib_count": 21
+  },
+  "fisher_p_strict_vs_none": 0.001245300716112437
+ },
+ "SALL_NONPAR": {
+  "strict": {
+   "n": 45,
+   "top1": 0.5555555555555556,
+   "fibroblast_best_frac": 0.08888888888888889,
+   "fibroblast_ci95": [
+    0.022222222222222223,
+    0.17777777777777778
+   ],
+   "fib_count": 4
+  },
+  "no_organoid": {
+   "n": 58,
+   "top1": 0.29310344827586204,
+   "fibroblast_best_frac": 0.27586206896551724,
+   "fibroblast_ci95": [
+    0.15517241379310345,
+    0.39655172413793105
+   ],
+   "fib_count": 16
+  },
+  "fisher_p_strict_vs_none": 0.023120779491317196
+ },
+ "SALL_PARONLY": {
+  "strict": {
+   "n": 45,
+   "top1": 0.5333333333333333,
+   "fibroblast_best_frac": 0.1111111111111111,
+   "fibroblast_ci95": [
+    0.022222222222222223,
+    0.2
+   ],
+   "fib_count": 5
+  },
+  "no_organoid": {
+   "n": 58,
+   "top1": 0.27586206896551724,
+   "fibroblast_best_frac": 0.41379310344827586,
+   "fibroblast_ci95": [
+    0.29310344827586204,
+    0.5517241379310345
+   ],
+   "fib_count": 24
+  },
+  "fisher_p_strict_vs_none": 0.0008055837317056782
+ },
+ "SALL_PC": {
+  "strict": {
+   "n": 45,
+   "top1": 0.4444444444444444,
+   "fibroblast_best_frac": 0.2222222222222222,
+   "fibroblast_ci95": [
+    0.1111111111111111,
+    0.35555555555555557
+   ],
+   "fib_count": 10
+  },
+  "no_organoid": {
+   "n": 58,
+   "top1": 0.15517241379310345,
+   "fibroblast_best_frac": 0.6206896551724138,
+   "fibroblast_ci95": [
+    0.5,
+    0.7413793103448276
+   ],
+   "fib_count": 36
+  },
+  "fisher_p_strict_vs_none": 6.113376396057518e-05
+ }
+}
