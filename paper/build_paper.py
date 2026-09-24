@@ -38,6 +38,9 @@ P.p(f"Negatives. Size-adjusted and size-filtered readouts do not improve per-don
     f"change theratyping calls at this assay's well counts. Replication on the public FIS time series is impossible because it is "
     f"well-level. Our best U-Net segmentation (512 px, tuned) reaches mAP@0.5 = {S4['eval_mAP50']:.3f} +/- {S4['eval_sd']:.3f} on the OrgaSegment eval split "
     f"(published 0.76 +/- 0.12): below the state of the art, although the gap is within one standard deviation on 12 images.")
+P.p("Fidelity. Scoring 151 organoid GEO series against GTEx, cultured fibroblasts are the most common best match. A GEOparse sample-level audit shows this "
+    "'culture-fibroblast attractor' comes mostly from non-organoid samples in organoid-titled series: on 45 strictly organoid series it falls to 9-29%. "
+    "We retract it as a general organoid property.")
 
 P.h("1. Introduction")
 P.p("CFTR moves chloride and bicarbonate across the apical membrane of epithelial cells; water follows, and in a closed organoid the lumen "
@@ -178,6 +181,31 @@ P.p("Two components appear: mitotic cell-cycle genes (TOP2A, MKI67, CDK1) that c
     "Our working hypothesis is that the attractor is the joint signature of proliferation and purity. It remains a candidate: a direct test needs "
     "organoid and matched primary tissue from the same donors, profiled together.")
 
+
+P.h("4.9 Sample-level audit and independent annotation: the attractor is mostly label contamination", 2)
+ST = json.load(open("results/geo_fidelity_strict.json")); SM = pd.read_csv("results/geo_sample_meta.csv")
+EN = pd.read_csv("results/attractor_enrichr.csv"); RE = pd.read_csv("results/attractor_reactome.csv")
+meths = [k for k, v in ST.items() if isinstance(v, dict)]
+fs = [ST[m]["strict"]["fibroblast_best_frac"] for m in meths]; fn = [ST[m]["no_organoid"]["fibroblast_best_frac"] for m in meths]
+nsig = sum(ST[m]["fisher_p_strict_vs_none"] < 0.05 for m in meths)
+P.p(f"Series-level text says a study is about organoids; it does not say every profiled sample is an organoid. We therefore pulled the sample (GSM) "
+    f"metadata of all {len(SM)} clean series with GEOparse and classified each sample as organoid or not from its title, source and characteristics. "
+    f"Only {ST['n_strict']} series have every sample annotated as organoid; {ST['n_no_organoid_samples']} have no organoid-annotated sample at all "
+    "(for example GSE343459 profiles fibroblasts isolated from skin organoids, and GSE287925 profiles LNCaP cells in 2D). We compared the fibroblast-best "
+    "fraction between the strict and the no-organoid series with Fisher's exact test:")
+P.equation("p = sum_{x : P(x) <= P(a)} C(K, x) C(N - K, n - x) / C(N, n)")
+P.table(["method", "strict n", "strict top-1", "strict fibroblast-best [95% CI]", "no-organoid fibroblast-best", "Fisher p"],
+        [[m, ST[m]["strict"]["n"], f"{ST[m]['strict']['top1']:.2f}", f"{ST[m]['strict']['fibroblast_best_frac']:.2f} [{ST[m]['strict']['fibroblast_ci95'][0]:.2f}, {ST[m]['strict']['fibroblast_ci95'][1]:.2f}]",
+          f"{ST[m]['no_organoid']['fibroblast_best_frac']:.2f}", f"{ST[m]['fisher_p_strict_vs_none']:.2g}"] for m in meths],
+        "Attractor on strict organoid series vs series without organoid samples (results/geo_fidelity_strict.json).")
+P.p(f"On the strict subset the attractor shrinks to {min(fs):.2f}-{max(fs):.2f} of series (vs {min(fn):.2f}-{max(fn):.2f}); the difference is significant in "
+    f"{nsig} of {len(meths)} method variants. Much of the attractor therefore came from non-organoid samples inside organoid-titled series, not from organoids. "
+    "We retract it as a general property of organoids; it persists only in a minority of strict series.")
+up = EN[EN.direction == "top200"]
+h = up[up.library == "MSigDB_Hallmark_2020"].iloc[0]; c = up[up.library == "CellMarker_2024"].iloc[0]; r0 = RE[RE.direction == "top200"].iloc[0]
+P.p(f"Independent annotation of the top 200 driver genes with Enrichr and the Reactome AnalysisService reproduces the g:Profiler picture: Hallmark {h.term} "
+    f"(q = {h.q_bh:.1e}), CellMarker '{c.term}' (q = {c.q_bh:.0e}), and Reactome '{r0['name']}' (FDR = {r0.fdr:.1e}) together with mitotic cell cycle. "
+    "The driver genes describe what makes a profile look like cultured fibroblasts (proliferation, missing immune and complement programs); they are not an organoid discovery.")
 P.h("5. Negative results (kept by design)")
 for t in ["The initial power-law (alpha > 1) interpretation was withdrawn after large-organoid checks contradicted it.",
           "Size-adjusted and size-filtered readouts do not improve donor-level modulator discrimination.",
@@ -185,7 +213,8 @@ for t in ["The initial power-law (alpha > 1) interpretation was withdrawn after 
           "Our segmentation is below the published state of the art.",
           "Fidelity: 'Pancreas' as best match (35/151 series with S3000) disappears with other methods, so it is a method artefact.",
           "Fidelity: a 'liver disease' series (GSE278954) ranks Liver 50th of 54, and lung and breast organoids are rarely matched to their organ.",
-          "Fidelity: organ labels come from text, and series profiles average all samples, including any non-organoid controls."]:
+          "Fidelity: organ labels come from text, and series profiles average all samples, including any non-organoid controls.",
+          "Fidelity: the culture-fibroblast attractor is RETRACTED as a general organoid property: on 45 series whose samples are all organoids it shrinks to 9-29% of series (Section 4.9)."]:
     P.p("- " + t)
 P.h("6. Discussion")
 P.p("Small organoids respond less to CFTR modulators, relative to DMSO, than large ones, and the response saturates above a size threshold. "
@@ -207,6 +236,9 @@ for r in ["Lefferts JW, et al. OrgaSegment: deep-learning based organoid segment
           "Boj SF, Vonk AM, et al. Forskolin-induced swelling in intestinal organoids: an in vitro assay for assessing drug response in cystic fibrosis patients. J Vis Exp 2017. https://pmc.ncbi.nlm.nih.gov/articles/PMC5408767/",
           "GTEx Consortium. The GTEx Consortium atlas of genetic regulatory effects across human tissues. Science 2020. https://gtexportal.org",
           "Karlsson M, et al. A single-cell type transcriptomics map of human tissues. Sci Adv 2021. https://www.proteinatlas.org",
+          "Kuleshov MV, et al. Enrichr: a comprehensive gene set enrichment analysis web server 2016 update. Nucleic Acids Res 2016.",
+          "Milacic M, et al. The Reactome Pathway Knowledgebase 2024. Nucleic Acids Res 2024.",
+          "Gumienny R. GEOparse: Python library to access Gene Expression Omnibus. https://github.com/guma44/GEOparse",
           "Kolberg L, et al. g:Profiler - interoperable web service for functional enrichment analysis and gene identifier mapping (2023 update). Nucleic Acids Res 2023. https://biit.cs.ut.ee/gprofiler",
           "Seal RL, et al. Genenames.org: the HGNC resources in 2023. Nucleic Acids Res 2023. https://www.genenames.org",
           "Liberzon A, et al. The Molecular Signatures Database Hallmark gene set collection. Cell Syst 2015. https://www.gsea-msigdb.org",
