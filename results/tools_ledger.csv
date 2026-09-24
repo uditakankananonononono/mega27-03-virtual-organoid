@@ -1,17 +1,17 @@
-tool,kind,where_used
-NumPy,library,src/vorganoid; src/geo_fidelity.py; paper/build_paper.py
-SciPy,library,src/geo_fidelity.py (spearmanr); paper/build_paper.py
-pandas,library,src/geo_fidelity.py; paper/build_paper.py
-scikit-image,library,src/vorganoid (instance post-processing; watershed/labels)
-PyTorch,library,train_seg.py; tune_seg.py (U-Net CNN)
-Pillow,library,train_seg.py image loading
-python-docx,library,paper/paperkit.py
-pytest,test framework,tests/ (hermetic suite)
-LibreOffice (soffice headless),application,paper docx -> pdf render
-poppler pdfinfo,application,page count of rendered paper
-Git + GitHub,service,repo hosting and pushes
-NCBI E-utilities (esearch/esummary),web API,src/geo_candidates.py
-NCBI GEO FTP/HTTPS supplementary files,data service,src/geo_fidelity.py
-GTEx v8 gene median TPM (GTEx portal bucket),reference data service,data/ref/gtex_v8_median_tpm.gct.gz; src/geo_fidelity.py
-MSigDB Hallmark gene sets v2023.2 (Broad GSEA-MSigDB),gene-set resource,data/ref/h.all.v2023.2.Hs.symbols.gmt; src/geo_fidelity_methods.py (culture-confound test)
-matplotlib,library,"src/fig_geo_fidelity.py; paper figures (fig_size_attenuation.png, fig_geo_fidelity.png)"
+tool,kind,where_used,counts_for_gate,note
+NumPy,library,src/vorganoid; src/geo_fidelity.py; paper/build_paper.py,True,
+SciPy,library,src/geo_fidelity.py (spearmanr); paper/build_paper.py,True,
+pandas,library,src/geo_fidelity.py; paper/build_paper.py,True,
+scikit-image,library,src/vorganoid (instance post-processing; watershed/labels),True,
+PyTorch,library,train_seg.py; tune_seg.py (U-Net CNN),True,
+Pillow,library,train_seg.py image loading,False,infrastructure (excluded per program convention 25 Sep 01:18)
+python-docx,library,paper/paperkit.py,False,infrastructure (excluded per program convention 25 Sep 01:18)
+pytest,test framework,tests/ (hermetic suite),False,infrastructure (excluded per program convention 25 Sep 01:18)
+LibreOffice (soffice headless),application,paper docx -> pdf render,False,infrastructure (excluded per program convention 25 Sep 01:18)
+poppler pdfinfo,application,page count of rendered paper,False,infrastructure (excluded per program convention 25 Sep 01:18)
+Git + GitHub,service,repo hosting and pushes,False,infrastructure (excluded per program convention 25 Sep 01:18)
+NCBI E-utilities (esearch/esummary),web API,src/geo_candidates.py,True,
+NCBI GEO FTP/HTTPS supplementary files,data service,src/geo_fidelity.py,True,
+GTEx v8 gene median TPM (GTEx portal bucket),reference data service,data/ref/gtex_v8_median_tpm.gct.gz; src/geo_fidelity.py,True,
+MSigDB Hallmark gene sets v2023.2 (Broad GSEA-MSigDB),gene-set resource,data/ref/h.all.v2023.2.Hs.symbols.gmt; src/geo_fidelity_methods.py (culture-confound test),True,
+matplotlib,library,"src/fig_geo_fidelity.py; paper figures (fig_size_attenuation.png, fig_geo_fidelity.png)",True,
