@@ -53,3 +53,9 @@ pipeline (src/geo_fidelity.py). The tool excludes them. The effect on rank corre
 GEOparse pulled GSM metadata for all 114 clean series. Only 45 series have every sample annotated as organoid (frac_organoid=1); 59 have no organoid-annotated sample (e.g. GSE343459: fibroblasts isolated from skin organoids; GSE287925: LNCaP 2D cells), despite organoid keywords at series level.
 On the strict 45, the "culture-fibroblast attractor" shrinks: fibroblast-best fraction 0.09-0.29 across 11 method variants (vs 0.28-0.62 in the no-organoid-sample series; Fisher p<0.05 in 10/11 variants). Top-1 tissue recovery on the strict subset is 0.31-0.56.
 Verdict (negative/partial): a large part of the attractor signal came from series-level label contamination, not from organoids. The attractor remains a candidate for a minority (~10-25%) of strict organoid series. Not claimed as a discovery.
+
+## Independent annotation of attractor driver genes: Enrichr + Reactome AnalysisService (src/attractor_enrichr_reactome.py)
+Top-200 genes by d (results/attractor_genes.csv). Note d>0 arises two ways: sample-high and fibroblast-high (proliferation), or sample-low and tissue-high (missing tissue programs).
+- Enrichr MSigDB Hallmark: G2-M checkpoint q=2.5e-33, E2F targets q=3.2e-32, mitotic spindle q=6.2e-17. CellMarker_2024: cycling/MKI67+ progenitor signatures (q=4e-60). PanglaoDB: immune types (gamma-delta T q=1.6e-10, plasma cells q=4e-6).
+- Reactome AnalysisService: classical antibody-mediated complement activation and Cell Cycle, Mitotic (both FDR 1.4e-14).
+This confirms the g:Profiler result with two independent services: the attractor is proliferation plus absent immune/complement programs. Contrast set (ranks 801-1000, still d>0) is weak (Hallmark q>=0.07; Reactome phagocytosis FDR 1.2e-4). Given the GEOparse strict-subset result above, this describes what drives the fibroblast match, not an organoid biology discovery.

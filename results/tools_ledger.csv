@@ -20,3 +20,5 @@ statsmodels,library,src/geo_mcnemar.py (exact McNemar tests),True,
 "g:Profiler g:GOSt API (GO, Reactome, KEGG)",web API/database,src/geo_attractor_genes.py (enrichment of attractor-driving genes),True,
 HGNC complete set (locus groups),database,data/ref/hgnc_locus_groups.csv.gz; src/geo_fidelity_methods.py (protein-coding robustness),True,
 GEOparse,library,src/geo_sample_meta.py,True,GSM-level metadata audit of 114 series
+Enrichr (Hallmark/CellMarker/PanglaoDB libraries),service,src/attractor_enrichr_reactome.py,True,cell identity and hallmark annotation of attractor genes
+Reactome AnalysisService,service,src/attractor_enrichr_reactome.py,True,pathway over-representation of attractor genes
