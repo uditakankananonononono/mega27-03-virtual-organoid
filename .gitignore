@@ -11,3 +11,4 @@ data/atlas/
 data/clinpgx/
 data/gnomad/
 data/ref/ensembl_biotypes_lookup.json
+data/sc_kidney/

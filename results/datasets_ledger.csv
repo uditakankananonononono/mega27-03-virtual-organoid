@@ -168,3 +168,4 @@ HPA single-cell type enhancement,Human Protein Atlas API,reference,purity gene s
 MSigDB Hallmark v2023.2,MSigDB,reference,culture gene sets
 HGNC locus groups,HGNC,reference,protein-coding filter
 E-MTAB-513,EBI Expression Atlas,reference,Body Map reference-robustness (src/deficit_bodymap.py)
+GSE108291,NCBI GEO/HCA,primary,pre-registered human kidney organoid single-cell marker stress test (src/sc_kidney_markers.py); two runs count once

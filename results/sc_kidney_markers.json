@@ -1,0 +1,51 @@
+{
+  "accession": "GSE108291",
+  "source_project": "https://explore.data.humancellatlas.org/projects/7b947aa2-43a7-4082-afff-222a3e3a4635",
+  "preregistration": "results/preregistration_sc_kidney.md (commit 3330723)",
+  "analysis_library": "scanpy 1.11.5",
+  "qc_deviation": "QC thresholds 500 UMIs and 200 genes fixed after preregistration, before seeing coexpression; no mitochondrial filter",
+  "runs": {
+    "org4": {
+      "verdict": "INTERPRETABLE",
+      "n_barcodes": 1421,
+      "n_qc": 1421,
+      "qc_min_umis": 500,
+      "qc_min_genes": 200,
+      "n_aldob": 2,
+      "n_slc17a3": 1,
+      "n_either": 3,
+      "n_both": 0,
+      "fraction_both": 0.0,
+      "fraction_either": 0.00211118930330753,
+      "wilson95_both": [
+        0.0,
+        0.002696060531445798
+      ],
+      "H1_ge_1_percent": "FAIL",
+      "H2_lt_20_percent": "PASS",
+      "matrix_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE108nnn/GSE108291/suppl/GSE108291_org4_matrix.mtx.gz",
+      "genes_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE108nnn/GSE108291/suppl/GSE108291_org4_genes.tsv.gz"
+    },
+    "org": {
+      "verdict": "INTERPRETABLE",
+      "n_barcodes": 2211840,
+      "n_qc": 9638,
+      "qc_min_umis": 500,
+      "qc_min_genes": 200,
+      "n_aldob": 6,
+      "n_slc17a3": 4,
+      "n_either": 10,
+      "n_both": 0,
+      "fraction_both": 0.0,
+      "fraction_either": 0.0010375596596804316,
+      "wilson95_both": [
+        0.0,
+        0.00039841547251120025
+      ],
+      "H1_ge_1_percent": "FAIL",
+      "H2_lt_20_percent": "PASS",
+      "matrix_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE108nnn/GSE108291/suppl/GSE108291_org_matrix.mtx.gz",
+      "genes_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE108nnn/GSE108291/suppl/GSE108291_org_genes.tsv.gz"
+    }
+  }
+}
