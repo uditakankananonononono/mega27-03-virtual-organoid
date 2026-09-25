@@ -540,6 +540,7 @@ P.p(f"A fixed three-query Europe PMC title/abstract search returned {EP['n_uniqu
     "in its abstract, but absence in a narrow search does not establish novelty. Related work links nasal "
     "organoid lumen to baseline CFTR function and pig pancreatic organoid size to absent lumen "
     "(results/epmc_priorart_review.md).")
+P.p("Wider full-text prior art narrows the size claim further: Calucho et al. 2021 tested individual WT nasospheroid starting size against CFTR-dependent FSK shrinking and found no significant association among 138 responders (Spearman r=-0.1216, p=0.1537 for 60-minute fractional response; supplementary slope r=0.04124, p=0.6298). This airway system has opposite polarity/readout and does not directly duplicate donor-matched intestinal drug-by-size interaction, but starting-size analysis of CFTR spheroids is not generally novel. Kim et al. 2020 found no initial-size/growth relation in two colorectal tumor organoid lines and warned that small-object detection can add variation. Full-text audit and source URLs: results/epmc_priorart_review.md and results/external_fis_source_audit.md. No discovery follows from a narrower question alone.")
 P.p("Synthesis. The liver top-deficit list has independent pathway and adult-tissue protein support, "
     "while no new organoid proteome, matched tissue, perturbation, or clinical outcomes validate its effect on fidelity. "
     "The kidney external profiles recover their tissue despite the strict single-cell marker test failing. "
@@ -620,6 +621,8 @@ for r in ["Lefferts JW, et al. OrgaSegment: deep-learning based organoid segment
           "Demchenko A, et al. A semi-automated algorithm for image analysis of respiratory organoids. PLoS Comput Biol 2025. https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013589",
           "Matthews J, et al. OrganoID. PLoS Comput Biol 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC9645660/",
           "Anderson JD, et al. CFTR function and clinical response to modulators parallel nasal epithelial organoid swelling. AJP Lung 2021. https://pmc.ncbi.nlm.nih.gov/articles/PMC8321858/",
+          "Calucho M, et al. Validation of nasospheroids to assay CFTR functionality and modulator responses in cystic fibrosis. Sci Rep 2021. https://www.nature.com/articles/s41598-021-94798-x",
+          "Kim S, et al. Comparison of Cell and Organoid-Level Analysis of Patient-Derived 3D Organoids to Evaluate Tumor Cell Growth Dynamics and Drug Response. SLAS Discov 2020. https://www.slas-discovery.org/article/S2472-5552(22)06605-9/fulltext",
           "Botelho H, Hagemeijer MC, et al. FIS_image_analysis demonstration dataset. https://github.com/hmbotelho/FIS_image_analysis",
           "Drevinek P, et al. Response to elexacaftor/tezacaftor/ivacaftor in intestinal organoids derived from people with cystic fibrosis. J Cyst Fibros 2021. https://doi.org/10.1016/j.jcf.2021.07.006 . Data: https://zenodo.org/records/4771466",
           "Borek-Dohalska L, et al. Effect of vanzacaftor on cystic fibrosis airway epithelial cells compared to elexacaftor. Data: https://zenodo.org/records/15754800",
