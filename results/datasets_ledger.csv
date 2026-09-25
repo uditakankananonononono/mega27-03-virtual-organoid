@@ -171,3 +171,4 @@ E-MTAB-513,EBI Expression Atlas,reference,Body Map reference-robustness (src/def
 GSE108291,NCBI GEO/HCA,primary,pre-registered human kidney organoid single-cell marker stress test (src/sc_kidney_markers.py); two runs count once
 FIS_image_analysis demo plate demoplate_01,hmbotelho/FIS_image_analysis,primary,one independent intestinal-organoid FIS demo assay used in preregistered size-moderation test (src/external_fis_demo.py); 32 object CSVs form ONE plate dataset
 zenodo:4771466,Zenodo Drevinek et al. 2021,primary,20-patient well-level intestinal FIS dataset used in preregistered treatment-ranking analysis (scripts/analyze_drevinek_fis.py); one Zenodo accession counted once
+zenodo:15754800,Zenodo Borek-Dohalska et al. VTI/ETI,primary,12-patient well-level intestinal FIS source used in preregistered negative drug-ranking test (scripts/analyze_vti_eti.py); concept 14865872 is same dataset and not counted separately
