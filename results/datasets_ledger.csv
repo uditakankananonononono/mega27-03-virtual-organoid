@@ -169,3 +169,4 @@ MSigDB Hallmark v2023.2,MSigDB,reference,culture gene sets
 HGNC locus groups,HGNC,reference,protein-coding filter
 E-MTAB-513,EBI Expression Atlas,reference,Body Map reference-robustness (src/deficit_bodymap.py)
 GSE108291,NCBI GEO/HCA,primary,pre-registered human kidney organoid single-cell marker stress test (src/sc_kidney_markers.py); two runs count once
+FIS_image_analysis demo plate demoplate_01,hmbotelho/FIS_image_analysis,primary,one independent intestinal-organoid FIS demo assay used in preregistered size-moderation test (src/external_fis_demo.py); 32 object CSVs form ONE plate dataset
