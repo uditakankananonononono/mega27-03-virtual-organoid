@@ -65,9 +65,10 @@ P.p("Surface-limited secretion (constant flux per unit apical area) gives alpha 
     "relative terms. Size-invariant secretion gives alpha = 1 and zero slope. The within-well regression we fit is")
 P.equation("log s_ow = a_w + b ( log A0_ow - mean_w log A0 ) + e_ow")
 P.p("with a well intercept a_w that absorbs donor, plate and well effects. Measurement noise in A0 enters both sides with opposite sign "
-    "(s = A1/A0), which biases b downward:")
-P.equation("E[ b-hat ] = b - Var(u) / ( Var(log A0) + Var(u) ),   u = noise in log A0")
-P.p("so a positive observed b is conservative. The donor-matched drug effect per size bin k is")
+    "(s = A1/A0), which biases b downward under independent zero-mean log-area errors u at baseline "
+    "and endpoint, with latent log baseline size x_true:")
+P.equation("E[ b-hat ] ≈ (b Var(x_true) - Var(u)) / (Var(x_true) + Var(u)),   x = log A0 = x_true + u")
+P.p("Thus a positive observed b is conservative only under this independent-error model; correlated or size-dependent segmentation and track selection can reverse the bias. The donor-matched drug effect per size bin k is")
 P.equation("Delta_k = mean_{o in drug, bin k} log s_o - mean_{o in DMSO, bin k} log s_o")
 P.p("and the attenuation statistic is Delta_top - Delta_bottom, with 95% intervals from a donor-level bootstrap:")
 P.equation("CI_95 = [Q_0.025, Q_0.975] of { Delta*_top - Delta*_bottom }, donors resampled with replacement")
