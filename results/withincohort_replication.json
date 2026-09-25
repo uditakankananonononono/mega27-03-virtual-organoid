@@ -1,0 +1,422 @@
+{
+  "preregistration": "results/preregistration_withincohort_replication.md (commit 8d80877)",
+  "source": "OrgaSegment DIS, Zenodo 10610438, same accession as original discovery",
+  "size_cutoffs_px": {
+    "small_lt": 722,
+    "large_gte": 1400
+  },
+  "rows": [
+    {
+      "portion": "earliest",
+      "donor": "PDIO_01",
+      "valid": false,
+      "cell_counts": {
+        "DMSO:small": 4,
+        "DMSO:large": 32,
+        "VX445_VX661_VX770:small": 2,
+        "VX445_VX661_VX770:large": 37
+      }
+    },
+    {
+      "portion": "earliest",
+      "donor": "PDIO_03",
+      "valid": true,
+      "attenuation": 0.12395428829597399,
+      "cell_counts": {
+        "DMSO:small": 29,
+        "DMSO:large": 82,
+        "VX445_VX661_VX770:small": 28,
+        "VX445_VX661_VX770:large": 99
+      }
+    },
+    {
+      "portion": "earliest",
+      "donor": "PDIO_04",
+      "valid": false,
+      "cell_counts": {
+        "DMSO:small": 0,
+        "DMSO:large": 0,
+        "VX445_VX661_VX770:small": 7,
+        "VX445_VX661_VX770:large": 59
+      }
+    },
+    {
+      "portion": "earliest",
+      "donor": "PDIO_05",
+      "valid": true,
+      "attenuation": 0.3741433450362791,
+      "cell_counts": {
+        "DMSO:small": 88,
+        "DMSO:large": 247,
+        "VX445_VX661_VX770:small": 88,
+        "VX445_VX661_VX770:large": 227
+      }
+    },
+    {
+      "portion": "earliest",
+      "donor": "PDIO_06",
+      "valid": true,
+      "attenuation": 0.3602561223944595,
+      "cell_counts": {
+        "DMSO:small": 38,
+        "DMSO:large": 171,
+        "VX445_VX661_VX770:small": 62,
+        "VX445_VX661_VX770:large": 271
+      }
+    },
+    {
+      "portion": "earliest",
+      "donor": "PDIO_09",
+      "valid": true,
+      "attenuation": 0.25829962128888756,
+      "cell_counts": {
+        "DMSO:small": 20,
+        "DMSO:large": 154,
+        "VX445_VX661_VX770:small": 14,
+        "VX445_VX661_VX770:large": 174
+      }
+    },
+    {
+      "portion": "earliest",
+      "donor": "PDIO_10",
+      "valid": false,
+      "cell_counts": {
+        "DMSO:small": 0,
+        "DMSO:large": 52,
+        "VX445_VX661_VX770:small": 0,
+        "VX445_VX661_VX770:large": 55
+      }
+    },
+    {
+      "portion": "earliest",
+      "donor": "PDIO_11",
+      "valid": false,
+      "cell_counts": {
+        "DMSO:small": 1,
+        "DMSO:large": 44,
+        "VX445_VX661_VX770:small": 0,
+        "VX445_VX661_VX770:large": 21
+      }
+    },
+    {
+      "portion": "earliest",
+      "donor": "PDIO_12",
+      "valid": false,
+      "cell_counts": {
+        "DMSO:small": 14,
+        "DMSO:large": 54,
+        "VX445_VX661_VX770:small": 4,
+        "VX445_VX661_VX770:large": 48
+      }
+    },
+    {
+      "portion": "earliest",
+      "donor": "PDIO_13",
+      "valid": true,
+      "attenuation": 0.26898703081835273,
+      "cell_counts": {
+        "DMSO:small": 15,
+        "DMSO:large": 36,
+        "VX445_VX661_VX770:small": 10,
+        "VX445_VX661_VX770:large": 33
+      }
+    },
+    {
+      "portion": "earliest",
+      "donor": "PDIO_14",
+      "valid": true,
+      "attenuation": 0.369308539453748,
+      "cell_counts": {
+        "DMSO:small": 7,
+        "DMSO:large": 28,
+        "VX445_VX661_VX770:small": 6,
+        "VX445_VX661_VX770:large": 30
+      }
+    },
+    {
+      "portion": "earliest",
+      "donor": "PDIO_15",
+      "valid": true,
+      "attenuation": -0.15245425832588805,
+      "cell_counts": {
+        "DMSO:small": 9,
+        "DMSO:large": 70,
+        "VX445_VX661_VX770:small": 6,
+        "VX445_VX661_VX770:large": 46
+      }
+    },
+    {
+      "portion": "earliest",
+      "donor": "PDIO_16",
+      "valid": true,
+      "attenuation": -0.41546969858592503,
+      "cell_counts": {
+        "DMSO:small": 6,
+        "DMSO:large": 48,
+        "VX445_VX661_VX770:small": 16,
+        "VX445_VX661_VX770:large": 69
+      }
+    },
+    {
+      "portion": "earliest",
+      "donor": "PDIO_17",
+      "valid": false,
+      "cell_counts": {
+        "DMSO:small": 0,
+        "DMSO:large": 0,
+        "VX445_VX661_VX770:small": 7,
+        "VX445_VX661_VX770:large": 65
+      }
+    },
+    {
+      "portion": "earliest",
+      "donor": "PDIO_18",
+      "valid": false,
+      "cell_counts": {
+        "DMSO:small": 0,
+        "DMSO:large": 0,
+        "VX445_VX661_VX770:small": 20,
+        "VX445_VX661_VX770:large": 54
+      }
+    },
+    {
+      "portion": "earliest",
+      "donor": "PDIO_19",
+      "valid": false,
+      "cell_counts": {
+        "DMSO:small": 0,
+        "DMSO:large": 0,
+        "VX445_VX661_VX770:small": 9,
+        "VX445_VX661_VX770:large": 61
+      }
+    },
+    {
+      "portion": "earliest",
+      "donor": "PDOI_02",
+      "valid": false,
+      "cell_counts": {
+        "DMSO:small": 0,
+        "DMSO:large": 0,
+        "VX445_VX661_VX770:small": 5,
+        "VX445_VX661_VX770:large": 58
+      }
+    },
+    {
+      "portion": "later",
+      "donor": "PDIO_01",
+      "valid": true,
+      "attenuation": 0.11631231009847887,
+      "cell_counts": {
+        "DMSO:small": 7,
+        "DMSO:large": 102,
+        "VX445_VX661_VX770:small": 8,
+        "VX445_VX661_VX770:large": 92
+      }
+    },
+    {
+      "portion": "later",
+      "donor": "PDIO_03",
+      "valid": true,
+      "attenuation": 0.4296334130576691,
+      "cell_counts": {
+        "DMSO:small": 92,
+        "DMSO:large": 127,
+        "VX445_VX661_VX770:small": 98,
+        "VX445_VX661_VX770:large": 119
+      }
+    },
+    {
+      "portion": "later",
+      "donor": "PDIO_04",
+      "valid": false,
+      "cell_counts": {
+        "DMSO:small": 1,
+        "DMSO:large": 36,
+        "VX445_VX661_VX770:small": 1,
+        "VX445_VX661_VX770:large": 89
+      }
+    },
+    {
+      "portion": "later",
+      "donor": "PDIO_05",
+      "valid": true,
+      "attenuation": 0.6335386504217957,
+      "cell_counts": {
+        "DMSO:small": 43,
+        "DMSO:large": 117,
+        "VX445_VX661_VX770:small": 73,
+        "VX445_VX661_VX770:large": 175
+      }
+    },
+    {
+      "portion": "later",
+      "donor": "PDIO_06",
+      "valid": true,
+      "attenuation": 0.20396491554277962,
+      "cell_counts": {
+        "DMSO:small": 43,
+        "DMSO:large": 118,
+        "VX445_VX661_VX770:small": 62,
+        "VX445_VX661_VX770:large": 176
+      }
+    },
+    {
+      "portion": "later",
+      "donor": "PDIO_09",
+      "valid": true,
+      "attenuation": 0.23128799854545623,
+      "cell_counts": {
+        "DMSO:small": 28,
+        "DMSO:large": 75,
+        "VX445_VX661_VX770:small": 17,
+        "VX445_VX661_VX770:large": 51
+      }
+    },
+    {
+      "portion": "later",
+      "donor": "PDIO_10",
+      "valid": false,
+      "cell_counts": {
+        "DMSO:small": 4,
+        "DMSO:large": 68,
+        "VX445_VX661_VX770:small": 1,
+        "VX445_VX661_VX770:large": 95
+      }
+    },
+    {
+      "portion": "later",
+      "donor": "PDIO_11",
+      "valid": true,
+      "attenuation": 0.4069847449613581,
+      "cell_counts": {
+        "DMSO:small": 16,
+        "DMSO:large": 107,
+        "VX445_VX661_VX770:small": 7,
+        "VX445_VX661_VX770:large": 120
+      }
+    },
+    {
+      "portion": "later",
+      "donor": "PDIO_12",
+      "valid": true,
+      "attenuation": 0.05158919219354052,
+      "cell_counts": {
+        "DMSO:small": 9,
+        "DMSO:large": 81,
+        "VX445_VX661_VX770:small": 10,
+        "VX445_VX661_VX770:large": 88
+      }
+    },
+    {
+      "portion": "later",
+      "donor": "PDIO_13",
+      "valid": true,
+      "attenuation": 0.19439967615299447,
+      "cell_counts": {
+        "DMSO:small": 6,
+        "DMSO:large": 71,
+        "VX445_VX661_VX770:small": 10,
+        "VX445_VX661_VX770:large": 105
+      }
+    },
+    {
+      "portion": "later",
+      "donor": "PDIO_14",
+      "valid": true,
+      "attenuation": 0.28390468869833413,
+      "cell_counts": {
+        "DMSO:small": 15,
+        "DMSO:large": 70,
+        "VX445_VX661_VX770:small": 15,
+        "VX445_VX661_VX770:large": 99
+      }
+    },
+    {
+      "portion": "later",
+      "donor": "PDIO_15",
+      "valid": true,
+      "attenuation": 0.15151379257538933,
+      "cell_counts": {
+        "DMSO:small": 20,
+        "DMSO:large": 76,
+        "VX445_VX661_VX770:small": 11,
+        "VX445_VX661_VX770:large": 66
+      }
+    },
+    {
+      "portion": "later",
+      "donor": "PDIO_16",
+      "valid": true,
+      "attenuation": 0.08526897503631303,
+      "cell_counts": {
+        "DMSO:small": 15,
+        "DMSO:large": 107,
+        "VX445_VX661_VX770:small": 7,
+        "VX445_VX661_VX770:large": 121
+      }
+    },
+    {
+      "portion": "later",
+      "donor": "PDIO_17",
+      "valid": false,
+      "cell_counts": {
+        "DMSO:small": 7,
+        "DMSO:large": 56,
+        "VX445_VX661_VX770:small": 4,
+        "VX445_VX661_VX770:large": 75
+      }
+    },
+    {
+      "portion": "later",
+      "donor": "PDIO_18",
+      "valid": true,
+      "attenuation": 0.09872801558578925,
+      "cell_counts": {
+        "DMSO:small": 7,
+        "DMSO:large": 45,
+        "VX445_VX661_VX770:small": 10,
+        "VX445_VX661_VX770:large": 97
+      }
+    },
+    {
+      "portion": "later",
+      "donor": "PDIO_19",
+      "valid": false,
+      "cell_counts": {
+        "DMSO:small": 0,
+        "DMSO:large": 27,
+        "VX445_VX661_VX770:small": 2,
+        "VX445_VX661_VX770:large": 82
+      }
+    },
+    {
+      "portion": "later",
+      "donor": "PDOI_02",
+      "valid": false,
+      "cell_counts": {
+        "DMSO:small": 2,
+        "DMSO:large": 73,
+        "VX445_VX661_VX770:small": 4,
+        "VX445_VX661_VX770:large": 148
+      }
+    }
+  ],
+  "portions": {
+    "earliest": {
+      "n_donors": 8,
+      "n_positive": 6,
+      "median_attenuation": 0.2636433260536202,
+      "sign_p_one_sided": 0.14453125
+    },
+    "later": {
+      "n_donors": 12,
+      "n_positive": 12,
+      "median_attenuation": 0.19918229584788705,
+      "sign_p_one_sided": 0.000244140625
+    }
+  },
+  "H1": {
+    "verdict": "PASS",
+    "reason": null
+  }
+}
