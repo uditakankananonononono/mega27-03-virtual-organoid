@@ -59,12 +59,13 @@ P.p("For alpha != 1 the solution over an assay window t is")
 P.equation("V_1^(1-alpha) = V_0^(1-alpha) + (1 - alpha) k t")
 P.p("and the observed area fold change is s = A_1/A_0 = (V_1/V_0)^(2/3). For small responses,")
 P.equation("log s ≈ (2/3) k t V_0^(alpha - 1)")
-P.p("so the slope of log log s on log A_0 carries the sign of alpha - 1:")
+P.p("For a strictly positive response (s > 1), the idealized model implies the local slope of log(log s) on log A_0 carries the sign of alpha - 1:")
 P.equation("d log(log s) / d log A_0 = (3/2)(alpha - 1)")
 P.p("Surface-limited secretion (constant flux per unit apical area) gives alpha = 2/3 and a negative slope: small organoids swell more in "
-    "relative terms. Size-invariant secretion gives alpha = 1 and zero slope. The within-well regression we fit is")
+    "relative terms. Size-invariant secretion gives alpha = 1 and zero slope in this idealized model. "
+    "We do NOT fit log(log s): it is undefined when s <= 1, as occurs in 1,520 of 14,783 positive-forskolin observations (10.3%). Instead our empirical within-well regression is")
 P.equation("log s_ow = a_w + b ( log A0_ow - mean_w log A0 ) + e_ow")
-P.p("with a well intercept a_w that absorbs donor, plate and well effects. Measurement noise in A0 enters both sides with opposite sign "
+P.p("A positive empirical b has the same directional prediction only for positive responses under the idealized model; it does not estimate alpha and can reflect non-secretion mechanisms, especially for s <= 1. With a well intercept a_w absorbing donor, plate and well effects, measurement noise in A0 enters both sides with opposite sign "
     "(s = A1/A0), which biases b downward under independent zero-mean log-area errors u at baseline "
     "and endpoint, with latent log baseline size x_true:")
 P.equation("E[ b-hat ] ≈ (b Var(x_true) - Var(u)) / (Var(x_true) + Var(u)),   x = log A0 = x_true + u")
@@ -90,8 +91,8 @@ P.table(["condition", "organoids", "wells", "slope b", "95% CI", "donors b>0"], 
     ["DMSO", 3810, 94, 0.011, "[-0.002, 0.028]", "12/17"], ["VX770", 1496, 30, 0.226, "[0.185, 0.269]", "5/5"],
     ["VX661+VX770", 4493, 112, 0.042, "[0.028, 0.056]", "12/16"], ["VX445+VX661+VX770", 4984, 121, 0.116, "[0.090, 0.142]", "14/17"],
 ], "Within-well slope of log fold change on centred log A0 (forskolin > 0). Well-cluster bootstrap, 500 resamples.")
-P.p("The slope is near zero without CFTR rescue and positive whenever a modulator is present. The sign is opposite to the surface-limited "
-    "prediction. A power-law reading (alpha > 1) was rejected: restricted to organoids above 2,000 px the slope turns negative (Trikafta "
+P.p("The empirical slope is near zero in DMSO and positive in each modulator group. Its sign contrasts with a simple surface-limited "
+    "secretion prediction only for strictly positive responses; it does not estimate alpha for the full data, which include shrinking objects. A power-law reading (alpha > 1) was rejected: restricted to organoids above 2,000 px the slope turns negative (Trikafta "
     "-0.117), and binned means rise then plateau. Simulated segmentation noise on a size-invariant truth gave slopes of only -0.002 to -0.055.")
 P.h("4.2 Small-organoid attenuation", 2)
 P.figure("results/figures/fig_size_attenuation.png", "Drug-minus-DMSO mean log swelling per starting-size octile, donor-matched, with donor-bootstrap 95% CI.")
