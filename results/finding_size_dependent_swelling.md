@@ -19,13 +19,13 @@ Result: NEGATIVE. Size adjustment does not improve donor-level modulator discrim
 ## Replication check on FIS set: not possible
 FIS_database.csv holds one area value per well per time point (868 rows, 7 time points, one position per well), i.e. summed organoid area, not single organoids. It cannot test per-organoid size dependence. Replication needs another single-organoid dataset (candidate: OrganoID time-lapse data, Matthews et al. 2022).
 
-## Revision (8:43 PM): the size effect is a threshold/saturation, not a power law
-Checks: within-well slope restricted to larger organoids turns negative (Trikafta A0>2000 px: -0.117; DMSO: -0.062), and quintile means rise then plateau. Simulated segmentation noise on a size-invariant truth gives slopes of only -0.002 to -0.055 (sd 5-20%), so noise can't create the positive effect.
+## Revision (8:43 PM): exploratory curve suggests a threshold/plateau, not the original power-law interpretation
+Checks: within-well slope restricted to larger organoids turns negative (Trikafta A0>2000 px: -0.117; DMSO: -0.062), and quintile means rise then plateau. Simulated segmentation noise on a size-invariant truth gives slopes of only -0.002 to -0.055 (sd 5-20%), so this particular independent, size-invariant noise simulation did not create the positive effect; size-dependent segmentation and track retention remain possible.
 DMSO-controlled, donor-matched curve (drug minus DMSO mean log fold per size octile; CI = donor bootstrap, 300):
 - Trikafta (17 donors): 0.336 [0.262, 0.405] in the smallest octile (<722 px) rising to a plateau ~0.55-0.64 above ~1,400 px; top minus bottom 0.251 [0.184, 0.323].
 - VX661+VX770 (16): 0.136 -> ~0.28-0.31 plateau; top minus bottom 0.169 [0.081, 0.259].
 - VX770 (5): -0.153 -> 0.31-0.42; top minus bottom 0.462 [0.335, 0.572].
-Named candidate: "small-organoid attenuation" - CFTR-modulator-induced swelling is suppressed in the smallest organoids and saturates above a size threshold (~1,000-1,400 px in these images). This replaces the earlier alpha>1 power-law reading, which the large-organoid checks contradict.
+Named candidate: "small-organoid attenuation" - in this accession, estimated CFTR-modulator swelling appears lower for the smallest tracked organoids and reaches a plateau above roughly 1,000-1,400 px in these images. This descriptive threshold was chosen after inspecting the same cohort and is not externally validated. This replaces the earlier alpha>1 power-law reading, which the large-organoid checks contradict.
 Follow-up (post hoc threshold, so exploratory only): excluding organoids <1,069 px does not improve per-donor Trikafta-vs-DMSO separation (median 4.73 -> 4.75, better in 9/17, Wilcoxon p=0.68). Negative for the clinical readout, again.
 
 ## Per-donor attenuation (Trikafta minus DMSO, smallest vs largest quartile of starting size)
@@ -35,5 +35,5 @@ Attenuation (large-quartile effect minus small-quartile effect) > 0 in 14/17 don
 - OrgaSegment (Commun Biol 2024, https://www.nature.com/articles/s42003-024-05966-4): uses total and luminal size, but the full text we fetched does not report whether the modulator response depends on starting size.
 - Standard FIS pipelines (hmbotelho/FIS_analysis, https://github.com/hmbotelho/FIS_analysis) sum area per well, so any size-dependent effect gets averaged away.
 - Nasal 2D-derived organoids (bioRxiv 2021.07.20.453105, https://www.biorxiv.org/content/10.1101/2021.07.20.453105v2) report large swelling variation limited to large spherical structures, attributed to unsynchronised differentiation. This is related prior art, in airway rather than intestinal tissue.
-- Physics prior: under a uniform flux per unit area, the relative area gain of a sphere scales as 1/r, so SMALL organoids should swell MORE. We see the opposite, which argues against a pure geometry artefact and for a biological or maturity effect (e.g. lumen formation). Not proven.
+- Physics prior: under a uniform flux per unit area, the relative area gain of a sphere scales as 1/r, so SMALL organoids should swell MORE. We see the opposite, which is inconsistent with that idealized geometry model alone. It does not establish a biological or maturity mechanism (e.g. lumen formation), and size-dependent tracking error remains possible.
 Verdict: the specific intestinal drug-by-starting-size question was not found in the narrow literature search, but novelty is unproved. Calucho et al. 2021 (https://www.nature.com/articles/s41598-021-94798-x) already tested individual CFTR nasospheroid baseline size against FSK shrinking with a null result; Kim et al. 2020 (https://www.slas-discovery.org/article/S2472-5552(22)06605-9/fulltext) examined size/growth in tumor organoids. This was not a systematic review.
