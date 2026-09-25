@@ -239,6 +239,24 @@ P.p(f"(pooled OR = {cm['pooled_OR_haldane']:.0f} with a 0.5 continuity correctio
     "kidney organoids miss their tissue because they lack mature metabolic epithelium, while intestinal and cortical organoids match despite missing stroma. "
     "It is falsified if, in new strictly organoid liver or kidney series, hepatocyte and proximal-tubule genes do not account for most of the rank gap. "
     "Brain organoids are all PSC-derived, so organ and protocol cannot be separated there; per-organ n is small.")
+
+UP = pd.read_csv("results/strict_deficit_uniprot.csv")
+P.p(f"Secretome check (UniProt). The share of deficit genes whose reviewed UniProt entry has a signal peptide or a 'Secreted' location is "
+    f"{UP.share.min():.2f}-{UP.share.max():.2f} per organ against {UP.bg_share.iloc[0]:.2f} for 2,000 random expressed genes (all q <= {UP.q_bh.max():.3f}). "
+    "Every organoid type lacks secreted proteins, faithful or not, so this does not explain the organ split (negative).")
+P.h("4.11 Pre-registered out-of-sample test on ArrayExpress", 2)
+AE = pd.read_csv("results/ae_replication.csv"); AJ = json.load(open("results/ae_replication.json")); ok = AE[AE.status == "ok"]
+P.p("Before downloading any new data we committed a pre-registration (results/preregistration_organ_split.md): on organoid bulk profiles outside the GEO "
+    "scan, liver, kidney and lung organoids should rank their own tissue worse than intestinal and brain organoids, tested by a one-sided Mann-Whitney U at 0.05:")
+P.equation("U = sum_{i in unfaithful} sum_{j in faithful} [ 1(r_i > r_j) + 0.5 * 1(r_i = r_j) ]")
+P.p(f"A BioStudies/ArrayExpress search gave {len(AE)} curated human non-cancer organoid studies with processed files; {len(ok)} could be scored "
+    "(the others had mouse gene IDs, probe IDs only, malformed tables, or single-cell data only).")
+P.table(["accession", "organ", "rank of own tissue", "best GTEx match"], [[r.accession, r.organ, int(r.rank_match), r.best_tissue] for r in ok.itertuples()],
+        "Out-of-sample organoid profiles (results/ae_replication.csv).")
+P.p(f"Median rank {AJ['median_rank_unfaithful']:g} vs {AJ['median_rank_faithful']:g}; top-1 {AJ['top1_unfaithful']:.2f} vs {AJ['top1_faithful']:.2f}; one-sided p = {AJ['mwu_one_sided_p']:.3f}. "
+    "The pre-registered test passes, but the support is weak: there is no lung dataset, both liver datasets are cholangiocyte organoids on microarrays "
+    "(so cell type and platform are confounded), and both kidney datasets match kidney well (ranks 1 and 2), which contradicts the kidney part of the candidate. "
+    "The metabolic-parenchyma gap remains a candidate; its kidney component did not replicate.")
 P.h("5. Negative results (kept by design)")
 for t in ["The initial power-law (alpha > 1) interpretation was withdrawn after large-organoid checks contradicted it.",
           "Size-adjusted and size-filtered readouts do not improve donor-level modulator discrimination.",
@@ -248,6 +266,8 @@ for t in ["The initial power-law (alpha > 1) interpretation was withdrawn after 
           "Fidelity: a 'liver disease' series (GSE278954) ranks Liver 50th of 54, and lung and breast organoids are rarely matched to their organ.",
           "Fidelity: organ labels come from text, and series profiles average all samples, including any non-organoid controls.",
           "Fidelity: the HPA parenchymal share of deficit genes does not clearly separate faithful from unfaithful organs (p = 0.061); lung organoids break the pattern.",
+          "Fidelity: all organoid types lack secreted proteins (UniProt), so the secretome does not explain the organ split.",
+          "Replication: the kidney part of the organ split failed out of sample (two ArrayExpress kidney datasets rank kidney 1st and 2nd).",
           "Fidelity: the culture-fibroblast attractor is RETRACTED as a general organoid property: on 45 series whose samples are all organoids it shrinks to 9-29% of series (Section 4.9)."]:
     P.p("- " + t)
 P.h("6. Discussion")
@@ -271,6 +291,8 @@ for r in ["Lefferts JW, et al. OrgaSegment: deep-learning based organoid segment
           "GTEx Consortium. The GTEx Consortium atlas of genetic regulatory effects across human tissues. Science 2020. https://gtexportal.org",
           "Karlsson M, et al. A single-cell type transcriptomics map of human tissues. Sci Adv 2021. https://www.proteinatlas.org",
           "Szklarczyk D, et al. The STRING database in 2023. Nucleic Acids Res 2023.",
+          "The UniProt Consortium. UniProt: the Universal Protein Knowledgebase in 2023. Nucleic Acids Res 2023.",
+          "Moreno P, et al. Expression Atlas and ArrayExpress/BioStudies at EMBL-EBI. Nucleic Acids Res 2022.",
           "Kuleshov MV, et al. Enrichr: a comprehensive gene set enrichment analysis web server 2016 update. Nucleic Acids Res 2016.",
           "Milacic M, et al. The Reactome Pathway Knowledgebase 2024. Nucleic Acids Res 2024.",
           "Gumienny R. GEOparse: Python library to access Gene Expression Omnibus. https://github.com/guma44/GEOparse",
