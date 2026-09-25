@@ -211,6 +211,7 @@ P.table(["patient", "blocks", "triple-double AUC", "patient", "blocks", "triple-
         "Patient-equal well-level treatment-ranking test; no individual organoid areas in this accession.")
 
 VT = json.load(open("results/vti_eti.json"))
+P.page_break()
 P.h("4.3e Newer VTI-versus-ETI patient ranking fails registered test", 2)
 P.p(f"A further Drevinek-group public release (Zenodo 15754800) has well-level area series for "
     f"{VT['patients_source']} anonymized CF patient IDs and {VT['plates_source']} plates. "
@@ -237,6 +238,7 @@ P.h("4.4 Does size correction help theratyping? No", 2)
 P.p("Locked before running: per-donor standardised Trikafta-vs-DMSO separation with raw, size-adjusted and size-band well readouts. Median "
     "raw 4.73, adjusted 4.35, band 4.39; adjusted better in 8 of 17 donors. Excluding organoids below 1,069 px (a post-hoc threshold): median "
     "4.73 -> 4.75, better in 9 of 17, Wilcoxon p = 0.68. The size trend does not improve calls, and the stricter matched-block H1 fails.")
+P.page_break()
 P.h("4.5 Segmentation benchmark", 2)
 P.table(["model", "eval mAP@0.5", "sd", "source file"], [
     ["U-Net v1, 256 px, default post-processing", round(S1["mAP50"], 3), round(S1["sd"], 3), "results/seg_eval.json"],
