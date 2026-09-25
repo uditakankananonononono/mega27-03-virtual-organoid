@@ -149,6 +149,24 @@ P.p(f"A separate public intestinal organoid demonstration experiment from the FI
     "The original donor x plate x dose stress test still fails. Tracking attrition may depend on size. "
     "No Trikafta generalization, new established discovery, or clinical prediction follows "
     "(results/external_fis_demo.json; results/finding_external_fis_demo.md).")
+ER = json.load(open("results/external_fis_robustness.json"))
+EM = json.load(open("results/external_fis_missingtracks.json"))
+P.p(f"Well-as-unit sensitivity on the same demo plate (registered before analysis): all eight doses have "
+    f"four eligible wells; {ER['R1']['n_positive']}/8 dose effects are positive, with a "
+    f"median of {ER['R1']['median_effect']:+.3f}. A 2,000-draw well bootstrap *conditional on "
+    f"this donor/plate* yields [{ER['R1']['well_bootstrap_ci95'][0]:+.3f}, "
+    f"{ER['R1']['well_bootstrap_ci95'][1]:+.3f}], not an across-donor interval. "
+    "Tracking attrition is material: among unique labeled baseline objects, large-object retention "
+    f"is {ER['R2']['by_condition_size']['fsk']['large']['rate']:.1%} for vehicle and "
+    f"{ER['R2']['by_condition_size']['fsk_770_809']['large']['rate']:.1%} for combo, "
+    "while labeled small-object retention is 100% in both. Including unlabeled baseline objects "
+    f"lowers small retention to {EM['M1']['fsk']['small']['paired_fraction_all_baseline']:.1%} and "
+    f"{EM['M1']['fsk_770_809']['small']['paired_fraction_all_baseline']:.1%}. "
+    "Assigning all missing outcomes to adverse observed same-cell 5th/95th percentiles gives "
+    f"{EM['M2']['n_adverse_positive']}/8 positive doses, median "
+    f"{EM['M2']['adverse_median']:+.3f}, but this arbitrary bound cannot rule out stronger "
+    "missingness bias. Source-level evidence is conditional and must not be called donor-level "
+    "validation (results/external_fis_robustness.json; results/external_fis_missingtracks.json).")
 P.table(["forskolin (uM)", "paired wells / condition", "large-minus-small drug effect (log units)"],
     [[f"{d['dose_uM']:g}", f"{d['n_wells']['fsk']}/{d['n_wells']['fsk_770_809']}",
       f"{d['effect_log']:+.3f}" if d['effect_log'] is not None else "not eligible"] for d in EXT['doses']],
