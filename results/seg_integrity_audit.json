@@ -1,0 +1,29 @@
+{
+  "split_counts": {
+    "train": 184,
+    "val": 35,
+    "eval": 12
+  },
+  "filename_overlap": {
+    "train_and_val": 0,
+    "train_and_eval": 0,
+    "val_and_eval": 0
+  },
+  "train_script_uses": "train+val (see train_seg.py line 10)",
+  "tune_script_uses": "val first 20; post-processing selected on model-training images (see tune_seg.py)",
+  "heldout_eval_mAP50": 0.732952666219267,
+  "published_mAP50": 0.76,
+  "difference_to_published": -0.027047333780732985,
+  "eval_image_bootstrap_ci95": [
+    0.6632772933355541,
+    0.8076575381304828
+  ],
+  "eval_image_bootstrap_difference_ci95": [
+    -0.09672270666444595,
+    0.047657538130482784
+  ],
+  "eval_image_bootstrap_frac_above_point_baseline": 0.2346,
+  "verdict": "NO BENCHMARK BREAK; val score is biased by overlap; eval score below published mean",
+  "limitations": "Neither matched baseline image predictions nor guaranteed identical AP implementation; bootstrap uses only our 12 images and fixed published point mean.",
+  "preregistration": "results/preregistration_seg_audit.md (commit 543bd2d)"
+}

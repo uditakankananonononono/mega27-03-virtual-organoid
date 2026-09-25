@@ -78,7 +78,7 @@ P.table(["#", "dataset", "source / accession", "content", "use"], [
     [1, "OrgaSegment DIS single-organoid measurements", "Zenodo 10610438 (Lefferts et al. 2024)", "per-organoid A0/A1, 17 donors, 4 conditions", "size-dependence analysis"],
     [2, "OrgaSegment FIS database", "Zenodo 10610438", "well-level area, 7 time points, 868 rows", "replication attempt (not possible)"],
     [3, "OrgaSegment annotated images", "Zenodo 10278229", "train/val/eval images with instance masks", "U-Net segmentation benchmark"],
-], "Dataset manifest (distinct, accession-level). Three distinct assay/image datasets shown here; the separate, committed accession ledger includes 164 primary GEO/ArrayExpress datasets used for the organoid-fidelity analyses.")
+], "Dataset manifest (distinct, accession-level). Three distinct assay/image datasets shown here; the separate, committed accession ledger includes 165 primary GEO/ArrayExpress accessions (including GSE108291) used for organoid-fidelity analyses.")
 
 P.h("4. Results")
 P.h("4.1 Within-well size slopes", 2)
@@ -120,6 +120,18 @@ P.p("Caveat: the validation images used for tuning were also in the training set
     "scored once. The 512-px model (resumed from checkpoint after an out-of-memory kill at epoch 18) raises the tuned score from "
     f"{S2['eval_mAP50']:.3f} to {S4['eval_mAP50']:.3f}, still below the published mean. With 12 eval images and sd near 0.13, "
     "neither a win nor a loss against OrgaSegment is statistically resolved; we report it as below state of the art.")
+
+SA = json.load(open("results/seg_integrity_audit.json"))
+P.h("4.5a Segmentation split-integrity correction", 2)
+P.p(f"Training combined {SA['split_counts']['train']} train and {SA['split_counts']['val']} validation images. "
+    "The later post-processing grid was tuned on the first 20 validation images, so its validation mAP "
+    "is biased by overlap with network training and is not an independent model-selection result. "
+    f"The disjoint {SA['split_counts']['eval']}-image eval split was held out, and its mAP@0.5 "
+    f"remains {SA['heldout_eval_mAP50']:.3f} versus published {SA['published_mAP50']:.2f}. "
+    f"Bootstrap across our eval images gives CI [{SA['eval_image_bootstrap_ci95'][0]:.3f}, "
+    f"{SA['eval_image_bootstrap_ci95'][1]:.3f}] for our mean, but leader per-image predictions "
+    "and guaranteed identical AP implementation are unavailable. No benchmark break "
+    "(results/seg_integrity_audit.json).")
 
 P.h("4.6 Organoid-to-tissue fidelity across 151 GEO series", 2)
 GM = json.load(open("results/geo_fidelity_methods.json")); GC = json.load(open("results/geo_fidelity_clean.json"))
