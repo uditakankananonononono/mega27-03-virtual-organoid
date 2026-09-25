@@ -1,0 +1,5 @@
+# Direct Rhea reaction check
+
+Pre-registered at commit 9c649a5 before downloading the official Swiss-Prot mapping from https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv . Using UniProt accessions in the previously obtained EBI GOA human GAF, 98/100 fixed liver and brain deficit symbols each map to at least one human UniProtKB accession. Rhea has reaction annotations for 42/100 liver versus 10/100 brain top-deficit genes (one-sided Fisher OR 6.52, p=1.50e-7). Kidney 41, colon 24, lung 12. Coverage exceeds the registered floor; full symbols and example Rhea IDs are in `results/deficit_rhea.json`.
+
+This supports a narrow annotation statement: liver's top-deficit list includes more annotated reaction enzymes than brain's. Kidney's similarly high 41/100 shows it is not unique to liver. Rhea/GOA/UniProt/KEGG literature and curation can overlap. The organ comparison was motivated by exploratory findings, not selected blindly. No organoid enzyme activity was measured. This result neither establishes a new mechanism nor validates diagnosis or the originally proposed kidney fidelity gap.
