@@ -1,0 +1,537 @@
+{
+  "source": "https://github.com/hmbotelho/FIS_image_analysis",
+  "preregistration": "results/preregistration_fiji_crosspipeline.md (commit 4aaf86f)",
+  "paths": [
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0001--fsk--0.008/P001--fsk--0.008/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0002--fsk--5/P001--fsk--5/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0007--fsk_770_809--0.008/P001--fsk_770_809--0.008/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0008--fsk_770_809--5/P001--fsk_770_809--5/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0013--fsk--0.008/P001--fsk--0.008/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0014--fsk--5/P001--fsk--5/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0019--fsk_770_809--0.008/P001--fsk_770_809--0.008/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0020--fsk_770_809--5/P001--fsk_770_809--5/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0025--fsk--0.02/P001--fsk--0.02/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0026--fsk--2/P001--fsk--2/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0031--fsk_770_809--0.02/P001--fsk_770_809--0.02/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0032--fsk_770_809--2/P001--fsk_770_809--2/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0037--fsk--0.02/P001--fsk--0.02/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0038--fsk--2/P001--fsk--2/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0043--fsk_770_809--0.02/P001--fsk_770_809--0.02/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0044--fsk_770_809--2/P001--fsk_770_809--2/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0049--fsk--0.05/P001--fsk--0.05/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0050--fsk--0.8/P001--fsk--0.8/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0055--fsk_770_809--0.05/P001--fsk_770_809--0.05/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0056--fsk_770_809--0.8/P001--fsk_770_809--0.8/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0061--fsk--0.05/P001--fsk--0.05/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0062--fsk--0.8/P001--fsk--0.8/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0067--fsk_770_809--0.05/P001--fsk_770_809--0.05/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0068--fsk_770_809--0.8/P001--fsk_770_809--0.8/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0073--fsk--0.128/P001--fsk--0.128/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0074--fsk--0.32/P001--fsk--0.32/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0079--fsk_770_809--0.128/P001--fsk_770_809--0.128/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0080--fsk_770_809--0.32/P001--fsk_770_809--0.32/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0085--fsk--0.128/P001--fsk--0.128/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0086--fsk--0.32/P001--fsk--0.32/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0091--fsk_770_809--0.128/P001--fsk_770_809--0.128/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--ij/W0092--fsk_770_809--0.32/P001--fsk_770_809--0.32/objects.csv"
+  ],
+  "source_audit": [
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0001--fsk--0.008/P001--fsk--0.008/objects.csv",
+      "rows": 418,
+      "candidate_rows": 121,
+      "duplicate_track_time_rows": 2
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0002--fsk--5/P001--fsk--5/objects.csv",
+      "rows": 394,
+      "candidate_rows": 112,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0007--fsk_770_809--0.008/P001--fsk_770_809--0.008/objects.csv",
+      "rows": 412,
+      "candidate_rows": 119,
+      "duplicate_track_time_rows": 2
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0008--fsk_770_809--5/P001--fsk_770_809--5/objects.csv",
+      "rows": 329,
+      "candidate_rows": 94,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0013--fsk--0.008/P001--fsk--0.008/objects.csv",
+      "rows": 450,
+      "candidate_rows": 128,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0014--fsk--5/P001--fsk--5/objects.csv",
+      "rows": 427,
+      "candidate_rows": 122,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0019--fsk_770_809--0.008/P001--fsk_770_809--0.008/objects.csv",
+      "rows": 488,
+      "candidate_rows": 138,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0020--fsk_770_809--5/P001--fsk_770_809--5/objects.csv",
+      "rows": 377,
+      "candidate_rows": 107,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0025--fsk--0.02/P001--fsk--0.02/objects.csv",
+      "rows": 585,
+      "candidate_rows": 167,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0026--fsk--2/P001--fsk--2/objects.csv",
+      "rows": 397,
+      "candidate_rows": 116,
+      "duplicate_track_time_rows": 4
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0031--fsk_770_809--0.02/P001--fsk_770_809--0.02/objects.csv",
+      "rows": 203,
+      "candidate_rows": 58,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0032--fsk_770_809--2/P001--fsk_770_809--2/objects.csv",
+      "rows": 503,
+      "candidate_rows": 146,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0037--fsk--0.02/P001--fsk--0.02/objects.csv",
+      "rows": 560,
+      "candidate_rows": 161,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0038--fsk--2/P001--fsk--2/objects.csv",
+      "rows": 431,
+      "candidate_rows": 122,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0043--fsk_770_809--0.02/P001--fsk_770_809--0.02/objects.csv",
+      "rows": 443,
+      "candidate_rows": 127,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0044--fsk_770_809--2/P001--fsk_770_809--2/objects.csv",
+      "rows": 396,
+      "candidate_rows": 116,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0049--fsk--0.05/P001--fsk--0.05/objects.csv",
+      "rows": 488,
+      "candidate_rows": 139,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0050--fsk--0.8/P001--fsk--0.8/objects.csv",
+      "rows": 459,
+      "candidate_rows": 130,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0055--fsk_770_809--0.05/P001--fsk_770_809--0.05/objects.csv",
+      "rows": 272,
+      "candidate_rows": 77,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0056--fsk_770_809--0.8/P001--fsk_770_809--0.8/objects.csv",
+      "rows": 434,
+      "candidate_rows": 122,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0061--fsk--0.05/P001--fsk--0.05/objects.csv",
+      "rows": 429,
+      "candidate_rows": 123,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0062--fsk--0.8/P001--fsk--0.8/objects.csv",
+      "rows": 476,
+      "candidate_rows": 137,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0067--fsk_770_809--0.05/P001--fsk_770_809--0.05/objects.csv",
+      "rows": 552,
+      "candidate_rows": 158,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0068--fsk_770_809--0.8/P001--fsk_770_809--0.8/objects.csv",
+      "rows": 401,
+      "candidate_rows": 115,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0073--fsk--0.128/P001--fsk--0.128/objects.csv",
+      "rows": 520,
+      "candidate_rows": 147,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0074--fsk--0.32/P001--fsk--0.32/objects.csv",
+      "rows": 434,
+      "candidate_rows": 124,
+      "duplicate_track_time_rows": 4
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0079--fsk_770_809--0.128/P001--fsk_770_809--0.128/objects.csv",
+      "rows": 453,
+      "candidate_rows": 129,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0080--fsk_770_809--0.32/P001--fsk_770_809--0.32/objects.csv",
+      "rows": 467,
+      "candidate_rows": 132,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0085--fsk--0.128/P001--fsk--0.128/objects.csv",
+      "rows": 483,
+      "candidate_rows": 138,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0086--fsk--0.32/P001--fsk--0.32/objects.csv",
+      "rows": 343,
+      "candidate_rows": 99,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0091--fsk_770_809--0.128/P001--fsk_770_809--0.128/objects.csv",
+      "rows": 531,
+      "candidate_rows": 152,
+      "duplicate_track_time_rows": 2
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--ij/W0092--fsk_770_809--0.32/P001--fsk_770_809--0.32/objects.csv",
+      "rows": 518,
+      "candidate_rows": 149,
+      "duplicate_track_time_rows": 0
+    }
+  ],
+  "n_tracked_pairs": 1938,
+  "quartile_cutoffs_area_micronsq": {
+    "small_lte": 2117.357,
+    "large_gte": 8114.4585
+  },
+  "doses": [
+    {
+      "dose_uM": 0.008,
+      "eligible": true,
+      "effect_log": -0.0033120781967377767,
+      "cells": {
+        "fsk:small": {
+          "tracks": 21,
+          "wells": 2,
+          "mean_log_swelling": -0.03798274184689611
+        },
+        "fsk:large": {
+          "tracks": 19,
+          "wells": 2,
+          "mean_log_swelling": -0.012159697943677095
+        },
+        "fsk_770_809:small": {
+          "tracks": 21,
+          "wells": 2,
+          "mean_log_swelling": -0.02861406335759556
+        },
+        "fsk_770_809:large": {
+          "tracks": 37,
+          "wells": 2,
+          "mean_log_swelling": -0.006103097651114322
+        }
+      },
+      "n_wells": {
+        "fsk": 2,
+        "fsk_770_809": 2
+      }
+    },
+    {
+      "dose_uM": 0.02,
+      "eligible": true,
+      "effect_log": 0.018168432899487483,
+      "cells": {
+        "fsk:small": {
+          "tracks": 38,
+          "wells": 2,
+          "mean_log_swelling": 0.0030534942654680264
+        },
+        "fsk:large": {
+          "tracks": 29,
+          "wells": 2,
+          "mean_log_swelling": 0.006348938933090301
+        },
+        "fsk_770_809:small": {
+          "tracks": 27,
+          "wells": 2,
+          "mean_log_swelling": -0.03372123061328601
+        },
+        "fsk_770_809:large": {
+          "tracks": 22,
+          "wells": 2,
+          "mean_log_swelling": -0.012257353046176254
+        }
+      },
+      "n_wells": {
+        "fsk": 2,
+        "fsk_770_809": 2
+      }
+    },
+    {
+      "dose_uM": 0.05,
+      "eligible": true,
+      "effect_log": 0.012249104036540392,
+      "cells": {
+        "fsk:small": {
+          "tracks": 30,
+          "wells": 2,
+          "mean_log_swelling": -0.016781493153589937
+        },
+        "fsk:large": {
+          "tracks": 35,
+          "wells": 2,
+          "mean_log_swelling": -0.019452718210446102
+        },
+        "fsk_770_809:small": {
+          "tracks": 21,
+          "wells": 2,
+          "mean_log_swelling": 0.03279312009515858
+        },
+        "fsk_770_809:large": {
+          "tracks": 33,
+          "wells": 2,
+          "mean_log_swelling": 0.042370999074842805
+        }
+      },
+      "n_wells": {
+        "fsk": 2,
+        "fsk_770_809": 2
+      }
+    },
+    {
+      "dose_uM": 0.128,
+      "eligible": true,
+      "effect_log": 0.1451712647758187,
+      "cells": {
+        "fsk:small": {
+          "tracks": 34,
+          "wells": 2,
+          "mean_log_swelling": -0.017621826380577448
+        },
+        "fsk:large": {
+          "tracks": 38,
+          "wells": 2,
+          "mean_log_swelling": -0.022791937252463857
+        },
+        "fsk_770_809:small": {
+          "tracks": 43,
+          "wells": 2,
+          "mean_log_swelling": 0.04857383965323362
+        },
+        "fsk_770_809:large": {
+          "tracks": 30,
+          "wells": 2,
+          "mean_log_swelling": 0.18857499355716592
+        }
+      },
+      "n_wells": {
+        "fsk": 2,
+        "fsk_770_809": 2
+      }
+    },
+    {
+      "dose_uM": 0.32,
+      "eligible": true,
+      "effect_log": 0.3050078402223459,
+      "cells": {
+        "fsk:small": {
+          "tracks": 39,
+          "wells": 2,
+          "mean_log_swelling": -0.015851103837927625
+        },
+        "fsk:large": {
+          "tracks": 25,
+          "wells": 2,
+          "mean_log_swelling": -0.0076972541344146475
+        },
+        "fsk_770_809:small": {
+          "tracks": 41,
+          "wells": 2,
+          "mean_log_swelling": 0.05153421883874647
+        },
+        "fsk_770_809:large": {
+          "tracks": 36,
+          "wells": 2,
+          "mean_log_swelling": 0.36469590876460534
+        }
+      },
+      "n_wells": {
+        "fsk": 2,
+        "fsk_770_809": 2
+      }
+    },
+    {
+      "dose_uM": 0.8,
+      "eligible": true,
+      "effect_log": 0.6026979820595743,
+      "cells": {
+        "fsk:small": {
+          "tracks": 35,
+          "wells": 2,
+          "mean_log_swelling": -0.030211931570818418
+        },
+        "fsk:large": {
+          "tracks": 39,
+          "wells": 2,
+          "mean_log_swelling": -0.001844135696290617
+        },
+        "fsk_770_809:small": {
+          "tracks": 29,
+          "wells": 2,
+          "mean_log_swelling": 0.0196072005025285
+        },
+        "fsk_770_809:large": {
+          "tracks": 25,
+          "wells": 2,
+          "mean_log_swelling": 0.6506729784366305
+        }
+      },
+      "n_wells": {
+        "fsk": 2,
+        "fsk_770_809": 2
+      }
+    },
+    {
+      "dose_uM": 2.0,
+      "eligible": true,
+      "effect_log": 0.5527938189214906,
+      "cells": {
+        "fsk:small": {
+          "tracks": 28,
+          "wells": 2,
+          "mean_log_swelling": 0.04200701434885986
+        },
+        "fsk:large": {
+          "tracks": 26,
+          "wells": 2,
+          "mean_log_swelling": 0.03118449173017699
+        },
+        "fsk_770_809:small": {
+          "tracks": 33,
+          "wells": 2,
+          "mean_log_swelling": 0.0341591460176207
+        },
+        "fsk_770_809:large": {
+          "tracks": 41,
+          "wells": 2,
+          "mean_log_swelling": 0.5761304423204284
+        }
+      },
+      "n_wells": {
+        "fsk": 2,
+        "fsk_770_809": 2
+      }
+    },
+    {
+      "dose_uM": 5.0,
+      "eligible": true,
+      "effect_log": 0.5293043763860966,
+      "cells": {
+        "fsk:small": {
+          "tracks": 23,
+          "wells": 2,
+          "mean_log_swelling": 0.019109356751754424
+        },
+        "fsk:large": {
+          "tracks": 30,
+          "wells": 2,
+          "mean_log_swelling": 0.009093585597276067
+        },
+        "fsk_770_809:small": {
+          "tracks": 25,
+          "wells": 2,
+          "mean_log_swelling": 0.23275893662517888
+        },
+        "fsk_770_809:large": {
+          "tracks": 20,
+          "wells": 2,
+          "mean_log_swelling": 0.7520475418567971
+        }
+      },
+      "n_wells": {
+        "fsk": 2,
+        "fsk_770_809": 2
+      }
+    }
+  ],
+  "n_eligible_doses": 8,
+  "n_positive_doses": 7,
+  "median_dose_effect": 0.2250895524990823,
+  "sign_p_one_sided": 0.03515625,
+  "H1": {
+    "verdict": "PASS"
+  },
+  "H1_fiji": {
+    "verdict": "PASS",
+    "n_eligible": 8,
+    "n_positive": 7,
+    "median_effect": 0.2250895524990823
+  },
+  "well_and_retention_descriptive": {
+    "n_eligible_doses": 8,
+    "n_positive_doses": 8,
+    "median_equal_well_effect": 0.22586533893684135,
+    "retention_by_condition_size": {
+      "fsk": {
+        "small": {
+          "eligible_baseline": 255,
+          "retained": 237,
+          "rate": 0.9294117647058824
+        },
+        "large": {
+          "eligible_baseline": 317,
+          "retained": 312,
+          "rate": 0.9842271293375394
+        }
+      },
+      "fsk_770_809": {
+        "small": {
+          "eligible_baseline": 256,
+          "retained": 227,
+          "rate": 0.88671875
+        },
+        "large": {
+          "eligible_baseline": 320,
+          "retained": 300,
+          "rate": 0.9375
+        }
+      }
+    },
+    "missing_and_duplicates": {
+      "baseline_rows_missing_track_id": 0,
+      "duplicate_baseline_track_rows": 0,
+      "duplicate_endpoint_track_rows": 14
+    }
+  },
+  "interpretation": "same donor/plate/images; alternative analysis pipeline, not biological replication"
+}
