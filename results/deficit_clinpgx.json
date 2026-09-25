@@ -1,0 +1,42 @@
+{
+ "n_core_pharmacogenes": 33,
+ "liver": {
+  "n_pg_tested": 21,
+  "n_other": 10379,
+  "median_deficit_pg": 0.3235307379362455,
+  "median_deficit_other": 0.03461865207519702,
+  "mwu_p_greater": 0.0004100037298320197,
+  "H1": "PASS",
+  "top15_pg_deficits": {
+   "CYP4F2": 1.79,
+   "CYP2D6": 1.46,
+   "SLCO1B1": 1.28,
+   "VKORC1": 1.05,
+   "HLA-B": 0.68,
+   "CYP2C9": 0.68,
+   "ADRB2": 0.57,
+   "TPMT": 0.55,
+   "UGT1A1": 0.52,
+   "CYP2C19": 0.51,
+   "CYP3A5": 0.32,
+   "DPYD": 0.26,
+   "NUDT15": 0.26,
+   "HLA-A": 0.21,
+   "COMT": 0.18
+  }
+ },
+ "H2": {
+  "n_pg_all_organs": 6,
+  "median_std_deficit_by_organ": {
+   "Brain - Cortex": 0.441,
+   "Colon - Transverse": -0.138,
+   "Kidney - Cortex": 0.282,
+   "Liver": 0.392,
+   "Lung": -0.388
+  },
+  "stat_liver_minus_max_other": -0.04902759624491487,
+  "perm_p": 0.23177682231776822,
+  "verdict": "FAIL"
+ },
+ "deviation": "Is VIP = Yes for all 25,041 genes in the release; set restricted to CPIC-guideline genes (34 in file)"
+}

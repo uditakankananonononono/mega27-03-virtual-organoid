@@ -30,3 +30,4 @@ Open Targets Platform GraphQL API (v26.9),database/service,src/deficit_opentarge
 decoupler 2.1.4 (ulm),library,src/deficit_decoupler.py,True,TF and pathway activity inference on deficit vectors; pre-registered a72ccc4
 OmniPath (CollecTRI TF regulons + PROGENy pathway footprints),database/service,src/deficit_decoupler.py,True,regulon/footprint resources fetched via decoupler.op
 EBI Expression Atlas (baseline experiments FTP),database/service,src/deficit_bodymap.py,True,E-MTAB-513 Illumina Body Map TPMs as independent tissue reference; pre-registered 3d898d6
+ClinPGx / PharmGKB gene download (release 2026-09-05),database/service,src/deficit_clinpgx.py,True,"CPIC-guideline pharmacogenes; pre-registered afcb277 (VIP flag defective, deviation documented)"

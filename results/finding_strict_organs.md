@@ -52,3 +52,11 @@ Deficits recomputed with Expression Atlas E-MTAB-513 baseline TPMs instead of GT
 - Per-organ Spearman GTEx vs Body Map deficits: liver 0.72, lung 0.72, kidney 0.67, brain 0.61, colon 0.57; top-100 overlap 52-75 (hypergeometric p < 1e-89) -> PASS in all 5.
 - Open Targets diagonal-dominance re-run with Body Map lists: D=2.1, permutation p=0.0026 -> PASS.
 Caveat: both deficit vectors share the same organoid profiles, so part of the agreement comes from the organoid side; this checks reference sensitivity only.
+
+## Pharmacogenes in liver organoids (pre-registered afcb277; src/deficit_clinpgx.py, results/deficit_clinpgx.json)
+ClinPGx (formerly PharmGKB) genes.tsv, release 2026-09-05.
+- Pre-registered gene set (VIP or CPIC) is UNUSABLE: the "Is VIP" column is "Yes" for all 25,041 genes in this release. With that set H1 trivially fails (p=0.97); this run is kept as a negative/data-defect record.
+- Documented deviation: CPIC dosing-guideline genes only (33 with Ensembl IDs; 21 on the liver deficit vector).
+  - H1: liver organoids under-express CPIC pharmacogenes vs other genes (median deficit 0.32 vs 0.03, Mann-Whitney p=0.0004) -> PASS under deviation. Top: CYP4F2, CYP2D6, SLCO1B1, VKORC1, CYP2C9, TPMT, UGT1A1, CYP2C19.
+  - H2 (liver-specific): FAIL (p=0.23; only 6 CPIC genes are on all 5 organ vectors; brain and kidney medians are similar).
+Practical reading: liver organoids in these public series are short on CPIC-actionable drug-metabolism genes, which matters for drug testing, but the evidence for liver specificity is absent and the set was changed after pre-registration.
