@@ -1,0 +1,1632 @@
+{
+  "uberon:kidney cortex": {
+    "url": "https://www.ebi.ac.uk/ols4/api/search?q=kidney+cortex&ontology=uberon&exact=true&rows=20",
+    "num_found": 20,
+    "matches": [
+      {
+        "label": "cortex of kidney",
+        "obo_id": "UBERON:0001225",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0001225",
+        "ontology_name": "uberon",
+        "description": [
+          "Outer cortical portion of the kidney, between the renal capsule and the renal medulla."
+        ]
+      },
+      {
+        "label": "cortical collecting duct",
+        "obo_id": "UBERON:0004203",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0004203",
+        "ontology_name": "uberon",
+        "description": [
+          "The cortical collecting duct is the portion of the collecting duct that resides in the renal cortex."
+        ]
+      },
+      {
+        "label": "renal cortex artery",
+        "obo_id": "UBERON:0005268",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0005268",
+        "ontology_name": "uberon",
+        "description": [
+          "An artery that supplies the renal cortex."
+        ]
+      },
+      {
+        "label": "renal cortex vein",
+        "obo_id": "UBERON:0005269",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0005269",
+        "ontology_name": "uberon",
+        "description": [
+          "Artery that receives blood from the renal cortex[MP, modified]."
+        ]
+      },
+      {
+        "label": "renal cortex interstitium",
+        "obo_id": "UBERON:0005270",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0005270",
+        "ontology_name": "uberon",
+        "description": [
+          "A compartment of the renal cortex situated between basement membranes of epithelia and vessels that contains two contiguous cellular networks in mutual contact, one formed by interstitial fibroblasts, the other by dendritic cells."
+        ]
+      },
+      {
+        "label": "renal cortex peritubular capillary",
+        "obo_id": "UBERON:0006851",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0006851",
+        "ontology_name": "uberon",
+        "description": [
+          "A peritubular capillary that is part of a cortex of kidney."
+        ]
+      },
+      {
+        "label": "renal cortex tubule",
+        "obo_id": "UBERON:0006853",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0006853",
+        "ontology_name": "uberon",
+        "description": [
+          "A region of nephron tubule that is part of a cortex of kidney."
+        ]
+      },
+      {
+        "label": "distal straight tubule postmacula segment",
+        "obo_id": "UBERON:0006854",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0006854",
+        "ontology_name": "uberon",
+        "description": []
+      },
+      {
+        "label": "kidney cortex collecting duct epithelial cell",
+        "obo_id": "CL:1000549",
+        "iri": "http://purl.obolibrary.org/obo/CL_1000549",
+        "ontology_name": "uberon",
+        "description": [
+          "An epithelial cell that is part of a cortical collecting duct."
+        ]
+      },
+      {
+        "label": "kidney cortex tubule cell",
+        "obo_id": "CL:1000615",
+        "iri": "http://purl.obolibrary.org/obo/CL_1000615",
+        "ontology_name": "uberon",
+        "description": [
+          "Any kidney tubule cell that is part of some renal cortex tubule."
+        ]
+      },
+      {
+        "label": "kidney cortex interstitial cell",
+        "obo_id": "CL:1000681",
+        "iri": "http://purl.obolibrary.org/obo/CL_1000681",
+        "ontology_name": "uberon",
+        "description": [
+          "A cell that is part of an interstitial compartment of a renal cortex."
+        ]
+      },
+      {
+        "label": "kidney cortex collecting duct principal cell",
+        "obo_id": "CL:1000714",
+        "iri": "http://purl.obolibrary.org/obo/CL_1000714",
+        "ontology_name": "uberon",
+        "description": [
+          "Any renal principal cell that is part of some cortical collecting duct."
+        ]
+      },
+      {
+        "label": "kidney cortex artery cell",
+        "obo_id": "CL:1001045",
+        "iri": "http://purl.obolibrary.org/obo/CL_1001045",
+        "ontology_name": "uberon",
+        "description": [
+          "Any kidney arterial blood vessel cell that is part of some renal cortex artery."
+        ]
+      },
+      {
+        "label": "kidney cortex vein cell",
+        "obo_id": "CL:1001052",
+        "iri": "http://purl.obolibrary.org/obo/CL_1001052",
+        "ontology_name": "uberon",
+        "description": [
+          "Any kidney venous blood vessel cell that is part of some renal cortex vein."
+        ]
+      },
+      {
+        "label": "kidney cortex peritubular capillary cell",
+        "obo_id": "CL:1001124",
+        "iri": "http://purl.obolibrary.org/obo/CL_1001124",
+        "ontology_name": "uberon",
+        "description": [
+          "An endothelial cell that is part of the peritubular capillary of the renal cortex."
+        ]
+      },
+      {
+        "label": "renal cortical epithelial cell",
+        "obo_id": "CL:0002584",
+        "iri": "http://purl.obolibrary.org/obo/CL_0002584",
+        "ontology_name": "uberon",
+        "description": [
+          "An epithelial cell of the kidney cortex."
+        ]
+      },
+      {
+        "label": "arcuate artery cell",
+        "obo_id": "CL:1001135",
+        "iri": "http://purl.obolibrary.org/obo/CL_1001135",
+        "ontology_name": "uberon",
+        "description": [
+          "Any kidney cortex artery cell that is part of some kidney arcuate artery."
+        ]
+      },
+      {
+        "label": "interlobular artery cell",
+        "obo_id": "CL:1001138",
+        "iri": "http://purl.obolibrary.org/obo/CL_1001138",
+        "ontology_name": "uberon",
+        "description": [
+          "Any kidney cortex artery cell that is part of some interlobular artery."
+        ]
+      },
+      {
+        "label": "arcuate vein cell",
+        "obo_id": "CL:1001142",
+        "iri": "http://purl.obolibrary.org/obo/CL_1001142",
+        "ontology_name": "uberon",
+        "description": [
+          "Any kidney cortex vein cell that is part of some kidney arcuate vein."
+        ]
+      },
+      {
+        "label": "interlobular vein cell",
+        "obo_id": "CL:1001145",
+        "iri": "http://purl.obolibrary.org/obo/CL_1001145",
+        "ontology_name": "uberon",
+        "description": [
+          "Any kidney cortex vein cell that is part of some renal interlobular vein."
+        ]
+      }
+    ]
+  },
+  "uberon:kidney": {
+    "url": "https://www.ebi.ac.uk/ols4/api/search?q=kidney&ontology=uberon&exact=true&rows=20",
+    "num_found": 390,
+    "matches": [
+      {
+        "label": "kidney",
+        "obo_id": "UBERON:0002113",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0002113",
+        "ontology_name": "uberon",
+        "description": [
+          "A paired organ of the urinary tract that produces urine and maintains bodily fluid homeostasis, blood pressure, pH levels, red blood cell production and skeleton mineralization."
+        ]
+      },
+      {
+        "label": "kidney capillary",
+        "obo_id": "UBERON:0003527",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0003527",
+        "ontology_name": "uberon",
+        "description": [
+          "A capillary that is part of a kidney [Automatically generated definition]."
+        ]
+      },
+      {
+        "label": "kidney pelvis urothelium",
+        "obo_id": "UBERON:0004788",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0004788",
+        "ontology_name": "uberon",
+        "description": [
+          "The epithelial lining of the luminal space of the kidney pelvis."
+        ]
+      },
+      {
+        "label": "mucosa of renal pelvis",
+        "obo_id": "UBERON:0005006",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0005006",
+        "ontology_name": "uberon",
+        "description": [
+          "A mucosa that is part of a renal pelvis [Automatically generated definition]."
+        ]
+      },
+      {
+        "label": "outer renal medulla vasa recta",
+        "obo_id": "UBERON:0004775",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0004775",
+        "ontology_name": "uberon",
+        "description": [
+          "A vasa recta that is part of a outer medulla of kidney [Automatically generated definition]."
+        ]
+      },
+      {
+        "label": "kidney epithelium",
+        "obo_id": "UBERON:0004819",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0004819",
+        "ontology_name": "uberon",
+        "description": [
+          "The cellular avascular layer of the kidney luminar surfaces."
+        ]
+      },
+      {
+        "label": "kidney interstitium",
+        "obo_id": "UBERON:0005215",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0005215",
+        "ontology_name": "uberon",
+        "description": [
+          "The interstitial compartment of the kidney, comprising the extravascular intertubular spaces of the renal parenchyma, with their attendant cellular elements and extracellular substances, bounded on all sides by epithelial and vascular basement membranes."
+        ]
+      },
+      {
+        "label": "medullary region of kidney",
+        "obo_id": "UBERON:8410073",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_8410073",
+        "ontology_name": "uberon",
+        "description": [
+          "Note that 'medullary region of kidney' is not synonymous with 'renal medulla'. The former covers kidney pyramids and renal columns, which are histologically different, while the latter is composed of kidney pyramids only.",
+          "A part of the kidney that comprises kidney pyramids and renal columns."
+        ]
+      },
+      {
+        "label": "head kidney",
+        "obo_id": "UBERON:0007132",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0007132",
+        "ontology_name": "uberon",
+        "description": [
+          "Teleost head kidney consists of fused bilateral lobes located in the anterior part of the kidney. It is analogous to the mammalian bone marrow and the primary site of definitive hematopoiesis[ZFA,modified]."
+        ]
+      },
+      {
+        "label": "kidney interpolar region",
+        "obo_id": "UBERON:7770009",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_7770009",
+        "ontology_name": "uberon",
+        "description": [
+          "The middle portion of the kidney situated between the upper pole and the lower pole, representing approximately the middle third of the kidney along its longitudinal axis."
+        ]
+      },
+      {
+        "label": "outer medulla of kidney",
+        "obo_id": "UBERON:0001293",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0001293",
+        "ontology_name": "uberon",
+        "description": [
+          "The renal outer medulla is the region of the kidney that lies between the renal cortex and the renal inner medulla[GO]."
+        ]
+      },
+      {
+        "label": "inner medulla of kidney",
+        "obo_id": "UBERON:0001294",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0001294",
+        "ontology_name": "uberon",
+        "description": [
+          "Innermost region of the mammalian kidney."
+        ]
+      },
+      {
+        "label": "kidney capsule",
+        "obo_id": "UBERON:0002015",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0002015",
+        "ontology_name": "uberon",
+        "description": [
+          "The tough fibrous layer surrounding the kidney which is covered in a thick layer of perirenal adipose tissue that functions to provide some protection from trauma and damage."
+        ]
+      },
+      {
+        "label": "vasa recta",
+        "obo_id": "UBERON:0004726",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0004726",
+        "ontology_name": "uberon",
+        "description": [
+          "A group of microvessels that are part of the kidney. A vasa recta has a hairpin-like shape, entering the renal medulla as the straight arterioles and surrounds the loop of Henle, forming a capillary network. Finally it leaves the renal medulla to ascend to the cortex as the straight venules. The primary function of the vasa recta is to facilitate countercurrent exchange, which is essential for the kidney's ability to concentrate urine"
+        ]
+      },
+      {
+        "label": "hilum of kidney",
+        "obo_id": "UBERON:0008716",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0008716",
+        "ontology_name": "uberon",
+        "description": [
+          "An opening on medial margin of the kidney leading into the renal sinus. he renal vessels enter/leave the kidney at the hilum; the renal pelvis leaves the kidney at the hilum."
+        ]
+      },
+      {
+        "label": "cortical arch of kidney",
+        "obo_id": "UBERON:0009650",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0009650",
+        "ontology_name": "uberon",
+        "description": [
+          "The portions of renal substance (cortex) intervening between the bases of the pyramids and the capsule of the kidney."
+        ]
+      },
+      {
+        "label": "straight venules of kidney",
+        "obo_id": "UBERON:0010181",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0010181",
+        "ontology_name": "uberon",
+        "description": [
+          "The straight venules of kidney are branches from the plexuses at the apices of the medullary pyramids, formed by the terminations of the arteriae rectae. They run outward in a straight course between the tubes of the medullary substance, and joining, as above stated, the interlobular veins, form venous arcades; these in turn unite and form veins which pass along the sides of the pyramids. Contains fenestrated capillaries."
+        ]
+      },
+      {
+        "label": "mesonephros",
+        "obo_id": "UBERON:0000080",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0000080",
+        "ontology_name": "uberon",
+        "description": [
+          "The second stage of the kidney. It serves as the main excretory organ of aquatic vertebrates and as a temporary embryonic kidney in higher vertebrates. It is composed of the mesonephric duct (also called the Wolffian duct), mesonephric tubules, and associated capillary tufts. A single tubule and its associated capillary tuft is called a mesonephric excretory unit; these units are similar in structure and function to nephrons of the adult kidney. The mesonephros is derived from intermediate mesoderm in the vertebrate embryo."
+        ]
+      },
+      {
+        "label": "metanephros",
+        "obo_id": "UBERON:0000081",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0000081",
+        "ontology_name": "uberon",
+        "description": [
+          "In mammals, the metanephros is the excretory organ of the fetus, which develops into the mature kidney and is formed from the rear portion of the nephrogenic cord. The metanephros is an endocrine and metabolic organ that filters the blood and excretes the end products of body metabolism in the form of urine[GO]."
+        ]
+      },
+      {
+        "label": "kidney mesenchyme",
+        "obo_id": "UBERON:0003918",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0003918",
+        "ontology_name": "uberon",
+        "description": [
+          "Kidney mesenchyme is the tissue made up of loosely connected mesenchymal cells in the kidney[GO]."
+        ]
+      }
+    ]
+  },
+  "uberon:liver": {
+    "url": "https://www.ebi.ac.uk/ols4/api/search?q=liver&ontology=uberon&exact=true&rows=20",
+    "num_found": 161,
+    "matches": [
+      {
+        "label": "liver",
+        "obo_id": "UBERON:0002107",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0002107",
+        "ontology_name": "uberon",
+        "description": [
+          "An exocrine gland which secretes bile and functions in metabolism of protein and carbohydrate and fat, synthesizes substances involved in the clotting of the blood, synthesizes vitamin A, detoxifies poisonous substances, stores glycogen, and breaks down worn-out erythrocytes[GO]."
+        ]
+      },
+      {
+        "label": "caudate lobe of liver",
+        "obo_id": "UBERON:0001117",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0001117",
+        "ontology_name": "uberon",
+        "description": [
+          "The caudate lobe (posterior hepatic segment I, Spigelian lobe) is situated upon the postero-superior surface of the liver on the right lobe of the liver, opposite the tenth and eleventh thoracic vertebrae. It is bounded on the left side by the physiological division of the liver called the ligamentum venosum. It is bounded, below, by the porta; on the right, by the fossa for the inferior vena cava; and, on the left, by the fossa for the ductus venosus. It looks backward, being nearly vertical in position; it is longer from above downward than from side to side, and is somewhat concave in the transverse direction. The caudate process is a small elevation of the hepatic substance extending obliquely and laterally, from the lower extremity of the caudate lobe to the under surface of the right lobe. It is situated behind the porta, and separates the fossa for the gall-bladder from the commencement of the fossa for the inferior vena cava. Budd-Chiari syndrome, caused by occlusion of hepatic venous outflow, can lead to hypertrophy of the caudate lobe due to its own caval anastomosis that allows for continued function of this lobe of the liver. [WP,unvetted]."
+        ]
+      },
+      {
+        "label": "liver left lateral lobe",
+        "obo_id": "UBERON:0006727",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0006727",
+        "ontology_name": "uberon",
+        "description": []
+      },
+      {
+        "label": "subcapsular region of liver",
+        "obo_id": "UBERON:8400024",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_8400024",
+        "ontology_name": "uberon",
+        "description": [
+          "Region of liver parenchyma immediately below the capsule. This region is frequently specified in pathology diagnoses."
+        ]
+      },
+      {
+        "label": "hepatic sinusoid",
+        "obo_id": "UBERON:0001281",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0001281",
+        "ontology_name": "uberon",
+        "description": [
+          "Wide thin-walled blood vessels in the liver. In mammals they have neither veinous or arterial markers."
+        ]
+      },
+      {
+        "label": "liver primordium",
+        "obo_id": "UBERON:0003894",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0003894",
+        "ontology_name": "uberon",
+        "description": [
+          "A small endodermal thickening in the foregut adjacent to the transverse septum. Invaginates forming the hepatic diverticulum."
+        ]
+      },
+      {
+        "label": "liver subserosa",
+        "obo_id": "UBERON:8400023",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_8400023",
+        "ontology_name": "uberon",
+        "description": [
+          "Subserosal tissue of liver. A zone of areolar connective tissue lying beneath the serous coat of the liver and distinguished with difficulty from the fibrous capsule of Glisson."
+        ]
+      },
+      {
+        "label": "lobe of liver",
+        "obo_id": "UBERON:0001113",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0001113",
+        "ontology_name": "uberon",
+        "description": [
+          "Traditional gross anatomy divided the liver into four lobes based on surface features. The falciform ligament is visible on the front (anterior side) of the liver. This divides the liver into a left anatomical lobe, and a right anatomical lobe."
+        ]
+      },
+      {
+        "label": "liver parenchyma",
+        "obo_id": "UBERON:0001280",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0001280",
+        "ontology_name": "uberon",
+        "description": [
+          "The functional units of the liver including the lobules."
+        ]
+      },
+      {
+        "label": "vasculature of liver",
+        "obo_id": "UBERON:0006877",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0006877",
+        "ontology_name": "uberon",
+        "description": [
+          "A vasculature that is part of a liver."
+        ]
+      },
+      {
+        "label": "capsule of liver",
+        "obo_id": "UBERON:0016479",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0016479",
+        "ontology_name": "uberon",
+        "description": [
+          "A collagenous capsule covering the external surface of the liver."
+        ]
+      },
+      {
+        "label": "liver serosa",
+        "obo_id": "UBERON:8400021",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_8400021",
+        "ontology_name": "uberon",
+        "description": [
+          "Hepatic serous coat; peritoneal covering of the liver, enclosing almost all except for a triangular area on its posterior surface (the 'bare area of the liver') and a smaller area where the liver and gallbladder are in direct contact."
+        ]
+      },
+      {
+        "label": "posterior sector of right lobe of liver",
+        "obo_id": "UBERON:8600015",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_8600015",
+        "ontology_name": "uberon",
+        "description": [
+          "The posterior sector of the right lobe of the liver."
+        ]
+      },
+      {
+        "label": "anterior sector of right lobe of liver",
+        "obo_id": "UBERON:8600016",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_8600016",
+        "ontology_name": "uberon",
+        "description": [
+          "The anterior sector of the right lobe of the liver."
+        ]
+      },
+      {
+        "label": "right lobe of liver",
+        "obo_id": "UBERON:0001114",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0001114",
+        "ontology_name": "uberon",
+        "description": [
+          "The right lobe is much larger than the left; the proportion between them being as six to one. It occupies the right hypochondrium, and is separated from the left lobe on its upper surface by the falciform ligament; on its under and posterior surfaces by the left sagittal fossa; and in front by the umbilical notch. It is of a somewhat quadrilateral form, its under and posterior surfaces being marked by three foss\u00e6: the porta and the foss\u00e6 for the gall-bladder and inferior vena cava, which separate its left part into two smaller lobes; the quadrate and caudate lobes. [WP,unvetted]."
+        ]
+      },
+      {
+        "label": "left lobe of liver",
+        "obo_id": "UBERON:0001115",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0001115",
+        "ontology_name": "uberon",
+        "description": [
+          "The left lobe is smaller and more flattened than the right. It is situated in the epigastric and left hypochondriac regions. Its upper surface is slightly convex and is moulded on to the diaphragm; its under surface presents the gastric impression and omental tuberosity. [WP,unvetted]."
+        ]
+      },
+      {
+        "label": "quadrate lobe of liver",
+        "obo_id": "UBERON:0001116",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0001116",
+        "ontology_name": "uberon",
+        "description": [
+          "The quadrate lobe is an area of the liver situated on the under surface of the right lobe, bounded in front by the anterior margin of the liver; behind by the porta hepatis; on the right, by the fossa for the gall-bladder; and on the left, by the fossa for the umbilical vein. It is oblong in shape, its antero-posterior diameter being greater than its transverse. [WP,unvetted]."
+        ]
+      },
+      {
+        "label": "round ligament of liver",
+        "obo_id": "UBERON:0006588",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0006588",
+        "ontology_name": "uberon",
+        "description": [
+          "A degenerative string of tissue that exists in the free edge of the falciform ligament of the liver. Anatomically, the round ligament divides the left part of the liver into medial and lateral sections. The round ligament represents the remnant of the fetal left umbilical vein. The round ligament therefore only exists in mammals. Prenatally and for a month or two after birth, the left umbilical vein is patent, subsequently degenerating to fibrous tissue, the round ligament. The umbilical vein/round ligament inserts around the umbilicus and is an important landmark of the inner surface of the anterior abdominal wall[WP]."
+        ]
+      },
+      {
+        "label": "liver left medial lobe",
+        "obo_id": "UBERON:0006728",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0006728",
+        "ontology_name": "uberon",
+        "description": []
+      },
+      {
+        "label": "parenchyma of quadrate lobe of liver",
+        "obo_id": "UBERON:0010704",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0010704",
+        "ontology_name": "uberon",
+        "description": [
+          "A liver parenchyma that is part of a quadrate lobe of liver."
+        ]
+      }
+    ]
+  },
+  "uberon:bile duct": {
+    "url": "https://www.ebi.ac.uk/ols4/api/search?q=bile+duct&ontology=uberon&exact=true&rows=20",
+    "num_found": 49,
+    "matches": [
+      {
+        "label": "bile duct",
+        "obo_id": "UBERON:0002394",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0002394",
+        "ontology_name": "uberon",
+        "description": [
+          "Any of the ducts that form the biliary tree, carrying bile from the liver to the small intestine."
+        ]
+      },
+      {
+        "label": "mucosa of common bile duct",
+        "obo_id": "UBERON:0005000",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0005000",
+        "ontology_name": "uberon",
+        "description": [
+          "A mucosa that is part of a common bile duct [Automatically generated definition]."
+        ]
+      },
+      {
+        "label": "extrahepatic bile duct epithelium",
+        "obo_id": "UBERON:0004822",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0004822",
+        "ontology_name": "uberon",
+        "description": [
+          "An epithelium that is part of a extrahepatic bile duct [Automatically generated definition]."
+        ]
+      },
+      {
+        "label": "intrahepatic bile duct epithelium",
+        "obo_id": "UBERON:0004823",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0004823",
+        "ontology_name": "uberon",
+        "description": [
+          "An epithelium that is part of a intrahepatic bile duct [Automatically generated definition]."
+        ]
+      },
+      {
+        "label": "extrahepatic bile duct",
+        "obo_id": "UBERON:0003703",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0003703",
+        "ontology_name": "uberon",
+        "description": [
+          "Passages external to the liver for the conveyance of bile. These include the common bile duct and the common hepatic duct."
+        ]
+      },
+      {
+        "label": "bile duct epithelium",
+        "obo_id": "UBERON:0004820",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0004820",
+        "ontology_name": "uberon",
+        "description": [
+          "Any epithelium that lines one of the bile ducts."
+        ]
+      },
+      {
+        "label": "submucosa of common bile duct",
+        "obo_id": "UBERON:0004939",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0004939",
+        "ontology_name": "uberon",
+        "description": [
+          "A submucosa that is part of a common bile duct [Automatically generated definition]."
+        ]
+      },
+      {
+        "label": "intrahepatic bile duct",
+        "obo_id": "UBERON:0003704",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0003704",
+        "ontology_name": "uberon",
+        "description": [
+          "Passages within the liver for the conveyance of bile. Includes right and left hepatic ducts even though these may join outside the liver to form the common hepatic duct."
+        ]
+      },
+      {
+        "label": "biliary tree",
+        "obo_id": "UBERON:0001173",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0001173",
+        "ontology_name": "uberon",
+        "description": [
+          "The path in many species is as follows: Bile canaliculi -> Canals of Hering (intralobar bile duct) -> interlobular bile ducts -> intrahepatic bile ducts -> left and right hepatic ducts merge to form -> common hepatic duct *exits liver* and joins -> cystic duct (from gall bladder) forming -> common bile duct -> joins with pancreatic duct -> forming ampulla of Vater -> enters duodenum [WP]",
+          "A complex network of conduits that begins with the canals of Hering (intralobar bile duct) and progressively merges into a system of interlobular, septal, and major ducts which then coalesce to form the extrahepatic bile ducts, which finally deliver bile to the intestine, and in some species to the gallbladder."
+        ]
+      },
+      {
+        "label": "interlobular bile duct",
+        "obo_id": "UBERON:0001246",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0001246",
+        "ontology_name": "uberon",
+        "description": [
+          "The canals that carry bile in the liver between the intralobular ducts and the biliary ductules; interlobular bile ducts are part of the interlobular portal triad."
+        ]
+      },
+      {
+        "label": "intralobular bile duct",
+        "obo_id": "UBERON:0001282",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0001282",
+        "ontology_name": "uberon",
+        "description": [
+          "The tubules located between the bile canaliculi and interlobular bile ducts near the outer edge of a classic liver lobule."
+        ]
+      },
+      {
+        "label": "common bile duct",
+        "obo_id": "UBERON:0001174",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0001174",
+        "ontology_name": "uberon",
+        "description": [
+          "The part of the biliary tree formed by the union of the cystic duct and the common hepatic duct."
+        ]
+      },
+      {
+        "label": "lymph node along bile duct",
+        "obo_id": "UBERON:0038796",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0038796",
+        "ontology_name": "uberon",
+        "description": []
+      },
+      {
+        "label": "common hepatic duct",
+        "obo_id": "UBERON:0001175",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0001175",
+        "ontology_name": "uberon",
+        "description": [
+          "Predominantly extrahepatic bile duct which is formed by the junction of the right and left hepatic ducts, which are predominantly intrahepatic, and, in turn, joins the cystic duct to form the common bile duct[GAID]. The common hepatic duct is the duct formed by the convergence of the right hepatic duct (which drains bile from the right functional lobe of the liver) and the left hepatic duct (which drains bile from the left functional lobe of the liver). The common hepatic duct then joins the cystic duct coming from the gallbladder to form the common bile duct[WP]."
+        ]
+      },
+      {
+        "label": "hepatopancreatic ampulla",
+        "obo_id": "UBERON:0004913",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0004913",
+        "ontology_name": "uberon",
+        "description": [
+          "A dilation of the duodenal papilla that is the opening of the juncture of the common bile duct and the main pancreatic duct."
+        ]
+      },
+      {
+        "label": "ventral pancreatic duct",
+        "obo_id": "UBERON:0001064",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0001064",
+        "ontology_name": "uberon",
+        "description": [
+          "EDITOR_NOTE in EHDAA2 this is an epithelium, in FMA the wall consists of epithelium and connective tissue",
+          "A duct joining the pancreas to the common bile duct to supply pancreatic juices which aid in digestion provided by the exocrine pancreas. The pancreatic duct joins the common bile duct just prior to the ampulla of Vater, after which both ducts perforate the medial side of the second portion of the duodenum at the major duodenal papilla."
+        ]
+      },
+      {
+        "label": "extrahepatic duct",
+        "obo_id": "UBERON:2005170",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_2005170",
+        "ontology_name": "uberon",
+        "description": [
+          "Bile duct that collects from the intrahepatic ducts and feeds into the common bile duct."
+        ]
+      },
+      {
+        "label": "midgut",
+        "obo_id": "UBERON:0001045",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0001045",
+        "ontology_name": "uberon",
+        "description": [
+          "Middle subdivision of a digestive tract[CJM]. In vertebrates: The middle part of the alimentary canal from the stomach, or entrance of the bile duct, to, or including, the large intestine[GO]."
+        ]
+      },
+      {
+        "label": "cystic duct",
+        "obo_id": "UBERON:0001152",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0001152",
+        "ontology_name": "uberon",
+        "description": [
+          "The tubular structure that conducts gall bladder contents from the gall bladder to the common bile duct."
+        ]
+      },
+      {
+        "label": "portal lobule",
+        "obo_id": "UBERON:0001171",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0001171",
+        "ontology_name": "uberon",
+        "description": [
+          "The triangular region on the periphery of the liver lobules that contain a bile duct and a terminal branch of the hepatic artery and portal vein, and may also include a lymphatic vessel."
+        ]
+      }
+    ]
+  },
+  "uberon:cerebral cortex": {
+    "url": "https://www.ebi.ac.uk/ols4/api/search?q=cerebral+cortex&ontology=uberon&exact=true&rows=20",
+    "num_found": 131,
+    "matches": [
+      {
+        "label": "cerebral cortex",
+        "obo_id": "UBERON:0000956",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0000956",
+        "ontology_name": "uberon",
+        "description": [
+          "The thin layer of gray matter on the surface of the cerebral hemisphere that develops from the telencephalon. It consists of the neocortex (6 layered cortex or isocortex), the hippocampal formation and the olfactory cortex."
+        ]
+      },
+      {
+        "label": "cerebral cortex neuropil",
+        "obo_id": "UBERON:0013693",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0013693",
+        "ontology_name": "uberon",
+        "description": [
+          "A neuropil that is part of a cerebral cortex [Automatically generated definition]."
+        ]
+      },
+      {
+        "label": "lobe of cerebral hemisphere",
+        "obo_id": "UBERON:0016526",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0016526",
+        "ontology_name": "uberon",
+        "description": [
+          "We use the term lobe broadly as a rough regional area, encompassing homologous regions in smooth-brained mammals. We subdivide the lobes into white matter and neocortical parts.",
+          "Subdivision of telencephalon which is one of a number of subdivisions of each hemisphere separated by both real landmarks (sulci and fissures) and arbitrary boundaries[FMA,modified]."
+        ]
+      },
+      {
+        "label": "cerebral cortex marginal layer",
+        "obo_id": "UBERON:0014935",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0014935",
+        "ontology_name": "uberon",
+        "description": [
+          "Developing superficial cortical layer located just under the pia matter, develops from the marginal layer of the neural tube and becomes cortical layer I."
+        ]
+      },
+      {
+        "label": "cerebral cortex ventricular layer",
+        "obo_id": "UBERON:0014936",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0014936",
+        "ontology_name": "uberon",
+        "description": []
+      },
+      {
+        "label": "cerebral cortex subventricular zone",
+        "obo_id": "UBERON:0014940",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0014940",
+        "ontology_name": "uberon",
+        "description": []
+      },
+      {
+        "label": "cortical layer II",
+        "obo_id": "UBERON:0005391",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0005391",
+        "ontology_name": "uberon",
+        "description": [
+          "Layer of neocortex lying just deep to molecular layer characterized by numerous small cell bodies."
+        ]
+      },
+      {
+        "label": "layer of developing cerebral cortex",
+        "obo_id": "UBERON:0014950",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0014950",
+        "ontology_name": "uberon",
+        "description": []
+      },
+      {
+        "label": "cortical intermediate zone",
+        "obo_id": "UBERON:0004040",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0004040",
+        "ontology_name": "uberon",
+        "description": [
+          "The region of the developing mammalian cortex that extends between the ventricular zone and the cortical plate (CP); normally, the IZ is a region of tangential migration of cells, and at midgestation, the lower part of the IZ develops into the subventricular zone."
+        ]
+      },
+      {
+        "label": "cortical layer I",
+        "obo_id": "UBERON:0005390",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0005390",
+        "ontology_name": "uberon",
+        "description": [
+          "The most superficial layer of the neocortex characterized by a paucity of cell bodies."
+        ]
+      },
+      {
+        "label": "cortical layer III",
+        "obo_id": "UBERON:0005392",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0005392",
+        "ontology_name": "uberon",
+        "description": [
+          "Layer of neocortex lying deep to the external granule cell layer defined cytoarchitecturally by numerous small pyramidal neurons."
+        ]
+      },
+      {
+        "label": "cortical layer V",
+        "obo_id": "UBERON:0005394",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0005394",
+        "ontology_name": "uberon",
+        "description": [
+          "Layer of neocortex lying deep to the internal granule cell layer (layer 4) defined cytoarchitecturally by the predominance of large pyramidal cell bodies."
+        ]
+      },
+      {
+        "label": "tuberomammillary nucleus",
+        "obo_id": "UBERON:0001936",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0001936",
+        "ontology_name": "uberon",
+        "description": [
+          "The tuberomammillary nucleus is a subnucleus of the posterior third of the hypothalamus. It consists of, largely, histaminergic and is involved with the control of arousal, sleep and circadian rhythm. Axons of the tuberomammillary nucleus project primarily to the cerebral cortex, thalamus, basal ganglia, basal forebrain, and hypothalamus. The projections to the cerebral cortex directly increase cortical activation and arousal, and projections to acetylcholinergic neurons of the basal forebrain and dorsal pons do so indirectly, by increasing the release of acetylcholine in the cerebral cortex. [WP,unvetted]."
+        ]
+      },
+      {
+        "label": "layer of neocortex",
+        "obo_id": "UBERON:0002301",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0002301",
+        "ontology_name": "uberon",
+        "description": [
+          "One of the layers of the neocortex. These layers are defined by distinctive populations of cells based on somata size, shape, or density, that are aligned into sheets."
+        ]
+      },
+      {
+        "label": "temporal pole",
+        "obo_id": "UBERON:0002576",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0002576",
+        "ontology_name": "uberon",
+        "description": [
+          "Anterior component of the temporal lobe (rostral boundary) extends caudally to the entorhinal cortex. The medial and lateral boundaries are the medial aspect of the temporal lobe and the superior or inferior temporal sulci, respectively (Christine Fennema-Notestine)."
+        ]
+      },
+      {
+        "label": "frontal pole",
+        "obo_id": "UBERON:0002795",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0002795",
+        "ontology_name": "uberon",
+        "description": [
+          "Component of the frontal lobe. The rostral and caudal boundaries of the frontal pole are the superior frontal gyrus and the rostral division of the middle frontal gyrus respectively (Christine Fennama-Notestine)."
+        ]
+      },
+      {
+        "label": "cortical subplate",
+        "obo_id": "UBERON:0004035",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0004035",
+        "ontology_name": "uberon",
+        "description": [
+          "The transient outer neural tube region that contains the first generated post-mitotic neurons that receive synaptic input from thalamic axons and in turn project axons to the developing cortical plate."
+        ]
+      },
+      {
+        "label": "external capsule of telencephalon",
+        "obo_id": "UBERON:0004545",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0004545",
+        "ontology_name": "uberon",
+        "description": [
+          "Any of the series of white matter fiber tracts in the brain that run between the most lateral segment of the lentiform nucleus and the claustrum; the white matter of the external capsule contains fibers known as corticocortical association fibers which are responsible for connecting the cerebral cortex to another cortical area; the capsule appears as a thin white sheet of white matter and provides a route for cholinergic fibers from the basal forebrain to the cerebral cortex; it eventually joins the internal capsule around the lentiform nucleus."
+        ]
+      },
+      {
+        "label": "cortical plate",
+        "obo_id": "UBERON:0005343",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0005343",
+        "ontology_name": "uberon",
+        "description": [
+          "The outer neural tube region in which post-mitotic neuroblasts migrate along radial glia to form the adult cortical layers[MP]."
+        ]
+      },
+      {
+        "label": "cortical layer IV",
+        "obo_id": "UBERON:0005393",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0005393",
+        "ontology_name": "uberon",
+        "description": [
+          "Layer of neocortex lying deep to the external pyramidal cell layer defined cytoarchitecturally by the presence of numerous small cells."
+        ]
+      }
+    ]
+  },
+  "uberon:colon": {
+    "url": "https://www.ebi.ac.uk/ols4/api/search?q=colon&ontology=uberon&exact=true&rows=20",
+    "num_found": 102,
+    "matches": [
+      {
+        "label": "colon",
+        "obo_id": "UBERON:0001155",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0001155",
+        "ontology_name": "uberon",
+        "description": [
+          "A portion of the large intestine before it becomes the rectum. In mammals, the colon is the most part of the large intestine, excluding the vermiform appendix, the rectum and the anal canal."
+        ]
+      },
+      {
+        "label": "mucosa of ascending colon",
+        "obo_id": "UBERON:0004990",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0004990",
+        "ontology_name": "uberon",
+        "description": [
+          "A mucosa that is part of an ascending colon [Automatically generated definition]."
+        ]
+      },
+      {
+        "label": "mucosa of transverse colon",
+        "obo_id": "UBERON:0004991",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0004991",
+        "ontology_name": "uberon",
+        "description": [
+          "A mucosa that is part of a transverse colon [Automatically generated definition]."
+        ]
+      },
+      {
+        "label": "mucosa of descending colon",
+        "obo_id": "UBERON:0004992",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0004992",
+        "ontology_name": "uberon",
+        "description": [
+          "A mucosa that is part of a descending colon [Automatically generated definition]."
+        ]
+      },
+      {
+        "label": "mucosa of sigmoid colon",
+        "obo_id": "UBERON:0004993",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0004993",
+        "ontology_name": "uberon",
+        "description": [
+          "A mucosa that is part of a sigmoid colon [Automatically generated definition]."
+        ]
+      },
+      {
+        "label": "colonic mucosa",
+        "obo_id": "UBERON:0000317",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0000317",
+        "ontology_name": "uberon",
+        "description": [
+          "Mucosa that is part of a colon. The mucosa of the colon is lined by a simple columnar epithelium with a thin brush border and numerous goblet cells."
+        ]
+      },
+      {
+        "label": "serosa of colon",
+        "obo_id": "UBERON:0003335",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0003335",
+        "ontology_name": "uberon",
+        "description": [
+          "A serous membrane that is part of a colon [Automatically generated definition]."
+        ]
+      },
+      {
+        "label": "muscle layer of colon",
+        "obo_id": "UBERON:0012489",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0012489",
+        "ontology_name": "uberon",
+        "description": [
+          "A muscular coat that is part of a colon."
+        ]
+      },
+      {
+        "label": "colonic epithelium",
+        "obo_id": "UBERON:0000397",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0000397",
+        "ontology_name": "uberon",
+        "description": [
+          "An epithelium that is part of a colon [Automatically generated definition]."
+        ]
+      },
+      {
+        "label": "lamina propria of mucosa of colon",
+        "obo_id": "UBERON:0007177",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0007177",
+        "ontology_name": "uberon",
+        "description": [
+          "A lamina propria that is part of a colonic mucosa."
+        ]
+      },
+      {
+        "label": "colon endothelium",
+        "obo_id": "UBERON:0013695",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0013695",
+        "ontology_name": "uberon",
+        "description": [
+          "Vascular endothelium found in colon blood vessels."
+        ]
+      },
+      {
+        "label": "muscle layer of sigmoid colon",
+        "obo_id": "UBERON:0035805",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0035805",
+        "ontology_name": "uberon",
+        "description": [
+          "A muscle layer that is part of the sigmoid colon."
+        ]
+      },
+      {
+        "label": "ascending colon epithelium",
+        "obo_id": "UBERON:7770005",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_7770005",
+        "ontology_name": "uberon",
+        "description": [
+          "An epithelial layer that lines the ascending colon."
+        ]
+      },
+      {
+        "label": "transverse colon epithelium",
+        "obo_id": "UBERON:7770006",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_7770006",
+        "ontology_name": "uberon",
+        "description": [
+          "An epithelial layer that lines the transverse colon."
+        ]
+      },
+      {
+        "label": "descending colon epithelium",
+        "obo_id": "UBERON:7770007",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_7770007",
+        "ontology_name": "uberon",
+        "description": [
+          "An epithelial layer that lines the descending colon."
+        ]
+      },
+      {
+        "label": "sigmoid colon epithelium",
+        "obo_id": "UBERON:7770008",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_7770008",
+        "ontology_name": "uberon",
+        "description": [
+          "An epithelial layer that lines the sigmoid colon."
+        ]
+      },
+      {
+        "label": "muscularis mucosae of colon",
+        "obo_id": "UBERON:0007178",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0007178",
+        "ontology_name": "uberon",
+        "description": [
+          "A muscularis mucosa that is part of a colonic mucosa."
+        ]
+      },
+      {
+        "label": "descending colon",
+        "obo_id": "UBERON:0001158",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0001158",
+        "ontology_name": "uberon",
+        "description": [
+          "The portion of the colon between the left colic flexure and the sigmoid colon at the pelvic brim; the portion of the descending colon lying in the left iliac fossa is sometimes called the iliac colon."
+        ]
+      },
+      {
+        "label": "sigmoid colon",
+        "obo_id": "UBERON:0001159",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0001159",
+        "ontology_name": "uberon",
+        "description": [
+          "The part of the large intestine that is closest to the rectum and anus. It forms a loop that averages about 40 cm. in length, and normally lies within the pelvis, but on account of its freedom of movement it is liable to be displaced into the abdominal cavity."
+        ]
+      },
+      {
+        "label": "crypt of Lieberkuhn of colon",
+        "obo_id": "UBERON:0013485",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0013485",
+        "ontology_name": "uberon",
+        "description": [
+          "An intestinal crypt that is located in the colon. The colonic crypts of Lieberk\u00fchn are straight and unbranched and lined largely with goblet cells."
+        ]
+      }
+    ]
+  },
+  "uberon:lung": {
+    "url": "https://www.ebi.ac.uk/ols4/api/search?q=lung&ontology=uberon&exact=true&rows=20",
+    "num_found": 255,
+    "matches": [
+      {
+        "label": "lung",
+        "obo_id": "UBERON:0002048",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0002048",
+        "ontology_name": "uberon",
+        "description": [
+          "Snakes and limbless lizards typically possess only the right lung as a major respiratory organ; the left lung is greatly reduced, or even absent. Amphisbaenians, however, have the opposite arrangement, with a major left lung, and a reduced or absent right lung [WP]",
+          "Respiration organ that develops as an outpocketing of the esophagus."
+        ]
+      },
+      {
+        "label": "middle lobe of right lung",
+        "obo_id": "UBERON:0002174",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0002174",
+        "ontology_name": "uberon",
+        "description": [
+          "Called 'middle lobe of lung' in FMA",
+          "In the human, the right lung is divided into three lobes (as opposed to two lobes on the left), superior, middle, and inferior, by two interlobular fissures: [WP,unvetted]."
+        ]
+      },
+      {
+        "label": "upper lobe of right lung",
+        "obo_id": "UBERON:0002170",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0002170",
+        "ontology_name": "uberon",
+        "description": [
+          "The lobe of the right lung that is closest to the head."
+        ]
+      },
+      {
+        "label": "lower lobe of right lung",
+        "obo_id": "UBERON:0002171",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0002171",
+        "ontology_name": "uberon",
+        "description": [
+          "The lobe of the right lung that is furtherst from the head."
+        ]
+      },
+      {
+        "label": "lung elastic tissue",
+        "obo_id": "UBERON:0003615",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0003615",
+        "ontology_name": "uberon",
+        "description": [
+          "Elastic tissue that is part of a lung [Automatically generated definition]."
+        ]
+      },
+      {
+        "label": "lung vasculature",
+        "obo_id": "UBERON:0000102",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0000102",
+        "ontology_name": "uberon",
+        "description": [
+          "The lung vasculature is composed of the tubule structures that carry blood or lymph in the lungs[GO]."
+        ]
+      },
+      {
+        "label": "pair of lungs",
+        "obo_id": "UBERON:0000170",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0000170",
+        "ontology_name": "uberon",
+        "description": [
+          "The pair of anatomical structures comprised of a left lung and right lung."
+        ]
+      },
+      {
+        "label": "left lung hilus",
+        "obo_id": "UBERON:0004887",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0004887",
+        "ontology_name": "uberon",
+        "description": [
+          "A lung hilus that is part of the left lung."
+        ]
+      },
+      {
+        "label": "right lung hilus",
+        "obo_id": "UBERON:0004888",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0004888",
+        "ontology_name": "uberon",
+        "description": [
+          "A lung hilus that is part of the right lung."
+        ]
+      },
+      {
+        "label": "lower lobe of left lung",
+        "obo_id": "UBERON:0008953",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0008953",
+        "ontology_name": "uberon",
+        "description": [
+          "A lower lobe of lung that is part of a left lung."
+        ]
+      },
+      {
+        "label": "lung epithelium",
+        "obo_id": "UBERON:0000115",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0000115",
+        "ontology_name": "uberon",
+        "description": [
+          "The epithelial layer of the lung."
+        ]
+      },
+      {
+        "label": "epithelium of right lung",
+        "obo_id": "UBERON:0003364",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0003364",
+        "ontology_name": "uberon",
+        "description": [
+          "An epithelium that is part of a right lung [Automatically generated definition]."
+        ]
+      },
+      {
+        "label": "epithelium of left lung",
+        "obo_id": "UBERON:0003365",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0003365",
+        "ontology_name": "uberon",
+        "description": [
+          "An epithelium that is part of a left lung [Automatically generated definition]."
+        ]
+      },
+      {
+        "label": "lobar bronchus of right lung",
+        "obo_id": "UBERON:0003404",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0003404",
+        "ontology_name": "uberon",
+        "description": [
+          "A lobar bronchus that is part of a right lung [Automatically generated definition]."
+        ]
+      },
+      {
+        "label": "lobar bronchus of left lung",
+        "obo_id": "UBERON:0003405",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0003405",
+        "ontology_name": "uberon",
+        "description": [
+          "A lobar bronchus that is part of a left lung [Automatically generated definition]."
+        ]
+      },
+      {
+        "label": "right lung terminal bronchiole",
+        "obo_id": "UBERON:0003540",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0003540",
+        "ontology_name": "uberon",
+        "description": [
+          "A terminal bronchiole that is part of a right lung [Automatically generated definition]."
+        ]
+      },
+      {
+        "label": "left lung terminal bronchiole",
+        "obo_id": "UBERON:0003541",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0003541",
+        "ontology_name": "uberon",
+        "description": [
+          "A terminal bronchiole that is part of a left lung [Automatically generated definition]."
+        ]
+      },
+      {
+        "label": "right lung respiratory bronchiole",
+        "obo_id": "UBERON:0003542",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0003542",
+        "ontology_name": "uberon",
+        "description": [
+          "A respiratory bronchiole that is part of a right lung [Automatically generated definition]."
+        ]
+      },
+      {
+        "label": "left lung respiratory bronchiole",
+        "obo_id": "UBERON:0003543",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0003543",
+        "ontology_name": "uberon",
+        "description": [
+          "A respiratory bronchiole that is part of a left lung [Automatically generated definition]."
+        ]
+      },
+      {
+        "label": "lung hilus",
+        "obo_id": "UBERON:0004886",
+        "iri": "http://purl.obolibrary.org/obo/UBERON_0004886",
+        "ontology_name": "uberon",
+        "description": [
+          "A depression on the surface of the lung where the bronchus, blood vessels and nerves enter."
+        ]
+      }
+    ]
+  },
+  "cl:cholangiocyte": {
+    "url": "https://www.ebi.ac.uk/ols4/api/search?q=cholangiocyte&ontology=cl&exact=true&rows=20",
+    "num_found": 14,
+    "matches": [
+      {
+        "label": "cholangiocyte",
+        "obo_id": "CL:1000488",
+        "iri": "http://purl.obolibrary.org/obo/CL_1000488",
+        "ontology_name": "cl",
+        "description": [
+          "An epithelial cell that is part of the bile duct. Cholangiocytes contribute to bile secretion via net release of bicarbonate and water. They are cuboidal epithelium in the small interlobular bile ducts, but become columnar and mucus secreting in larger bile ducts approaching the porta hepatis and the extrahepatic ducts.",
+          "Cholangiocytes, also known as biliary epithelial cells, are specialized epithelial cells that line the biliary tract, which constitutes the gall bladder and bile ducts inside the liver. Crucial to the maintenance of the liver's health and function, cholangiocytes have a key role in the modification and secretion of bile, a fluid produced by hepatocytes that is essential to digestion and the absorption of fats and vitamins.\nCholangiocytes accomplish their primary function through the expression of a variety of transport proteins located on their apical and basolateral membranes, which propel bile acids and other contents of the bile into the biliary lumen. The hepatic bile, once secreted by the hepatocytes, is further modified by cholangiocytes via secretion and absorption processes. These processes help in the regulation of bile volume and composition, which is fundamental in ensuring the efficient digestion of dietary fats and fat-soluble vitamins and the excretion of cholesterol.\nIn addition to their role in bile modification, cholangiocytes also perform several other integral functions. For instance, these cells express Toll-like receptors (TLRs) which allow cholangiocytes to initiate an immune response against pathogens in the biliary lumen. When functioning normally, these cells contribute to biliary integrity, hepatic architecture, and overall hepatic physiology. However, when they become pathological, they are involved in the progression of liver diseases, such as primary biliary cirrhosis and cholangiocarcinoma \u2013 the malignancy of the biliary tract.\n\n(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)"
+        ]
+      },
+      {
+        "label": "intrahepatic cholangiocyte",
+        "obo_id": "CL:0002538",
+        "iri": "http://purl.obolibrary.org/obo/CL_0002538",
+        "ontology_name": "cl",
+        "description": [
+          "An epithelial cell of the intrahepatic portion of the bile duct. These cells are flattened or cuboidal in shape, and have a small nuclear-to-cytoplasmic ratio relative to large/extrahepatic cholangiocytes.",
+          "Intrahepatic cholangiocytes represent a subset of the biliary epithelial cells that form a network of tubes in the liver called the biliary tree The intrahepatic cholangiocytes reside specifically in the intrahepatic bile ducts and play a crucial role in liver physiology and bile production and secretion, thereby aiding in the digestion and absorption of fats in the small intestine. These specific cholangiocytes arise from bipotent hepatoblasts, whereas extrahepatic cholangiocytes share an embryologic origin with the ventral pancreas.\nRecent research suggests that there is also heterogeneity within populations of intrahepatic cholangiocytes with different transcriptional profiles, proliferative capacity, and biological function; for example, subpopulations differ in calcium-mobilizing receptors.\nThe primary function of intrahepatic cholangiocytes is related to bile formation and maintenance of its flow. In addition to their secretory and absorptive activities, they are involved in the regulation of bile composition, volume, and alkalinization, contributing to the neutralization of the acidic chyme (partly digested food) that enters the intestine from the stomach. Intrahepatic cholangiocytes are also recognized for their role in liver regeneration and repair, often proliferating in response to injury. \nIntrahepatic cholangiocytes take part in certain pathological conditions, like primary biliary cirrhosis and cholangiocarcinoma. Changes in these cells often lead to abnormalities in bile formation and transport, causing cholestatic liver diseases. Overall, the primary and secondary functional activities of intrahepatic cholangiocytes are vital in maintaining liver function, digestive processes, and contributing to the body's response to liver injury.\n\n(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)"
+        ]
+      },
+      {
+        "label": "extrahepatic cholangiocyte",
+        "obo_id": "CL:0019020",
+        "iri": "http://purl.obolibrary.org/obo/CL_0019020",
+        "ontology_name": "cl",
+        "description": [
+          "An epithelial cell of the extrahepatic bile ducts, including the left and right hepatic duct, common hepatic duct, and common bile duct. They are columnar in shape, and have a large nuclear-to-cytoplasmic ratio relative to small/intrahepatic cholangiocytes."
+        ]
+      },
+      {
+        "label": "large mucus secreting cholangiocyte",
+        "obo_id": "CL:4047056",
+        "iri": "http://purl.obolibrary.org/obo/CL_4047056",
+        "ontology_name": "cl",
+        "description": [
+          "A columnar, mucin-producing cholangiocyte that lines large bile ducts, including the hilar bile duct, right and left hepatic bile ducts, and large intrahepatic bile ducts. This cell expresses phosphorylated STAT3 and TFF-3 in humans and mice."
+        ]
+      },
+      {
+        "label": "hepatoblast",
+        "obo_id": "CL:0005026",
+        "iri": "http://purl.obolibrary.org/obo/CL_0005026",
+        "ontology_name": "cl",
+        "description": [
+          "Hepatoblasts are immature precursor cells that predominate during the early stages of liver development, specifically in the embryonic phase of life. They first arise from the endoderm, one of the three primary germ layers in the very early embryo, and then differentiate into two distinct mature liver cell types - the hepatocytes and cholangiocytes. \nDuring liver organogenesis hepatoblasts proliferate and migrate into the septum transversum to form the liver bud. Proliferation and differentiation of these cells are regulated by several soluble factors, such as hepatocyte growth factor, which is a mitogen of both hepatoblasts and mature hepatocytes. As they start to differentiate into hepatocytes and cholangiocytes, the cells begin to express hepatic markers like albumin and alpha-fetoprotein. \nAlthough hepatoblasts are specified embryonic liver cells that are bipotential for hepatocytes and cholangiocytes, a subset of liver cells (called oval cells) has been identified in adults that express stem cell markers, such as CD133 and cKIT, and has been suggested to have the same potential as hepatoblasts to differentiate into hepatocytes and cholangiocytes.\n\n(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)",
+          "Multi fate stem cell that gives rise to both hepatocytes and cholangiocytes as descendants. The term often refers to fetal precursors of hepatocytes (differently from 'hepatic stem cell', usually applied to the self-renewing pool of hepatocyte precursors in the adult liver). Hepatoblasts may also be endogenous, as some stem cells found in the liver come from the bone marrow via blood circulation."
+        ]
+      },
+      {
+        "label": "negative regulation of cholangiocyte apoptotic process",
+        "obo_id": "GO:1904193",
+        "iri": "http://purl.obolibrary.org/obo/GO_1904193",
+        "ontology_name": "cl",
+        "description": [
+          "Any process that stops, prevents or reduces the frequency, rate or extent of cholangiocyte apoptotic process."
+        ]
+      },
+      {
+        "label": "positive regulation of cholangiocyte apoptotic process",
+        "obo_id": "GO:1904194",
+        "iri": "http://purl.obolibrary.org/obo/GO_1904194",
+        "ontology_name": "cl",
+        "description": [
+          "Any process that activates or increases the frequency, rate or extent of cholangiocyte apoptotic process."
+        ]
+      },
+      {
+        "label": "negative regulation of cholangiocyte proliferation",
+        "obo_id": "GO:1904055",
+        "iri": "http://purl.obolibrary.org/obo/GO_1904055",
+        "ontology_name": "cl",
+        "description": [
+          "Any process that stops, prevents or reduces the frequency, rate or extent of cholangiocyte proliferation."
+        ]
+      },
+      {
+        "label": "positive regulation of cholangiocyte proliferation",
+        "obo_id": "GO:1904056",
+        "iri": "http://purl.obolibrary.org/obo/GO_1904056",
+        "ontology_name": "cl",
+        "description": [
+          "Any process that activates or increases the frequency, rate or extent of cholangiocyte proliferation."
+        ]
+      },
+      {
+        "label": "cholangiocyte proliferation",
+        "obo_id": "GO:1990705",
+        "iri": "http://purl.obolibrary.org/obo/GO_1990705",
+        "ontology_name": "cl",
+        "description": [
+          "The multiplication or reproduction of cholangiocytes, resulting in the expansion of the cholangiocyte population. A cholangiocyte is an epithelial cell that is part of the bile duct. Cholangiocytes contribute to bile secretion via net release of bicarbonate and water."
+        ]
+      },
+      {
+        "label": "cholangiocyte apoptotic process",
+        "obo_id": "GO:1902488",
+        "iri": "http://purl.obolibrary.org/obo/GO_1902488",
+        "ontology_name": "cl",
+        "description": [
+          "Any apoptotic process in a cholangiocyte."
+        ]
+      },
+      {
+        "label": "regulation of cholangiocyte apoptotic process",
+        "obo_id": "GO:1904192",
+        "iri": "http://purl.obolibrary.org/obo/GO_1904192",
+        "ontology_name": "cl",
+        "description": [
+          "Any process that modulates the frequency, rate or extent of cholangiocyte apoptotic process."
+        ]
+      },
+      {
+        "label": "regulation of cholangiocyte proliferation",
+        "obo_id": "GO:1904054",
+        "iri": "http://purl.obolibrary.org/obo/GO_1904054",
+        "ontology_name": "cl",
+        "description": [
+          "Any process that modulates the frequency, rate or extent of cholangiocyte proliferation."
+        ]
+      },
+      {
+        "label": "hepatoblast differentiation",
+        "obo_id": "GO:0061017",
+        "iri": "http://purl.obolibrary.org/obo/GO_0061017",
+        "ontology_name": "cl",
+        "description": [
+          "The process in which a relatively unspecialized cell acquires specialized features of a hepatoblast. A hepatoblast is a cell that retains the ability to divide and proliferate throughout life to provide progenitor cells that can differentiate into hepatocytes and cholangiocytes."
+        ]
+      }
+    ]
+  },
+  "cl:hepatocyte": {
+    "url": "https://www.ebi.ac.uk/ols4/api/search?q=hepatocyte&ontology=cl&exact=true&rows=20",
+    "num_found": 33,
+    "matches": [
+      {
+        "label": "hepatocyte",
+        "obo_id": "CL:0000182",
+        "iri": "http://purl.obolibrary.org/obo/CL_0000182",
+        "ontology_name": "cl",
+        "description": [
+          "Hepatocytes are reportedly MHC Class I-positive and MHC Class II-positive.",
+          "Hepatocytes are the major cell type constituting 70-80% of the liver's cytoplasmic mass, playing crucial roles in maintaining the body's metabolic homeostasis. Dimensions of mature hepatocytes typically range from 20 to 30 \u03bcm in humans, but size may vary depending on their location within the liver lobule. Hepatocytes are characterized by high biosynthetic, enzymatic, and endocytic activity. They contain abundant mitochondria, smooth and rough endoplasmic reticulum, peroxisomes, lysosomes, and a large nucleus that is often binucleate. \nThe liver consists of three zones - the periportal Zone 1, midzone 2, and pericentral Zone 3 - which have differential nutrient and oxygen status, and damage susceptibility; hepatocytes in the different zones show signifcant functional heterogeneity ('hepatocyte functional zonation'). Hepatocytes are involved in a multitude of critical functions including the metabolism of lipids, carbohydrates, and proteins, the synthesis of serum proteins (e.g., albumin, transferrin, and lipoproteins), the detoxification and excretion of endogenous and exogenous substances, the storage of vitamins and minerals, and the production and secretion of bile. \nHeterocytes demonstrate a remarkable regenerative capacity, which enables the liver to recover from injury and loss of tissue mass. Notably, hepatocytes perform biotransformation with both phase I and phase II enzymes, which modify drugs, xenobiotics, and various substances for elimination from the body. Phase I enzymes, such as cytochrome P450, catalyze both oxidative and reductive reactions of many xenobiotics; many of the products of phase I enzymes are substrates for the phase II enzymes, which catalyze conjugation reactions. \nAlterations in hepatocyte function have significant implications for overall human health and disease. Certain conditions, such as hepatitis, cirrhosis, and liver cancer, can profoundly affect hepatocyte structure and function, thereby disrupting the liver's ability to perform its vital roles within the body. As the primary site for drug metabolism, changes in hepatocyte function can also impact the effectiveness and toxicity of pharmaceuticals. The regenerative ability of hepatocytes makes them valuable cells for liver regenerative medicine and bioartificial liver support systems, and their study has provided significant insights into liver biology and disease.\n\n(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)",
+          "The main structural component of the liver. They are specialized epithelial cells that are organized into interconnected plates called lobules. Majority of cell population of liver, polygonal in shape, arranged in plates or trabeculae between sinusoids; may have single nucleus or binucleated."
+        ]
+      },
+      {
+        "label": "periportal region hepatocyte",
+        "obo_id": "CL:0019026",
+        "iri": "http://purl.obolibrary.org/obo/CL_0019026",
+        "ontology_name": "cl",
+        "description": [
+          "Any hepatocyte that is part of the liver lobule periportal region. These cells are primarily involved in oxidative energy metabolism.",
+          "Periportal region hepatocytes, also known as Zone 1 hepatocytes, are specialized epithelial cells located in the periportal region of the liver acinus, near the portal triad, which comprises the portal vein, hepatic artery, and bile duct. These cells form a major part of the liver's cellular architecture and play a pivotal role in detoxification, metabolism, and homeostasis processes in the human body. \nPeriportal hepatocytes differ functionally from hepatocytes in the liver\u2019s midzone (zone 2) and the pericentral zone 3. They are exposed to higher oxygen concentrations than hepatocytes in zones 2 and 3 because they are closer to the portal triads where oxygen-rich blood enters the liver. They therefore catalyze predominantly oxidative energy metabolism. \nPeriportal hepatocytes are responsible for gluconeogenesis, the process by which glucose is synthesized from smaller precursor molecules like lactate, glycerol and glucogenic amino acids, to maintain blood glucose levels, particularly during fasting periods. Additionally, they carry out cholesterol synthesis, fatty acid oxidation, urea synthesis, and the conversion of ammonia to urea, aiding in the detoxification and excretory functions necessary to maintain homeostasis. Periportal hepatocytes are also associated with bile synthesis and secretion, given their proximity to the bile duct. Bile components facilitate the digestion and absorption of dietary lipids and the removal of waste products from the liver. \nBecause of their location near the portal triad periportal hepatocytes are more resistant to ischemic injury than other hepatocytes but are more susceptible to toxic damage due to their higher exposure to drugs and toxins.\n\n(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)"
+        ]
+      },
+      {
+        "label": "centrilobular region hepatocyte",
+        "obo_id": "CL:0019029",
+        "iri": "http://purl.obolibrary.org/obo/CL_0019029",
+        "ontology_name": "cl",
+        "description": [
+          "Any hepatocyte that is part of the liver lobule centrilobular region. These cells are the primary location for the biotransformation of drugs.",
+          "Centrilobular region hepatocytes, also referred to as perivenous or pericentral hepatocytes, are specialized cells that constitute the largest component of the liver. These cells are strategically arranged around the central vein of a liver lobule, forming the zone 3 region. This unique location is critically significant for their distinctive functional capabilities, making them different from periportal hepatocytes of zone 1 and midzonal hepatocytes of zone 2.\nOne of the primary functions of centrilobular region hepatocytes is linked to the body\u2019s metabolic detoxification processes. These cells are predominantly involved in xenobiotic biotransformation, assisting with the metabolism and excretion of foreign substances, such as drugs or harmful toxins. This role is facilitated by their ability to express high levels of Cytochrome P450 enzymes, which are pivotal in phase I detoxification reactions. Additionally, centrilobular region hepatocytes also play a crucial role in bile acid synthesis and the biotransformation of endogenous compounds such as steroids, fatty acids, and bilirubin.\nBeing situated in zone 3, centrilobular hepatocytes are more susceptible to hypoxic injury than other hepatocytes due to the lower oxygen supply. Furthermore, due to their central role in detoxification, they are particularly prone to drug-induced hepatic damage.\n\n(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)"
+        ]
+      },
+      {
+        "label": "hepatoblast",
+        "obo_id": "CL:0005026",
+        "iri": "http://purl.obolibrary.org/obo/CL_0005026",
+        "ontology_name": "cl",
+        "description": [
+          "Hepatoblasts are immature precursor cells that predominate during the early stages of liver development, specifically in the embryonic phase of life. They first arise from the endoderm, one of the three primary germ layers in the very early embryo, and then differentiate into two distinct mature liver cell types - the hepatocytes and cholangiocytes. \nDuring liver organogenesis hepatoblasts proliferate and migrate into the septum transversum to form the liver bud. Proliferation and differentiation of these cells are regulated by several soluble factors, such as hepatocyte growth factor, which is a mitogen of both hepatoblasts and mature hepatocytes. As they start to differentiate into hepatocytes and cholangiocytes, the cells begin to express hepatic markers like albumin and alpha-fetoprotein. \nAlthough hepatoblasts are specified embryonic liver cells that are bipotential for hepatocytes and cholangiocytes, a subset of liver cells (called oval cells) has been identified in adults that express stem cell markers, such as CD133 and cKIT, and has been suggested to have the same potential as hepatoblasts to differentiate into hepatocytes and cholangiocytes.\n\n(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)",
+          "Multi fate stem cell that gives rise to both hepatocytes and cholangiocytes as descendants. The term often refers to fetal precursors of hepatocytes (differently from 'hepatic stem cell', usually applied to the self-renewing pool of hepatocyte precursors in the adult liver). Hepatoblasts may also be endogenous, as some stem cells found in the liver come from the bone marrow via blood circulation."
+        ]
+      },
+      {
+        "label": "midzonal region hepatocyte",
+        "obo_id": "CL:0019028",
+        "iri": "http://purl.obolibrary.org/obo/CL_0019028",
+        "ontology_name": "cl",
+        "description": [
+          "Any hepatocyte that is part of the liver lobule midzonal region. These cells have mixed functionality in comparison with those in the other two regions of the liver lobule."
+        ]
+      },
+      {
+        "label": "endothelial cell of hepatic sinusoid",
+        "obo_id": "CL:1000398",
+        "iri": "http://purl.obolibrary.org/obo/CL_1000398",
+        "ontology_name": "cl",
+        "description": [
+          "An endothelial cell that is part of the hepatic sinusoid. These cells possess flattened areas containing perforations about 0.1 micrometers in diameter, known as fenestrae. The fenestrae are arranged in groups known as sieve plates.",
+          "Endothelial cells of hepatic sinusoids, also known as hepatic or liver sinusoidal endothelial cells (HSEC or LSEC), are unique, specialized type of endothelial cells located in the liver. They are the building units of the hepatic sinusoid, which functions as a specialized capillary system that facilitates the exchange of various substances between the blood and hepatocytes. This finely tuned environment, facilitated by HSEC, is primordial for the liver's multiple physiologic functions that include nutrient metabolism, toxin inactivation, and immunomodulation.\nThe HSEC have a distinctive morphology that sets them apart from the typical endothelial cells found in other organs. These cells are exceptionally thin to allow for efficient transfer of molecules and characterized by fenestrations, which are non-diaphragmatic, sieve-like openings that provide an open filtration pathway from the sinusoidal lumen to the space of Disse, where hepatocytes are exposed. The fenestration is a crucial feature that allows lipoproteins, nutrients, and other plasma components easy access to hepatocytes for essential liver functions, including clearance of waste products and metabolic regulation.\nHSECs further play a vital role in immune functionality in the liver. They act as a sentinel, determining the nature of the immune response to encountered particulates. They possess a capacity for antigen presentation and express a series of immune-related surface molecules, which helps in immunosurveillance and immunoregulation. The HSEC also aid in the removal and destruction of virus-infected cells, harmful microorganisms, and circulatory waste products to safeguard liver health and general systemic cleanliness.\n\n(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)"
+        ]
+      },
+      {
+        "label": "hepatic stem cell",
+        "obo_id": "CL:0002195",
+        "iri": "http://purl.obolibrary.org/obo/CL_0002195",
+        "ontology_name": "cl",
+        "description": [
+          "A stem cell that can give rise to the cells of the liver. The term usually refers to the self-renewing pool of hepatocyte precursors in the adult liver (differently from 'hepatoblast', often used for fetal precursors of hepatocytes)."
+        ]
+      },
+      {
+        "label": "cholangiocyte",
+        "obo_id": "CL:1000488",
+        "iri": "http://purl.obolibrary.org/obo/CL_1000488",
+        "ontology_name": "cl",
+        "description": [
+          "An epithelial cell that is part of the bile duct. Cholangiocytes contribute to bile secretion via net release of bicarbonate and water. They are cuboidal epithelium in the small interlobular bile ducts, but become columnar and mucus secreting in larger bile ducts approaching the porta hepatis and the extrahepatic ducts.",
+          "Cholangiocytes, also known as biliary epithelial cells, are specialized epithelial cells that line the biliary tract, which constitutes the gall bladder and bile ducts inside the liver. Crucial to the maintenance of the liver's health and function, cholangiocytes have a key role in the modification and secretion of bile, a fluid produced by hepatocytes that is essential to digestion and the absorption of fats and vitamins.\nCholangiocytes accomplish their primary function through the expression of a variety of transport proteins located on their apical and basolateral membranes, which propel bile acids and other contents of the bile into the biliary lumen. The hepatic bile, once secreted by the hepatocytes, is further modified by cholangiocytes via secretion and absorption processes. These processes help in the regulation of bile volume and composition, which is fundamental in ensuring the efficient digestion of dietary fats and fat-soluble vitamins and the excretion of cholesterol.\nIn addition to their role in bile modification, cholangiocytes also perform several other integral functions. For instance, these cells express Toll-like receptors (TLRs) which allow cholangiocytes to initiate an immune response against pathogens in the biliary lumen. When functioning normally, these cells contribute to biliary integrity, hepatic architecture, and overall hepatic physiology. However, when they become pathological, they are involved in the progression of liver diseases, such as primary biliary cirrhosis and cholangiocarcinoma \u2013 the malignancy of the biliary tract.\n\n(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)"
+        ]
+      },
+      {
+        "label": "polyploid cell",
+        "obo_id": "CL:0000412",
+        "iri": "http://purl.obolibrary.org/obo/CL_0000412",
+        "ontology_name": "cl",
+        "description": [
+          "A cell that contains more than two haploid sets of chromosomes.",
+          "A polyploid cell is a unique type of cell characterized by the possession of more than two sets of chromosomes. This is much higher than the typical diploid nature of other somatic cells. This cellular phenomenon known as polyploidy results from errors during cell division leading to the generation of non-standard polyploid cells, a property that is common to both plant and animal cells. These cells occur naturally and can also be formed through genetic manipulation.\nPolyploid cells play a critical role in the overall growth and development of organisms. In plant cells, polyploidy often contributes to speciation and diversity. A notable characteristic of many plant species is their ability to tolerate polyploidy, a trait that often leads to increased cell size, altered gene expression, and may enhance the physiological and adaptive traits of a plant. In animals, polyploidy is less common but still plays a significant role in liver function and injury repair. Polyploidization in hepatocytes aids in maintaining genetic stability and also allows for cellular adaptation to liver injury.\nPolyploid cells also play a potential role in cancer development. Some cancer cells are polyploid or aneuploid (having an abnormal number of chromosomes) indicating a relationship between chromosome status and cancer progression. Polyploidy in cancer cells may contribute to increased mutation rates, adaptation to adverse environments, and resistance to chemotherapy.  Overall, polyploid cells may lead to pathological conditions like cancer, however, many are part of normal healthy biological systems, playing an integral role in the diversity and evolution of life.\n\n(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)"
+        ]
+      },
+      {
+        "label": "hepatic stellate cell",
+        "obo_id": "CL:0000632",
+        "iri": "http://purl.obolibrary.org/obo/CL_0000632",
+        "ontology_name": "cl",
+        "description": [
+          "Hepatic stellate cells are CD271-positive, desmin-positive, DDR-2-positive, GFAP-positive, synamin-positive, synaptophysin-positive, vimentin-positive, They are capable of producing angiotensin II, fibronectin, laminin, MMP-1, MMP-2, MMP-3, MMP-9, MMP-11, TGF-beta1, TIMP-1, TIMP-2, type I collagen, type III collagen, type IV collagen, and type VI collagen.",
+          "A cell that is found in the perisinusoidal space of the liver that is capable of multiple roles including storage of retinol, presentation of antigen to T cells (including CD1d-restricted NKT cells), and upon activation, production of extracellular matrix components that can contribute to liver fibrosis. This activated state has a myofibroblast-like phenotype, though it's not clear in the literature if this is terminally differentiated. This cell type comprises approximately 8-15% of total cells in the liver.",
+          "Hepatic stellate cells (HSCs) are a unique cell type found in the liver, residing in the space between the sinusoidal endothelial cells and the hepatocytes, known as the space of Disse. Despite constituting only 5-8% of the total number of liver cells, they play a significant role in the maintenance of liver health. They have a star-shaped (stellate) structure, hence their name and their principal function is the storage of vitamin A in their cytoplasm as retinyl esters.\nHSCs become highly active when the liver is damaged or diseased. They play a crucial role in the liver's response to injury and wound-healing process, converging into myofibroblasts, the cells responsible for scar tissue formation (fibrosis). They are also involved in maintaining the extracellular matrix balance by producing matrix metalloproteinases (MMPs) and tissue inhibitors of metalloproteinases (TIMPs), which break down and inhibit the breakdown of collagen respectively. HSCs also play a part in regulating blood flow through the liver\u2019s blood vessels, help fight infections, and are involved in interactions among different types of liver cells. Recent research has implicated them in regulating liver regeneration and in the development of liver cancer.\n\n(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)"
+        ]
+      },
+      {
+        "label": "hepatic oval stem cell",
+        "obo_id": "CL:0002196",
+        "iri": "http://purl.obolibrary.org/obo/CL_0002196",
+        "ontology_name": "cl",
+        "description": [
+          "A transient hepatic stem cell observed after liver injury with a high nuclear to cytoplasm ratio that can differentiate into mature hepatocytes and bile duct cells. Arises from more than one tissue."
+        ]
+      },
+      {
+        "label": "negative regulation of hepatocyte apoptotic process",
+        "obo_id": "GO:1903944",
+        "iri": "http://purl.obolibrary.org/obo/GO_1903944",
+        "ontology_name": "cl",
+        "description": [
+          "Any process that stops, prevents or reduces the frequency, rate or extent of hepatocyte apoptotic process."
+        ]
+      },
+      {
+        "label": "positive regulation of hepatocyte apoptotic process",
+        "obo_id": "GO:1903945",
+        "iri": "http://purl.obolibrary.org/obo/GO_1903945",
+        "ontology_name": "cl",
+        "description": [
+          "Any process that activates or increases the frequency, rate or extent of hepatocyte apoptotic process."
+        ]
+      },
+      {
+        "label": "positive regulation of hepatocyte differentiation",
+        "obo_id": "GO:0070368",
+        "iri": "http://purl.obolibrary.org/obo/GO_0070368",
+        "ontology_name": "cl",
+        "description": [
+          "Any process that activates or increases the rate or extent of hepatocyte differentiation."
+        ]
+      },
+      {
+        "label": "negative regulation of hepatocyte differentiation",
+        "obo_id": "GO:0070367",
+        "iri": "http://purl.obolibrary.org/obo/GO_0070367",
+        "ontology_name": "cl",
+        "description": [
+          "Any process that stops or decreases the rate or extent of hepatocyte differentiation."
+        ]
+      },
+      {
+        "label": "hepatocyte apoptotic process",
+        "obo_id": "GO:0097284",
+        "iri": "http://purl.obolibrary.org/obo/GO_0097284",
+        "ontology_name": "cl",
+        "description": [
+          "Any apoptotic process in a hepatocyte, the main structural component of the liver."
+        ]
+      },
+      {
+        "label": "regulation of hepatocyte apoptotic process",
+        "obo_id": "GO:1903943",
+        "iri": "http://purl.obolibrary.org/obo/GO_1903943",
+        "ontology_name": "cl",
+        "description": [
+          "Any process that modulates the frequency, rate or extent of hepatocyte apoptotic process."
+        ]
+      },
+      {
+        "label": "hepatocyte homeostasis",
+        "obo_id": "GO:0036333",
+        "iri": "http://purl.obolibrary.org/obo/GO_0036333",
+        "ontology_name": "cl",
+        "description": [
+          "Any biological process involved in the maintenance of the steady-state number of hepatocytes within a population of cells. Hepatocytes are specialized epithelial cells of the liver that are organized into interconnected plates called lobules."
+        ]
+      },
+      {
+        "label": "hepatocyte differentiation",
+        "obo_id": "GO:0070365",
+        "iri": "http://purl.obolibrary.org/obo/GO_0070365",
+        "ontology_name": "cl",
+        "description": [
+          "The process in which a relatively unspecialized cell acquires the specialized features of a hepatocyte. A hepatocyte is specialized epithelial cell that is organized into interconnected plates called lobules, and is the main structural component of the liver."
+        ]
+      },
+      {
+        "label": "hepatocyte proliferation",
+        "obo_id": "GO:0072574",
+        "iri": "http://purl.obolibrary.org/obo/GO_0072574",
+        "ontology_name": "cl",
+        "description": [
+          "The multiplication or reproduction of hepatocytes, resulting in the expansion of a cell population. Hepatocytes form the main structural component of the liver. They are specialized epithelial cells that are organized into interconnected plates called lobules."
+        ]
+      }
+    ]
+  },
+  "cl:proximal tubule cell": {
+    "url": "https://www.ebi.ac.uk/ols4/api/search?q=proximal+tubule+cell&ontology=cl&exact=true&rows=20",
+    "num_found": 0,
+    "matches": []
+  }
+}

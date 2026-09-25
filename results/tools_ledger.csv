@@ -33,3 +33,4 @@ EBI Expression Atlas (baseline experiments FTP),database/service,src/deficit_bod
 ClinPGx / PharmGKB gene download (release 2026-09-05),database/service,src/deficit_clinpgx.py,True,"CPIC-guideline pharmacogenes; pre-registered afcb277 (VIP flag defective, deviation documented)"
 gnomAD v2.1.1 gene-level pLoF constraint,reference database,src/deficit_gnomad.py; results/deficit_gnomad.json,True,LOEUF comparison of organoid deficits; pre-registered 58a422c
 Ensembl REST lookup/id,web API,src/deficit_ensembl_biotype.py; results/deficit_ensembl_biotype.json,True,biotype composition of top-100 organoid deficits; pre-registered 8ea5c50
+EBI Ontology Lookup Service 4 (OLS4),ontology web API,src/ols_anatomy_audit.py; results/ols_anatomy.json,True,pre-registered anatomy and cell-type label audit fecf4f7; annotation not molecular evidence

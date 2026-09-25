@@ -1,0 +1,58 @@
+{
+  "source": "https://www.ebi.ac.uk/ols4/api/search",
+  "preregistration": "results/preregistration_ols_anatomy.md (commit fecf4f7)",
+  "resolved": {
+    "uberon:kidney cortex": {
+      "url": "https://www.ebi.ac.uk/ols4/api/search?q=kidney+cortex&ontology=uberon&exact=true&rows=20",
+      "obo_id": "UBERON:0001225",
+      "matches_exact_label_and_id": 1
+    },
+    "uberon:kidney": {
+      "url": "https://www.ebi.ac.uk/ols4/api/search?q=kidney&ontology=uberon&exact=true&rows=20",
+      "obo_id": "UBERON:0002113",
+      "matches_exact_label_and_id": 1
+    },
+    "uberon:liver": {
+      "url": "https://www.ebi.ac.uk/ols4/api/search?q=liver&ontology=uberon&exact=true&rows=20",
+      "obo_id": "UBERON:0002107",
+      "matches_exact_label_and_id": 1
+    },
+    "uberon:bile duct": {
+      "url": "https://www.ebi.ac.uk/ols4/api/search?q=bile+duct&ontology=uberon&exact=true&rows=20",
+      "obo_id": "UBERON:0002394",
+      "matches_exact_label_and_id": 1
+    },
+    "uberon:cerebral cortex": {
+      "url": "https://www.ebi.ac.uk/ols4/api/search?q=cerebral+cortex&ontology=uberon&exact=true&rows=20",
+      "obo_id": "UBERON:0000956",
+      "matches_exact_label_and_id": 1
+    },
+    "uberon:colon": {
+      "url": "https://www.ebi.ac.uk/ols4/api/search?q=colon&ontology=uberon&exact=true&rows=20",
+      "obo_id": "UBERON:0001155",
+      "matches_exact_label_and_id": 1
+    },
+    "uberon:lung": {
+      "url": "https://www.ebi.ac.uk/ols4/api/search?q=lung&ontology=uberon&exact=true&rows=20",
+      "obo_id": "UBERON:0002048",
+      "matches_exact_label_and_id": 1
+    },
+    "cl:cholangiocyte": {
+      "url": "https://www.ebi.ac.uk/ols4/api/search?q=cholangiocyte&ontology=cl&exact=true&rows=20",
+      "obo_id": "CL:1000488",
+      "matches_exact_label_and_id": 1
+    },
+    "cl:hepatocyte": {
+      "url": "https://www.ebi.ac.uk/ols4/api/search?q=hepatocyte&ontology=cl&exact=true&rows=20",
+      "obo_id": "CL:0000182",
+      "matches_exact_label_and_id": 1
+    }
+  },
+  "primary_H1": "PASS",
+  "proximal_tubule_exact_query": {
+    "url": "https://www.ebi.ac.uk/ols4/api/search?q=proximal+tubule+cell&ontology=cl&exact=true&rows=20",
+    "n_returned": 0,
+    "verdict": "UNRESOLVED (no exact query result)"
+  },
+  "interpretation": "Kidney cortex and kidney have distinct UBERON IDs. Cholangiocyte and hepatocyte have distinct CL IDs. Distinct labels do not prove a specific part-of hierarchy or molecular similarity. Comparing biliary organoids to whole liver GTEx and kidney organoids to adult kidney cortex requires cell-type/compartment-aware validation; ontology cannot rescue or refute the replication outcome."
+}
