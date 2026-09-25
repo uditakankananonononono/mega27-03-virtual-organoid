@@ -82,7 +82,7 @@ P.table(["#", "dataset", "source / accession", "content", "use"], [
     [3, "OrgaSegment annotated images", "Zenodo 10278229", "train/val/eval images with instance masks", "U-Net segmentation benchmark"],
     [4, "Drevinek intestinal FIS cohort", "Zenodo 4771466", "20 patient IDs, 54 plates, well-level 0-60 minute area series", "triple-vs-double treatment ranking"],
     [5, "Borek-Dohalska intestinal FIS cohort", "Zenodo 15754800", "12 patient IDs, 33 plates, well-level areas; possible overlap with 4771466", "negative VTI-vs-ETI ranking test"],
-], "Dataset manifest (distinct, accession-level). Five distinct assay/image datasets shown here; the committed accession ledger now has 168 primary entries; separate Drevinek-group releases may overlap patients and are not individual-object replication.")
+], "Dataset manifest. Four distinct Zenodo accessions are shown: the DIS and FIS files are two assay tables under the SAME accession 10610438, not two datasets. The ledger has 168 primary-used accession entries across imaging, FIS and transcriptomic analyses; separate Drevinek-group releases may overlap patients and are not individual-object replication.")
 
 P.h("4. Results")
 P.h("4.1 Within-well size slopes", 2)
