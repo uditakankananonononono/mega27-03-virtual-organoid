@@ -21,7 +21,7 @@ S1 = json.load(open("results/seg_eval.json")); S2 = json.load(open("results/seg_
 
 P = Paper("Small-Organoid Attenuation of CFTR-Modulator Swelling in Patient-Derived Intestinal Organoids: "
           "a Single-Organoid Re-Analysis with a Biophysical Swelling Twin",
-          "MEGA-PROGRAM-27, Item 3 - Udita Phookan (program owner); computational work by an AI research agent. Draft of 24 September 2026.")
+          "MEGA-PROGRAM-27, Item 3 - Udita Phookan (program owner); computational work by an AI research agent. Draft of 25 September 2026.")
 P.h("Abstract")
 P.p("The forskolin-induced swelling (FIS) assay on patient-derived intestinal organoids is used to predict which people with cystic fibrosis "
     "(CF) respond to CFTR modulators. Standard pipelines sum organoid area per well, so any dependence of the response on organoid size is "
@@ -257,6 +257,54 @@ P.p(f"Median rank {AJ['median_rank_unfaithful']:g} vs {AJ['median_rank_faithful'
     "The pre-registered test passes, but the support is weak: there is no lung dataset, both liver datasets are cholangiocyte organoids on microarrays "
     "(so cell type and platform are confounded), and both kidney datasets match kidney well (ranks 1 and 2), which contradicts the kidney part of the candidate. "
     "The metabolic-parenchyma gap remains a candidate; its kidney component did not replicate.")
+
+P.h("4.12 Orthogonal checks of the metabolic-parenchyma candidate", 2)
+GS = json.load(open("results/strict_gsea_summary.json"))
+P.p("GSEApy preranked GSEA used MSigDB Hallmark v2023.2 on all ranked strict-subset deficit genes, with 500 permutations. Positive normalized enrichment "
+    "score (NES) means higher expression in the reference tissue than the organoids. The mean over six metabolic Hallmarks is "
+    f"{GS['mean_metabolic_NES']['Liver']:.2f} in liver, {GS['mean_metabolic_NES']['Kidney - Cortex']:.2f} in kidney, "
+    f"{GS['mean_metabolic_NES']['Brain - Cortex']:.2f} in brain, and {GS['mean_metabolic_NES']['Colon - Transverse']:.2f} in colon "
+    f"(descriptive Mann-Whitney p={GS['mwu_metabolic_NES_liver_kidney_vs_colon_brain']:.3f}; pathways overlap and are not independent). "
+    f"Brain nevertheless has oxidative phosphorylation NES {GS['metabolic_NES']['Brain - Cortex']['HALLMARK_OXIDATIVE_PHOSPHORYLATION']:.2f}, "
+    "despite matching its reference tissue. A metabolic deficit alone cannot explain fidelity (results/strict_gsea_summary.json).")
+OT = json.load(open("results/deficit_opentargets.json"))
+P.p("Pre-registered Open Targets disease relevance. We compared each organ's top 100 deficit genes against the top 500 targets of its "
+    "corresponding organ-disease term. Diagonal dominance in the five-by-five overlap matrix is:")
+P.equation("D = (1/5) sum_o M_oo - (1/20) sum_{o != d} M_od")
+P.p(f"D={OT['D']:.1f}, permutation p={OT['perm_p']:.4g}: the primary test passes (results/deficit_opentargets.json). "
+    f"But liver-specific disease enrichment fails ({OT['per_organ']['Liver']['own_hits']}/100 own-disease hits, "
+    f"p={OT['per_organ']['Liver']['p']:.2f}). The pass is driven more by lung and colon than liver; the few hits per cell limit its use as a discovery claim.")
+DC = json.load(open("results/deficit_decoupler.json"))
+P.p(f"Pre-registered decoupler univariate linear modeling used OmniPath CollecTRI transcription factor regulons and PROGENy footprints "
+    f"on {DC['n_genes']:,} shared genes. Only {int(DC['pooled_hits'])}/{DC['pooled_tested']} tested lineage master factors ranked in "
+    f"the top decile of deficient factors (binomial p={DC['binom_p']:.2f}); the positive control FAILS. "
+    "Exploratory PROGENy scores show PI3K higher and JAK-STAT and p53 lower in organoids across all five organs, "
+    "a shared culture signature rather than an organ-specific mechanism (results/deficit_decoupler.json).")
+BM = json.load(open("results/deficit_bodymap.json"))
+rr = [v['spearman'] for v in BM['per_organ'].values()]; overlap = [v['top100_overlap'] for v in BM['per_organ'].values()]
+P.p(f"Reference robustness. We replaced GTEx with Expression Atlas Illumina Body Map E-MTAB-513. The pre-registered test passed: "
+    f"deficit-vector Spearman rho {min(rr):.2f}-{max(rr):.2f} across organs, top-100 overlap {min(overlap)}-{max(overlap)}. "
+    f"The Open Targets diagonal-dominance rerun also passes (D={BM['opentargets_rerun']['D']:.1f}, "
+    f"permutation p={BM['opentargets_rerun']['perm_p']:.4f}). Both deficit vectors share the organoid measurements, "
+    "so this checks reference sensitivity, not independent biological replication (results/deficit_bodymap.json).")
+CP = json.load(open("results/deficit_clinpgx.json"))
+P.p("ClinPGx pharmacogenes: the pre-registered VIP-or-CPIC gene set is unusable because the source release marks all 25,041 genes "
+    "as VIP. We retain that failure. A documented, post-registration CPIC-guideline-only deviation finds liver deficits in "
+    f"{CP['liver']['n_pg_tested']} tested genes (median {CP['liver']['median_deficit_pg']:.2f} vs "
+    f"{CP['liver']['median_deficit_other']:.2f} in other genes, p={CP['liver']['mwu_p_greater']:.4f}), "
+    f"but liver specificity fails (p={CP['H2']['perm_p']:.2f}, only {CP['H2']['n_pg_all_organs']} genes shared across all organ vectors). "
+    "This is a drug-testing caution, not evidence of a liver-specific mechanism (results/deficit_clinpgx.json).")
+GN = json.load(open("results/deficit_gnomad.json")); ENB = json.load(open("results/deficit_ensembl_biotype.json"))
+P.p(f"Pre-registered population-constraint and coding-composition checks were negative. In gnomAD v2.1.1, liver deficit genes have median "
+    f"LOEUF {GN['per_organ']['Liver']['median_loeuf']:.3f} vs brain {GN['per_organ']['Brain - Cortex']['median_loeuf']:.3f} "
+    f"(one-sided p={GN['H1']['p_one_sided']:.3f}; lower LOEUF is more loss-of-function constrained). "
+    f"Ensembl REST mapped all fixed top-100 genes per organ: liver {ENB['per_organ']['Liver']['n_protein_coding']}/100 and brain "
+    f"{ENB['per_organ']['Brain - Cortex']['n_protein_coding']}/100 are protein coding (one-sided Fisher p={ENB['H1']['p_one_sided']:.1f}). "
+    "Neither check supplies a mechanism; the gene universe is already coding-enriched (results/deficit_gnomad.json; "
+    "results/deficit_ensembl_biotype.json).")
+P.p("Synthesis. Organoid deficits are reproducible to a reference swap and linked to organ-disease targets in aggregate, but the "
+    "metabolic-parenchyma gap lacks liver specificity and the kidney finding fails external replication. It remains a falsifiable "
+    "candidate, not a new discovery or a validated diagnostic tool.")
 P.h("5. Negative results (kept by design)")
 for t in ["The initial power-law (alpha > 1) interpretation was withdrawn after large-organoid checks contradicted it.",
           "Size-adjusted and size-filtered readouts do not improve donor-level modulator discrimination.",
@@ -268,6 +316,11 @@ for t in ["The initial power-law (alpha > 1) interpretation was withdrawn after 
           "Fidelity: the HPA parenchymal share of deficit genes does not clearly separate faithful from unfaithful organs (p = 0.061); lung organoids break the pattern.",
           "Fidelity: all organoid types lack secreted proteins (UniProt), so the secretome does not explain the organ split.",
           "Replication: the kidney part of the organ split failed out of sample (two ArrayExpress kidney datasets rank kidney 1st and 2nd).",
+          "GSEA: metabolic deficits are also present in faithful brain organoids; not specific to poor fidelity.",
+          "Open Targets: liver deficits show no liver-disease enrichment despite the aggregate diagonal-dominance pass.",
+          "decoupler: lineage master-TF positive control fails (2/12); pathway signals are shared across cultures.",
+          "ClinPGx: pre-registered VIP flag is defective; CPIC-only deviation passes liver deficit but fails liver specificity.",
+          "gnomAD and Ensembl: no liver-vs-brain differentiation by LOEUF or protein-coding composition.",
           "Fidelity: the culture-fibroblast attractor is RETRACTED as a general organoid property: on 45 series whose samples are all organoids it shrinks to 9-29% of series (Section 4.9)."]:
     P.p("- " + t)
 P.h("6. Discussion")
@@ -293,6 +346,12 @@ for r in ["Lefferts JW, et al. OrgaSegment: deep-learning based organoid segment
           "Szklarczyk D, et al. The STRING database in 2023. Nucleic Acids Res 2023.",
           "The UniProt Consortium. UniProt: the Universal Protein Knowledgebase in 2023. Nucleic Acids Res 2023.",
           "Moreno P, et al. Expression Atlas and ArrayExpress/BioStudies at EMBL-EBI. Nucleic Acids Res 2022.",
+          "Open Targets Platform. https://platform.opentargets.org/",
+          "Badia-i-Mompel P, et al. decoupleR: ensemble of computational methods to infer biological activities from omics data. Bioinform Adv 2022. https://bioconductor.org/packages/decoupleR/",
+          "Turei D, et al. OmniPath: guidelines and gateway for literature-curated signaling pathway resources. Nat Methods 2016. https://omnipathdb.org/",
+          "ClinPGx / PharmGKB. https://www.clinpgx.org/",
+          "Karczewski KJ, et al. The mutational constraint spectrum quantified from variation in 141,456 humans. Nature 2020. https://gnomad.broadinstitute.org/help/constraint",
+          "Ensembl REST API. https://rest.ensembl.org/documentation/info/lookup_post",
           "Kuleshov MV, et al. Enrichr: a comprehensive gene set enrichment analysis web server 2016 update. Nucleic Acids Res 2016.",
           "Milacic M, et al. The Reactome Pathway Knowledgebase 2024. Nucleic Acids Res 2024.",
           "Gumienny R. GEOparse: Python library to access Gene Expression Omnibus. https://github.com/guma44/GEOparse",
