@@ -17,3 +17,4 @@ build/
 src/*.egg-info/
 data/hpo/
 data/wikipathways/
+data/hpa_ms/
