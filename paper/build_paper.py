@@ -78,7 +78,8 @@ P.table(["#", "dataset", "source / accession", "content", "use"], [
     [1, "OrgaSegment DIS single-organoid measurements", "Zenodo 10610438 (Lefferts et al. 2024)", "per-organoid A0/A1, 17 donors, 4 conditions", "size-dependence analysis"],
     [2, "OrgaSegment FIS database", "Zenodo 10610438", "well-level area, 7 time points, 868 rows", "replication attempt (not possible)"],
     [3, "OrgaSegment annotated images", "Zenodo 10278229", "train/val/eval images with instance masks", "U-Net segmentation benchmark"],
-], "Dataset manifest (distinct, accession-level). Three distinct assay/image datasets shown here; the committed accession ledger now has 166 primary entries, including one independent FIS demo plate counted once (not 32 CSV datasets).")
+    [4, "Drevinek intestinal FIS cohort", "Zenodo 4771466", "20 patient IDs, 54 plates, well-level 0-60 minute area series", "triple-vs-double treatment ranking"],
+], "Dataset manifest (distinct, accession-level). Four distinct assay/image datasets shown here; the committed accession ledger now has 167 primary entries, including one independent FIS demo plate and one 20-patient FIS accession each counted once.")
 
 P.h("4. Results")
 P.h("4.1 Within-well size slopes", 2)
@@ -183,6 +184,29 @@ P.table(["forskolin (uM)", "paired wells / condition", "large-minus-small drug e
     [[f"{d['dose_uM']:g}", f"{d['n_wells']['fsk']}/{d['n_wells']['fsk_770_809']}",
       f"{d['effect_log']:+.3f}" if d['effect_log'] is not None else "not eligible"] for d in EXT['doses']],
     "Pre-registered external single-plate demo assay; doses are correlated and not independent donors.")
+
+DV = json.load(open("results/drevinek_fis.json"))
+P.h("4.3d Distinct multi-patient well-level FIS cohort: published drug ranking reproduced", 2)
+P.p(f"A genuinely distinct dataset (Drevinek et al., Zenodo 4771466) contains well-level area time series "
+    f"from {DV['patients_source']} CF patient IDs on {DV['plates_source']} patient-date plates. "
+    "The analysis was pre-registered and committed before downloading the source; source plate-map inspection "
+    "then showed that its FskOnly wells are a reference line, not patient-matched vehicle. That provenance "
+    "correction was committed before outcome analysis. Of 432 patient-plate-dose blocks, "
+    f"{DV['blocks_eligible']} have >=2 wells per treatment and matched 0-60 minute measurements; "
+    "one TEZ/IVA block has one well and is excluded. Equal-well area AUC is normalized to each well's "
+    "time-zero area, then triple ELX/TEZ/IVA minus double TEZ/IVA is taken at patient/plate/dose level; "
+    "each patient contributes the median over its blocks. "
+    f"Positive in {DV['primary']['positive_patients']}/{DV['primary']['eligible_patients']} patients, "
+    f"median {DV['primary']['median_patient_effect']:+.3f} baseline-area AUC (exact one-sided sign "
+    f"p={DV['primary']['exact_one_sided_sign_p']:.2g}), so the pre-registered treatment-ranking H1 passes. "
+    "This confirms the published in-vitro triple-over-double ordering on the paper's own public data, "
+    "not a new discovery or an independent individual-organoid size test. "
+    "Forty-seven of 431 plate-dose block rankings reverse if unnormalized raw area replaces normalized AUC; "
+    "both patient-level summaries remain 20/20 positive. No clinical prediction follows "
+    "(results/drevinek_fis.json; results/finding_drevinek_fis.md).")
+P.table(["patient", "n plate-dose blocks", "normalized triple-double AUC"],
+        [[d['patient'], d['n_blocks'], f"{d['effect']:+.3f}"] for d in DV['patient_results']],
+        "Patient-equal independent well-level treatment-ranking test; no individual organoid areas in this accession.")
 
 P.h("4.4 Does size correction help theratyping? No", 2)
 P.p("Locked before running: per-donor standardised Trikafta-vs-DMSO separation with raw, size-adjusted and size-band well readouts. Median "
@@ -477,14 +501,15 @@ P.p("Synthesis. The liver top-deficit list has independent pathway and adult-tis
 P.p("External replication source audit (results/external_fis_source_audit.md): a 2025 respiratory FIS study "
     "with single-organoid measures excluded baseline areas below 1500 px and used forskolin alone rather "
     "than modulator vs DMSO; OrganoID's open individual time series used pancreatic cancer organoids "
-    "and gemcitabine; a 2021 nasal CFTR-modulator FIS study reported well-summed areas. These are "
-    "unsuitable for the specific small-organoid modulator test, but the search was not exhaustive.")
+    "and gemcitabine; two nasal CFTR-modulator papers reported either well-summed areas or summary plots "
+    "without a verified public matched-object table. Drevinek's 20-patient area series was suitable for "
+    "well-level drug-ranking analysis, not individual-size replication. This search is not exhaustive.")
 
 P.h("5. Negative results (kept by design)")
 for t in ["The initial power-law (alpha > 1) interpretation was withdrawn after large-organoid checks contradicted it.",
           "Size-adjusted and size-filtered readouts do not improve donor-level modulator discrimination.",
           "Matched donor x plate x dose robustness H1 fails: 9/12 positive donor medians, p=0.073, despite the pooled later-date result.",
-          "Replication on the public FIS time series is impossible: it is well-level.",
+          "Small-organoid replication on the public FIS time series is impossible: it is well-level; its separate 20-patient treatment-ranking test passes but cannot resolve individual-size moderation.",
           "Our segmentation is below the published state of the art.",
           "Fidelity: 'Pancreas' as best match (35/151 series with S3000) disappears with other methods, so it is a method artefact.",
           "Fidelity: a 'liver disease' series (GSE278954) ranks Liver 50th of 54, and lung and breast organoids are rarely matched to their organ.",
@@ -549,6 +574,7 @@ for r in ["Lefferts JW, et al. OrgaSegment: deep-learning based organoid segment
           "Matthews J, et al. OrganoID. PLoS Comput Biol 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC9645660/",
           "Anderson JD, et al. CFTR function and clinical response to modulators parallel nasal epithelial organoid swelling. AJP Lung 2021. https://pmc.ncbi.nlm.nih.gov/articles/PMC8321858/",
           "Botelho H, Hagemeijer MC, et al. FIS_image_analysis demonstration dataset. https://github.com/hmbotelho/FIS_image_analysis",
+          "Drevinek P, et al. Response to elexacaftor/tezacaftor/ivacaftor in intestinal organoids derived from people with cystic fibrosis. J Cyst Fibros 2021. https://doi.org/10.1016/j.jcf.2021.07.006 . Data: https://zenodo.org/records/4771466",
           "InterPro API. https://interpro-documentation.readthedocs.io/en/latest/api.html",
           "Europe PMC RESTful Web Service. https://europepmc.org/RestfulWebService",
           "Kuleshov MV, et al. Enrichr: a comprehensive gene set enrichment analysis web server 2016 update. Nucleic Acids Res 2016.",
