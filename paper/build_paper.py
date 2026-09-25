@@ -78,7 +78,7 @@ P.table(["#", "dataset", "source / accession", "content", "use"], [
     [1, "OrgaSegment DIS single-organoid measurements", "Zenodo 10610438 (Lefferts et al. 2024)", "per-organoid A0/A1, 17 donors, 4 conditions", "size-dependence analysis"],
     [2, "OrgaSegment FIS database", "Zenodo 10610438", "well-level area, 7 time points, 868 rows", "replication attempt (not possible)"],
     [3, "OrgaSegment annotated images", "Zenodo 10278229", "train/val/eval images with instance masks", "U-Net segmentation benchmark"],
-], "Dataset manifest (distinct, accession-level). Three distinct assay/image datasets shown here; the separate, committed accession ledger includes 165 primary GEO/ArrayExpress accessions (including GSE108291) used for organoid-fidelity analyses.")
+], "Dataset manifest (distinct, accession-level). Three distinct assay/image datasets shown here; the committed accession ledger now has 166 primary entries, including one independent FIS demo plate counted once (not 32 CSV datasets).")
 
 P.h("4. Results")
 P.h("4.1 Within-well size slopes", 2)
@@ -131,6 +131,28 @@ P.p(f"The stronger pre-registered stress test required >=3 organoids per Trikaft
     "This challenges the pooled later-date 12/12 result: dose/plate control with narrower cells alters "
     "three donor signs. It does not show the size effect is absent, but the evidence does not establish "
     "a new validated discovery (results/blocked_size.json).")
+
+EXT = json.load(open("results/external_fis_demo.json"))
+P.h("4.3c External single-plate intestinal FIS assay", 2)
+P.p(f"A separate public intestinal organoid demonstration experiment from the FIS_image_analysis repository "
+    f"provides object-level tracked areas in {len(EXT['paths'])} CSVs from ONE plate, one class-II CFTR genotype, "
+    f"and two wells per treatment at each of eight matched forskolin doses. The registered analysis paired "
+    f"{EXT['n_tracked_pairs']:,} unique time-0/time-60-min tracks and compared combined VX-809/VX-770 "
+    "with forskolin-only vehicle. Fixed-analysis pooled baseline quartile boundaries were "
+    f"{EXT['quartile_cutoffs_area_micronsq']['small_lte']:.0f} and "
+    f"{EXT['quartile_cutoffs_area_micronsq']['large_gte']:.0f} square microns, distinct units/cutoffs from OrgaSegment. "
+    f"The drug-minus-vehicle large-minus-small log-swelling effect is positive in "
+    f"{EXT['n_positive_doses']}/{EXT['n_eligible_doses']} dose strata "
+    f"(one-sided sign p={EXT['sign_p_one_sided']:.4f}; H1 passes); the lowest dose is negative. "
+    "This is assay-source support under an older double modulator, not independent donor replication: "
+    "eight doses share a plate and donor, so sign-test strata are correlated and its p is descriptive. "
+    "The original donor x plate x dose stress test still fails. Tracking attrition may depend on size. "
+    "No Trikafta generalization, new established discovery, or clinical prediction follows "
+    "(results/external_fis_demo.json; results/finding_external_fis_demo.md).")
+P.table(["forskolin (uM)", "paired wells / condition", "large-minus-small drug effect (log units)"],
+    [[f"{d['dose_uM']:g}", f"{d['n_wells']['fsk']}/{d['n_wells']['fsk_770_809']}",
+      f"{d['effect_log']:+.3f}" if d['effect_log'] is not None else "not eligible"] for d in EXT['doses']],
+    "Pre-registered external single-plate demo assay; doses are correlated and not independent donors.")
 
 P.h("4.4 Does size correction help theratyping? No", 2)
 P.p("Locked before running: per-donor standardised Trikafta-vs-DMSO separation with raw, size-adjusted and size-band well readouts. Median "
@@ -496,6 +518,7 @@ for r in ["Lefferts JW, et al. OrgaSegment: deep-learning based organoid segment
           "Demchenko A, et al. A semi-automated algorithm for image analysis of respiratory organoids. PLoS Comput Biol 2025. https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013589",
           "Matthews J, et al. OrganoID. PLoS Comput Biol 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC9645660/",
           "Anderson JD, et al. CFTR function and clinical response to modulators parallel nasal epithelial organoid swelling. AJP Lung 2021. https://pmc.ncbi.nlm.nih.gov/articles/PMC8321858/",
+          "Botelho H, Hagemeijer MC, et al. FIS_image_analysis demonstration dataset. https://github.com/hmbotelho/FIS_image_analysis",
           "InterPro API. https://interpro-documentation.readthedocs.io/en/latest/api.html",
           "Europe PMC RESTful Web Service. https://europepmc.org/RestfulWebService",
           "Kuleshov MV, et al. Enrichr: a comprehensive gene set enrichment analysis web server 2016 update. Nucleic Acids Res 2016.",
