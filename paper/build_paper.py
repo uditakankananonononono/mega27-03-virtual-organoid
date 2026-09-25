@@ -28,7 +28,7 @@ P.p("The forskolin-induced swelling (FIS) assay on patient-derived intestinal or
     "(CF) respond to CFTR modulators. Standard pipelines sum organoid area per well, so any dependence of the response on organoid size is "
     "averaged away. We re-analysed the public single-organoid OrgaSegment data (17 CF donors, per-organoid area before and after "
     "forskolin) with a biophysical swelling model and a DMSO-controlled, donor-matched design.")
-P.p(f"Finding (candidate). Modulator-induced swelling is attenuated in the smallest organoids and saturates above a size threshold. For "
+P.p(f"Finding (candidate). In this accession, estimated modulator-induced swelling is lower in the smallest tracked organoids and approaches a plateau across larger size bins; this is a post hoc descriptive curve, not a validated biological threshold. For "
     f"elexacaftor/tezacaftor/ivacaftor (Trikafta) the drug-minus-DMSO log-swelling effect rises from 0.336 [0.262, 0.405] in the smallest "
     f"size octile to a plateau near 0.55-0.64; top minus bottom 0.251 [0.184, 0.323] (donor bootstrap). Per donor, the effect in the "
     f"largest size quartile exceeds that in the smallest in {int((R.attenuation > 0).sum())} of {len(R)} donors, and the attenuation does "
@@ -93,7 +93,7 @@ P.table(["condition", "organoids", "wells", "slope b", "95% CI", "donors b>0"], 
 ], "Within-well slope of log fold change on centred log A0 (forskolin > 0). Well-cluster bootstrap, 500 resamples.")
 P.p("The empirical slope is near zero in DMSO and positive in each modulator group. Its sign contrasts with a simple surface-limited "
     "secretion prediction only for strictly positive responses; it does not estimate alpha for the full data, which include shrinking objects. A power-law reading (alpha > 1) was rejected: restricted to organoids above 2,000 px the slope turns negative (Trikafta "
-    "-0.117), and binned means rise then plateau. Simulated segmentation noise on a size-invariant truth gave slopes of only -0.002 to -0.055.")
+    "-0.117), and binned means rise then plateau. A specific simulation of independent, size-invariant segmentation noise on a flat true response gave slopes of -0.002 to -0.055; size-dependent segmentation and differential track retention were not ruled out.")
 P.h("4.2 Small-organoid attenuation", 2)
 P.figure("results/figures/fig_size_attenuation.png", "Drug-minus-DMSO mean log swelling per starting-size octile, donor-matched, with donor-bootstrap 95% CI.")
 P.table(["modulator", "donors", "smallest octile effect", "plateau", "top minus bottom [95% CI]"], [
