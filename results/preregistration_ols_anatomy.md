@@ -1,0 +1,5 @@
+# Pre-registration: ontology audit of reference versus out-of-sample tissue labels
+
+Registered before querying EMBL-EBI OLS4. Endpoint documentation: https://www.ebi.ac.uk/ols4/api-docs and https://www.ebi.ac.uk/ols4/ols3help . This is an annotation audit, not a new molecular dataset.
+
+Fixed queries: exact labels `kidney cortex`, `kidney`, `liver`, `bile duct`, `cerebral cortex`, `colon`, `lung` in UBERON and `cholangiocyte`, `hepatocyte`, `proximal tubule cell` in CL. Use OLS4 `/api/search` with `ontology`, `q`, `exact=true`, and inspect label/synonym hits. H1: `kidney cortex` is an ontology-distinct anatomical part of kidney, and `cholangiocyte` is distinct from `hepatocyte`. The analysis will report each matched term and an explicit interpretation of the pre-registered ArrayExpress replication mismatch: kidney tubuloid/PSC organoid vs adult kidney cortex and liver cholangiocyte organoid vs liver parenchyma. Do not equate ontology difference with transcriptomic distance; if any crucial term fails to resolve uniquely, report unresolved rather than fabricating an identity. This is annotation provenance, not a causal explanation or independent replication.
