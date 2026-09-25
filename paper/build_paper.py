@@ -615,5 +615,34 @@ for r in ["Lefferts JW, et al. OrgaSegment: deep-learning based organoid segment
           "Botelho HM. FIS_analysis. https://github.com/hmbotelho/FIS_analysis",
           "Measuring cystic fibrosis drug responses in organoids derived from 2D differentiated nasal epithelia. bioRxiv 2021. https://www.biorxiv.org/content/10.1101/2021.07.20.453105v2"]:
     P.p(r)
+# A. Auditable patient-block outcomes, not additional biological cohorts.
+# Generated entirely from the frozen full-result JSONs. Keep excluded blocks visible.
+P.page_break()
+P.h('Appendix A. Patient, plate and dose-level treatment contrasts')
+P.p('This appendix makes the two distinct well-level FIS rankings inspectable without downloading a raw table. Every row is one source patient x plate x forskolin-dose block, not a new patient or accession. Effects average technical wells within an arm before the patient median is formed. Normalized area AUC is dimensionless and divided by the observation horizon; values here are differences of treatment-arm AUCs. These results cannot test individual-organoid size and should not be used to choose therapy.')
+P.p('A1 uses Zenodo 4771466 and triple ELX/TEZ/IVA minus double TEZ/IVA. A2 uses Zenodo 15754800 and default VTI minus ETI. The source releases come from related teams, and anonymized patient numbers may overlap. The two experiments, drugs and eligibility rules are not pooled. See results/preregistration_drevinek_fis.md and results/preregistration_vti_eti.md for the frozen questions; the source scripts and JSON contain every eligible well, time-point count, exclusion and sensitivity test.')
+for label, obj, arm, key in [
+    ('A1', DV, 'ELX/TEZ/IVA minus TEZ/IVA', 'drevinek_fis'),
+    ('A2', VT, 'VTI minus ETI', 'vti_eti'),
+]:
+    P.h(f'{label}. {arm}', 2)
+    P.p(f"Source {obj['source']}. {obj['patients_source']} IDs and {obj['plates_source']} plates appear in the public source; {obj['blocks_eligible']}/{obj['blocks_total']} blocks meet its preregistered primary criteria. The table preserves positive and negative contrasts. The registered patient-level result is {obj['primary']['positive_patients']}/{obj['primary']['eligible_patients']} positive medians, exact one-sided p={obj['primary']['exact_one_sided_sign_p']:.7g}. Unnormalized raw-area AUC is shown only to reveal sensitivity to baseline area, never as an independent trial.")
+    pats = sorted(set(b['patient'] for b in obj['blocks']))
+    for ip, patient in enumerate(pats):
+        rows = sorted((b for b in obj['blocks'] if b['patient']==patient), key=lambda b:(str(b['date']),b['dose']))
+        primary = next((p for p in obj['patient_results'] if p['patient']==patient), None)
+        P.h(f'{label}.{ip+1}. Source patient {patient}', 3)
+        if primary is None:
+            P.p(f'No eligible primary block for this ID under the fixed treatment arms and time/well criteria. {len(rows)} source blocks are retained below as exclusions; this ID contributes no patient median or sign-test observation.')
+        else:
+            P.p(f"{primary['n_blocks']} eligible of {len(rows)} blocks; median normalized treatment contrast {primary['effect']:+.4f}; median raw-area contrast {primary['raw_effect']:+.2f}. This is one patient-weighted observation regardless of the number of doses or plates. A negative or small block remains in the table rather than being filtered by outcome.")
+        data = []
+        for b in rows:
+            why = '; '.join(b['reasons'])
+            data.append([str(b['date']), f"{b['dose']:.5g}", f"{b['effect']:+.4f}" if not why else 'excluded', f"{b['raw_effect']:+.1f}" if not why else why.replace('fewer_than_three_shared_treatment_times_including_zero','missing matched times').replace('fewer_than_two_eligible_wells_per_arm','<2 wells/arm')])
+        P.table(['plate date','fsk (uM)','normalized delta','raw delta or exclusion'], data,
+                f'{label} source patient {patient}: {len(rows)} plate-dose blocks from results/{key}.json. Raw-area delta is not baseline normalized.')
+P.p('Audit boundary. A plate-dose block is not an independent donor. Within each patient the median across eligible blocks gives one observation for the exact sign test, preventing a large plate or many concentrations from dominating the patient count. Raw-area reversals flag sensitivity to baseline organoid density. For excluded A2 patient blocks, a missing default treatment arm is not replaced with a different VTI concentration. This appendix is a reproducibility trace of two already published in-vitro comparisons, not evidence for clinical benefit, equivalence, or the single-object size candidate.')
+
 P.save("paper/mega27-03-virtual-organoid-paper.docx")
 print("ok", P.eq, "eq", P.tab, "tab", P.fig, "fig")
