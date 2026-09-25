@@ -1,0 +1,75 @@
+{
+  "dataset": "Zenodo 10278229 train-only fit / val-only postprocessing",
+  "selected_epoch": 40,
+  "selected_val_loss": 0.07575143320219857,
+  "val_grid_images": 20,
+  "n_candidates": 108,
+  "range": [
+    102,
+    108
+  ],
+  "chunk_best_params": [
+    0.6,
+    0.8,
+    0.3,
+    40
+  ],
+  "chunk_best_val_mAP50": 0.6995102670683362,
+  "grid": [
+    {
+      "params": [
+        0.6,
+        0.8,
+        0.3,
+        10
+      ],
+      "val_mAP50": 0.6930774491908013
+    },
+    {
+      "params": [
+        0.6,
+        0.8,
+        0.3,
+        20
+      ],
+      "val_mAP50": 0.6937057187046278
+    },
+    {
+      "params": [
+        0.6,
+        0.8,
+        0.3,
+        40
+      ],
+      "val_mAP50": 0.6995102670683362
+    },
+    {
+      "params": [
+        0.6,
+        0.8,
+        0.5,
+        10
+      ],
+      "val_mAP50": 0.6930774491908013
+    },
+    {
+      "params": [
+        0.6,
+        0.8,
+        0.5,
+        20
+      ],
+      "val_mAP50": 0.6937057187046278
+    },
+    {
+      "params": [
+        0.6,
+        0.8,
+        0.5,
+        40
+      ],
+      "val_mAP50": 0.6995102670683362
+    }
+  ],
+  "eval_untouched": true
+}
