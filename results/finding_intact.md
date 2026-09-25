@@ -1,0 +1,5 @@
+# IntAct protein-interaction count check
+
+Registered and pushed at commit 1c7c0c8 before direct queries to the IntAct PSIQUIC service: https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/ . Fixed top 20 liver and brain-deficit genes in CSV rank order; using uniquely mapped UniProt accessions in the prior EBI GOA data, measured 20 liver and 19 brain genes (HBA2 ambiguous). Median indexed interaction counts were 6.5 liver versus 45 brain. On log1p counts, preregistered one-sided Mann-Whitney U=126, p=0.03694, H1 PASS. All query URLs, accession mappings and counts in `results/deficit_intact.json`.
+
+These are database interaction *record* counts, not unique partners, nor interactions measured in organoids. Annotation density is confounded by protein study intensity and by the selected top-ranked genes: brain deficits include HBB and immune genes with many records. The small p follows an exploratory organ contrast and cannot establish a liver-specific biological mechanism, tool superiority, diagnosis, or novelty.

@@ -1,0 +1,500 @@
+{
+  "source": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/",
+  "preregistration": "results/preregistration_intact.md (commit 1c7c0c8)",
+  "rows": [
+    {
+      "organ": "Liver",
+      "rank": 1,
+      "symbol": "SLC17A2",
+      "accessions": [
+        "O00624"
+      ],
+      "accession": "O00624",
+      "count": 43,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:O00624?format=count"
+    },
+    {
+      "organ": "Liver",
+      "rank": 2,
+      "symbol": "APOF",
+      "accessions": [
+        "Q13790"
+      ],
+      "accession": "Q13790",
+      "count": 3,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:Q13790?format=count"
+    },
+    {
+      "organ": "Liver",
+      "rank": 3,
+      "symbol": "CYP4A22",
+      "accessions": [
+        "Q5TCH4"
+      ],
+      "accession": "Q5TCH4",
+      "count": 2,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:Q5TCH4?format=count"
+    },
+    {
+      "organ": "Liver",
+      "rank": 4,
+      "symbol": "SLC22A7",
+      "accessions": [
+        "Q9Y694"
+      ],
+      "accession": "Q9Y694",
+      "count": 1,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:Q9Y694?format=count"
+    },
+    {
+      "organ": "Liver",
+      "rank": 5,
+      "symbol": "ITIH4",
+      "accessions": [
+        "Q14624"
+      ],
+      "accession": "Q14624",
+      "count": 14,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:Q14624?format=count"
+    },
+    {
+      "organ": "Liver",
+      "rank": 6,
+      "symbol": "UPB1",
+      "accessions": [
+        "Q9UBR1"
+      ],
+      "accession": "Q9UBR1",
+      "count": 0,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:Q9UBR1?format=count"
+    },
+    {
+      "organ": "Liver",
+      "rank": 7,
+      "symbol": "HGFAC",
+      "accessions": [
+        "Q04756"
+      ],
+      "accession": "Q04756",
+      "count": 36,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:Q04756?format=count"
+    },
+    {
+      "organ": "Liver",
+      "rank": 8,
+      "symbol": "APOC2",
+      "accessions": [
+        "P02655"
+      ],
+      "accession": "P02655",
+      "count": 12,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:P02655?format=count"
+    },
+    {
+      "organ": "Liver",
+      "rank": 9,
+      "symbol": "UROC1",
+      "accessions": [
+        "Q96N76"
+      ],
+      "accession": "Q96N76",
+      "count": 4,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:Q96N76?format=count"
+    },
+    {
+      "organ": "Liver",
+      "rank": 10,
+      "symbol": "DBH",
+      "accessions": [
+        "P09172"
+      ],
+      "accession": "P09172",
+      "count": 62,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:P09172?format=count"
+    },
+    {
+      "organ": "Liver",
+      "rank": 11,
+      "symbol": "CD4",
+      "accessions": [
+        "P01730"
+      ],
+      "accession": "P01730",
+      "count": 43,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:P01730?format=count"
+    },
+    {
+      "organ": "Liver",
+      "rank": 12,
+      "symbol": "SLC6A13",
+      "accessions": [
+        "Q9NSD5"
+      ],
+      "accession": "Q9NSD5",
+      "count": 1,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:Q9NSD5?format=count"
+    },
+    {
+      "organ": "Liver",
+      "rank": 13,
+      "symbol": "RDH16",
+      "accessions": [
+        "O75452"
+      ],
+      "accession": "O75452",
+      "count": 1,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:O75452?format=count"
+    },
+    {
+      "organ": "Liver",
+      "rank": 14,
+      "symbol": "SLC25A47",
+      "accessions": [
+        "Q6Q0C1"
+      ],
+      "accession": "Q6Q0C1",
+      "count": 5,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:Q6Q0C1?format=count"
+    },
+    {
+      "organ": "Liver",
+      "rank": 15,
+      "symbol": "BHMT2",
+      "accessions": [
+        "Q9H2M3"
+      ],
+      "accession": "Q9H2M3",
+      "count": 8,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:Q9H2M3?format=count"
+    },
+    {
+      "organ": "Liver",
+      "rank": 16,
+      "symbol": "SLC22A10",
+      "accessions": [
+        "Q63ZE4"
+      ],
+      "accession": "Q63ZE4",
+      "count": 0,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:Q63ZE4?format=count"
+    },
+    {
+      "organ": "Liver",
+      "rank": 17,
+      "symbol": "KCNJ8",
+      "accessions": [
+        "Q15842"
+      ],
+      "accession": "Q15842",
+      "count": 50,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:Q15842?format=count"
+    },
+    {
+      "organ": "Liver",
+      "rank": 18,
+      "symbol": "CYP4F2",
+      "accessions": [
+        "P78329"
+      ],
+      "accession": "P78329",
+      "count": 126,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:P78329?format=count"
+    },
+    {
+      "organ": "Liver",
+      "rank": 19,
+      "symbol": "CYP2A6",
+      "accessions": [
+        "P11509"
+      ],
+      "accession": "P11509",
+      "count": 6,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:P11509?format=count"
+    },
+    {
+      "organ": "Liver",
+      "rank": 20,
+      "symbol": "SERPINA7",
+      "accessions": [
+        "P05543"
+      ],
+      "accession": "P05543",
+      "count": 7,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:P05543?format=count"
+    },
+    {
+      "organ": "Brain - Cortex",
+      "rank": 1,
+      "symbol": "HBB",
+      "accessions": [
+        "P68871"
+      ],
+      "accession": "P68871",
+      "count": 191,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:P68871?format=count"
+    },
+    {
+      "organ": "Brain - Cortex",
+      "rank": 2,
+      "symbol": "S100A9",
+      "accessions": [
+        "P06702"
+      ],
+      "accession": "P06702",
+      "count": 163,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:P06702?format=count"
+    },
+    {
+      "organ": "Brain - Cortex",
+      "rank": 3,
+      "symbol": "TESPA1",
+      "accessions": [
+        "A2RU30"
+      ],
+      "accession": "A2RU30",
+      "count": 12,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:A2RU30?format=count"
+    },
+    {
+      "organ": "Brain - Cortex",
+      "rank": 4,
+      "symbol": "SOHLH1",
+      "accessions": [
+        "Q5JUK2"
+      ],
+      "accession": "Q5JUK2",
+      "count": 165,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:Q5JUK2?format=count"
+    },
+    {
+      "organ": "Brain - Cortex",
+      "rank": 5,
+      "symbol": "MT1M",
+      "accessions": [
+        "Q8N339"
+      ],
+      "accession": "Q8N339",
+      "count": 25,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:Q8N339?format=count"
+    },
+    {
+      "organ": "Brain - Cortex",
+      "rank": 6,
+      "symbol": "HBA2",
+      "accessions": [],
+      "accession": null,
+      "count": null,
+      "status": "ambiguous_or_unmapped"
+    },
+    {
+      "organ": "Brain - Cortex",
+      "rank": 7,
+      "symbol": "OPALIN",
+      "accessions": [
+        "Q96PE5"
+      ],
+      "accession": "Q96PE5",
+      "count": 233,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:Q96PE5?format=count"
+    },
+    {
+      "organ": "Brain - Cortex",
+      "rank": 8,
+      "symbol": "COX7A1",
+      "accessions": [
+        "P24310"
+      ],
+      "accession": "P24310",
+      "count": 23,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:P24310?format=count"
+    },
+    {
+      "organ": "Brain - Cortex",
+      "rank": 9,
+      "symbol": "HIGD1B",
+      "accessions": [
+        "Q9P298"
+      ],
+      "accession": "Q9P298",
+      "count": 1,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:Q9P298?format=count"
+    },
+    {
+      "organ": "Brain - Cortex",
+      "rank": 10,
+      "symbol": "GIMAP7",
+      "accessions": [
+        "Q8NHV1"
+      ],
+      "accession": "Q8NHV1",
+      "count": 0,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:Q8NHV1?format=count"
+    },
+    {
+      "organ": "Brain - Cortex",
+      "rank": 11,
+      "symbol": "TMEM265",
+      "accessions": [
+        "A0A087WTH1"
+      ],
+      "accession": "A0A087WTH1",
+      "count": 0,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:A0A087WTH1?format=count"
+    },
+    {
+      "organ": "Brain - Cortex",
+      "rank": 12,
+      "symbol": "GPIHBP1",
+      "accessions": [
+        "Q8IV16"
+      ],
+      "accession": "Q8IV16",
+      "count": 154,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:Q8IV16?format=count"
+    },
+    {
+      "organ": "Brain - Cortex",
+      "rank": 13,
+      "symbol": "C1QB",
+      "accessions": [
+        "P02746"
+      ],
+      "accession": "P02746",
+      "count": 90,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:P02746?format=count"
+    },
+    {
+      "organ": "Brain - Cortex",
+      "rank": 14,
+      "symbol": "RPS4Y1",
+      "accessions": [
+        "P22090"
+      ],
+      "accession": "P22090",
+      "count": 45,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:P22090?format=count"
+    },
+    {
+      "organ": "Brain - Cortex",
+      "rank": 15,
+      "symbol": "MAG",
+      "accessions": [
+        "P20916"
+      ],
+      "accession": "P20916",
+      "count": 3,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:P20916?format=count"
+    },
+    {
+      "organ": "Brain - Cortex",
+      "rank": 16,
+      "symbol": "S100A8",
+      "accessions": [
+        "P05109"
+      ],
+      "accession": "P05109",
+      "count": 136,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:P05109?format=count"
+    },
+    {
+      "organ": "Brain - Cortex",
+      "rank": 17,
+      "symbol": "TYROBP",
+      "accessions": [
+        "O43914"
+      ],
+      "accession": "O43914",
+      "count": 99,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:O43914?format=count"
+    },
+    {
+      "organ": "Brain - Cortex",
+      "rank": 18,
+      "symbol": "C1QC",
+      "accessions": [
+        "P02747"
+      ],
+      "accession": "P02747",
+      "count": 45,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:P02747?format=count"
+    },
+    {
+      "organ": "Brain - Cortex",
+      "rank": 19,
+      "symbol": "NTSR2",
+      "accessions": [
+        "O95665"
+      ],
+      "accession": "O95665",
+      "count": 0,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:O95665?format=count"
+    },
+    {
+      "organ": "Brain - Cortex",
+      "rank": 20,
+      "symbol": "S100A12",
+      "accessions": [
+        "P80511"
+      ],
+      "accession": "P80511",
+      "count": 5,
+      "status": "ok",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/identifier:P80511?format=count"
+    }
+  ],
+  "per_organ": {
+    "Liver": {
+      "n_measured": 20,
+      "median_count": 6.5,
+      "median_log1p_count": 2.0126758453675744
+    },
+    "Brain - Cortex": {
+      "n_measured": 19,
+      "median_count": 45.0,
+      "median_log1p_count": 3.828641396489095
+    }
+  },
+  "H1": {
+    "u": 126.0,
+    "p_one_sided": 0.03693928490070356,
+    "verdict": "PASS"
+  }
+}
