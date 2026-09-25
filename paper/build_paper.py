@@ -79,7 +79,8 @@ P.table(["#", "dataset", "source / accession", "content", "use"], [
     [2, "OrgaSegment FIS database", "Zenodo 10610438", "well-level area, 7 time points, 868 rows", "replication attempt (not possible)"],
     [3, "OrgaSegment annotated images", "Zenodo 10278229", "train/val/eval images with instance masks", "U-Net segmentation benchmark"],
     [4, "Drevinek intestinal FIS cohort", "Zenodo 4771466", "20 patient IDs, 54 plates, well-level 0-60 minute area series", "triple-vs-double treatment ranking"],
-], "Dataset manifest (distinct, accession-level). Four distinct assay/image datasets shown here; the committed accession ledger now has 167 primary entries, including one independent FIS demo plate and one 20-patient FIS accession each counted once.")
+    [5, "Borek-Dohalska intestinal FIS cohort", "Zenodo 15754800", "12 patient IDs, 33 plates, well-level areas; possible overlap with 4771466", "negative VTI-vs-ETI ranking test"],
+], "Dataset manifest (distinct, accession-level). Five distinct assay/image datasets shown here; the committed accession ledger now has 168 primary entries; separate Drevinek-group releases may overlap patients and are not individual-object replication.")
 
 P.h("4. Results")
 P.h("4.1 Within-well size slopes", 2)
@@ -208,6 +209,29 @@ P.table(["patient", "blocks", "triple-double AUC", "patient", "blocks", "triple-
         [[a['patient'], a['n_blocks'], f"{a['effect']:+.3f}", b['patient'], b['n_blocks'], f"{b['effect']:+.3f}"]
          for a,b in zip(DV['patient_results'][:10], DV['patient_results'][10:])],
         "Patient-equal well-level treatment-ranking test; no individual organoid areas in this accession.")
+
+VT = json.load(open("results/vti_eti.json"))
+P.h("4.3e Newer VTI-versus-ETI patient ranking fails registered test", 2)
+P.p(f"A further Drevinek-group public release (Zenodo 15754800) has well-level area series for "
+    f"{VT['patients_source']} anonymized CF patient IDs and {VT['plates_source']} plates. "
+    "Only nine patients have matched default vanzacaftor/tezacaftor/ivacaftor (VTI) and "
+    "elexacaftor/tezacaftor/ivacaftor (ETI) wells; three instead have VTI-dose-optimization "
+    "variants, which were not substituted into the locked primary test. Of 264 plate-dose "
+    f"blocks, {VT['blocks_eligible']} qualify. Patient-equal median VTI-minus-ETI normalized "
+    f"area AUC is positive in {VT['primary']['positive_patients']}/{VT['primary']['eligible_patients']} "
+    f"patients (median {VT['primary']['median_patient_effect']:+.3f}, one-sided exact sign "
+    f"p={VT['primary']['exact_one_sided_sign_p']:.3f}); H1 fails. Only 112/208 matched "
+    "plate-dose blocks are positive. Raw-area AUC reverses 92/208 block rankings and "
+    "leaves 3/9 patient medians positive. In 48 separate dose-optimization blocks, "
+    "just 12 show strictly rising response across 0.02, 0.2 and 2 µM VTI, a descriptive "
+    "check, not an alternative pass. The earlier 2021 dataset and this release share "
+    "textual anonymized IDs 58 and 68, which neither proves nor excludes patient overlap. "
+    "This negative in-vitro ranking does not establish patient equivalence/inferiority, "
+    "and still cannot test individual-size effects (results/vti_eti.json; "
+    "results/finding_vti_eti.md).")
+P.table(["patient", "blocks", "VTI-ETI AUC"],
+        [[d['patient'], d['n_blocks'], f"{d['effect']:+.3f}"] for d in VT['patient_results']],
+        "Pre-registered patient-equal VTI-versus-ETI effects; negative IDs and missing default-VTI patients are retained in the full result file.")
 
 P.h("4.4 Does size correction help theratyping? No", 2)
 P.p("Locked before running: per-donor standardised Trikafta-vs-DMSO separation with raw, size-adjusted and size-band well readouts. Median "
@@ -510,7 +534,7 @@ P.h("5. Negative results (kept by design)")
 for t in ["The initial power-law (alpha > 1) interpretation was withdrawn after large-organoid checks contradicted it.",
           "Size-adjusted and size-filtered readouts do not improve donor-level modulator discrimination.",
           "Matched donor x plate x dose robustness H1 fails: 9/12 positive donor medians, p=0.073, despite the pooled later-date result.",
-          "Small-organoid replication on the public FIS time series is impossible: it is well-level; its separate 20-patient treatment-ranking test passes but cannot resolve individual-size moderation.",
+          "Small-organoid replication on the public FIS time series is impossible: it is well-level; the 20-patient triple-vs-double ranking passes, but the separate VTI-vs-ETI ranking fails (6/9, p=0.254).",
           "Our segmentation is below the published state of the art.",
           "Fidelity: 'Pancreas' as best match (35/151 series with S3000) disappears with other methods, so it is a method artefact.",
           "Fidelity: a 'liver disease' series (GSE278954) ranks Liver 50th of 54, and lung and breast organoids are rarely matched to their organ.",
@@ -576,6 +600,7 @@ for r in ["Lefferts JW, et al. OrgaSegment: deep-learning based organoid segment
           "Anderson JD, et al. CFTR function and clinical response to modulators parallel nasal epithelial organoid swelling. AJP Lung 2021. https://pmc.ncbi.nlm.nih.gov/articles/PMC8321858/",
           "Botelho H, Hagemeijer MC, et al. FIS_image_analysis demonstration dataset. https://github.com/hmbotelho/FIS_image_analysis",
           "Drevinek P, et al. Response to elexacaftor/tezacaftor/ivacaftor in intestinal organoids derived from people with cystic fibrosis. J Cyst Fibros 2021. https://doi.org/10.1016/j.jcf.2021.07.006 . Data: https://zenodo.org/records/4771466",
+          "Borek-Dohalska L, et al. Effect of vanzacaftor on cystic fibrosis airway epithelial cells compared to elexacaftor. Data: https://zenodo.org/records/15754800",
           "InterPro API. https://interpro-documentation.readthedocs.io/en/latest/api.html",
           "Europe PMC RESTful Web Service. https://europepmc.org/RestfulWebService",
           "Kuleshov MV, et al. Enrichr: a comprehensive gene set enrichment analysis web server 2016 update. Nucleic Acids Res 2016.",
