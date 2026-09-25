@@ -21,7 +21,7 @@ S1 = json.load(open("results/seg_eval.json")); S2 = json.load(open("results/seg_
 
 P = Paper("Small-Organoid Attenuation of CFTR-Modulator Swelling in Patient-Derived Intestinal Organoids: "
           "a Single-Organoid Re-Analysis with a Biophysical Swelling Twin",
-          "MEGA-PROGRAM-27, Item 3 - Udita Phookan (program owner); computational work by an AI research agent. Draft of 25 September 2026.")
+          "MEGA-PROGRAM-27, Item 3 - Udita Phookan (program owner); computational work by an AI research agent. Working draft of 25 September 2026.")
 P.h("Abstract")
 P.p("The forskolin-induced swelling (FIS) assay on patient-derived intestinal organoids is used to predict which people with cystic fibrosis "
     "(CF) respond to CFTR modulators. Standard pipelines sum organoid area per well, so any dependence of the response on organoid size is "
@@ -305,6 +305,55 @@ P.p(f"Pre-registered population-constraint and coding-composition checks were ne
 P.p("Synthesis. Organoid deficits are reproducible to a reference swap and linked to organ-disease targets in aggregate, but the "
     "metabolic-parenchyma gap lacks liver specificity and the kidney finding fails external replication. It remains a falsifiable "
     "candidate, not a new discovery or a validated diagnostic tool.")
+P.h("4.13 Independent protein and pathway annotation, single-cell challenge, and prior art", 2)
+WP = json.load(open("results/deficit_wikipathways.json"))
+P.p(f"Independent pathway annotation (WikiPathways 2026-09-10, NCBI Gene mapping). A pre-registered fixed-name filter "
+    f"selected {WP['n_selected_pathways']} pathways containing 'bile acid', 'fatty acid', 'drug metabolism' or 'xenobiotic metabolism'. "
+    f"Their union intersects {WP['per_organ']['Liver']['n_union']}/100 liver versus "
+    f"{WP['per_organ']['Brain - Cortex']['n_union']}/100 brain top deficits "
+    f"(Fisher OR={WP['H1']['odds_ratio']:.2f}, p={WP['H1']['p_one_sided']:.4f}; test passes). "
+    "This supports the liver top-deficit pathway label in a second resource, not causation or organoid specificity; "
+    "the comparison follows earlier exploratory results (results/deficit_wikipathways.json).")
+HMS = json.load(open("results/deficit_hpa_ms.json"))
+P.p(f"Adult-tissue protein check (HPA v25.1 mass spectrometry). Liver protein is detected in "
+    f"{HMS['per_organ']['Liver']['n_liver_detected']}/100 liver versus "
+    f"{HMS['per_organ']['Brain - Cortex']['n_liver_detected']}/100 brain top deficits "
+    f"(Fisher OR={HMS['H1']['odds_ratio']:.2f}, p={HMS['H1']['p_one_sided']:.1e}; pre-registered H1 passes). "
+    "Only 26 liver and 22 brain list proteins have measured intensity in both adult liver and cortex, "
+    "below the registered 50-per-list minimum, so the quantitative H2 is uninterpretable. "
+    "There is no organoid proteome in this check (results/deficit_hpa_ms.json).")
+SC = json.load(open("results/sc_kidney_markers.json"))
+P.p(f"Single-cell challenge on an independent public human kidney-organoid accession, GSE108291. Scanpy sparse QC retains "
+    f"{SC['runs']['org']['n_qc']:,} cells in the main run and {SC['runs']['org4']['n_qc']:,} in a second run; "
+    f"no cell coexpresses ALDOB and SLC17A3 (zero in both). The registered 1% two-marker H1 fails; the "
+    "<20% H2 passes. This does not show that proximal-tubule cells are absent, because sparse single-cell dropout and "
+    "developmental state remain untested. QC thresholds were set after registration but before looking at marker coexpression; "
+    "both runs count as one accession (results/sc_kidney_markers.json).")
+OLS = json.load(open("results/ols_anatomy_audit.json"))
+P.p(f"Ontology audit (EBI OLS4) distinguishes kidney cortex UBERON:0001225 from kidney UBERON:0002113, "
+    "and cholangiocyte CL:1000488 from hepatocyte CL:0000182. This is a label check only, not proof of "
+    "anatomical hierarchy or expression similarity; the exact 'proximal tubule cell' query was unresolved "
+    "(results/ols_anatomy_audit.json).")
+HPO = json.load(open("results/deficit_hpo.json"))
+P.p(f"HPO direct gene-phenotype annotation could not test liver-vs-brain metabolic phenotype enrichment: "
+    f"only {HPO['per_organ']['Liver']['n_any_hpo']}/100 liver and "
+    f"{HPO['per_organ']['Brain - Cortex']['n_any_hpo']}/100 brain deficits have any HPO annotation, "
+    "below the pre-registered 50/list coverage floor. No clinical inference from the missing annotations "
+    "(results/deficit_hpo.json).")
+P.p("InterPro domain audit is invalid as a top-deficit comparison. Its registered six liver pharmacogenes "
+    "were incorrectly called top-100 deficits: only CYP2D6 actually is one. The protein-domain annotations "
+    "remain correct, but the primary contrast cannot be scored (results/deficit_interpro.json).")
+EP = json.load(open("results/epmc_priorart.json"))
+P.p(f"A fixed three-query Europe PMC title/abstract search returned {EP['n_unique_returned']} distinct records. "
+    "None explicitly reported human intestinal CF organoid starting-size moderation of modulator-induced FIS "
+    "in its abstract, but absence in a narrow search does not establish novelty. Related work links nasal "
+    "organoid lumen to baseline CFTR function and pig pancreatic organoid size to absent lumen "
+    "(results/epmc_priorart_review.md).")
+P.p("Synthesis. The liver top-deficit list has independent pathway and adult-tissue protein support, "
+    "while no new organoid proteome, matched tissue, perturbation, or clinical outcomes validate its effect on fidelity. "
+    "The kidney external profiles recover their tissue despite the strict single-cell marker test failing. "
+    "The candidate remains unproven; do not offer the tool as diagnosis.")
+
 P.h("5. Negative results (kept by design)")
 for t in ["The initial power-law (alpha > 1) interpretation was withdrawn after large-organoid checks contradicted it.",
           "Size-adjusted and size-filtered readouts do not improve donor-level modulator discrimination.",
@@ -321,6 +370,9 @@ for t in ["The initial power-law (alpha > 1) interpretation was withdrawn after 
           "decoupler: lineage master-TF positive control fails (2/12); pathway signals are shared across cultures.",
           "ClinPGx: pre-registered VIP flag is defective; CPIC-only deviation passes liver deficit but fails liver specificity.",
           "gnomAD and Ensembl: no liver-vs-brain differentiation by LOEUF or protein-coding composition.",
+          "Single-cell GSE108291: no ALDOB/SLC17A3 coexpression under the registered two-marker definition; dropout is an alternative.",
+          "HPO: too few annotated genes for the registered clinical phenotype contrast.",
+          "InterPro: primary contrast invalid due to mistaken liver top-100 gene-set membership.",
           "Fidelity: the culture-fibroblast attractor is RETRACTED as a general organoid property: on 45 series whose samples are all organoids it shrinks to 9-29% of series (Section 4.9)."]:
     P.p("- " + t)
 P.h("6. Discussion")
@@ -352,6 +404,13 @@ for r in ["Lefferts JW, et al. OrgaSegment: deep-learning based organoid segment
           "ClinPGx / PharmGKB. https://www.clinpgx.org/",
           "Karczewski KJ, et al. The mutational constraint spectrum quantified from variation in 141,456 humans. Nature 2020. https://gnomad.broadinstitute.org/help/constraint",
           "Ensembl REST API. https://rest.ensembl.org/documentation/info/lookup_post",
+          "WikiPathways monthly releases. https://data.wikipathways.org/20260910/gmt/",
+          "Human Protein Atlas protein mass-spectrometry normal tissue download. https://www.proteinatlas.org/humanproteome/tissue/data",
+          "Human Phenotype Ontology gene-to-phenotype annotation. https://obophenotype.github.io/human-phenotype-ontology/annotations/genes_to_phenotype/",
+          "EBI Ontology Lookup Service 4. https://www.ebi.ac.uk/ols4/api-docs",
+          "Human Cell Atlas GSE108291 kidney organoid single-cell project. https://explore.data.humancellatlas.org/projects/7b947aa2-43a7-4082-afff-222a3e3a4635",
+          "InterPro API. https://interpro-documentation.readthedocs.io/en/latest/api.html",
+          "Europe PMC RESTful Web Service. https://europepmc.org/RestfulWebService",
           "Kuleshov MV, et al. Enrichr: a comprehensive gene set enrichment analysis web server 2016 update. Nucleic Acids Res 2016.",
           "Milacic M, et al. The Reactome Pathway Knowledgebase 2024. Nucleic Acids Res 2024.",
           "Gumienny R. GEOparse: Python library to access Gene Expression Omnibus. https://github.com/guma44/GEOparse",
