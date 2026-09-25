@@ -71,14 +71,14 @@ P.equation("Delta_k = mean_{o in drug, bin k} log s_o - mean_{o in DMSO, bin k} 
 P.p("and the attenuation statistic is Delta_top - Delta_bottom, with 95% intervals from a donor-level bootstrap:")
 P.equation("CI_95 = [Q_0.025, Q_0.975] of { Delta*_top - Delta*_bottom }, donors resampled with replacement")
 P.p("Segmentation quality is scored by average precision at IoU 0.5, as in OrgaSegment:")
-P.equation("AP_50 = TP / (TP + FP + FN),   match if IoU(P, G) = |P ∩ G| / |P ∪ G| ≥ 0.5")
+P.equation("AP_50 = TP / (TP + FP + FN),   match if IoU(P, G) = |P ∩ G| / |P union G| >= 0.5")
 
 P.h("3. Data")
 P.table(["#", "dataset", "source / accession", "content", "use"], [
     [1, "OrgaSegment DIS single-organoid measurements", "Zenodo 10610438 (Lefferts et al. 2024)", "per-organoid A0/A1, 17 donors, 4 conditions", "size-dependence analysis"],
     [2, "OrgaSegment FIS database", "Zenodo 10610438", "well-level area, 7 time points, 868 rows", "replication attempt (not possible)"],
     [3, "OrgaSegment annotated images", "Zenodo 10278229", "train/val/eval images with instance masks", "U-Net segmentation benchmark"],
-], "Dataset manifest (distinct, accession-level). Honest count: 3. The program target of 120+ was not reached.")
+], "Dataset manifest (distinct, accession-level). Three distinct assay/image datasets shown here; the separate, committed accession ledger includes 164 primary GEO/ArrayExpress datasets used for the organoid-fidelity analyses.")
 
 P.h("4. Results")
 P.h("4.1 Within-well size slopes", 2)

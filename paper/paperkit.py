@@ -68,4 +68,13 @@ class Paper:
         self.doc.add_page_break()
 
     def save(self, path: str):
+        # Table styles and equation italics can inherit substitution faces even when
+        # Normal says Times New Roman. Pin every authored text run to the exact face.
+        paragraphs = list(self.doc.paragraphs)
+        for table in self.doc.tables:
+            paragraphs.extend(p for row in table.rows for cell in row.cells for p in cell.paragraphs)
+        for paragraph in paragraphs:
+            for run in paragraph.runs:
+                run.font.name = "Times New Roman"
+                run._element.get_or_add_rPr().rFonts.set(qn("w:eastAsia"), "Times New Roman")
         self.doc.save(path)
