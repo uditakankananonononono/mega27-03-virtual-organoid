@@ -1,0 +1,494 @@
+{
+  "source": "https://github.com/hmbotelho/FIS_image_analysis",
+  "preregistration": "results/preregistration_fis_external.md (commit bdc3fcb)",
+  "paths": [
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0001--fsk--0.008/P001--fsk--0.008/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0002--fsk--5/P001--fsk--5/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0007--fsk_770_809--0.008/P001--fsk_770_809--0.008/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0008--fsk_770_809--5/P001--fsk_770_809--5/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0013--fsk--0.008/P001--fsk--0.008/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0014--fsk--5/P001--fsk--5/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0019--fsk_770_809--0.008/P001--fsk_770_809--0.008/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0020--fsk_770_809--5/P001--fsk_770_809--5/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0025--fsk--0.02/P001--fsk--0.02/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0026--fsk--2/P001--fsk--2/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0031--fsk_770_809--0.02/P001--fsk_770_809--0.02/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0032--fsk_770_809--2/P001--fsk_770_809--2/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0037--fsk--0.02/P001--fsk--0.02/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0038--fsk--2/P001--fsk--2/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0043--fsk_770_809--0.02/P001--fsk_770_809--0.02/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0044--fsk_770_809--2/P001--fsk_770_809--2/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0049--fsk--0.05/P001--fsk--0.05/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0050--fsk--0.8/P001--fsk--0.8/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0055--fsk_770_809--0.05/P001--fsk_770_809--0.05/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0056--fsk_770_809--0.8/P001--fsk_770_809--0.8/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0061--fsk--0.05/P001--fsk--0.05/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0062--fsk--0.8/P001--fsk--0.8/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0067--fsk_770_809--0.05/P001--fsk_770_809--0.05/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0068--fsk_770_809--0.8/P001--fsk_770_809--0.8/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0073--fsk--0.128/P001--fsk--0.128/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0074--fsk--0.32/P001--fsk--0.32/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0079--fsk_770_809--0.128/P001--fsk_770_809--0.128/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0080--fsk_770_809--0.32/P001--fsk_770_809--0.32/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0085--fsk--0.128/P001--fsk--0.128/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0086--fsk--0.32/P001--fsk--0.32/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0091--fsk_770_809--0.128/P001--fsk_770_809--0.128/objects.csv",
+    "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0092--fsk_770_809--0.32/P001--fsk_770_809--0.32/objects.csv"
+  ],
+  "source_audit": [
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0001--fsk--0.008/P001--fsk--0.008/objects.csv",
+      "rows": 392,
+      "candidate_rows": 109,
+      "duplicate_track_time_rows": 6
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0002--fsk--5/P001--fsk--5/objects.csv",
+      "rows": 458,
+      "candidate_rows": 124,
+      "duplicate_track_time_rows": 4
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0007--fsk_770_809--0.008/P001--fsk_770_809--0.008/objects.csv",
+      "rows": 415,
+      "candidate_rows": 116,
+      "duplicate_track_time_rows": 4
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0008--fsk_770_809--5/P001--fsk_770_809--5/objects.csv",
+      "rows": 364,
+      "candidate_rows": 101,
+      "duplicate_track_time_rows": 9
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0013--fsk--0.008/P001--fsk--0.008/objects.csv",
+      "rows": 490,
+      "candidate_rows": 136,
+      "duplicate_track_time_rows": 8
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0014--fsk--5/P001--fsk--5/objects.csv",
+      "rows": 465,
+      "candidate_rows": 128,
+      "duplicate_track_time_rows": 4
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0019--fsk_770_809--0.008/P001--fsk_770_809--0.008/objects.csv",
+      "rows": 522,
+      "candidate_rows": 144,
+      "duplicate_track_time_rows": 4
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0020--fsk_770_809--5/P001--fsk_770_809--5/objects.csv",
+      "rows": 438,
+      "candidate_rows": 116,
+      "duplicate_track_time_rows": 7
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0025--fsk--0.02/P001--fsk--0.02/objects.csv",
+      "rows": 578,
+      "candidate_rows": 159,
+      "duplicate_track_time_rows": 6
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0026--fsk--2/P001--fsk--2/objects.csv",
+      "rows": 432,
+      "candidate_rows": 119,
+      "duplicate_track_time_rows": 2
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0031--fsk_770_809--0.02/P001--fsk_770_809--0.02/objects.csv",
+      "rows": 234,
+      "candidate_rows": 66,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0032--fsk_770_809--2/P001--fsk_770_809--2/objects.csv",
+      "rows": 647,
+      "candidate_rows": 170,
+      "duplicate_track_time_rows": 20
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0037--fsk--0.02/P001--fsk--0.02/objects.csv",
+      "rows": 594,
+      "candidate_rows": 165,
+      "duplicate_track_time_rows": 6
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0038--fsk--2/P001--fsk--2/objects.csv",
+      "rows": 447,
+      "candidate_rows": 124,
+      "duplicate_track_time_rows": 3
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0043--fsk_770_809--0.02/P001--fsk_770_809--0.02/objects.csv",
+      "rows": 504,
+      "candidate_rows": 139,
+      "duplicate_track_time_rows": 8
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0044--fsk_770_809--2/P001--fsk_770_809--2/objects.csv",
+      "rows": 485,
+      "candidate_rows": 130,
+      "duplicate_track_time_rows": 8
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0049--fsk--0.05/P001--fsk--0.05/objects.csv",
+      "rows": 489,
+      "candidate_rows": 130,
+      "duplicate_track_time_rows": 4
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0050--fsk--0.8/P001--fsk--0.8/objects.csv",
+      "rows": 483,
+      "candidate_rows": 134,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0055--fsk_770_809--0.05/P001--fsk_770_809--0.05/objects.csv",
+      "rows": 301,
+      "candidate_rows": 84,
+      "duplicate_track_time_rows": 4
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0056--fsk_770_809--0.8/P001--fsk_770_809--0.8/objects.csv",
+      "rows": 485,
+      "candidate_rows": 135,
+      "duplicate_track_time_rows": 10
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0061--fsk--0.05/P001--fsk--0.05/objects.csv",
+      "rows": 425,
+      "candidate_rows": 117,
+      "duplicate_track_time_rows": 6
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0062--fsk--0.8/P001--fsk--0.8/objects.csv",
+      "rows": 491,
+      "candidate_rows": 131,
+      "duplicate_track_time_rows": 6
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0067--fsk_770_809--0.05/P001--fsk_770_809--0.05/objects.csv",
+      "rows": 626,
+      "candidate_rows": 166,
+      "duplicate_track_time_rows": 4
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0068--fsk_770_809--0.8/P001--fsk_770_809--0.8/objects.csv",
+      "rows": 485,
+      "candidate_rows": 125,
+      "duplicate_track_time_rows": 14
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0073--fsk--0.128/P001--fsk--0.128/objects.csv",
+      "rows": 556,
+      "candidate_rows": 156,
+      "duplicate_track_time_rows": 8
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0074--fsk--0.32/P001--fsk--0.32/objects.csv",
+      "rows": 494,
+      "candidate_rows": 138,
+      "duplicate_track_time_rows": 8
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0079--fsk_770_809--0.128/P001--fsk_770_809--0.128/objects.csv",
+      "rows": 505,
+      "candidate_rows": 136,
+      "duplicate_track_time_rows": 16
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0080--fsk_770_809--0.32/P001--fsk_770_809--0.32/objects.csv",
+      "rows": 557,
+      "candidate_rows": 155,
+      "duplicate_track_time_rows": 16
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0085--fsk--0.128/P001--fsk--0.128/objects.csv",
+      "rows": 527,
+      "candidate_rows": 148,
+      "duplicate_track_time_rows": 4
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0086--fsk--0.32/P001--fsk--0.32/objects.csv",
+      "rows": 361,
+      "candidate_rows": 100,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0091--fsk_770_809--0.128/P001--fsk_770_809--0.128/objects.csv",
+      "rows": 561,
+      "candidate_rows": 158,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0092--fsk_770_809--0.32/P001--fsk_770_809--0.32/objects.csv",
+      "rows": 527,
+      "candidate_rows": 145,
+      "duplicate_track_time_rows": 6
+    }
+  ],
+  "n_tracked_pairs": 1950,
+  "quartile_cutoffs_area_micronsq": {
+    "small_lte": 2042.626642,
+    "large_gte": 6700.811789
+  },
+  "doses": [
+    {
+      "dose_uM": 0.008,
+      "eligible": true,
+      "effect_log": -0.022867873574243677,
+      "cells": {
+        "fsk:small": {
+          "tracks": 21,
+          "wells": 2,
+          "mean_log_swelling": 0.05851200815180238
+        },
+        "fsk:large": {
+          "tracks": 24,
+          "wells": 2,
+          "mean_log_swelling": -0.005020282362208413
+        },
+        "fsk_770_809:small": {
+          "tracks": 25,
+          "wells": 2,
+          "mean_log_swelling": 0.09749016740788993
+        },
+        "fsk_770_809:large": {
+          "tracks": 37,
+          "wells": 2,
+          "mean_log_swelling": 0.011090003319635462
+        }
+      },
+      "n_wells": {
+        "fsk": 2,
+        "fsk_770_809": 2
+      }
+    },
+    {
+      "dose_uM": 0.02,
+      "eligible": true,
+      "effect_log": 0.009462096980131757,
+      "cells": {
+        "fsk:small": {
+          "tracks": 34,
+          "wells": 2,
+          "mean_log_swelling": 0.06998856946185525
+        },
+        "fsk:large": {
+          "tracks": 38,
+          "wells": 2,
+          "mean_log_swelling": 0.01058712116162427
+        },
+        "fsk_770_809:small": {
+          "tracks": 30,
+          "wells": 2,
+          "mean_log_swelling": 0.08668402860318426
+        },
+        "fsk_770_809:large": {
+          "tracks": 19,
+          "wells": 2,
+          "mean_log_swelling": 0.03674467728308504
+        }
+      },
+      "n_wells": {
+        "fsk": 2,
+        "fsk_770_809": 2
+      }
+    },
+    {
+      "dose_uM": 0.05,
+      "eligible": true,
+      "effect_log": 0.046916765926583746,
+      "cells": {
+        "fsk:small": {
+          "tracks": 24,
+          "wells": 2,
+          "mean_log_swelling": 0.07463151325761933
+        },
+        "fsk:large": {
+          "tracks": 34,
+          "wells": 2,
+          "mean_log_swelling": -0.0017935797721787057
+        },
+        "fsk_770_809:small": {
+          "tracks": 22,
+          "wells": 2,
+          "mean_log_swelling": 0.08828259780422373
+        },
+        "fsk_770_809:large": {
+          "tracks": 30,
+          "wells": 2,
+          "mean_log_swelling": 0.05877427070100945
+        }
+      },
+      "n_wells": {
+        "fsk": 2,
+        "fsk_770_809": 2
+      }
+    },
+    {
+      "dose_uM": 0.128,
+      "eligible": true,
+      "effect_log": 0.08071322680565836,
+      "cells": {
+        "fsk:small": {
+          "tracks": 44,
+          "wells": 2,
+          "mean_log_swelling": 0.028626242962872018
+        },
+        "fsk:large": {
+          "tracks": 35,
+          "wells": 2,
+          "mean_log_swelling": -0.004422206537732428
+        },
+        "fsk_770_809:small": {
+          "tracks": 45,
+          "wells": 2,
+          "mean_log_swelling": 0.11896564345638058
+        },
+        "fsk_770_809:large": {
+          "tracks": 32,
+          "wells": 2,
+          "mean_log_swelling": 0.1666304207614345
+        }
+      },
+      "n_wells": {
+        "fsk": 2,
+        "fsk_770_809": 2
+      }
+    },
+    {
+      "dose_uM": 0.32,
+      "eligible": true,
+      "effect_log": 0.16898970059072493,
+      "cells": {
+        "fsk:small": {
+          "tracks": 39,
+          "wells": 2,
+          "mean_log_swelling": 0.016979979216202715
+        },
+        "fsk:large": {
+          "tracks": 29,
+          "wells": 2,
+          "mean_log_swelling": 0.025419366900153933
+        },
+        "fsk_770_809:small": {
+          "tracks": 42,
+          "wells": 2,
+          "mean_log_swelling": 0.18704807812972257
+        },
+        "fsk_770_809:large": {
+          "tracks": 33,
+          "wells": 2,
+          "mean_log_swelling": 0.36447716640439876
+        }
+      },
+      "n_wells": {
+        "fsk": 2,
+        "fsk_770_809": 2
+      }
+    },
+    {
+      "dose_uM": 0.8,
+      "eligible": true,
+      "effect_log": 0.2215018639739536,
+      "cells": {
+        "fsk:small": {
+          "tracks": 30,
+          "wells": 2,
+          "mean_log_swelling": 0.02642309667335249
+        },
+        "fsk:large": {
+          "tracks": 36,
+          "wells": 2,
+          "mean_log_swelling": 0.027941815703800627
+        },
+        "fsk_770_809:small": {
+          "tracks": 30,
+          "wells": 2,
+          "mean_log_swelling": 0.2945008789575645
+        },
+        "fsk_770_809:large": {
+          "tracks": 24,
+          "wells": 2,
+          "mean_log_swelling": 0.5175214619619662
+        }
+      },
+      "n_wells": {
+        "fsk": 2,
+        "fsk_770_809": 2
+      }
+    },
+    {
+      "dose_uM": 2.0,
+      "eligible": true,
+      "effect_log": 0.38108966249232373,
+      "cells": {
+        "fsk:small": {
+          "tracks": 26,
+          "wells": 2,
+          "mean_log_swelling": 0.06168382682258815
+        },
+        "fsk:large": {
+          "tracks": 26,
+          "wells": 2,
+          "mean_log_swelling": 0.02454538407039036
+        },
+        "fsk_770_809:small": {
+          "tracks": 33,
+          "wells": 2,
+          "mean_log_swelling": 0.21521290341204402
+        },
+        "fsk_770_809:large": {
+          "tracks": 33,
+          "wells": 2,
+          "mean_log_swelling": 0.5591641231521699
+        }
+      },
+      "n_wells": {
+        "fsk": 2,
+        "fsk_770_809": 2
+      }
+    },
+    {
+      "dose_uM": 5.0,
+      "eligible": true,
+      "effect_log": 0.25543666233797274,
+      "cells": {
+        "fsk:small": {
+          "tracks": 21,
+          "wells": 2,
+          "mean_log_swelling": 0.05728767047600137
+        },
+        "fsk:large": {
+          "tracks": 38,
+          "wells": 2,
+          "mean_log_swelling": 0.026215319091025507
+        },
+        "fsk_770_809:small": {
+          "tracks": 24,
+          "wells": 2,
+          "mean_log_swelling": 0.35558156072447894
+        },
+        "fsk_770_809:large": {
+          "tracks": 22,
+          "wells": 2,
+          "mean_log_swelling": 0.5799458716774758
+        }
+      },
+      "n_wells": {
+        "fsk": 2,
+        "fsk_770_809": 2
+      }
+    }
+  ],
+  "n_eligible_doses": 8,
+  "n_positive_doses": 7,
+  "median_dose_effect": 0.12485146369819164,
+  "sign_p_one_sided": 0.03515625,
+  "H1": {
+    "verdict": "PASS"
+  }
+}
