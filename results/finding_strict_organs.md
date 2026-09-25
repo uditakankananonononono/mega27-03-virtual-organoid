@@ -41,3 +41,8 @@ Top-500 Open Targets targets per organ disorder (MONDO liver/kidney/lung/brain/c
 - Pre-registered primary: diagonal dominance D = 2.6 (null mean -0.01), permutation p = 0.0005 -> PASS. Organoid deficits are organ-specifically disease-relevant as a set.
 - Per organ (Fisher, own vs other lists): lung OR 4.5 p=0.017; colon OR 4.5 p=0.017; kidney OR 2.0 p=0.13; brain p=0.45; liver OR 1.0 p=0.62.
 - Negative for the metabolic-parenchyma idea: liver, the core metabolic organ, shows no own-disease enrichment (2/100 hits). The pass is driven by lung and colon. Counts are small (2-8 hits per cell).
+
+## decoupler TF / pathway activity (pre-registered a72ccc4; src/deficit_decoupler.py, results/deficit_decoupler*.{json,csv})
+decoupler 2.1.4 ulm with CollecTRI (TFs) and PROGENy top-500 (pathways) from OmniPath, on per-organ deficit vectors (4,261 genes shared across all strict series).
+- Pre-registered positive control FAILED: only 2/12 organ master TFs in the top 10% of deficient TFs (binomial p=0.34). Liver CEBPA (rank 6/397) and HNF1A (24) are deficient; colon CDX1/CDX2, lung NKX2-1/FOXA2, kidney PAX8/HNF4A are not. Brain master TFs are not covered on the shared gene set.
+- Exploratory (not pre-registered): every organ shows the same PROGENy pattern - PI3K higher in organoids than tissue (score -4.8 to -8.7) and JAK-STAT/p53 lower in organoids (+2.7 to +5.8). This is a shared culture signature, which fits the non-specific GSEA result, not an organ-specific gap.

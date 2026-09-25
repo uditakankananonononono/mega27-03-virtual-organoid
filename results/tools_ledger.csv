@@ -27,3 +27,5 @@ UniProt REST (UniProtKB reviewed human),database,src/strict_deficit_uniprot.py,T
 EBI BioStudies / ArrayExpress API + FTP,database,src/ae_scan.py; src/ae_replication.py,True,out-of-sample organoid expression datasets for pre-registered test
 GSEApy prerank (v1.3.1),library,src/strict_gsea.py,True,Hallmark GSEA of organoid deficit rankings
 Open Targets Platform GraphQL API (v26.9),database/service,src/deficit_opentargets.py,True,top-500 disease-associated targets for 5 MONDO organ disorders; pre-registered test a73bd26
+decoupler 2.1.4 (ulm),library,src/deficit_decoupler.py,True,TF and pathway activity inference on deficit vectors; pre-registered a72ccc4
+OmniPath (CollecTRI TF regulons + PROGENy pathway footprints),database/service,src/deficit_decoupler.py,True,regulon/footprint resources fetched via decoupler.op

@@ -5,3 +5,5 @@ results/log_*.txt
 results/ckpt_seg*.pt
 data/geo/profiles/
 data/ae/raw/
+data/ref/collectri_human.csv
+data/ref/progeny_human_top500.csv
