@@ -37,17 +37,17 @@ Counts must be unnormalized nonnegative gene counts with library-scale columns (
 ### Image segmentation (research-grade)
 
 ```bash
-vorganoid segment path/to/brightfield.jpg --model results/unet_organoid_512.pt \
+vorganoid segment path/to/brightfield.jpg --model results/trainonly_seg/best.pt \
   --size 512 --out labels.png
 ```
 
-The 16-bit output is a label image, not a pretty preview. Use an appropriate image viewer for instance labels; the prediction is not a diagnostic. The stored model was evaluated on the original OrgaSegment eval split with mAP@0.5 = 0.733 versus the published 0.76; see `results/seg_eval_tuned_512.json` for its actual optimized-pipeline score and the paper for all caveats. The model may not generalize to other microscopes.
+The 16-bit output is a label image, not a pretty preview. Use an appropriate image viewer for instance labels; the prediction is not a diagnostic. The separately selected clean train-only checkpoint reached AP50 = 0.738672 with the original published scorer on the held-out OrgaSegment eval split, below the published mean 0.76; see `results/trainonly_seg/finding.md` and `results/trainonly_seg/sealed_eval.json`. The CLI uses its default postprocessing, not the validation-selected three-view grid, so the CLI output itself has not been benchmarked at 0.738672. The model may not generalize to other microscopes.
 
 ## Evidence, negatives and provenance
 
 - `paper/mega27-03-virtual-organoid-paper.pdf`: working paper with embedded Times New Roman, equations and figures.
 - `results/finding_size_dependent_swelling.md`, `results/finding_blocked_size.md`, and `results/finding_strict_organs.md`: positive, negative and inconclusive analyses.
-- `results/external_fis_source_audit.md`: why three published external datasets cannot yet replicate the modulator-specific size finding.
+- `results/external_fis_source_audit.md`: why examined public external datasets cannot yet provide multi-donor single-object replication the modulator-specific size finding.
 - `results/datasets_ledger.csv`: accession-level source list. GEO and ArrayExpress entries count once per accession; the two single-cell runs of GSE108291 count once.
 - `results/tools_ledger.csv`: tools actually used, with infrastructure excluded from the research-tool gate.
 - `results/preregistration_*.md`: tests fixed before new data queries where possible, with deviations disclosed.
