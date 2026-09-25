@@ -383,5 +383,40 @@
     "val_loss": 0.07608789993183954,
     "best_val_loss": 0.07575143320219857,
     "seconds": 71.1
+  },
+  {
+    "epoch": 56,
+    "train_loss_sum": 6.753766963258386,
+    "val_loss": null,
+    "best_val_loss": 0.07575143320219857,
+    "seconds": 52.3
+  },
+  {
+    "epoch": 57,
+    "train_loss_sum": 6.995098412036896,
+    "val_loss": null,
+    "best_val_loss": 0.07575143320219857,
+    "seconds": 54.0
+  },
+  {
+    "epoch": 58,
+    "train_loss_sum": 6.797706939280033,
+    "val_loss": null,
+    "best_val_loss": 0.07575143320219857,
+    "seconds": 50.5
+  },
+  {
+    "epoch": 59,
+    "train_loss_sum": 6.8797368090599775,
+    "val_loss": null,
+    "best_val_loss": 0.07575143320219857,
+    "seconds": 49.1
+  },
+  {
+    "epoch": 60,
+    "train_loss_sum": 7.006417740136385,
+    "val_loss": 0.07667107858828136,
+    "best_val_loss": 0.07575143320219857,
+    "seconds": 77.0
   }
 ]
