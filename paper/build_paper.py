@@ -119,6 +119,19 @@ P.p(f"We fixed the earlier small (<722 px) and large (>=1400 px) cutoffs, then s
     "dates, not independent discovery, clinical validity, or the lumen-maturation mechanism "
     "(results/withincohort_replication.json).")
 
+BL = json.load(open("results/blocked_size.json"))
+P.h("4.3b Matched plate-dose stress test: fails", 2)
+P.p(f"The stronger pre-registered stress test required >=3 organoids per Trikafta/DMSO by small/large "
+    f"cell within each donor x plate x forskolin concentration block. Only {BL['n_eligible_blocks']} "
+    f"blocks and {BL['n_eligible_donors']} donors qualify; {BL['n_positive_donors']}/"
+    f"{BL['n_eligible_donors']} donor median block effects are positive, with exact one-sided "
+    f"sign p={BL['sign_p_one_sided']:.3f}. H1 FAILS (registered alpha 0.05). "
+    f"{BL['n_excluded_donors']} donors have no eligible block. The pooled block median "
+    f"({BL['median_block_effect']:.3f}) is descriptive and not a donor-independent test. "
+    "This challenges the pooled later-date 12/12 result: dose/plate control with narrower cells alters "
+    "three donor signs. It does not show the size effect is absent, but the evidence does not establish "
+    "a new validated discovery (results/blocked_size.json).")
+
 P.h("4.4 Does size correction help theratyping? No", 2)
 P.p("Locked before running: per-donor standardised Trikafta-vs-DMSO separation with raw, size-adjusted and size-band well readouts. Median "
     "raw 4.73, adjusted 4.35, band 4.39; adjusted better in 8 of 17 donors. Excluding organoids below 1,069 px (a post-hoc threshold): median "
@@ -412,6 +425,7 @@ P.p("Synthesis. The liver top-deficit list has independent pathway and adult-tis
 P.h("5. Negative results (kept by design)")
 for t in ["The initial power-law (alpha > 1) interpretation was withdrawn after large-organoid checks contradicted it.",
           "Size-adjusted and size-filtered readouts do not improve donor-level modulator discrimination.",
+          "Matched donor x plate x dose robustness H1 fails: 9/12 positive donor medians, p=0.073, despite the pooled later-date result.",
           "Replication on the public FIS time series is impossible: it is well-level.",
           "Our segmentation is below the published state of the art.",
           "Fidelity: 'Pancreas' as best match (35/151 series with S3000) disappears with other methods, so it is a method artefact.",
