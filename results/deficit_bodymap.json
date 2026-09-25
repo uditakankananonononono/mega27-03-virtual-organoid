@@ -1,0 +1,78 @@
+{
+ "n_common_genes": 55849,
+ "per_organ": {
+  "Brain - Cortex": {
+   "n_genes": 18114,
+   "spearman": 0.610374112276624,
+   "top100_overlap": 52,
+   "hypergeom_p": 2.547552786407328e-96
+  },
+  "Colon - Transverse": {
+   "n_genes": 5572,
+   "spearman": 0.5678352072149975,
+   "top100_overlap": 61,
+   "hypergeom_p": 1.3585203701700519e-89
+  },
+  "Kidney - Cortex": {
+   "n_genes": 16732,
+   "spearman": 0.667201154972491,
+   "top100_overlap": 58,
+   "hypergeom_p": 2.020138149688864e-110
+  },
+  "Liver": {
+   "n_genes": 10400,
+   "spearman": 0.7158726479015023,
+   "top100_overlap": 75,
+   "hypergeom_p": 9.478924067988527e-146
+  },
+  "Lung": {
+   "n_genes": 13946,
+   "spearman": 0.7169702325877066,
+   "top100_overlap": 69,
+   "hypergeom_p": 8.97629733601066e-137
+  }
+ },
+ "primary_verdict": "PASS",
+ "opentargets_rerun": {
+  "M": [
+   [
+    1.0,
+    1.0,
+    0.0,
+    2.0,
+    0.0
+   ],
+   [
+    3.0,
+    8.0,
+    2.0,
+    1.0,
+    1.0
+   ],
+   [
+    4.0,
+    7.0,
+    6.0,
+    3.0,
+    5.0
+   ],
+   [
+    0.0,
+    1.0,
+    1.0,
+    3.0,
+    0.0
+   ],
+   [
+    3.0,
+    4.0,
+    6.0,
+    6.0,
+    5.0
+   ]
+  ],
+  "D": 2.0999999999999996,
+  "perm_p": 0.0025997400259974,
+  "verdict": "PASS"
+ }
+}

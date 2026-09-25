@@ -46,3 +46,9 @@ Top-500 Open Targets targets per organ disorder (MONDO liver/kidney/lung/brain/c
 decoupler 2.1.4 ulm with CollecTRI (TFs) and PROGENy top-500 (pathways) from OmniPath, on per-organ deficit vectors (4,261 genes shared across all strict series).
 - Pre-registered positive control FAILED: only 2/12 organ master TFs in the top 10% of deficient TFs (binomial p=0.34). Liver CEBPA (rank 6/397) and HNF1A (24) are deficient; colon CDX1/CDX2, lung NKX2-1/FOXA2, kidney PAX8/HNF4A are not. Brain master TFs are not covered on the shared gene set.
 - Exploratory (not pre-registered): every organ shows the same PROGENy pattern - PI3K higher in organoids than tissue (score -4.8 to -8.7) and JAK-STAT/p53 lower in organoids (+2.7 to +5.8). This is a shared culture signature, which fits the non-specific GSEA result, not an organ-specific gap.
+
+## Reference robustness: Illumina Body Map (pre-registered 3d898d6; src/deficit_bodymap.py, results/deficit_bodymap.json)
+Deficits recomputed with Expression Atlas E-MTAB-513 baseline TPMs instead of GTEx.
+- Per-organ Spearman GTEx vs Body Map deficits: liver 0.72, lung 0.72, kidney 0.67, brain 0.61, colon 0.57; top-100 overlap 52-75 (hypergeometric p < 1e-89) -> PASS in all 5.
+- Open Targets diagonal-dominance re-run with Body Map lists: D=2.1, permutation p=0.0026 -> PASS.
+Caveat: both deficit vectors share the same organoid profiles, so part of the agreement comes from the organoid side; this checks reference sensitivity only.
