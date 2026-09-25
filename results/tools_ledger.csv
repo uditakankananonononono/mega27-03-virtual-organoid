@@ -24,3 +24,4 @@ Enrichr (Hallmark/CellMarker/PanglaoDB libraries),service,src/attractor_enrichr_
 Reactome AnalysisService,service,src/attractor_enrichr_reactome.py,True,pathway over-representation of attractor genes
 STRING functional enrichment API (string-db.org),service,src/strict_organ_deficits.py,True,GO/KEGG enrichment of organoid deficit genes
 UniProt REST (UniProtKB reviewed human),database,src/strict_deficit_uniprot.py,True,signal peptide / secreted annotation of deficit genes
+EBI BioStudies / ArrayExpress API + FTP,database,src/ae_scan.py; src/ae_replication.py,True,out-of-sample organoid expression datasets for pre-registered test

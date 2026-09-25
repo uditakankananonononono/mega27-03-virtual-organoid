@@ -1,0 +1,10 @@
+{
+ "n_scored": 11,
+ "n_unfaithful": 4,
+ "n_faithful": 7,
+ "median_rank_unfaithful": 19.5,
+ "median_rank_faithful": 1.0,
+ "top1_unfaithful": 0.25,
+ "top1_faithful": 0.8571428571428571,
+ "mwu_one_sided_p": 0.031407514568578355
+}

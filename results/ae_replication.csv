@@ -1,0 +1,19 @@
+accession,organ,gtex_organ,n_genes,rank_match,best_tissue,status
+E-MTAB-9044,liver,Liver,13216.0,39.0,Stomach,ok
+E-MTAB-12822,kidney,Kidney - Cortex,55617.0,2.0,Cervix - Endocervix,ok
+E-MTAB-9807,liver,Liver,11485.0,37.0,Stomach,ok
+E-MTAB-4591,liver,,,,,no usable file
+E-MTAB-11221,intestine,Colon - Transverse,14815.0,1.0,Colon - Transverse,ok
+E-MTAB-9134,intestine,Colon - Transverse,14983.0,1.0,Colon - Transverse,ok
+E-MTAB-11297,intestine,Colon - Transverse,15296.0,1.0,Small Intestine - Terminal Ileum,ok
+E-MTAB-10876,intestine,,,,,no usable file
+E-MTAB-15659,brain,,,,,no usable file
+E-MTAB-13901,kidney,Kidney - Cortex,55598.0,1.0,Kidney - Medulla,ok
+E-MTAB-9181,intestine,,,,,no usable file
+E-MTAB-14831,intestine,,,,,no usable file
+E-MTAB-6017,intestine,Colon - Transverse,18788.0,1.0,Small Intestine - Terminal Ileum,ok
+E-MTAB-11273,intestine,,,,,no usable file
+E-MTAB-12548,intestine,,,,,no usable file
+E-MTAB-13578,intestine,Colon - Transverse,22431.0,1.0,Small Intestine - Terminal Ileum,ok
+E-MTAB-17066,brain,Brain - Cortex,55926.0,1.0,Brain - Hypothalamus,ok
+E-MTAB-10037,brain,Brain - Cortex,21767.0,26.0,Cells - Cultured fibroblasts,ok

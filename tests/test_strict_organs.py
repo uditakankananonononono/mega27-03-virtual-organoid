@@ -8,3 +8,6 @@ def test_protocol_outputs():
     d = json.load(open("results/strict_protocol.json")); assert 0 < d["cmh_organ_effect_given_derivation"]["p"] <= 1
 def test_uniprot_outputs():
     U = pd.read_csv("results/strict_deficit_uniprot.csv"); assert ((U.share >= 0) & (U.share <= 1)).all() and (U.q_bh >= U.p - 1e-12).all()
+def test_ae_replication():
+    d = json.load(open("results/ae_replication.json")); D = pd.read_csv("results/ae_replication.csv")
+    assert d["n_scored"] == int((D.status == "ok").sum()) and 0 < d["mwu_one_sided_p"] <= 1
