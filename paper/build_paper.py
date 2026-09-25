@@ -451,20 +451,24 @@ for t in ["The initial power-law (alpha > 1) interpretation was withdrawn after 
           "Fidelity: the culture-fibroblast attractor is RETRACTED as a general organoid property: on 45 series whose samples are all organoids it shrinks to 9-29% of series (Section 4.9)."]:
     P.p("- " + t)
 P.h("6. Discussion")
-P.p("Small organoids respond less to CFTR modulators, relative to DMSO, than large ones, and the response saturates above a size threshold. "
-    "Because geometry predicts the reverse, the likeliest explanations are biological: small organoids may lack a mature lumen, contain "
-    "fewer differentiated secretory cells, or have a closed tight-junction seal later. Falsifiable prediction: in time-lapse single-organoid "
-    "data from an independent lab, the Trikafta-minus-DMSO effect in the top starting-size quartile will exceed that in the bottom quartile "
-    "by at least 0.1 log units in most donors. Checking this needs a second single-organoid FIS dataset, which we did not find in public form.")
-P.p("Practical note. Well-level FIS readouts depend on the size mix. Labs comparing drug response across passages or sites should report "
-    "the starting-size distribution.")
+P.p("In this accession, drug-minus-DMSO swelling tends to rise from small to larger organoids and then plateau. "
+    "The plate-and-dose-matched donor sign test fails at alpha 0.05, so we do not establish a reliable donor-general "
+    "effect. Uniform surface-flux geometry predicts the reverse direction, but that simple model is not a full "
+    "measurement-bias test. Lumen maturity and cell composition are hypotheses, not measured explanations. "
+    "Falsifiable prediction: in an independent, matched, time-lapse single-organoid intestinal FIS cohort, with "
+    "size thresholds locked before analysis, a donor-level modulator-minus-DMSO large-minus-small effect will "
+    "be positive in most donors, with a sign-test p<0.05. This needs a second suitable dataset and mechanistic "
+    "measurements; the public leads audited here do not supply those controls.")
+P.p("Practical note. In this dataset, starting size may affect single-organoid readouts, but size correction did not "
+    "improve per-donor discrimination. A lab comparing assays across passages may record its starting-size "
+    "distribution as a quality-control variable; no clinical adjustment is recommended from these data.")
 P.p("Novelty. We did not find this effect reported for intestinal FIS in the literature we searched (OrgaSegment; the FIS_analysis pipeline, "
     "which sums area per well). Related: nasal 2D-derived organoids show swelling variation concentrated in large structures "
     "(bioRxiv 2021.07.20.453105). This was not a systematic review.")
 P.h("7. Tools used")
 TL = pd.read_csv("results/tools_ledger.csv")
 TL["gate"] = TL.counts_for_gate.astype(str).map({"True": "counts", "False": "infra (excluded)"})
-P.table(["tool", "kind", "where used", "gate"], TL[["tool", "kind", "where_used", "gate"]].values.tolist(), f"Tools genuinely used (results/tools_ledger.csv): {len(TL)} entries, {int((TL.gate == 'counts').sum())} counting toward the gate after excluding infrastructure. Target of 40 not reached.")
+P.table(["tool", "kind", "where used", "gate"], TL[["tool", "kind", "where_used", "gate"]].values.tolist(), f"Tools genuinely used (results/tools_ledger.csv): {len(TL)} entries, {int((TL.gate == 'counts').sum())} counting toward the gate after excluding infrastructure. Target of 40 reached; this counts resources genuinely used, not independent biological confirmations.")
 P.h("References")
 for r in ["Lefferts JW, et al. OrgaSegment: deep-learning based organoid segmentation to quantify CFTR dependent fluid secretion. Commun Biol 2024. https://www.nature.com/articles/s42003-024-05966-4",
           "Boj SF, Vonk AM, et al. Forskolin-induced swelling in intestinal organoids: an in vitro assay for assessing drug response in cystic fibrosis patients. J Vis Exp 2017. https://pmc.ncbi.nlm.nih.gov/articles/PMC5408767/",
