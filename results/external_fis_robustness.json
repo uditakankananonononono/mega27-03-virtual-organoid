@@ -1,0 +1,687 @@
+{
+  "source": "https://github.com/hmbotelho/FIS_image_analysis",
+  "preregistration": "results/preregistration_external_fis_robustness.md (commit bf80ddc)",
+  "size_area_micronsq": {
+    "small_lte": 2042.626642,
+    "large_gte": 6700.811789
+  },
+  "R1": {
+    "n_eligible_doses": 8,
+    "n_positive": 6,
+    "median_effect": 0.12902808194209786,
+    "well_bootstrap_ci95": [
+      0.09110435689948213,
+      0.1605807534609593
+    ],
+    "dose_effects": [
+      {
+        "dose_uM": 0.008,
+        "effect": -0.011901514676197322,
+        "well_effects": {
+          "fsk": [
+            -0.07358495340327245,
+            -0.05689067441404054
+          ],
+          "fsk_770_809": [
+            -0.04649467302602077,
+            -0.10778398414368684
+          ]
+        }
+      },
+      {
+        "dose_uM": 0.02,
+        "effect": -0.013927721837750068,
+        "well_effects": {
+          "fsk": [
+            0.017597266227394683,
+            -0.099760606628576
+          ],
+          "fsk_770_809": [
+            -0.07154205877052305,
+            -0.0384767253061584
+          ]
+        }
+      },
+      {
+        "dose_uM": 0.05,
+        "effect": 0.02818893181376623,
+        "well_effects": {
+          "fsk": [
+            -0.08815221200223787,
+            -0.05220751638481455
+          ],
+          "fsk_770_809": [
+            -0.07994105141108486,
+            -0.0040408133484350905
+          ]
+        }
+      },
+      {
+        "dose_uM": 0.128,
+        "effect": 0.0865884620733948,
+        "well_effects": {
+          "fsk": [
+            -0.0209355490242727,
+            -0.040900881548321825
+          ],
+          "fsk_770_809": [
+            0.07839502009663074,
+            0.032945473477564324
+          ]
+        }
+      },
+      {
+        "dose_uM": 0.32,
+        "effect": 0.17146770181080095,
+        "well_effects": {
+          "fsk": [
+            -0.035099430977798156,
+            0.051171628993854655
+          ],
+          "fsk_770_809": [
+            0.15953398776693276,
+            0.19947361387072565
+          ]
+        }
+      },
+      {
+        "dose_uM": 0.8,
+        "effect": 0.26295059621118033,
+        "well_effects": {
+          "fsk": [
+            0.06657907010938616,
+            -0.08238460742373878
+          ],
+          "fsk_770_809": [
+            0.33432550439770486,
+            0.17577015071030322
+          ]
+        }
+      },
+      {
+        "dose_uM": 2.0,
+        "effect": 0.39562892329604626,
+        "well_effects": {
+          "fsk": [
+            -0.08362363719553689,
+            0.00034957479032610844
+          ],
+          "fsk_770_809": [
+            0.40926592288141295,
+            0.29871786130546885
+          ]
+        }
+      },
+      {
+        "dose_uM": 5.0,
+        "effect": 0.2564504803141813,
+        "well_effects": {
+          "fsk": [
+            -0.04171598512351077,
+            -0.02742788801006368
+          ],
+          "fsk_770_809": [
+            0.22423075418362415,
+            0.219526333311164
+          ]
+        }
+      }
+    ],
+    "well_rows": [
+      {
+        "dose_uM": 0.008,
+        "condition": "fsk",
+        "well": "0001",
+        "size_counts": {
+          "small": 9,
+          "large": 14
+        },
+        "large_minus_small": -0.07358495340327245
+      },
+      {
+        "dose_uM": 0.008,
+        "condition": "fsk",
+        "well": "0013",
+        "size_counts": {
+          "small": 12,
+          "large": 10
+        },
+        "large_minus_small": -0.05689067441404054
+      },
+      {
+        "dose_uM": 0.008,
+        "condition": "fsk_770_809",
+        "well": "0007",
+        "size_counts": {
+          "small": 9,
+          "large": 10
+        },
+        "large_minus_small": -0.04649467302602077
+      },
+      {
+        "dose_uM": 0.008,
+        "condition": "fsk_770_809",
+        "well": "0019",
+        "size_counts": {
+          "small": 16,
+          "large": 27
+        },
+        "large_minus_small": -0.10778398414368684
+      },
+      {
+        "dose_uM": 0.02,
+        "condition": "fsk",
+        "well": "0025",
+        "size_counts": {
+          "small": 13,
+          "large": 24
+        },
+        "large_minus_small": 0.017597266227394683
+      },
+      {
+        "dose_uM": 0.02,
+        "condition": "fsk",
+        "well": "0037",
+        "size_counts": {
+          "small": 21,
+          "large": 14
+        },
+        "large_minus_small": -0.099760606628576
+      },
+      {
+        "dose_uM": 0.02,
+        "condition": "fsk_770_809",
+        "well": "0031",
+        "size_counts": {
+          "small": 15,
+          "large": 7
+        },
+        "large_minus_small": -0.07154205877052305
+      },
+      {
+        "dose_uM": 0.02,
+        "condition": "fsk_770_809",
+        "well": "0043",
+        "size_counts": {
+          "small": 15,
+          "large": 12
+        },
+        "large_minus_small": -0.0384767253061584
+      },
+      {
+        "dose_uM": 0.05,
+        "condition": "fsk",
+        "well": "0049",
+        "size_counts": {
+          "small": 14,
+          "large": 14
+        },
+        "large_minus_small": -0.08815221200223787
+      },
+      {
+        "dose_uM": 0.05,
+        "condition": "fsk",
+        "well": "0061",
+        "size_counts": {
+          "small": 10,
+          "large": 20
+        },
+        "large_minus_small": -0.05220751638481455
+      },
+      {
+        "dose_uM": 0.05,
+        "condition": "fsk_770_809",
+        "well": "0055",
+        "size_counts": {
+          "small": 8,
+          "large": 10
+        },
+        "large_minus_small": -0.07994105141108486
+      },
+      {
+        "dose_uM": 0.05,
+        "condition": "fsk_770_809",
+        "well": "0067",
+        "size_counts": {
+          "small": 14,
+          "large": 20
+        },
+        "large_minus_small": -0.0040408133484350905
+      },
+      {
+        "dose_uM": 0.128,
+        "condition": "fsk",
+        "well": "0073",
+        "size_counts": {
+          "small": 20,
+          "large": 22
+        },
+        "large_minus_small": -0.0209355490242727
+      },
+      {
+        "dose_uM": 0.128,
+        "condition": "fsk",
+        "well": "0085",
+        "size_counts": {
+          "small": 24,
+          "large": 13
+        },
+        "large_minus_small": -0.040900881548321825
+      },
+      {
+        "dose_uM": 0.128,
+        "condition": "fsk_770_809",
+        "well": "0079",
+        "size_counts": {
+          "small": 18,
+          "large": 12
+        },
+        "large_minus_small": 0.07839502009663074
+      },
+      {
+        "dose_uM": 0.128,
+        "condition": "fsk_770_809",
+        "well": "0091",
+        "size_counts": {
+          "small": 27,
+          "large": 20
+        },
+        "large_minus_small": 0.032945473477564324
+      },
+      {
+        "dose_uM": 0.32,
+        "condition": "fsk",
+        "well": "0074",
+        "size_counts": {
+          "small": 18,
+          "large": 15
+        },
+        "large_minus_small": -0.035099430977798156
+      },
+      {
+        "dose_uM": 0.32,
+        "condition": "fsk",
+        "well": "0086",
+        "size_counts": {
+          "small": 21,
+          "large": 14
+        },
+        "large_minus_small": 0.051171628993854655
+      },
+      {
+        "dose_uM": 0.32,
+        "condition": "fsk_770_809",
+        "well": "0080",
+        "size_counts": {
+          "small": 22,
+          "large": 14
+        },
+        "large_minus_small": 0.15953398776693276
+      },
+      {
+        "dose_uM": 0.32,
+        "condition": "fsk_770_809",
+        "well": "0092",
+        "size_counts": {
+          "small": 20,
+          "large": 19
+        },
+        "large_minus_small": 0.19947361387072565
+      },
+      {
+        "dose_uM": 0.8,
+        "condition": "fsk",
+        "well": "0050",
+        "size_counts": {
+          "small": 17,
+          "large": 20
+        },
+        "large_minus_small": 0.06657907010938616
+      },
+      {
+        "dose_uM": 0.8,
+        "condition": "fsk",
+        "well": "0062",
+        "size_counts": {
+          "small": 13,
+          "large": 16
+        },
+        "large_minus_small": -0.08238460742373878
+      },
+      {
+        "dose_uM": 0.8,
+        "condition": "fsk_770_809",
+        "well": "0056",
+        "size_counts": {
+          "small": 20,
+          "large": 8
+        },
+        "large_minus_small": 0.33432550439770486
+      },
+      {
+        "dose_uM": 0.8,
+        "condition": "fsk_770_809",
+        "well": "0068",
+        "size_counts": {
+          "small": 10,
+          "large": 16
+        },
+        "large_minus_small": 0.17577015071030322
+      },
+      {
+        "dose_uM": 2.0,
+        "condition": "fsk",
+        "well": "0026",
+        "size_counts": {
+          "small": 11,
+          "large": 15
+        },
+        "large_minus_small": -0.08362363719553689
+      },
+      {
+        "dose_uM": 2.0,
+        "condition": "fsk",
+        "well": "0038",
+        "size_counts": {
+          "small": 15,
+          "large": 11
+        },
+        "large_minus_small": 0.00034957479032610844
+      },
+      {
+        "dose_uM": 2.0,
+        "condition": "fsk_770_809",
+        "well": "0032",
+        "size_counts": {
+          "small": 20,
+          "large": 15
+        },
+        "large_minus_small": 0.40926592288141295
+      },
+      {
+        "dose_uM": 2.0,
+        "condition": "fsk_770_809",
+        "well": "0044",
+        "size_counts": {
+          "small": 13,
+          "large": 18
+        },
+        "large_minus_small": 0.29871786130546885
+      },
+      {
+        "dose_uM": 5.0,
+        "condition": "fsk",
+        "well": "0002",
+        "size_counts": {
+          "small": 9,
+          "large": 20
+        },
+        "large_minus_small": -0.04171598512351077
+      },
+      {
+        "dose_uM": 5.0,
+        "condition": "fsk",
+        "well": "0014",
+        "size_counts": {
+          "small": 12,
+          "large": 18
+        },
+        "large_minus_small": -0.02742788801006368
+      },
+      {
+        "dose_uM": 5.0,
+        "condition": "fsk_770_809",
+        "well": "0008",
+        "size_counts": {
+          "small": 9,
+          "large": 11
+        },
+        "large_minus_small": 0.22423075418362415
+      },
+      {
+        "dose_uM": 5.0,
+        "condition": "fsk_770_809",
+        "well": "0020",
+        "size_counts": {
+          "small": 15,
+          "large": 11
+        },
+        "large_minus_small": 0.219526333311164
+      }
+    ],
+    "verdict": "SUPPORTED"
+  },
+  "R2": {
+    "by_condition_size": {
+      "fsk": {
+        "small": {
+          "eligible_baseline": 239,
+          "retained": 239,
+          "rate": 1.0
+        },
+        "large": {
+          "eligible_baseline": 284,
+          "retained": 260,
+          "rate": 0.9154929577464789
+        }
+      },
+      "fsk_770_809": {
+        "small": {
+          "eligible_baseline": 251,
+          "retained": 251,
+          "rate": 1.0
+        },
+        "large": {
+          "eligible_baseline": 276,
+          "retained": 230,
+          "rate": 0.8333333333333334
+        }
+      }
+    },
+    "small_minus_large_retention": {
+      "fsk": 0.08450704225352113,
+      "fsk_770_809": 0.16666666666666663
+    },
+    "cross_condition_difference": 0.0821596244131455,
+    "material_attrition_flag": true,
+    "missing_and_duplicates": {
+      "baseline_rows_missing_track_id": 130,
+      "duplicate_baseline_track_rows": 0,
+      "duplicate_endpoint_track_rows": 205
+    }
+  },
+  "source_audit": [
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0001--fsk--0.008/P001--fsk--0.008/objects.csv",
+      "rows": 392,
+      "candidate_rows": 109,
+      "duplicate_track_time_rows": 6
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0002--fsk--5/P001--fsk--5/objects.csv",
+      "rows": 458,
+      "candidate_rows": 124,
+      "duplicate_track_time_rows": 4
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0007--fsk_770_809--0.008/P001--fsk_770_809--0.008/objects.csv",
+      "rows": 415,
+      "candidate_rows": 116,
+      "duplicate_track_time_rows": 4
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0008--fsk_770_809--5/P001--fsk_770_809--5/objects.csv",
+      "rows": 364,
+      "candidate_rows": 101,
+      "duplicate_track_time_rows": 9
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0013--fsk--0.008/P001--fsk--0.008/objects.csv",
+      "rows": 490,
+      "candidate_rows": 136,
+      "duplicate_track_time_rows": 8
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0014--fsk--5/P001--fsk--5/objects.csv",
+      "rows": 465,
+      "candidate_rows": 128,
+      "duplicate_track_time_rows": 4
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0019--fsk_770_809--0.008/P001--fsk_770_809--0.008/objects.csv",
+      "rows": 522,
+      "candidate_rows": 144,
+      "duplicate_track_time_rows": 4
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0020--fsk_770_809--5/P001--fsk_770_809--5/objects.csv",
+      "rows": 438,
+      "candidate_rows": 116,
+      "duplicate_track_time_rows": 7
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0025--fsk--0.02/P001--fsk--0.02/objects.csv",
+      "rows": 578,
+      "candidate_rows": 159,
+      "duplicate_track_time_rows": 6
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0026--fsk--2/P001--fsk--2/objects.csv",
+      "rows": 432,
+      "candidate_rows": 119,
+      "duplicate_track_time_rows": 2
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0031--fsk_770_809--0.02/P001--fsk_770_809--0.02/objects.csv",
+      "rows": 234,
+      "candidate_rows": 66,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0032--fsk_770_809--2/P001--fsk_770_809--2/objects.csv",
+      "rows": 647,
+      "candidate_rows": 170,
+      "duplicate_track_time_rows": 20
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0037--fsk--0.02/P001--fsk--0.02/objects.csv",
+      "rows": 594,
+      "candidate_rows": 165,
+      "duplicate_track_time_rows": 6
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0038--fsk--2/P001--fsk--2/objects.csv",
+      "rows": 447,
+      "candidate_rows": 124,
+      "duplicate_track_time_rows": 3
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0043--fsk_770_809--0.02/P001--fsk_770_809--0.02/objects.csv",
+      "rows": 504,
+      "candidate_rows": 139,
+      "duplicate_track_time_rows": 8
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0044--fsk_770_809--2/P001--fsk_770_809--2/objects.csv",
+      "rows": 485,
+      "candidate_rows": 130,
+      "duplicate_track_time_rows": 8
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0049--fsk--0.05/P001--fsk--0.05/objects.csv",
+      "rows": 489,
+      "candidate_rows": 130,
+      "duplicate_track_time_rows": 4
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0050--fsk--0.8/P001--fsk--0.8/objects.csv",
+      "rows": 483,
+      "candidate_rows": 134,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0055--fsk_770_809--0.05/P001--fsk_770_809--0.05/objects.csv",
+      "rows": 301,
+      "candidate_rows": 84,
+      "duplicate_track_time_rows": 4
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0056--fsk_770_809--0.8/P001--fsk_770_809--0.8/objects.csv",
+      "rows": 485,
+      "candidate_rows": 135,
+      "duplicate_track_time_rows": 10
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0061--fsk--0.05/P001--fsk--0.05/objects.csv",
+      "rows": 425,
+      "candidate_rows": 117,
+      "duplicate_track_time_rows": 6
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0062--fsk--0.8/P001--fsk--0.8/objects.csv",
+      "rows": 491,
+      "candidate_rows": 131,
+      "duplicate_track_time_rows": 6
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0067--fsk_770_809--0.05/P001--fsk_770_809--0.05/objects.csv",
+      "rows": 626,
+      "candidate_rows": 166,
+      "duplicate_track_time_rows": 4
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0068--fsk_770_809--0.8/P001--fsk_770_809--0.8/objects.csv",
+      "rows": 485,
+      "candidate_rows": 125,
+      "duplicate_track_time_rows": 14
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0073--fsk--0.128/P001--fsk--0.128/objects.csv",
+      "rows": 556,
+      "candidate_rows": 156,
+      "duplicate_track_time_rows": 8
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0074--fsk--0.32/P001--fsk--0.32/objects.csv",
+      "rows": 494,
+      "candidate_rows": 138,
+      "duplicate_track_time_rows": 8
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0079--fsk_770_809--0.128/P001--fsk_770_809--0.128/objects.csv",
+      "rows": 505,
+      "candidate_rows": 136,
+      "duplicate_track_time_rows": 16
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0080--fsk_770_809--0.32/P001--fsk_770_809--0.32/objects.csv",
+      "rows": 557,
+      "candidate_rows": 155,
+      "duplicate_track_time_rows": 16
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0085--fsk--0.128/P001--fsk--0.128/objects.csv",
+      "rows": 527,
+      "candidate_rows": 148,
+      "duplicate_track_time_rows": 4
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0086--fsk--0.32/P001--fsk--0.32/objects.csv",
+      "rows": 361,
+      "candidate_rows": 100,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0091--fsk_770_809--0.128/P001--fsk_770_809--0.128/objects.csv",
+      "rows": 561,
+      "candidate_rows": 158,
+      "duplicate_track_time_rows": 0
+    },
+    {
+      "path": "demo_dataset/05-images_analysis/demoplate_01--cellprofiler/W0092--fsk_770_809--0.32/P001--fsk_770_809--0.32/objects.csv",
+      "rows": 527,
+      "candidate_rows": 145,
+      "duplicate_track_time_rows": 6
+    }
+  ]
+}
