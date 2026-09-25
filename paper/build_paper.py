@@ -326,6 +326,22 @@ P.p(f"Independent pathway annotation (WikiPathways 2026-09-10, NCBI Gene mapping
     f"(Fisher OR={WP['H1']['odds_ratio']:.2f}, p={WP['H1']['p_one_sided']:.4f}; test passes). "
     "This supports the liver top-deficit pathway label in a second resource, not causation or organoid specificity; "
     "the comparison follows earlier exploratory results (results/deficit_wikipathways.json).")
+GOA = json.load(open("results/deficit_goa.json"))
+KE = json.load(open("results/deficit_kegg.json"))
+RH = json.load(open("results/deficit_rhea.json"))
+P.table(["curated source", "selected definition", "liver top-100", "brain top-100", "one-sided Fisher p"], [
+    ["EBI GOA", "3 direct metabolic BP terms", GOA["per_organ"]["Liver"]["n_direct_metabolic_union"], GOA["per_organ"]["Brain - Cortex"]["n_direct_metabolic_union"], f"{GOA['H1']['p_one_sided']:.4f}"],
+    ["KEGG REST", "9 fixed-title metabolic pathways", KE["per_organ"]["Liver"]["n_union"], KE["per_organ"]["Brain - Cortex"]["n_union"], f"{KE['H1']['p_one_sided']:.4f}"],
+    ["Rhea", "curated Swiss-Prot reaction mapping", RH["per_organ"]["Liver"]["n_rhea_positive"], RH["per_organ"]["Brain - Cortex"]["n_rhea_positive"], f"{RH['H1']['p_one_sided']:.2g}"],
+], "Further pre-registered annotation checks on fixed 100-gene deficit lists, not independent experiments. Each p is descriptive in an exploratory sequence; results/deficit_goa.json, deficit_kegg.json, deficit_rhea.json.")
+P.p(f"Direct GOA BP terms cover {GOA['per_organ']['Liver']['n_direct_metabolic_union']}/100 liver versus "
+    f"{GOA['per_organ']['Brain - Cortex']['n_direct_metabolic_union']}/100 brain top deficits, while any BP annotation "
+    f"covers 94 and 90 respectively. KEGG REST selected {KE['n_selected_pathways']} pathways with {KE['n_union_symbols']} "
+    "mapped genes. Rhea reactions mark 42 liver versus 10 brain genes; kidney has 41, so the reaction signal "
+    "is not specific to liver. GOA, KEGG, Rhea, UniProt and WikiPathways annotations may share literature and curation, "
+    "and prior g:Profiler work included KEGG. These positives cannot be counted as independent confirmations. "
+    "Neither organoid protein nor enzyme activity was measured, and the original kidney fidelity candidate failed external replication. "
+    "No mechanism, discovery, or diagnostic use follows from these annotation contrasts.")
 HMS = json.load(open("results/deficit_hpa_ms.json"))
 P.p(f"Adult-tissue protein check (HPA v25.1 mass spectrometry). Liver protein is detected in "
     f"{HMS['per_organ']['Liver']['n_liver_detected']}/100 liver versus "
@@ -417,6 +433,9 @@ for r in ["Lefferts JW, et al. OrgaSegment: deep-learning based organoid segment
           "Karczewski KJ, et al. The mutational constraint spectrum quantified from variation in 141,456 humans. Nature 2020. https://gnomad.broadinstitute.org/help/constraint",
           "Ensembl REST API. https://rest.ensembl.org/documentation/info/lookup_post",
           "WikiPathways monthly releases. https://data.wikipathways.org/20260910/gmt/",
+          "EBI GOA human GAF. https://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/goa_human.gaf.gz",
+          "KEGG REST API. https://www.kegg.jp/kegg/rest/keggapi.html",
+          "Rhea reaction-to-Swiss-Prot mapping. https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv",
           "Human Protein Atlas protein mass-spectrometry normal tissue download. https://www.proteinatlas.org/humanproteome/tissue/data",
           "Human Phenotype Ontology gene-to-phenotype annotation. https://obophenotype.github.io/human-phenotype-ontology/annotations/genes_to_phenotype/",
           "EBI Ontology Lookup Service 4. https://www.ebi.ac.uk/ols4/api-docs",
