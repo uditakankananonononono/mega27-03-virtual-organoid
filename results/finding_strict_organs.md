@@ -18,3 +18,8 @@ Each strict series was classified from series + GSM text (GEOparse) by keyword c
 - Organ effect within derivation: PSC faithful-organ 7/11 vs unfaithful 0/5 (p=0.034); adult 16/16 vs 0/5 (p=4.9e-5). CMH (Haldane 0.5) pooled OR=46, p=5.8e-5.
 - Unfaithful organs fail regardless of derivation (0/5 PSC, 0/5 adult).
 Verdict: the organ split is not explained by PSC vs adult derivation. Brain organoids are all PSC-derived, so derivation cannot be separated from organ for brain. The "metabolic-parenchyma gap" stays a named candidate (post hoc grouping, small n).
+
+## UniProt secretome check (src/strict_deficit_uniprot.py, results/strict_deficit_uniprot.csv)
+Share of deficit genes whose reviewed human UniProt entry has a signal peptide or 'Secreted' location, vs 2,000 random expressed genes (16.6%):
+brain 0.44, colon 0.41, kidney 0.36, liver 0.30, lung 0.57; all enriched (OR 2.2-6.8, q<=0.001).
+Verdict (negative for the organ split): every organoid type lacks secreted/extracellular proteins relative to tissue, faithful or not. The secretome deficit is universal and does not explain why liver/kidney/lung fail. Note: gene_exact queries can return extra entries (n_mapped slightly >100 for some organs).

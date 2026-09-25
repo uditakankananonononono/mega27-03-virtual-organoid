@@ -23,3 +23,4 @@ GEOparse,library,src/geo_sample_meta.py,True,GSM-level metadata audit of 114 ser
 Enrichr (Hallmark/CellMarker/PanglaoDB libraries),service,src/attractor_enrichr_reactome.py,True,cell identity and hallmark annotation of attractor genes
 Reactome AnalysisService,service,src/attractor_enrichr_reactome.py,True,pathway over-representation of attractor genes
 STRING functional enrichment API (string-db.org),service,src/strict_organ_deficits.py,True,GO/KEGG enrichment of organoid deficit genes
+UniProt REST (UniProtKB reviewed human),database,src/strict_deficit_uniprot.py,True,signal peptide / secreted annotation of deficit genes
