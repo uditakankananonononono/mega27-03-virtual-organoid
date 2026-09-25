@@ -1,0 +1,7 @@
+# Benchmark-method audit, frozen before any new benchmark computation
+
+Source: Lefferts et al., OrgaSegment, Commun Biol 2024, https://www.nature.com/articles/s42003-024-05966-4 ; segmentation images/masks Zenodo 10278229 already downloaded and used in this repo. Published 12-image eval mean AP@IoU 0.5 is 0.76 +/- 0.12 SD, Cellpose definition TP/(TP+FP+FN) per image, averaged. Our U-Net + TTA score 0.73295 on the same held-out images is not a match or win. Our postprocessing validation subset overlapped network training (184 train + 35 val); no new tuning against eval is permitted.
+
+Locked checks: (1) inspect author-release model and exact evaluation code/config, including image resize, predicted-instance confidence and IoU matching; (2) if weights and dependencies run here, score the untouched published baseline on these same 12 eval images using both author evaluator and the repo's scorer, and compare per-image results; (3) measure code/metric differences without optimizing on evaluation images; (4) evaluate any new U-Net only if trained with **train only**, choose checkpoint/postprocessing using val only, use eval exactly once after this selection. Report failures to run the released baseline, dependency constraints, and all per-image negatives. A change of metric is not a benchmark win. No claim of superiority without a matched, fixed, paired evaluation and uncertainty.
+
+No new biological replication data will be downloaded under this benchmark plan. It does not cure the distinct multi-donor single-object CFTR treatment-data gap.
