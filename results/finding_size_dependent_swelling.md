@@ -14,7 +14,7 @@ Status: candidate, not yet confirmed. Open checks: segmentation-error model, lum
 ## Follow-up test (locked before running): does a size-adjusted readout improve Trikafta-vs-DMSO separation?
 Well-level readouts: raw mean log fold; per-well regression predicted at global median size (adj); size-band mean (band).
 Per-donor standardized separation (Trikafta vs DMSO wells), 17 donors: median raw 4.73, adj 4.35, band 4.39; adj > raw in 8/17.
-Result: NEGATIVE. Size adjustment does not improve donor-level modulator discrimination; the size effect is real but does not change theratyping calls at this assay's well counts.
+Result: NEGATIVE. Size adjustment does not improve donor-level modulator discrimination; the observed size trend does not improve donor-level separation at this assay's well counts; its donor-general biological meaning remains unproved.
 
 ## Replication check on FIS set: not possible
 FIS_database.csv holds one area value per well per time point (868 rows, 7 time points, one position per well), i.e. summed organoid area, not single organoids. It cannot test per-organoid size dependence. Replication needs another single-organoid dataset (candidate: OrganoID time-lapse data, Matthews et al. 2022).
@@ -36,4 +36,4 @@ Attenuation (large-quartile effect minus small-quartile effect) > 0 in 14/17 don
 - Standard FIS pipelines (hmbotelho/FIS_analysis, https://github.com/hmbotelho/FIS_analysis) sum area per well, so any size-dependent effect gets averaged away.
 - Nasal 2D-derived organoids (bioRxiv 2021.07.20.453105, https://www.biorxiv.org/content/10.1101/2021.07.20.453105v2) report large swelling variation limited to large spherical structures, attributed to unsynchronised differentiation. This is related prior art, in airway rather than intestinal tissue.
 - Physics prior: under a uniform flux per unit area, the relative area gain of a sphere scales as 1/r, so SMALL organoids should swell MORE. We see the opposite, which argues against a pure geometry artefact and for a biological or maturity effect (e.g. lumen formation). Not proven.
-Verdict: not found in the intestinal literature we searched. Novelty is plausible, but this was not a systematic review.
+Verdict: the specific intestinal drug-by-starting-size question was not found in the narrow literature search, but novelty is unproved. Calucho et al. 2021 (https://www.nature.com/articles/s41598-021-94798-x) already tested individual CFTR nasospheroid baseline size against FSK shrinking with a null result; Kim et al. 2020 (https://www.slas-discovery.org/article/S2472-5552(22)06605-9/fulltext) examined size/growth in tumor organoids. This was not a systematic review.

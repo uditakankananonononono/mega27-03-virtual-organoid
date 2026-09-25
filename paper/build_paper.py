@@ -587,9 +587,7 @@ P.p("In this accession, drug-minus-DMSO swelling tends to rise from small to lar
 P.p("Practical note. In this dataset, starting size may affect single-organoid readouts, but size correction did not "
     "improve per-donor discrimination. A lab comparing assays across passages may record its starting-size "
     "distribution as a quality-control variable; no clinical adjustment is recommended from these data.")
-P.p("Novelty remains unproved. We did not find this effect reported for intestinal FIS in the literature we searched (OrgaSegment; the FIS_analysis pipeline, "
-    "which sums area per well). Related: nasal 2D-derived organoids show swelling variation concentrated in large structures "
-    "(bioRxiv 2021.07.20.453105). This was not a systematic review.")
+P.p("Novelty remains unproved. We did not find the exact intestinal drug-by-starting-size interaction in the bounded literature search, but Calucho et al. 2021 already tested starting size versus individual CFTR nasospheroid FSK response and found no association; a nasal 2D-derived-organoid study reported swelling variation in large structures (bioRxiv 2021.07.20.453105). The narrower intestinal question is unconfirmed and this was not a systematic review.")
 P.h("7. Tools used")
 TL = pd.read_csv("results/tools_ledger.csv")
 TL["gate"] = TL.counts_for_gate.astype(str).map({"True": "counts", "False": "infra (excluded)"})
