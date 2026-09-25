@@ -35,3 +35,9 @@ Hallmark v2023.2, 500 permutations, per organ consensus delta over all genes.
 - Liver top deficits: xenobiotic (NES 2.29), coagulation, fatty acid, OXPHOS, bile acid metabolism (all FDR ~0). Kidney: complement/coagulation/xenobiotic. Lung: interferon, EMT (stroma/immune).
 - Mean NES over 6 metabolic hallmarks: liver 1.96, kidney 1.95, brain 1.65, colon 0.74, lung 0.46. Liver+kidney vs colon+brain one-sided MWU over NES values p=0.004 (hallmarks overlap, so values are not independent; descriptive).
 Verdict: supports the metabolic-deficit description for liver and kidney organoids, but it is not specific: brain organoids also lack OXPHOS/fatty-acid programs (NES 2.63/1.77) yet match their tissue. So a metabolic deficit alone does not decide fidelity; the candidate stays unproven.
+
+## Open Targets disease relevance (pre-registered a73bd26; src/deficit_opentargets.py, results/deficit_opentargets.json)
+Top-500 Open Targets targets per organ disorder (MONDO liver/kidney/lung/brain/colonic). 5x5 overlap of deficit lists vs disease sets.
+- Pre-registered primary: diagonal dominance D = 2.6 (null mean -0.01), permutation p = 0.0005 -> PASS. Organoid deficits are organ-specifically disease-relevant as a set.
+- Per organ (Fisher, own vs other lists): lung OR 4.5 p=0.017; colon OR 4.5 p=0.017; kidney OR 2.0 p=0.13; brain p=0.45; liver OR 1.0 p=0.62.
+- Negative for the metabolic-parenchyma idea: liver, the core metabolic organ, shows no own-disease enrichment (2/100 hits). The pass is driven by lung and colon. Counts are small (2-8 hits per cell).

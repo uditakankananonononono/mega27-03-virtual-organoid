@@ -1,0 +1,133 @@
+{
+ "diseases": {
+  "Liver": {
+   "efo": "MONDO_0005154",
+   "name": "liver disorder",
+   "n_assoc_total": 17325,
+   "n_top": 500
+  },
+  "Kidney - Cortex": {
+   "efo": "MONDO_0005240",
+   "name": "kidney disorder",
+   "n_assoc_total": 17301,
+   "n_top": 500
+  },
+  "Lung": {
+   "efo": "MONDO_0005275",
+   "name": "lung disorder",
+   "n_assoc_total": 17641,
+   "n_top": 500
+  },
+  "Brain - Cortex": {
+   "efo": "MONDO_0005560",
+   "name": "brain disorder",
+   "n_assoc_total": 19012,
+   "n_top": 500
+  },
+  "Colon - Transverse": {
+   "efo": "MONDO_0003409",
+   "name": "colonic disorder",
+   "n_assoc_total": 13329,
+   "n_top": 500
+  }
+ },
+ "overlap_matrix": {
+  "rows_deficit_lists": [
+   "Liver",
+   "Kidney - Cortex",
+   "Lung",
+   "Brain - Cortex",
+   "Colon - Transverse"
+  ],
+  "cols_disease_sets": [
+   "Liver",
+   "Kidney - Cortex",
+   "Lung",
+   "Brain - Cortex",
+   "Colon - Transverse"
+  ],
+  "M": [
+   [
+    2.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    2.0,
+    7.0,
+    2.0,
+    0.0,
+    1.0
+   ],
+   [
+    3.0,
+    8.0,
+    6.0,
+    4.0,
+    5.0
+   ],
+   [
+    1.0,
+    2.0,
+    1.0,
+    3.0,
+    0.0
+   ],
+   [
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0
+   ]
+  ]
+ },
+ "D": 2.5999999999999996,
+ "null_mean": -0.010174999999999991,
+ "perm_p": 0.0004999500049995,
+ "per_organ": {
+  "Liver": {
+   "own_hits": 2,
+   "own_n": 100,
+   "other_hits": 7,
+   "other_n": 354,
+   "OR": 1.0116618075801749,
+   "p": 0.6249409082886466
+  },
+  "Kidney - Cortex": {
+   "own_hits": 7,
+   "own_n": 100,
+   "other_hits": 13,
+   "other_n": 354,
+   "OR": 1.9743589743589745,
+   "p": 0.12577376277731922
+  },
+  "Lung": {
+   "own_hits": 6,
+   "own_n": 100,
+   "other_hits": 5,
+   "other_n": 354,
+   "OR": 4.45531914893617,
+   "p": 0.017481766855095365
+  },
+  "Brain - Cortex": {
+   "own_hits": 3,
+   "own_n": 100,
+   "other_hits": 8,
+   "other_n": 354,
+   "OR": 1.3376288659793814,
+   "p": 0.4503758383503981
+  },
+  "Colon - Transverse": {
+   "own_hits": 6,
+   "own_n": 100,
+   "other_hits": 5,
+   "other_n": 354,
+   "OR": 4.45531914893617,
+   "p": 0.017481766855095365
+  }
+ },
+ "verdict": "PASS"
+}
