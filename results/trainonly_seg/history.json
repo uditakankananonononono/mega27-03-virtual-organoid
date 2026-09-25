@@ -327,5 +327,26 @@
     "val_loss": null,
     "best_val_loss": 0.07575143320219857,
     "seconds": 49.5
+  },
+  {
+    "epoch": 48,
+    "train_loss_sum": 6.861564276739955,
+    "val_loss": null,
+    "best_val_loss": 0.07575143320219857,
+    "seconds": 57.2
+  },
+  {
+    "epoch": 49,
+    "train_loss_sum": 6.477263493463397,
+    "val_loss": null,
+    "best_val_loss": 0.07575143320219857,
+    "seconds": 48.5
+  },
+  {
+    "epoch": 50,
+    "train_loss_sum": 7.253863263875246,
+    "val_loss": 0.07807412551982063,
+    "best_val_loss": 0.07575143320219857,
+    "seconds": 64.3
   }
 ]
