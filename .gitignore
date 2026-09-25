@@ -16,3 +16,4 @@ UNKNOWN.egg-info/
 build/
 src/*.egg-info/
 data/hpo/
+data/wikipathways/

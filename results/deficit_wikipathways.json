@@ -1,0 +1,165 @@
+{
+  "source": "https://data.wikipathways.org/20260910/gmt/wikipathways-20260910-gmt-Homo_sapiens.gmt",
+  "gene_map_source": "https://ftp.ncbi.nlm.nih.gov/gene/DATA/GENE_INFO/Mammalia/Homo_sapiens.gene_info.gz",
+  "preregistration": "results/preregistration_wikipathways.md (commit 06f309c)",
+  "selected_pathways": [
+    {
+      "name": "Fatty acid beta oxidation%WikiPathways_20260910%WP143%Homo sapiens",
+      "url": "https://www.wikipathways.org/instance/WP143",
+      "n_entrez": 34
+    },
+    {
+      "name": "Fatty acid omega oxidation%WikiPathways_20260910%WP206%Homo sapiens",
+      "url": "https://www.wikipathways.org/instance/WP206",
+      "n_entrez": 15
+    },
+    {
+      "name": "Drug induction of bile acid pathway%WikiPathways_20260910%WP2289%Homo sapiens",
+      "url": "https://www.wikipathways.org/instance/WP2289",
+      "n_entrez": 17
+    },
+    {
+      "name": "Fatty acid biosynthesis%WikiPathways_20260910%WP357%Homo sapiens",
+      "url": "https://www.wikipathways.org/instance/WP357",
+      "n_entrez": 22
+    },
+    {
+      "name": "Mitochondrial long chain fatty acid beta oxidation%WikiPathways_20260910%WP368%Homo sapiens",
+      "url": "https://www.wikipathways.org/instance/WP368",
+      "n_entrez": 17
+    },
+    {
+      "name": "Mitochondrial fatty acid synthesis pathway%WikiPathways_20260910%WP4317%Homo sapiens",
+      "url": "https://www.wikipathways.org/instance/WP4317",
+      "n_entrez": 6
+    },
+    {
+      "name": "Bile acid synthesis and enterohepatic circulation %WikiPathways_20260910%WP4389%Homo sapiens",
+      "url": "https://www.wikipathways.org/instance/WP4389",
+      "n_entrez": 12
+    },
+    {
+      "name": "Omega 3 omega 6 fatty acid synthesis%WikiPathways_20260910%WP4723%Homo sapiens",
+      "url": "https://www.wikipathways.org/instance/WP4723",
+      "n_entrez": 15
+    },
+    {
+      "name": "Omega 9 fatty acid synthesis%WikiPathways_20260910%WP4724%Homo sapiens",
+      "url": "https://www.wikipathways.org/instance/WP4724",
+      "n_entrez": 14
+    },
+    {
+      "name": "Fatty acid transporters%WikiPathways_20260910%WP5061%Homo sapiens",
+      "url": "https://www.wikipathways.org/instance/WP5061",
+      "n_entrez": 18
+    },
+    {
+      "name": "Mitochondrial fatty acid oxidation disorders%WikiPathways_20260910%WP5123%Homo sapiens",
+      "url": "https://www.wikipathways.org/instance/WP5123",
+      "n_entrez": 19
+    },
+    {
+      "name": "Disorders of bile acid synthesis and biliary transport%WikiPathways_20260910%WP5176%Homo sapiens",
+      "url": "https://www.wikipathways.org/instance/WP5176",
+      "n_entrez": 29
+    },
+    {
+      "name": "Fatty acid and lipoprotein transport in hepatocytes%WikiPathways_20260910%WP5323%Homo sapiens",
+      "url": "https://www.wikipathways.org/instance/WP5323",
+      "n_entrez": 35
+    },
+    {
+      "name": "Enterohepatic circulation of bile acids%WikiPathways_20260910%WP5396%Homo sapiens",
+      "url": "https://www.wikipathways.org/instance/WP5396",
+      "n_entrez": 12
+    },
+    {
+      "name": "Omega 6 fatty acids in senescence%WikiPathways_20260910%WP5424%Homo sapiens",
+      "url": "https://www.wikipathways.org/instance/WP5424",
+      "n_entrez": 48
+    },
+    {
+      "name": "Omega 3 fatty acids in senescence%WikiPathways_20260910%WP5432%Homo sapiens",
+      "url": "https://www.wikipathways.org/instance/WP5432",
+      "n_entrez": 31
+    }
+  ],
+  "n_selected_pathways": 16,
+  "n_union_gene_ids": 207,
+  "n_union_symbols": 207,
+  "per_organ": {
+    "Brain - Cortex": {
+      "n_input": 100,
+      "n_mapped_ncbi": 100,
+      "n_union": 1,
+      "matching_symbols": [
+        "ALDH1A1"
+      ]
+    },
+    "Colon - Transverse": {
+      "n_input": 100,
+      "n_mapped_ncbi": 100,
+      "n_union": 4,
+      "matching_symbols": [
+        "ALOX5AP",
+        "APOE",
+        "CHKB",
+        "PTGS1"
+      ]
+    },
+    "Kidney - Cortex": {
+      "n_input": 100,
+      "n_mapped_ncbi": 100,
+      "n_union": 2,
+      "matching_symbols": [
+        "FABP1",
+        "PTGDS"
+      ]
+    },
+    "Liver": {
+      "n_input": 100,
+      "n_mapped_ncbi": 99,
+      "n_union": 11,
+      "matching_symbols": [
+        "ABCG5",
+        "ABCG8",
+        "APOC2",
+        "CYP2A6",
+        "CYP2D6",
+        "CYP4A11",
+        "CYP8B1",
+        "ECHDC3",
+        "NR1I3",
+        "SLC27A5",
+        "SULT2A1"
+      ]
+    },
+    "Lung": {
+      "n_input": 100,
+      "n_mapped_ncbi": 98,
+      "n_union": 5,
+      "matching_symbols": [
+        "ALOX5",
+        "APOC1",
+        "APOE",
+        "CYP27A1",
+        "FGFR4"
+      ]
+    }
+  },
+  "H1": {
+    "table": [
+      [
+        11,
+        89
+      ],
+      [
+        1,
+        99
+      ]
+    ],
+    "odds_ratio": 12.235955056179776,
+    "p_one_sided": 0.0024908586336925037,
+    "verdict": "PASS"
+  }
+}
