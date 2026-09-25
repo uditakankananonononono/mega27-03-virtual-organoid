@@ -2,6 +2,8 @@
 
   vorganoid sizeaware TABLE --drug NAME [--control DMSO] [--bins 4] [--forskolin-col COL]
       Size-stratified CFTR-modulator effect from a per-organoid FIS table (CSV with donor, condition, A0, swelling).
+  vorganoid matched-blocks TABLE --drug NAME [--small-max 722] [--large-min 1400]
+      Strict donor/experiment/forskolin-dose matched size contrast; no clinical validation.
   vorganoid segment IMAGE --model unet.pt [--size 256] [--out labels.png]
       Instance-segment organoids in a brightfield image with the trained U-Net + watershed.
   vorganoid fidelity COUNTS --reference gtex_median_tpm.gct.gz [--organ-tissue "Liver"] [--top 5] [--purity hpa_single_cell.tsv.gz]
@@ -29,6 +31,17 @@ def cmd_sizeaware(a):
     per, edges = size_effects(df, a.drug, a.control, a.bins)
     res = attenuation(per) | {"bin_edges_A0": [float(e) for e in edges], "drug": a.drug, "control": a.control}
     print(per.round(3).to_string(index=False)); print(json.dumps(res, indent=1))
+    return 0
+
+
+def cmd_matched_blocks(a):
+    from .matched_blocks import matched_block_effects
+    try:
+        result = matched_block_effects(pd.read_csv(a.table), a.drug, a.control,
+                                       a.small_max, a.large_min, a.min_per_cell)
+    except ValueError as exc:
+        sys.exit(str(exc))
+    print(json.dumps(result, indent=2))
     return 0
 
 
@@ -105,6 +118,10 @@ def main(argv=None):
     ap = argparse.ArgumentParser(prog="vorganoid"); sp = ap.add_subparsers(dest="cmd", required=True)
     s = sp.add_parser("sizeaware"); s.add_argument("table"); s.add_argument("--drug", required=True); s.add_argument("--control", default="DMSO")
     s.add_argument("--bins", type=int, default=4); s.add_argument("--forskolin-col"); s.set_defaults(f=cmd_sizeaware)
+    b = sp.add_parser("matched-blocks", help="donor/plate/dose matched drug-size contrast; no clinical use")
+    b.add_argument("table"); b.add_argument("--drug", required=True); b.add_argument("--control", default="DMSO")
+    b.add_argument("--small-max", type=float, default=722.); b.add_argument("--large-min", type=float, default=1400.)
+    b.add_argument("--min-per-cell", type=int, default=3); b.set_defaults(f=cmd_matched_blocks)
     g = sp.add_parser("segment"); g.add_argument("image"); g.add_argument("--model", required=True); g.add_argument("--size", type=int, default=256)
     g.add_argument("--out", default="labels.png"); g.add_argument("--selection", help="frozen validation-selected postprocessing JSON")
     g.add_argument("--tta-three", action="store_true", help="average original, horizontal and vertical flip predictions")

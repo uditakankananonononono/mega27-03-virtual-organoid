@@ -54,3 +54,12 @@ The 16-bit output is a label image, not a pretty preview. Use an appropriate ima
 - `results/preregistration_*.md`: tests fixed before new data queries where possible, with deviations disclosed.
 
 Primary assay source: Lefferts et al., OrgaSegment, https://www.nature.com/articles/s42003-024-05966-4 ; deposited data Zenodo https://zenodo.org/records/10610438 and https://zenodo.org/records/10278229 . See the paper's references for GTEx, GEO, HPA and ArrayExpress.
+
+### Strict matched-block stress test (same discovery accession)
+
+```bash
+vorganoid matched-blocks data/raw/orgasegment/dis_merged_A0.csv \
+  --drug VX445_VX661_VX770 --small-max 722 --large-min 1400
+```
+
+This is the donor x experiment x forskolin-dose contrast rather than the pooled-quartile `sizeaware` summary. It exactly reproduces the pre-registered negative in `results/blocked_size.json`: 31 eligible blocks, 12 donors, 9 positive medians, one-sided sign p=0.072998 and H1 **FAIL**. Both size cutoffs were originally chosen with this same dataset; the new command does not turn the negative into an external replication or support clinical use. Its machine-readable output includes each eligible block, cell counts, donor median and a warning.
