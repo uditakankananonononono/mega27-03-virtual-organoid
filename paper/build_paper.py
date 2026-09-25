@@ -167,6 +167,18 @@ P.p(f"Well-as-unit sensitivity on the same demo plate (registered before analysi
     f"{EM['M2']['adverse_median']:+.3f}, but this arbitrary bound cannot rule out stronger "
     "missingness bias. Source-level evidence is conditional and must not be called donor-level "
     "validation (results/external_fis_robustness.json; results/external_fis_missingtracks.json).")
+FIJI = json.load(open("results/external_fis_fiji.json"))
+P.p(f"Pipeline sensitivity on the SAME images/plate/donor: the repository's alternative Fiji/ImageJ "
+    f"tracking output yielded {FIJI['n_tracked_pairs']:,} paired tracks and a positive combination-minus-vehicle "
+    f"size contrast at {FIJI['H1_fiji']['n_positive']}/{FIJI['H1_fiji']['n_eligible']} doses "
+    f"(median {FIJI['H1_fiji']['median_effect']:+.3f}; pre-registered coverage/sign gate passes). "
+    "Fiji-specific quartile cutoffs and segmentation/tracking differ from CellProfiler, so effect magnitudes "
+    "are not interchangeable. In Fiji, labeled large-object retention was "
+    f"{FIJI['well_and_retention_descriptive']['retention_by_condition_size']['fsk']['large']['rate']:.1%} "
+    f"vehicle and {FIJI['well_and_retention_descriptive']['retention_by_condition_size']['fsk_770_809']['large']['rate']:.1%} "
+    "combo, unlike CellProfiler's 91.5%/83.3%. This pipeline-dependent selection limits any effect-size "
+    "claim. These two pipelines are NOT two independent biological datasets "
+    "(results/external_fis_fiji.json).")
 P.table(["forskolin (uM)", "paired wells / condition", "large-minus-small drug effect (log units)"],
     [[f"{d['dose_uM']:g}", f"{d['n_wells']['fsk']}/{d['n_wells']['fsk_770_809']}",
       f"{d['effect_log']:+.3f}" if d['effect_log'] is not None else "not eligible"] for d in EXT['doses']],
