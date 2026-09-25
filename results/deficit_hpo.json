@@ -1,0 +1,49 @@
+{
+  "source": "https://purl.obolibrary.org/obo/hp/hpoa/genes_to_phenotype.txt",
+  "release": "v2026-09-01 (release resolved by source redirect)",
+  "preregistration": "results/preregistration_hpo.md (commit 16771b5)",
+  "term": "HP:0001939",
+  "per_organ": {
+    "Brain - Cortex": {
+      "n_input": 100,
+      "n_any_hpo": 28,
+      "n_direct_metabolism": 0,
+      "direct_metabolism_genes": []
+    },
+    "Colon - Transverse": {
+      "n_input": 100,
+      "n_any_hpo": 36,
+      "n_direct_metabolism": 0,
+      "direct_metabolism_genes": []
+    },
+    "Kidney - Cortex": {
+      "n_input": 100,
+      "n_any_hpo": 32,
+      "n_direct_metabolism": 1,
+      "direct_metabolism_genes": [
+        "HMGCS2"
+      ]
+    },
+    "Liver": {
+      "n_input": 100,
+      "n_any_hpo": 35,
+      "n_direct_metabolism": 3,
+      "direct_metabolism_genes": [
+        "AGXT",
+        "CYP2D6",
+        "DMGDH"
+      ]
+    },
+    "Lung": {
+      "n_input": 100,
+      "n_any_hpo": 28,
+      "n_direct_metabolism": 0,
+      "direct_metabolism_genes": []
+    }
+  },
+  "limitations": "direct term only; no ancestors; absence from annotation is not evidence of absence",
+  "H1": {
+    "verdict": "UNINTERPRETABLE",
+    "reason": "<50/100 genes covered by HPO in liver or brain"
+  }
+}
