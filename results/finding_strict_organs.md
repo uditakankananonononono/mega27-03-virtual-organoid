@@ -26,6 +26,6 @@ Verdict (negative for the organ split): every organoid type lacks secreted/extra
 
 ## Pre-registered out-of-sample test on ArrayExpress (results/preregistration_organ_split.md committed 23fa32e before download; src/ae_scan.py, src/ae_replication.py, results/ae_replication.csv/.json)
 BioStudies/ArrayExpress search -> 18 curated human non-cancer organoid E-MTAB accessions with processed files; 11 scored (7 unusable: mouse gene IDs E-MTAB-9181/14831/11273; only Illumina probe IDs E-MTAB-4591; malformed table E-MTAB-12548; single-cell/ATAC only E-MTAB-10876/15659). E-MTAB-17066 used its first 3 per-sample featureCounts files (download budget).
-- Faithful organs (intestine 6, brain 2... see csv): median rank 1, top-1 6/7 (brain E-MTAB-10037 ranked 26, best match cultured fibroblasts).
+- Faithful organs (intestine 5, brain 2): median rank 1, top-1 6/7 (brain E-MTAB-10037 ranked 26, best match cultured fibroblasts).
 - Unfaithful organs: median rank 19.5, top-1 1/4. Pre-registered one-sided Mann-Whitney p=0.031 -> H1 formally supported.
 Honest reading: support is weak. The unfaithful side has no lung; both liver datasets are cholangiocyte (biliary) organoids on Illumina microarrays (ranks 39, 37; best match stomach), so the liver signal mixes cell type and platform. Both kidney datasets match kidney well (tubuloids rank 1; PSC kidney organoids rank 2), which contradicts the kidney part of the candidate. The "metabolic-parenchyma gap" remains a candidate; the kidney component is not replicated.
