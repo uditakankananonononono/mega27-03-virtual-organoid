@@ -1,0 +1,94 @@
+{
+  "source": "https://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/goa_human.gaf.gz",
+  "preregistration": "results/preregistration_goa.md (commit fc39e36)",
+  "terms": {
+    "GO:0006631": "fatty acid metabolic process",
+    "GO:0006805": "xenobiotic metabolic process",
+    "GO:0006699": "bile acid biosynthetic process"
+  },
+  "n_selected_rows": 423,
+  "n_selected_symbols": 214,
+  "evidence_codes_selected": {
+    "TAS": 142,
+    "IDA": 112,
+    "IEA": 98,
+    "IBA": 36,
+    "ISS": 15,
+    "IMP": 12,
+    "NAS": 5,
+    "IC": 3
+  },
+  "per_organ": {
+    "Brain - Cortex": {
+      "n_input": 100,
+      "n_any_BP_annotation": 90,
+      "n_direct_metabolic_union": 2,
+      "direct_metabolic_symbols": [
+        "S100A12",
+        "SLCO2B1"
+      ]
+    },
+    "Colon - Transverse": {
+      "n_input": 100,
+      "n_any_BP_annotation": 96,
+      "n_direct_metabolic_union": 0,
+      "direct_metabolic_symbols": []
+    },
+    "Kidney - Cortex": {
+      "n_input": 100,
+      "n_any_BP_annotation": 89,
+      "n_direct_metabolic_union": 7,
+      "direct_metabolic_symbols": [
+        "ACSM2B",
+        "AOX1",
+        "GLYAT",
+        "GSTA1",
+        "HAO2",
+        "SLC22A7",
+        "UGT2A3"
+      ]
+    },
+    "Liver": {
+      "n_input": 100,
+      "n_any_BP_annotation": 94,
+      "n_direct_metabolic_union": 11,
+      "direct_metabolic_symbols": [
+        "ACOT12",
+        "ACSM2B",
+        "CYP2A6",
+        "CYP2D6",
+        "CYP4A11",
+        "CYP4F2",
+        "CYP8B1",
+        "ECHDC3",
+        "SLC22A7",
+        "SLC27A5",
+        "SULT2A1"
+      ]
+    },
+    "Lung": {
+      "n_input": 100,
+      "n_any_BP_annotation": 88,
+      "n_direct_metabolic_union": 2,
+      "direct_metabolic_symbols": [
+        "CYP27A1",
+        "S100A12"
+      ]
+    }
+  },
+  "H1": {
+    "table": [
+      [
+        11,
+        89
+      ],
+      [
+        2,
+        98
+      ]
+    ],
+    "odds_ratio": 6.056179775280899,
+    "p_one_sided": 0.009206963115373347,
+    "verdict": "PASS"
+  }
+}

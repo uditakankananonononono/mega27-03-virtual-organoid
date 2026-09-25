@@ -41,3 +41,4 @@ InterPro protein-domain API,database/service,src/deficit_interpro.py; results/de
 WikiPathways 2026-09-10 human GMT,pathway database,src/deficit_wikipathways.py; results/deficit_wikipathways.json,True,pre-registered independent metabolic pathway annotation 06f309c
 NCBI Gene human gene_info,reference database,src/deficit_wikipathways.py; results/deficit_wikipathways.json,True,official Entrez-to-symbol mapping required for WikiPathways test; not a separate hypothesis
 Human Protein Atlas mass-spectrometry tissue download,dataset,src/deficit_hpa_ms.py; results/deficit_hpa_ms.json,False,HPA already counted via single-cell API; distinct MS modality but same external resource so not a new tool gate count
+EBI GOA human GAF,gene ontology annotation database,src/deficit_goa.py; results/deficit_goa.json,True,direct GO BP gene annotation test; pre-registered fc39e36; may overlap UniProt curation
