@@ -1,0 +1,9 @@
+{
+ "command": "python3 -m pip install -e . --no-build-isolation; vorganoid --help; python3 -m pytest -q",
+ "installation": "PASS with existing setuptools 78.1.0 (system pip 22 isolated build initially did not support editable)",
+ "cli_subcommands": ["sizeaware", "segment", "fidelity"],
+ "tests": "37 passed",
+ "real_data_smoke": "PASS, included OrgaSegment FIS file, GSE186249 generated profile and GTEx/HPA reference",
+ "research_verdict": "Usable research CLI, not diagnostic or a segmentation benchmark win",
+ "source_commit": "5adae81"
+}
