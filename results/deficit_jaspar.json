@@ -1,0 +1,39 @@
+{
+  "source": "https://jaspar.elixir.no/api/v1/matrix/",
+  "preregistration": "results/preregistration_jaspar.md (commit 0ebc540)",
+  "selected": {
+    "NEUROD2": {
+      "query_url": "https://jaspar.elixir.no/api/v1/matrix/?collection=CORE&tax_group=vertebrates&search=NEUROD2&page_size=100",
+      "n_search_hits": 5,
+      "matrix_id": "MA0668.3",
+      "matrix_url": "https://jaspar.elixir.no/api/v1/matrix/MA0668.3/",
+      "name": "Neurod2"
+    },
+    "NEUROD6": null,
+    "TBR1": {
+      "query_url": "https://jaspar.elixir.no/api/v1/matrix/?collection=CORE&tax_group=vertebrates&search=TBR1&page_size=100",
+      "n_search_hits": 2,
+      "matrix_id": "MA0802.2",
+      "matrix_url": "https://jaspar.elixir.no/api/v1/matrix/MA0802.2/",
+      "name": "TBR1"
+    },
+    "PAX2": {
+      "query_url": "https://jaspar.elixir.no/api/v1/matrix/?collection=CORE&tax_group=vertebrates&search=PAX2&page_size=100",
+      "n_search_hits": 3,
+      "matrix_id": "MA0067.3",
+      "matrix_url": "https://jaspar.elixir.no/api/v1/matrix/MA0067.3/",
+      "name": "PAX2"
+    }
+  },
+  "exact_motifs": {
+    "NEUROD2": "MA0668.3",
+    "NEUROD6": null,
+    "TBR1": "MA0802.2",
+    "PAX2": "MA0067.3"
+  },
+  "H1": {
+    "verdict": "PASS",
+    "n_brain": 2,
+    "PAX2": true
+  }
+}
