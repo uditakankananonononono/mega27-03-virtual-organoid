@@ -135,7 +135,7 @@ P.p(f"The stronger pre-registered stress test required >=3 organoids per Trikaft
 P.h("4.4 Does size correction help theratyping? No", 2)
 P.p("Locked before running: per-donor standardised Trikafta-vs-DMSO separation with raw, size-adjusted and size-band well readouts. Median "
     "raw 4.73, adjusted 4.35, band 4.39; adjusted better in 8 of 17 donors. Excluding organoids below 1,069 px (a post-hoc threshold): median "
-    "4.73 -> 4.75, better in 9 of 17, Wilcoxon p = 0.68. The size effect is real but does not change calls.")
+    "4.73 -> 4.75, better in 9 of 17, Wilcoxon p = 0.68. The size trend does not improve calls, and the stricter matched-block H1 fails.")
 P.h("4.5 Segmentation benchmark", 2)
 P.table(["model", "eval mAP@0.5", "sd", "source file"], [
     ["U-Net v1, 256 px, default post-processing", round(S1["mAP50"], 3), round(S1["sd"], 3), "results/seg_eval.json"],
@@ -422,6 +422,12 @@ P.p("Synthesis. The liver top-deficit list has independent pathway and adult-tis
     "The kidney external profiles recover their tissue despite the strict single-cell marker test failing. "
     "The candidate remains unproven; do not offer the tool as diagnosis.")
 
+P.p("External replication source audit (results/external_fis_source_audit.md): a 2025 respiratory FIS study "
+    "with single-organoid measures excluded baseline areas below 1500 px and used forskolin alone rather "
+    "than modulator vs DMSO; OrganoID's open individual time series used pancreatic cancer organoids "
+    "and gemcitabine; a 2021 nasal CFTR-modulator FIS study reported well-summed areas. These are "
+    "unsuitable for the specific small-organoid modulator test, but the search was not exhaustive.")
+
 P.h("5. Negative results (kept by design)")
 for t in ["The initial power-law (alpha > 1) interpretation was withdrawn after large-organoid checks contradicted it.",
           "Size-adjusted and size-filtered readouts do not improve donor-level modulator discrimination.",
@@ -483,6 +489,9 @@ for r in ["Lefferts JW, et al. OrgaSegment: deep-learning based organoid segment
           "Human Phenotype Ontology gene-to-phenotype annotation. https://obophenotype.github.io/human-phenotype-ontology/annotations/genes_to_phenotype/",
           "EBI Ontology Lookup Service 4. https://www.ebi.ac.uk/ols4/api-docs",
           "Human Cell Atlas GSE108291 kidney organoid single-cell project. https://explore.data.humancellatlas.org/projects/7b947aa2-43a7-4082-afff-222a3e3a4635",
+          "Demchenko A, et al. A semi-automated algorithm for image analysis of respiratory organoids. PLoS Comput Biol 2025. https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013589",
+          "Matthews J, et al. OrganoID. PLoS Comput Biol 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC9645660/",
+          "Anderson JD, et al. CFTR function and clinical response to modulators parallel nasal epithelial organoid swelling. AJP Lung 2021. https://pmc.ncbi.nlm.nih.gov/articles/PMC8321858/",
           "InterPro API. https://interpro-documentation.readthedocs.io/en/latest/api.html",
           "Europe PMC RESTful Web Service. https://europepmc.org/RestfulWebService",
           "Kuleshov MV, et al. Enrichr: a comprehensive gene set enrichment analysis web server 2016 update. Nucleic Acids Res 2016.",

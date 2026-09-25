@@ -1,6 +1,6 @@
 # Virtual organoid research toolkit (MEGA-PROGRAM-27, item 3)
 
-Research code and a 20-page working paper on the OrgaSegment single-organoid CFTR-modulator swelling assay, U-Net image segmentation, and GEO organoid-to-GTEx tissue fidelity. The findings are exploratory: the U-Net does **not** beat the published segmentation benchmark, the proposed metabolic-parenchyma mechanism is unproven, and the apparent broad culture-fibroblast attractor was retracted after a sample-level audit. Do not use the fidelity rank or size-response estimates for diagnosis or care decisions.
+Research code and a 25-page working paper on the OrgaSegment single-organoid CFTR-modulator swelling assay, U-Net image segmentation, and GEO organoid-to-GTEx tissue fidelity. The findings are exploratory: a stricter donor x plate x dose size-effect test failed (9/12 donor medians positive, p=0.073), the U-Net does **not** beat the published segmentation benchmark, the proposed metabolic-parenchyma mechanism is unproven, and the apparent broad culture-fibroblast attractor was retracted after a sample-level audit. Do not use the fidelity rank or size-response estimates for diagnosis or care decisions.
 
 ## Reproduce and use
 
@@ -46,7 +46,8 @@ The 16-bit output is a label image, not a pretty preview. Use an appropriate ima
 ## Evidence, negatives and provenance
 
 - `paper/mega27-03-virtual-organoid-paper.pdf`: working paper with embedded Times New Roman, equations and figures.
-- `results/finding_size_dependent_swelling.md` and `results/finding_strict_organs.md`: positive, negative and inconclusive analyses.
+- `results/finding_size_dependent_swelling.md`, `results/finding_blocked_size.md`, and `results/finding_strict_organs.md`: positive, negative and inconclusive analyses.
+- `results/external_fis_source_audit.md`: why three published external datasets cannot yet replicate the modulator-specific size finding.
 - `results/datasets_ledger.csv`: accession-level source list. GEO and ArrayExpress entries count once per accession; the two single-cell runs of GSE108291 count once.
 - `results/tools_ledger.csv`: tools actually used, with infrastructure excluded from the research-tool gate.
 - `results/preregistration_*.md`: tests fixed before new data queries where possible, with deviations disclosed.
