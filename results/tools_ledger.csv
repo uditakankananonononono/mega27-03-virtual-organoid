@@ -36,3 +36,4 @@ Ensembl REST lookup/id,web API,src/deficit_ensembl_biotype.py; results/deficit_e
 EBI Ontology Lookup Service 4 (OLS4),ontology web API,src/ols_anatomy_audit.py; results/ols_anatomy.json,True,pre-registered anatomy and cell-type label audit fecf4f7; annotation not molecular evidence
 Scanpy 1.11.5,library,src/sc_kidney_markers.py; results/sc_kidney_markers.json,True,sparse single-cell QC of GSE108291 organoid 10x matrices; pre-registered 3330723
 Human Phenotype Ontology gene-to-phenotype release,reference ontology/database,src/deficit_hpo.py; results/deficit_hpo.json,True,direct metabolism phenotype annotation; pre-registered 16771b5; underpowered due to coverage
+Europe PMC REST search,literature API,src/epmc_priorart.py; results/epmc_priorart.json; results/epmc_priorart_review.md,True,pre-registered prior-art audit cdb1051; does not prove novelty

@@ -1,0 +1,117 @@
+{
+  "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+  "preregistration": "results/preregistration_epmc_priorart.md (commit cdb1051)",
+  "searches": [
+    {
+      "query": "TITLE_ABS:\"organoid\" AND TITLE_ABS:\"forskolin\" AND TITLE_ABS:\"size\" AND TITLE_ABS:\"swelling\"",
+      "hitCount": 4,
+      "returned": 4,
+      "results": [
+        {
+          "id": "PPR1218915",
+          "source": "PPR",
+          "pmid": null,
+          "doi": "10.64898/2026.03.19.712113",
+          "title": "Optimization of isolation, expansion, and differentiation of canine intestinal organoids",
+          "abstract": "Intestinal organoids are three-dimensional  in vitro structures derived from stem cells and serve as a valuable model for studying intestinal biology and pathophysiology. This study optimized the isolation, expansion, and differentiation of canine intestinal organoids from duodenum and colon. Organoids were generated from canine intestinal crypts and cultured in Matrigel with a growth factor cocktail. The impact of prostaglandin E  2 (PGE  2 ) concentration on organoid growth was evaluated, and a two-phase differentiation protocol\u2014comprising patterning and differentiation media\u2014was implemented, including interleukin (IL)-22 in the duodenal differentiation phase. Organoids cultured with 100 nM PGE  2 exhibited increased crypt budding and organoid-forming efficiency, indicative of enhanced stem cell proliferation. Differentiated organoids expressed key intestinal markers (VIL1, SI, CHGA, MUC2), and forskolin-induced swelling demonstrated functional Cystic Fibrosis Transmembrane Conductance Regulator (CFTR) activity. Although the sample size (n=2) limits generalizability, this optimized protocol provides a relevant  in vitro model for studying canine intestinal function. The model can be used in future research for disease modelling and translational applications, supporting downstream studies in gastrointestinal disease, drug permeability, and comparative One Health research.",
+          "year": "2026",
+          "url": "https://europepmc.org/article/PPR/PPR1218915",
+          "query": "TITLE_ABS:\"organoid\" AND TITLE_ABS:\"forskolin\" AND TITLE_ABS:\"size\" AND TITLE_ABS:\"swelling\""
+        },
+        {
+          "id": "37633792",
+          "source": "MED",
+          "pmid": "37633792",
+          "doi": "10.1016/j.jcf.2023.08.003",
+          "title": "Pancreatic duct organoid swelling is chloride-dependent.",
+          "abstract": "Pancreatic secretions become viscous and acidic in Cystic fibrosis (CF), highlighting the role of CFTR in pancreatic fluid and bicarbonate secretion. Forskolin-induced swelling (FIS) assay developed in intestinal organoids measures residual CFTR function. It is not known whether FIS reflects bicarbonate secretion in pancreas, an organ that secretes near-isotonic NaHCO<sub>3</sub> levels. To investigate this, we generated pancreatic duct organoids from CF and non-CF pigs. Epithelial and ductal origin was confirmed with epithelial markers, ion transporters and lack of acinar, islet cell markers. CF organoids were small with no identifiable lumen; CFTR was expressed only in non-CF organoids. Utilizing FIS, organoid size increased only in response to chloride, not bicarbonate. This report highlights pancreatic duct organoids isolated for the first time from CF pigs and evidence for chloride and not bicarbonate driving pancreatic organoid swelling. These organoids would be useful to test chloride permeability of CFTR mutations that cause CF pancreatic disease.",
+          "year": "2024",
+          "url": "https://europepmc.org/article/MED/37633792",
+          "query": "TITLE_ABS:\"organoid\" AND TITLE_ABS:\"forskolin\" AND TITLE_ABS:\"size\" AND TITLE_ABS:\"swelling\""
+        },
+        {
+          "id": "35086832",
+          "source": "MED",
+          "pmid": "35086832",
+          "doi": "10.1183/13993003.00508-2021",
+          "title": "Forskolin-induced organoid swelling is associated with long-term cystic fibrosis disease progression.",
+          "abstract": "<h4>Rationale</h4>Cystic fibrosis (CF) is a monogenic life-shortening disease associated with highly variable individual disease progression which is difficult to predict. Here we assessed the association of forskolin-induced swelling (FIS) of patient-derived organoids with long-term CF disease progression in multiple organs and compared FIS with the golden standard biomarker sweat chloride concentration (SCC).<h4>Methods</h4>We retrieved 9-year longitudinal clinical data from the Dutch CF Registry of 173 people with mutations in the cystic fibrosis transmembrane conductance regulator (<i>CFTR</i>) gene. Individual CFTR function was defined by FIS, measured as the relative size increase of intestinal organoids after stimulation with 0.8\u2005\u00b5M forskolin, quantified as area under the curve (AUC). We used linear mixed-effect models and multivariable logistic regression to estimate the association of FIS with long-term forced expiratory volume in 1\u2005s % predicted (FEV<sub>1</sub>pp) decline and development of pancreatic insufficiency, CF-related liver disease and diabetes. Within these models, FIS was compared with SCC.<h4>Results</h4>FIS was strongly associated with longitudinal changes of lung function, with an estimated difference in annual FEV<sub>1</sub>pp decline of 0.32% (95% CI 0.11-0.54%; p=0.004) per 1000-point change in AUC. Moreover, increasing FIS levels were associated with lower odds of developing pancreatic insufficiency (adjusted OR 0.18, 95% CI 0.07-0.46; p<0.001), CF-related liver disease (adjusted OR 0.18, 95% CI 0.06-0.54; p=0.002) and diabetes (adjusted OR 0.34, 95% CI 0.12-0.97; p=0.044). These associations were absent for SCC.<h4>Conclusion</h4>This study exemplifies the prognostic value of a patient-derived organoid-based biomarker within a clinical setting, which is especially important for people carrying rare <i>CFTR</i> mutations with unclear clinical consequences.",
+          "year": "2022",
+          "url": "https://europepmc.org/article/MED/35086832",
+          "query": "TITLE_ABS:\"organoid\" AND TITLE_ABS:\"forskolin\" AND TITLE_ABS:\"size\" AND TITLE_ABS:\"swelling\""
+        },
+        {
+          "id": "32377875",
+          "source": "MED",
+          "pmid": "32377875",
+          "doi": "10.1007/s00441-020-03208-7",
+          "title": "An organoid model to assay the role of CFTR in the human epididymis epithelium.",
+          "abstract": "Organoid cultures derived from primary human tissues facilitate the study of disease processes and the development of new therapeutics. Most men with cystic fibrosis (CF) are infertile due to defects in the epididymis and vas deferens; however, the causative mechanisms are still unclear. We used human epididymis epithelial cell (HEE) organoids and polarized HEE cell cultures to assay the CF transmembrane conductance regulator (CFTR) in the human epididymis. 3D HEE organoids and polarized 2D HEE cell cultures on membrane inserts were established from human caput epididymis. Single-cell RNA sequencing (scRNA-seq) was performed to map cell type-specific gene expression in the organoids. Using forskolin (FSK) to activate CFTR and inhibitor CFTRinh<sub>172</sub> to block its activity, we assessed how CFTR contributes to organoid swelling and epithelial barrier function. The scRNA-seq data showed key caput epididymis cell types present in HEE organoid cultures. FSK at 10\u00a0\u03bcM induced HEE organoid swelling by 20% at 16\u00a0h, while 5 and 10\u00a0\u03bcM CFTRinh<sub>172</sub> treatment significantly reduced HEE organoid size. In transepithelial resistance (TER) measurements, FSK reduced TER, while inhibition of CFTR increased TER; also, depletion of CFTR with specific siRNAs significantly increased TER. FSK treatment significantly increased the flux of 4-kDa but not 70-kDa dextran, suggesting activation of CFTR mainly enhances transcellular diffusion. We have demonstrated that CFTR contributes to the maintenance of HEE cell TER and that cultured HEE organoids are a useful model to investigate human epididymis function. These results facilitate progress in elucidating how CFTR-dependent cellular processes impair fertility in CF.",
+          "year": "2020",
+          "url": "https://europepmc.org/article/MED/32377875",
+          "query": "TITLE_ABS:\"organoid\" AND TITLE_ABS:\"forskolin\" AND TITLE_ABS:\"size\" AND TITLE_ABS:\"swelling\""
+        }
+      ]
+    },
+    {
+      "query": "TITLE_ABS:\"organoid\" AND TITLE_ABS:\"forskolin\" AND TITLE_ABS:\"lumen\" AND TITLE_ABS:\"swelling\"",
+      "hitCount": 3,
+      "returned": 3,
+      "results": [
+        {
+          "id": "40700044",
+          "source": "MED",
+          "pmid": "40700044",
+          "doi": "10.3390/ijns11030052",
+          "title": "The Promising Role of Intestinal Organoids in the Diagnostic Work-Up of Cystic Fibrosis Screen Positive Inconclusive Diagnosis/CFTR-Related Metabolic Syndrome (CFSPID/CRMS).",
+          "abstract": "Cystic Fibrosis Screen Positive Inconclusive Diagnosis/CFTR-related Metabolic Syndrome (CFSPID/CRMS) presents a significant clinical challenge due to its variable diagnostic outcomes and uncertain disease progression. Current diagnostic strategies, including sweat chloride testing and genetic analysis fall short in delivering clear guidance for clinical decision-making and risk assessment. Here, we comment on the potential of CFTR functional tests in patient-derived intestinal organoids (PDIOs) to enhance early risk stratification in CFSPID/CRMS cases. Using four hypothetical cases based on real-world data, we illustrate diverse clinical trajectories: diagnosis of cystic fibrosis (CF), reclassification as a CFTR-related disorder (CFTR-RD), non-CF designation, and persistent diagnostic uncertainty. Organoid-based assays-such as forskolin-induced swelling (FIS), steady-state lumen area (SLA) analysis, and rectal organoid morphology analysis (ROMA)-offer functional insights into CFTR activity and drug responsiveness. Compared to existing CFTR functional tests, such as Intestinal Current Measurement (ICM) and Nasal Potential Difference (NPD), these assays are more accessible, highly reproducible, and when needed support personalized medicine approaches. PDIO-based assays could help identify infants at high risk of disease progression, facilitating earlier interventions while minimizing unnecessary follow-ups for those unlikely to develop CF-related symptoms. Although not yet widely implemented, these assays hold promise for refining CFSPID diagnostics and management. Future research should focus on establishing standardized protocols allowing validation of clinical utility.",
+          "year": "2025",
+          "url": "https://europepmc.org/article/MED/40700044",
+          "query": "TITLE_ABS:\"organoid\" AND TITLE_ABS:\"forskolin\" AND TITLE_ABS:\"lumen\" AND TITLE_ABS:\"swelling\""
+        },
+        {
+          "id": "37633792",
+          "source": "MED",
+          "pmid": "37633792",
+          "doi": "10.1016/j.jcf.2023.08.003",
+          "title": "Pancreatic duct organoid swelling is chloride-dependent.",
+          "abstract": "Pancreatic secretions become viscous and acidic in Cystic fibrosis (CF), highlighting the role of CFTR in pancreatic fluid and bicarbonate secretion. Forskolin-induced swelling (FIS) assay developed in intestinal organoids measures residual CFTR function. It is not known whether FIS reflects bicarbonate secretion in pancreas, an organ that secretes near-isotonic NaHCO<sub>3</sub> levels. To investigate this, we generated pancreatic duct organoids from CF and non-CF pigs. Epithelial and ductal origin was confirmed with epithelial markers, ion transporters and lack of acinar, islet cell markers. CF organoids were small with no identifiable lumen; CFTR was expressed only in non-CF organoids. Utilizing FIS, organoid size increased only in response to chloride, not bicarbonate. This report highlights pancreatic duct organoids isolated for the first time from CF pigs and evidence for chloride and not bicarbonate driving pancreatic organoid swelling. These organoids would be useful to test chloride permeability of CFTR mutations that cause CF pancreatic disease.",
+          "year": "2024",
+          "url": "https://europepmc.org/article/MED/37633792",
+          "query": "TITLE_ABS:\"organoid\" AND TITLE_ABS:\"forskolin\" AND TITLE_ABS:\"lumen\" AND TITLE_ABS:\"swelling\""
+        },
+        {
+          "id": "32485957",
+          "source": "MED",
+          "pmid": "32485957",
+          "doi": "10.3390/genes11060603",
+          "title": "Human Nasal Epithelial Organoids for Therapeutic Development in Cystic Fibrosis.",
+          "abstract": "We describe a human nasal epithelial (HNE) organoid model derived directly from patient samples that is well-differentiated and recapitulates the airway epithelium, including the expression of cilia, mucins, tight junctions, the cystic fibrosis transmembrane conductance regulator (CFTR), and ionocytes. This model requires few cells compared to airway epithelial monolayer cultures, with multiple outcome measurements depending on the application. A novel feature of the model is the predictive capacity of lumen formation, a marker of baseline CFTR function that correlates with short-circuit current activation of CFTR in monolayers and discriminates the cystic fibrosis (CF) phenotype from non-CF. Our HNE organoid model is amenable to automated measurements of forskolin-induced swelling (FIS), which distinguishes levels of CFTR activity. While the apical side is not easily accessible, RNA- and DNA-based therapies intended for systemic administration could be evaluated in vitro, or it could be used as an ex vivo biomarker of successful repair of a mutant gene. In conclusion, this highly differentiated airway epithelial model could serve as a surrogate biomarker to assess correction of the mutant gene in CF or other diseases, recapitulating the phenotypic and genotypic diversity of the population.",
+          "year": "2020",
+          "url": "https://europepmc.org/article/MED/32485957",
+          "query": "TITLE_ABS:\"organoid\" AND TITLE_ABS:\"forskolin\" AND TITLE_ABS:\"lumen\" AND TITLE_ABS:\"swelling\""
+        }
+      ]
+    },
+    {
+      "query": "TITLE_ABS:\"organoid\" AND TITLE_ABS:\"CFTR\" AND TITLE_ABS:\"size\" AND TITLE_ABS:\"response\"",
+      "hitCount": 1,
+      "returned": 1,
+      "results": [
+        {
+          "id": "37633792",
+          "source": "MED",
+          "pmid": "37633792",
+          "doi": "10.1016/j.jcf.2023.08.003",
+          "title": "Pancreatic duct organoid swelling is chloride-dependent.",
+          "abstract": "Pancreatic secretions become viscous and acidic in Cystic fibrosis (CF), highlighting the role of CFTR in pancreatic fluid and bicarbonate secretion. Forskolin-induced swelling (FIS) assay developed in intestinal organoids measures residual CFTR function. It is not known whether FIS reflects bicarbonate secretion in pancreas, an organ that secretes near-isotonic NaHCO<sub>3</sub> levels. To investigate this, we generated pancreatic duct organoids from CF and non-CF pigs. Epithelial and ductal origin was confirmed with epithelial markers, ion transporters and lack of acinar, islet cell markers. CF organoids were small with no identifiable lumen; CFTR was expressed only in non-CF organoids. Utilizing FIS, organoid size increased only in response to chloride, not bicarbonate. This report highlights pancreatic duct organoids isolated for the first time from CF pigs and evidence for chloride and not bicarbonate driving pancreatic organoid swelling. These organoids would be useful to test chloride permeability of CFTR mutations that cause CF pancreatic disease.",
+          "year": "2024",
+          "url": "https://europepmc.org/article/MED/37633792",
+          "query": "TITLE_ABS:\"organoid\" AND TITLE_ABS:\"CFTR\" AND TITLE_ABS:\"size\" AND TITLE_ABS:\"response\""
+        }
+      ]
+    }
+  ],
+  "n_unique_returned": 6,
+  "interpretation_status": "manual title/abstract review needed; search absence cannot prove novelty"
+}
