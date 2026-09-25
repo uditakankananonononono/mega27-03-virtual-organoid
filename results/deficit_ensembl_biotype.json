@@ -1,0 +1,55 @@
+{
+  "source": "https://rest.ensembl.org/lookup/id",
+  "documentation": "https://rest.ensembl.org/documentation/info/lookup_post",
+  "preregistration": "results/preregistration_ensembl_biotype.md (commit 8ea5c50)",
+  "assembly": [
+    "GRCh38"
+  ],
+  "per_organ": {
+    "Brain - Cortex": {
+      "n_input": 100,
+      "n_mapped": 100,
+      "n_protein_coding": 100,
+      "coding_fraction": 1.0
+    },
+    "Colon - Transverse": {
+      "n_input": 100,
+      "n_mapped": 100,
+      "n_protein_coding": 100,
+      "coding_fraction": 1.0
+    },
+    "Kidney - Cortex": {
+      "n_input": 100,
+      "n_mapped": 100,
+      "n_protein_coding": 93,
+      "coding_fraction": 0.93
+    },
+    "Liver": {
+      "n_input": 100,
+      "n_mapped": 100,
+      "n_protein_coding": 99,
+      "coding_fraction": 0.99
+    },
+    "Lung": {
+      "n_input": 100,
+      "n_mapped": 100,
+      "n_protein_coding": 92,
+      "coding_fraction": 0.92
+    }
+  },
+  "H1": {
+    "table": [
+      [
+        99,
+        1
+      ],
+      [
+        100,
+        0
+      ]
+    ],
+    "odds_ratio": 0.0,
+    "p_one_sided": 1.0,
+    "verdict": "FAIL"
+  }
+}

@@ -32,3 +32,4 @@ OmniPath (CollecTRI TF regulons + PROGENy pathway footprints),database/service,s
 EBI Expression Atlas (baseline experiments FTP),database/service,src/deficit_bodymap.py,True,E-MTAB-513 Illumina Body Map TPMs as independent tissue reference; pre-registered 3d898d6
 ClinPGx / PharmGKB gene download (release 2026-09-05),database/service,src/deficit_clinpgx.py,True,"CPIC-guideline pharmacogenes; pre-registered afcb277 (VIP flag defective, deviation documented)"
 gnomAD v2.1.1 gene-level pLoF constraint,reference database,src/deficit_gnomad.py; results/deficit_gnomad.json,True,LOEUF comparison of organoid deficits; pre-registered 58a422c
+Ensembl REST lookup/id,web API,src/deficit_ensembl_biotype.py; results/deficit_ensembl_biotype.json,True,biotype composition of top-100 organoid deficits; pre-registered 8ea5c50

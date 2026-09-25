@@ -10,3 +10,4 @@ data/ref/progeny_human_top500.csv
 data/atlas/
 data/clinpgx/
 data/gnomad/
+data/ref/ensembl_biotypes_lookup.json
