@@ -36,19 +36,48 @@ def cmd_segment(a):
     import torch, torch.nn.functional as F
     from PIL import Image
     from .seg import UNet, instances_from_probs
-    net = UNet(); net.load_state_dict(torch.load(a.model, map_location="cpu")); net.eval()
-    img = np.asarray(Image.open(a.image).convert("L"), dtype=np.float32)
-    x = np.asarray(Image.fromarray(img).resize((a.size, a.size)), dtype=np.float32)
+    net = UNet()
+    checkpoint = torch.load(a.model, map_location="cpu", weights_only=False)
+    # Legacy weights are bare state dictionaries; train-only checkpoints include epoch and optimizer state.
+    net.load_state_dict(checkpoint["net"] if "net" in checkpoint and "epoch" in checkpoint else checkpoint)
+    net.eval()
+    source = Image.open(a.image).convert("L")
+    img = np.asarray(source, dtype=np.float32)
+    x = np.asarray(source.resize((a.size, a.size), Image.BILINEAR), dtype=np.float32) / 255.0
     x = (x - x.mean()) / (x.std() + 1e-6)
+    xt = torch.tensor(x)[None, None]
     with torch.no_grad():
-        p = torch.softmax(net(torch.tensor(x)[None, None]), 1)
+        logits = [torch.softmax(net(xt), 1)]
+        if a.tta_three:
+            logits += [torch.softmax(net(xt.flip(-1)), 1).flip(-1),
+                       torch.softmax(net(xt.flip(-2)), 1).flip(-2)]
+        p = torch.stack(logits).mean(0)
     p = F.interpolate(p, size=img.shape, mode="bilinear")[0].numpy()
-    lab = instances_from_probs(p, min_size=int(20 * (img.shape[0] / a.size) ** 2))
-    Image.fromarray(lab.astype(np.uint16)).save(a.out)
+    if a.selection:
+        from scipy import ndimage as ndi
+        from skimage.segmentation import watershed
+        selection = json.load(open(a.selection))
+        if selection.get("eval_used") is not False:
+            sys.exit("selection must be frozen before eval")
+        if selection.get("selected_epoch") != checkpoint.get("epoch", -1) + 1:
+            sys.exit("selected epoch does not match model checkpoint")
+        fg_t, seed_t, bnd_t, minimum = selection["selected_params"]
+        fg = (p[1] + p[2]) > fg_t
+        seeds = (p[1] > seed_t) & (p[2] < bnd_t)
+        markers, _ = ndi.label(seeds)
+        lab = watershed(-p[1], markers, mask=fg)
+        sizes = np.bincount(lab.ravel())
+        minimum = int(minimum * (img.shape[0] / a.size) ** 2)
+        small = np.where(sizes < minimum)[0]
+        lab[np.isin(lab, small[small > 0])] = 0
+    else:
+        lab = instances_from_probs(p, min_size=int(20 * (img.shape[0] / a.size) ** 2))
+    ids = np.unique(lab)
+    lab = np.searchsorted(ids, lab).astype(np.uint16)
+    Image.fromarray(lab).save(a.out)
     areas = np.bincount(lab.ravel())[1:]
     print(json.dumps({"n_organoids": int((areas > 0).sum()), "median_area_px": float(np.median(areas[areas > 0])) if (areas > 0).any() else 0}))
     return 0
-
 
 def cmd_fidelity(a):
     from .fidelity import mean_log_cpm, fidelity_scores, load_gtex
@@ -77,7 +106,9 @@ def main(argv=None):
     s = sp.add_parser("sizeaware"); s.add_argument("table"); s.add_argument("--drug", required=True); s.add_argument("--control", default="DMSO")
     s.add_argument("--bins", type=int, default=4); s.add_argument("--forskolin-col"); s.set_defaults(f=cmd_sizeaware)
     g = sp.add_parser("segment"); g.add_argument("image"); g.add_argument("--model", required=True); g.add_argument("--size", type=int, default=256)
-    g.add_argument("--out", default="labels.png"); g.set_defaults(f=cmd_segment)
+    g.add_argument("--out", default="labels.png"); g.add_argument("--selection", help="frozen validation-selected postprocessing JSON")
+    g.add_argument("--tta-three", action="store_true", help="average original, horizontal and vertical flip predictions")
+    g.set_defaults(f=cmd_segment)
     f = sp.add_parser("fidelity"); f.add_argument("counts"); f.add_argument("--reference", required=True)
     f.add_argument("--organ-tissue"); f.add_argument("--purity", metavar="HPA_TSV", help="restrict to HPA parenchymal-only genes (purity-corrected score)"); f.add_argument("--top", type=int, default=5)
     f.add_argument("--profile", action="store_true", help="input is a one-column, precomputed log expression profile, not raw counts")

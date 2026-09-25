@@ -38,10 +38,11 @@ Counts must be unnormalized nonnegative gene counts with library-scale columns (
 
 ```bash
 vorganoid segment path/to/brightfield.jpg --model results/trainonly_seg/best.pt \
-  --size 512 --out labels.png
+  --size 512 --selection results/trainonly_seg/val_selection.json \
+  --tta-three --out labels.png
 ```
 
-The 16-bit output is a label image, not a pretty preview. Use an appropriate image viewer for instance labels; the prediction is not a diagnostic. The separately selected clean train-only checkpoint reached AP50 = 0.738672 with the original published scorer on the held-out OrgaSegment eval split, below the published mean 0.76; see `results/trainonly_seg/finding.md` and `results/trainonly_seg/sealed_eval.json`. The CLI uses its default postprocessing, not the validation-selected three-view grid, so the CLI output itself has not been benchmarked at 0.738672. The model may not generalize to other microscopes.
+The 16-bit output is a label image, not a pretty preview. Use an appropriate image viewer for instance labels; the prediction is not a diagnostic. The separately selected clean train-only checkpoint reached AP50 = 0.738672 with the original published scorer on the held-out OrgaSegment eval split, below the published mean 0.76; see `results/trainonly_seg/finding.md` and `results/trainonly_seg/sealed_eval.json`. This command uses the fixed validation-selected postprocessing and three-view prediction of the sealed benchmark; the shipped checkpoint is a training-state dictionary, which this CLI reads. This is research-grade segmentation, not a clinical assay. The model may not generalize to other microscopes.
 
 ## Evidence, negatives and provenance
 
