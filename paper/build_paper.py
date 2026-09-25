@@ -20,9 +20,10 @@ rho, pv = spearmanr(R.overall, R.attenuation)
 S1 = json.load(open("results/seg_eval.json")); S2 = json.load(open("results/seg_eval_tuned_256.json")); S3 = json.load(open("results/seg_eval_512.json")); S4 = json.load(open("results/seg_eval_tuned_512.json"))
 
 P = Paper("Small-Organoid Attenuation of CFTR-Modulator Swelling in Patient-Derived Intestinal Organoids: "
-          "a Single-Organoid Re-Analysis with a Biophysical Swelling Twin",
+          "an Exploratory Single-Organoid Re-Analysis and Negative Validation Tests",
           "MEGA-PROGRAM-27, Item 3 - Udita Phookan (program owner); computational work by an AI research agent. Working draft of 25 September 2026.")
 P.h("Abstract")
+P.p("Novelty status. This working project tests whether baseline organoid size moderates CFTR-modulator swelling, using a donor-matched analysis and a swelling-geometry model. This is a testable candidate, NOT an established new biological discovery. Its stronger pre-registered donor x plate x dose check failed; the tested segmentation pipeline does not match the published benchmark; no diagnostic tool has been validated. The contribution is a transparent, reproducible analysis with negative controls, not an award or clinical claim.")
 P.p("The forskolin-induced swelling (FIS) assay on patient-derived intestinal organoids is used to predict which people with cystic fibrosis "
     "(CF) respond to CFTR modulators. Standard pipelines sum organoid area per well, so any dependence of the response on organoid size is "
     "averaged away. We re-analysed the public single-organoid OrgaSegment data (17 CF donors, per-organoid area before and after "
@@ -33,11 +34,11 @@ P.p(f"Finding (candidate). Modulator-induced swelling is attenuated in the small
     f"largest size quartile exceeds that in the smallest in {int((R.attenuation > 0).sum())} of {len(R)} donors, and the attenuation does "
     f"not track overall response (Spearman rho = {rho:.2f}, p = {pv:.2f}). Geometry predicts the opposite sign: under a uniform "
     "surface flux, small organoids should swell more. Area noise also biases the slope negative. So the effect is unlikely to be a "
-    "measurement artefact, but track-selection bias remains unbounded.")
+    "simple uniform-area-noise artefact under the tested model; track-selection bias and source-specific confounding remain unbounded. A stronger matched-block test fails, so this is not donor-general evidence.")
 P.p(f"Negatives. Size-adjusted and size-filtered readouts do not improve per-donor Trikafta-vs-DMSO separation, so the finding does not "
-    f"change theratyping calls at this assay's well counts. Replication on the public FIS time series is impossible because it is "
+    f"change theratyping calls at this assay's well counts. A pre-registered donor x plate x dose test is 9/12 positive (p=0.073), failing H1. Replication on the public FIS time series is impossible because it is "
     f"well-level. Our best U-Net segmentation (512 px, tuned) reaches mAP@0.5 = {S4['eval_mAP50']:.3f} +/- {S4['eval_sd']:.3f} on the OrgaSegment eval split "
-    f"(published 0.76 +/- 0.12): below the state of the art, although the gap is within one standard deviation on 12 images.")
+    f"(published 0.76 +/- 0.12): below the reported reference. A separate train-only, validation-only pipeline also fails (0.73867 by the published AP scorer). Neither score establishes a match, superiority, or clinical use.")
 P.p("Fidelity. Scoring 151 organoid GEO series against GTEx, cultured fibroblasts are the most common best match. A GEOparse sample-level audit shows this "
     "'culture-fibroblast attractor' comes mostly from non-organoid samples in organoid-titled series: on 45 strictly organoid series it falls to 9-29%. "
     "We retract it as a general organoid property.")
@@ -263,6 +264,24 @@ P.p(f"Training combined {SA['split_counts']['train']} train and {SA['split_count
     f"{SA['eval_image_bootstrap_ci95'][1]:.3f}] for our mean, but leader per-image predictions "
     "and guaranteed identical AP implementation are unavailable. No benchmark break "
     "(results/seg_integrity_audit.json).")
+
+P.h("4.5b Clean train-only and val-only segmentation attempt: negative", 2)
+TS = json.load(open("results/trainonly_seg/sealed_eval.json")); VSEL = json.load(open("results/trainonly_seg/val_selection.json"))
+P.p(f"A separate protocol was frozen before fitting (results/preregistration_trainonly_seg.md): 184 training images only, "
+    f"35 disjoint validation images, 12 evaluation images untouched until final selection. Sixty epochs were fit; "
+    f"epoch {VSEL['selected_epoch']} minimized validation cross-entropy. A fixed grid of {VSEL['grid_size']} "
+    f"postprocessing choices used the first 20 validation images only, selecting {VSEL['selected_params']} "
+    f"at validation AP50 {VSEL['selected_val_mAP50']:.3f}. This validation score is a selection statistic, not an independent benchmark.")
+P.p(f"The single sealed final evaluation scored {TS['mean_author']:.5f} AP50 under the authors' released Cellpose-style scorer "
+    f"and {TS['mean_ours']:.5f} under our unique-mask-count scorer, below the published 0.76. The only material "
+    "matcher difference arises from one released GT mask with a skipped label ID: the original scorer uses the maximum ID "
+    "as object count. This small numerical difference is not a model gain. Author baseline per-image predictions were not run in "
+    "this 2-CPU, no-TensorFlow/GPU workspace, so we do not assert a paired statistical comparison. Clean selection fixes an "
+    "older train/val overlap, but it is not a novel model breakthrough or a benchmark match. Per-image TP/FP/FN and both AP "
+    "versions are preserved in results/trainonly_seg/sealed_eval.json; selection frozen before eval at commit 120f944.")
+P.table(["image #", "author AP50", "unique-count AP50", "GT masks", "predicted masks"],
+        [[i, f"{d['ap_author']:.3f}", f"{d['ap_ours']:.3f}", d['n_gt'], d['n_pred']] for i, d in enumerate(TS['per_image'], 1)],
+        "Sealed 12-image evaluation of the clean train-only model; image numbers follow the JSON per_image order, which has full filenames and matching counts. None selected the model or postprocessing.")
 
 P.h("4.6 Organoid-to-tissue fidelity across 151 GEO series", 2)
 GM = json.load(open("results/geo_fidelity_methods.json")); GC = json.load(open("results/geo_fidelity_clean.json"))
@@ -566,7 +585,7 @@ P.p("In this accession, drug-minus-DMSO swelling tends to rise from small to lar
 P.p("Practical note. In this dataset, starting size may affect single-organoid readouts, but size correction did not "
     "improve per-donor discrimination. A lab comparing assays across passages may record its starting-size "
     "distribution as a quality-control variable; no clinical adjustment is recommended from these data.")
-P.p("Novelty. We did not find this effect reported for intestinal FIS in the literature we searched (OrgaSegment; the FIS_analysis pipeline, "
+P.p("Novelty remains unproved. We did not find this effect reported for intestinal FIS in the literature we searched (OrgaSegment; the FIS_analysis pipeline, "
     "which sums area per well). Related: nasal 2D-derived organoids show swelling variation concentrated in large structures "
     "(bioRxiv 2021.07.20.453105). This was not a systematic review.")
 P.h("7. Tools used")
