@@ -8,7 +8,7 @@ Forskolin > 0 only.
 | VX770 | 1496 | 30 | 0.226 | [0.185, 0.269] | 5/5 | 2.14 |
 | VX661+VX770 | 4493 | 112 | 0.042 | [0.028, 0.056] | 12/16 | 1.70 |
 | VX445+VX661+VX770 | 4984 | 121 | 0.116 | [0.090, 0.142] | 14/17 | 2.44 |
-Interpretation: surface-limited secretion (alpha=2/3) predicts slope < 0; observed slope > 0 whenever CFTR is activated and ~0 in DMSO. Area-measurement noise biases slope negative (regression dilution in the denominator), so the positive sign is conservative. Implication: raw fold-change readouts are confounded by organoid size; a size-adjusted readout is needed.
+Interpretation: surface-limited secretion (alpha=2/3) predicts slope < 0; observed slope > 0 whenever CFTR is activated and ~0 in DMSO. Area-measurement noise biases slope negative (regression dilution in the denominator), so the positive sign is conservative. Implication: raw fold-change readouts vary with organoid size, but later negative tests show that a size-adjusted readout is NOT needed to improve donor-level discrimination at these well counts.
 Status: candidate, not yet confirmed. Open checks: segmentation-error model, lumen-presence threshold, replication on FIS time series.
 
 ## Follow-up test (locked before running): does a size-adjusted readout improve Trikafta-vs-DMSO separation?

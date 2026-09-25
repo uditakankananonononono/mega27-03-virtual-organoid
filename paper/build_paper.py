@@ -104,6 +104,21 @@ P.p("Association between attenuation and overall response uses Spearman's rank c
 P.equation("rho = 1 - 6 sum_d (r_d - r'_d)^2 / ( n (n^2 - 1) ),   r, r' = ranks of attenuation and overall effect over n donors")
 P.p(f"Attenuation is positive in {int((R.attenuation > 0).sum())} of {len(R)} donors and unrelated to overall response "
     f"(rho = {rho:.2f}, p = {pv:.2f}). Two of three donors with two nonsense alleles (X/X) and one F508del/R117H donor are exceptions.")
+WR = json.load(open("results/withincohort_replication.json"))
+P.h("4.3a Internal experiment-date replication, not a new cohort", 2)
+P.p(f"We fixed the earlier small (<722 px) and large (>=1400 px) cutoffs, then split each donor's first "
+    f"experiment date from later dates in the SAME OrgaSegment DIS accession. Requiring at least five organoids "
+    f"per DMSO/Trikafta by size cell, {WR['portions']['later']['n_positive']}/{WR['portions']['later']['n_donors']} "
+    f"later-date donors have a positive donor-matched large-minus-small Trikafta effect: median "
+    f"{WR['portions']['later']['median_attenuation']:.3f} log-swelling units, exact one-sided sign "
+    f"p={WR['portions']['later']['sign_p_one_sided']:.6f}. On first-date plates, "
+    f"{WR['portions']['earliest']['n_positive']}/{WR['portions']['earliest']['n_donors']} eligible donors are positive "
+    f"(median {WR['portions']['earliest']['median_attenuation']:.3f}, p={WR['portions']['earliest']['sign_p_one_sided']:.3f}). "
+    "The later-date H1 passes its pre-registration, but thresholds were chosen using the whole accession, donors "
+    "overlap, and there is no external individual-organoid cohort. This supports repeatability over experiment "
+    "dates, not independent discovery, clinical validity, or the lumen-maturation mechanism "
+    "(results/withincohort_replication.json).")
+
 P.h("4.4 Does size correction help theratyping? No", 2)
 P.p("Locked before running: per-donor standardised Trikafta-vs-DMSO separation with raw, size-adjusted and size-band well readouts. Median "
     "raw 4.73, adjusted 4.35, band 4.39; adjusted better in 8 of 17 donors. Excluding organoids below 1,069 px (a post-hoc threshold): median "
@@ -342,6 +357,18 @@ P.p(f"Direct GOA BP terms cover {GOA['per_organ']['Liver']['n_direct_metabolic_u
     "and prior g:Profiler work included KEGG. These positives cannot be counted as independent confirmations. "
     "Neither organoid protein nor enzyme activity was measured, and the original kidney fidelity candidate failed external replication. "
     "No mechanism, discovery, or diagnostic use follows from these annotation contrasts.")
+IA = json.load(open("results/deficit_intact.json"))
+JA = json.load(open("results/deficit_jaspar.json"))
+P.p(f"Additional pre-registered annotation/coverage checks: IntAct PSIQUIC queried the fixed top-20 deficit "
+    f"genes per group and measured {IA['per_organ']['Liver']['n_measured']} liver and "
+    f"{IA['per_organ']['Brain - Cortex']['n_measured']} brain genes. Median indexed interaction RECORD "
+    f"counts were {IA['per_organ']['Liver']['median_count']:.1f} versus "
+    f"{IA['per_organ']['Brain - Cortex']['median_count']:.1f} (one-sided rank-test "
+    f"p={IA['H1']['p_one_sided']:.4f}). Study density, nonhuman interactors, and blood/immune genes confound "
+    "this contrast; no organoid interactome was measured. JASPAR CORE vertebrate matrices cover 2/3 "
+    "pre-fixed brain lineage TFs absent from CollecTRI (NEUROD2 and TBR1, not NEUROD6) and kidney PAX2; "
+    "this is motif availability only and cannot repair the failed decoupler activity control. "
+    "Neither is an independent biological replication (results/deficit_intact.json; results/deficit_jaspar.json).")
 HMS = json.load(open("results/deficit_hpa_ms.json"))
 P.p(f"Adult-tissue protein check (HPA v25.1 mass spectrometry). Liver protein is detected in "
     f"{HMS['per_organ']['Liver']['n_liver_detected']}/100 liver versus "
@@ -434,6 +461,8 @@ for r in ["Lefferts JW, et al. OrgaSegment: deep-learning based organoid segment
           "Ensembl REST API. https://rest.ensembl.org/documentation/info/lookup_post",
           "WikiPathways monthly releases. https://data.wikipathways.org/20260910/gmt/",
           "EBI GOA human GAF. https://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/goa_human.gaf.gz",
+          "IntAct PSIQUIC. https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/",
+          "JASPAR CORE vertebrate motif API. https://jaspar.elixir.no/api/v1/matrix/",
           "KEGG REST API. https://www.kegg.jp/kegg/rest/keggapi.html",
           "Rhea reaction-to-Swiss-Prot mapping. https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv",
           "Human Protein Atlas protein mass-spectrometry normal tissue download. https://www.proteinatlas.org/humanproteome/tissue/data",
