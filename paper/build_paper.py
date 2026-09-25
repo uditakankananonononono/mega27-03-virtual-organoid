@@ -33,7 +33,7 @@ P.p(f"Finding (candidate). Modulator-induced swelling is attenuated in the small
     f"largest size quartile exceeds that in the smallest in {int((R.attenuation > 0).sum())} of {len(R)} donors, and the attenuation does "
     f"not track overall response (Spearman rho = {rho:.2f}, p = {pv:.2f}). Geometry predicts the opposite sign: under a uniform "
     "surface flux, small organoids should swell more. Area noise also biases the slope negative. So the effect is unlikely to be a "
-    "measurement artefact.")
+    "measurement artefact, but track-selection bias remains unbounded.")
 P.p(f"Negatives. Size-adjusted and size-filtered readouts do not improve per-donor Trikafta-vs-DMSO separation, so the finding does not "
     f"change theratyping calls at this assay's well counts. Replication on the public FIS time series is impossible because it is "
     f"well-level. Our best U-Net segmentation (512 px, tuned) reaches mAP@0.5 = {S4['eval_mAP50']:.3f} +/- {S4['eval_sd']:.3f} on the OrgaSegment eval split "
@@ -204,9 +204,10 @@ P.p(f"A genuinely distinct dataset (Drevinek et al., Zenodo 4771466) contains we
     "Forty-seven of 431 plate-dose block rankings reverse if unnormalized raw area replaces normalized AUC; "
     "both patient-level summaries remain 20/20 positive. No clinical prediction follows "
     "(results/drevinek_fis.json; results/finding_drevinek_fis.md).")
-P.table(["patient", "n plate-dose blocks", "normalized triple-double AUC"],
-        [[d['patient'], d['n_blocks'], f"{d['effect']:+.3f}"] for d in DV['patient_results']],
-        "Patient-equal independent well-level treatment-ranking test; no individual organoid areas in this accession.")
+P.table(["patient", "blocks", "triple-double AUC", "patient", "blocks", "triple-double AUC"],
+        [[a['patient'], a['n_blocks'], f"{a['effect']:+.3f}", b['patient'], b['n_blocks'], f"{b['effect']:+.3f}"]
+         for a,b in zip(DV['patient_results'][:10], DV['patient_results'][10:])],
+        "Patient-equal well-level treatment-ranking test; no individual organoid areas in this accession.")
 
 P.h("4.4 Does size correction help theratyping? No", 2)
 P.p("Locked before running: per-donor standardised Trikafta-vs-DMSO separation with raw, size-adjusted and size-band well readouts. Median "
