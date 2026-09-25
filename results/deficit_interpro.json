@@ -1,0 +1,480 @@
+{
+  "source": "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/",
+  "preregistration": "results/preregistration_interpro.md (commit cdb1051)",
+  "targets": {
+    "CYP2D6": {
+      "group": "liver",
+      "gene": "CYP2D6",
+      "uniprot_query_url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACYP2D6+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cgene_primary&format=tsv&size=10",
+      "reviewed_accessions": [
+        "P10635"
+      ],
+      "interpro_url": "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/P10635/?page_size=100",
+      "entry_count": 6,
+      "entries": [
+        {
+          "accession": "IPR001128",
+          "name": "Cytochrome P450",
+          "type": "family"
+        },
+        {
+          "accession": "IPR002401",
+          "name": "Cytochrome P450, E-class, group I",
+          "type": "family"
+        },
+        {
+          "accession": "IPR008069",
+          "name": "Cytochrome P450, E-class, group I, CYP2D-like",
+          "type": "family"
+        },
+        {
+          "accession": "IPR017972",
+          "name": "Cytochrome P450, conserved site",
+          "type": "conserved_site"
+        },
+        {
+          "accession": "IPR036396",
+          "name": "Cytochrome P450 superfamily",
+          "type": "homologous_superfamily"
+        },
+        {
+          "accession": "IPR050182",
+          "name": "Cytochrome P450 family 2",
+          "type": "family"
+        }
+      ],
+      "classifications": [
+        "cytochrome p450"
+      ],
+      "truncated": false
+    },
+    "CYP2C9": {
+      "group": "liver",
+      "gene": "CYP2C9",
+      "uniprot_query_url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACYP2C9+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cgene_primary&format=tsv&size=10",
+      "reviewed_accessions": [
+        "P11712"
+      ],
+      "interpro_url": "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/P11712/?page_size=100",
+      "entry_count": 5,
+      "entries": [
+        {
+          "accession": "IPR001128",
+          "name": "Cytochrome P450",
+          "type": "family"
+        },
+        {
+          "accession": "IPR002401",
+          "name": "Cytochrome P450, E-class, group I",
+          "type": "family"
+        },
+        {
+          "accession": "IPR017972",
+          "name": "Cytochrome P450, conserved site",
+          "type": "conserved_site"
+        },
+        {
+          "accession": "IPR036396",
+          "name": "Cytochrome P450 superfamily",
+          "type": "homologous_superfamily"
+        },
+        {
+          "accession": "IPR050182",
+          "name": "Cytochrome P450 family 2",
+          "type": "family"
+        }
+      ],
+      "classifications": [
+        "cytochrome p450"
+      ],
+      "truncated": false
+    },
+    "CYP2C19": {
+      "group": "liver",
+      "gene": "CYP2C19",
+      "uniprot_query_url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACYP2C19+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cgene_primary&format=tsv&size=10",
+      "reviewed_accessions": [
+        "P33261"
+      ],
+      "interpro_url": "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/P33261/?page_size=100",
+      "entry_count": 5,
+      "entries": [
+        {
+          "accession": "IPR001128",
+          "name": "Cytochrome P450",
+          "type": "family"
+        },
+        {
+          "accession": "IPR002401",
+          "name": "Cytochrome P450, E-class, group I",
+          "type": "family"
+        },
+        {
+          "accession": "IPR017972",
+          "name": "Cytochrome P450, conserved site",
+          "type": "conserved_site"
+        },
+        {
+          "accession": "IPR036396",
+          "name": "Cytochrome P450 superfamily",
+          "type": "homologous_superfamily"
+        },
+        {
+          "accession": "IPR050182",
+          "name": "Cytochrome P450 family 2",
+          "type": "family"
+        }
+      ],
+      "classifications": [
+        "cytochrome p450"
+      ],
+      "truncated": false
+    },
+    "UGT1A1": {
+      "group": "liver",
+      "gene": "UGT1A1",
+      "uniprot_query_url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AUGT1A1+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cgene_primary&format=tsv&size=10",
+      "reviewed_accessions": [
+        "P22309"
+      ],
+      "interpro_url": "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/P22309/?page_size=100",
+      "entry_count": 3,
+      "entries": [
+        {
+          "accession": "IPR002213",
+          "name": "UDP-glucuronosyl/UDP-glucosyltransferase",
+          "type": "family"
+        },
+        {
+          "accession": "IPR035595",
+          "name": "UDP-glycosyltransferase family, conserved site",
+          "type": "conserved_site"
+        },
+        {
+          "accession": "IPR050271",
+          "name": "UDP-glycosyltransferase",
+          "type": "family"
+        }
+      ],
+      "classifications": [],
+      "truncated": false
+    },
+    "SLCO1B1": {
+      "group": "liver",
+      "gene": "SLCO1B1",
+      "uniprot_query_url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ASLCO1B1+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cgene_primary&format=tsv&size=10",
+      "reviewed_accessions": [
+        "Q9Y6L6"
+      ],
+      "interpro_url": "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/Q9Y6L6/?page_size=100",
+      "entry_count": 5,
+      "entries": [
+        {
+          "accession": "IPR002350",
+          "name": "Kazal domain",
+          "type": "domain"
+        },
+        {
+          "accession": "IPR004156",
+          "name": "Organic anion transporter polypeptide",
+          "type": "family"
+        },
+        {
+          "accession": "IPR020846",
+          "name": "Major facilitator superfamily domain",
+          "type": "domain"
+        },
+        {
+          "accession": "IPR036058",
+          "name": "Kazal domain superfamily",
+          "type": "homologous_superfamily"
+        },
+        {
+          "accession": "IPR036259",
+          "name": "MFS transporter superfamily",
+          "type": "homologous_superfamily"
+        }
+      ],
+      "classifications": [
+        "organic anion transport"
+      ],
+      "truncated": false
+    },
+    "VKORC1": {
+      "group": "liver",
+      "gene": "VKORC1",
+      "uniprot_query_url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AVKORC1+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cgene_primary&format=tsv&size=10",
+      "reviewed_accessions": [
+        "Q9BQB6"
+      ],
+      "interpro_url": "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/Q9BQB6/?page_size=100",
+      "entry_count": 3,
+      "entries": [
+        {
+          "accession": "IPR012932",
+          "name": "Vitamin K epoxide reductase",
+          "type": "domain"
+        },
+        {
+          "accession": "IPR038354",
+          "name": "VKOR domain superfamily",
+          "type": "homologous_superfamily"
+        },
+        {
+          "accession": "IPR042406",
+          "name": "Vitamin K epoxide reductase complex subunit 1",
+          "type": "family"
+        }
+      ],
+      "classifications": [
+        "vitamin k epoxide reductase"
+      ],
+      "truncated": false
+    },
+    "OPALIN": {
+      "group": "brain",
+      "gene": "OPALIN",
+      "uniprot_query_url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AOPALIN+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cgene_primary&format=tsv&size=10",
+      "reviewed_accessions": [
+        "Q96PE5"
+      ],
+      "interpro_url": "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/Q96PE5/?page_size=100",
+      "entry_count": 1,
+      "entries": [
+        {
+          "accession": "IPR026609",
+          "name": "Opalin",
+          "type": "family"
+        }
+      ],
+      "classifications": [],
+      "truncated": false
+    },
+    "MAG": {
+      "group": "brain",
+      "gene": "MAG",
+      "uniprot_query_url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AMAG+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cgene_primary&format=tsv&size=10",
+      "reviewed_accessions": [
+        "P20916"
+      ],
+      "interpro_url": "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/P20916/?page_size=100",
+      "entry_count": 7,
+      "entries": [
+        {
+          "accession": "IPR003598",
+          "name": "Immunoglobulin subtype 2",
+          "type": "domain"
+        },
+        {
+          "accession": "IPR003599",
+          "name": "Immunoglobulin domain subtype",
+          "type": "domain"
+        },
+        {
+          "accession": "IPR007110",
+          "name": "Immunoglobulin-like domain",
+          "type": "domain"
+        },
+        {
+          "accession": "IPR013162",
+          "name": "CD80-like, immunoglobulin C2-set",
+          "type": "domain"
+        },
+        {
+          "accession": "IPR013783",
+          "name": "Immunoglobulin-like fold",
+          "type": "homologous_superfamily"
+        },
+        {
+          "accession": "IPR036179",
+          "name": "Immunoglobulin-like domain superfamily",
+          "type": "homologous_superfamily"
+        },
+        {
+          "accession": "IPR051036",
+          "name": "Sialic acid-binding Ig-like lectin",
+          "type": "family"
+        }
+      ],
+      "classifications": [],
+      "truncated": false
+    },
+    "C1QB": {
+      "group": "brain",
+      "gene": "C1QB",
+      "uniprot_query_url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AC1QB+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cgene_primary&format=tsv&size=10",
+      "reviewed_accessions": [
+        "P02746"
+      ],
+      "interpro_url": "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/P02746/?page_size=100",
+      "entry_count": 4,
+      "entries": [
+        {
+          "accession": "IPR001073",
+          "name": "C1q domain",
+          "type": "domain"
+        },
+        {
+          "accession": "IPR008160",
+          "name": "Collagen triple helix repeat",
+          "type": "repeat"
+        },
+        {
+          "accession": "IPR008983",
+          "name": "Tumour necrosis factor-like domain superfamily",
+          "type": "homologous_superfamily"
+        },
+        {
+          "accession": "IPR050392",
+          "name": "Collagen/C1q domain-containing",
+          "type": "family"
+        }
+      ],
+      "classifications": [],
+      "truncated": false
+    },
+    "HBB": {
+      "group": "brain",
+      "gene": "HBB",
+      "uniprot_query_url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AHBB+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cgene_primary&format=tsv&size=10",
+      "reviewed_accessions": [
+        "P68871"
+      ],
+      "interpro_url": "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/P68871/?page_size=100",
+      "entry_count": 5,
+      "entries": [
+        {
+          "accession": "IPR000971",
+          "name": "Globin",
+          "type": "domain"
+        },
+        {
+          "accession": "IPR002337",
+          "name": "Hemoglobin, beta-type",
+          "type": "family"
+        },
+        {
+          "accession": "IPR009050",
+          "name": "Globin-like superfamily",
+          "type": "homologous_superfamily"
+        },
+        {
+          "accession": "IPR012292",
+          "name": "Globin/Protoglobin",
+          "type": "homologous_superfamily"
+        },
+        {
+          "accession": "IPR050056",
+          "name": "Hemoglobin and related oxygen transporters",
+          "type": "family"
+        }
+      ],
+      "classifications": [],
+      "truncated": false
+    },
+    "HBA2": {
+      "group": "brain",
+      "gene": "HBA2",
+      "uniprot_query_url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AHBA2+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cgene_primary&format=tsv&size=10",
+      "reviewed_accessions": [
+        "P69905"
+      ],
+      "interpro_url": "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/P69905/?page_size=100",
+      "entry_count": 6,
+      "entries": [
+        {
+          "accession": "IPR000971",
+          "name": "Globin",
+          "type": "domain"
+        },
+        {
+          "accession": "IPR002338",
+          "name": "Hemoglobin, alpha-type",
+          "type": "family"
+        },
+        {
+          "accession": "IPR002339",
+          "name": "Hemoglobin, pi",
+          "type": "family"
+        },
+        {
+          "accession": "IPR009050",
+          "name": "Globin-like superfamily",
+          "type": "homologous_superfamily"
+        },
+        {
+          "accession": "IPR012292",
+          "name": "Globin/Protoglobin",
+          "type": "homologous_superfamily"
+        },
+        {
+          "accession": "IPR050056",
+          "name": "Hemoglobin and related oxygen transporters",
+          "type": "family"
+        }
+      ],
+      "classifications": [],
+      "truncated": false
+    },
+    "S100A9": {
+      "group": "brain",
+      "gene": "S100A9",
+      "uniprot_query_url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AS100A9+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cgene_primary&format=tsv&size=10",
+      "reviewed_accessions": [
+        "P06702"
+      ],
+      "interpro_url": "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/P06702/?page_size=100",
+      "entry_count": 5,
+      "entries": [
+        {
+          "accession": "IPR001751",
+          "name": "S100/Calcium binding protein 7/8-like, conserved site",
+          "type": "conserved_site"
+        },
+        {
+          "accession": "IPR002048",
+          "name": "EF-hand domain",
+          "type": "domain"
+        },
+        {
+          "accession": "IPR011992",
+          "name": "EF-hand domain pair",
+          "type": "homologous_superfamily"
+        },
+        {
+          "accession": "IPR013787",
+          "name": "S100/CaBP-9k-type, calcium binding, subdomain",
+          "type": "domain"
+        },
+        {
+          "accession": "IPR018247",
+          "name": "EF-Hand 1, calcium-binding site",
+          "type": "binding_site"
+        }
+      ],
+      "classifications": [],
+      "truncated": false
+    }
+  },
+  "H1": {
+    "liver_matching_targets": [
+      "CYP2D6"
+    ],
+    "brain_matching_targets": [],
+    "verdict": "INVALID - pre-registration incorrectly called 5 of 6 liver targets top-100 deficits"
+  },
+  "caveat": "The preregistration mistakenly designated six drug-metabolism genes as top-100 liver deficits; only CYP2D6 is in that top 100. The six gene domain annotations are correct but do not test H1 on top deficits. No success claim.",
+  "deficit_top100_membership": {
+    "liver": [
+      "CYP2D6"
+    ],
+    "brain": [
+      "OPALIN",
+      "MAG",
+      "C1QB",
+      "HBB",
+      "HBA2",
+      "S100A9"
+    ]
+  }
+}
