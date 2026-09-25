@@ -29,3 +29,9 @@ BioStudies/ArrayExpress search -> 18 curated human non-cancer organoid E-MTAB ac
 - Faithful organs (intestine 5, brain 2): median rank 1, top-1 6/7 (brain E-MTAB-10037 ranked 26, best match cultured fibroblasts).
 - Unfaithful organs: median rank 19.5, top-1 1/4. Pre-registered one-sided Mann-Whitney p=0.031 -> H1 formally supported.
 Honest reading: support is weak. The unfaithful side has no lung; both liver datasets are cholangiocyte (biliary) organoids on Illumina microarrays (ranks 39, 37; best match stomach), so the liver signal mixes cell type and platform. Both kidney datasets match kidney well (tubuloids rank 1; PSC kidney organoids rank 2), which contradicts the kidney part of the candidate. The "metabolic-parenchyma gap" remains a candidate; the kidney component is not replicated.
+
+## GSEApy prerank GSEA of the full deficit ranking (src/strict_gsea.py, results/strict_gsea_hallmark.csv, results/strict_gsea_summary.json)
+Hallmark v2023.2, 500 permutations, per organ consensus delta over all genes.
+- Liver top deficits: xenobiotic (NES 2.29), coagulation, fatty acid, OXPHOS, bile acid metabolism (all FDR ~0). Kidney: complement/coagulation/xenobiotic. Lung: interferon, EMT (stroma/immune).
+- Mean NES over 6 metabolic hallmarks: liver 1.96, kidney 1.95, brain 1.65, colon 0.74, lung 0.46. Liver+kidney vs colon+brain one-sided MWU over NES values p=0.004 (hallmarks overlap, so values are not independent; descriptive).
+Verdict: supports the metabolic-deficit description for liver and kidney organoids, but it is not specific: brain organoids also lack OXPHOS/fatty-acid programs (NES 2.63/1.77) yet match their tissue. So a metabolic deficit alone does not decide fidelity; the candidate stays unproven.

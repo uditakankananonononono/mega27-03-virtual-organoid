@@ -11,3 +11,5 @@ def test_uniprot_outputs():
 def test_ae_replication():
     d = json.load(open("results/ae_replication.json")); D = pd.read_csv("results/ae_replication.csv")
     assert d["n_scored"] == int((D.status == "ok").sum()) and 0 < d["mwu_one_sided_p"] <= 1
+def test_gsea_outputs():
+    D = pd.read_csv("results/strict_gsea_hallmark.csv"); assert D.organ.nunique() >= 4 and D.NES.abs().max() < 10

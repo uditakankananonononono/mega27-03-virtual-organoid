@@ -25,3 +25,4 @@ Reactome AnalysisService,service,src/attractor_enrichr_reactome.py,True,pathway 
 STRING functional enrichment API (string-db.org),service,src/strict_organ_deficits.py,True,GO/KEGG enrichment of organoid deficit genes
 UniProt REST (UniProtKB reviewed human),database,src/strict_deficit_uniprot.py,True,signal peptide / secreted annotation of deficit genes
 EBI BioStudies / ArrayExpress API + FTP,database,src/ae_scan.py; src/ae_replication.py,True,out-of-sample organoid expression datasets for pre-registered test
+GSEApy prerank (v1.3.1),library,src/strict_gsea.py,True,Hallmark GSEA of organoid deficit rankings
