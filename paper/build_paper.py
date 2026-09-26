@@ -139,9 +139,16 @@ P.p(f"The stronger pre-registered stress test required >=3 organoids per Trikaft
 
 P.p("An additional pre-specified eligibility sensitivity used the same accession and original size bins, varying only minimum organoid count in every treatment-by-size cell. At five per cell, the result weakens to 8/12 positive donors (one-sided p=0.193848). At ten, six of six donors are positive (nominal p=0.015625), but six is below the frozen eight-donor eligibility floor, so that setting is UNINTERPRETABLE, not a rescue. At twenty, only three donors remain. A frozen post hoc donor-composition audit shows all three min-three nonpositive donors (PDIO_01, PDIO_16, PDIO_18) disappear at minimum ten; the six survivors were already positive at min three, and three other positive donors also disappear. This is selective eligibility, not evidence that excluded donors are nonresponders. The frozen three-per-cell H1 still FAILS (results/block_eligibility_sensitivity.json; results/finding_eligibility_composition.md).")
 P.table(["minimum objects/cell", "eligible blocks", "donors", "positive", "one-sided p", "verdict"], [[3,31,12,9,".072998","FAIL"],[5,28,12,8,".193848","FAIL"],[10,15,6,6,".015625","n<8"],[20,9,3,3,".125000","n<8"]], "Same-accession eligibility sensitivity preregistered before rerun at b9978eb; the nominal six-donor p at minimum ten does not meet the frozen eligible-donor floor or constitute independent validation.")
+Z0 = json.load(open("results/zero_fsk_control.json"))
+P.h("4.3c No-forskolin specificity stress test: fails", 2)
+P.p("An additional frozen within-accession check asked whether the drug-by-starting-size contrast is more positive at 0.128 uM forskolin than in the same donor and experiment at zero forskolin. Both doses required >=3 objects in every treatment-by-size cell. Of 50 donor-experiment combinations, 24 pairs across 11 donors qualify; six source donors lack an eligible pair. Only 3/11 donor-median paired deltas are positive, exact one-sided sign p=0.967285, so the preregistered specificity H1 FAILS. A no-forskolin size interaction is often larger, weakening a CFTR-stimulation-specific interpretation. This does not prove drug inactivity or identify the cause of the zero-dose pattern: pretreatment, baseline biology and size-dependent tracking remain possible. The same accession and post hoc size cutoffs preclude independent validation (results/zero_fsk_control.json; results/finding_zero_fsk_control.md).")
+P.table(["donor", "paired plates", "effect 0 uM", "effect .128 uM", "paired delta"],
+        [[d["donor"],d["paired_experiments"],f'{d["median_effect_0"]:+.3f}',f'{d["median_effect_0128"]:+.3f}',f'{d["median_delta"]:+.3f}'] for d in Z0["donors"]],
+        "Same-accession specificity check, donor-equal medians: positive delta means greater size interaction at .128 versus zero forskolin. Plate-paired deltas are aggregated separately, so they need not equal the difference of the two displayed median effects. No clinical interpretation.")
+
 
 EXT = json.load(open("results/external_fis_demo.json"))
-P.h("4.3c External single-plate intestinal FIS assay", 2)
+P.h("4.3d External single-plate intestinal FIS assay", 2)
 P.p(f"A separate public intestinal organoid demonstration experiment from the FIS_image_analysis repository "
     f"provides object-level tracked areas in {len(EXT['paths'])} CSVs from ONE plate, one class-II CFTR genotype, "
     f"and two wells per treatment at each of eight matched forskolin doses. The registered analysis paired "
@@ -583,6 +590,7 @@ for t in ["The initial power-law (alpha > 1) interpretation was withdrawn after 
     P.p("- " + t)
 P.h("6. Discussion")
 P.p("The same-accession eligibility sensitivity weakens from 9/12 (p=0.073) at three measured objects per cell to 8/12 (p=0.194) at five. At ten, the apparently low p comes from only six surviving donors and is uninterpretable under the frozen minimum-eight-donor rule. All three originally nonpositive donors are excluded at minimum ten, so the six-of-six result selects a different donor subset; excluded donors are not imputed as negatives. Selective eligibility is another reason not to claim a donor-general effect (results/finding_block_eligibility_sensitivity.md; results/finding_eligibility_composition.md).")
+P.p("A frozen paired no-forskolin specificity test also fails: 3/11 donor-median contrasts are more positive at 0.128 uM than zero forskolin (one-sided p=0.9673). This weakens the proposed CFTR-specific interpretation without proving its absence or explaining the zero-dose response (results/finding_zero_fsk_control.md).")
 P.p("In this accession, drug-minus-DMSO swelling tends to rise from small to larger organoids and then plateau. "
     "The plate-and-dose-matched donor sign test fails at alpha 0.05, so we do not establish a reliable donor-general "
     "effect. Uniform surface-flux geometry predicts the reverse direction, but that simple model is not a full "
