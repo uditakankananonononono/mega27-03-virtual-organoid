@@ -1,0 +1,711 @@
+{
+  "status": "retrospective image-only candidate scene grouping, not a repaired held-out evaluation",
+  "image_count": 231,
+  "split_counts": {
+    "train": 184,
+    "val": 35,
+    "eval": 12
+  },
+  "image_manifest_sha256": "ba003cd9645067eb455f5a2d0166a53a0a41aa73378f938e848f2ca9c73a9b65",
+  "method": "normalized 32x32 grayscale bilinear thumbnail cosine + exact image SHA256; undirected edges and connected components; no mask, label, prediction or AP50 input",
+  "negative_control": {
+    "seed": 20260926,
+    "n_cross_split_random_pairs": 1000,
+    "cosine_median": 0.3519112312240523,
+    "cosine_q99": 0.8647934952622722,
+    "cosine_max": 0.981612184248562
+  },
+  "threshold_sensitivity": [
+    {
+      "threshold": 0.95,
+      "n_components": 215,
+      "n_multiframe_components": 14,
+      "n_cross_split_components": 5,
+      "cross_split_component_members": 10,
+      "edges": [
+        {
+          "a": "train/0003_3250648_ckmbz0c8v1vke345zguvwuom1_img.jpg",
+          "b": "val/0003_6054432_cknj077t115y9345zmqfpq9s0_img.jpg",
+          "cosine": 0.950646799,
+          "same_sha256": false
+        },
+        {
+          "a": "train/0003_4931421_cknixjx7w0033345z402vb7ji_img.jpg",
+          "b": "train/0003_6050381_ckm38kw2oce46345zvqabwc1k_img.jpg",
+          "cosine": 0.952293456,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_10687_ckufkq9j34nhz0y9p5tbje00n_img.jpg",
+          "b": "train/20210727_23572_ckwgdk1v764480z6ocs1hcir6_img.jpg",
+          "cosine": 0.998150788,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_11104_ckufl4yfh3f200y77899mcbro_img.jpg",
+          "b": "val/20210727_16294_ckunspgrq2th20z824ozpde5m_img.jpg",
+          "cosine": 0.994035048,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_11752_ckufmmv8203lp0y8xhq8k7lin_img.jpg",
+          "b": "val/20210727_28190_ckw3itp398oe50zc3darma7i6_img.jpg",
+          "cosine": 0.995194206,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_15879_ckunspgfb2th10z8253ca7pzf_img.jpg",
+          "b": "eval/20210727_11562_ckufm1p2h4vzp0y7jh0fyg2yo_img.jpg",
+          "cosine": 0.996584198,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_17390_ckw3i6wda8laa11907ia034zp_img.jpg",
+          "b": "train/20210727_25457_ckw3i27u54pel10aogiztb5qi_img.jpg",
+          "cosine": 0.998965287,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_20540_ckuqygbvl3qra0zcd4zto4wq6_img.jpg",
+          "b": "train/20210727_36798_ckw3itjuo5p620zbpbyx5cudp_img.jpg",
+          "cosine": 0.990229045,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_20809_ckus8wz1d6zfv0zehavwc3rcu_img.jpg",
+          "b": "train/20210727_36816_ckw3itkhx8p0e0zbnak8b7vev_img.jpg",
+          "cosine": 0.99958494,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_21575_ckwgdjeea66oo0z6616aaa65a_img.jpg",
+          "b": "train/20210727_26585_ckw3huxvw4hbl0zd40gzce0fc_img.jpg",
+          "cosine": 0.99754657,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_21575_ckwgdjeea66oo0z6616aaa65a_img.jpg",
+          "b": "train/20210727_41390_ckw3i4fer8lmp0zbn9uu2adfm_img.jpg",
+          "cosine": 0.996103476,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_21575_ckwgdjeea66oo0z6616aaa65a_img.jpg",
+          "b": "train/20210727_42020_ckw3iznxw8q0e0zbnhqdaf6r3_img.jpg",
+          "cosine": 0.998509683,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_24497_ckw3hsnj94ng610ao91rg0vga_img.jpg",
+          "b": "train/20210727_36530_ckw3jx8r68tk30zc3ctsw5j82_img.jpg",
+          "cosine": 0.992062387,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_25787_ckw3ibtjx8ms70zbn1jqagblm_img.jpg",
+          "b": "train/20210727_30154_ckw3hxz004hyl0zd422oxh7fk_img.jpg",
+          "cosine": 0.993777953,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_26585_ckw3huxvw4hbl0zd40gzce0fc_img.jpg",
+          "b": "train/20210727_41390_ckw3i4fer8lmp0zbn9uu2adfm_img.jpg",
+          "cosine": 0.989474184,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_26585_ckw3huxvw4hbl0zd40gzce0fc_img.jpg",
+          "b": "train/20210727_42020_ckw3iznxw8q0e0zbnhqdaf6r3_img.jpg",
+          "cosine": 0.999442642,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_41390_ckw3i4fer8lmp0zbn9uu2adfm_img.jpg",
+          "b": "train/20210727_42020_ckw3iznxw8q0e0zbnhqdaf6r3_img.jpg",
+          "cosine": 0.991120434,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_42145_ckw3jhxfu8rl30zc3dtwi3pa7_img.jpg",
+          "b": "train/20210727_42234_ckw3ibzwn4ra510aoejbf5swm_img.jpg",
+          "cosine": 0.998660853,
+          "same_sha256": false
+        },
+        {
+          "a": "val/20210727_21543_ckwgdjdq763z90z6o7n0w8csg_img.jpg",
+          "b": "eval/20210727_26838_ckw3ig3xg5ngk0zbp0g7j7dqt_img.jpg",
+          "cosine": 0.981612184,
+          "same_sha256": false
+        }
+      ],
+      "multi_frame_components": [
+        {
+          "members": [
+            "train/0003_3250648_ckmbz0c8v1vke345zguvwuom1_img.jpg",
+            "val/0003_6054432_cknj077t115y9345zmqfpq9s0_img.jpg"
+          ],
+          "split_counts": {
+            "train": 1,
+            "val": 1
+          }
+        },
+        {
+          "members": [
+            "train/0003_4931421_cknixjx7w0033345z402vb7ji_img.jpg",
+            "train/0003_6050381_ckm38kw2oce46345zvqabwc1k_img.jpg"
+          ],
+          "split_counts": {
+            "train": 2
+          }
+        },
+        {
+          "members": [
+            "train/20210727_10687_ckufkq9j34nhz0y9p5tbje00n_img.jpg",
+            "train/20210727_23572_ckwgdk1v764480z6ocs1hcir6_img.jpg"
+          ],
+          "split_counts": {
+            "train": 2
+          }
+        },
+        {
+          "members": [
+            "train/20210727_11104_ckufl4yfh3f200y77899mcbro_img.jpg",
+            "val/20210727_16294_ckunspgrq2th20z824ozpde5m_img.jpg"
+          ],
+          "split_counts": {
+            "train": 1,
+            "val": 1
+          }
+        },
+        {
+          "members": [
+            "train/20210727_11752_ckufmmv8203lp0y8xhq8k7lin_img.jpg",
+            "val/20210727_28190_ckw3itp398oe50zc3darma7i6_img.jpg"
+          ],
+          "split_counts": {
+            "train": 1,
+            "val": 1
+          }
+        },
+        {
+          "members": [
+            "train/20210727_15879_ckunspgfb2th10z8253ca7pzf_img.jpg",
+            "eval/20210727_11562_ckufm1p2h4vzp0y7jh0fyg2yo_img.jpg"
+          ],
+          "split_counts": {
+            "train": 1,
+            "eval": 1
+          }
+        },
+        {
+          "members": [
+            "train/20210727_17390_ckw3i6wda8laa11907ia034zp_img.jpg",
+            "train/20210727_25457_ckw3i27u54pel10aogiztb5qi_img.jpg"
+          ],
+          "split_counts": {
+            "train": 2
+          }
+        },
+        {
+          "members": [
+            "train/20210727_20540_ckuqygbvl3qra0zcd4zto4wq6_img.jpg",
+            "train/20210727_36798_ckw3itjuo5p620zbpbyx5cudp_img.jpg"
+          ],
+          "split_counts": {
+            "train": 2
+          }
+        },
+        {
+          "members": [
+            "train/20210727_20809_ckus8wz1d6zfv0zehavwc3rcu_img.jpg",
+            "train/20210727_36816_ckw3itkhx8p0e0zbnak8b7vev_img.jpg"
+          ],
+          "split_counts": {
+            "train": 2
+          }
+        },
+        {
+          "members": [
+            "train/20210727_21575_ckwgdjeea66oo0z6616aaa65a_img.jpg",
+            "train/20210727_26585_ckw3huxvw4hbl0zd40gzce0fc_img.jpg",
+            "train/20210727_41390_ckw3i4fer8lmp0zbn9uu2adfm_img.jpg",
+            "train/20210727_42020_ckw3iznxw8q0e0zbnhqdaf6r3_img.jpg"
+          ],
+          "split_counts": {
+            "train": 4
+          }
+        },
+        {
+          "members": [
+            "train/20210727_24497_ckw3hsnj94ng610ao91rg0vga_img.jpg",
+            "train/20210727_36530_ckw3jx8r68tk30zc3ctsw5j82_img.jpg"
+          ],
+          "split_counts": {
+            "train": 2
+          }
+        },
+        {
+          "members": [
+            "train/20210727_25787_ckw3ibtjx8ms70zbn1jqagblm_img.jpg",
+            "train/20210727_30154_ckw3hxz004hyl0zd422oxh7fk_img.jpg"
+          ],
+          "split_counts": {
+            "train": 2
+          }
+        },
+        {
+          "members": [
+            "train/20210727_42145_ckw3jhxfu8rl30zc3dtwi3pa7_img.jpg",
+            "train/20210727_42234_ckw3ibzwn4ra510aoejbf5swm_img.jpg"
+          ],
+          "split_counts": {
+            "train": 2
+          }
+        },
+        {
+          "members": [
+            "val/20210727_21543_ckwgdjdq763z90z6o7n0w8csg_img.jpg",
+            "eval/20210727_26838_ckw3ig3xg5ngk0zbp0g7j7dqt_img.jpg"
+          ],
+          "split_counts": {
+            "val": 1,
+            "eval": 1
+          }
+        }
+      ]
+    },
+    {
+      "threshold": 0.97,
+      "n_components": 217,
+      "n_multiframe_components": 12,
+      "n_cross_split_components": 4,
+      "cross_split_component_members": 8,
+      "edges": [
+        {
+          "a": "train/20210727_10687_ckufkq9j34nhz0y9p5tbje00n_img.jpg",
+          "b": "train/20210727_23572_ckwgdk1v764480z6ocs1hcir6_img.jpg",
+          "cosine": 0.998150788,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_11104_ckufl4yfh3f200y77899mcbro_img.jpg",
+          "b": "val/20210727_16294_ckunspgrq2th20z824ozpde5m_img.jpg",
+          "cosine": 0.994035048,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_11752_ckufmmv8203lp0y8xhq8k7lin_img.jpg",
+          "b": "val/20210727_28190_ckw3itp398oe50zc3darma7i6_img.jpg",
+          "cosine": 0.995194206,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_15879_ckunspgfb2th10z8253ca7pzf_img.jpg",
+          "b": "eval/20210727_11562_ckufm1p2h4vzp0y7jh0fyg2yo_img.jpg",
+          "cosine": 0.996584198,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_17390_ckw3i6wda8laa11907ia034zp_img.jpg",
+          "b": "train/20210727_25457_ckw3i27u54pel10aogiztb5qi_img.jpg",
+          "cosine": 0.998965287,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_20540_ckuqygbvl3qra0zcd4zto4wq6_img.jpg",
+          "b": "train/20210727_36798_ckw3itjuo5p620zbpbyx5cudp_img.jpg",
+          "cosine": 0.990229045,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_20809_ckus8wz1d6zfv0zehavwc3rcu_img.jpg",
+          "b": "train/20210727_36816_ckw3itkhx8p0e0zbnak8b7vev_img.jpg",
+          "cosine": 0.99958494,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_21575_ckwgdjeea66oo0z6616aaa65a_img.jpg",
+          "b": "train/20210727_26585_ckw3huxvw4hbl0zd40gzce0fc_img.jpg",
+          "cosine": 0.99754657,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_21575_ckwgdjeea66oo0z6616aaa65a_img.jpg",
+          "b": "train/20210727_41390_ckw3i4fer8lmp0zbn9uu2adfm_img.jpg",
+          "cosine": 0.996103476,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_21575_ckwgdjeea66oo0z6616aaa65a_img.jpg",
+          "b": "train/20210727_42020_ckw3iznxw8q0e0zbnhqdaf6r3_img.jpg",
+          "cosine": 0.998509683,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_24497_ckw3hsnj94ng610ao91rg0vga_img.jpg",
+          "b": "train/20210727_36530_ckw3jx8r68tk30zc3ctsw5j82_img.jpg",
+          "cosine": 0.992062387,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_25787_ckw3ibtjx8ms70zbn1jqagblm_img.jpg",
+          "b": "train/20210727_30154_ckw3hxz004hyl0zd422oxh7fk_img.jpg",
+          "cosine": 0.993777953,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_26585_ckw3huxvw4hbl0zd40gzce0fc_img.jpg",
+          "b": "train/20210727_41390_ckw3i4fer8lmp0zbn9uu2adfm_img.jpg",
+          "cosine": 0.989474184,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_26585_ckw3huxvw4hbl0zd40gzce0fc_img.jpg",
+          "b": "train/20210727_42020_ckw3iznxw8q0e0zbnhqdaf6r3_img.jpg",
+          "cosine": 0.999442642,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_41390_ckw3i4fer8lmp0zbn9uu2adfm_img.jpg",
+          "b": "train/20210727_42020_ckw3iznxw8q0e0zbnhqdaf6r3_img.jpg",
+          "cosine": 0.991120434,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_42145_ckw3jhxfu8rl30zc3dtwi3pa7_img.jpg",
+          "b": "train/20210727_42234_ckw3ibzwn4ra510aoejbf5swm_img.jpg",
+          "cosine": 0.998660853,
+          "same_sha256": false
+        },
+        {
+          "a": "val/20210727_21543_ckwgdjdq763z90z6o7n0w8csg_img.jpg",
+          "b": "eval/20210727_26838_ckw3ig3xg5ngk0zbp0g7j7dqt_img.jpg",
+          "cosine": 0.981612184,
+          "same_sha256": false
+        }
+      ],
+      "multi_frame_components": [
+        {
+          "members": [
+            "train/20210727_10687_ckufkq9j34nhz0y9p5tbje00n_img.jpg",
+            "train/20210727_23572_ckwgdk1v764480z6ocs1hcir6_img.jpg"
+          ],
+          "split_counts": {
+            "train": 2
+          }
+        },
+        {
+          "members": [
+            "train/20210727_11104_ckufl4yfh3f200y77899mcbro_img.jpg",
+            "val/20210727_16294_ckunspgrq2th20z824ozpde5m_img.jpg"
+          ],
+          "split_counts": {
+            "train": 1,
+            "val": 1
+          }
+        },
+        {
+          "members": [
+            "train/20210727_11752_ckufmmv8203lp0y8xhq8k7lin_img.jpg",
+            "val/20210727_28190_ckw3itp398oe50zc3darma7i6_img.jpg"
+          ],
+          "split_counts": {
+            "train": 1,
+            "val": 1
+          }
+        },
+        {
+          "members": [
+            "train/20210727_15879_ckunspgfb2th10z8253ca7pzf_img.jpg",
+            "eval/20210727_11562_ckufm1p2h4vzp0y7jh0fyg2yo_img.jpg"
+          ],
+          "split_counts": {
+            "train": 1,
+            "eval": 1
+          }
+        },
+        {
+          "members": [
+            "train/20210727_17390_ckw3i6wda8laa11907ia034zp_img.jpg",
+            "train/20210727_25457_ckw3i27u54pel10aogiztb5qi_img.jpg"
+          ],
+          "split_counts": {
+            "train": 2
+          }
+        },
+        {
+          "members": [
+            "train/20210727_20540_ckuqygbvl3qra0zcd4zto4wq6_img.jpg",
+            "train/20210727_36798_ckw3itjuo5p620zbpbyx5cudp_img.jpg"
+          ],
+          "split_counts": {
+            "train": 2
+          }
+        },
+        {
+          "members": [
+            "train/20210727_20809_ckus8wz1d6zfv0zehavwc3rcu_img.jpg",
+            "train/20210727_36816_ckw3itkhx8p0e0zbnak8b7vev_img.jpg"
+          ],
+          "split_counts": {
+            "train": 2
+          }
+        },
+        {
+          "members": [
+            "train/20210727_21575_ckwgdjeea66oo0z6616aaa65a_img.jpg",
+            "train/20210727_26585_ckw3huxvw4hbl0zd40gzce0fc_img.jpg",
+            "train/20210727_41390_ckw3i4fer8lmp0zbn9uu2adfm_img.jpg",
+            "train/20210727_42020_ckw3iznxw8q0e0zbnhqdaf6r3_img.jpg"
+          ],
+          "split_counts": {
+            "train": 4
+          }
+        },
+        {
+          "members": [
+            "train/20210727_24497_ckw3hsnj94ng610ao91rg0vga_img.jpg",
+            "train/20210727_36530_ckw3jx8r68tk30zc3ctsw5j82_img.jpg"
+          ],
+          "split_counts": {
+            "train": 2
+          }
+        },
+        {
+          "members": [
+            "train/20210727_25787_ckw3ibtjx8ms70zbn1jqagblm_img.jpg",
+            "train/20210727_30154_ckw3hxz004hyl0zd422oxh7fk_img.jpg"
+          ],
+          "split_counts": {
+            "train": 2
+          }
+        },
+        {
+          "members": [
+            "train/20210727_42145_ckw3jhxfu8rl30zc3dtwi3pa7_img.jpg",
+            "train/20210727_42234_ckw3ibzwn4ra510aoejbf5swm_img.jpg"
+          ],
+          "split_counts": {
+            "train": 2
+          }
+        },
+        {
+          "members": [
+            "val/20210727_21543_ckwgdjdq763z90z6o7n0w8csg_img.jpg",
+            "eval/20210727_26838_ckw3ig3xg5ngk0zbp0g7j7dqt_img.jpg"
+          ],
+          "split_counts": {
+            "val": 1,
+            "eval": 1
+          }
+        }
+      ]
+    },
+    {
+      "threshold": 0.99,
+      "n_components": 218,
+      "n_multiframe_components": 11,
+      "n_cross_split_components": 3,
+      "cross_split_component_members": 6,
+      "edges": [
+        {
+          "a": "train/20210727_10687_ckufkq9j34nhz0y9p5tbje00n_img.jpg",
+          "b": "train/20210727_23572_ckwgdk1v764480z6ocs1hcir6_img.jpg",
+          "cosine": 0.998150788,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_11104_ckufl4yfh3f200y77899mcbro_img.jpg",
+          "b": "val/20210727_16294_ckunspgrq2th20z824ozpde5m_img.jpg",
+          "cosine": 0.994035048,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_11752_ckufmmv8203lp0y8xhq8k7lin_img.jpg",
+          "b": "val/20210727_28190_ckw3itp398oe50zc3darma7i6_img.jpg",
+          "cosine": 0.995194206,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_15879_ckunspgfb2th10z8253ca7pzf_img.jpg",
+          "b": "eval/20210727_11562_ckufm1p2h4vzp0y7jh0fyg2yo_img.jpg",
+          "cosine": 0.996584198,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_17390_ckw3i6wda8laa11907ia034zp_img.jpg",
+          "b": "train/20210727_25457_ckw3i27u54pel10aogiztb5qi_img.jpg",
+          "cosine": 0.998965287,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_20540_ckuqygbvl3qra0zcd4zto4wq6_img.jpg",
+          "b": "train/20210727_36798_ckw3itjuo5p620zbpbyx5cudp_img.jpg",
+          "cosine": 0.990229045,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_20809_ckus8wz1d6zfv0zehavwc3rcu_img.jpg",
+          "b": "train/20210727_36816_ckw3itkhx8p0e0zbnak8b7vev_img.jpg",
+          "cosine": 0.99958494,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_21575_ckwgdjeea66oo0z6616aaa65a_img.jpg",
+          "b": "train/20210727_26585_ckw3huxvw4hbl0zd40gzce0fc_img.jpg",
+          "cosine": 0.99754657,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_21575_ckwgdjeea66oo0z6616aaa65a_img.jpg",
+          "b": "train/20210727_41390_ckw3i4fer8lmp0zbn9uu2adfm_img.jpg",
+          "cosine": 0.996103476,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_21575_ckwgdjeea66oo0z6616aaa65a_img.jpg",
+          "b": "train/20210727_42020_ckw3iznxw8q0e0zbnhqdaf6r3_img.jpg",
+          "cosine": 0.998509683,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_24497_ckw3hsnj94ng610ao91rg0vga_img.jpg",
+          "b": "train/20210727_36530_ckw3jx8r68tk30zc3ctsw5j82_img.jpg",
+          "cosine": 0.992062387,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_25787_ckw3ibtjx8ms70zbn1jqagblm_img.jpg",
+          "b": "train/20210727_30154_ckw3hxz004hyl0zd422oxh7fk_img.jpg",
+          "cosine": 0.993777953,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_26585_ckw3huxvw4hbl0zd40gzce0fc_img.jpg",
+          "b": "train/20210727_42020_ckw3iznxw8q0e0zbnhqdaf6r3_img.jpg",
+          "cosine": 0.999442642,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_41390_ckw3i4fer8lmp0zbn9uu2adfm_img.jpg",
+          "b": "train/20210727_42020_ckw3iznxw8q0e0zbnhqdaf6r3_img.jpg",
+          "cosine": 0.991120434,
+          "same_sha256": false
+        },
+        {
+          "a": "train/20210727_42145_ckw3jhxfu8rl30zc3dtwi3pa7_img.jpg",
+          "b": "train/20210727_42234_ckw3ibzwn4ra510aoejbf5swm_img.jpg",
+          "cosine": 0.998660853,
+          "same_sha256": false
+        }
+      ],
+      "multi_frame_components": [
+        {
+          "members": [
+            "train/20210727_10687_ckufkq9j34nhz0y9p5tbje00n_img.jpg",
+            "train/20210727_23572_ckwgdk1v764480z6ocs1hcir6_img.jpg"
+          ],
+          "split_counts": {
+            "train": 2
+          }
+        },
+        {
+          "members": [
+            "train/20210727_11104_ckufl4yfh3f200y77899mcbro_img.jpg",
+            "val/20210727_16294_ckunspgrq2th20z824ozpde5m_img.jpg"
+          ],
+          "split_counts": {
+            "train": 1,
+            "val": 1
+          }
+        },
+        {
+          "members": [
+            "train/20210727_11752_ckufmmv8203lp0y8xhq8k7lin_img.jpg",
+            "val/20210727_28190_ckw3itp398oe50zc3darma7i6_img.jpg"
+          ],
+          "split_counts": {
+            "train": 1,
+            "val": 1
+          }
+        },
+        {
+          "members": [
+            "train/20210727_15879_ckunspgfb2th10z8253ca7pzf_img.jpg",
+            "eval/20210727_11562_ckufm1p2h4vzp0y7jh0fyg2yo_img.jpg"
+          ],
+          "split_counts": {
+            "train": 1,
+            "eval": 1
+          }
+        },
+        {
+          "members": [
+            "train/20210727_17390_ckw3i6wda8laa11907ia034zp_img.jpg",
+            "train/20210727_25457_ckw3i27u54pel10aogiztb5qi_img.jpg"
+          ],
+          "split_counts": {
+            "train": 2
+          }
+        },
+        {
+          "members": [
+            "train/20210727_20540_ckuqygbvl3qra0zcd4zto4wq6_img.jpg",
+            "train/20210727_36798_ckw3itjuo5p620zbpbyx5cudp_img.jpg"
+          ],
+          "split_counts": {
+            "train": 2
+          }
+        },
+        {
+          "members": [
+            "train/20210727_20809_ckus8wz1d6zfv0zehavwc3rcu_img.jpg",
+            "train/20210727_36816_ckw3itkhx8p0e0zbnak8b7vev_img.jpg"
+          ],
+          "split_counts": {
+            "train": 2
+          }
+        },
+        {
+          "members": [
+            "train/20210727_21575_ckwgdjeea66oo0z6616aaa65a_img.jpg",
+            "train/20210727_26585_ckw3huxvw4hbl0zd40gzce0fc_img.jpg",
+            "train/20210727_41390_ckw3i4fer8lmp0zbn9uu2adfm_img.jpg",
+            "train/20210727_42020_ckw3iznxw8q0e0zbnhqdaf6r3_img.jpg"
+          ],
+          "split_counts": {
+            "train": 4
+          }
+        },
+        {
+          "members": [
+            "train/20210727_24497_ckw3hsnj94ng610ao91rg0vga_img.jpg",
+            "train/20210727_36530_ckw3jx8r68tk30zc3ctsw5j82_img.jpg"
+          ],
+          "split_counts": {
+            "train": 2
+          }
+        },
+        {
+          "members": [
+            "train/20210727_25787_ckw3ibtjx8ms70zbn1jqagblm_img.jpg",
+            "train/20210727_30154_ckw3hxz004hyl0zd422oxh7fk_img.jpg"
+          ],
+          "split_counts": {
+            "train": 2
+          }
+        },
+        {
+          "members": [
+            "train/20210727_42145_ckw3jhxfu8rl30zc3dtwi3pa7_img.jpg",
+            "train/20210727_42234_ckw3ibzwn4ra510aoejbf5swm_img.jpg"
+          ],
+          "split_counts": {
+            "train": 2
+          }
+        }
+      ]
+    }
+  ],
+  "limits": "Threshold chosen after old AP50 was seen. Components are candidate scenes, not verified donor/well IDs. Missing edges do not establish independence. The old eval cannot be resealed."
+}

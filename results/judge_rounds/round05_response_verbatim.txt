@@ -1,0 +1,439 @@
+ISEF Judge Review — Virtual Organoid Project
+Overall assessment
+
+The project has a credible scientific question (whether computational phenotyping can recover biologically meaningful CFTR-modulator response patterns from organoid imaging), but the current evidence does not yet establish a novel biological discovery. The strongest remaining contribution is likely methodological: building a rigorous, leakage-resistant framework for validating organoid image-derived phenotypes when public datasets have hidden field-level dependencies.
+
+The most important strength is that you are now explicitly withdrawing unsupported claims. The most important weakness is that the project currently has two partially independent validation problems:
+
+Biological inference problem: the donor-block CFTR-modulator × starting-size interaction may be real, but it is currently inseparable from measurement/retention artifacts because raw masks and excluded tracks are unavailable.
+
+Computer vision validation problem: the segmentation benchmark is compromised as an independent generalization test because filename-level separation did not guarantee biological/visual independence.
+
+A judge will likely focus less on the model architecture and more on whether the project has a defensible answer to:
+
+"What exactly was learned about organoid biology or measurement that was not already possible from the original dataset?"
+
+1. Most consequential novelty weakness
+The central weakness: the project currently discovers dataset structure more confidently than organoid biology
+
+The CFTR result is interesting:
+
+donor-block interaction:
+
+β = +0.252815
+
+donor sign-flip permutation p = 0.0029296875
+
+However, the failed prior tests matter:
+
+original sign-only:
+
+9/12
+
+p = 0.073 (not significant)
+
+no-forskolin specificity:
+
+3/11
+
+p = 0.967 (no specificity)
+
+The key scientific issue:
+
+The interaction could represent:
+
+true donor-specific CFTR response heterogeneity,
+
+baseline size-dependent assay behavior,
+
+organoid survival/retention bias,
+
+segmentation bias,
+
+field selection bias,
+
+imaging batch effects,
+
+or missingness mechanisms.
+
+Because the raw segmentation masks and excluded tracks are unavailable, the strongest conclusion is currently:
+
+"A donor-dependent association exists in this released dataset under this analysis definition."
+
+It is not yet:
+
+"We discovered a donor-specific CFTR biology mechanism."
+
+That distinction will matter heavily at ISEF.
+
+2. New analysis I would ask for as a judge
+Proposed contribution:
+Scene-aware organoid identity and leakage audit + preregistered generalization protocol
+
+This is not a cosmetic cleanup. It addresses a real scientific problem:
+
+Public microscopy datasets often contain hidden non-independence at the field, plate, acquisition session, and organoid lineage levels.
+
+Your contribution could be:
+
+A reproducible framework for detecting and controlling scene-level dependence before evaluating computational organoid phenotyping.
+
+Part A — Dataset-forensics protocol
+Step 1: Define independence units before looking at outcomes
+
+Create a hierarchy:
+
+pixel
+ |
+organoid instance
+ |
+image field
+ |
+well
+ |
+plate
+ |
+donor
+ |
+experiment accession
+
+The rule:
+
+No evaluation split may share any upstream biological unit.
+
+For example:
+
+Invalid:
+
+Train:
+Donor A, field 1
+
+Test:
+Donor A, field 2
+
+Valid:
+
+Train:
+Donors A-F
+
+Test:
+Donors G-H
+Step 2: Detect scene similarity without using performance
+
+Do not optimize thresholds.
+
+Do not choose groups because they improve AUROC/AP.
+
+Use a fixed forensic pipeline:
+
+Feature extraction:
+
+For every image:
+
+pretrained vision embedding
+
+e.g. DINO/CLIP/self-supervised microscopy embedding
+
+classical image descriptors:
+
+intensity histogram
+
+texture
+
+Fourier spectrum
+
+morphology statistics
+
+Then compute:
+
+nearest-neighbor similarity
+
+clustering
+
+connected components in similarity graph
+
+Important:
+
+The clustering algorithm parameters must be fixed before seeing segmentation performance.
+
+Step 3: Define contamination rules
+
+Example:
+
+If two images have:
+
+cosine similarity > predefined threshold, OR
+
+same acquisition field metadata, OR
+
+same microscope position,
+
+they become one "scene group."
+
+Then:
+
+Group A
+  image1
+  image2
+  image3
+
+cannot be split across train/test
+
+The threshold cannot be chosen because it produces a better score.
+
+Step 4: Report contamination honestly
+
+Possible outcomes:
+
+Outcome 1:
+
+Minimal contamination
+
+Then the original benchmark becomes more credible.
+
+Outcome 2:
+
+High contamination
+
+Then the project gains a different contribution:
+
+"A hidden scene dependency inflated apparent segmentation generalization in public organoid imaging benchmarks."
+
+That is still scientifically valuable.
+
+A negative result is acceptable.
+
+3. Evaluation protocol after forensics
+
+The correct benchmark should become:
+
+Primary evaluation
+
+A completely untouched holdout group.
+
+Example:
+
+Development:
+80% scene groups
+
+Locked evaluation:
+20% scene groups
+
+No:
+
+threshold tuning
+
+augmentation selection
+
+architecture changes
+
+post-hoc exclusion
+
+after seeing evaluation results.
+
+Required baselines
+
+At minimum:
+
+Baseline 1:
+
+Simple image processing
+
+Examples:
+
+thresholding
+
+watershed
+
+morphology operations
+
+Baseline 2:
+
+Published method reproduction
+
+Baseline 3:
+
+Your method
+
+Then report:
+
+AP50
+
+AP75
+
+object count error
+
+size bias
+
+donor/group robustness
+
+Not just one metric.
+
+4. Specific implementable scientific contribution possible now
+
+Given existing pixels and masks, I would add:
+
+"Organoid phenotype robustness under segmentation uncertainty"
+
+This is stronger biologically than another segmentation score.
+
+Hypothesis
+
+CFTR-modulator effects should remain detectable even when segmentation boundaries vary.
+
+Method
+
+Take available masks.
+
+Generate controlled perturbations:
+
+Examples:
+
+erode masks
+
+dilate masks
+
+boundary jitter
+
+remove low-confidence objects
+
+Create multiple phenotype measurements:
+
+Original mask:
+organoid area = X
+
+Perturbed masks:
+X1, X2, X3...
+
+Then ask:
+
+Does the CFTR interaction survive?
+
+Statistical test
+
+For every perturbation:
+
+fit the same model:
+
+phenotype ~ treatment
+          + starting size
+          + treatment × starting size
+          + donor random effect
+
+Report:
+
+β distribution
+
+sign stability
+
+confidence intervals
+
+Negative controls
+
+Mandatory:
+
+Negative control 1:
+
+Randomized treatment labels
+
+Expected:
+
+interaction disappears.
+
+Negative control 2:
+
+Random donor labels
+
+Expected:
+
+donor interaction disappears.
+
+Negative control 3:
+
+Non-CFTR unrelated image feature
+
+Expected:
+
+no selective treatment interaction.
+
+Negative control 4:
+
+Blank/background regions if available
+
+Expected:
+
+no biological signal.
+
+Interpretation
+
+Possible outcomes:
+
+Strong result:
+
+Interaction survives segmentation perturbation.
+
+Meaning:
+
+"The observed association is not highly dependent on exact segmentation boundaries."
+
+Still not proof of biology.
+
+Weak result:
+
+Interaction disappears.
+
+Meaning:
+
+"The published signal may depend on segmentation/measurement choices."
+
+Also valuable.
+
+5. What can be tested now vs what requires new data
+Question	Existing release sufficient?	Why
+Hidden image duplication/scene leakage	Yes	Uses pixels
+Scene clustering	Yes	Uses image features
+Segmentation robustness	Yes	Uses masks
+Treatment interaction robustness	Maybe	Depends on phenotype availability
+Whether donor effect is biological	No	Needs independent cohort
+Whether retention bias caused effect	No	Needs excluded tracks/raw masks
+Clinical CFTR relevance	No	Needs external biological validation
+6. What I would NOT accept as a judge
+
+I would reject:
+
+"AP50=.761108 proves superiority."
+
+It does not, because the benchmark independence failed.
+
+"The p=0.0029 proves donor biology."
+
+It does not, because missingness and measurement artifacts remain plausible.
+
+"We removed duplicated images after seeing the issue and reran."
+
+Only acceptable as exploratory analysis, not final validation.
+
+"The model found a novel CFTR response subtype."
+
+Not supported yet.
+
+7. Final judge scorecard
+Novelty
+
+Moderate.
+
+The idea is interesting, but the biological claim is currently ahead of the evidence.
+
+Rigor
+
+Improved substantially because the team identified and disclosed invalid assumptions.
+
+Biggest opportunity
+
+Turn the weakness into the contribution:
+
+"Reliable computational discovery from organoid microscopy requires scene-aware validation; we demonstrate and quantify how hidden image dependencies affect apparent generalization and phenotype robustness."
+
+That is a defensible ISEF-level methodological contribution.
+
+The next experiment should not chase a larger p-value. It should make the measurement pipeline trustworthy enough that future biological findings become interpretable.
