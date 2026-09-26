@@ -1,0 +1,1920 @@
+{
+  "status": "post-result image-boundary proxy audit; no missing outcome identification",
+  "protocol": "notes/postresult_edge_observability_protocol.md",
+  "source_url": "https://zenodo.org/records/10610438",
+  "source_sha256": "0e0e7913947a29c7b32ce87ca73a98614033d41ce63063a1d65053e766b2f315",
+  "derived_sha256": "a32e5cf8cb8f5f7cd92e57ef62881c7a25d559ff1a0018748d4fdded7f3fb5c7",
+  "n_baseline_detected": 6964,
+  "n_observable": 4964,
+  "n_blocks": 31,
+  "edge50_model": {
+    "nobs": 6964,
+    "converged": true,
+    "deviance": 6804.433367112742,
+    "terms": {
+      "edge50": {
+        "logit_coef": 0.12714339100073663,
+        "odds_ratio": 1.1355798380371203,
+        "cluster_se": 0.15216476698907583,
+        "cluster_p_two_sided": 0.4034002666927785,
+        "ci95_logit": [
+          -0.1710940720137813,
+          0.42538085401525455
+        ]
+      },
+      "edge50:large": {
+        "logit_coef": -0.20724733165818543,
+        "odds_ratio": 0.812818589354757,
+        "cluster_se": 0.14433406292781006,
+        "cluster_p_two_sided": 0.15103464210288026,
+        "ci95_logit": [
+          -0.49013689673903094,
+          0.07564223342266008
+        ]
+      },
+      "edge50:treatment": {
+        "logit_coef": -0.14196992500454123,
+        "odds_ratio": 0.8676473505836507,
+        "cluster_se": 0.2797143151543434,
+        "cluster_p_two_sided": 0.6117666450230423,
+        "ci95_logit": [
+          -0.6901999086673406,
+          0.4062600586582582
+        ]
+      },
+      "treatment:large": {
+        "logit_coef": -0.44881557537911454,
+        "odds_ratio": 0.6383838215322057,
+        "cluster_se": 0.17471321992017988,
+        "cluster_p_two_sided": 0.010203068147104316,
+        "ci95_logit": [
+          -0.7912471940456931,
+          -0.10638395671253603
+        ]
+      }
+    }
+  },
+  "edge100_model": {
+    "nobs": 6964,
+    "converged": true,
+    "deviance": 6802.49174884461,
+    "terms": {
+      "edge100": {
+        "logit_coef": -0.02952043760882255,
+        "odds_ratio": 0.9709110343384988,
+        "cluster_se": 0.1238362938850042,
+        "cluster_p_two_sided": 0.8115842370617585,
+        "ci95_logit": [
+          -0.2722351136023485,
+          0.2131942383847034
+        ]
+      },
+      "edge100:large": {
+        "logit_coef": -0.21884643812219873,
+        "odds_ratio": 0.8034450872172948,
+        "cluster_se": 0.14849778498758917,
+        "cluster_p_two_sided": 0.14055285563058442,
+        "ci95_logit": [
+          -0.5098967484818462,
+          0.07220387223744879
+        ]
+      },
+      "edge100:treatment": {
+        "logit_coef": -0.0014085395333440776,
+        "odds_ratio": 0.9985924519928752,
+        "cluster_se": 0.19911638585935076,
+        "cluster_p_two_sided": 0.9943558508804575,
+        "ci95_logit": [
+          -0.39166948454945205,
+          0.3888524054827639
+        ]
+      },
+      "treatment:large": {
+        "logit_coef": -0.449996947040605,
+        "odds_ratio": 0.6376300982776009,
+        "cluster_se": 0.17257654509789386,
+        "cluster_p_two_sided": 0.009120050455708576,
+        "ci95_logit": [
+          -0.7882407600088294,
+          -0.11175313407238063
+        ]
+      }
+    }
+  },
+  "edge50_counts": [
+    {
+      "arm": "DMSO",
+      "size_bin": "large",
+      "edge50": 0,
+      "n": 1940,
+      "seen": 1724,
+      "rate": 0.8886597938144329
+    },
+    {
+      "arm": "DMSO",
+      "size_bin": "large",
+      "edge50": 1,
+      "n": 118,
+      "seen": 101,
+      "rate": 0.8559322033898306
+    },
+    {
+      "arm": "DMSO",
+      "size_bin": "small",
+      "edge50": 0,
+      "n": 1161,
+      "seen": 522,
+      "rate": 0.4496124031007752
+    },
+    {
+      "arm": "DMSO",
+      "size_bin": "small",
+      "edge50": 1,
+      "n": 87,
+      "seen": 41,
+      "rate": 0.47126436781609193
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size_bin": "large",
+      "edge50": 0,
+      "n": 2279,
+      "seen": 1904,
+      "rate": 0.8354541465555068
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size_bin": "large",
+      "edge50": 1,
+      "n": 129,
+      "seen": 101,
+      "rate": 0.7829457364341085
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size_bin": "small",
+      "edge50": 0,
+      "n": 1180,
+      "seen": 544,
+      "rate": 0.4610169491525424
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size_bin": "small",
+      "edge50": 1,
+      "n": 70,
+      "seen": 27,
+      "rate": 0.38571428571428573
+    }
+  ],
+  "n_blocks_with_all_eight_edge_cells": 24,
+  "excluded_blocks": [
+    {
+      "donor": "PDIO_03",
+      "experiment": "HitCF_A1_DIS_20230207_plate001",
+      "dose": 0.128
+    },
+    {
+      "donor": "PDIO_06",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.8
+    },
+    {
+      "donor": "PDIO_06",
+      "experiment": "20230301_DIS3_plate023",
+      "dose": 0.128
+    },
+    {
+      "donor": "PDIO_06",
+      "experiment": "20230308_DIS3_plate025",
+      "dose": 0.128
+    },
+    {
+      "donor": "PDIO_09",
+      "experiment": "20230207_DIS3_plate017",
+      "dose": 0.128
+    },
+    {
+      "donor": "PDIO_13",
+      "experiment": "20221020_DIS3_plate004",
+      "dose": 0.128
+    },
+    {
+      "donor": "PDIO_18",
+      "experiment": "20221020_DIS3_plate003",
+      "dose": 0.128
+    }
+  ],
+  "equal_donor_edge50_rate_differences": {
+    "DMSO:small": {
+      "equal_donor_mean_of_median_block_edge_minus_interior": -0.0016270793312625235,
+      "n_donors": 11,
+      "donor_medians": {
+        "PDIO_01": -0.25,
+        "PDIO_03": 0.005172413793103403,
+        "PDIO_05": 0.016216216216216273,
+        "PDIO_06": 0.180952380952381,
+        "PDIO_09": 0.2931578947368422,
+        "PDIO_11": 0.2727272727272727,
+        "PDIO_12": 0.03381642512077293,
+        "PDIO_13": 0.2142857142857143,
+        "PDIO_14": -0.32589285714285715,
+        "PDIO_15": -0.09999999999999998,
+        "PDIO_16": -0.35833333333333334
+      }
+    },
+    "DMSO:large": {
+      "equal_donor_mean_of_median_block_edge_minus_interior": -0.029862337693942934,
+      "n_donors": 11,
+      "donor_medians": {
+        "PDIO_01": 0.07462686567164178,
+        "PDIO_03": -0.5970250169033131,
+        "PDIO_05": -0.02136752136752129,
+        "PDIO_06": 0.0003619691119690627,
+        "PDIO_09": 0.07004231723332849,
+        "PDIO_11": -0.3035714285714286,
+        "PDIO_12": 0.06521739130434778,
+        "PDIO_13": 0.14814814814814814,
+        "PDIO_14": 0.05409356725146203,
+        "PDIO_15": 0.04761904761904767,
+        "PDIO_16": 0.13336894586894588
+      }
+    },
+    "VX445_VX661_VX770:small": {
+      "equal_donor_mean_of_median_block_edge_minus_interior": -0.055628031367615266,
+      "n_donors": 11,
+      "donor_medians": {
+        "PDIO_01": 0.4285714285714286,
+        "PDIO_03": -0.4595238095238095,
+        "PDIO_05": 0.15454545454545454,
+        "PDIO_06": 0.15449010654490108,
+        "PDIO_09": 0.05952380952380951,
+        "PDIO_11": -0.30303030303030304,
+        "PDIO_12": -0.13333333333333333,
+        "PDIO_13": -0.038461538461538436,
+        "PDIO_14": 0.15848214285714285,
+        "PDIO_15": -0.25925925925925924,
+        "PDIO_16": -0.3739130434782609
+      }
+    },
+    "VX445_VX661_VX770:large": {
+      "equal_donor_mean_of_median_block_edge_minus_interior": -0.025665144689268646,
+      "n_donors": 11,
+      "donor_medians": {
+        "PDIO_01": -0.019736842105263164,
+        "PDIO_03": -0.17214285714285715,
+        "PDIO_05": 0.09999999999999998,
+        "PDIO_06": 0.05288040836169178,
+        "PDIO_09": -0.11103249179214308,
+        "PDIO_11": 0.04166666666666663,
+        "PDIO_12": 0.0,
+        "PDIO_13": 0.06666666666666665,
+        "PDIO_14": 0.10350595477050717,
+        "PDIO_15": -0.09313725490196079,
+        "PDIO_16": -0.2509868421052631
+      }
+    }
+  },
+  "blocks": [
+    {
+      "donor": "PDIO_01",
+      "experiment": "20230125_DIS3_plate014",
+      "dose": 0.128,
+      "eligible_all_edge_cells": true,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 20,
+          "seen": 5,
+          "rate": 0.25
+        },
+        "DMSO:small:1": {
+          "n": 1,
+          "seen": 0,
+          "rate": 0.0
+        },
+        "DMSO:large:0": {
+          "n": 67,
+          "seen": 62,
+          "rate": 0.9253731343283582
+        },
+        "DMSO:large:1": {
+          "n": 5,
+          "seen": 5,
+          "rate": 1.0
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 7,
+          "seen": 4,
+          "rate": 0.5714285714285714
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 2,
+          "seen": 2,
+          "rate": 1.0
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 57,
+          "seen": 51,
+          "rate": 0.8947368421052632
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 8,
+          "seen": 7,
+          "rate": 0.875
+        }
+      },
+      "edge_minus_interior_four_cell": {
+        "DMSO:small": -0.25,
+        "DMSO:large": 0.07462686567164178,
+        "VX445_VX661_VX770:small": 0.4285714285714286,
+        "VX445_VX661_VX770:large": -0.019736842105263164
+      }
+    },
+    {
+      "donor": "PDIO_03",
+      "experiment": "HitCF_A1_DIS_20230207_plate001",
+      "dose": 0.128,
+      "eligible_all_edge_cells": false,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 47,
+          "seen": 35,
+          "rate": 0.7446808510638298
+        },
+        "DMSO:small:1": {
+          "n": 2,
+          "seen": 1,
+          "rate": 0.5
+        },
+        "DMSO:large:0": {
+          "n": 96,
+          "seen": 87,
+          "rate": 0.90625
+        },
+        "DMSO:large:1": {
+          "n": 0,
+          "seen": 0,
+          "rate": null
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 48,
+          "seen": 28,
+          "rate": 0.5833333333333334
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 2,
+          "seen": 1,
+          "rate": 0.5
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 118,
+          "seen": 95,
+          "rate": 0.8050847457627118
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 4,
+          "seen": 4,
+          "rate": 1.0
+        }
+      },
+      "edge_minus_interior_four_cell": null
+    },
+    {
+      "donor": "PDIO_03",
+      "experiment": "HitCF_A1_DIS_20230228_plate010",
+      "dose": 0.128,
+      "eligible_all_edge_cells": true,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 145,
+          "seen": 71,
+          "rate": 0.4896551724137931
+        },
+        "DMSO:small:1": {
+          "n": 3,
+          "seen": 2,
+          "rate": 0.6666666666666666
+        },
+        "DMSO:large:0": {
+          "n": 87,
+          "seen": 80,
+          "rate": 0.9195402298850575
+        },
+        "DMSO:large:1": {
+          "n": 3,
+          "seen": 2,
+          "rate": 0.6666666666666666
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 168,
+          "seen": 76,
+          "rate": 0.4523809523809524
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 5,
+          "seen": 1,
+          "rate": 0.2
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 75,
+          "seen": 66,
+          "rate": 0.88
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 1,
+          "seen": 1,
+          "rate": 1.0
+        }
+      },
+      "edge_minus_interior_four_cell": {
+        "DMSO:small": 0.17701149425287355,
+        "DMSO:large": -0.25287356321839083,
+        "VX445_VX661_VX770:small": -0.2523809523809524,
+        "VX445_VX661_VX770:large": 0.12
+      }
+    },
+    {
+      "donor": "PDIO_03",
+      "experiment": "HitCF_A1_DIS_20230307_plate013",
+      "dose": 0.128,
+      "eligible_all_edge_cells": true,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 24,
+          "seen": 20,
+          "rate": 0.8333333333333334
+        },
+        "DMSO:small:1": {
+          "n": 3,
+          "seen": 2,
+          "rate": 0.6666666666666666
+        },
+        "DMSO:large:0": {
+          "n": 51,
+          "seen": 48,
+          "rate": 0.9411764705882353
+        },
+        "DMSO:large:1": {
+          "n": 1,
+          "seen": 0,
+          "rate": 0.0
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 33,
+          "seen": 22,
+          "rate": 0.6666666666666666
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 1,
+          "seen": 0,
+          "rate": 0.0
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 56,
+          "seen": 54,
+          "rate": 0.9642857142857143
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 2,
+          "seen": 1,
+          "rate": 0.5
+        }
+      },
+      "edge_minus_interior_four_cell": {
+        "DMSO:small": -0.16666666666666674,
+        "DMSO:large": -0.9411764705882353,
+        "VX445_VX661_VX770:small": -0.6666666666666666,
+        "VX445_VX661_VX770:large": -0.4642857142857143
+      }
+    },
+    {
+      "donor": "PDIO_05",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.128,
+      "eligible_all_edge_cells": true,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 37,
+          "seen": 23,
+          "rate": 0.6216216216216216
+        },
+        "DMSO:small:1": {
+          "n": 1,
+          "seen": 1,
+          "rate": 1.0
+        },
+        "DMSO:large:0": {
+          "n": 74,
+          "seen": 61,
+          "rate": 0.8243243243243243
+        },
+        "DMSO:large:1": {
+          "n": 3,
+          "seen": 2,
+          "rate": 0.6666666666666666
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 49,
+          "seen": 26,
+          "rate": 0.5306122448979592
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 3,
+          "seen": 1,
+          "rate": 0.3333333333333333
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 80,
+          "seen": 72,
+          "rate": 0.9
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 5,
+          "seen": 5,
+          "rate": 1.0
+        }
+      },
+      "edge_minus_interior_four_cell": {
+        "DMSO:small": 0.3783783783783784,
+        "DMSO:large": -0.1576576576576577,
+        "VX445_VX661_VX770:small": -0.1972789115646259,
+        "VX445_VX661_VX770:large": 0.09999999999999998
+      }
+    },
+    {
+      "donor": "PDIO_05",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.32,
+      "eligible_all_edge_cells": true,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 53,
+          "seen": 25,
+          "rate": 0.4716981132075472
+        },
+        "DMSO:small:1": {
+          "n": 5,
+          "seen": 2,
+          "rate": 0.4
+        },
+        "DMSO:large:0": {
+          "n": 117,
+          "seen": 100,
+          "rate": 0.8547008547008547
+        },
+        "DMSO:large:1": {
+          "n": 6,
+          "seen": 5,
+          "rate": 0.8333333333333334
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 55,
+          "seen": 19,
+          "rate": 0.34545454545454546
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 4,
+          "seen": 2,
+          "rate": 0.5
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 83,
+          "seen": 80,
+          "rate": 0.963855421686747
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 5,
+          "seen": 4,
+          "rate": 0.8
+        }
+      },
+      "edge_minus_interior_four_cell": {
+        "DMSO:small": -0.07169811320754715,
+        "DMSO:large": -0.02136752136752129,
+        "VX445_VX661_VX770:small": 0.15454545454545454,
+        "VX445_VX661_VX770:large": -0.16385542168674694
+      }
+    },
+    {
+      "donor": "PDIO_05",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.8,
+      "eligible_all_edge_cells": true,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 77,
+          "seen": 37,
+          "rate": 0.4805194805194805
+        },
+        "DMSO:small:1": {
+          "n": 2,
+          "seen": 1,
+          "rate": 0.5
+        },
+        "DMSO:large:0": {
+          "n": 100,
+          "seen": 85,
+          "rate": 0.85
+        },
+        "DMSO:large:1": {
+          "n": 4,
+          "seen": 4,
+          "rate": 1.0
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 64,
+          "seen": 40,
+          "rate": 0.625
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 2,
+          "seen": 2,
+          "rate": 1.0
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 82,
+          "seen": 69,
+          "rate": 0.8414634146341463
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 2,
+          "seen": 2,
+          "rate": 1.0
+        }
+      },
+      "edge_minus_interior_four_cell": {
+        "DMSO:small": 0.019480519480519487,
+        "DMSO:large": 0.15000000000000002,
+        "VX445_VX661_VX770:small": 0.375,
+        "VX445_VX661_VX770:large": 0.1585365853658537
+      }
+    },
+    {
+      "donor": "PDIO_05",
+      "experiment": "20230301_DIS3_plate023",
+      "dose": 0.128,
+      "eligible_all_edge_cells": true,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 37,
+          "seen": 29,
+          "rate": 0.7837837837837838
+        },
+        "DMSO:small:1": {
+          "n": 5,
+          "seen": 4,
+          "rate": 0.8
+        },
+        "DMSO:large:0": {
+          "n": 52,
+          "seen": 48,
+          "rate": 0.9230769230769231
+        },
+        "DMSO:large:1": {
+          "n": 6,
+          "seen": 6,
+          "rate": 1.0
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 55,
+          "seen": 46,
+          "rate": 0.8363636363636363
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 1,
+          "seen": 1,
+          "rate": 1.0
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 99,
+          "seen": 83,
+          "rate": 0.8383838383838383
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 7,
+          "seen": 7,
+          "rate": 1.0
+        }
+      },
+      "edge_minus_interior_four_cell": {
+        "DMSO:small": 0.016216216216216273,
+        "DMSO:large": 0.07692307692307687,
+        "VX445_VX661_VX770:small": 0.1636363636363637,
+        "VX445_VX661_VX770:large": 0.16161616161616166
+      }
+    },
+    {
+      "donor": "PDIO_05",
+      "experiment": "20230308_DIS3_plate025",
+      "dose": 0.128,
+      "eligible_all_edge_cells": true,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 36,
+          "seen": 18,
+          "rate": 0.5
+        },
+        "DMSO:small:1": {
+          "n": 2,
+          "seen": 0,
+          "rate": 0.0
+        },
+        "DMSO:large:0": {
+          "n": 71,
+          "seen": 67,
+          "rate": 0.9436619718309859
+        },
+        "DMSO:large:1": {
+          "n": 1,
+          "seen": 0,
+          "rate": 0.0
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 47,
+          "seen": 25,
+          "rate": 0.5319148936170213
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 2,
+          "seen": 1,
+          "rate": 0.5
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 96,
+          "seen": 88,
+          "rate": 0.9166666666666666
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 1,
+          "seen": 1,
+          "rate": 1.0
+        }
+      },
+      "edge_minus_interior_four_cell": {
+        "DMSO:small": -0.5,
+        "DMSO:large": -0.9436619718309859,
+        "VX445_VX661_VX770:small": -0.03191489361702127,
+        "VX445_VX661_VX770:large": 0.08333333333333337
+      }
+    },
+    {
+      "donor": "PDIO_06",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.128,
+      "eligible_all_edge_cells": true,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 30,
+          "seen": 8,
+          "rate": 0.26666666666666666
+        },
+        "DMSO:small:1": {
+          "n": 1,
+          "seen": 1,
+          "rate": 1.0
+        },
+        "DMSO:large:0": {
+          "n": 48,
+          "seen": 45,
+          "rate": 0.9375
+        },
+        "DMSO:large:1": {
+          "n": 1,
+          "seen": 1,
+          "rate": 1.0
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 73,
+          "seen": 18,
+          "rate": 0.2465753424657534
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 1,
+          "seen": 0,
+          "rate": 0.0
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 121,
+          "seen": 105,
+          "rate": 0.8677685950413223
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 4,
+          "seen": 4,
+          "rate": 1.0
+        }
+      },
+      "edge_minus_interior_four_cell": {
+        "DMSO:small": 0.7333333333333334,
+        "DMSO:large": 0.0625,
+        "VX445_VX661_VX770:small": -0.2465753424657534,
+        "VX445_VX661_VX770:large": 0.1322314049586777
+      }
+    },
+    {
+      "donor": "PDIO_06",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.32,
+      "eligible_all_edge_cells": true,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 42,
+          "seen": 24,
+          "rate": 0.5714285714285714
+        },
+        "DMSO:small:1": {
+          "n": 5,
+          "seen": 1,
+          "rate": 0.2
+        },
+        "DMSO:large:0": {
+          "n": 74,
+          "seen": 68,
+          "rate": 0.918918918918919
+        },
+        "DMSO:large:1": {
+          "n": 7,
+          "seen": 6,
+          "rate": 0.8571428571428571
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 36,
+          "seen": 16,
+          "rate": 0.4444444444444444
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 1,
+          "seen": 1,
+          "rate": 1.0
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 85,
+          "seen": 66,
+          "rate": 0.7764705882352941
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 4,
+          "seen": 3,
+          "rate": 0.75
+        }
+      },
+      "edge_minus_interior_four_cell": {
+        "DMSO:small": -0.3714285714285714,
+        "DMSO:large": -0.061776061776061875,
+        "VX445_VX661_VX770:small": 0.5555555555555556,
+        "VX445_VX661_VX770:large": -0.026470588235294135
+      }
+    },
+    {
+      "donor": "PDIO_06",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.8,
+      "eligible_all_edge_cells": false,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 26,
+          "seen": 13,
+          "rate": 0.5
+        },
+        "DMSO:small:1": {
+          "n": 2,
+          "seen": 2,
+          "rate": 1.0
+        },
+        "DMSO:large:0": {
+          "n": 72,
+          "seen": 65,
+          "rate": 0.9027777777777778
+        },
+        "DMSO:large:1": {
+          "n": 0,
+          "seen": 0,
+          "rate": null
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 61,
+          "seen": 25,
+          "rate": 0.4098360655737705
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 5,
+          "seen": 2,
+          "rate": 0.4
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 121,
+          "seen": 89,
+          "rate": 0.7355371900826446
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 9,
+          "seen": 7,
+          "rate": 0.7777777777777778
+        }
+      },
+      "edge_minus_interior_four_cell": null
+    },
+    {
+      "donor": "PDIO_06",
+      "experiment": "20230301_DIS3_plate023",
+      "dose": 0.128,
+      "eligible_all_edge_cells": false,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 48,
+          "seen": 20,
+          "rate": 0.4166666666666667
+        },
+        "DMSO:small:1": {
+          "n": 4,
+          "seen": 3,
+          "rate": 0.75
+        },
+        "DMSO:large:0": {
+          "n": 61,
+          "seen": 58,
+          "rate": 0.9508196721311475
+        },
+        "DMSO:large:1": {
+          "n": 0,
+          "seen": 0,
+          "rate": null
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 50,
+          "seen": 32,
+          "rate": 0.64
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 3,
+          "seen": 0,
+          "rate": 0.0
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 92,
+          "seen": 78,
+          "rate": 0.8478260869565217
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 2,
+          "seen": 1,
+          "rate": 0.5
+        }
+      },
+      "edge_minus_interior_four_cell": null
+    },
+    {
+      "donor": "PDIO_06",
+      "experiment": "20230308_DIS3_plate025",
+      "dose": 0.128,
+      "eligible_all_edge_cells": false,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 39,
+          "seen": 22,
+          "rate": 0.5641025641025641
+        },
+        "DMSO:small:1": {
+          "n": 5,
+          "seen": 1,
+          "rate": 0.2
+        },
+        "DMSO:large:0": {
+          "n": 63,
+          "seen": 58,
+          "rate": 0.9206349206349206
+        },
+        "DMSO:large:1": {
+          "n": 7,
+          "seen": 6,
+          "rate": 0.8571428571428571
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 74,
+          "seen": 31,
+          "rate": 0.4189189189189189
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 4,
+          "seen": 2,
+          "rate": 0.5
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 126,
+          "seen": 101,
+          "rate": 0.8015873015873016
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 0,
+          "seen": 0,
+          "rate": null
+        }
+      },
+      "edge_minus_interior_four_cell": null
+    },
+    {
+      "donor": "PDIO_09",
+      "experiment": "20230125_DIS3_plate014",
+      "dose": 0.128,
+      "eligible_all_edge_cells": true,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 19,
+          "seen": 9,
+          "rate": 0.47368421052631576
+        },
+        "DMSO:small:1": {
+          "n": 1,
+          "seen": 1,
+          "rate": 1.0
+        },
+        "DMSO:large:0": {
+          "n": 89,
+          "seen": 80,
+          "rate": 0.898876404494382
+        },
+        "DMSO:large:1": {
+          "n": 4,
+          "seen": 4,
+          "rate": 1.0
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 7,
+          "seen": 5,
+          "rate": 0.7142857142857143
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 2,
+          "seen": 2,
+          "rate": 1.0
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 73,
+          "seen": 69,
+          "rate": 0.9452054794520548
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 8,
+          "seen": 7,
+          "rate": 0.875
+        }
+      },
+      "edge_minus_interior_four_cell": {
+        "DMSO:small": 0.5263157894736843,
+        "DMSO:large": 0.101123595505618,
+        "VX445_VX661_VX770:small": 0.2857142857142857,
+        "VX445_VX661_VX770:large": -0.0702054794520548
+      }
+    },
+    {
+      "donor": "PDIO_09",
+      "experiment": "20230125_DIS3_plate015",
+      "dose": 0.128,
+      "eligible_all_edge_cells": true,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 25,
+          "seen": 11,
+          "rate": 0.44
+        },
+        "DMSO:small:1": {
+          "n": 4,
+          "seen": 2,
+          "rate": 0.5
+        },
+        "DMSO:large:0": {
+          "n": 77,
+          "seen": 67,
+          "rate": 0.8701298701298701
+        },
+        "DMSO:large:1": {
+          "n": 11,
+          "seen": 10,
+          "rate": 0.9090909090909091
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 16,
+          "seen": 8,
+          "rate": 0.5
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 3,
+          "seen": 1,
+          "rate": 0.3333333333333333
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 121,
+          "seen": 94,
+          "rate": 0.7768595041322314
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 8,
+          "seen": 5,
+          "rate": 0.625
+        }
+      },
+      "edge_minus_interior_four_cell": {
+        "DMSO:small": 0.06,
+        "DMSO:large": 0.038961038961038974,
+        "VX445_VX661_VX770:small": -0.16666666666666669,
+        "VX445_VX661_VX770:large": -0.15185950413223137
+      }
+    },
+    {
+      "donor": "PDIO_09",
+      "experiment": "20230207_DIS3_plate017",
+      "dose": 0.128,
+      "eligible_all_edge_cells": false,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 63,
+          "seen": 27,
+          "rate": 0.42857142857142855
+        },
+        "DMSO:small:1": {
+          "n": 6,
+          "seen": 4,
+          "rate": 0.6666666666666666
+        },
+        "DMSO:large:0": {
+          "n": 86,
+          "seen": 79,
+          "rate": 0.9186046511627907
+        },
+        "DMSO:large:1": {
+          "n": 0,
+          "seen": 0,
+          "rate": null
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 24,
+          "seen": 18,
+          "rate": 0.75
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 2,
+          "seen": 1,
+          "rate": 0.5
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 62,
+          "seen": 51,
+          "rate": 0.8225806451612904
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 1,
+          "seen": 1,
+          "rate": 1.0
+        }
+      },
+      "edge_minus_interior_four_cell": null
+    },
+    {
+      "donor": "PDIO_11",
+      "experiment": "20221027_DIS3_plate006",
+      "dose": 0.128,
+      "eligible_all_edge_cells": true,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 11,
+          "seen": 8,
+          "rate": 0.7272727272727273
+        },
+        "DMSO:small:1": {
+          "n": 2,
+          "seen": 2,
+          "rate": 1.0
+        },
+        "DMSO:large:0": {
+          "n": 28,
+          "seen": 26,
+          "rate": 0.9285714285714286
+        },
+        "DMSO:large:1": {
+          "n": 8,
+          "seen": 5,
+          "rate": 0.625
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 11,
+          "seen": 7,
+          "rate": 0.6363636363636364
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 3,
+          "seen": 1,
+          "rate": 0.3333333333333333
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 72,
+          "seen": 51,
+          "rate": 0.7083333333333334
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 4,
+          "seen": 3,
+          "rate": 0.75
+        }
+      },
+      "edge_minus_interior_four_cell": {
+        "DMSO:small": 0.2727272727272727,
+        "DMSO:large": -0.3035714285714286,
+        "VX445_VX661_VX770:small": -0.30303030303030304,
+        "VX445_VX661_VX770:large": 0.04166666666666663
+      }
+    },
+    {
+      "donor": "PDIO_12",
+      "experiment": "20221020_DIS3_plate004",
+      "dose": 0.128,
+      "eligible_all_edge_cells": true,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 69,
+          "seen": 13,
+          "rate": 0.18840579710144928
+        },
+        "DMSO:small:1": {
+          "n": 9,
+          "seen": 2,
+          "rate": 0.2222222222222222
+        },
+        "DMSO:large:0": {
+          "n": 60,
+          "seen": 50,
+          "rate": 0.8333333333333334
+        },
+        "DMSO:large:1": {
+          "n": 4,
+          "seen": 4,
+          "rate": 1.0
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 30,
+          "seen": 4,
+          "rate": 0.13333333333333333
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 1,
+          "seen": 0,
+          "rate": 0.0
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 52,
+          "seen": 45,
+          "rate": 0.8653846153846154
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 4,
+          "seen": 3,
+          "rate": 0.75
+        }
+      },
+      "edge_minus_interior_four_cell": {
+        "DMSO:small": 0.03381642512077293,
+        "DMSO:large": 0.16666666666666663,
+        "VX445_VX661_VX770:small": -0.13333333333333333,
+        "VX445_VX661_VX770:large": -0.11538461538461542
+      }
+    },
+    {
+      "donor": "PDIO_12",
+      "experiment": "20221026_DIS3_plate005",
+      "dose": 0.128,
+      "eligible_all_edge_cells": true,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 4,
+          "seen": 3,
+          "rate": 0.75
+        },
+        "DMSO:small:1": {
+          "n": 2,
+          "seen": 2,
+          "rate": 1.0
+        },
+        "DMSO:large:0": {
+          "n": 46,
+          "seen": 43,
+          "rate": 0.9347826086956522
+        },
+        "DMSO:large:1": {
+          "n": 3,
+          "seen": 3,
+          "rate": 1.0
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 6,
+          "seen": 3,
+          "rate": 0.5
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 1,
+          "seen": 0,
+          "rate": 0.0
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 65,
+          "seen": 56,
+          "rate": 0.8615384615384616
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 5,
+          "seen": 5,
+          "rate": 1.0
+        }
+      },
+      "edge_minus_interior_four_cell": {
+        "DMSO:small": 0.25,
+        "DMSO:large": 0.06521739130434778,
+        "VX445_VX661_VX770:small": -0.5,
+        "VX445_VX661_VX770:large": 0.1384615384615384
+      }
+    },
+    {
+      "donor": "PDIO_12",
+      "experiment": "20221027_DIS3_plate006",
+      "dose": 0.128,
+      "eligible_all_edge_cells": true,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 16,
+          "seen": 9,
+          "rate": 0.5625
+        },
+        "DMSO:small:1": {
+          "n": 4,
+          "seen": 1,
+          "rate": 0.25
+        },
+        "DMSO:large:0": {
+          "n": 45,
+          "seen": 38,
+          "rate": 0.8444444444444444
+        },
+        "DMSO:large:1": {
+          "n": 3,
+          "seen": 1,
+          "rate": 0.3333333333333333
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 10,
+          "seen": 6,
+          "rate": 0.6
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 1,
+          "seen": 1,
+          "rate": 1.0
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 36,
+          "seen": 27,
+          "rate": 0.75
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 4,
+          "seen": 3,
+          "rate": 0.75
+        }
+      },
+      "edge_minus_interior_four_cell": {
+        "DMSO:small": -0.3125,
+        "DMSO:large": -0.5111111111111111,
+        "VX445_VX661_VX770:small": 0.4,
+        "VX445_VX661_VX770:large": 0.0
+      }
+    },
+    {
+      "donor": "PDIO_13",
+      "experiment": "20221020_DIS3_plate004",
+      "dose": 0.128,
+      "eligible_all_edge_cells": false,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 69,
+          "seen": 15,
+          "rate": 0.21739130434782608
+        },
+        "DMSO:small:1": {
+          "n": 0,
+          "seen": 0,
+          "rate": null
+        },
+        "DMSO:large:0": {
+          "n": 45,
+          "seen": 36,
+          "rate": 0.8
+        },
+        "DMSO:large:1": {
+          "n": 6,
+          "seen": 5,
+          "rate": 0.8333333333333334
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 62,
+          "seen": 10,
+          "rate": 0.16129032258064516
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 5,
+          "seen": 1,
+          "rate": 0.2
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 39,
+          "seen": 31,
+          "rate": 0.7948717948717948
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 2,
+          "seen": 2,
+          "rate": 1.0
+        }
+      },
+      "edge_minus_interior_four_cell": null
+    },
+    {
+      "donor": "PDIO_13",
+      "experiment": "20221027_DIS3_plate006",
+      "dose": 0.128,
+      "eligible_all_edge_cells": true,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 14,
+          "seen": 4,
+          "rate": 0.2857142857142857
+        },
+        "DMSO:small:1": {
+          "n": 2,
+          "seen": 1,
+          "rate": 0.5
+        },
+        "DMSO:large:0": {
+          "n": 27,
+          "seen": 23,
+          "rate": 0.8518518518518519
+        },
+        "DMSO:large:1": {
+          "n": 2,
+          "seen": 2,
+          "rate": 1.0
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 13,
+          "seen": 7,
+          "rate": 0.5384615384615384
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 2,
+          "seen": 1,
+          "rate": 0.5
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 30,
+          "seen": 28,
+          "rate": 0.9333333333333333
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 7,
+          "seen": 7,
+          "rate": 1.0
+        }
+      },
+      "edge_minus_interior_four_cell": {
+        "DMSO:small": 0.2142857142857143,
+        "DMSO:large": 0.14814814814814814,
+        "VX445_VX661_VX770:small": -0.038461538461538436,
+        "VX445_VX661_VX770:large": 0.06666666666666665
+      }
+    },
+    {
+      "donor": "PDIO_14",
+      "experiment": "20221020_DIS3_plate004",
+      "dose": 0.128,
+      "eligible_all_edge_cells": true,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 16,
+          "seen": 7,
+          "rate": 0.4375
+        },
+        "DMSO:small:1": {
+          "n": 2,
+          "seen": 0,
+          "rate": 0.0
+        },
+        "DMSO:large:0": {
+          "n": 36,
+          "seen": 28,
+          "rate": 0.7777777777777778
+        },
+        "DMSO:large:1": {
+          "n": 1,
+          "seen": 1,
+          "rate": 1.0
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 32,
+          "seen": 7,
+          "rate": 0.21875
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 2,
+          "seen": 1,
+          "rate": 0.5
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 53,
+          "seen": 30,
+          "rate": 0.5660377358490566
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 1,
+          "seen": 1,
+          "rate": 1.0
+        }
+      },
+      "edge_minus_interior_four_cell": {
+        "DMSO:small": -0.4375,
+        "DMSO:large": 0.2222222222222222,
+        "VX445_VX661_VX770:small": 0.28125,
+        "VX445_VX661_VX770:large": 0.4339622641509434
+      }
+    },
+    {
+      "donor": "PDIO_14",
+      "experiment": "20221027_DIS3_plate006",
+      "dose": 0.128,
+      "eligible_all_edge_cells": true,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 21,
+          "seen": 15,
+          "rate": 0.7142857142857143
+        },
+        "DMSO:small:1": {
+          "n": 2,
+          "seen": 1,
+          "rate": 0.5
+        },
+        "DMSO:large:0": {
+          "n": 38,
+          "seen": 36,
+          "rate": 0.9473684210526315
+        },
+        "DMSO:large:1": {
+          "n": 6,
+          "seen": 5,
+          "rate": 0.8333333333333334
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 28,
+          "seen": 13,
+          "rate": 0.4642857142857143
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 2,
+          "seen": 1,
+          "rate": 0.5
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 47,
+          "seen": 42,
+          "rate": 0.8936170212765957
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 3,
+          "seen": 2,
+          "rate": 0.6666666666666666
+        }
+      },
+      "edge_minus_interior_four_cell": {
+        "DMSO:small": -0.2142857142857143,
+        "DMSO:large": -0.11403508771929816,
+        "VX445_VX661_VX770:small": 0.0357142857142857,
+        "VX445_VX661_VX770:large": -0.22695035460992907
+      }
+    },
+    {
+      "donor": "PDIO_15",
+      "experiment": "20221020_DIS3_plate004",
+      "dose": 0.128,
+      "eligible_all_edge_cells": true,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 47,
+          "seen": 9,
+          "rate": 0.19148936170212766
+        },
+        "DMSO:small:1": {
+          "n": 1,
+          "seen": 0,
+          "rate": 0.0
+        },
+        "DMSO:large:0": {
+          "n": 68,
+          "seen": 64,
+          "rate": 0.9411764705882353
+        },
+        "DMSO:large:1": {
+          "n": 8,
+          "seen": 7,
+          "rate": 0.875
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 27,
+          "seen": 7,
+          "rate": 0.25925925925925924
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 1,
+          "seen": 0,
+          "rate": 0.0
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 51,
+          "seen": 43,
+          "rate": 0.8431372549019608
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 4,
+          "seen": 3,
+          "rate": 0.75
+        }
+      },
+      "edge_minus_interior_four_cell": {
+        "DMSO:small": -0.19148936170212766,
+        "DMSO:large": -0.06617647058823528,
+        "VX445_VX661_VX770:small": -0.25925925925925924,
+        "VX445_VX661_VX770:large": -0.09313725490196079
+      }
+    },
+    {
+      "donor": "PDIO_15",
+      "experiment": "20221026_DIS3_plate005",
+      "dose": 0.128,
+      "eligible_all_edge_cells": true,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 8,
+          "seen": 6,
+          "rate": 0.75
+        },
+        "DMSO:small:1": {
+          "n": 2,
+          "seen": 2,
+          "rate": 1.0
+        },
+        "DMSO:large:0": {
+          "n": 42,
+          "seen": 40,
+          "rate": 0.9523809523809523
+        },
+        "DMSO:large:1": {
+          "n": 3,
+          "seen": 3,
+          "rate": 1.0
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 2,
+          "seen": 2,
+          "rate": 1.0
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 1,
+          "seen": 1,
+          "rate": 1.0
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 47,
+          "seen": 44,
+          "rate": 0.9361702127659575
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 1,
+          "seen": 1,
+          "rate": 1.0
+        }
+      },
+      "edge_minus_interior_four_cell": {
+        "DMSO:small": 0.25,
+        "DMSO:large": 0.04761904761904767,
+        "VX445_VX661_VX770:small": 0.0,
+        "VX445_VX661_VX770:large": 0.06382978723404253
+      }
+    },
+    {
+      "donor": "PDIO_15",
+      "experiment": "20221027_DIS3_plate006",
+      "dose": 0.128,
+      "eligible_all_edge_cells": true,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 20,
+          "seen": 12,
+          "rate": 0.6
+        },
+        "DMSO:small:1": {
+          "n": 4,
+          "seen": 2,
+          "rate": 0.5
+        },
+        "DMSO:large:0": {
+          "n": 38,
+          "seen": 33,
+          "rate": 0.868421052631579
+        },
+        "DMSO:large:1": {
+          "n": 3,
+          "seen": 3,
+          "rate": 1.0
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 15,
+          "seen": 8,
+          "rate": 0.5333333333333333
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 4,
+          "seen": 0,
+          "rate": 0.0
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 35,
+          "seen": 23,
+          "rate": 0.6571428571428571
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 5,
+          "seen": 1,
+          "rate": 0.2
+        }
+      },
+      "edge_minus_interior_four_cell": {
+        "DMSO:small": -0.09999999999999998,
+        "DMSO:large": 0.13157894736842102,
+        "VX445_VX661_VX770:small": -0.5333333333333333,
+        "VX445_VX661_VX770:large": -0.45714285714285713
+      }
+    },
+    {
+      "donor": "PDIO_16",
+      "experiment": "20221020_DIS3_plate004",
+      "dose": 0.128,
+      "eligible_all_edge_cells": true,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 36,
+          "seen": 6,
+          "rate": 0.16666666666666666
+        },
+        "DMSO:small:1": {
+          "n": 1,
+          "seen": 0,
+          "rate": 0.0
+        },
+        "DMSO:large:0": {
+          "n": 54,
+          "seen": 46,
+          "rate": 0.8518518518518519
+        },
+        "DMSO:large:1": {
+          "n": 3,
+          "seen": 3,
+          "rate": 1.0
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 46,
+          "seen": 16,
+          "rate": 0.34782608695652173
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 1,
+          "seen": 0,
+          "rate": 0.0
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 80,
+          "seen": 65,
+          "rate": 0.8125
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 5,
+          "seen": 4,
+          "rate": 0.8
+        }
+      },
+      "edge_minus_interior_four_cell": {
+        "DMSO:small": -0.16666666666666666,
+        "DMSO:large": 0.14814814814814814,
+        "VX445_VX661_VX770:small": -0.34782608695652173,
+        "VX445_VX661_VX770:large": -0.012499999999999956
+      }
+    },
+    {
+      "donor": "PDIO_16",
+      "experiment": "20221027_DIS3_plate006",
+      "dose": 0.128,
+      "eligible_all_edge_cells": true,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 20,
+          "seen": 11,
+          "rate": 0.55
+        },
+        "DMSO:small:1": {
+          "n": 1,
+          "seen": 0,
+          "rate": 0.0
+        },
+        "DMSO:large:0": {
+          "n": 78,
+          "seen": 59,
+          "rate": 0.7564102564102564
+        },
+        "DMSO:large:1": {
+          "n": 8,
+          "seen": 7,
+          "rate": 0.875
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 15,
+          "seen": 6,
+          "rate": 0.4
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 3,
+          "seen": 0,
+          "rate": 0.0
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 76,
+          "seen": 60,
+          "rate": 0.7894736842105263
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 10,
+          "seen": 3,
+          "rate": 0.3
+        }
+      },
+      "edge_minus_interior_four_cell": {
+        "DMSO:small": -0.55,
+        "DMSO:large": 0.11858974358974361,
+        "VX445_VX661_VX770:small": -0.4,
+        "VX445_VX661_VX770:large": -0.48947368421052634
+      }
+    },
+    {
+      "donor": "PDIO_18",
+      "experiment": "20221020_DIS3_plate003",
+      "dose": 0.128,
+      "eligible_all_edge_cells": false,
+      "cells": {
+        "DMSO:small:0": {
+          "n": 42,
+          "seen": 7,
+          "rate": 0.16666666666666666
+        },
+        "DMSO:small:1": {
+          "n": 3,
+          "seen": 0,
+          "rate": 0.0
+        },
+        "DMSO:large:0": {
+          "n": 50,
+          "seen": 44,
+          "rate": 0.88
+        },
+        "DMSO:large:1": {
+          "n": 1,
+          "seen": 1,
+          "rate": 1.0
+        },
+        "VX445_VX661_VX770:small:0": {
+          "n": 16,
+          "seen": 9,
+          "rate": 0.5625
+        },
+        "VX445_VX661_VX770:small:1": {
+          "n": 0,
+          "seen": 0,
+          "rate": null
+        },
+        "VX445_VX661_VX770:large:0": {
+          "n": 49,
+          "seen": 48,
+          "rate": 0.9795918367346939
+        },
+        "VX445_VX661_VX770:large:1": {
+          "n": 3,
+          "seen": 3,
+          "rate": 1.0
+        }
+      },
+      "edge_minus_interior_four_cell": null
+    }
+  ],
+  "limits": "Baseline box edge clearance is a crop-risk proxy, not actual truncation. Conditional associations do not identify absent A1, image masks or never-detected baseline objects; 12 donor clusters and fixed prior blocks. No original biological gate repair."
+}
