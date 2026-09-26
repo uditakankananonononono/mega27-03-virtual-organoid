@@ -1,0 +1,1801 @@
+{
+  "status": "post-result same-accession well-balance sensitivity; no missing-outcome recovery",
+  "protocol": "notes/postresult_well_balance_protocol.md",
+  "source_url": "https://zenodo.org/records/10610438",
+  "source_sha256": "0e0e7913947a29c7b32ce87ca73a98614033d41ce63063a1d65053e766b2f315",
+  "derived_sha256": "a32e5cf8cb8f5f7cd92e57ef62881c7a25d559ff1a0018748d4fdded7f3fb5c7",
+  "n_original_blocks": 31,
+  "n_donors": 12,
+  "n_baseline_detected": 6964,
+  "n_observed_endpoint": 4964,
+  "object_weighted": {
+    "n_blocks": 31,
+    "n_donors": 12,
+    "equal_donor_mean_median": 0.20797816845675335,
+    "positive_donors": 9,
+    "donor_medians": {
+      "PDIO_01": 0.03895578283754192,
+      "PDIO_03": 0.35088214340686996,
+      "PDIO_05": 0.5396669946524568,
+      "PDIO_06": 0.3711182242215649,
+      "PDIO_09": 0.20085730910526342,
+      "PDIO_11": 0.3657796379380167,
+      "PDIO_12": 0.41800053330281883,
+      "PDIO_13": 0.27347396427414744,
+      "PDIO_14": -0.19347143095102995,
+      "PDIO_15": 0.30080490599578535,
+      "PDIO_16": -0.09719748643906653,
+      "PDIO_18": -0.07313255686332873
+    }
+  },
+  "equal_well": {
+    "n_blocks": 31,
+    "n_donors": 12,
+    "equal_donor_mean_median": 0.1960854513406246,
+    "positive_donors": 9,
+    "donor_medians": {
+      "PDIO_01": 0.07318371890483422,
+      "PDIO_03": 0.3679747310394249,
+      "PDIO_05": 0.46829194086703585,
+      "PDIO_06": 0.3520163609654539,
+      "PDIO_09": 0.19472376348471626,
+      "PDIO_11": 0.38096290857198156,
+      "PDIO_12": 0.42748359452745077,
+      "PDIO_13": 0.196393963228913,
+      "PDIO_14": -0.01093499341977544,
+      "PDIO_15": 0.04625928044847716,
+      "PDIO_16": -0.06871230933809527,
+      "PDIO_18": -0.07461754319292119
+    }
+  },
+  "delta_equal_well_minus_object": -0.011892717116128743,
+  "observability_object_weighted": {
+    "n_blocks": 31,
+    "n_donors": 12,
+    "equal_donor_mean_median": -0.09320144296758369,
+    "positive_donors": 4,
+    "donor_medians": {
+      "PDIO_01": -0.46681929181929177,
+      "PDIO_03": 0.05991928738708607,
+      "PDIO_05": -0.06995781673132279,
+      "PDIO_06": -0.03769286269286265,
+      "PDIO_09": -0.24273197929111912,
+      "PDIO_11": 0.04721740248056039,
+      "PDIO_12": 0.07666829138603329,
+      "PDIO_13": -0.041393836440688864,
+      "PDIO_14": 0.0605261934801577,
+      "PDIO_15": -0.16034688995215318,
+      "PDIO_16": -0.03527765856571907,
+      "PDIO_18": -0.3085281548516843
+    }
+  },
+  "observability_equal_well": {
+    "n_blocks": 31,
+    "n_donors": 12,
+    "equal_donor_mean_median": -0.06447717904202077,
+    "positive_donors": 4,
+    "donor_medians": {
+      "PDIO_01": -0.5052192944626531,
+      "PDIO_03": 0.04046569954010959,
+      "PDIO_05": -0.06427333696866216,
+      "PDIO_06": -0.0626984126984127,
+      "PDIO_09": -0.21098484848484855,
+      "PDIO_11": 0.12684343434343437,
+      "PDIO_12": 0.0804786617290707,
+      "PDIO_13": -0.05380917092440926,
+      "PDIO_14": 0.10745296370296364,
+      "PDIO_15": -0.20187500000000003,
+      "PDIO_16": -0.0160380183699107,
+      "PDIO_18": -0.014068825910931004
+    }
+  },
+  "predefined_sensitivity_flag": false,
+  "blocks": [
+    {
+      "donor": "PDIO_01",
+      "experiment": "20230125_DIS3_plate014",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 72,
+          "n_observed": 67,
+          "n_wells_observed": 2,
+          "object_mean": 0.12403510608972101,
+          "equal_well_mean": 0.11996275698741897,
+          "object_observability": 0.9305555555555556,
+          "equal_well_observability": 0.93125,
+          "object_count_cv": 0.1044776119402985
+        },
+        "DMSO:small": {
+          "n_wells": 2,
+          "n_baseline": 21,
+          "n_observed": 5,
+          "n_wells_observed": 2,
+          "object_mean": 0.17742610339667947,
+          "equal_well_mean": 0.166687090880127,
+          "object_observability": 0.23809523809523808,
+          "equal_well_observability": 0.2318181818181818,
+          "object_count_cv": 0.6
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 2,
+          "n_baseline": 65,
+          "n_observed": 58,
+          "n_wells_observed": 2,
+          "object_mean": 0.9868306203915455,
+          "equal_well_mean": 0.9868306203915456,
+          "object_observability": 0.8923076923076924,
+          "equal_well_observability": 0.894212523719165,
+          "object_count_cv": 0.0
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 2,
+          "n_baseline": 9,
+          "n_observed": 6,
+          "n_wells_observed": 2,
+          "object_mean": 1.001265834860962,
+          "equal_well_mean": 0.9603712353794194,
+          "object_observability": 0.6666666666666666,
+          "equal_well_observability": 0.7,
+          "object_count_cv": 0.3333333333333333
+        }
+      },
+      "effect_object": 0.03895578283754192,
+      "effect_equal_well": 0.07318371890483422,
+      "observable_object": -0.46681929181929177,
+      "observable_equal_well": -0.5052192944626531
+    },
+    {
+      "donor": "PDIO_03",
+      "experiment": "HitCF_A1_DIS_20230207_plate001",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 3,
+          "n_baseline": 96,
+          "n_observed": 87,
+          "n_wells_observed": 3,
+          "object_mean": 0.5737276904663723,
+          "equal_well_mean": 0.5731476766686091,
+          "object_observability": 0.90625,
+          "equal_well_observability": 0.9097442269856063,
+          "object_count_cv": 0.07449127239549265
+        },
+        "DMSO:small": {
+          "n_wells": 3,
+          "n_baseline": 49,
+          "n_observed": 36,
+          "n_wells_observed": 3,
+          "object_mean": 0.8663460784272468,
+          "equal_well_mean": 0.890254886671232,
+          "object_observability": 0.7346938775510204,
+          "equal_well_observability": 0.726120857699805,
+          "object_count_cv": 0.24532669073132907
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 3,
+          "n_baseline": 122,
+          "n_observed": 99,
+          "n_wells_observed": 3,
+          "object_mean": 1.0876410581176197,
+          "equal_well_mean": 1.088890675095932,
+          "object_observability": 0.8114754098360656,
+          "equal_well_observability": 0.8148298095666516,
+          "object_count_cv": 0.024742320634173517
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 3,
+          "n_baseline": 50,
+          "n_observed": 29,
+          "n_wells_observed": 3,
+          "object_mean": 1.0293773026716242,
+          "equal_well_mean": 1.0549617516559084,
+          "object_observability": 0.58,
+          "equal_well_observability": 0.5907407407407407,
+          "object_count_cv": 0.12902266850944624
+        }
+      },
+      "effect_object": 0.35088214340686996,
+      "effect_equal_well": 0.3510361334426464,
+      "observable_object": 0.05991928738708607,
+      "observable_equal_well": 0.04046569954010959
+    },
+    {
+      "donor": "PDIO_03",
+      "experiment": "HitCF_A1_DIS_20230228_plate010",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 3,
+          "n_baseline": 90,
+          "n_observed": 82,
+          "n_wells_observed": 3,
+          "object_mean": 0.27659940609855244,
+          "equal_well_mean": 0.27697392086742617,
+          "object_observability": 0.9111111111111111,
+          "equal_well_observability": 0.9080882352941176,
+          "object_count_cv": 0.1645211897955127
+        },
+        "DMSO:small": {
+          "n_wells": 3,
+          "n_baseline": 148,
+          "n_observed": 73,
+          "n_wells_observed": 3,
+          "object_mean": 0.2796600265404392,
+          "equal_well_mean": 0.269239931381571,
+          "object_observability": 0.49324324324324326,
+          "equal_well_observability": 0.48683261183261184,
+          "object_count_cv": 0.2518462508335649
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 3,
+          "n_baseline": 76,
+          "n_observed": 67,
+          "n_wells_observed": 3,
+          "object_mean": 0.8197959762625592,
+          "equal_well_mean": 0.8202152328399063,
+          "object_observability": 0.881578947368421,
+          "equal_well_observability": 0.8819668737060041,
+          "object_count_cv": 0.08443066044018478
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 3,
+          "n_baseline": 173,
+          "n_observed": 77,
+          "n_wells_observed": 3,
+          "object_mean": 0.24717069721236737,
+          "equal_well_mean": 0.2526511874002996,
+          "object_observability": 0.44508670520231214,
+          "equal_well_observability": 0.443537031822022,
+          "object_count_cv": 0.16011464942776563
+        }
+      },
+      "effect_object": 0.5756858994920785,
+      "effect_equal_well": 0.5598300559537515,
+      "observable_object": 0.018624374298241042,
+      "observable_equal_well": 0.01717421842247635
+    },
+    {
+      "donor": "PDIO_03",
+      "experiment": "HitCF_A1_DIS_20230307_plate013",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 3,
+          "n_baseline": 52,
+          "n_observed": 48,
+          "n_wells_observed": 3,
+          "object_mean": 0.7426481290532695,
+          "equal_well_mean": 0.7439446416969301,
+          "object_observability": 0.9230769230769231,
+          "equal_well_observability": 0.9326599326599326,
+          "object_count_cv": 0.2041241452319315
+        },
+        "DMSO:small": {
+          "n_wells": 3,
+          "n_baseline": 27,
+          "n_observed": 22,
+          "n_wells_observed": 3,
+          "object_mean": 0.8658555045627652,
+          "equal_well_mean": 0.8924095426738519,
+          "object_observability": 0.8148148148148148,
+          "equal_well_observability": 0.8166666666666668,
+          "object_count_cv": 0.3214121732666125
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 3,
+          "n_baseline": 58,
+          "n_observed": 55,
+          "n_wells_observed": 3,
+          "object_mean": 0.9563583195536101,
+          "equal_well_mean": 0.9960897889439669,
+          "object_observability": 0.9482758620689655,
+          "equal_well_observability": 0.9400352733686067,
+          "object_count_cv": 0.31596631267241393
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 3,
+          "n_baseline": 34,
+          "n_observed": 22,
+          "n_wells_observed": 3,
+          "object_mean": 0.7812136708432764,
+          "equal_well_mean": 0.7765799588814638,
+          "object_observability": 0.6470588235294118,
+          "equal_well_observability": 0.6349206349206349,
+          "object_count_cv": 0.4499770425732575
+        }
+      },
+      "effect_object": 0.2983520242198293,
+      "effect_equal_well": 0.3679747310394249,
+      "observable_object": 0.19295493027744537,
+      "observable_equal_well": 0.18912137245470595
+    },
+    {
+      "donor": "PDIO_05",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 77,
+          "n_observed": 63,
+          "n_wells_observed": 2,
+          "object_mean": 0.34753719020781343,
+          "equal_well_mean": 0.3695141629363216,
+          "object_observability": 0.8181818181818182,
+          "equal_well_observability": 0.8119047619047619,
+          "object_count_cv": 0.1746031746031746
+        },
+        "DMSO:small": {
+          "n_wells": 2,
+          "n_baseline": 38,
+          "n_observed": 24,
+          "n_wells_observed": 2,
+          "object_mean": 0.2977231197935632,
+          "equal_well_mean": 0.36100331789561924,
+          "object_observability": 0.631578947368421,
+          "equal_well_observability": 0.6599326599326599,
+          "object_count_cv": 0.3333333333333333
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 3,
+          "n_baseline": 85,
+          "n_observed": 77,
+          "n_wells_observed": 3,
+          "object_mean": 0.9129387224811091,
+          "equal_well_mean": 0.9112465585912249,
+          "object_observability": 0.9058823529411765,
+          "equal_well_observability": 0.9085714285714285,
+          "object_count_cv": 0.15033554419208084
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 3,
+          "n_baseline": 52,
+          "n_observed": 27,
+          "n_wells_observed": 3,
+          "object_mean": 0.6322241218185821,
+          "equal_well_mean": 0.6360028380557465,
+          "object_observability": 0.5192307692307693,
+          "equal_well_observability": 0.5138888888888888,
+          "object_count_cv": 0.6350528962771202
+        }
+      },
+      "effect_object": 0.23090053024827678,
+      "effect_equal_well": 0.2667328754947761,
+      "observable_object": 0.20004871289700998,
+      "observable_equal_well": 0.24271043771043765
+    },
+    {
+      "donor": "PDIO_05",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.32,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 3,
+          "n_baseline": 123,
+          "n_observed": 105,
+          "n_wells_observed": 3,
+          "object_mean": 0.17980290528210038,
+          "equal_well_mean": 0.18356821339465493,
+          "object_observability": 0.8536585365853658,
+          "equal_well_observability": 0.8608940618281563,
+          "object_count_cv": 0.06172133998483677
+        },
+        "DMSO:small": {
+          "n_wells": 3,
+          "n_baseline": 58,
+          "n_observed": 27,
+          "n_wells_observed": 3,
+          "object_mean": 0.13532174093270297,
+          "equal_well_mean": 0.12457824607309752,
+          "object_observability": 0.46551724137931033,
+          "equal_well_observability": 0.4968944099378882,
+          "object_count_cv": 0.09072184232530289
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 3,
+          "n_baseline": 88,
+          "n_observed": 84,
+          "n_wells_observed": 3,
+          "object_mean": 1.1017543538023735,
+          "equal_well_mean": 1.1142922751255515,
+          "object_observability": 0.9545454545454546,
+          "equal_well_observability": 0.9543478260869565,
+          "object_count_cv": 0.25918501258425286
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 3,
+          "n_baseline": 59,
+          "n_observed": 21,
+          "n_wells_observed": 3,
+          "object_mean": 0.5176061948005193,
+          "equal_well_mean": 0.5870103669369583,
+          "object_observability": 0.3559322033898305,
+          "equal_well_observability": 0.4134615384615385,
+          "object_count_cv": 0.46656947481584343
+        }
+      },
+      "effect_object": 0.5396669946524568,
+      "effect_equal_well": 0.46829194086703585,
+      "observable_object": 0.21047195594956858,
+      "observable_equal_well": 0.17688663573514984
+    },
+    {
+      "donor": "PDIO_05",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.8,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 3,
+          "n_baseline": 104,
+          "n_observed": 89,
+          "n_wells_observed": 3,
+          "object_mean": 0.21431202303920707,
+          "equal_well_mean": 0.21296019876882963,
+          "object_observability": 0.8557692307692307,
+          "equal_well_observability": 0.854090354090354,
+          "object_count_cv": 0.12410517996839619
+        },
+        "DMSO:small": {
+          "n_wells": 3,
+          "n_baseline": 79,
+          "n_observed": 38,
+          "n_wells_observed": 3,
+          "object_mean": 0.12654099505366967,
+          "equal_well_mean": 0.10613065477113842,
+          "object_observability": 0.4810126582278481,
+          "equal_well_observability": 0.5063844086021505,
+          "object_count_cv": 0.35501940955873795
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 3,
+          "n_baseline": 84,
+          "n_observed": 71,
+          "n_wells_observed": 3,
+          "object_mean": 1.0829889437868057,
+          "equal_well_mean": 1.082086332450299,
+          "object_observability": 0.8452380952380952,
+          "equal_well_observability": 0.8700980392156863,
+          "object_count_cv": 0.17703950830952864
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 3,
+          "n_baseline": 66,
+          "n_observed": 42,
+          "n_wells_observed": 3,
+          "object_mean": 0.7028489622083091,
+          "equal_well_mean": 0.8559955471794433,
+          "object_observability": 0.6363636363636364,
+          "equal_well_observability": 0.6776418026418026,
+          "object_count_cv": 0.45550301118354736
+        }
+      },
+      "effect_object": 0.2923689535929592,
+      "effect_equal_well": 0.11926124127316445,
+      "observable_object": -0.16588211366692374,
+      "observable_equal_well": -0.15524970891431988
+    },
+    {
+      "donor": "PDIO_05",
+      "experiment": "20230301_DIS3_plate023",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 58,
+          "n_observed": 54,
+          "n_wells_observed": 2,
+          "object_mean": 0.3308935664642918,
+          "equal_well_mean": 0.2959586588819424,
+          "object_observability": 0.9310344827586207,
+          "equal_well_observability": 0.9204968944099379,
+          "object_count_cv": 0.25925925925925924
+        },
+        "DMSO:small": {
+          "n_wells": 2,
+          "n_baseline": 42,
+          "n_observed": 33,
+          "n_wells_observed": 2,
+          "object_mean": 0.6565852839038461,
+          "equal_well_mean": 0.6801057056473028,
+          "object_observability": 0.7857142857142857,
+          "equal_well_observability": 0.75625,
+          "object_count_cv": 0.5757575757575758
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 3,
+          "n_baseline": 106,
+          "n_observed": 90,
+          "n_wells_observed": 3,
+          "object_mean": 1.1148724499524327,
+          "equal_well_mean": 1.1423323705199195,
+          "object_observability": 0.8490566037735849,
+          "equal_well_observability": 0.8576658053402239,
+          "object_count_cv": 0.1414213562373095
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 3,
+          "n_baseline": 56,
+          "n_observed": 47,
+          "n_wells_observed": 3,
+          "object_mean": 0.6556866079362528,
+          "equal_well_mean": 0.6909901238514617,
+          "object_observability": 0.8392857142857143,
+          "equal_well_observability": 0.8253968253968255,
+          "object_count_cv": 0.25708608454456544
+        }
+      },
+      "effect_object": 0.7848775594557342,
+      "effect_equal_well": 0.8354892934338182,
+      "observable_object": -0.13554930755646433,
+      "observable_equal_well": -0.1319779144665395
+    },
+    {
+      "donor": "PDIO_05",
+      "experiment": "20230308_DIS3_plate025",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 72,
+          "n_observed": 67,
+          "n_wells_observed": 2,
+          "object_mean": 0.20250529880623358,
+          "equal_well_mean": 0.2480855787325409,
+          "object_observability": 0.9305555555555556,
+          "equal_well_observability": 0.9374445430346052,
+          "object_count_cv": 0.34328358208955223
+        },
+        "DMSO:small": {
+          "n_wells": 2,
+          "n_baseline": 38,
+          "n_observed": 18,
+          "n_wells_observed": 2,
+          "object_mean": 0.3608973023091869,
+          "equal_well_mean": 0.47702687043422437,
+          "object_observability": 0.47368421052631576,
+          "equal_well_observability": 0.48214285714285715,
+          "object_count_cv": 0.4444444444444444
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 3,
+          "n_baseline": 97,
+          "n_observed": 89,
+          "n_wells_observed": 3,
+          "object_mean": 0.8792201642969946,
+          "equal_well_mean": 0.8783919185800309,
+          "object_observability": 0.9175257731958762,
+          "equal_well_observability": 0.9237237237237238,
+          "object_count_cv": 0.031780080053327976
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 3,
+          "n_baseline": 49,
+          "n_observed": 26,
+          "n_wells_observed": 3,
+          "object_mean": 0.2463793198361007,
+          "equal_well_mean": 0.2156322019481934,
+          "object_observability": 0.5306122448979592,
+          "equal_well_observability": 0.5326953748006379,
+          "object_count_cv": 0.2370928462680376
+        }
+      },
+      "effect_object": 0.7912328479638471,
+      "effect_equal_well": 0.8917010083335208,
+      "observable_object": -0.06995781673132279,
+      "observable_equal_well": -0.06427333696866216
+    },
+    {
+      "donor": "PDIO_06",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 49,
+          "n_observed": 46,
+          "n_wells_observed": 2,
+          "object_mean": 0.03924163082379995,
+          "equal_well_mean": -0.12356095295356626,
+          "object_observability": 0.9387755102040817,
+          "equal_well_observability": 0.9031531531531531,
+          "object_count_cv": 0.5652173913043478
+        },
+        "DMSO:small": {
+          "n_wells": 2,
+          "n_baseline": 31,
+          "n_observed": 9,
+          "n_wells_observed": 2,
+          "object_mean": 0.4809100038137522,
+          "equal_well_mean": 0.4897635766594128,
+          "object_observability": 0.2903225806451613,
+          "equal_well_observability": 0.30341880341880345,
+          "object_count_cv": 0.1111111111111111
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 3,
+          "n_baseline": 125,
+          "n_observed": 109,
+          "n_wells_observed": 3,
+          "object_mean": 0.8231149268090422,
+          "equal_well_mean": 0.8251753429436907,
+          "object_observability": 0.872,
+          "equal_well_observability": 0.8721278721278721,
+          "object_count_cv": 0.04677999553754848
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 3,
+          "n_baseline": 74,
+          "n_observed": 18,
+          "n_wells_observed": 3,
+          "object_mean": 0.23724151020677123,
+          "equal_well_mean": 0.20600243491320644,
+          "object_observability": 0.24324324324324326,
+          "equal_well_observability": 0.24425287356321843,
+          "object_count_cv": 0.36004114991154784
+        }
+      },
+      "effect_object": 1.0275417895922232,
+      "effect_equal_well": 1.2324974376434632,
+      "observable_object": -0.019696172802163625,
+      "observable_equal_well": 0.028140648830303983
+    },
+    {
+      "donor": "PDIO_06",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.32,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 3,
+          "n_baseline": 81,
+          "n_observed": 74,
+          "n_wells_observed": 3,
+          "object_mean": 0.19716246154128983,
+          "equal_well_mean": 0.1948830866397974,
+          "object_observability": 0.9135802469135802,
+          "equal_well_observability": 0.9041778951034849,
+          "object_count_cv": 0.2571121296005466
+        },
+        "DMSO:small": {
+          "n_wells": 3,
+          "n_baseline": 47,
+          "n_observed": 25,
+          "n_wells_observed": 3,
+          "object_mean": 0.33955619738200093,
+          "equal_well_mean": 0.31866373496566425,
+          "object_observability": 0.5319148936170213,
+          "equal_well_observability": 0.5444947209653092,
+          "object_count_cv": 0.11313708498984759
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 3,
+          "n_baseline": 89,
+          "n_observed": 69,
+          "n_wells_observed": 3,
+          "object_mean": 1.0827848028167972,
+          "equal_well_mean": 1.0650995076557546,
+          "object_observability": 0.7752808988764045,
+          "equal_well_observability": 0.7533347300789162,
+          "object_count_cv": 0.5301258306716488
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 3,
+          "n_baseline": 37,
+          "n_observed": 17,
+          "n_wells_observed": 3,
+          "object_mean": 0.4506623649829713,
+          "equal_well_mean": 0.3710614429383415,
+          "object_observability": 0.4594594594594595,
+          "equal_well_observability": 0.6222222222222222,
+          "object_count_cv": 0.4631769337654006
+        }
+      },
+      "effect_object": 0.7745161736745371,
+      "effect_equal_well": 0.8178187130432799,
+      "observable_object": -0.06584391387961386,
+      "observable_equal_well": -0.22857066628148182
+    },
+    {
+      "donor": "PDIO_06",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.8,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 72,
+          "n_observed": 65,
+          "n_wells_observed": 2,
+          "object_mean": 0.18255792339852275,
+          "equal_well_mean": 0.18939221872338344,
+          "object_observability": 0.9027777777777778,
+          "equal_well_observability": 0.888095238095238,
+          "object_count_cv": 0.26153846153846155
+        },
+        "DMSO:small": {
+          "n_wells": 2,
+          "n_baseline": 28,
+          "n_observed": 15,
+          "n_wells_observed": 2,
+          "object_mean": 0.2008072808278229,
+          "equal_well_mean": 0.20694618260680792,
+          "object_observability": 0.5357142857142857,
+          "equal_well_observability": 0.5055555555555555,
+          "object_count_cv": 0.4666666666666667
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 3,
+          "n_baseline": 130,
+          "n_observed": 96,
+          "n_wells_observed": 3,
+          "object_mean": 0.9580903320522919,
+          "equal_well_mean": 0.9420691354886528,
+          "object_observability": 0.7384615384615385,
+          "equal_well_observability": 0.7434523809523809,
+          "object_count_cv": 0.20252314682524564
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 3,
+          "n_baseline": 66,
+          "n_observed": 27,
+          "n_wells_observed": 3,
+          "object_mean": 0.6052214652600272,
+          "equal_well_mean": 0.6076067384066234,
+          "object_observability": 0.4090909090909091,
+          "equal_well_observability": 0.4236111111111111,
+          "object_count_cv": 0.36288736930121157
+        }
+      },
+      "effect_object": 0.3711182242215649,
+      "effect_equal_well": 0.3520163609654539,
+      "observable_object": -0.03769286269286265,
+      "observable_equal_well": -0.0626984126984127
+    },
+    {
+      "donor": "PDIO_06",
+      "experiment": "20230301_DIS3_plate023",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 61,
+          "n_observed": 58,
+          "n_wells_observed": 2,
+          "object_mean": 0.1191601194061342,
+          "equal_well_mean": 0.1191601194061342,
+          "object_observability": 0.9508196721311475,
+          "equal_well_observability": 0.9510752688172043,
+          "object_count_cv": 0.0
+        },
+        "DMSO:small": {
+          "n_wells": 2,
+          "n_baseline": 52,
+          "n_observed": 23,
+          "n_wells_observed": 2,
+          "object_mean": 0.14207572796767412,
+          "equal_well_mean": 0.11825740824743748,
+          "object_observability": 0.4423076923076923,
+          "equal_well_observability": 0.44281045751633985,
+          "object_count_cv": 0.30434782608695654
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 3,
+          "n_baseline": 94,
+          "n_observed": 79,
+          "n_wells_observed": 3,
+          "object_mean": 0.8312246225011082,
+          "equal_well_mean": 0.8746675767736233,
+          "object_observability": 0.8404255319148937,
+          "equal_well_observability": 0.8443081877864486,
+          "object_count_cv": 0.29305916209595506
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 3,
+          "n_baseline": 53,
+          "n_observed": 32,
+          "n_wells_observed": 3,
+          "object_mean": 0.7347399061708361,
+          "equal_well_mean": 0.7641455770734188,
+          "object_observability": 0.6037735849056604,
+          "equal_well_observability": 0.665079365079365,
+          "object_count_cv": 0.2460627460628691
+        }
+      },
+      "effect_object": 0.11940032489181199,
+      "effect_equal_well": 0.10961928854150772,
+      "observable_object": -0.2718600328142219,
+      "observable_equal_well": -0.3290359885937809
+    },
+    {
+      "donor": "PDIO_06",
+      "experiment": "20230308_DIS3_plate025",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 70,
+          "n_observed": 64,
+          "n_wells_observed": 2,
+          "object_mean": 0.13024829492586187,
+          "equal_well_mean": 0.13024829492586187,
+          "object_observability": 0.9142857142857143,
+          "equal_well_observability": 0.9150326797385621,
+          "object_count_cv": 0.0
+        },
+        "DMSO:small": {
+          "n_wells": 2,
+          "n_baseline": 44,
+          "n_observed": 23,
+          "n_wells_observed": 2,
+          "object_mean": 0.2823797223228217,
+          "equal_well_mean": 0.2739604854015506,
+          "object_observability": 0.5227272727272727,
+          "equal_well_observability": 0.5227272727272727,
+          "object_count_cv": 0.13043478260869565
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 3,
+          "n_baseline": 126,
+          "n_observed": 101,
+          "n_wells_observed": 3,
+          "object_mean": 0.6703701918476552,
+          "equal_well_mean": 0.6688636548747109,
+          "object_observability": 0.8015873015873016,
+          "equal_well_observability": 0.7991456502094799,
+          "object_count_cv": 0.1540232592683569
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 3,
+          "n_baseline": 78,
+          "n_observed": 33,
+          "n_wells_observed": 3,
+          "object_mean": 0.5560211695202313,
+          "equal_well_mean": 0.5378045727344659,
+          "object_observability": 0.4230769230769231,
+          "equal_well_observability": 0.4212121212121212,
+          "object_count_cv": 0.1963860817699352
+        }
+      },
+      "effect_object": 0.2664804497243838,
+      "effect_equal_well": 0.2747712726159337,
+      "observable_object": -0.013048063048062941,
+      "observable_equal_well": -0.014371878013930584
+    },
+    {
+      "donor": "PDIO_09",
+      "experiment": "20230125_DIS3_plate014",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 93,
+          "n_observed": 84,
+          "n_wells_observed": 2,
+          "object_mean": 0.06470389328945536,
+          "equal_well_mean": 0.06470389328945535,
+          "object_observability": 0.9032258064516129,
+          "equal_well_observability": 0.9041666666666667,
+          "object_count_cv": 0.0
+        },
+        "DMSO:small": {
+          "n_wells": 2,
+          "n_baseline": 20,
+          "n_observed": 10,
+          "n_wells_observed": 2,
+          "object_mean": 0.20347938667229695,
+          "equal_well_mean": 0.20347938667229698,
+          "object_observability": 0.5,
+          "equal_well_observability": 0.5,
+          "object_count_cv": 0.0
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 2,
+          "n_baseline": 81,
+          "n_observed": 76,
+          "n_wells_observed": 2,
+          "object_mean": 1.0845211848879481,
+          "equal_well_mean": 1.0859569743090036,
+          "object_observability": 0.9382716049382716,
+          "equal_well_observability": 0.9431818181818181,
+          "object_count_cv": 0.02631578947368421
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 2,
+          "n_baseline": 9,
+          "n_observed": 7,
+          "n_wells_observed": 2,
+          "object_mean": 0.6986217282649027,
+          "equal_well_mean": 0.6640727181676411,
+          "object_observability": 0.7777777777777778,
+          "equal_well_observability": 0.75,
+          "object_count_cv": 0.42857142857142855
+        }
+      },
+      "effect_object": 0.5246749500058869,
+      "effect_equal_well": 0.5606597495242043,
+      "observable_object": -0.24273197929111912,
+      "observable_equal_well": -0.21098484848484855
+    },
+    {
+      "donor": "PDIO_09",
+      "experiment": "20230125_DIS3_plate015",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 88,
+          "n_observed": 77,
+          "n_wells_observed": 2,
+          "object_mean": 0.20034241401028535,
+          "equal_well_mean": 0.20587872687313546,
+          "object_observability": 0.875,
+          "equal_well_observability": 0.8768194070080862,
+          "object_count_cv": 0.19480519480519481
+        },
+        "DMSO:small": {
+          "n_wells": 2,
+          "n_baseline": 29,
+          "n_observed": 13,
+          "n_wells_observed": 2,
+          "object_mean": 0.4148000884035424,
+          "equal_well_mean": 0.4118220722483217,
+          "object_observability": 0.4482758620689655,
+          "equal_well_observability": 0.45,
+          "object_count_cv": 0.07692307692307693
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 2,
+          "n_baseline": 129,
+          "n_observed": 99,
+          "n_wells_observed": 2,
+          "object_mean": 0.7141882711294164,
+          "equal_well_mean": 0.7198628731162622,
+          "object_observability": 0.7674418604651163,
+          "equal_well_observability": 0.7719065960519981,
+          "object_count_cv": 0.1111111111111111
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 2,
+          "n_baseline": 19,
+          "n_observed": 9,
+          "n_wells_observed": 2,
+          "object_mean": 0.9850597671873209,
+          "equal_well_mean": 1.1436401259023898,
+          "object_observability": 0.47368421052631576,
+          "equal_well_observability": 0.4642857142857143,
+          "object_count_cv": 0.3333333333333333
+        }
+      },
+      "effect_object": -0.05641382166464742,
+      "effect_equal_well": -0.21783390741094144,
+      "observable_object": -0.13296648799223387,
+      "observable_equal_well": -0.11919852524180247
+    },
+    {
+      "donor": "PDIO_09",
+      "experiment": "20230207_DIS3_plate017",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 86,
+          "n_observed": 79,
+          "n_wells_observed": 2,
+          "object_mean": 0.04840137059648895,
+          "equal_well_mean": 0.045184194562546444,
+          "object_observability": 0.9186046511627907,
+          "equal_well_observability": 0.9219525648097077,
+          "object_count_cv": 0.11392405063291139
+        },
+        "DMSO:small": {
+          "n_wells": 2,
+          "n_baseline": 69,
+          "n_observed": 31,
+          "n_wells_observed": 2,
+          "object_mean": 0.16677789686996267,
+          "equal_well_mean": 0.1458677114844777,
+          "object_observability": 0.4492753623188406,
+          "equal_well_observability": 0.43,
+          "object_count_cv": 0.41935483870967744
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 2,
+          "n_baseline": 63,
+          "n_observed": 52,
+          "n_wells_observed": 2,
+          "object_mean": 1.228725513201915,
+          "equal_well_mean": 1.230879841139016,
+          "object_observability": 0.8253968253968254,
+          "equal_well_observability": 0.8251008064516129,
+          "object_count_cv": 0.038461538461538464
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 2,
+          "n_baseline": 26,
+          "n_observed": 19,
+          "n_wells_observed": 2,
+          "object_mean": 1.1462447303701253,
+          "equal_well_mean": 1.136839594576231,
+          "object_observability": 0.7307692307692307,
+          "equal_well_observability": 0.7380952380952381,
+          "object_count_cv": 0.05263157894736842
+        }
+      },
+      "effect_object": 0.20085730910526342,
+      "effect_equal_well": 0.19472376348471626,
+      "observable_object": -0.37470169421635546,
+      "observable_equal_well": -0.40494699645333293
+    },
+    {
+      "donor": "PDIO_11",
+      "experiment": "20221027_DIS3_plate006",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 36,
+          "n_observed": 31,
+          "n_wells_observed": 2,
+          "object_mean": 0.45389975705630387,
+          "equal_well_mean": 0.45131801637913116,
+          "object_observability": 0.8611111111111112,
+          "equal_well_observability": 0.8745454545454545,
+          "object_count_cv": 0.3548387096774194
+        },
+        "DMSO:small": {
+          "n_wells": 2,
+          "n_baseline": 13,
+          "n_observed": 10,
+          "n_wells_observed": 2,
+          "object_mean": 0.6032498695318396,
+          "equal_well_mean": 0.6462358893920714,
+          "object_observability": 0.7692307692307693,
+          "equal_well_observability": 0.7638888888888888,
+          "object_count_cv": 0.4
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 2,
+          "n_baseline": 76,
+          "n_observed": 54,
+          "n_wells_observed": 2,
+          "object_mean": 1.25629704315325,
+          "equal_well_mean": 1.2562970431532499,
+          "object_observability": 0.7105263157894737,
+          "equal_well_observability": 0.7125,
+          "object_count_cv": 0.0
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 2,
+          "n_baseline": 14,
+          "n_observed": 8,
+          "n_wells_observed": 2,
+          "object_mean": 1.039867517690769,
+          "equal_well_mean": 1.0702520075942086,
+          "object_observability": 0.5714285714285714,
+          "equal_well_observability": 0.475,
+          "object_count_cv": 0.75
+        }
+      },
+      "effect_object": 0.3657796379380167,
+      "effect_equal_well": 0.38096290857198156,
+      "observable_object": 0.04721740248056039,
+      "observable_equal_well": 0.12684343434343437
+    },
+    {
+      "donor": "PDIO_12",
+      "experiment": "20221020_DIS3_plate004",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 64,
+          "n_observed": 54,
+          "n_wells_observed": 2,
+          "object_mean": 0.1653904494327804,
+          "equal_well_mean": 0.1653904494327804,
+          "object_observability": 0.84375,
+          "equal_well_observability": 0.844574780058651,
+          "object_count_cv": 0.0
+        },
+        "DMSO:small": {
+          "n_wells": 2,
+          "n_baseline": 78,
+          "n_observed": 15,
+          "n_wells_observed": 2,
+          "object_mean": 0.19214489128252385,
+          "equal_well_mean": 0.3615052105473599,
+          "object_observability": 0.19230769230769232,
+          "equal_well_observability": 0.1804812834224599,
+          "object_count_cv": 0.6
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 2,
+          "n_baseline": 56,
+          "n_observed": 48,
+          "n_wells_observed": 2,
+          "object_mean": 0.8159563025849907,
+          "equal_well_mean": 0.8291059951633797,
+          "object_observability": 0.8571428571428571,
+          "equal_well_observability": 0.855683269476373,
+          "object_count_cv": 0.08333333333333333
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 2,
+          "n_baseline": 31,
+          "n_observed": 4,
+          "n_wells_observed": 1,
+          "object_mean": 0.28799741713427013,
+          "equal_well_mean": 0.28799741713427013,
+          "object_observability": 0.12903225806451613,
+          "equal_well_observability": 0.1111111111111111,
+          "object_count_cv": 1.0
+        }
+      },
+      "effect_object": 0.5547133273004641,
+      "effect_equal_well": 0.7372233391436891,
+      "observable_object": 0.07666829138603329,
+      "observable_equal_well": 0.0804786617290707
+    },
+    {
+      "donor": "PDIO_12",
+      "experiment": "20221026_DIS3_plate005",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 49,
+          "n_observed": 46,
+          "n_wells_observed": 2,
+          "object_mean": 0.47163893886079633,
+          "equal_well_mean": 0.47035777248037147,
+          "object_observability": 0.9387755102040817,
+          "equal_well_observability": 0.9255514705882353,
+          "object_count_cv": 0.34782608695652173
+        },
+        "DMSO:small": {
+          "n_wells": 1,
+          "n_baseline": 6,
+          "n_observed": 5,
+          "n_wells_observed": 1,
+          "object_mean": 0.6051151229801373,
+          "equal_well_mean": 0.6051151229801373,
+          "object_observability": 0.8333333333333334,
+          "equal_well_observability": 0.8333333333333334,
+          "object_count_cv": 0.0
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 2,
+          "n_baseline": 70,
+          "n_observed": 61,
+          "n_wells_observed": 2,
+          "object_mean": 1.114494865199348,
+          "equal_well_mean": 1.1108948020606184,
+          "object_observability": 0.8714285714285714,
+          "equal_well_observability": 0.8822222222222222,
+          "object_count_cv": 0.2459016393442623
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 2,
+          "n_baseline": 7,
+          "n_observed": 3,
+          "n_wells_observed": 2,
+          "object_mean": 0.908101502885638,
+          "equal_well_mean": 0.9232090584645585,
+          "object_observability": 0.42857142857142855,
+          "equal_well_observability": 0.41666666666666663,
+          "object_count_cv": 0.3333333333333333
+        }
+      },
+      "effect_object": 0.339869546433051,
+      "effect_equal_well": 0.3224430940958257,
+      "observable_object": 0.3374149659863946,
+      "observable_equal_well": 0.3733374183006537
+    },
+    {
+      "donor": "PDIO_12",
+      "experiment": "20221027_DIS3_plate006",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 48,
+          "n_observed": 39,
+          "n_wells_observed": 2,
+          "object_mean": 0.4683609209272465,
+          "equal_well_mean": 0.4632815118296251,
+          "object_observability": 0.8125,
+          "equal_well_observability": 0.8176043557168784,
+          "object_count_cv": 0.1794871794871795
+        },
+        "DMSO:small": {
+          "n_wells": 2,
+          "n_baseline": 20,
+          "n_observed": 10,
+          "n_wells_observed": 2,
+          "object_mean": 0.8439254300531805,
+          "equal_well_mean": 0.8439254300531805,
+          "object_observability": 0.5,
+          "equal_well_observability": 0.5050505050505051,
+          "object_count_cv": 0.0
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 2,
+          "n_baseline": 40,
+          "n_observed": 30,
+          "n_wells_observed": 2,
+          "object_mean": 1.2545580240913832,
+          "equal_well_mean": 1.248871141892502,
+          "object_observability": 0.75,
+          "equal_well_observability": 0.7525252525252526,
+          "object_count_cv": 0.06666666666666667
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 2,
+          "n_baseline": 11,
+          "n_observed": 7,
+          "n_wells_observed": 2,
+          "object_mean": 1.2121219999144983,
+          "equal_well_mean": 1.2020314655886066,
+          "object_observability": 0.6363636363636364,
+          "equal_well_observability": 0.6333333333333333,
+          "object_count_cv": 0.14285714285714285
+        }
+      },
+      "effect_object": 0.41800053330281883,
+      "effect_equal_well": 0.42748359452745077,
+      "observable_object": -0.19886363636363635,
+      "observable_equal_well": -0.19336193147445402
+    },
+    {
+      "donor": "PDIO_13",
+      "experiment": "20221020_DIS3_plate004",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 51,
+          "n_observed": 41,
+          "n_wells_observed": 2,
+          "object_mean": 0.045791895756506995,
+          "equal_well_mean": 0.04950941369618636,
+          "object_observability": 0.803921568627451,
+          "equal_well_observability": 0.811128526645768,
+          "object_count_cv": 0.07317073170731707
+        },
+        "DMSO:small": {
+          "n_wells": 2,
+          "n_baseline": 69,
+          "n_observed": 15,
+          "n_wells_observed": 2,
+          "object_mean": 0.22261386233456026,
+          "equal_well_mean": 0.11742881687052721,
+          "object_observability": 0.21739130434782608,
+          "equal_well_observability": 0.22592905405405406,
+          "object_count_cv": 0.4666666666666667
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 2,
+          "n_baseline": 41,
+          "n_observed": 33,
+          "n_wells_observed": 2,
+          "object_mean": 0.7207239144325069,
+          "equal_well_mean": 0.7469539173927748,
+          "object_observability": 0.8048780487804879,
+          "equal_well_observability": 0.7949999999999999,
+          "object_count_cv": 0.2727272727272727
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 2,
+          "n_baseline": 67,
+          "n_observed": 11,
+          "n_wells_observed": 2,
+          "object_mean": 0.646724612347492,
+          "equal_well_mean": 0.6712265981574085,
+          "object_observability": 0.16417910447761194,
+          "equal_well_observability": 0.16759259259259257,
+          "object_count_cv": 0.09090909090909091
+        }
+      },
+      "effect_object": 0.2508212686630682,
+      "effect_equal_well": 0.14364672240970722,
+      "observable_object": 0.05416868002325098,
+      "observable_equal_well": 0.04220793481569346
+    },
+    {
+      "donor": "PDIO_13",
+      "experiment": "20221027_DIS3_plate006",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 29,
+          "n_observed": 25,
+          "n_wells_observed": 2,
+          "object_mean": 0.3541720213112626,
+          "equal_well_mean": 0.3559421938819771,
+          "object_observability": 0.8620689655172413,
+          "equal_well_observability": 0.8677884615384616,
+          "object_count_cv": 0.04
+        },
+        "DMSO:small": {
+          "n_wells": 2,
+          "n_baseline": 16,
+          "n_observed": 5,
+          "n_wells_observed": 2,
+          "object_mean": 0.5276236831491646,
+          "equal_well_mean": 0.47887187790333385,
+          "object_observability": 0.3125,
+          "equal_well_observability": 0.3125,
+          "object_count_cv": 0.2
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 2,
+          "n_baseline": 37,
+          "n_observed": 35,
+          "n_wells_observed": 2,
+          "object_mean": 0.9543008664643325,
+          "equal_well_mean": 0.95783738844377,
+          "object_observability": 0.9459459459459459,
+          "equal_well_observability": 0.9411764705882353,
+          "object_count_cv": 0.14285714285714285
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 2,
+          "n_baseline": 15,
+          "n_observed": 8,
+          "n_wells_observed": 2,
+          "object_mean": 0.8316258684170079,
+          "equal_well_mean": 0.8316258684170079,
+          "object_observability": 0.5333333333333333,
+          "equal_well_observability": 0.5357142857142857,
+          "object_count_cv": 0.0
+        }
+      },
+      "effect_object": 0.2961266598852267,
+      "effect_equal_well": 0.2491412040481188,
+      "observable_object": -0.1369563529046287,
+      "observable_equal_well": -0.14982627666451198
+    },
+    {
+      "donor": "PDIO_14",
+      "experiment": "20221020_DIS3_plate004",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 37,
+          "n_observed": 29,
+          "n_wells_observed": 2,
+          "object_mean": 0.19908197224491567,
+          "equal_well_mean": 0.21682552479167788,
+          "object_observability": 0.7837837837837838,
+          "equal_well_observability": 0.7797619047619048,
+          "object_count_cv": 0.1724137931034483
+        },
+        "DMSO:small": {
+          "n_wells": 2,
+          "n_baseline": 18,
+          "n_observed": 7,
+          "n_wells_observed": 2,
+          "object_mean": 0.04320102613770322,
+          "equal_well_mean": 0.023416856967490005,
+          "object_observability": 0.3888888888888889,
+          "equal_well_observability": 0.44805194805194803,
+          "object_count_cv": 0.42857142857142855
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 2,
+          "n_baseline": 54,
+          "n_observed": 31,
+          "n_wells_observed": 2,
+          "object_mean": 0.8008154507176369,
+          "equal_well_mean": 0.8439337682969581,
+          "object_observability": 0.5740740740740741,
+          "equal_well_observability": 0.5916666666666667,
+          "object_count_cv": 0.16129032258064516
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 2,
+          "n_baseline": 34,
+          "n_observed": 8,
+          "n_wells_observed": 2,
+          "object_mean": 1.1845103549071487,
+          "equal_well_mean": 0.8823672518932164,
+          "object_observability": 0.23529411764705882,
+          "equal_well_observability": 0.225,
+          "object_count_cv": 0.5
+        }
+      },
+      "effect_object": -0.5395758502967242,
+      "effect_equal_well": -0.23184215142044623,
+      "observable_object": -0.05611493846787963,
+      "observable_equal_well": 0.034956709956709964
+    },
+    {
+      "donor": "PDIO_14",
+      "experiment": "20221027_DIS3_plate006",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 44,
+          "n_observed": 41,
+          "n_wells_observed": 2,
+          "object_mean": 0.43529891901578255,
+          "equal_well_mean": 0.4030584390149619,
+          "object_observability": 0.9318181818181818,
+          "equal_well_observability": 0.9196428571428572,
+          "object_count_cv": 0.3170731707317073
+        },
+        "DMSO:small": {
+          "n_wells": 2,
+          "n_baseline": 23,
+          "n_observed": 16,
+          "n_wells_observed": 2,
+          "object_mean": 0.3954944942778443,
+          "equal_well_mean": 0.40676844959654684,
+          "object_observability": 0.6956521739130435,
+          "equal_well_observability": 0.6931818181818181,
+          "object_count_cv": 0.125
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 2,
+          "n_baseline": 50,
+          "n_observed": 44,
+          "n_wells_observed": 2,
+          "object_mean": 1.2194723789448567,
+          "equal_well_mean": 1.2194723789448565,
+          "object_observability": 0.88,
+          "equal_well_observability": 0.8814102564102564,
+          "object_count_cv": 0.0
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 2,
+          "n_baseline": 30,
+          "n_observed": 14,
+          "n_wells_observed": 2,
+          "object_mean": 1.0270349658122542,
+          "equal_well_mean": 1.0132102249455461,
+          "object_observability": 0.4666666666666667,
+          "equal_well_observability": 0.475,
+          "object_count_cv": 0.2857142857142857
+        }
+      },
+      "effect_object": 0.15263298839466427,
+      "effect_equal_well": 0.20997216458089535,
+      "observable_object": 0.17716732542819502,
+      "observable_equal_well": 0.17994921744921732
+    },
+    {
+      "donor": "PDIO_15",
+      "experiment": "20221020_DIS3_plate004",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 76,
+          "n_observed": 71,
+          "n_wells_observed": 2,
+          "object_mean": 0.47229067104690253,
+          "equal_well_mean": 0.4700649797635177,
+          "object_observability": 0.9342105263157895,
+          "equal_well_observability": 0.9369337979094077,
+          "object_count_cv": 0.04225352112676056
+        },
+        "DMSO:small": {
+          "n_wells": 2,
+          "n_baseline": 48,
+          "n_observed": 9,
+          "n_wells_observed": 2,
+          "object_mean": 0.19651489675186865,
+          "equal_well_mean": 0.20500714761886402,
+          "object_observability": 0.1875,
+          "equal_well_observability": 0.18706293706293708,
+          "object_count_cv": 0.1111111111111111
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 2,
+          "n_baseline": 55,
+          "n_observed": 46,
+          "n_wells_observed": 2,
+          "object_mean": 0.8473963320764627,
+          "equal_well_mean": 0.8653246785808478,
+          "object_observability": 0.8363636363636363,
+          "equal_well_observability": 0.8328912466843501,
+          "object_count_cv": 0.13043478260869565
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 2,
+          "n_baseline": 28,
+          "n_observed": 7,
+          "n_wells_observed": 2,
+          "object_mean": 0.9711904620445427,
+          "equal_well_mean": 1.0481730173340995,
+          "object_observability": 0.25,
+          "equal_well_observability": 0.25,
+          "object_count_cv": 0.14285714285714285
+        }
+      },
+      "effect_object": -0.399569904263114,
+      "effect_equal_well": -0.44790617089790535,
+      "observable_object": -0.16034688995215318,
+      "observable_equal_well": -0.16697961416212048
+    },
+    {
+      "donor": "PDIO_15",
+      "experiment": "20221026_DIS3_plate005",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 45,
+          "n_observed": 43,
+          "n_wells_observed": 2,
+          "object_mean": 0.8445759173985427,
+          "equal_well_mean": 0.8509842001953868,
+          "object_observability": 0.9555555555555556,
+          "equal_well_observability": 0.955,
+          "object_count_cv": 0.11627906976744186
+        },
+        "DMSO:small": {
+          "n_wells": 2,
+          "n_baseline": 10,
+          "n_observed": 8,
+          "n_wells_observed": 2,
+          "object_mean": 0.7801506864472628,
+          "equal_well_mean": 0.7801506864472628,
+          "object_observability": 0.8,
+          "equal_well_observability": 0.8,
+          "object_count_cv": 0.0
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 2,
+          "n_baseline": 48,
+          "n_observed": 45,
+          "n_wells_observed": 2,
+          "object_mean": 1.1507108626265656,
+          "equal_well_mean": 1.1370532271823302,
+          "object_observability": 0.9375,
+          "equal_well_observability": 0.953125,
+          "object_count_cv": 0.28888888888888886
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 1,
+          "n_baseline": 3,
+          "n_observed": 3,
+          "n_wells_observed": 1,
+          "object_mean": 0.760583093210569,
+          "equal_well_mean": 0.760583093210569,
+          "object_observability": 1.0,
+          "equal_well_observability": 1.0,
+          "object_count_cv": 0.0
+        }
+      },
+      "effect_object": 0.32570253846471675,
+      "effect_equal_well": 0.30563662022363713,
+      "observable_object": -0.21805555555555567,
+      "observable_equal_well": -0.20187500000000003
+    },
+    {
+      "donor": "PDIO_15",
+      "experiment": "20221027_DIS3_plate006",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 41,
+          "n_observed": 36,
+          "n_wells_observed": 2,
+          "object_mean": 0.9251839856370638,
+          "equal_well_mean": 0.9251839856370638,
+          "object_observability": 0.8780487804878049,
+          "equal_well_observability": 0.8827751196172249,
+          "object_count_cv": 0.0
+        },
+        "DMSO:small": {
+          "n_wells": 2,
+          "n_baseline": 24,
+          "n_observed": 14,
+          "n_wells_observed": 2,
+          "object_mean": 0.8910351596994356,
+          "equal_well_mean": 0.6319290630709191,
+          "object_observability": 0.5833333333333334,
+          "equal_well_observability": 0.5,
+          "object_count_cv": 0.7142857142857143
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 2,
+          "n_baseline": 40,
+          "n_observed": 24,
+          "n_wells_observed": 2,
+          "object_mean": 1.20376568180036,
+          "equal_well_mean": 1.2083261528815683,
+          "object_observability": 0.6,
+          "equal_well_observability": 0.59375,
+          "object_count_cv": 0.25
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 2,
+          "n_baseline": 19,
+          "n_observed": 8,
+          "n_wells_observed": 2,
+          "object_mean": 0.8688119498669463,
+          "equal_well_mean": 0.8688119498669464,
+          "object_observability": 0.42105263157894735,
+          "equal_well_observability": 0.4222222222222222,
+          "object_count_cv": 0.0
+        }
+      },
+      "effect_object": 0.30080490599578535,
+      "effect_equal_well": 0.04625928044847716,
+      "observable_object": -0.11576807873341888,
+      "observable_equal_well": -0.21124734183944716
+    },
+    {
+      "donor": "PDIO_16",
+      "experiment": "20221020_DIS3_plate004",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 57,
+          "n_observed": 49,
+          "n_wells_observed": 2,
+          "object_mean": 0.5603039184995636,
+          "equal_well_mean": 0.5669211616073984,
+          "object_observability": 0.8596491228070176,
+          "equal_well_observability": 0.8452743902439024,
+          "object_count_cv": 0.46938775510204084
+        },
+        "DMSO:small": {
+          "n_wells": 2,
+          "n_baseline": 37,
+          "n_observed": 6,
+          "n_wells_observed": 2,
+          "object_mean": -0.0008200173604058595,
+          "equal_well_mean": 0.015557011016397278,
+          "object_observability": 0.16216216216216217,
+          "equal_well_observability": 0.17878787878787877,
+          "object_count_cv": 0.3333333333333333
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 2,
+          "n_baseline": 85,
+          "n_observed": 69,
+          "n_wells_observed": 2,
+          "object_mean": 0.4082390388819829,
+          "equal_well_mean": 0.4053206327523343,
+          "object_observability": 0.8117647058823529,
+          "equal_well_observability": 0.8125,
+          "object_count_cv": 0.043478260869565216
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 2,
+          "n_baseline": 47,
+          "n_observed": 16,
+          "n_wells_observed": 2,
+          "object_mean": 0.2794000308911152,
+          "equal_well_mean": 0.22196240461598699,
+          "object_observability": 0.3404255319148936,
+          "equal_well_observability": 0.3303921568627451,
+          "object_count_cv": 0.375
+        }
+      },
+      "effect_object": -0.43228492786910183,
+      "effect_equal_well": -0.36800592245465374,
+      "observable_object": -0.22614778667739605,
+      "observable_equal_well": -0.1843786683187687
+    },
+    {
+      "donor": "PDIO_16",
+      "experiment": "20221027_DIS3_plate006",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 86,
+          "n_observed": 66,
+          "n_wells_observed": 2,
+          "object_mean": 0.8052683061501731,
+          "equal_well_mean": 0.8086772301854462,
+          "object_observability": 0.7674418604651163,
+          "equal_well_observability": 0.768939393939394,
+          "object_count_cv": 0.06060606060606061
+        },
+        "DMSO:small": {
+          "n_wells": 2,
+          "n_baseline": 21,
+          "n_observed": 11,
+          "n_wells_observed": 2,
+          "object_mean": 0.9018816622945501,
+          "equal_well_mean": 0.8925213008382746,
+          "object_observability": 0.5238095238095238,
+          "equal_well_observability": 0.5272727272727272,
+          "object_count_cv": 0.09090909090909091
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 2,
+          "n_baseline": 86,
+          "n_observed": 63,
+          "n_wells_observed": 2,
+          "object_mean": 0.9980465265957403,
+          "equal_well_mean": 0.9980659126831843,
+          "object_observability": 0.7325581395348837,
+          "equal_well_observability": 0.7439692982456141,
+          "object_count_cv": 0.015873015873015872
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 2,
+          "n_baseline": 18,
+          "n_observed": 6,
+          "n_wells_observed": 2,
+          "object_mean": 0.8567699277491486,
+          "equal_well_mean": 0.8513286795575495,
+          "object_observability": 0.3333333333333333,
+          "equal_well_observability": 0.35,
+          "object_count_cv": 0.3333333333333333
+        }
+      },
+      "effect_object": 0.23788995499096877,
+      "effect_equal_well": 0.2305813037784632,
+      "observable_object": 0.1555924695459579,
+      "observable_equal_well": 0.1523026315789473
+    },
+    {
+      "donor": "PDIO_18",
+      "experiment": "20221020_DIS3_plate003",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:large": {
+          "n_wells": 2,
+          "n_baseline": 51,
+          "n_observed": 45,
+          "n_wells_observed": 2,
+          "object_mean": -0.19361871032386935,
+          "equal_well_mean": -0.20041601515479768,
+          "object_observability": 0.8823529411764706,
+          "equal_well_observability": 0.8955592105263157,
+          "object_count_cv": 0.2
+        },
+        "DMSO:small": {
+          "n_wells": 2,
+          "n_baseline": 45,
+          "n_observed": 7,
+          "n_wells_observed": 2,
+          "object_mean": 0.058931797770203555,
+          "equal_well_mean": 0.049369512657900516,
+          "object_observability": 0.15555555555555556,
+          "equal_well_observability": 0.20072115384615385,
+          "object_count_cv": 0.14285714285714285
+        },
+        "VX445_VX661_VX770:large": {
+          "n_wells": 2,
+          "n_baseline": 52,
+          "n_observed": 51,
+          "n_wells_observed": 2,
+          "object_mean": 0.1643220423203361,
+          "equal_well_mean": 0.16560203627211834,
+          "object_observability": 0.9807692307692307,
+          "equal_well_observability": 0.9807692307692308,
+          "object_count_cv": 0.0196078431372549
+        },
+        "VX445_VX661_VX770:small": {
+          "n_wells": 2,
+          "n_baseline": 16,
+          "n_observed": 9,
+          "n_wells_observed": 1,
+          "object_mean": 0.4900051072777377,
+          "equal_well_mean": 0.4900051072777377,
+          "object_observability": 0.5625,
+          "equal_well_observability": 0.3,
+          "object_count_cv": 1.0
+        }
+      },
+      "effect_object": -0.07313255686332873,
+      "effect_equal_well": -0.07461754319292119,
+      "observable_object": -0.3085281548516843,
+      "observable_equal_well": -0.014068825910931004
+    }
+  ],
+  "limits": "Wells are nested technical replicates; endpoint-negative objects absent from log-response analysis, never-detected baseline objects outside frame. Well weighting cannot repair size-selection, segmenter error or original sign/specificity failures."
+}
