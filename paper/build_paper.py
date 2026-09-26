@@ -21,9 +21,9 @@ S1 = json.load(open("results/seg_eval.json")); S2 = json.load(open("results/seg_
 
 P = Paper("Small-Organoid Attenuation of CFTR-Modulator Swelling in Patient-Derived Intestinal Organoids: "
           "an Exploratory Single-Organoid Re-Analysis and Negative Validation Tests",
-          "MEGA-PROGRAM-27, Item 3 - Udita Phookan (program owner); computational work by an AI research agent. Working draft of 25 September 2026.")
+          "MEGA-PROGRAM-27, Item 3 - Udita Phookan (program owner); computational work by an AI research agent. Working draft of 26 September 2026.")
 P.h("Abstract")
-P.p("Novelty status. This working project tests whether baseline organoid size moderates CFTR-modulator swelling, using a donor-matched analysis and a swelling-geometry model. This is a testable candidate, NOT an established new biological discovery. Its stronger pre-registered donor x plate x dose check failed; the tested segmentation pipeline does not match the published benchmark; no diagnostic tool has been validated. The contribution is a transparent, reproducible analysis with negative controls, not an award or clinical claim.")
+P.p("Novelty status. This working project tests whether baseline organoid size moderates CFTR-modulator swelling, using a donor-matched analysis and a swelling-geometry model. This is a testable candidate, NOT an established new biological discovery. Its stronger pre-registered donor x plate x dose check and a paired no-forskolin specificity test both failed; the tested segmentation pipeline does not match the published benchmark; no diagnostic tool has been validated. The contribution is a transparent, reproducible analysis with negative controls, not an award or clinical claim.")
 P.p("The forskolin-induced swelling (FIS) assay on patient-derived intestinal organoids is used to predict which people with cystic fibrosis "
     "(CF) respond to CFTR modulators. Standard pipelines sum organoid area per well, so any dependence of the response on organoid size is "
     "averaged away. We re-analysed the public single-organoid OrgaSegment data (17 CF donors, per-organoid area before and after "
@@ -34,9 +34,9 @@ P.p(f"Finding (candidate). In this accession, estimated modulator-induced swelli
     f"largest size quartile exceeds that in the smallest in {int((R.attenuation > 0).sum())} of {len(R)} donors, and the attenuation does "
     f"not track overall response (Spearman rho = {rho:.2f}, p = {pv:.2f}). Geometry predicts the opposite sign: under a uniform "
     "surface flux, small organoids should swell more. Area noise also biases the slope negative. So the effect is unlikely to be a "
-    "simple uniform-area-noise artefact under the tested model; track-selection bias and source-specific confounding remain unbounded. A stronger matched-block test fails, so this is not donor-general evidence.")
+    "simple uniform-area-noise artefact under the tested model; track-selection bias and source-specific confounding remain unbounded. Stronger matched-block and no-forskolin specificity tests fail, so this is neither donor-general nor CFTR-stimulation-specific evidence.")
 P.p(f"Negatives. Size-adjusted and size-filtered readouts do not improve per-donor Trikafta-vs-DMSO separation, so the finding does not "
-    f"change theratyping calls at this assay's well counts. A pre-registered donor x plate x dose test is 9/12 positive (p=0.073), failing H1. Replication on the public FIS time series is impossible because it is "
+    f"change theratyping calls at this assay's well counts. A pre-registered donor x plate x dose test is 9/12 positive (p=0.073), failing H1. A paired no-forskolin specificity stress test is 3/11 positive (p=0.967), also failing. Replication on the public FIS time series is impossible because it is "
     f"well-level. Our best U-Net segmentation (512 px, tuned) reaches mAP@0.5 = {S4['eval_mAP50']:.3f} +/- {S4['eval_sd']:.3f} on the OrgaSegment eval split "
     f"(published 0.76 +/- 0.12): below the reported reference. A separate train-only, validation-only pipeline also fails (0.73867 by the published AP scorer). Neither score establishes a match, superiority, or clinical use.")
 P.p("Fidelity. Scoring 151 organoid GEO series against GTEx, cultured fibroblasts are the most common best match. A GEOparse sample-level audit shows this "
