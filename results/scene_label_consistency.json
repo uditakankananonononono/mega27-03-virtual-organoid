@@ -1,0 +1,62 @@
+{
+  "status": "post-result masks-only annotation consistency; no benchmark score or selection",
+  "selected_from": "image-only >=0.99 graph for three candidate pairs; two explicitly named descriptive controls",
+  "pairs": [
+    {
+      "a": "train/20210727_11104_ckufl4yfh3f200y77899mcbro_img.jpg",
+      "b": "val/20210727_16294_ckunspgrq2th20z824ozpde5m_img.jpg",
+      "pair_type": "image-only cosine >=0.99",
+      "n_objects_a": 62,
+      "n_objects_b": 66,
+      "one_to_one_matches_iou_ge_0_5": 61,
+      "one_to_one_matches_iou_ge_0_75": 45,
+      "median_iou_ge_0_5": 0.8059701492537313,
+      "foreground_dice_same_coordinates": 0.905169857840613
+    },
+    {
+      "a": "train/20210727_11752_ckufmmv8203lp0y8xhq8k7lin_img.jpg",
+      "b": "val/20210727_28190_ckw3itp398oe50zc3darma7i6_img.jpg",
+      "pair_type": "image-only cosine >=0.99",
+      "n_objects_a": 43,
+      "n_objects_b": 45,
+      "one_to_one_matches_iou_ge_0_5": 40,
+      "one_to_one_matches_iou_ge_0_75": 8,
+      "median_iou_ge_0_5": 0.7048984468339308,
+      "foreground_dice_same_coordinates": 0.8094854635825952
+    },
+    {
+      "a": "train/20210727_15879_ckunspgfb2th10z8253ca7pzf_img.jpg",
+      "b": "eval/20210727_11562_ckufm1p2h4vzp0y7jh0fyg2yo_img.jpg",
+      "pair_type": "image-only cosine >=0.99",
+      "n_objects_a": 55,
+      "n_objects_b": 52,
+      "one_to_one_matches_iou_ge_0_5": 50,
+      "one_to_one_matches_iou_ge_0_75": 38,
+      "median_iou_ge_0_5": 0.8201784431646334,
+      "foreground_dice_same_coordinates": 0.8962888764017493
+    },
+    {
+      "a": "train/0003_3250648_ckmbz0c8v1vke345zguvwuom1_img.jpg",
+      "b": "val/0003_6054432_cknj077t115y9345zmqfpq9s0_img.jpg",
+      "pair_type": "0.95 graph flag, visual distinct-layout control",
+      "n_objects_a": 39,
+      "n_objects_b": 35,
+      "one_to_one_matches_iou_ge_0_5": 0,
+      "one_to_one_matches_iou_ge_0_75": 0,
+      "median_iou_ge_0_5": null,
+      "foreground_dice_same_coordinates": 0.027551237500886464
+    },
+    {
+      "a": "train/20210727_11104_ckufl4yfh3f200y77899mcbro_img.jpg",
+      "b": "eval/20210727_26838_ckw3ig3xg5ngk0zbp0g7j7dqt_img.jpg",
+      "pair_type": "retrospectively selected distinct-layout cross-split control",
+      "n_objects_a": 62,
+      "n_objects_b": 59,
+      "one_to_one_matches_iou_ge_0_5": 0,
+      "one_to_one_matches_iou_ge_0_75": 0,
+      "median_iou_ge_0_5": null,
+      "foreground_dice_same_coordinates": 0.13611370140518989
+    }
+  ],
+  "limitations": "same-coordinate overlap may be reduced by field shift; object matches are not proof of annotation independence or donor identity; these test files have already been seen"
+}
