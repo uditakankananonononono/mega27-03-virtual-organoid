@@ -49,6 +49,8 @@ def cmd_segment(a):
     import torch, torch.nn.functional as F
     from PIL import Image
     from .seg import UNet, instances_from_probs
+    if a.selection and (a.size != 512 or not a.tta_three):
+        sys.exit("the supplied validation selection was frozen for --size 512 --tta-three")
     net = UNet()
     checkpoint = torch.load(a.model, map_location="cpu", weights_only=True)
     # Legacy weights are bare state dictionaries; train-only checkpoints include epoch and optimizer state.
@@ -80,11 +82,11 @@ def cmd_segment(a):
         markers, _ = ndi.label(seeds)
         lab = watershed(-p[1], markers, mask=fg)
         sizes = np.bincount(lab.ravel())
-        minimum = int(minimum * (img.shape[0] / a.size) ** 2)
+        minimum = int(minimum * (img.shape[0] * img.shape[1]) / (a.size * a.size))
         small = np.where(sizes < minimum)[0]
         lab[np.isin(lab, small[small > 0])] = 0
     else:
-        lab = instances_from_probs(p, min_size=int(20 * (img.shape[0] / a.size) ** 2))
+        lab = instances_from_probs(p, min_size=int(20 * (img.shape[0] * img.shape[1]) / (a.size * a.size)))
     ids = np.unique(lab)
     lab = np.searchsorted(ids, lab).astype(np.uint16)
     Image.fromarray(lab).save(a.out)
