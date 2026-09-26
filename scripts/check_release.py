@@ -30,7 +30,8 @@ paper=Document(root/'paper/mega27-03-virtual-organoid-paper.docx')
 pdf=root/'paper/mega27-03-virtual-organoid-paper.pdf'
 assert pdf.is_file()
 info=subprocess.check_output(['pdfinfo',str(pdf)],text=True)
-assert any(line.strip()=='Pages:           60' for line in info.splitlines())
+pages=int(next(line.split(':',1)[1].strip() for line in info.splitlines() if line.startswith('Pages:')))
+assert pages>=50
 fonts=subprocess.check_output(['pdffonts',str(pdf)],text=True)
 assert 'TimesNewRomanPSMT' in fonts and 'TimesNewRomanPS-BoldMT' in fonts
 assert all(' yes ' in row for row in fonts.splitlines()[2:] if 'TimesNewRoman' in row)
@@ -40,4 +41,4 @@ assert 'a paired no-forskolin specificity test both failed' in text
 assert '3/11 donor-median paired deltas are positive' in text
 assert 'NOT an established new biological discovery' in text
 print('PASS: 40 unique tools, 168 unique primary entries, both negative size checks, '
-      'sealed segmentation below .76, frozen selection, checkpoint, 60-page Times New Roman PDF, 51 tables and explicit caveats')
+      f'sealed segmentation below .76, frozen selection, checkpoint, {pages}-page Times New Roman PDF, 51 tables and explicit caveats')

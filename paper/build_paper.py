@@ -19,13 +19,12 @@ R.to_csv("results/per_donor_attenuation.csv", index=False)
 rho, pv = spearmanr(R.overall, R.attenuation)
 S1 = json.load(open("results/seg_eval.json")); S2 = json.load(open("results/seg_eval_tuned_256.json")); S3 = json.load(open("results/seg_eval_512.json")); S4 = json.load(open("results/seg_eval_tuned_512.json"))
 
-P = Paper("Small-Organoid Attenuation of CFTR-Modulator Swelling in Patient-Derived Intestinal Organoids: "
-          "an Exploratory Single-Organoid Re-Analysis and Negative Validation Tests",
+P = Paper("Exploratory CFTR-Modulator Swelling Analysis in Patient-Derived Intestinal Organoids: "
+          "a Computational Workflow and Negative Size-Hypothesis Tests",
           "MEGA-PROGRAM-27, Item 3 - Udita Phookan (program owner); computational work by an AI research agent. Working draft of 26 September 2026.")
 P.h("Abstract")
 P.p("Novelty status. This working project tests whether baseline organoid size moderates CFTR-modulator swelling, using a donor-matched analysis and a swelling-geometry model. This is a testable candidate, NOT an established new biological discovery. Its stronger pre-registered donor x plate x dose check and a paired no-forskolin specificity test both failed; the tested segmentation pipeline does not match the published benchmark; no diagnostic tool has been validated. The contribution is a transparent, reproducible analysis with negative controls, not an award or clinical claim.")
-P.p("The forskolin-induced swelling (FIS) assay on patient-derived intestinal organoids is used to predict which people with cystic fibrosis "
-    "(CF) respond to CFTR modulators. Standard pipelines sum organoid area per well, so any dependence of the response on organoid size is "
+P.p("The forskolin-induced swelling (FIS) assay on patient-derived intestinal organoids has been studied as an in-vitro guide to CFTR-modulator response; this work does not establish a patient-level predictor. Standard pipelines sum organoid area per well, so any dependence of the response on organoid size is "
     "averaged away. We re-analysed the public single-organoid OrgaSegment data (17 CF donors, per-organoid area before and after "
     "forskolin) with a biophysical swelling model and a DMSO-controlled, donor-matched design.")
 P.p(f"Finding (candidate). In this accession, estimated modulator-induced swelling is lower in the smallest tracked organoids and approaches a plateau across larger size bins; this is a post hoc descriptive curve, not a validated biological threshold. For "
@@ -599,9 +598,7 @@ P.p("In this accession, drug-minus-DMSO swelling tends to rise from small to lar
     "size thresholds locked before analysis, a donor-level modulator-minus-DMSO large-minus-small effect will "
     "be positive in most donors, with a sign-test p<0.05. This needs a second suitable dataset and mechanistic "
     "measurements; the public leads audited here do not supply those controls.")
-P.p("Practical note. In this dataset, starting size may affect single-organoid readouts, but size correction did not "
-    "improve per-donor discrimination. A lab comparing assays across passages may record its starting-size "
-    "distribution as a quality-control variable; no clinical adjustment is recommended from these data.")
+P.p("Practical note. In this dataset, starting size is associated with some exploratory single-organoid readouts, but the registered matched-block and specificity tests fail, and size correction did not improve per-donor discrimination. Recording the starting-size distribution across passages is a possible research quality-control variable, not a tested intervention or clinical adjustment.")
 P.p("Novelty remains unproved. We did not find the exact intestinal drug-by-starting-size interaction in the bounded literature search, but Calucho et al. 2021 tested starting size versus individual CFTR nasospheroid FSK response and found no association. Berical et al. 2022 tracked individual iPSC-derived airway spheroid FIS and tested modulators across multiple patient lines; the released source workbook does not link patient-treatment outcomes to per-object baseline areas. A 2021 Cells study had already tracked individual iPSC-derived intestinal CFTR-swelling objects in one CF line; its public supplement lacks paired raw object tracks. A nasal 2D-derived-organoid study reported swelling variation in large structures (bioRxiv 2021.07.20.453105). The narrower intestinal question is unconfirmed and this was not a systematic review.")
 P.h("7. Tools used")
 TL = pd.read_csv("results/tools_ledger.csv")
