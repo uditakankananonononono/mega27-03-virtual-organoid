@@ -1,0 +1,124 @@
+{
+  "source": "https://zenodo.org/records/10610438",
+  "preregistration": "results/preregistration_dis_integrity_audit.md (commit 12b6575)",
+  "rows": 28526,
+  "donors": 17,
+  "full_row_duplicates": 0,
+  "duplicate_ID_rows": 0,
+  "duplicate_diagnostic_key_rows": 0,
+  "columns": {
+    "A0": {
+      "missing": 0,
+      "nonfinite": 0,
+      "nonpositive": 0
+    },
+    "A1": {
+      "missing": 0,
+      "nonfinite": 0,
+      "nonpositive": 0
+    },
+    "swelling": {
+      "missing": 0,
+      "nonfinite": 0,
+      "nonpositive": 0
+    }
+  },
+  "swelling_A1_over_A0_relative_error": {
+    "max": 2.1473081343579498e-15,
+    "over_1e-6": 0,
+    "over_1e-3": 0,
+    "five_highest_source_IDs": [
+      5970,
+      2484,
+      25819,
+      25144,
+      17470
+    ]
+  },
+  "by_condition_and_dose": [
+    {
+      "condition": "DMSO",
+      "dose_uM": 0.0,
+      "rows": 4478,
+      "donors": 17
+    },
+    {
+      "condition": "DMSO",
+      "dose_uM": 0.128,
+      "rows": 3270,
+      "donors": 17
+    },
+    {
+      "condition": "DMSO",
+      "dose_uM": 0.32,
+      "rows": 300,
+      "donors": 2
+    },
+    {
+      "condition": "DMSO",
+      "dose_uM": 0.8,
+      "rows": 240,
+      "donors": 2
+    },
+    {
+      "condition": "VX445_VX661_VX770",
+      "dose_uM": 0.0,
+      "rows": 4132,
+      "donors": 17
+    },
+    {
+      "condition": "VX445_VX661_VX770",
+      "dose_uM": 0.128,
+      "rows": 4414,
+      "donors": 17
+    },
+    {
+      "condition": "VX445_VX661_VX770",
+      "dose_uM": 0.32,
+      "rows": 254,
+      "donors": 2
+    },
+    {
+      "condition": "VX445_VX661_VX770",
+      "dose_uM": 0.8,
+      "rows": 316,
+      "donors": 2
+    },
+    {
+      "condition": "VX661_VX770",
+      "dose_uM": 0.0,
+      "rows": 3689,
+      "donors": 16
+    },
+    {
+      "condition": "VX661_VX770",
+      "dose_uM": 0.128,
+      "rows": 3881,
+      "donors": 16
+    },
+    {
+      "condition": "VX661_VX770",
+      "dose_uM": 0.32,
+      "rows": 282,
+      "donors": 2
+    },
+    {
+      "condition": "VX661_VX770",
+      "dose_uM": 0.8,
+      "rows": 330,
+      "donors": 2
+    },
+    {
+      "condition": "VX770",
+      "dose_uM": 0.0,
+      "rows": 1444,
+      "donors": 5
+    },
+    {
+      "condition": "VX770",
+      "dose_uM": 0.128,
+      "rows": 1496,
+      "donors": 5
+    }
+  ]
+}
