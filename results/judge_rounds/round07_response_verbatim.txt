@@ -1,0 +1,226 @@
+Skeptical science-fair judge mode (technical reader, not adjudicator):
+
+The current Section 4.3h is unusually careful about the main limitation: the source table lets you test detected-object selection, but it does not let you recover the population of organoids that were never segmented. I would not accept any claim that the missingness problem is solved. The key remaining question is:
+
+Is the reported size-dependent treatment effect robust to the observable selection mechanism among detected objects?
+
+The current analysis compares source-paired vs derived-table inclusion, but that is mostly a dataset reconstruction check. It does not exploit the most informative thing you have: each object has a detection/inclusion outcome plus baseline size, treatment, dose, donor, and experiment context.
+
+One new defensible analysis: inverse-probability-of-inclusion sensitivity with cross-fitted missingness model
+New question
+
+Among objects that exist in the released paired DIS table, does the probability of surviving into the derived analysis depend on variables that are also associated with the treatment-by-size effect?
+
+This changes the interpretation from:
+
+“Excluded objects shift the estimate slightly.”
+
+to:
+
+“The estimate is (or is not) sensitive to the observed missingness mechanism.”
+
+Analysis
+
+Define:
+
+Population: all source paired objects in DIS_database.csv
+
+Outcome: whether the object appears in the derived table
+
+R
+i
+	​
+
+={
+1
+0
+	​
+
+included derived object
+source-only object
+	​
+
+
+Predictors available:
+
+baseline area A0
+
+endpoint area A1
+
+baseline size bin
+
+treatment arm
+
+dose
+
+donor
+
+experiment
+
+well
+
+t0 confidence
+
+t1 confidence
+
+optionally baseline-to-endpoint size change
+
+Fit a cross-validated inclusion model:
+
+P(R
+i
+	​
+
+=1∣X
+i
+	​
+
+)
+
+using only pre-existing source variables.
+
+Recommended models:
+
+logistic regression with donor/experiment fixed effects
+
+gradient boosted trees as a sensitivity model
+
+Do not use a model trained and evaluated on the same rows.
+
+Recompute the biological effect
+
+Use stabilized inverse-probability weights:
+
+w
+i
+	​
+
+=
+P(R
+i
+	​
+
+=1∣X
+i
+	​
+
+)
+P(R
+i
+	​
+
+=1)
+	​
+
+
+Then recompute the exact locked donor-level statistic:
+
+donor median large-minus-small treatment effect
+
+12-donor sign-flip test
+
+mixed treatment × size coefficient
+
+using:
+
+unweighted source pairs
+
+derived table
+
+IPW-adjusted source pairs
+
+The goal is not to make a better p-value. The goal is to ask:
+
+Does accounting for the observable missingness mechanism move the biological conclusion?
+
+Concrete negative control
+
+A good negative control is:
+
+Negative control outcome: DMSO vs DMSO pseudo-treatment
+
+Randomly assign a fake treatment label within donor × experiment × dose strata among DMSO objects.
+
+Then run the same entire pipeline:
+
+large-minus-small effect
+
+inclusion weighting
+
+donor sign-flip test
+
+Expected result:
+
+The procedure should not repeatedly produce a treatment-like size interaction under no biological contrast.
+
+Falsifiable decision rule
+
+Pre-register before running:
+
+Supportive robustness result:
+
+The treatment interpretation survives if:
+
+IPW-adjusted treatment × size coefficient remains positive, and
+
+the donor sign-flip result remains significant under the same locked statistic, and
+
+the negative-control pseudo-treatment analysis does not produce comparable effects.
+
+Example threshold:
+
+adjusted β remains >0
+
+p < 0.05 for the pre-specified donor-level sign test
+
+negative-control p-values fail to cross the same threshold
+
+Failure result:
+
+If IPW adjustment substantially attenuates or reverses the effect:
+
+β changes sign, or
+
+donor-positive fraction collapses, or
+
+pseudo-treatment generates similar effects,
+
+then the current interpretation should be weakened to:
+
+“Detected-object selection may contribute to the observed size interaction.”
+
+Important limitation
+
+I would explicitly state:
+
+This analysis can only address selection among detected objects present in the released paired table.
+
+It cannot identify:
+
+organoids never detected at t=0
+
+organoids lost before pairing
+
+segmentation failures that leave no source row
+
+because those require masks/raw images/object annotations.
+
+No weighting method can recover missing units that are absent from the sampling frame.
+
+Judge verdict on novelty impact
+
+This is one of the few analyses still available that could materially change the causal interpretation without violating the preregistration boundaries.
+
+Why it matters:
+
+The current source-vs-derived comparison asks:
+“Does filtering change the answer?”
+
+The proposed analysis asks:
+“Can the observed filtering mechanism explain the answer?”
+
+Those are different.
+
+If the effect survives, the paper gains a stronger missing-at-observed-object-level robustness argument. If it fails, it exposes a real limitation before reviewers do.
+
+I would consider this a meaningful addition. I would not consider adding more segmentation metrics, another model architecture, or another split analysis similarly valuable given the current limitations.
