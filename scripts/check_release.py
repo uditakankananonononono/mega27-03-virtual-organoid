@@ -1,5 +1,6 @@
 """Deterministic local integrity checks for an honest item-3 working release."""
 import json
+import subprocess
 from pathlib import Path
 import pandas as pd
 from docx import Document
@@ -26,11 +27,17 @@ selection=json.loads((root/'results/trainonly_seg/val_selection.json').read_text
 assert selection['eval_used'] is False and selection['selected_params']==[.4,.5,.3,40]
 assert (root/'results/trainonly_seg/best.pt').is_file()
 paper=Document(root/'paper/mega27-03-virtual-organoid-paper.docx')
-assert (root/'paper/mega27-03-virtual-organoid-paper.pdf').is_file()
+pdf=root/'paper/mega27-03-virtual-organoid-paper.pdf'
+assert pdf.is_file()
+info=subprocess.check_output(['pdfinfo',str(pdf)],text=True)
+assert any(line.strip()=='Pages:           60' for line in info.splitlines())
+fonts=subprocess.check_output(['pdffonts',str(pdf)],text=True)
+assert 'TimesNewRomanPSMT' in fonts and 'TimesNewRomanPS-BoldMT' in fonts
+assert all(' yes ' in row for row in fonts.splitlines()[2:] if 'TimesNewRoman' in row)
 assert len(paper.tables)==51
 text='\n'.join(x.text for x in paper.paragraphs)
 assert 'a paired no-forskolin specificity test both failed' in text
 assert '3/11 donor-median paired deltas are positive' in text
 assert 'NOT an established new biological discovery' in text
 print('PASS: 40 unique tools, 168 unique primary entries, both negative size checks, '
-      'sealed segmentation below .76, frozen selection, checkpoint, 51 tables and explicit paper caveats')
+      'sealed segmentation below .76, frozen selection, checkpoint, 60-page Times New Roman PDF, 51 tables and explicit caveats')
