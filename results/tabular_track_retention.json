@@ -1,0 +1,715 @@
+{
+  "status": "post-result same-accession tabular track-retention sensitivity, not independent validation",
+  "source_url": "https://zenodo.org/records/10610438",
+  "source_sha256": "0e0e7913947a29c7b32ce87ca73a98614033d41ce63063a1d65053e766b2f315",
+  "derived_sha256": "a32e5cf8cb8f5f7cd92e57ef62881c7a25d559ff1a0018748d4fdded7f3fb5c7",
+  "protocol": "notes/postresult_track_retention_protocol.md",
+  "n_source_paired_particles_all_arms_doses": 47687,
+  "n_derived_particles_all_arms_doses": 28526,
+  "n_original_eligible_blocks": 31,
+  "retention_by_arm_size": [
+    {
+      "arm": "DMSO",
+      "size_bin": "large",
+      "n_baseline_detected": 2058,
+      "n_both_positive_area": 1825,
+      "n_derived": 1749,
+      "fraction_both_positive_area": 0.8867832847424684,
+      "fraction_derived_given_both": 0.9583561643835616,
+      "baseline_score_median_derived": 0.998771727085114,
+      "baseline_score_median_excluded": 0.989135980606079,
+      "endpoint_score_median_derived": 0.998296320438385,
+      "endpoint_score_median_excluded": 0.985848993062973
+    },
+    {
+      "arm": "DMSO",
+      "size_bin": "middle",
+      "n_baseline_detected": 1010,
+      "n_both_positive_area": 775,
+      "n_derived": 753,
+      "fraction_both_positive_area": 0.7673267326732673,
+      "fraction_derived_given_both": 0.9716129032258064,
+      "baseline_score_median_derived": 0.998646557331085,
+      "baseline_score_median_excluded": 0.992442488670349,
+      "endpoint_score_median_derived": 0.999135196208954,
+      "endpoint_score_median_excluded": 0.99058473110199
+    },
+    {
+      "arm": "DMSO",
+      "size_bin": "small",
+      "n_baseline_detected": 1248,
+      "n_both_positive_area": 563,
+      "n_derived": 512,
+      "fraction_both_positive_area": 0.4511217948717949,
+      "fraction_derived_given_both": 0.9094138543516874,
+      "baseline_score_median_derived": 0.99451744556427,
+      "baseline_score_median_excluded": 0.9804238080978395,
+      "endpoint_score_median_derived": 0.9982329905033116,
+      "endpoint_score_median_excluded": 0.997498333454132
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size_bin": "large",
+      "n_baseline_detected": 2408,
+      "n_both_positive_area": 2005,
+      "n_derived": 1962,
+      "fraction_both_positive_area": 0.832641196013289,
+      "fraction_derived_given_both": 0.9785536159600997,
+      "baseline_score_median_derived": 0.9981732964515685,
+      "baseline_score_median_excluded": 0.991543591022491,
+      "endpoint_score_median_derived": 0.9974763989448545,
+      "endpoint_score_median_excluded": 0.993977189064026
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size_bin": "middle",
+      "n_baseline_detected": 1174,
+      "n_both_positive_area": 838,
+      "n_derived": 819,
+      "fraction_both_positive_area": 0.7137989778534923,
+      "fraction_derived_given_both": 0.977326968973747,
+      "baseline_score_median_derived": 0.997925519943237,
+      "baseline_score_median_excluded": 0.993075370788574,
+      "endpoint_score_median_derived": 0.998293578624725,
+      "endpoint_score_median_excluded": 0.991104006767273
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size_bin": "small",
+      "n_baseline_detected": 1250,
+      "n_both_positive_area": 571,
+      "n_derived": 553,
+      "fraction_both_positive_area": 0.4568,
+      "fraction_derived_given_both": 0.968476357267951,
+      "baseline_score_median_derived": 0.994174182415008,
+      "baseline_score_median_excluded": 0.980812549591064,
+      "endpoint_score_median_derived": 0.997024476528168,
+      "endpoint_score_median_excluded": 0.990626186132431
+    }
+  ],
+  "source_paired_positive_area": {
+    "n_blocks": 31,
+    "n_donors": 12,
+    "equal_donor_mean_median": 0.2079781684567534,
+    "positive_donors": 9,
+    "donor_medians": {
+      "PDIO_01": 0.038955782837541975,
+      "PDIO_03": 0.3508821434068704,
+      "PDIO_05": 0.5396669946524568,
+      "PDIO_06": 0.37111822422156515,
+      "PDIO_09": 0.20085730910526345,
+      "PDIO_11": 0.36577963793801616,
+      "PDIO_12": 0.4180005333028193,
+      "PDIO_13": 0.2734739642741474,
+      "PDIO_14": -0.1934714309510302,
+      "PDIO_15": 0.30080490599578535,
+      "PDIO_16": -0.09719748643906656,
+      "PDIO_18": -0.0731325568633287
+    },
+    "block_effects": [
+      {
+        "donor": "PDIO_01",
+        "experiment": "20230125_DIS3_plate014",
+        "dose": 0.128,
+        "effect": 0.038955782837541975
+      },
+      {
+        "donor": "PDIO_03",
+        "experiment": "HitCF_A1_DIS_20230207_plate001",
+        "dose": 0.128,
+        "effect": 0.3508821434068704
+      },
+      {
+        "donor": "PDIO_03",
+        "experiment": "HitCF_A1_DIS_20230228_plate010",
+        "dose": 0.128,
+        "effect": 0.5756858994920786
+      },
+      {
+        "donor": "PDIO_03",
+        "experiment": "HitCF_A1_DIS_20230307_plate013",
+        "dose": 0.128,
+        "effect": 0.29835202421982954
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.128,
+        "effect": 0.23090053024827673
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.32,
+        "effect": 0.5396669946524568
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.8,
+        "effect": 0.2923689535929592
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230301_DIS3_plate023",
+        "dose": 0.128,
+        "effect": 0.7848775594557345
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230308_DIS3_plate025",
+        "dose": 0.128,
+        "effect": 0.7912328479638473
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.128,
+        "effect": 1.0275417895922234
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.32,
+        "effect": 0.7745161736745373
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.8,
+        "effect": 0.37111822422156515
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230301_DIS3_plate023",
+        "dose": 0.128,
+        "effect": 0.11940032489181207
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230308_DIS3_plate025",
+        "dose": 0.128,
+        "effect": 0.2664804497243839
+      },
+      {
+        "donor": "PDIO_09",
+        "experiment": "20230125_DIS3_plate014",
+        "dose": 0.128,
+        "effect": 0.5246749500058868
+      },
+      {
+        "donor": "PDIO_09",
+        "experiment": "20230125_DIS3_plate015",
+        "dose": 0.128,
+        "effect": -0.0564138216646477
+      },
+      {
+        "donor": "PDIO_09",
+        "experiment": "20230207_DIS3_plate017",
+        "dose": 0.128,
+        "effect": 0.20085730910526345
+      },
+      {
+        "donor": "PDIO_11",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.36577963793801616
+      },
+      {
+        "donor": "PDIO_12",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": 0.5547133273004641
+      },
+      {
+        "donor": "PDIO_12",
+        "experiment": "20221026_DIS3_plate005",
+        "dose": 0.128,
+        "effect": 0.3398695464330511
+      },
+      {
+        "donor": "PDIO_12",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.4180005333028193
+      },
+      {
+        "donor": "PDIO_13",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": 0.2508212686630682
+      },
+      {
+        "donor": "PDIO_13",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.2961266598852266
+      },
+      {
+        "donor": "PDIO_14",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": -0.5395758502967245
+      },
+      {
+        "donor": "PDIO_14",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.1526329883946641
+      },
+      {
+        "donor": "PDIO_15",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": -0.39956990426311395
+      },
+      {
+        "donor": "PDIO_15",
+        "experiment": "20221026_DIS3_plate005",
+        "dose": 0.128,
+        "effect": 0.32570253846471686
+      },
+      {
+        "donor": "PDIO_15",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.30080490599578535
+      },
+      {
+        "donor": "PDIO_16",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": -0.4322849278691019
+      },
+      {
+        "donor": "PDIO_16",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.23788995499096877
+      },
+      {
+        "donor": "PDIO_18",
+        "experiment": "20221020_DIS3_plate003",
+        "dose": 0.128,
+        "effect": -0.0731325568633287
+      }
+    ]
+  },
+  "derived_original": {
+    "n_blocks": 31,
+    "n_donors": 12,
+    "equal_donor_mean_median": 0.19522380634351855,
+    "positive_donors": 9,
+    "donor_medians": {
+      "PDIO_01": -0.01336922850221789,
+      "PDIO_03": 0.24498645696668564,
+      "PDIO_05": 0.540102989942566,
+      "PDIO_06": 0.3489530105042225,
+      "PDIO_09": 0.23128799854545634,
+      "PDIO_11": 0.32264373045057937,
+      "PDIO_12": 0.14713659155127135,
+      "PDIO_13": 0.2734400906777804,
+      "PDIO_14": 0.2831766880312031,
+      "PDIO_15": 0.060759825180899396,
+      "PDIO_16": -0.09136764593477731,
+      "PDIO_18": -0.005064831291446803
+    },
+    "block_effects": [
+      {
+        "donor": "PDIO_01",
+        "experiment": "20230125_DIS3_plate014",
+        "dose": 0.128,
+        "effect": -0.01336922850221789
+      },
+      {
+        "donor": "PDIO_03",
+        "experiment": "HitCF_A1_DIS_20230207_plate001",
+        "dose": 0.128,
+        "effect": 0.12395428829597399
+      },
+      {
+        "donor": "PDIO_03",
+        "experiment": "HitCF_A1_DIS_20230228_plate010",
+        "dose": 0.128,
+        "effect": 0.5333683706560424
+      },
+      {
+        "donor": "PDIO_03",
+        "experiment": "HitCF_A1_DIS_20230307_plate013",
+        "dose": 0.128,
+        "effect": 0.24498645696668564
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.128,
+        "effect": 0.272176057846105
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.32,
+        "effect": 0.540102989942566
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.8,
+        "effect": 0.3299618880937848
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230301_DIS3_plate023",
+        "dose": 0.128,
+        "effect": 0.6754673529645708
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230308_DIS3_plate025",
+        "dose": 0.128,
+        "effect": 0.598720408448262
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.128,
+        "effect": 0.42585671410564674
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.32,
+        "effect": 0.4609743081205462
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.8,
+        "effect": 0.30407069554756017
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230301_DIS3_plate023",
+        "dose": 0.128,
+        "effect": 0.06930546559823691
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230308_DIS3_plate025",
+        "dose": 0.128,
+        "effect": 0.3489530105042225
+      },
+      {
+        "donor": "PDIO_09",
+        "experiment": "20230125_DIS3_plate014",
+        "dose": 0.128,
+        "effect": 0.38610949204293066
+      },
+      {
+        "donor": "PDIO_09",
+        "experiment": "20230125_DIS3_plate015",
+        "dose": 0.128,
+        "effect": 0.17519425942396571
+      },
+      {
+        "donor": "PDIO_09",
+        "experiment": "20230207_DIS3_plate017",
+        "dose": 0.128,
+        "effect": 0.23128799854545634
+      },
+      {
+        "donor": "PDIO_11",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.32264373045057937
+      },
+      {
+        "donor": "PDIO_12",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": 0.4585886223104977
+      },
+      {
+        "donor": "PDIO_12",
+        "experiment": "20221026_DIS3_plate005",
+        "dose": 0.128,
+        "effect": 0.14713659155127135
+      },
+      {
+        "donor": "PDIO_12",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.06834482987382806
+      },
+      {
+        "donor": "PDIO_13",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": 0.26898703081835285
+      },
+      {
+        "donor": "PDIO_13",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.277893150537208
+      },
+      {
+        "donor": "PDIO_14",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": 0.369308539453748
+      },
+      {
+        "donor": "PDIO_14",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.19704483660865824
+      },
+      {
+        "donor": "PDIO_15",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": -0.15245425832588794
+      },
+      {
+        "donor": "PDIO_15",
+        "experiment": "20221026_DIS3_plate005",
+        "dose": 0.128,
+        "effect": 0.29969709262676103
+      },
+      {
+        "donor": "PDIO_15",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.060759825180899396
+      },
+      {
+        "donor": "PDIO_16",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": -0.4154696985859251
+      },
+      {
+        "donor": "PDIO_16",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.23273440671637047
+      },
+      {
+        "donor": "PDIO_18",
+        "experiment": "20221020_DIS3_plate003",
+        "dose": 0.128,
+        "effect": -0.005064831291446803
+      }
+    ]
+  },
+  "cell_constant_inverse_inclusion_weight": {
+    "n_blocks": 31,
+    "n_donors": 12,
+    "equal_donor_mean_median": 0.19522380634351846,
+    "positive_donors": 9,
+    "donor_medians": {
+      "PDIO_01": -0.013369228502218,
+      "PDIO_03": 0.24498645696668542,
+      "PDIO_05": 0.5401029899425658,
+      "PDIO_06": 0.34895301050422217,
+      "PDIO_09": 0.23128799854545645,
+      "PDIO_11": 0.32264373045057926,
+      "PDIO_12": 0.14713659155127146,
+      "PDIO_13": 0.27344009067778013,
+      "PDIO_14": 0.2831766880312031,
+      "PDIO_15": 0.06075982518089984,
+      "PDIO_16": -0.0913676459347772,
+      "PDIO_18": -0.0050648312914468585
+    },
+    "block_effects": [
+      {
+        "donor": "PDIO_01",
+        "experiment": "20230125_DIS3_plate014",
+        "dose": 0.128,
+        "effect": -0.013369228502218
+      },
+      {
+        "donor": "PDIO_03",
+        "experiment": "HitCF_A1_DIS_20230207_plate001",
+        "dose": 0.128,
+        "effect": 0.12395428829597388
+      },
+      {
+        "donor": "PDIO_03",
+        "experiment": "HitCF_A1_DIS_20230228_plate010",
+        "dose": 0.128,
+        "effect": 0.533368370656042
+      },
+      {
+        "donor": "PDIO_03",
+        "experiment": "HitCF_A1_DIS_20230307_plate013",
+        "dose": 0.128,
+        "effect": 0.24498645696668542
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.128,
+        "effect": 0.272176057846105
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.32,
+        "effect": 0.5401029899425658
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.8,
+        "effect": 0.3299618880937849
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230301_DIS3_plate023",
+        "dose": 0.128,
+        "effect": 0.6754673529645714
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230308_DIS3_plate025",
+        "dose": 0.128,
+        "effect": 0.5987204084482616
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.128,
+        "effect": 0.42585671410564685
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.32,
+        "effect": 0.46097430812054646
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.8,
+        "effect": 0.3040706955475601
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230301_DIS3_plate023",
+        "dose": 0.128,
+        "effect": 0.06930546559823703
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230308_DIS3_plate025",
+        "dose": 0.128,
+        "effect": 0.34895301050422217
+      },
+      {
+        "donor": "PDIO_09",
+        "experiment": "20230125_DIS3_plate014",
+        "dose": 0.128,
+        "effect": 0.38610949204293066
+      },
+      {
+        "donor": "PDIO_09",
+        "experiment": "20230125_DIS3_plate015",
+        "dose": 0.128,
+        "effect": 0.17519425942396588
+      },
+      {
+        "donor": "PDIO_09",
+        "experiment": "20230207_DIS3_plate017",
+        "dose": 0.128,
+        "effect": 0.23128799854545645
+      },
+      {
+        "donor": "PDIO_11",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.32264373045057926
+      },
+      {
+        "donor": "PDIO_12",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": 0.45858862231049774
+      },
+      {
+        "donor": "PDIO_12",
+        "experiment": "20221026_DIS3_plate005",
+        "dose": 0.128,
+        "effect": 0.14713659155127146
+      },
+      {
+        "donor": "PDIO_12",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.06834482987382828
+      },
+      {
+        "donor": "PDIO_13",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": 0.2689870308183526
+      },
+      {
+        "donor": "PDIO_13",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.27789315053720764
+      },
+      {
+        "donor": "PDIO_14",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": 0.3693085394537477
+      },
+      {
+        "donor": "PDIO_14",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.19704483660865857
+      },
+      {
+        "donor": "PDIO_15",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": -0.15245425832588777
+      },
+      {
+        "donor": "PDIO_15",
+        "experiment": "20221026_DIS3_plate005",
+        "dose": 0.128,
+        "effect": 0.2996970926267609
+      },
+      {
+        "donor": "PDIO_15",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.06075982518089984
+      },
+      {
+        "donor": "PDIO_16",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": -0.4154696985859251
+      },
+      {
+        "donor": "PDIO_16",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.2327344067163707
+      },
+      {
+        "donor": "PDIO_18",
+        "experiment": "20221020_DIS3_plate003",
+        "dose": 0.128,
+        "effect": -0.0050648312914468585
+      }
+    ]
+  },
+  "limits": "Source only contains detected/tracked particle rows, not all image objects. Blank endpoints and selection after detection may vary by swelling. Original image and mask paths are unavailable. Within-cell constant inverse inclusion weights exactly cancel in a within-cell mean, so they do not identify retention bias. No donor-independent cohort or preregistered biological confirmation."
+}
