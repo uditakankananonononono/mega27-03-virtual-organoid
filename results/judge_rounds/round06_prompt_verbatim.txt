@@ -1,0 +1,210 @@
+Act as a critical ChatGPT role-play research judge, not an actual ISEF adjudicator. Below is the current paper TEXT for Sections 4.5b-4.6, pasted instead of a PDF upload. The old .761108 AP50 numerical crossing is NOT an independent win: train/eval repeated acquisition fields and matching organoid masks were found post-result. A prior round implemented image-only candidate scene grouping and mask label checks; do not propose that again as the sole novelty. Propose one new, falsifiable implementable methodological contribution using existing raw OrgaSegment Basic image and mask pairs, with specific negative controls, that deepens a scientific finding about annotation stability, rather than promising biological CFTR efficacy. Distinguish a retrospective diagnostic from an untouched benchmark. Do not claim the missing donor-treatment time-course raw masks exist; they do not.
+
+CURRENT PAPER TEXT:
+selecting [0.4, 0.5, 0.3, 40] at validation AP50 0.811. This validation score is a selection
+statistic, not an independent benchmark.
+The single sealed final evaluation scored 0.73867 AP50 under the authors' released
+Cellpose-style scorer and 0.73933 under our unique-mask-count scorer, below the
+published 0.76. The only material matcher difference arises from one released GT mask
+with a skipped label ID: the original scorer uses the maximum ID as object count. This
+small numerical difference is not a model gain. Author baseline per-image predictions
+were not run in this 2-CPU, no-TensorFlow/GPU workspace, so we do not assert a paired
+statistical comparison. Clean selection fixes an older exact-file train/val overlap, but the
+later near-duplicate audit finds that it did not secure acquisition-group independence. It is
+not a benchmark match. Per-image TP/FP/FN and both AP versions are preserved in
+results/trainonly_seg/sealed_eval.json; selection frozen before eval at commit 120f944.
+Table 12. Sealed 12-image evaluation of the clean train-only model; image numbers
+follow the JSON per_image order, which has full filenames and matching counts.
+None selected the model or postprocessing.
+
+image #           author AP50        unique-count      GT masks           predicted
+                                     AP50                                 masks
+1                 0.958              0.958             70                 69
+2                 0.585              0.585             76                 54
+3                 0.796              0.796             44                 53
+4                 0.892              0.892             36                 34
+5                 0.836              0.836             52                 60
+6                 0.585              0.585             50                 53
+7                 0.709              0.709             149                145
+8                 0.649              0.649             128                93
+9                 0.685              0.685             75                 80
+10                0.737              0.737             59                 73
+11                0.652              0.652             148                113
+12                0.780              0.788             86                 91
+
+4.5c Locked v2 train-only improvement and narrow published numerical
+threshold
+The negative clean v1 checkpoint above remains the historical result, not a deleted
+failure. Amendment-free preregistration in notes/prereg_ap50_beat.md locked the v2 gate
+at mean author-scorer AP50 > 0.76 on the same nominally held-out 12-file eval split. A
+later scene-overlap audit invalidates its independence (Section 4.5e). Fine-tuning trained
+solely on 184 train images for 30 extra epochs with stronger augmentation and a lower
+learning rate; the checkpoint at epoch 30 minimized cross-entropy on the filename-
+distinct but scene-overlapping validation split. The unchanged 108-combination grid was
+scored only on the first 20 validation images. Grid index 41 selected [0.5, 0.5, 0.3, 40] at
+
+validation   AP50     0.826061;   selection   was      frozen     at      commit
+7eaa46c17a610ac8173ad1194d992668403a6760 before one v2 evaluation-file score.
+The        released      author       scorer       (OrgaSegment    v1.0.1        commit
+aeaec17c42fefde61a8b2215a616d419e8126e9f) gives an evaluation-file mean AP50
+0.761108, exceeding the locked numerical comparison 0.760000 by 0.001108. The
+unique-mask-count implementation gives 0.761773 and is NOT used for the gate. These
+are the saved single-run per-image means in results/trainonly_seg/sealed_eval_v2.json,
+not replicate-run means or a confidence-bound comparison. The released Mask R-CNN
+predictions were not scored head-to-head here; the published rounded reference 0.76 +/-
+0.12 may be an estimate from a differing evaluation protocol. The numerical margin is
+small relative to image-to-image spread. More importantly, repeated fields of view span
+train and eval files (Section 4.5e): the >0.76 numerical crossing is preserved as a
+historical calculation but cannot count as an independent benchmark win. The model
+cannot be called the best virtual organoid in the world.
+Table 13. V2 single sealed author-scorer evaluation. Full image names, TP, FP, FN,
+and mask-ID-gap accounting: results/trainonly_seg/sealed_eval_v2.json. This is a
+frozen-selection evaluation-file comparison, but acquisition-field overlap disqualifies
+an independent held-out interpretation.
+
+image #           author AP50          unique-count      GT masks          predicted
+                                       AP50                                masks
+1                  0.958               0.958             70                69
+2                  0.658               0.658             76                55
+3                  0.796               0.796             44                53
+4                  0.944               0.944             36                34
+5                  0.879               0.879             52                57
+6                  0.667               0.667             50                50
+7                  0.729               0.729             149               145
+8                  0.630               0.630             128               92
+9                  0.707               0.707             75                82
+10                 0.711               0.711             59                71
+11                 0.665               0.665             148               110
+12                 0.790               0.798             86                92
+Open controls: release the prediction masks and rerun both models under exactly
+identical code and split; estimate paired uncertainty over images and train seeds; test a
+separately sourced annotation cohort. No threshold, checkpoint, or postprocessing
+retuning after the sealed v2 result is permitted for a claim about this same eval split.
+
+4.5d What the thin numerical threshold crossing cannot establish
+After the sealed v2 result, we wrote and ran a descriptive uncertainty audit; it is explicitly
+post-evaluation and cannot change the predeclared >0.76 numerical gate. The 12-image
+
+author-scorer mean is 0.761108 with sample image SD 0.113212. A seed-20260926
+image-resampling percentile interval from 20,000 draws is [0.703230, 0.825010]. It
+includes the published rounded 0.76; it does not account for acquisition-field leakage, and
+5/12 leave-one-image-out v2 means fall at or below 0.76. All image deletion outcomes
+are preserved in results/ap50_uncertainty_audit.json; none are used to reselect a model.
+This is evidence of thin numerical margin; the cross-split repeated fields independently
+disqualify a held-out general-superiority claim.
+The paired v2 minus our own clean v1 image mean is +0.022436, with conditional
+image-bootstrap interval [+0.004474, +0.041408]. It improves 8 images, declines 2 and
+ties 2 under a 1e-7 tolerance; the two-sided sign p over nonties is 0.109375. This within-
+project comparison is useful debugging evidence, not a head-to-head result against the
+released Mask R-CNN or a second cohort. Image bootstrap estimates uncertainty
+conditional on this fixed split and ignores training-seed and domain-shift variation. A
+new acquisition batch with locked weights/preprocessing and, ideally, paired author
+checkpoint predictions is the needed confirmatory benchmark.
+
+4.5e Post-result audit: repeated acquisition fields cross segmentation splits
+A new post-result forensic scan found zero identical image or mask SHA256s across the
+184/35/12 train/val/eval files. But standardized 32-by-32 grayscale thumbnails flagged 5
+cross-split pairs above cosine 0.95. The top train/eval pair reached 0.996584. Direct
+visual inspection of the original image pixels confirmed the same organoid layout in this
+pair and in two train/val pairs despite different filenames, brightness and image detail. A
+fourth val/eval pair has a partly shifted but similar field; its acquisition identity is not
+adjudicated. This scan is post hoc and the threshold is an investigation aid, not a validated
+group identifier. The complete pair list and file hashes are in
+results/seg_split_integrity_v2.json; screenshots are not needed to reproduce the
+thumbnail audit from the original public files.
+This changes the interpretation of Sections 4.5a-d. Train-only means train-filename-only,
+not acquisition-scene-only. File-untouched means scores were not requested during
+selection, not that the underlying scenes were unseen. The 0.761108 author-scorer mean
+and the locked >0.76 numerical arithmetic remain exactly as recorded; the prerequisite of
+an independently held-out benchmark sample was not satisfied. We retract the
+benchmark-improvement claim rather than excluding overlapping eval images after
+seeing outcomes, rewriting the gate, or treating a post hoc subgroup as a new sealed test.
+The earlier 0.73867 negative remains in the record. We need source acquisition and
+donor metadata, group-disjoint training/validation, an untouched independently acquired
+evaluation cohort, and a paired author-baseline scorer before claiming benchmark
+improvement. Source-derived filenames are not enough to prove independence of
+remaining images.
+
+4.5f A scene-graph audit and its false positives
+A fifth recorded ChatGPT role-play critique suggested converting the observed leakage
+from an anecdote into a reproducible scene-group diagnostic. We implemented an image-
+only graph for all 231 images, with every pair's 32-by-32 standardized thumbnail cosine
+and an exact-hash check. Connected components are candidate acquisition scenes; their
+transitive closure retains repeated frames. At threshold 0.95 there are 215 components, 14
+multi-image components, and 5 cross-split components comprising 10 images. At 0.97
+and 0.99, 4 and 3 cross-split pairs persist. All cutoffs were selected or inspected AFTER
+the saved AP50 outcome and so are forensics, not preregistered evaluation choices
+(scripts/build_scene_graph.py, results/scene_graph_forensics.json).
+A seeded random sample of 1000 cross-split pairs has median cosine 0.352 and 99th
+percentile 0.865; this descriptive scale check does not yield a calibrated p-value. Visual
+inspection of the five flagged pairs at 0.95 confirmed three near-identical organoid
+layouts (one train/eval and two train/val). One val/eval pair may be a shifted scene and
+remains uncertain. The fifth, a 0003 train/val pair near 0.95065, shows visibly distinct
+layouts: it is likely a similarity false positive. These adjudications were based on the
+pixels, not model outcomes; the graph retains even the false-positive candidate to expose
+threshold limitations. No missing graph edge proves different donors, plates, wells or
+sessions, because that metadata is unavailable. The old test files have already been seen;
+excluding image pairs now cannot create a sealed holdout. A new group-disjoint
+acquisition cohort and published-model paired predictions are still required.
+
+4.5g Repeated-field labels confirm shared organoids
+The three strongest cross-split image pairs, all detected above 0.99 cosine before opening
+their masks in this follow-up, also share labeled organoids. We matched raw 512-by-512
+instance masks one-to-one at identical pixel coordinates with a maximum-IoU
+assignment. Respectively, the two train/val pairs contain 61 and 40 matches at IoU >=0.5
+out of 62/66 and 43/45 annotated objects; the train/eval pair contains 50 matches out of
+55/52 objects. Corresponding foreground Dice values are 0.905, 0.809, and 0.896. This is
+direct evidence that many identical organoid layouts and corresponding mask annotations
+cross filenames and splits, not merely similar illumination or texture.
+The visually distinct-layout 0003 train/val candidate at cosine 0.95065 yields 0 matched
+objects and Dice 0.028. A retrospectively selected 512-pixel train/eval distinct-layout
+comparison also yields 0 matches; controls illustrate that thumbnail cosine alone makes
+false-positive candidate scene groups. The mask checks were performed only after the
+published-file AP50 was scored; they are annotation consistency evidence, NOT a
+prospective segmentation test or estimate of benchmark inflation. The same source masks
+may have been curated together and cannot establish donor independence, either. All
+original pairs and descriptive controls are in scripts/audit_scene_label_consistency.py
+
+and results/scene_label_consistency.json. We have not removed overlapped images or
+rescored a post hoc uncontaminated subset.
+
+4.6 Organoid-to-tissue fidelity across 151 GEO series
+To test organoid fidelity at scale, we searched GEO through NCBI E-utilities for human
+organoid bulk RNA-seq series (2,838 hits; 1,545 with text count matrices). For 151 series
+with a usable gene-level matrix and a title naming a single organ, each sample was
+converted to log counts per million and averaged. The series profile was then correlated
+with every GTEx v8 tissue median profile (54 tissues).
+ CPM_gs = 10^6 x_gs / sum_g x_gs, p_g = (1/S) sum_s log(1 + CPM_gs)                 (11)
+
+   r_t^cent = <p - mu_p - (m - mu_m), G_t - m - mean(G_t - m)> / (||.|| ||.||), m_g =
+                              mean_t G_gt          (12)
+
+The permutation p-value for the top-1 recovery rate reshuffles organ labels across series,
+B = 10,000 times:
+         p_perm = (1 + #{b : top1_b >= top1_obs}) / (1 + B)                 (13)
+
+Uncertainty on shares uses a series-level percentile bootstrap:
+  CI_95 = [q_0.025, q_0.975] of { f(D*_b) }, D*_b drawn with replacement from the
+                         series set, b = 1..2000     (14)
+
+Table 14. Tissue recovery and fibroblast best-match share. S3000: Spearman on the
+3,000 most tissue-variable genes; SALL: all genes; CENT: GTEx-centred Pearson;
+_NOCULT: 853 MSigDB Hallmark proliferation/MYC/EMT genes removed. Clean
+subset: 114 series whose summary confirms a single organ and mentions organoids
+(113 with profiles). Files: results/geo_fidelity_methods.json,
+results/geo_fidelity_clean.json.
+
+method       top-1 (all) null top-1    p_perm       top-1         fibroblast 95% CI
+                                                    (clean)       best
+                                                                  (clean)
+S3000        0.272        0.060        1e-04        0.301         0.230      [0.15,
+                                                                             0.31]
+SALL         0.331        0.080        1e-04        0.327         0.257      [0.18,
+                                                                             0.35]
+CENT         0.252        0.056        1e-04        0.274         0.363      [0.27,
+                                                                             0.45]
+SALL_N       0.331        0.079        1e-04        0.327         0.248      [0.17,
+OCULT                                                                        0.33]
+CENT_N       0.258        0.059        1e-04        0.274         0.425      [0.34,
+OCULT                                                                        0.51]
+SALL_N       0.417        0.103        1e-04        0.398         0.204      [0.13,
