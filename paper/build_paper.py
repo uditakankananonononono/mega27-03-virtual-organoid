@@ -393,11 +393,7 @@ P.table(["method", "top-1 (all)", "null top-1", "p_perm", "top-1 (clean)", "fibr
         f"_NOCULT: {GM['n_culture_genes_removed']} MSigDB Hallmark proliferation/MYC/EMT genes removed. Clean subset: {GC['n_clean']} series whose summary confirms a single organ and "
         "mentions organoids (113 with profiles). Files: results/geo_fidelity_methods.json, results/geo_fidelity_clean.json.")
 P.figure("results/figures/fig_geo_fidelity.png", "Per-organ share of clean-subset series whose organ of origin (blue) or GTEx cultured fibroblasts (orange) is the top-1 match. Organs with n >= 3.")
-P.p("Organ of origin is recovered four to five times above chance. Brain organoids are the most faithful, and lung, breast and pancreas the least. "
-    "Across every method, the most frequent best match is GTEx cultured fibroblasts, which we name the culture-fibroblast attractor. It survives the label audit and the removal of "
-    "proliferation and EMT genes. It is not yet a discovery: GTEx tissues contain immune, vascular and stromal cells, while organoids and cultured "
-    "fibroblasts are purified cultures, so cell-type purity is an unexcluded explanation. Falsifiable prediction: restricted to epithelium-specific "
-    "genes, the fibroblast best-match share in the clean subset will stay above 15%. The tool vorganoid fidelity scores any count matrix this way.")
+P.p("These series-level ranks were computed before the sample-level audit in Section 4.9. At this stage, the clean text-filtered subset appeared to match cultured fibroblasts often, and the working prediction was that a parenchymal-gene restriction would leave a fibroblast best-match share above 15% in that same text-filtered subset. That prediction is an internal same-series test, not a biological validation. We later checked sample metadata and found many series labeled as organoid-related do not contain organoid samples; Section 4.9 retracts the broad culture-fibroblast interpretation. The tool vorganoid fidelity produces a tissue-rank calculation, not a diagnosis or validated organoid-quality score.")
 
 P.h("4.7 Purity-corrected fidelity (Human Protein Atlas)", 2)
 MC = json.load(open("results/geo_mcnemar.json"))
@@ -410,12 +406,12 @@ P.table(["comparison", "top-1 base", "top-1 variant", "b", "c", "exact p"],
         "Organ-of-origin recovery on 151 series, base method vs gene-restricted variant (results/geo_mcnemar.json).")
 P.p(f"Purity restriction raises recovery (all-gene Spearman {MC['SALL_vs_SALL_NONPAR']['top1_base']:.0%} -> {MC['SALL_vs_SALL_NONPAR']['top1_variant']:.0%}, "
     f"p = {MC['SALL_vs_SALL_NONPAR']['p_exact']:.2g}; centred Pearson {MC['CENT_vs_CENT_PARONLY']['top1_base']:.0%} -> {MC['CENT_vs_CENT_PARONLY']['top1_variant']:.0%}, "
-    f"p = {MC['CENT_vs_CENT_PARONLY']['p_exact']:.2g}). Removing culture genes does not change it. Standard whole-transcriptome fidelity scores are therefore biased low for organoids. "
-    f"The prediction stated before this test (fibroblast best-match share above 15% on parenchymal-only genes) held: "
+    f"p = {MC['CENT_vs_CENT_PARONLY']['p_exact']:.2g}). These same-series tissue-rank shifts suggest cell-composition sensitivity, but mixed sample labels prevent a general organoid-specific correction claim. Removing the selected culture genes did not materially change this rank result. "
+    f"The internal text-filtered-subset prediction (fibroblast best-match share above 15% on parenchymal-only genes) was numerically met before the later sample-label audit: "
     f"{GC['SALL_PARONLY']['fibroblast_best_frac']:.0%} [{GC['SALL_PARONLY']['fibroblast_best_ci95'][0]:.2f}, {GC['SALL_PARONLY']['fibroblast_best_ci95'][1]:.2f}] and "
     f"{GC['CENT_PARONLY']['fibroblast_best_frac']:.0%} [{GC['CENT_PARONLY']['fibroblast_best_ci95'][0]:.2f}, {GC['CENT_PARONLY']['fibroblast_best_ci95'][1]:.2f}]. "
-    "The lower bound of the second interval touches the threshold, so purity is weakened but not excluded as the explanation. "
-    "vorganoid fidelity --purity applies this correction to any count matrix.")
+    "The lower bound of the second interval touches the threshold; more importantly, a threshold met on mixed samples cannot validate a general organoid phenomenon. The strict organoid-only reanalysis in Section 4.9 takes precedence over this earlier text-filtered aggregate. "
+    "vorganoid fidelity --purity applies the gene restriction to a supplied count matrix without asserting clinical or biological calibration.")
 
 P.h("4.8 What drives the attractor, and is it robust to gene class?", 2)
 AG = _pd_gp = pd.read_csv("results/attractor_gprofiler.csv"); AG = AG[AG.term_size < 2000]
@@ -427,12 +423,11 @@ sel = pd.concat([AG.head(4), AG[AG.name.str.contains("immune|complement", case=F
 P.table(["source", "term", "adjusted p", "genes"], [[r.source, r.name, f"{r.p_adj:.1e}", int(r.intersection)] for r in sel.itertuples()],
         "Enrichment of attractor-driving genes (results/attractor_gprofiler.csv; terms with more than 2,000 genes omitted).")
 P.p("Two components appear: mitotic cell-cycle genes (TOP2A, MKI67, CDK1) that cultures express and tissues do not, and immune and complement "
-    "genes that tissues contain and organoids lack. Removing either family alone leaves the attractor in place (Sections 4.6-4.7). "
+    "genes that tissues contain and these mixed series profiles lack. Removing either family alone leaves the earlier text-filtered rank pattern in place (Sections 4.6-4.7), but the later strictly organoid-only audit in Section 4.9 overrides a general attractor claim. "
     f"Restricting to {GM['n_protein_coding_genes']:,} HGNC protein-coding genes also leaves it in place (fibroblast best match "
     f"{GC['SALL_PC']['fibroblast_best_frac']:.0%} [{GC['SALL_PC']['fibroblast_best_ci95'][0]:.2f}, {GC['SALL_PC']['fibroblast_best_ci95'][1]:.2f}] and "
-    f"{GC['CENT_PC']['fibroblast_best_frac']:.0%} [{GC['CENT_PC']['fibroblast_best_ci95'][0]:.2f}, {GC['CENT_PC']['fibroblast_best_ci95'][1]:.2f}]), so it is not a non-coding artefact. "
-    "Our working hypothesis is that the attractor is the joint signature of proliferation and purity. It remains a candidate: a direct test needs "
-    "organoid and matched primary tissue from the same donors, profiled together.")
+    f"{GC['CENT_PC']['fibroblast_best_frac']:.0%} [{GC['CENT_PC']['fibroblast_best_ci95'][0]:.2f}, {GC['CENT_PC']['fibroblast_best_ci95'][1]:.2f}]) in the text-filtered subset; non-coding genes alone do not explain that aggregate, but sample composition still can. "
+    "A future proliferation/purity hypothesis would need organoid and matched primary tissue from the same donors, profiled together. It cannot be inferred as the mechanism from these mixed series.")
 
 
 P.h("4.9 Sample-level audit and independent annotation: the attractor is mostly label contamination", 2)
