@@ -42,7 +42,7 @@ vorganoid segment path/to/brightfield.jpg --model results/trainonly_seg/best.pt 
   --tta-three --out labels.png
 ```
 
-The 16-bit output is a label image, not a pretty preview. Use an appropriate image viewer for instance labels; the prediction is not a diagnostic. The separately selected clean train-only checkpoint reached AP50 = 0.738672 with the original published scorer on the held-out OrgaSegment eval split, below the published mean 0.76; see `results/trainonly_seg/finding.md` and `results/trainonly_seg/sealed_eval.json`. This command uses the fixed validation-selected postprocessing and three-view prediction of the sealed benchmark; the shipped checkpoint is a training-state dictionary, which this CLI reads. This is research-grade segmentation, not a clinical assay. The model may not generalize to other microscopes.
+The 16-bit output is a label image, not a pretty preview. Use an appropriate image viewer for instance labels; the prediction is not a diagnostic. The separately selected clean train-only checkpoint reached AP50 = 0.738672 with the original published scorer on the held-out OrgaSegment eval split, below the published mean 0.76; see `results/trainonly_seg/finding.md` and `results/trainonly_seg/sealed_eval.json`. This command uses the fixed validation-selected postprocessing and three-view prediction of the sealed benchmark; when --selection is given, the CLI requires --size 512 --tta-three rather than silently changing the validated inference protocol. The shipped checkpoint is a training-state dictionary, loaded in tensor-only mode. This is research-grade segmentation, not a clinical assay. The model may not generalize to other microscopes.
 
 ## Evidence, negatives and provenance
 
