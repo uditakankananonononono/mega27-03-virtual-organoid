@@ -1,0 +1,26 @@
+{
+ "n_blocks": 31,
+ "n_donors": 12,
+ "n_cell_rows": 124,
+ "lmm": {
+  "formula": "log_swelling ~ treatment * large + (1|donor) + (1|experiment)",
+  "fit": "ML, lbfgs",
+  "interaction_beta": 0.2528151740814597,
+  "lrt_stat": 17.921078145577667,
+  "lrt_p_two_sided": 2.302568243479385e-05,
+  "lrt_p_one_sided_positive": 1.1512841217396925e-05,
+  "converged_full": true,
+  "converged_reduced": true
+ },
+ "exact_donor_signflip": {
+  "n_donors": 12,
+  "observed_mean_median_effect": 0.19522380634351852,
+  "n_assignments": 4096,
+  "p_one_sided_positive": 0.0029296875
+ },
+ "verdict": "DISCOVERY",
+ "rule": "discovery requires LRT p<0.05 AND sign-flip p<0.05; [0.05,0.10] => INCONCLUSIVE",
+ "input_sha256": {
+  "data/raw/orgasegment/dis_merged_A0.csv": "a32e5cf8cb8f5f7cd92e57ef62881c7a25d559ff1a0018748d4fdded7f3fb5c7"
+ }
+}
