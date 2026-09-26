@@ -26,3 +26,37 @@ Locked protocol:
 Negative handling: an inconclusive/failed LRT is preserved; pivot ladder =
  culture-composition confound metric (HPA purity validation) as the
  discovery arm, then rule-6 ChatGPT redirection for fresh options.
+
+Amendment A1 (2026-09-26, locked before any LMM or permutation scoring):
+ 1. Direction correction. The base prereg's parenthetical "(predicted negative
+    interaction)" contradicts the direction locked in the EARLIER
+    preregistration (results/preregistration_blocked_size.md, commit 87ec71a),
+    whose H1 - written before any of these analyses - is a majority of
+    POSITIVE donor-median block effects, where effect =
+    (drug,large - DMSO,large) - (drug,small - DMSO,small) on mean log
+    swelling. To test the same scientific quantity, the coding is locked as:
+    response = mean log swelling per block x condition x sizebin cell;
+    treatment = VX445_VX661_VX770 (reference DMSO); sizebin = large
+    (reference small); the treatment:large interaction is predicted POSITIVE;
+    the LRT is one-sided in the positive direction. "Attenuation" in the base
+    text refers to attenuated response of SMALL organoids; the sign of the
+    locked contrast is unchanged from commit 87ec71a. No LMM has been scored
+    at lock time.
+ 2. Unit and formula (as locked in base): block-cell means (4 rows per
+    eligible block); log_swelling_mean ~ treatment*sizebin
+    + (1|donor) + (1|experiment), ML fit; LRT df=1 on the interaction.
+    Eligible blocks and cell construction are byte-identical to
+    src/blocked_size.py assess() (722/1400 cutoffs, >=3 per cell,
+    positive forskolin, DMSO + VX445_VX661_VX770 only).
+ 3. Permutation feasibility. 10k donor-label permutations of a crossed
+    mixed model are computationally infeasible in this environment; the
+    donor-level exact sensitivity is replaced by the FULL exact sign-flip
+    enumeration over donors (2^12 = 4096 assignments) on the per-donor
+    median block effect (same donor statistic as the locked sign test, but
+    using magnitudes): statistic = mean of donor medians; exact one-sided
+    p = fraction of assignments with statistic >= observed. This is a strict
+    strengthening of the sign test at the same donor level.
+ 4. Verdict (unchanged from base rule 4): discovery requires LRT one-sided
+    p<0.05 AND exact-permutation agreement (p<0.05, same direction);
+    either p in [0.05,0.10] => INCONCLUSIVE (not a discovery); otherwise the
+    negative is preserved and the pivot ladder fires.
