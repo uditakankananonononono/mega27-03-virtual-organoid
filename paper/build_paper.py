@@ -413,7 +413,7 @@ P.p(f"Purity restriction raises recovery (all-gene Spearman {MC['SALL_vs_SALL_NO
     "The lower bound of the second interval touches the threshold; more importantly, a threshold met on mixed samples cannot validate a general organoid phenomenon. The strict organoid-only reanalysis in Section 4.9 takes precedence over this earlier text-filtered aggregate. "
     "vorganoid fidelity --purity applies the gene restriction to a supplied count matrix without asserting clinical or biological calibration.")
 
-P.h("4.8 What drives the attractor, and is it robust to gene class?", 2)
+P.h("4.8 What drives the text-filtered fibroblast rank pattern?", 2)
 AG = _pd_gp = pd.read_csv("results/attractor_gprofiler.csv"); AG = AG[AG.term_size < 2000]
 P.p("For the clean-subset series whose best match is cultured fibroblasts, each gene is scored by how much it pulls the profile toward "
     "fibroblasts and away from the organ of origin, averaged over series:")
@@ -424,7 +424,7 @@ P.table(["source", "term", "adjusted p", "genes"], [[r.source, r.name, f"{r.p_ad
         "Enrichment of attractor-driving genes (results/attractor_gprofiler.csv; terms with more than 2,000 genes omitted).")
 P.p("Two components appear: mitotic cell-cycle genes (TOP2A, MKI67, CDK1) that cultures express and tissues do not, and immune and complement "
     "genes that tissues contain and these mixed series profiles lack. Removing either family alone leaves the earlier text-filtered rank pattern in place (Sections 4.6-4.7), but the later strictly organoid-only audit in Section 4.9 overrides a general attractor claim. "
-    f"Restricting to {GM['n_protein_coding_genes']:,} HGNC protein-coding genes also leaves it in place (fibroblast best match "
+    f"Restricting to {GM['n_protein_coding_genes']:,} HGNC protein-coding genes also retains that text-filtered rank pattern (fibroblast best match "
     f"{GC['SALL_PC']['fibroblast_best_frac']:.0%} [{GC['SALL_PC']['fibroblast_best_ci95'][0]:.2f}, {GC['SALL_PC']['fibroblast_best_ci95'][1]:.2f}] and "
     f"{GC['CENT_PC']['fibroblast_best_frac']:.0%} [{GC['CENT_PC']['fibroblast_best_ci95'][0]:.2f}, {GC['CENT_PC']['fibroblast_best_ci95'][1]:.2f}]) in the text-filtered subset; non-coding genes alone do not explain that aggregate, but sample composition still can. "
     "A future proliferation/purity hypothesis would need organoid and matched primary tissue from the same donors, profiled together. It cannot be inferred as the mechanism from these mixed series.")
