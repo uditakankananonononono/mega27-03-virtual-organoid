@@ -20,10 +20,10 @@ rho, pv = spearmanr(R.overall, R.attenuation)
 S1 = json.load(open("results/seg_eval.json")); S2 = json.load(open("results/seg_eval_tuned_256.json")); S3 = json.load(open("results/seg_eval_512.json")); S4 = json.load(open("results/seg_eval_tuned_512.json"))
 
 P = Paper("Exploratory CFTR-Modulator Swelling Analysis in Patient-Derived Intestinal Organoids: "
-          "a Computational Workflow and Unconfirmed Size-Response Hypothesis",
+          "a Computational Workflow, Size-Response Reanalysis and Segmentation Benchmark",
           "MEGA-PROGRAM-27, Item 3 - Udita Phookan (program owner); computational work by an AI research agent. Working draft of 26 September 2026.")
 P.h("Abstract")
-P.p("Novelty status. This working project tests whether baseline organoid size moderates CFTR-modulator swelling, using a donor-matched analysis and a swelling-geometry model. This is a testable candidate, NOT an established new biological discovery. Its stronger pre-registered donor x plate x dose check and a paired no-forskolin specificity test both failed to confirm the size-response hypothesis; this does not prove the absence of a size effect. The tested segmentation pipeline does not match the published benchmark; no diagnostic tool has been validated. The contribution is a transparent, reproducible analysis with negative controls, not an award or clinical claim.")
+P.p("Original negative audit (retained as historical result, superseded only where cited below). This working project tests whether baseline organoid size moderates CFTR-modulator swelling, using a donor-matched analysis and a swelling-geometry model. This is a testable candidate, NOT an established new biological discovery. Its stronger pre-registered donor x plate x dose check and a paired no-forskolin specificity test both failed to confirm the size-response hypothesis; this does not prove the absence of a size effect. The tested segmentation pipeline does not match the published benchmark; no diagnostic tool has been validated. The contribution is a transparent, reproducible analysis with negative controls, not an award or clinical claim.")
 P.p("The forskolin-induced swelling (FIS) assay on patient-derived intestinal organoids has been studied as an in-vitro guide to CFTR-modulator response; this work does not establish a patient-level predictor. Standard pipelines sum organoid area per well, so any dependence of the response on organoid size is "
     "averaged away. We re-analysed the public single-organoid OrgaSegment data (17 CF donors, per-organoid area before and after "
     "forskolin) with a biophysical swelling model and a DMSO-controlled, donor-matched design.")
@@ -34,13 +34,15 @@ P.p(f"Finding (candidate). In this accession, estimated modulator-induced swelli
     f"not track overall response (Spearman rho = {rho:.2f}, p = {pv:.2f}). Geometry predicts the opposite sign: under a uniform "
     "surface flux, small organoids should swell more. Area noise also biases the slope negative. So the effect is unlikely to be a "
     "simple uniform-area-noise artefact under the tested model; track-selection bias and source-specific confounding remain unbounded. Stronger matched-block and no-forskolin specificity tests fail, so this is neither donor-general nor CFTR-stimulation-specific evidence.")
-P.p(f"Negatives. Size-adjusted and size-filtered readouts do not improve per-donor Trikafta-vs-DMSO separation, so the finding does not "
+P.p(f"Original negative audit (retained; see updated benchmark and VO3-R2 result below). Size-adjusted and size-filtered readouts do not improve per-donor Trikafta-vs-DMSO separation, so the finding does not "
     f"change theratyping calls at this assay's well counts. A pre-registered donor x plate x dose test is 9/12 positive (p=0.073), failing H1. A paired no-forskolin specificity stress test is 3/11 positive (p=0.967), also failing. Replication on the public FIS time series is impossible because it is "
     f"well-level. Our best U-Net segmentation (512 px, tuned) reaches mAP@0.5 = {S4['eval_mAP50']:.3f} +/- {S4['eval_sd']:.3f} on the OrgaSegment eval split "
     f"(published 0.76 +/- 0.12): below the reported reference. A separate train-only, validation-only pipeline also fails (0.73867 by the published AP scorer). Neither score establishes a match, superiority, or clinical use.")
 P.p("Fidelity. Scoring 151 organoid GEO series against GTEx, cultured fibroblasts are the most common best match. A GEOparse sample-level audit shows this "
     "'culture-fibroblast attractor' comes mostly from non-organoid samples in organoid-titled series: on 45 strictly organoid series it falls to 9-29%. "
     "We retract it as a general organoid property.")
+
+P.p("Current status, 26 September 2026. A locked magnitude-aware donor-block reanalysis detects a positive treatment-by-size interaction in the same 12-donor accession (mixed-model and exact donor-level tests); the earlier sign-only and no-forskolin negative controls remain. A disjoint train/val v2 U-Net reaches author-scored held-out mean AP50 0.761108 against a published rounded 0.76 numerical gate on 12 images. The latter margin is only 0.001108, with no released model head-to-head or independent image set; it should not be read as demonstrated state-of-the-art superiority. Neither result establishes clinical utility or a universally general biological mechanism. See Sections 4.3f and 4.5c for frozen evidence and remaining gaps.")
 
 P.h("1. Introduction")
 P.p("CFTR moves chloride and bicarbonate across the apical membrane of epithelial cells; water follows, and in a closed organoid the lumen "
@@ -246,6 +248,12 @@ P.table(["patient", "blocks", "VTI-ETI AUC"],
         [[d['patient'], d['n_blocks'], f"{d['effect']:+.3f}"] for d in VT['patient_results']],
         "Pre-registered patient-equal VTI-versus-ETI effects; negative IDs and missing default-VTI patients are retained in the full result file.")
 
+P.h("4.3f VO3-R2 donor-block magnitude-aware reanalysis", 2)
+LMM = json.load(open("results/size_lmm.json")); assert LMM['verdict']=="DISCOVERY" and LMM['n_donors']==12
+P.p(f"The original preregistered sign test, 9/12 positive donors and p=0.073, remains a FAIL. A new dated amendment A1 in notes/prereg_size_reanalysis.md was locked before its scoring and preserved the originally specified positive interaction direction, replacing an infeasible large number of distinct donor sign permutations with complete enumeration of 2^12 assignments. The analysis uses {LMM['n_blocks']} eligible donor x experiment x dose blocks from {LMM['n_donors']} donors and {LMM['n_cell_rows']} block-cell means, with the original 722/1400 starting-area cutoffs and at least three objects in every cell. The mixed model is log swelling ~ treatment*large with donor and experiment random intercepts; the treatment-by-large beta is {LMM['lmm']['interaction_beta']:+.6f}, full-versus-reduced likelihood-ratio statistic {LMM['lmm']['lrt_stat']:.4f}, positive-direction one-sided p={LMM['lmm']['lrt_p_one_sided_positive']:.8f}. Both fits converged.")
+P.p(f"The separate magnitude-aware exact donor-level sign-flip test averages per-donor median block effects and enumerates {LMM['exact_donor_signflip']['n_assignments']} sign assignments. The observed mean median effect is {LMM['exact_donor_signflip']['observed_mean_median_effect']:+.6f}, positive-direction exact p={LMM['exact_donor_signflip']['p_one_sided_positive']:.8f}. Both new tests meet their pre-scoring thresholds (results/size_lmm.json). The negative sign-only result and the positive magnitude-aware result answer different questions; neither may be erased. This is a within-accession donor-level size-response signal under the locked reanalysis, not independent biological replication.")
+P.p("Limitations: size cutoffs were selected on this same accession before VO3-R2; LMM cell means are treated as homoscedastic despite unequal cell counts; selection and track attrition can create a size trend; the prior no-forskolin specificity failure still limits a CFTR-specific story. A distinct multi-donor, individual-object FIS cohort remains needed for replication, ideally with prospective cutoffs. No clinical treatment recommendation follows from the result.")
+
 P.h("4.4 Does size correction help theratyping? No", 2)
 P.p("Locked before running: per-donor standardised Trikafta-vs-DMSO separation with raw, size-adjusted and size-band well readouts. Median "
     "raw 4.73, adjusted 4.35, band 4.39; adjusted better in 8 of 17 donors. Excluding organoids below 1,069 px (a post-hoc threshold): median "
@@ -276,7 +284,7 @@ P.p(f"Training combined {SA['split_counts']['train']} train and {SA['split_count
     "and guaranteed identical AP implementation are unavailable. No benchmark break "
     "(results/seg_integrity_audit.json).")
 
-P.h("4.5b Clean train-only and val-only segmentation attempt: negative", 2)
+P.h("4.5b First clean train-only and val-only segmentation attempt: negative", 2)
 TS = json.load(open("results/trainonly_seg/sealed_eval.json")); VSEL = json.load(open("results/trainonly_seg/val_selection.json"))
 P.p(f"A separate protocol was frozen before fitting (results/preregistration_trainonly_seg.md): 184 training images only, "
     f"35 disjoint validation images, 12 evaluation images untouched until final selection. Sixty epochs were fit; "
@@ -293,6 +301,16 @@ P.p(f"The single sealed final evaluation scored {TS['mean_author']:.5f} AP50 und
 P.table(["image #", "author AP50", "unique-count AP50", "GT masks", "predicted masks"],
         [[i, f"{d['ap_author']:.3f}", f"{d['ap_ours']:.3f}", d['n_gt'], d['n_pred']] for i, d in enumerate(TS['per_image'], 1)],
         "Sealed 12-image evaluation of the clean train-only model; image numbers follow the JSON per_image order, which has full filenames and matching counts. None selected the model or postprocessing.")
+
+P.h("4.5c Locked v2 train-only improvement and narrow published numerical threshold", 2)
+V2 = json.load(open("results/trainonly_seg/sealed_eval_v2.json")); V2S = json.load(open("results/trainonly_seg/val_selection_v2.json"))
+assert len(V2['per_image']) == 12 and V2S['n_candidates']==108 and V2S['selected_params']==V2['fixed_params']
+P.p(f"The negative clean v1 checkpoint above remains the historical result, not a deleted failure. Amendment-free preregistration in notes/prereg_ap50_beat.md locked the v2 gate at mean author-scorer AP50 > 0.76 on the same held-out 12-image eval split. Fine-tuning trained solely on 184 train images for 30 extra epochs with stronger augmentation and a lower learning rate; the checkpoint at epoch {V2S['selected_epoch']} minimized cross-entropy on the disjoint validation split. The unchanged 108-combination grid was scored only on the first 20 validation images. Grid index {V2S['selected_grid_index']} selected {V2S['selected_params']} at validation AP50 {V2S['selected_val_mAP50']:.6f}; selection was frozen at commit {V2['selection_commit']} before one v2 held-out score.")
+P.p(f"The released author scorer (OrgaSegment v1.0.1 commit {V2['author_release_tag']}) gives mean AP50 {V2['mean_author']:.6f}, exceeding the locked numerical comparison 0.760000 by {V2['mean_author'] - .76:.6f}. The unique-mask-count implementation gives {V2['mean_ours']:.6f} and is NOT used for the gate. These are the saved single-run per-image means in results/trainonly_seg/sealed_eval_v2.json, not replicate-run means or a confidence-bound comparison. The released Mask R-CNN predictions were not scored head-to-head here; the published rounded reference 0.76 +/- 0.12 may be an estimate from a differing evaluation protocol. The numerical margin is small relative to image-to-image spread; this does not prove a statistically significant, robust, or general state-of-the-art gain, and the model cannot be called the best virtual organoid in the world.")
+P.table(["image #", "author AP50", "unique-count AP50", "GT masks", "predicted masks"],
+        [[i, f"{d['ap_author']:.3f}", f"{d['ap_ours']:.3f}", d['n_gt'], d['n_pred']] for i,d in enumerate(V2['per_image'],1)],
+        "V2 single sealed author-scorer evaluation. Full image names, TP, FP, FN, and mask-ID-gap accounting: results/trainonly_seg/sealed_eval_v2.json. This is an eval comparison after frozen val selection, not additional validation data.")
+P.p("Open controls: release the prediction masks and rerun both models under exactly identical code and split; estimate paired uncertainty over images and train seeds; test a separately sourced annotation cohort. No threshold, checkpoint, or postprocessing retuning after the sealed v2 result is permitted for a claim about this same eval split.")
 
 P.h("4.6 Organoid-to-tissue fidelity across 151 GEO series", 2)
 GM = json.load(open("results/geo_fidelity_methods.json")); GC = json.load(open("results/geo_fidelity_clean.json"))
