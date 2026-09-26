@@ -1,0 +1,402 @@
+Adversarial scientific judge review — current virtual-organoid results
+Overall assessment
+
+The project contains two distinct contributions with different evidentiary strength:
+
+Virtual-organoid biological analysis: A donor-block interaction signal is statistically strong within the analyzed accession, but the main unresolved question is whether it represents a reproducible biological donor-response phenomenon or a measurement/selection artifact arising from image-derived size metrics, donor-specific culture effects, or track inclusion rules.
+
+Segmentation model: The model has demonstrated that the implementation can reproduce the published benchmark approximately, but the evidence does not establish superiority, robustness, or generalization. The sealed benchmark is a calibration/replication check, not a discovery.
+
+The strongest scientific path is not to claim a therapeutic response discovery. It is to convert the current result into a mechanism-of-measurement validation study: “under what conditions does donor-specific Trikafta response appear, disappear, or remain?”
+
+1. Weaknesses and overclaims
+A. Virtual-organoid interaction analysis
+Valid findings
+
+The following are defensible:
+
+A mixed model estimated a positive Trikafta × baseline-size interaction:
+
+β = +0.252815
+
+one-sided LRT p = 1.15×10⁻⁵
+
+A donor-level exact sign-flip test on donor median effects found:
+
+4096 permutations
+
+p = 0.0029297
+
+The effect appears in the available donor-experiment-dose blocks:
+
+31 blocks
+
+12 donors
+
+124 block-cell means
+
+These are real statistical observations in the available dataset.
+
+Actual overclaim risk
+Overclaim 1:
+
+“Trikafta causes larger organoid rescue in larger baseline organoids.”
+
+Not established.
+
+Why:
+
+The data show an association between baseline size and treatment-associated change.
+
+They do not prove causality.
+
+Same-accession analysis means treatment assignment, donor acquisition, culture batch, and measurement pipeline may share hidden dependencies.
+
+A safer claim:
+
+“Within this accession, baseline size modifies the measured Trikafta-associated size response.”
+
+Overclaim 2:
+
+“This demonstrates a generalizable donor-response biomarker.”
+
+Not established.
+
+Reasons:
+
+Only 12 donors.
+
+No external donor replication.
+
+No independent accession replication.
+
+The locked sign-only donor test failed:
+
+9/12 positive
+
+p = 0.073
+
+The magnitude-aware amendment provides supportive evidence, but because the cutoff was derived from the same accession, it cannot function as an external validation.
+
+Overclaim 3:
+
+“The effect is biological rather than technical.”
+
+Not established.
+
+The central unresolved alternative hypotheses are:
+
+Larger starting organoids have different segmentation accuracy.
+
+Larger organoids have different survival/fragmentation trajectories.
+
+Track-selection rules preferentially retain certain morphologies.
+
+Cell-count weighting creates artificial precision.
+
+Donor-specific image acquisition differences correlate with baseline size.
+
+These are not minor caveats; they are competing explanations.
+
+Already disclosed limitations (not overclaims)
+
+These are appropriately acknowledged:
+
+No external donor replication.
+
+Not a clinical treatment signal.
+
+Same-accession analysis.
+
+Segmentation benchmark is not state-of-the-art proof.
+
+First clean segmentation model retained as negative.
+
+Those disclosures improve credibility.
+
+2. Proposed novelty-improving biological analysis
+Proposed analysis:
+“Measurement-invariance test of the baseline-size interaction”
+Scientific question
+
+Does the Trikafta × baseline-size interaction persist after removing possible image-analysis and track-selection explanations?
+
+This turns the project from:
+
+“I found a response interaction”
+
+into:
+
+“I tested whether the interaction survives measurement perturbations.”
+
+That is a stronger computational biology contribution.
+
+Experiment design
+Required data fields
+Minimum fields required
+
+For every tracked organoid:
+
+Field	Purpose
+donor ID	donor-level replication
+experiment/batch ID	culture batch correction
+treatment condition	Trikafta/baseline
+dose/timepoint	trajectory modeling
+organoid ID	longitudinal identity
+frame number/time	growth trajectory
+baseline size	original predictor
+subsequent size measurements	response
+segmentation mask area	raw measurement
+tracking confidence	track-selection artifact test
+number of frames retained	survival bias
+missing-frame indicator	dropout bias
+Analysis 1: segmentation-error robustness
+Question
+
+Could larger organoids simply be easier/harder to segment?
+
+Test
+
+Repeat the interaction model using alternative size definitions:
+
+Raw mask area.
+
+Eroded mask area.
+
+Dilated mask area.
+
+Bounding-box area.
+
+Manual subset measurements if available.
+
+Model:
+
+response∼treatment+baseline_size+treatment×baseline_size+(1∣donor)+(1∣batch)
+Falsification outcome
+
+The biological interpretation weakens if:
+
+interaction disappears under reasonable segmentation perturbations, OR
+
+effect size changes substantially depending on segmentation representation.
+
+Example falsification:
+
+β becomes near zero or changes sign when using alternative measurement definitions.
+
+Analysis 2: track-selection bias test
+Question
+
+Are only certain organoids surviving long enough to show an apparent response?
+
+Test
+
+Compare:
+
+Included tracks vs excluded tracks.
+
+Required fields:
+
+initial size
+
+treatment
+
+donor
+
+number of frames observed
+
+reason for exclusion
+
+Model:
+
+P(track retained)=f(initial size,treatment,donor)
+Falsification outcome
+
+Evidence against biological interpretation:
+
+retention probability strongly depends on baseline size and treatment.
+
+excluded tracks show a different size-response distribution.
+
+Analysis 3: cell-count weighting sensitivity
+
+Current concern:
+
+Cell means have unequal n:
+
+minimum = 3
+
+maximum = 99
+
+A homoscedastic LMM assumes equal residual variance.
+
+This is a statistical weakness.
+
+Recommended sensitivity analysis:
+
+Compare:
+
+Current homoscedastic LMM.
+
+Weighted model by number of cells.
+
+Bootstrap donor-level confidence intervals.
+
+Donor-stratified models.
+
+Falsification outcome
+
+The interaction is not robust if:
+
+significance disappears after reasonable variance modeling,
+
+donor-level bootstrap intervals include zero,
+
+one donor drives the effect.
+
+Feasibility
+Analysis	Existing public dataset?	Requires new data?
+Alternative measurement definitions	Depends on released masks/images	Raw masks/images needed
+Track retention bias	Requires track metadata	Likely requires raw tracks
+Cell-count weighting	Yes if current table available	No
+Donor bootstrap	Yes	No
+
+The highest-value analysis requiring no new data is:
+
+donor-level bootstrap + heteroscedastic sensitivity modeling.
+
+The highest novelty analysis requiring raw data is:
+
+measurement-invariance under segmentation perturbations.
+
+3. Prospective segmentation robustness check
+
+Important distinction:
+
+The current sealed benchmark:
+
+12 images
+
+AP50 = 0.761108
+
+published value ≈0.76 ±0.12
+
+This establishes:
+
+“The implementation can reproduce approximately the published benchmark under the author's scorer.”
+
+It does not establish:
+
+superiority,
+
+statistical improvement,
+
+generalization,
+
+biological validity,
+
+robustness across datasets.
+
+The margin:
+
+0.761108−0.760000=0.001108
+
+is extremely small relative to:
+
+only 12 images,
+
+unknown variance,
+
+no head-to-head author predictions.
+
+It is effectively a reproduction-level match.
+
+Proposed prospective segmentation experiment
+“Distribution-shift stress test”
+
+Do not touch the sealed 12-image gate.
+
+Create a new prospective evaluation set.
+
+Dataset
+
+Preferably:
+
+same organoid modality,
+
+different acquisition batch,
+
+different imaging day,
+
+different donor,
+
+different microscope settings.
+
+If unavailable:
+
+Use public related organoid image datasets with explicit domain shift.
+
+Protocol
+
+Before seeing labels:
+
+Lock:
+
+model weights,
+
+preprocessing,
+
+threshold,
+
+postprocessing.
+
+Then evaluate:
+
+Metrics:
+
+AP50
+
+AP75
+
+boundary F-score
+
+instance count error
+
+size bias:
+
+predicted area−true area
+
+as a function of organoid size.
+
+Falsification outcome
+
+The segmentation approach is not robust if:
+
+AP collapses under acquisition shift,
+
+large-organoid errors increase systematically,
+
+predicted size bias correlates with true size.
+
+Final judge verdict
+Biological arm
+
+Interesting statistical observation. Not yet a biological discovery.
+
+The strongest next step is not adding more modeling complexity. It is proving that the interaction is not generated by the measurement pipeline.
+
+A successful robustness analysis would elevate the work from:
+
+“a treatment-size interaction was detected”
+
+to:
+
+“a treatment-size interaction survives plausible measurement and statistical artifacts.”
+
+That would be a meaningful computational biology contribution.
+
+Segmentation arm
+
+Competent reproduction, not state-of-the-art advancement.
+
+The benchmark should remain a locked replication checkpoint. A prospective domain-shift test would be the scientifically appropriate next experiment because it tests generalization rather than squeezing additional significance from a 0.001 margin.

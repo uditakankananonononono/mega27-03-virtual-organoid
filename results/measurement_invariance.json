@@ -1,0 +1,92 @@
+{
+  "status": "EXPLORATORY same-accession diagnostics, not a confirmatory discovery",
+  "input_sha256": "a32e5cf8cb8f5f7cd92e57ef62881c7a25d559ff1a0018748d4fdded7f3fb5c7",
+  "original_cutoffs": [
+    722,
+    1400
+  ],
+  "n_blocks": 31,
+  "n_donors": 12,
+  "n_cell_rows": 124,
+  "donor_median_effects": {
+    "PDIO_01": -0.01336922850221789,
+    "PDIO_03": 0.24498645696668553,
+    "PDIO_05": 0.540102989942566,
+    "PDIO_06": 0.3489530105042224,
+    "PDIO_09": 0.23128799854545623,
+    "PDIO_11": 0.32264373045057937,
+    "PDIO_12": 0.14713659155127123,
+    "PDIO_13": 0.2734400906777803,
+    "PDIO_14": 0.2831766880312032,
+    "PDIO_15": 0.06075982518089951,
+    "PDIO_16": -0.09136764593477734,
+    "PDIO_18": -0.005064831291446914
+  },
+  "equal_donor_mean_median": 0.19522380634351852,
+  "donor_bootstrap_seed": 20260926,
+  "donor_bootstrap_draws": 20000,
+  "donor_bootstrap_ci95": [
+    0.0977241533716348,
+    0.2924404342685821
+  ],
+  "leave_one_donor_out_equal_means": {
+    "PDIO_01": 0.2141868095113127,
+    "PDIO_03": 0.19069992901413968,
+    "PDIO_05": 0.16387115328905957,
+    "PDIO_06": 0.18124842414709083,
+    "PDIO_09": 0.19194524341606964,
+    "PDIO_11": 0.18364017687924025,
+    "PDIO_12": 0.1995953713246319,
+    "PDIO_13": 0.1881132350404038,
+    "PDIO_14": 0.18722808982645625,
+    "PDIO_15": 0.20744780463102933,
+    "PDIO_16": 0.2212775747324545,
+    "PDIO_18": 0.21343186431033354
+  },
+  "trimmed20_equal_donor_mean_median": 0.2355623575130377,
+  "trimmed20_per_donor_median": {
+    "PDIO_01": 0.012761200399661998,
+    "PDIO_03": 0.19885159891663728,
+    "PDIO_05": 0.5326295119375584,
+    "PDIO_06": 0.3909450777770681,
+    "PDIO_09": 0.3144094143376852,
+    "PDIO_11": 0.3212717836708169,
+    "PDIO_12": 0.18054414567790822,
+    "PDIO_13": 0.49070713054272874,
+    "PDIO_14": 0.37471183385086876,
+    "PDIO_15": 0.09317435861903711,
+    "PDIO_16": -0.09054766791572258,
+    "PDIO_18": 0.007289902342204169
+  },
+  "cell_count_range": [
+    3,
+    109
+  ],
+  "cell_count_median": 31.0,
+  "boundary_sensitivity": {
+    "lower10": {
+      "cutoffs": [
+        648,
+        1260
+      ],
+      "eligible_prior_blocks": 29,
+      "eligible_donors": 12,
+      "equal_donor_mean": 0.1889538912469874,
+      "positive_donors": 8
+    },
+    "higher10": {
+      "cutoffs": [
+        794,
+        1540
+      ],
+      "eligible_prior_blocks": 31,
+      "eligible_donors": 12,
+      "equal_donor_mean": 0.19784076834984896,
+      "positive_donors": 10
+    }
+  },
+  "not_testable_without_raw_tracks": [
+    "segmentation erosion/dilation/manual area",
+    "excluded-track retention bias"
+  ]
+}
