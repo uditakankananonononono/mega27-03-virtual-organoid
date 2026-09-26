@@ -1,0 +1,1908 @@
+{
+  "status": "post-result same-accession observed-positive-pair inclusion sensitivity",
+  "protocol": "notes/postresult_inclusion_model_protocol.md",
+  "source_url": "https://zenodo.org/records/10610438",
+  "source_sha256": "0e0e7913947a29c7b32ce87ca73a98614033d41ce63063a1d65053e766b2f315",
+  "derived_sha256": "a32e5cf8cb8f5f7cd92e57ef62881c7a25d559ff1a0018748d4fdded7f3fb5c7",
+  "n_positive_source_pairs_in_original_small_large_cells": 4964,
+  "n_derived_included_in_frame": 4776,
+  "folds": [
+    {
+      "n_train": 3726,
+      "n_test": 1238,
+      "n_test_included": 1192,
+      "test_experiments": [
+        "20230222_DIS3_plate021"
+      ]
+    },
+    {
+      "n_train": 3998,
+      "n_test": 966,
+      "n_test_included": 915,
+      "test_experiments": [
+        "20221026_DIS3_plate005",
+        "20221027_DIS3_plate006",
+        "HitCF_A1_DIS_20230307_plate013"
+      ]
+    },
+    {
+      "n_train": 4032,
+      "n_test": 932,
+      "n_test_included": 900,
+      "test_experiments": [
+        "20221020_DIS3_plate003",
+        "20221020_DIS3_plate004",
+        "HitCF_A1_DIS_20230207_plate001"
+      ]
+    },
+    {
+      "n_train": 4046,
+      "n_test": 918,
+      "n_test_included": 891,
+      "test_experiments": [
+        "20230125_DIS3_plate015",
+        "20230308_DIS3_plate025",
+        "HitCF_A1_DIS_20230228_plate010"
+      ]
+    },
+    {
+      "n_train": 4054,
+      "n_test": 910,
+      "n_test_included": 878,
+      "test_experiments": [
+        "20230125_DIS3_plate014",
+        "20230207_DIS3_plate017",
+        "20230301_DIS3_plate023"
+      ]
+    }
+  ],
+  "out_of_fold_inclusion_auc": 0.7269035781745607,
+  "out_of_fold_inclusion_ap": 0.9665372810103805,
+  "out_of_fold_inclusion_brier": 0.029954920463200838,
+  "constant_prevalence_brier": 0.03643834317805363,
+  "raw_probability_range": [
+    0.032614806263200014,
+    0.9999945756047803
+  ],
+  "n_probabilities_clipped": 597,
+  "inclusion_rate": 0.9621273166800967,
+  "included_weight_quantiles": {
+    "0": 1.0050251256281406,
+    "0.5": 1.0200976473122358,
+    "0.9": 1.0660483913994638,
+    "0.99": 1.1899118075075386,
+    "1": 2.2378999447219794
+  },
+  "included_effective_sample_size": 4765.937485635517,
+  "source_positive_pair": {
+    "n_blocks": 31,
+    "n_donors": 12,
+    "positive_donors": 9,
+    "equal_donor_mean_median": 0.2079781684567534,
+    "donor_medians": {
+      "PDIO_01": 0.038955782837541975,
+      "PDIO_03": 0.3508821434068704,
+      "PDIO_05": 0.5396669946524568,
+      "PDIO_06": 0.37111822422156515,
+      "PDIO_09": 0.20085730910526345,
+      "PDIO_11": 0.36577963793801616,
+      "PDIO_12": 0.4180005333028193,
+      "PDIO_13": 0.2734739642741474,
+      "PDIO_14": -0.1934714309510302,
+      "PDIO_15": 0.30080490599578535,
+      "PDIO_16": -0.09719748643906656,
+      "PDIO_18": -0.0731325568633287
+    },
+    "block_effects": [
+      {
+        "donor": "PDIO_01",
+        "experiment": "20230125_DIS3_plate014",
+        "dose": 0.128,
+        "effect": 0.038955782837541975
+      },
+      {
+        "donor": "PDIO_03",
+        "experiment": "HitCF_A1_DIS_20230207_plate001",
+        "dose": 0.128,
+        "effect": 0.3508821434068704
+      },
+      {
+        "donor": "PDIO_03",
+        "experiment": "HitCF_A1_DIS_20230228_plate010",
+        "dose": 0.128,
+        "effect": 0.5756858994920786
+      },
+      {
+        "donor": "PDIO_03",
+        "experiment": "HitCF_A1_DIS_20230307_plate013",
+        "dose": 0.128,
+        "effect": 0.29835202421982954
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.128,
+        "effect": 0.23090053024827673
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.32,
+        "effect": 0.5396669946524568
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.8,
+        "effect": 0.2923689535929592
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230301_DIS3_plate023",
+        "dose": 0.128,
+        "effect": 0.7848775594557345
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230308_DIS3_plate025",
+        "dose": 0.128,
+        "effect": 0.7912328479638473
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.128,
+        "effect": 1.0275417895922234
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.32,
+        "effect": 0.7745161736745373
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.8,
+        "effect": 0.37111822422156515
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230301_DIS3_plate023",
+        "dose": 0.128,
+        "effect": 0.11940032489181207
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230308_DIS3_plate025",
+        "dose": 0.128,
+        "effect": 0.2664804497243839
+      },
+      {
+        "donor": "PDIO_09",
+        "experiment": "20230125_DIS3_plate014",
+        "dose": 0.128,
+        "effect": 0.5246749500058868
+      },
+      {
+        "donor": "PDIO_09",
+        "experiment": "20230125_DIS3_plate015",
+        "dose": 0.128,
+        "effect": -0.0564138216646477
+      },
+      {
+        "donor": "PDIO_09",
+        "experiment": "20230207_DIS3_plate017",
+        "dose": 0.128,
+        "effect": 0.20085730910526345
+      },
+      {
+        "donor": "PDIO_11",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.36577963793801616
+      },
+      {
+        "donor": "PDIO_12",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": 0.5547133273004641
+      },
+      {
+        "donor": "PDIO_12",
+        "experiment": "20221026_DIS3_plate005",
+        "dose": 0.128,
+        "effect": 0.3398695464330511
+      },
+      {
+        "donor": "PDIO_12",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.4180005333028193
+      },
+      {
+        "donor": "PDIO_13",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": 0.2508212686630682
+      },
+      {
+        "donor": "PDIO_13",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.2961266598852266
+      },
+      {
+        "donor": "PDIO_14",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": -0.5395758502967245
+      },
+      {
+        "donor": "PDIO_14",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.1526329883946641
+      },
+      {
+        "donor": "PDIO_15",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": -0.39956990426311395
+      },
+      {
+        "donor": "PDIO_15",
+        "experiment": "20221026_DIS3_plate005",
+        "dose": 0.128,
+        "effect": 0.32570253846471686
+      },
+      {
+        "donor": "PDIO_15",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.30080490599578535
+      },
+      {
+        "donor": "PDIO_16",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": -0.4322849278691019
+      },
+      {
+        "donor": "PDIO_16",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.23788995499096877
+      },
+      {
+        "donor": "PDIO_18",
+        "experiment": "20221020_DIS3_plate003",
+        "dose": 0.128,
+        "effect": -0.0731325568633287
+      }
+    ]
+  },
+  "derived_unweighted": {
+    "n_blocks": 31,
+    "n_donors": 12,
+    "positive_donors": 9,
+    "equal_donor_mean_median": 0.19522380634351855,
+    "donor_medians": {
+      "PDIO_01": -0.01336922850221789,
+      "PDIO_03": 0.24498645696668564,
+      "PDIO_05": 0.540102989942566,
+      "PDIO_06": 0.3489530105042225,
+      "PDIO_09": 0.23128799854545634,
+      "PDIO_11": 0.32264373045057937,
+      "PDIO_12": 0.14713659155127135,
+      "PDIO_13": 0.2734400906777804,
+      "PDIO_14": 0.2831766880312031,
+      "PDIO_15": 0.060759825180899396,
+      "PDIO_16": -0.09136764593477731,
+      "PDIO_18": -0.005064831291446803
+    },
+    "block_effects": [
+      {
+        "donor": "PDIO_01",
+        "experiment": "20230125_DIS3_plate014",
+        "dose": 0.128,
+        "effect": -0.01336922850221789
+      },
+      {
+        "donor": "PDIO_03",
+        "experiment": "HitCF_A1_DIS_20230207_plate001",
+        "dose": 0.128,
+        "effect": 0.12395428829597399
+      },
+      {
+        "donor": "PDIO_03",
+        "experiment": "HitCF_A1_DIS_20230228_plate010",
+        "dose": 0.128,
+        "effect": 0.5333683706560424
+      },
+      {
+        "donor": "PDIO_03",
+        "experiment": "HitCF_A1_DIS_20230307_plate013",
+        "dose": 0.128,
+        "effect": 0.24498645696668564
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.128,
+        "effect": 0.272176057846105
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.32,
+        "effect": 0.540102989942566
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.8,
+        "effect": 0.3299618880937848
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230301_DIS3_plate023",
+        "dose": 0.128,
+        "effect": 0.6754673529645708
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230308_DIS3_plate025",
+        "dose": 0.128,
+        "effect": 0.598720408448262
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.128,
+        "effect": 0.42585671410564674
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.32,
+        "effect": 0.4609743081205462
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.8,
+        "effect": 0.30407069554756017
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230301_DIS3_plate023",
+        "dose": 0.128,
+        "effect": 0.06930546559823691
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230308_DIS3_plate025",
+        "dose": 0.128,
+        "effect": 0.3489530105042225
+      },
+      {
+        "donor": "PDIO_09",
+        "experiment": "20230125_DIS3_plate014",
+        "dose": 0.128,
+        "effect": 0.38610949204293066
+      },
+      {
+        "donor": "PDIO_09",
+        "experiment": "20230125_DIS3_plate015",
+        "dose": 0.128,
+        "effect": 0.17519425942396571
+      },
+      {
+        "donor": "PDIO_09",
+        "experiment": "20230207_DIS3_plate017",
+        "dose": 0.128,
+        "effect": 0.23128799854545634
+      },
+      {
+        "donor": "PDIO_11",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.32264373045057937
+      },
+      {
+        "donor": "PDIO_12",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": 0.4585886223104977
+      },
+      {
+        "donor": "PDIO_12",
+        "experiment": "20221026_DIS3_plate005",
+        "dose": 0.128,
+        "effect": 0.14713659155127135
+      },
+      {
+        "donor": "PDIO_12",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.06834482987382806
+      },
+      {
+        "donor": "PDIO_13",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": 0.26898703081835285
+      },
+      {
+        "donor": "PDIO_13",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.277893150537208
+      },
+      {
+        "donor": "PDIO_14",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": 0.369308539453748
+      },
+      {
+        "donor": "PDIO_14",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.19704483660865824
+      },
+      {
+        "donor": "PDIO_15",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": -0.15245425832588794
+      },
+      {
+        "donor": "PDIO_15",
+        "experiment": "20221026_DIS3_plate005",
+        "dose": 0.128,
+        "effect": 0.29969709262676103
+      },
+      {
+        "donor": "PDIO_15",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.060759825180899396
+      },
+      {
+        "donor": "PDIO_16",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": -0.4154696985859251
+      },
+      {
+        "donor": "PDIO_16",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.23273440671637047
+      },
+      {
+        "donor": "PDIO_18",
+        "experiment": "20221020_DIS3_plate003",
+        "dose": 0.128,
+        "effect": -0.005064831291446803
+      }
+    ]
+  },
+  "derived_ipw": {
+    "n_blocks": 31,
+    "n_donors": 12,
+    "positive_donors": 10,
+    "equal_donor_mean_median": 0.20058116611974589,
+    "donor_medians": {
+      "PDIO_01": -0.016322200905330875,
+      "PDIO_03": 0.2538633808895838,
+      "PDIO_05": 0.5450362834325891,
+      "PDIO_06": 0.3524498284725353,
+      "PDIO_09": 0.22742106680850172,
+      "PDIO_11": 0.32379131808634454,
+      "PDIO_12": 0.14627932344508388,
+      "PDIO_13": 0.29206419171441184,
+      "PDIO_14": 0.2878097320402575,
+      "PDIO_15": 0.06527206198701574,
+      "PDIO_16": -0.09630863513265897,
+      "PDIO_18": 0.025617642598616874
+    },
+    "block_effects": [
+      {
+        "donor": "PDIO_01",
+        "experiment": "20230125_DIS3_plate014",
+        "dose": 0.128,
+        "effect": -0.016322200905330875
+      },
+      {
+        "donor": "PDIO_03",
+        "experiment": "HitCF_A1_DIS_20230207_plate001",
+        "dose": 0.128,
+        "effect": 0.12339306400603245
+      },
+      {
+        "donor": "PDIO_03",
+        "experiment": "HitCF_A1_DIS_20230228_plate010",
+        "dose": 0.128,
+        "effect": 0.5366164920039824
+      },
+      {
+        "donor": "PDIO_03",
+        "experiment": "HitCF_A1_DIS_20230307_plate013",
+        "dose": 0.128,
+        "effect": 0.2538633808895838
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.128,
+        "effect": 0.28462763066378133
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.32,
+        "effect": 0.5450362834325891
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.8,
+        "effect": 0.32174776603846966
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230301_DIS3_plate023",
+        "dose": 0.128,
+        "effect": 0.7088545961534937
+      },
+      {
+        "donor": "PDIO_05",
+        "experiment": "20230308_DIS3_plate025",
+        "dose": 0.128,
+        "effect": 0.6002342669705718
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.128,
+        "effect": 0.4201211297178692
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.32,
+        "effect": 0.4585243820416981
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230222_DIS3_plate021",
+        "dose": 0.8,
+        "effect": 0.30849687196870007
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230301_DIS3_plate023",
+        "dose": 0.128,
+        "effect": 0.07573110155443097
+      },
+      {
+        "donor": "PDIO_06",
+        "experiment": "20230308_DIS3_plate025",
+        "dose": 0.128,
+        "effect": 0.3524498284725353
+      },
+      {
+        "donor": "PDIO_09",
+        "experiment": "20230125_DIS3_plate014",
+        "dose": 0.128,
+        "effect": 0.3878235311214019
+      },
+      {
+        "donor": "PDIO_09",
+        "experiment": "20230125_DIS3_plate015",
+        "dose": 0.128,
+        "effect": 0.1800642022593848
+      },
+      {
+        "donor": "PDIO_09",
+        "experiment": "20230207_DIS3_plate017",
+        "dose": 0.128,
+        "effect": 0.22742106680850172
+      },
+      {
+        "donor": "PDIO_11",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.32379131808634454
+      },
+      {
+        "donor": "PDIO_12",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": 0.4646676095118916
+      },
+      {
+        "donor": "PDIO_12",
+        "experiment": "20221026_DIS3_plate005",
+        "dose": 0.128,
+        "effect": 0.14627932344508388
+      },
+      {
+        "donor": "PDIO_12",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.0669403261237248
+      },
+      {
+        "donor": "PDIO_13",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": 0.27136624586654656
+      },
+      {
+        "donor": "PDIO_13",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.3127621375622771
+      },
+      {
+        "donor": "PDIO_14",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": 0.37327736309881654
+      },
+      {
+        "donor": "PDIO_14",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.20234210098169841
+      },
+      {
+        "donor": "PDIO_15",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": -0.15299859093103862
+      },
+      {
+        "donor": "PDIO_15",
+        "experiment": "20221026_DIS3_plate005",
+        "dose": 0.128,
+        "effect": 0.2985732561139408
+      },
+      {
+        "donor": "PDIO_15",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.06527206198701574
+      },
+      {
+        "donor": "PDIO_16",
+        "experiment": "20221020_DIS3_plate004",
+        "dose": 0.128,
+        "effect": -0.4205527188415513
+      },
+      {
+        "donor": "PDIO_16",
+        "experiment": "20221027_DIS3_plate006",
+        "dose": 0.128,
+        "effect": 0.22793544857623338
+      },
+      {
+        "donor": "PDIO_18",
+        "experiment": "20221020_DIS3_plate003",
+        "dose": 0.128,
+        "effect": 0.025617642598616874
+      }
+    ]
+  },
+  "delta_weighted_minus_derived": 0.005357359776227338,
+  "negative_control_seed": 20260926,
+  "negative_control_repetitions": 300,
+  "negative_control_pseudo_effects": [
+    {
+      "mean_donor_median": -0.1045741838801144,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -0.013000825904224063,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.018307070092784806,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.030430155292743188,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.0554162287887355,
+      "positive_donors": 9
+    },
+    {
+      "mean_donor_median": -0.04969652473898303,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.060867312203884506,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": 0.04897632919112621,
+      "positive_donors": 10
+    },
+    {
+      "mean_donor_median": -0.03779964743986644,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.10504867333553199,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": 0.05570971775126491,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.03226568012442068,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.02964504092032864,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.08330573335742159,
+      "positive_donors": 2
+    },
+    {
+      "mean_donor_median": -0.04504198940645927,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": -0.055795614879010226,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -0.04605546914669815,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -0.027292680329654168,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.03394298618613397,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.0403258903792973,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": -0.1485257193513172,
+      "positive_donors": 2
+    },
+    {
+      "mean_donor_median": -0.09378889547272352,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.012081614399397811,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -0.16321925802655263,
+      "positive_donors": 1
+    },
+    {
+      "mean_donor_median": -0.0709359679550285,
+      "positive_donors": 3
+    },
+    {
+      "mean_donor_median": -0.05081376047775973,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": -0.06859438996524726,
+      "positive_donors": 3
+    },
+    {
+      "mean_donor_median": 0.008968164987900427,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": 0.03131638647818937,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": 0.05312485994244218,
+      "positive_donors": 9
+    },
+    {
+      "mean_donor_median": -0.013393659965969446,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.02932412397670386,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": -0.08110581017007629,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -0.06533282881436307,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.12213721805044231,
+      "positive_donors": 2
+    },
+    {
+      "mean_donor_median": 0.03494112151493239,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": -0.08878473976471489,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.019214042437016965,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.12691944279975495,
+      "positive_donors": 3
+    },
+    {
+      "mean_donor_median": 0.0012566168890075456,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.00953863945546476,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.059452880897097084,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.011764783861539035,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.05807213304603213,
+      "positive_donors": 9
+    },
+    {
+      "mean_donor_median": 0.0023060376087201315,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.008972356648972201,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.033451067832019316,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": -0.052046858376769804,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.11618425925940107,
+      "positive_donors": 3
+    },
+    {
+      "mean_donor_median": -0.12813530953122615,
+      "positive_donors": 3
+    },
+    {
+      "mean_donor_median": -0.01385436957133983,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -0.006155162413149016,
+      "positive_donors": 10
+    },
+    {
+      "mean_donor_median": -0.017727741613355007,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.04848460983774833,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -0.027687095585485186,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.05920418536204183,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.012460917956203297,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": -0.034909829704057274,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.07201349632407887,
+      "positive_donors": 3
+    },
+    {
+      "mean_donor_median": 0.06227081479376845,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.03828551199097596,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": 0.12113136665280576,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": -0.03789851204606721,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.051869590934197164,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": 0.07830548971965082,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.12102226548677848,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.011817813783491457,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": 0.024968845599470917,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.07050232712981695,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": -0.0825682056826642,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -0.03270056835859457,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": -0.003830143623326232,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.000716577022000541,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": -0.09571866538718991,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.010025831335113646,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -0.048013931505845174,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -0.11281412690933838,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.018602232823719134,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.0617719868292288,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.04945378039160594,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.027385326305092408,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.004255483291879037,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.13250747001267085,
+      "positive_donors": 3
+    },
+    {
+      "mean_donor_median": -0.05952752638353617,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.03251930662460123,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.018639728339672854,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.04556664322835339,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.03818382799948012,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.043562708730266485,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": -0.014992066090572331,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -0.05573143827674515,
+      "positive_donors": 3
+    },
+    {
+      "mean_donor_median": -0.03203082474092612,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.02425995928685225,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.012449033609908622,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.05112847153271577,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.11558433691652863,
+      "positive_donors": 9
+    },
+    {
+      "mean_donor_median": 0.03409778396012811,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": 0.07115434576143224,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.027403476031775825,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": -0.01708809805894168,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.0850764727861779,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": -0.043639257712699275,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.05521113019819538,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.054572450520381566,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.005318804082381667,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": -0.015091797055206432,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -0.0201651748555318,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.07534344184817547,
+      "positive_donors": 3
+    },
+    {
+      "mean_donor_median": -0.09563129999806647,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.05031196386435777,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.06520259466753574,
+      "positive_donors": 3
+    },
+    {
+      "mean_donor_median": 0.02971509994412197,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": 0.019501009777094402,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.04847601254673254,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.035806697413823745,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.049926024902944954,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": -0.08954125473575521,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.019372010191126398,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.011143902528767374,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": -0.007542150788999312,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": 0.09549239382632173,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": 0.04556127520163306,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.036717081263092775,
+      "positive_donors": 9
+    },
+    {
+      "mean_donor_median": 0.049206154625008915,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.036641737126711635,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": 0.032829769915923186,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.024396645766528172,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.018494022900539888,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.05466035797809077,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.03594481976407426,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": 0.0031219002361660697,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": 0.00842709863124654,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.08070418526397417,
+      "positive_donors": 3
+    },
+    {
+      "mean_donor_median": 0.07225605936019981,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.043714144670622436,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.0019510297792492786,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.01044483923062578,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.037743216753751675,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": -0.02821453133389837,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.05751865266761045,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": -0.038837366072240496,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.0036513716024477497,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -0.053307798450755194,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.0919069847861393,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.015907586536727143,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -6.139641023155996e-05,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.05533228355451394,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.07104955587633467,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.02532672967670631,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.08639314346908133,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.07790264311447516,
+      "positive_donors": 3
+    },
+    {
+      "mean_donor_median": -0.0793386912032872,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": -0.009314131397701394,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.05476059195120164,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.0378086041716445,
+      "positive_donors": 3
+    },
+    {
+      "mean_donor_median": 0.004999083936440353,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": 0.059470299165242095,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.0661355888652151,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": 0.012733889515370625,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.04087204888191545,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": 0.029115222191381854,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": 0.0317706118974729,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": -0.03185069757915188,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.1058005550968506,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.022025425167488885,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -0.18432904201478773,
+      "positive_donors": 2
+    },
+    {
+      "mean_donor_median": 0.12168666420980356,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": -0.0715078869334867,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.00528105131234069,
+      "positive_donors": 3
+    },
+    {
+      "mean_donor_median": 0.033563217216340376,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.015827239210038122,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.0008912248710478687,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": -0.016738466872507667,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.04605186353819859,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.006763101415863791,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": 0.025486170513505085,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.012828844960614622,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.051048893605979584,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": 0.0580927391484821,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": -0.02240290222883391,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": -0.04871379825542751,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.02529966979255238,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.07963063157303334,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.02124268815242708,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.014578348488128732,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.020295964367304322,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.028436317294095775,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.014394811698543453,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.054945874494218526,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.02666105616449894,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": 0.0527012239664209,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.00898214928826944,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.02401882764605952,
+      "positive_donors": 3
+    },
+    {
+      "mean_donor_median": 0.050928372981094906,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.0910239707818719,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.06750525183124502,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": -0.009413543574759252,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.01393238466269689,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -0.013388115627700157,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -0.08187786820737619,
+      "positive_donors": 2
+    },
+    {
+      "mean_donor_median": -0.03662345507441298,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.0730879753476313,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": -0.046241742386780804,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.030291476044609623,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.04284449935610598,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": 0.01841013465430143,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": 0.0005096533232692158,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": -0.008585553871312492,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.04441239175249595,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.01933106644075454,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.047863766877871715,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": 0.07197789163518624,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": 0.003082392162799305,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.09430704838771427,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.010176982661548248,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.02597873847083727,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.12656157728205072,
+      "positive_donors": 2
+    },
+    {
+      "mean_donor_median": -0.015847788810526803,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.03713096618092451,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.0654695664686067,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.04158449758383426,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.03380233593869906,
+      "positive_donors": 3
+    },
+    {
+      "mean_donor_median": 0.0906150577263638,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.009781211527244635,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.01025041337893686,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.0012078841784117708,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.043756004424194854,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.14406627974575117,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": -0.06357378104346625,
+      "positive_donors": 2
+    },
+    {
+      "mean_donor_median": 0.08818422911760505,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.08295765346423876,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.042817179306679505,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.12262965388012999,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.13814030977748618,
+      "positive_donors": 10
+    },
+    {
+      "mean_donor_median": 0.062317872983119894,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": 0.018093073106198964,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.06561882195138018,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": -0.003181931920832696,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": 0.023147143680427824,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.034144620195858504,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -0.013997964805225563,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.08842448624489681,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": 0.049922983801919625,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": 0.05292495943663932,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": 0.02089461285794797,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.06108375475603914,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.018569906302696025,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.04692409364303834,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": 0.041553726899646745,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": 0.011085073775862079,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -0.016405930580248317,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.05398563465403359,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.08995800244052411,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.054213522314367324,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": 0.005375095263286424,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": 0.00829430786940999,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -0.02158138255532621,
+      "positive_donors": 3
+    },
+    {
+      "mean_donor_median": 0.1635334808498424,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": 0.07587934998168058,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.09792087189296773,
+      "positive_donors": 2
+    },
+    {
+      "mean_donor_median": 0.06142690017211147,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.1120710076056302,
+      "positive_donors": 3
+    },
+    {
+      "mean_donor_median": 0.06293017602914831,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -0.048113787884230215,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -0.15474521733429936,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -0.007627712952456042,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.04107876099477876,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": 0.011193442259424632,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": 0.03200435896255598,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.04530488390830618,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": 0.018677086016048117,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.03315685898777806,
+      "positive_donors": 3
+    },
+    {
+      "mean_donor_median": 0.039347560135176964,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.016100713918269775,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -0.013160798911564678,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.021659638316557078,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": -0.06364755984094338,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": -0.11634626621518744,
+      "positive_donors": 3
+    },
+    {
+      "mean_donor_median": -0.030338001616591653,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.017478125101442334,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.06653888517509048,
+      "positive_donors": 10
+    },
+    {
+      "mean_donor_median": 0.006507458262169102,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.0776148687976358,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": 0.0821345136075645,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.006600000979486704,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": 0.019820912174080395,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.0010407758400634477,
+      "positive_donors": 9
+    },
+    {
+      "mean_donor_median": -0.04448084172279193,
+      "positive_donors": 6
+    },
+    {
+      "mean_donor_median": -0.047809737854454935,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.04428085196592268,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": -0.10517650135300909,
+      "positive_donors": 3
+    },
+    {
+      "mean_donor_median": -0.05124002145698834,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": 0.04106348617396489,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.0046075131407293385,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.09933721953407482,
+      "positive_donors": 8
+    },
+    {
+      "mean_donor_median": -0.03484416467827397,
+      "positive_donors": 5
+    },
+    {
+      "mean_donor_median": 0.054058436787830455,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.11810706962914468,
+      "positive_donors": 4
+    },
+    {
+      "mean_donor_median": -0.04910491174421721,
+      "positive_donors": 7
+    },
+    {
+      "mean_donor_median": -0.01414066259379823,
+      "positive_donors": 6
+    }
+  ],
+  "negative_control_abs_ge_real_fraction": 0.0,
+  "limits": "Endpoint variables used in selection model; not pretreatment causal weighting. Positive-area source pairs only. No baseline-undetected objects, pixel masks or missing A1 outcomes. Post-result observational sensitivity cannot repair sign-only/specificity gates or independent validation."
+}
