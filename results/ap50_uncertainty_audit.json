@@ -1,0 +1,89 @@
+{
+  "status": "POST-EVAL DESCRIPTIVE; cannot upgrade frozen numerical gate",
+  "author_scorer_v2_mean": 0.7611081451177597,
+  "published_rounded_mean": 0.76,
+  "v2_image_sd_sample": 0.11321201538745203,
+  "n_images": 12,
+  "bootstrap_seed": 20260926,
+  "bootstrap_draws": 20000,
+  "v2_image_bootstrap_ci95": [
+    0.7032300756623348,
+    0.8250102845331033
+  ],
+  "v2_minus_clean_v1_paired_mean": 0.022436395287513733,
+  "v2_minus_v1_image_bootstrap_ci95": [
+    0.004473517586787541,
+    0.04140751498440901
+  ],
+  "paired_improved_images": 8,
+  "paired_declined_images": 2,
+  "paired_tied_images": 2,
+  "paired_nonzero_sign_p_two_sided": 0.109375,
+  "leave_one_image_out": [
+    {
+      "image": "0002_2013089_ckmbvhhhx0000345zlx7mhq1y_img.jpg",
+      "v2_mean": 0.7432319305159829,
+      "delta_vs_rounded_0.76": -0.0167680694840171
+    },
+    {
+      "image": "0002_2423915_cknt06dr33pzv3b68t421bk27_img.jpg",
+      "v2_mean": 0.7704608982259576,
+      "delta_vs_rounded_0.76": 0.010460898225957638
+    },
+    {
+      "image": "0002_7071445_ckm384kvx8ib3345zzs8qewl4_img.jpg",
+      "v2_mean": 0.7579092220826582,
+      "delta_vs_rounded_0.76": -0.0020907779173418017
+    },
+    {
+      "image": "0003_9960762_ckmdlvkmi14yv345z384v1grr_img.jpg",
+      "v2_mean": 0.7444412112236023,
+      "delta_vs_rounded_0.76": -0.015558788776397714
+    },
+    {
+      "image": "20210727_11562_ckufm1p2h4vzp0y7jh0fyg2yo_img.jpg",
+      "v2_mean": 0.7503624883565035,
+      "delta_vs_rounded_0.76": -0.009637511643496466
+    },
+    {
+      "image": "20210727_11753_ckuf91aiz36dm0y9p2t9k5qoh_img.jpg",
+      "v2_mean": 0.7696937322616577,
+      "delta_vs_rounded_0.76": 0.009693732261657706
+    },
+    {
+      "image": "20210727_12226_ckw3in2er4sqh10aofkm50w8l_img.jpg",
+      "v2_mean": 0.7639896327799017,
+      "delta_vs_rounded_0.76": 0.0039896327799017195
+    },
+    {
+      "image": "20210727_16063_ckw3j7wet8qan0zc39rca87mv_img.jpg",
+      "v2_mean": 0.7730607390403748,
+      "delta_vs_rounded_0.76": 0.013060739040374747
+    },
+    {
+      "image": "20210727_18315_ckw3ky6ln8z8z0zbnfc0o1gam_img.jpg",
+      "v2_mean": 0.766070544719696,
+      "delta_vs_rounded_0.76": 0.006070544719696036
+    },
+    {
+      "image": "20210727_26838_ckw3ig3xg5ngk0zbp0g7j7dqt_img.jpg",
+      "v2_mean": 0.7657064958052202,
+      "delta_vs_rounded_0.76": 0.005706495805220202
+    },
+    {
+      "image": "20210727_33832_ckw3n2vrs9btz0zbn3jqgbv4y_img.jpg",
+      "v2_mean": 0.769889235496521,
+      "delta_vs_rounded_0.76": 0.009889235496520987
+    },
+    {
+      "image": "20210727_37653_ckwggbhda5ql20z7n9eveah6i_img.jpg",
+      "v2_mean": 0.7584816109050404,
+      "delta_vs_rounded_0.76": -0.0015183890949596046
+    }
+  ],
+  "input_sha256": {
+    "results/trainonly_seg/sealed_eval_v2.json": "a6d91980e155022187586c5d5e8af94553e4a3252a5eaadd788c63d8ee461049",
+    "results/trainonly_seg/sealed_eval.json": "85a84a18f5cafb6609030f71bd1b6da8849f0da7339fef0bab9919ea35279aa8"
+  },
+  "limit": "image resampling is conditional on 12 published eval images; author-model head-to-head predictions unavailable"
+}

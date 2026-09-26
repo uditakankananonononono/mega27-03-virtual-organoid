@@ -1,0 +1,7 @@
+# VO3-R1 sealed-score interpretation audit (post-evaluation descriptive)
+
+Date 2026-09-26. This is NOT a new preregistered gate or a second sealed run. The saved 12-image v2 AP50 0.761108 and the published rounded 0.76 were seen before this plan. Preserve the locked >0.76 numerical decision but quantify how fragile its interpretation is.
+
+Before computation, choose the author-scorer image values from results/trainonly_seg/sealed_eval_v2.json, align by filename to the first clean v1 saved result, and compute (a) 20,000 seed-20260926 image-bootstrap percentile intervals for the v2 mean and paired v2-v1 difference, (b) each leave-one-image-out v2 mean and its distance from 0.76, and (c) a two-sided sign test over nonzero paired v2-v1 image differences. This is descriptive reuse of a small fixed eval set: bootstrap resampling does not generate new images, and paired v1-v2 is not a head-to-head author model test. No result will change weights, thresholds or the frozen G1 verdict. We will report every leave-one-out outcome, not select a favorable image subset.
+
+Falsification for the broad superiority narrative: a v2 mean interval including 0.76 or sensitivity to dropping an image shows the observed threshold crossing alone does not establish a statistically robust edge. A future prospectively fixed benchmark needs exact author checkpoint, matching image IDs and preprocessing, and/or a new disjoint imaging batch with paired predictions.
