@@ -1,0 +1,48 @@
+{
+  "selected_grid_index": 41,
+  "selected_params": [
+    0.5,
+    0.5,
+    0.3,
+    40
+  ],
+  "selected_val_mAP50": 0.826061474107307,
+  "selected_epoch": 30,
+  "val_grid_images": 20,
+  "n_candidates": 108,
+  "eval_used": false,
+  "grid_files": [
+    "results/trainonly_seg/val_grid_v2_000_008.json",
+    "results/trainonly_seg/val_grid_v2_008_016.json",
+    "results/trainonly_seg/val_grid_v2_016_024.json",
+    "results/trainonly_seg/val_grid_v2_024_032.json",
+    "results/trainonly_seg/val_grid_v2_032_040.json",
+    "results/trainonly_seg/val_grid_v2_040_048.json",
+    "results/trainonly_seg/val_grid_v2_048_056.json",
+    "results/trainonly_seg/val_grid_v2_056_064.json",
+    "results/trainonly_seg/val_grid_v2_064_072.json",
+    "results/trainonly_seg/val_grid_v2_072_080.json",
+    "results/trainonly_seg/val_grid_v2_080_088.json",
+    "results/trainonly_seg/val_grid_v2_088_096.json",
+    "results/trainonly_seg/val_grid_v2_096_104.json",
+    "results/trainonly_seg/val_grid_v2_104_108.json"
+  ],
+  "grid_file_sha256": {
+    "results/trainonly_seg/val_grid_v2_000_008.json": "8288b1362c4b67753069d2ef9c4385f8620ab74c6fcc7174e98635fe41d87cf2",
+    "results/trainonly_seg/val_grid_v2_008_016.json": "91c18405498d13ddaa99970fcf342dbfc8312ebfdf932ca8899437cd743adc2d",
+    "results/trainonly_seg/val_grid_v2_016_024.json": "562b5795666416815cfc52683a644b90d278133b41b67450207f1ebfd4969f8f",
+    "results/trainonly_seg/val_grid_v2_024_032.json": "ca71bd222f19ec3539e02f637db5374ab5eee38784e718049d87f6c83e8f56e7",
+    "results/trainonly_seg/val_grid_v2_032_040.json": "fa8afa473c3cf4e103f93c3efcc34c3828168eb140102b87d3ea4249e69a4578",
+    "results/trainonly_seg/val_grid_v2_040_048.json": "46a563044ef8d25b4cad227ee9e156f65be600f0338e4488b49c40e4bd9bb5a6",
+    "results/trainonly_seg/val_grid_v2_048_056.json": "de53f53eaca22ff4f4114dceb526678def462dbd7154f924f8afb5f1f92cc831",
+    "results/trainonly_seg/val_grid_v2_056_064.json": "e01eefd9121ef4779c9733b0c6f5e2b9d593ef26ee15639ee45dfdced8a198ee",
+    "results/trainonly_seg/val_grid_v2_064_072.json": "6798d0f6fc31d29bf0d1bdfb5a69d9202a705a4f321afbd14d24221e96f39b22",
+    "results/trainonly_seg/val_grid_v2_072_080.json": "03564d38432764b490e03c69c4598b366fe2f94e7a040f7471b989d70c878151",
+    "results/trainonly_seg/val_grid_v2_080_088.json": "090659ed3814dd5e8f27f65227df5d935c8b5d524781a2c0e275890502f1f5a5",
+    "results/trainonly_seg/val_grid_v2_088_096.json": "39f993bafbdeca4540b98cc60beab6055ad6498791c9b35aba1351ee89fce0e7",
+    "results/trainonly_seg/val_grid_v2_096_104.json": "b57537f011a1f43e84b8e6a411f5cb292008ea8348b5daa34df376ff2f96a0ae",
+    "results/trainonly_seg/val_grid_v2_104_108.json": "8e0452e890bec957754e01d79d3f85a157a09d06a9d3c5455a3c45c54afae9d6"
+  },
+  "selection_rule": "max val mAP50, earliest grid index breaks ties; all 108 rows in fixed ordered grid",
+  "note": "Frozen before single v2 eval. 20 first validation images only."
+}
