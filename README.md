@@ -1,6 +1,6 @@
 # Virtual organoid research toolkit (MEGA-PROGRAM-27, item 3)
 
-Research code and a working paper of at least 20 pages on the OrgaSegment single-organoid CFTR-modulator swelling assay, U-Net image segmentation, and GEO organoid-to-GTEx tissue fidelity. The findings are exploratory: a stricter donor x plate x dose size-effect test failed (9/12 donor medians positive, p=0.073), the U-Net does **not** beat the published segmentation benchmark, the proposed metabolic-parenchyma mechanism is unproven, and the apparent broad culture-fibroblast attractor was retracted after a sample-level audit. Do not use the fidelity rank or size-response estimates for diagnosis or care decisions.
+Research code and a working paper of at least 20 pages on the OrgaSegment single-organoid CFTR-modulator swelling assay, U-Net image segmentation, and GEO organoid-to-GTEx tissue fidelity. The findings are exploratory: a stricter donor x plate x dose size-effect test failed (9/12 donor medians positive, p=0.073), a paired no-forskolin specificity check also failed (3/11, p=0.967), the U-Net does **not** beat the published segmentation benchmark, the proposed metabolic-parenchyma mechanism is unproven, and the apparent broad culture-fibroblast attractor was retracted after a sample-level audit. Do not use the fidelity rank or size-response estimates for diagnosis or care decisions.
 
 ## Reproduce and use
 
