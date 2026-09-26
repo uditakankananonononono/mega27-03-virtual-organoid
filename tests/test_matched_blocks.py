@@ -27,3 +27,16 @@ def test_missing_or_invalid_inputs():
         matched_block_effects(pd.DataFrame({'A0': [2]}), 'drug')
     with pytest.raises(ValueError, match='small_max'):
         matched_block_effects(pd.read_csv(DATA).head(), 'drug', small_max=2000, large_min=1000)
+
+
+def test_reject_same_arm_and_nonfinite_inputs():
+    base = pd.read_csv(DATA).head(20)
+    with pytest.raises(ValueError, match="must differ"):
+        matched_block_effects(base, "DMSO", "DMSO")
+    with pytest.raises(ValueError, match="finite"):
+        matched_block_effects(base, "drug", small_max=float("nan"))
+    with pytest.raises(ValueError, match="numeric"):
+        matched_block_effects(base.assign(A0="bad"), "drug")
+    altered = base.copy()
+    altered.loc[altered.index[0], "swelling"] = float("inf")
+    assert matched_block_effects(altered, "VX445_VX661_VX770")["n_donors"] == 0

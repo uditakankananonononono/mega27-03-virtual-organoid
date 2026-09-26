@@ -16,10 +16,17 @@ def matched_block_effects(df: pd.DataFrame, drug: str, control: str = "DMSO",
     missing = sorted(required - set(df.columns))
     if missing:
         raise ValueError(f"missing columns: {missing}")
-    if not (0 < small_max < large_min and min_per_cell >= 1):
-        raise ValueError("require 0 < small_max < large_min and min_per_cell >= 1")
+    if drug == control:
+        raise ValueError("drug and control must differ")
+    if not (np.isfinite(small_max) and np.isfinite(large_min) and 0 < small_max < large_min
+            and isinstance(min_per_cell, (int, np.integer)) and min_per_cell >= 1):
+        raise ValueError("require finite 0 < small_max < large_min and integer min_per_cell >= 1")
+    for col in ("forskolin_concentration_µM", "A0", "swelling"):
+        if not pd.api.types.is_numeric_dtype(df[col]):
+            raise ValueError(f"{col} must be numeric")
     y = df[df.condition.isin([drug, control])].copy()
-    y = y[(y["forskolin_concentration_µM"] > 0) & (y.A0 > 0) & (y.swelling > 0)]
+    y = y[(y["forskolin_concentration_µM"] > 0) & (y.A0 > 0) & (y.swelling > 0)
+          & np.isfinite(y["forskolin_concentration_µM"]) & np.isfinite(y.A0) & np.isfinite(y.swelling)]
     y["size"] = np.select([y.A0 < small_max, y.A0 >= large_min], ["small", "large"], default="middle")
     y = y[y["size"] != "middle"].copy()
     y["log_swelling"] = np.log(y.swelling)
