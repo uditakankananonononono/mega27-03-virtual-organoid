@@ -1,4 +1,4 @@
-import numpy as np, pandas as pd
+import numpy as np, pandas as pd, pytest
 from vorganoid.sizeaware import size_effects, attenuation
 from vorganoid.cli import main
 
@@ -28,3 +28,19 @@ def test_cli(tmp_path, capsys):
     f = tmp_path / "t.csv"; _table(True).to_csv(f, index=False)
     assert main(["sizeaware", str(f), "--drug", "DRUG"]) == 0
     assert "mean_attenuation" in capsys.readouterr().out
+
+
+def test_invalid_inputs_and_finite_filter():
+    d = _table(True).head(50)
+    with pytest.raises(ValueError, match="must differ"):
+        size_effects(d, "DMSO", "DMSO")
+    with pytest.raises(ValueError, match="n_bins"):
+        size_effects(d, "DRUG", n_bins=1)
+    with pytest.raises(ValueError, match="positive finite"):
+        size_effects(d.assign(A0=np.inf), "DRUG")
+    with pytest.raises(ValueError, match="numeric"):
+        size_effects(d.assign(swelling="bad"), "DRUG")
+    with pytest.raises(ValueError, match="at least two"):
+        attenuation(pd.DataFrame({"donor": ["D1"], "bin0": [0.1]}))
+    with pytest.raises(ValueError, match="n_boot"):
+        attenuation(pd.DataFrame({"bin0": [0.1], "bin1": [0.2]}), n_boot=0)

@@ -12,10 +12,25 @@ import pandas as pd
 
 
 def size_effects(df, drug, control="DMSO", n_bins=4, min_per_cell=5):
+    required = {"donor", "condition", "A0", "swelling"}
+    missing = sorted(required - set(df.columns))
+    if missing:
+        raise ValueError(f"missing columns: {missing}")
+    if drug == control:
+        raise ValueError("drug and control must differ")
+    if not isinstance(n_bins, (int, np.integer)) or n_bins < 2:
+        raise ValueError("n_bins must be an integer >= 2")
+    if not isinstance(min_per_cell, (int, np.integer)) or min_per_cell < 1:
+        raise ValueError("min_per_cell must be a positive integer")
+    for col in ("A0", "swelling"):
+        if not pd.api.types.is_numeric_dtype(df[col]):
+            raise ValueError(f"{col} must be numeric")
     d = df[df.condition.isin([drug, control])].copy()
-    d = d[(d.swelling > 0) & (d.A0 > 0)]
+    d = d[(d.swelling > 0) & (d.A0 > 0) & np.isfinite(d.swelling) & np.isfinite(d.A0)]
+    if d.empty:
+        raise ValueError("no positive finite area/swelling observations in selected arms")
     d["ls"] = np.log(d.swelling)
-    edges = np.quantile(d.A0, np.linspace(0, 1, n_bins + 1)); edges[-1] += 1e-9
+    edges = np.quantile(d.A0, np.linspace(0, 1, n_bins + 1)); edges[-1] = np.nextafter(edges[-1], np.inf)
     d["bin"] = np.clip(np.searchsorted(edges, d.A0, side="right") - 1, 0, n_bins - 1)
     rows = []
     for don, g in d.groupby("donor"):
@@ -29,6 +44,10 @@ def size_effects(df, drug, control="DMSO", n_bins=4, min_per_cell=5):
 
 def attenuation(per_donor, n_boot=1000, seed=0):
     cols = [c for c in per_donor.columns if c.startswith("bin")]
+    if len(cols) < 2:
+        raise ValueError("per_donor needs at least two size-bin columns")
+    if not isinstance(n_boot, (int, np.integer)) or n_boot < 1:
+        raise ValueError("n_boot must be a positive integer")
     x = per_donor.dropna(subset=[cols[0], cols[-1]])
     att = (x[cols[-1]] - x[cols[0]]).values
     rng = np.random.default_rng(seed)
