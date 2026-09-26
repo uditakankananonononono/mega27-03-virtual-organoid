@@ -1,0 +1,211 @@
+{
+  "source": "Zenodo 10610438 same accession",
+  "preregistration": "results/preregistration_block_eligibility_sensitivity.md (commit before computation)",
+  "thresholds": [
+    {
+      "minimum_per_cell": 3,
+      "eligible_blocks": 31,
+      "eligible_donors": 12,
+      "positive_donors": 9,
+      "exact_one_sided_sign_p": 0.072998046875,
+      "verdict_under_frozen_rule": "FAIL",
+      "donors": [
+        {
+          "donor": "PDIO_01",
+          "n_blocks": 1,
+          "median_effect": -0.013369228502217861
+        },
+        {
+          "donor": "PDIO_03",
+          "n_blocks": 3,
+          "median_effect": 0.24498645696668553
+        },
+        {
+          "donor": "PDIO_05",
+          "n_blocks": 5,
+          "median_effect": 0.540102989942566
+        },
+        {
+          "donor": "PDIO_06",
+          "n_blocks": 5,
+          "median_effect": 0.3489530105042224
+        },
+        {
+          "donor": "PDIO_09",
+          "n_blocks": 3,
+          "median_effect": 0.23128799854545623
+        },
+        {
+          "donor": "PDIO_11",
+          "n_blocks": 1,
+          "median_effect": 0.32264373045057937
+        },
+        {
+          "donor": "PDIO_12",
+          "n_blocks": 3,
+          "median_effect": 0.1471365915512713
+        },
+        {
+          "donor": "PDIO_13",
+          "n_blocks": 2,
+          "median_effect": 0.2734400906777803
+        },
+        {
+          "donor": "PDIO_14",
+          "n_blocks": 2,
+          "median_effect": 0.2831766880312032
+        },
+        {
+          "donor": "PDIO_15",
+          "n_blocks": 3,
+          "median_effect": 0.06075982518089951
+        },
+        {
+          "donor": "PDIO_16",
+          "n_blocks": 2,
+          "median_effect": -0.09136764593477734
+        },
+        {
+          "donor": "PDIO_18",
+          "n_blocks": 1,
+          "median_effect": -0.005064831291446914
+        }
+      ]
+    },
+    {
+      "minimum_per_cell": 5,
+      "eligible_blocks": 28,
+      "eligible_donors": 12,
+      "positive_donors": 8,
+      "exact_one_sided_sign_p": 0.19384765625,
+      "verdict_under_frozen_rule": "FAIL",
+      "donors": [
+        {
+          "donor": "PDIO_01",
+          "n_blocks": 1,
+          "median_effect": -0.013369228502217861
+        },
+        {
+          "donor": "PDIO_03",
+          "n_blocks": 3,
+          "median_effect": 0.24498645696668553
+        },
+        {
+          "donor": "PDIO_05",
+          "n_blocks": 5,
+          "median_effect": 0.540102989942566
+        },
+        {
+          "donor": "PDIO_06",
+          "n_blocks": 5,
+          "median_effect": 0.3489530105042224
+        },
+        {
+          "donor": "PDIO_09",
+          "n_blocks": 3,
+          "median_effect": 0.23128799854545623
+        },
+        {
+          "donor": "PDIO_11",
+          "n_blocks": 1,
+          "median_effect": 0.32264373045057937
+        },
+        {
+          "donor": "PDIO_12",
+          "n_blocks": 1,
+          "median_effect": 0.06834482987382806
+        },
+        {
+          "donor": "PDIO_13",
+          "n_blocks": 2,
+          "median_effect": 0.2734400906777803
+        },
+        {
+          "donor": "PDIO_14",
+          "n_blocks": 2,
+          "median_effect": 0.2831766880312032
+        },
+        {
+          "donor": "PDIO_15",
+          "n_blocks": 2,
+          "median_effect": -0.045847216572494257
+        },
+        {
+          "donor": "PDIO_16",
+          "n_blocks": 2,
+          "median_effect": -0.09136764593477734
+        },
+        {
+          "donor": "PDIO_18",
+          "n_blocks": 1,
+          "median_effect": -0.005064831291446914
+        }
+      ]
+    },
+    {
+      "minimum_per_cell": 10,
+      "eligible_blocks": 15,
+      "eligible_donors": 6,
+      "positive_donors": 6,
+      "exact_one_sided_sign_p": 0.015625,
+      "verdict_under_frozen_rule": "UNINTERPRETABLE",
+      "donors": [
+        {
+          "donor": "PDIO_03",
+          "n_blocks": 3,
+          "median_effect": 0.24498645696668553
+        },
+        {
+          "donor": "PDIO_05",
+          "n_blocks": 5,
+          "median_effect": 0.540102989942566
+        },
+        {
+          "donor": "PDIO_06",
+          "n_blocks": 4,
+          "median_effect": 0.32651185302589125
+        },
+        {
+          "donor": "PDIO_09",
+          "n_blocks": 1,
+          "median_effect": 0.23128799854545623
+        },
+        {
+          "donor": "PDIO_13",
+          "n_blocks": 1,
+          "median_effect": 0.26898703081835273
+        },
+        {
+          "donor": "PDIO_14",
+          "n_blocks": 1,
+          "median_effect": 0.19704483660865846
+        }
+      ]
+    },
+    {
+      "minimum_per_cell": 20,
+      "eligible_blocks": 9,
+      "eligible_donors": 3,
+      "positive_donors": 3,
+      "exact_one_sided_sign_p": 0.125,
+      "verdict_under_frozen_rule": "UNINTERPRETABLE",
+      "donors": [
+        {
+          "donor": "PDIO_03",
+          "n_blocks": 3,
+          "median_effect": 0.24498645696668553
+        },
+        {
+          "donor": "PDIO_05",
+          "n_blocks": 4,
+          "median_effect": 0.4350324390181754
+        },
+        {
+          "donor": "PDIO_06",
+          "n_blocks": 2,
+          "median_effect": 0.2091292380512297
+        }
+      ]
+    }
+  ]
+}
