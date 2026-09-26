@@ -50,7 +50,7 @@ def cmd_segment(a):
     from PIL import Image
     from .seg import UNet, instances_from_probs
     net = UNet()
-    checkpoint = torch.load(a.model, map_location="cpu", weights_only=False)
+    checkpoint = torch.load(a.model, map_location="cpu", weights_only=True)
     # Legacy weights are bare state dictionaries; train-only checkpoints include epoch and optimizer state.
     net.load_state_dict(checkpoint["net"] if "net" in checkpoint and "epoch" in checkpoint else checkpoint)
     net.eval()
