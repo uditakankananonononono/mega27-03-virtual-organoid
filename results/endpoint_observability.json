@@ -1,0 +1,1229 @@
+{
+  "status": "post-result conditional endpoint-observability and t0 score control, same accession",
+  "protocol": "notes/postresult_endpoint_observability_protocol.md",
+  "source_url": "https://zenodo.org/records/10610438",
+  "source_sha256": "0e0e7913947a29c7b32ce87ca73a98614033d41ce63063a1d65053e766b2f315",
+  "n_baseline_detected_original_extreme_size_cells": 6964,
+  "n_observable_endpoint": 4964,
+  "n_original_blocks": 31,
+  "n_donors": 12,
+  "score0_missing": 0,
+  "endpoint_model": {
+    "terms": {
+      "treatment": {
+        "coefficient": -0.00906627587419609,
+        "odds_ratio": 0.990974698881937,
+        "cluster_se": 0.1356558769124322,
+        "cluster_p_two_sided": 0.9467147302603439,
+        "ci95_logit": [
+          -0.27494690891376183,
+          0.2568143571653696
+        ]
+      },
+      "large": {
+        "coefficient": 1.2406862025394918,
+        "odds_ratio": 3.4579855292629613,
+        "cluster_se": 0.29272121721361843,
+        "cluster_p_two_sided": 2.2506158447898286e-05,
+        "ci95_logit": [
+          0.6669631592900735,
+          1.81440924578891
+        ]
+      },
+      "treatment:large": {
+        "coefficient": -0.44790521347181383,
+        "odds_ratio": 0.6389652464589632,
+        "cluster_se": 0.17330934766170705,
+        "cluster_p_two_sided": 0.00975411856171145,
+        "ci95_logit": [
+          -0.7875852930728907,
+          -0.10822513387073696
+        ]
+      },
+      "log_A0": {
+        "coefficient": 0.4788727186608941,
+        "odds_ratio": 1.614253658114917,
+        "cluster_se": 0.0945656486992608,
+        "cluster_p_two_sided": 4.10725732833351e-07,
+        "ci95_logit": [
+          0.2935274530356759,
+          0.6642179842861122
+        ]
+      }
+    },
+    "converged": true,
+    "nobs": 6964,
+    "deviance": 6805.774641722632
+  },
+  "baseline_high_score_negative_control": {
+    "terms": {
+      "treatment": {
+        "coefficient": -0.03938607889178882,
+        "odds_ratio": 0.9613794691669736,
+        "cluster_se": 0.11432042880224207,
+        "cluster_p_two_sided": 0.7304525955783325,
+        "ci95_logit": [
+          -0.2634500020413587,
+          0.18467784425778108
+        ]
+      },
+      "large": {
+        "coefficient": 0.8502815128489033,
+        "odds_ratio": 2.3403055852933075,
+        "cluster_se": 0.20370348437212107,
+        "cluster_p_two_sided": 2.991482865212931e-05,
+        "ci95_logit": [
+          0.45103001995422826,
+          1.2495330057435783
+        ]
+      },
+      "treatment:large": {
+        "coefficient": -0.024513419667308217,
+        "odds_ratio": 0.975784594125926,
+        "cluster_se": 0.09916903387653893,
+        "cluster_p_two_sided": 0.8047625404583931,
+        "ci95_logit": [
+          -0.21888115444695705,
+          0.16985431511234061
+        ]
+      },
+      "log_A0": {
+        "coefficient": 0.2131160857475148,
+        "odds_ratio": 1.2375283023035628,
+        "cluster_se": 0.08587318870322648,
+        "cluster_p_two_sided": 0.013073768408451335,
+        "ci95_logit": [
+          0.04480772865157909,
+          0.38142444284345056
+        ]
+      }
+    },
+    "converged": true,
+    "nobs": 6964,
+    "deviance": 8387.675453570584
+  },
+  "equal_donor_mean_median_gaps": {
+    "treatment_gap_small": 0.05229601272807081,
+    "treatment_gap_large": -0.052205340088968405,
+    "gap_interaction_large_minus_small": -0.09320144296758369
+  },
+  "donor_medians": {
+    "PDIO_01": {
+      "treatment_gap_small": 0.42857142857142855,
+      "treatment_gap_large": -0.03824786324786322,
+      "gap_interaction_large_minus_small": -0.46681929181929177
+    },
+    "PDIO_03": {
+      "treatment_gap_small": -0.1546938775510205,
+      "treatment_gap_large": -0.029532163742690076,
+      "gap_interaction_large_minus_small": 0.05991928738708607
+    },
+    "PDIO_05": {
+      "treatment_gap_small": 0.0535714285714286,
+      "treatment_gap_large": -0.010531135531135494,
+      "gap_interaction_large_minus_small": -0.06995781673132279
+    },
+    "PDIO_06": {
+      "treatment_gap_small": -0.07245543415756178,
+      "treatment_gap_large": -0.11269841269841263,
+      "gap_interaction_large_minus_small": -0.037692862692862705
+    },
+    "PDIO_09": {
+      "treatment_gap_small": 0.2777777777777778,
+      "treatment_gap_large": -0.09320782576596531,
+      "gap_interaction_large_minus_small": -0.24273197929111912
+    },
+    "PDIO_11": {
+      "treatment_gap_small": -0.19780219780219788,
+      "treatment_gap_large": -0.1505847953216375,
+      "gap_interaction_large_minus_small": 0.04721740248056039
+    },
+    "PDIO_12": {
+      "treatment_gap_small": -0.06327543424317619,
+      "treatment_gap_large": -0.0625,
+      "gap_interaction_large_minus_small": 0.07666829138603329
+    },
+    "PDIO_13": {
+      "treatment_gap_small": 0.0838105667315596,
+      "treatment_gap_large": 0.04241673029087073,
+      "gap_interaction_large_minus_small": -0.041393836440688864
+    },
+    "PDIO_14": {
+      "treatment_gap_small": -0.19129013924410343,
+      "treatment_gap_large": -0.13076394576394573,
+      "gap_interaction_large_minus_small": 0.0605261934801577
+    },
+    "PDIO_15": {
+      "treatment_gap_small": 0.0625,
+      "treatment_gap_large": -0.09784688995215318,
+      "gap_interaction_large_minus_small": -0.16034688995215318
+    },
+    "PDIO_16": {
+      "treatment_gap_small": -0.006106410361729542,
+      "treatment_gap_large": -0.041384068927448614,
+      "gap_interaction_large_minus_small": -0.03527765856571907
+    },
+    "PDIO_18": {
+      "treatment_gap_small": 0.40694444444444444,
+      "treatment_gap_large": 0.09841628959276016,
+      "gap_interaction_large_minus_small": -0.3085281548516843
+    }
+  },
+  "blocks": [
+    {
+      "donor": "PDIO_01",
+      "experiment": "20230125_DIS3_plate014",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 21,
+          "seen": 5,
+          "rate": 0.23809523809523808,
+          "baseline_high_score_rate": 0.5714285714285714
+        },
+        "DMSO:large": {
+          "n": 72,
+          "seen": 67,
+          "rate": 0.9305555555555556,
+          "baseline_high_score_rate": 0.875
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 9,
+          "seen": 6,
+          "rate": 0.6666666666666666,
+          "baseline_high_score_rate": 0.6666666666666666
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 65,
+          "seen": 58,
+          "rate": 0.8923076923076924,
+          "baseline_high_score_rate": 0.6615384615384615
+        }
+      },
+      "treatment_gap_small": 0.42857142857142855,
+      "treatment_gap_large": -0.03824786324786322,
+      "gap_interaction_large_minus_small": -0.46681929181929177
+    },
+    {
+      "donor": "PDIO_03",
+      "experiment": "HitCF_A1_DIS_20230207_plate001",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 49,
+          "seen": 36,
+          "rate": 0.7346938775510204,
+          "baseline_high_score_rate": 0.22448979591836735
+        },
+        "DMSO:large": {
+          "n": 96,
+          "seen": 87,
+          "rate": 0.90625,
+          "baseline_high_score_rate": 0.65625
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 50,
+          "seen": 29,
+          "rate": 0.58,
+          "baseline_high_score_rate": 0.24
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 122,
+          "seen": 99,
+          "rate": 0.8114754098360656,
+          "baseline_high_score_rate": 0.680327868852459
+        }
+      },
+      "treatment_gap_small": -0.1546938775510205,
+      "treatment_gap_large": -0.09477459016393441,
+      "gap_interaction_large_minus_small": 0.05991928738708607
+    },
+    {
+      "donor": "PDIO_03",
+      "experiment": "HitCF_A1_DIS_20230228_plate010",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 148,
+          "seen": 73,
+          "rate": 0.49324324324324326,
+          "baseline_high_score_rate": 0.5067567567567568
+        },
+        "DMSO:large": {
+          "n": 90,
+          "seen": 82,
+          "rate": 0.9111111111111111,
+          "baseline_high_score_rate": 0.8333333333333334
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 173,
+          "seen": 77,
+          "rate": 0.44508670520231214,
+          "baseline_high_score_rate": 0.5780346820809249
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 76,
+          "seen": 67,
+          "rate": 0.881578947368421,
+          "baseline_high_score_rate": 0.868421052631579
+        }
+      },
+      "treatment_gap_small": -0.04815653804093112,
+      "treatment_gap_large": -0.029532163742690076,
+      "gap_interaction_large_minus_small": 0.018624374298241042
+    },
+    {
+      "donor": "PDIO_03",
+      "experiment": "HitCF_A1_DIS_20230307_plate013",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 27,
+          "seen": 22,
+          "rate": 0.8148148148148148,
+          "baseline_high_score_rate": 0.25925925925925924
+        },
+        "DMSO:large": {
+          "n": 52,
+          "seen": 48,
+          "rate": 0.9230769230769231,
+          "baseline_high_score_rate": 0.8076923076923077
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 34,
+          "seen": 22,
+          "rate": 0.6470588235294118,
+          "baseline_high_score_rate": 0.4117647058823529
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 58,
+          "seen": 55,
+          "rate": 0.9482758620689655,
+          "baseline_high_score_rate": 0.8793103448275862
+        }
+      },
+      "treatment_gap_small": -0.16775599128540297,
+      "treatment_gap_large": 0.025198938992042397,
+      "gap_interaction_large_minus_small": 0.19295493027744537
+    },
+    {
+      "donor": "PDIO_05",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 38,
+          "seen": 24,
+          "rate": 0.631578947368421,
+          "baseline_high_score_rate": 0.42105263157894735
+        },
+        "DMSO:large": {
+          "n": 77,
+          "seen": 63,
+          "rate": 0.8181818181818182,
+          "baseline_high_score_rate": 0.7142857142857143
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 52,
+          "seen": 27,
+          "rate": 0.5192307692307693,
+          "baseline_high_score_rate": 0.4230769230769231
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 85,
+          "seen": 77,
+          "rate": 0.9058823529411765,
+          "baseline_high_score_rate": 0.7647058823529411
+        }
+      },
+      "treatment_gap_small": -0.11234817813765174,
+      "treatment_gap_large": 0.08770053475935824,
+      "gap_interaction_large_minus_small": 0.20004871289700998
+    },
+    {
+      "donor": "PDIO_05",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.32,
+      "cells": {
+        "DMSO:small": {
+          "n": 58,
+          "seen": 27,
+          "rate": 0.46551724137931033,
+          "baseline_high_score_rate": 0.4827586206896552
+        },
+        "DMSO:large": {
+          "n": 123,
+          "seen": 105,
+          "rate": 0.8536585365853658,
+          "baseline_high_score_rate": 0.7967479674796748
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 59,
+          "seen": 21,
+          "rate": 0.3559322033898305,
+          "baseline_high_score_rate": 0.3220338983050847
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 88,
+          "seen": 84,
+          "rate": 0.9545454545454546,
+          "baseline_high_score_rate": 0.8181818181818182
+        }
+      },
+      "treatment_gap_small": -0.10958503798947983,
+      "treatment_gap_large": 0.10088691796008875,
+      "gap_interaction_large_minus_small": 0.21047195594956858
+    },
+    {
+      "donor": "PDIO_05",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.8,
+      "cells": {
+        "DMSO:small": {
+          "n": 79,
+          "seen": 38,
+          "rate": 0.4810126582278481,
+          "baseline_high_score_rate": 0.569620253164557
+        },
+        "DMSO:large": {
+          "n": 104,
+          "seen": 89,
+          "rate": 0.8557692307692307,
+          "baseline_high_score_rate": 0.8365384615384616
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 66,
+          "seen": 42,
+          "rate": 0.6363636363636364,
+          "baseline_high_score_rate": 0.45454545454545453
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 84,
+          "seen": 71,
+          "rate": 0.8452380952380952,
+          "baseline_high_score_rate": 0.7261904761904762
+        }
+      },
+      "treatment_gap_small": 0.15535097813578824,
+      "treatment_gap_large": -0.010531135531135494,
+      "gap_interaction_large_minus_small": -0.16588211366692374
+    },
+    {
+      "donor": "PDIO_05",
+      "experiment": "20230301_DIS3_plate023",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 42,
+          "seen": 33,
+          "rate": 0.7857142857142857,
+          "baseline_high_score_rate": 0.19047619047619047
+        },
+        "DMSO:large": {
+          "n": 58,
+          "seen": 54,
+          "rate": 0.9310344827586207,
+          "baseline_high_score_rate": 0.6896551724137931
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 56,
+          "seen": 47,
+          "rate": 0.8392857142857143,
+          "baseline_high_score_rate": 0.32142857142857145
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 106,
+          "seen": 90,
+          "rate": 0.8490566037735849,
+          "baseline_high_score_rate": 0.6698113207547169
+        }
+      },
+      "treatment_gap_small": 0.0535714285714286,
+      "treatment_gap_large": -0.08197787898503572,
+      "gap_interaction_large_minus_small": -0.13554930755646433
+    },
+    {
+      "donor": "PDIO_05",
+      "experiment": "20230308_DIS3_plate025",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 38,
+          "seen": 18,
+          "rate": 0.47368421052631576,
+          "baseline_high_score_rate": 0.5263157894736842
+        },
+        "DMSO:large": {
+          "n": 72,
+          "seen": 67,
+          "rate": 0.9305555555555556,
+          "baseline_high_score_rate": 0.8888888888888888
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 49,
+          "seen": 26,
+          "rate": 0.5306122448979592,
+          "baseline_high_score_rate": 0.6530612244897959
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 97,
+          "seen": 89,
+          "rate": 0.9175257731958762,
+          "baseline_high_score_rate": 0.9072164948453608
+        }
+      },
+      "treatment_gap_small": 0.056928034371643454,
+      "treatment_gap_large": -0.013029782359679332,
+      "gap_interaction_large_minus_small": -0.06995781673132279
+    },
+    {
+      "donor": "PDIO_06",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 31,
+          "seen": 9,
+          "rate": 0.2903225806451613,
+          "baseline_high_score_rate": 0.2903225806451613
+        },
+        "DMSO:large": {
+          "n": 49,
+          "seen": 46,
+          "rate": 0.9387755102040817,
+          "baseline_high_score_rate": 0.4489795918367347
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 74,
+          "seen": 18,
+          "rate": 0.24324324324324326,
+          "baseline_high_score_rate": 0.6621621621621622
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 125,
+          "seen": 109,
+          "rate": 0.872,
+          "baseline_high_score_rate": 0.84
+        }
+      },
+      "treatment_gap_small": -0.04707933740191805,
+      "treatment_gap_large": -0.06677551020408168,
+      "gap_interaction_large_minus_small": -0.019696172802163625
+    },
+    {
+      "donor": "PDIO_06",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.32,
+      "cells": {
+        "DMSO:small": {
+          "n": 47,
+          "seen": 25,
+          "rate": 0.5319148936170213,
+          "baseline_high_score_rate": 0.5531914893617021
+        },
+        "DMSO:large": {
+          "n": 81,
+          "seen": 74,
+          "rate": 0.9135802469135802,
+          "baseline_high_score_rate": 0.6790123456790124
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 37,
+          "seen": 17,
+          "rate": 0.4594594594594595,
+          "baseline_high_score_rate": 0.43243243243243246
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 89,
+          "seen": 69,
+          "rate": 0.7752808988764045,
+          "baseline_high_score_rate": 0.797752808988764
+        }
+      },
+      "treatment_gap_small": -0.07245543415756178,
+      "treatment_gap_large": -0.1382993480371757,
+      "gap_interaction_large_minus_small": -0.06584391387961391
+    },
+    {
+      "donor": "PDIO_06",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.8,
+      "cells": {
+        "DMSO:small": {
+          "n": 28,
+          "seen": 15,
+          "rate": 0.5357142857142857,
+          "baseline_high_score_rate": 0.39285714285714285
+        },
+        "DMSO:large": {
+          "n": 72,
+          "seen": 65,
+          "rate": 0.9027777777777778,
+          "baseline_high_score_rate": 0.5
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 66,
+          "seen": 27,
+          "rate": 0.4090909090909091,
+          "baseline_high_score_rate": 0.4696969696969697
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 130,
+          "seen": 96,
+          "rate": 0.7384615384615385,
+          "baseline_high_score_rate": 0.7307692307692307
+        }
+      },
+      "treatment_gap_small": -0.12662337662337658,
+      "treatment_gap_large": -0.1643162393162393,
+      "gap_interaction_large_minus_small": -0.037692862692862705
+    },
+    {
+      "donor": "PDIO_06",
+      "experiment": "20230301_DIS3_plate023",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 52,
+          "seen": 23,
+          "rate": 0.4423076923076923,
+          "baseline_high_score_rate": 0.5192307692307693
+        },
+        "DMSO:large": {
+          "n": 61,
+          "seen": 58,
+          "rate": 0.9508196721311475,
+          "baseline_high_score_rate": 0.9180327868852459
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 53,
+          "seen": 32,
+          "rate": 0.6037735849056604,
+          "baseline_high_score_rate": 0.4528301886792453
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 94,
+          "seen": 79,
+          "rate": 0.8404255319148937,
+          "baseline_high_score_rate": 0.7659574468085106
+        }
+      },
+      "treatment_gap_small": 0.16146589259796806,
+      "treatment_gap_large": -0.11039414021625382,
+      "gap_interaction_large_minus_small": -0.2718600328142219
+    },
+    {
+      "donor": "PDIO_06",
+      "experiment": "20230308_DIS3_plate025",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 44,
+          "seen": 23,
+          "rate": 0.5227272727272727,
+          "baseline_high_score_rate": 0.6818181818181818
+        },
+        "DMSO:large": {
+          "n": 70,
+          "seen": 64,
+          "rate": 0.9142857142857143,
+          "baseline_high_score_rate": 0.9571428571428572
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 78,
+          "seen": 33,
+          "rate": 0.4230769230769231,
+          "baseline_high_score_rate": 0.6923076923076923
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 126,
+          "seen": 101,
+          "rate": 0.8015873015873016,
+          "baseline_high_score_rate": 0.8888888888888888
+        }
+      },
+      "treatment_gap_small": -0.09965034965034963,
+      "treatment_gap_large": -0.11269841269841263,
+      "gap_interaction_large_minus_small": -0.013048063048062997
+    },
+    {
+      "donor": "PDIO_09",
+      "experiment": "20230125_DIS3_plate014",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 20,
+          "seen": 10,
+          "rate": 0.5,
+          "baseline_high_score_rate": 0.65
+        },
+        "DMSO:large": {
+          "n": 93,
+          "seen": 84,
+          "rate": 0.9032258064516129,
+          "baseline_high_score_rate": 0.7634408602150538
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 9,
+          "seen": 7,
+          "rate": 0.7777777777777778,
+          "baseline_high_score_rate": 0.3333333333333333
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 81,
+          "seen": 76,
+          "rate": 0.9382716049382716,
+          "baseline_high_score_rate": 0.691358024691358
+        }
+      },
+      "treatment_gap_small": 0.2777777777777778,
+      "treatment_gap_large": 0.035045798486658675,
+      "gap_interaction_large_minus_small": -0.24273197929111912
+    },
+    {
+      "donor": "PDIO_09",
+      "experiment": "20230125_DIS3_plate015",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 29,
+          "seen": 13,
+          "rate": 0.4482758620689655,
+          "baseline_high_score_rate": 0.5517241379310345
+        },
+        "DMSO:large": {
+          "n": 88,
+          "seen": 77,
+          "rate": 0.875,
+          "baseline_high_score_rate": 0.8068181818181818
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 19,
+          "seen": 9,
+          "rate": 0.47368421052631576,
+          "baseline_high_score_rate": 0.631578947368421
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 129,
+          "seen": 99,
+          "rate": 0.7674418604651163,
+          "baseline_high_score_rate": 0.7441860465116279
+        }
+      },
+      "treatment_gap_small": 0.02540834845735024,
+      "treatment_gap_large": -0.10755813953488369,
+      "gap_interaction_large_minus_small": -0.13296648799223393
+    },
+    {
+      "donor": "PDIO_09",
+      "experiment": "20230207_DIS3_plate017",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 69,
+          "seen": 31,
+          "rate": 0.4492753623188406,
+          "baseline_high_score_rate": 0.5652173913043478
+        },
+        "DMSO:large": {
+          "n": 86,
+          "seen": 79,
+          "rate": 0.9186046511627907,
+          "baseline_high_score_rate": 0.7906976744186046
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 26,
+          "seen": 19,
+          "rate": 0.7307692307692307,
+          "baseline_high_score_rate": 0.46153846153846156
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 63,
+          "seen": 52,
+          "rate": 0.8253968253968254,
+          "baseline_high_score_rate": 0.6190476190476191
+        }
+      },
+      "treatment_gap_small": 0.28149386845039015,
+      "treatment_gap_large": -0.09320782576596531,
+      "gap_interaction_large_minus_small": -0.37470169421635546
+    },
+    {
+      "donor": "PDIO_11",
+      "experiment": "20221027_DIS3_plate006",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 13,
+          "seen": 10,
+          "rate": 0.7692307692307693,
+          "baseline_high_score_rate": 0.07692307692307693
+        },
+        "DMSO:large": {
+          "n": 36,
+          "seen": 31,
+          "rate": 0.8611111111111112,
+          "baseline_high_score_rate": 0.5833333333333334
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 14,
+          "seen": 8,
+          "rate": 0.5714285714285714,
+          "baseline_high_score_rate": 0.14285714285714285
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 76,
+          "seen": 54,
+          "rate": 0.7105263157894737,
+          "baseline_high_score_rate": 0.47368421052631576
+        }
+      },
+      "treatment_gap_small": -0.19780219780219788,
+      "treatment_gap_large": -0.1505847953216375,
+      "gap_interaction_large_minus_small": 0.04721740248056039
+    },
+    {
+      "donor": "PDIO_12",
+      "experiment": "20221020_DIS3_plate004",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 78,
+          "seen": 15,
+          "rate": 0.19230769230769232,
+          "baseline_high_score_rate": 0.5512820512820513
+        },
+        "DMSO:large": {
+          "n": 64,
+          "seen": 54,
+          "rate": 0.84375,
+          "baseline_high_score_rate": 0.890625
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 31,
+          "seen": 4,
+          "rate": 0.12903225806451613,
+          "baseline_high_score_rate": 0.5161290322580645
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 56,
+          "seen": 48,
+          "rate": 0.8571428571428571,
+          "baseline_high_score_rate": 0.7857142857142857
+        }
+      },
+      "treatment_gap_small": -0.06327543424317619,
+      "treatment_gap_large": 0.013392857142857095,
+      "gap_interaction_large_minus_small": 0.07666829138603329
+    },
+    {
+      "donor": "PDIO_12",
+      "experiment": "20221026_DIS3_plate005",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 6,
+          "seen": 5,
+          "rate": 0.8333333333333334,
+          "baseline_high_score_rate": 0.0
+        },
+        "DMSO:large": {
+          "n": 49,
+          "seen": 46,
+          "rate": 0.9387755102040817,
+          "baseline_high_score_rate": 0.5918367346938775
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 7,
+          "seen": 3,
+          "rate": 0.42857142857142855,
+          "baseline_high_score_rate": 0.14285714285714285
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 70,
+          "seen": 61,
+          "rate": 0.8714285714285714,
+          "baseline_high_score_rate": 0.5857142857142857
+        }
+      },
+      "treatment_gap_small": -0.4047619047619048,
+      "treatment_gap_large": -0.06734693877551023,
+      "gap_interaction_large_minus_small": 0.3374149659863946
+    },
+    {
+      "donor": "PDIO_12",
+      "experiment": "20221027_DIS3_plate006",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 20,
+          "seen": 10,
+          "rate": 0.5,
+          "baseline_high_score_rate": 0.05
+        },
+        "DMSO:large": {
+          "n": 48,
+          "seen": 39,
+          "rate": 0.8125,
+          "baseline_high_score_rate": 0.6875
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 11,
+          "seen": 7,
+          "rate": 0.6363636363636364,
+          "baseline_high_score_rate": 0.09090909090909091
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 40,
+          "seen": 30,
+          "rate": 0.75,
+          "baseline_high_score_rate": 0.825
+        }
+      },
+      "treatment_gap_small": 0.13636363636363635,
+      "treatment_gap_large": -0.0625,
+      "gap_interaction_large_minus_small": -0.19886363636363635
+    },
+    {
+      "donor": "PDIO_13",
+      "experiment": "20221020_DIS3_plate004",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 69,
+          "seen": 15,
+          "rate": 0.21739130434782608,
+          "baseline_high_score_rate": 0.6666666666666666
+        },
+        "DMSO:large": {
+          "n": 51,
+          "seen": 41,
+          "rate": 0.803921568627451,
+          "baseline_high_score_rate": 0.8235294117647058
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 67,
+          "seen": 11,
+          "rate": 0.16417910447761194,
+          "baseline_high_score_rate": 0.4925373134328358
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 41,
+          "seen": 33,
+          "rate": 0.8048780487804879,
+          "baseline_high_score_rate": 0.8292682926829268
+        }
+      },
+      "treatment_gap_small": -0.05321219987021414,
+      "treatment_gap_large": 0.0009564801530368428,
+      "gap_interaction_large_minus_small": 0.05416868002325098
+    },
+    {
+      "donor": "PDIO_13",
+      "experiment": "20221027_DIS3_plate006",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 16,
+          "seen": 5,
+          "rate": 0.3125,
+          "baseline_high_score_rate": 0.125
+        },
+        "DMSO:large": {
+          "n": 29,
+          "seen": 25,
+          "rate": 0.8620689655172413,
+          "baseline_high_score_rate": 0.7586206896551724
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 15,
+          "seen": 8,
+          "rate": 0.5333333333333333,
+          "baseline_high_score_rate": 0.13333333333333333
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 37,
+          "seen": 35,
+          "rate": 0.9459459459459459,
+          "baseline_high_score_rate": 0.7567567567567568
+        }
+      },
+      "treatment_gap_small": 0.22083333333333333,
+      "treatment_gap_large": 0.08387698042870462,
+      "gap_interaction_large_minus_small": -0.1369563529046287
+    },
+    {
+      "donor": "PDIO_14",
+      "experiment": "20221020_DIS3_plate004",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 18,
+          "seen": 7,
+          "rate": 0.3888888888888889,
+          "baseline_high_score_rate": 0.5
+        },
+        "DMSO:large": {
+          "n": 37,
+          "seen": 29,
+          "rate": 0.7837837837837838,
+          "baseline_high_score_rate": 0.7027027027027027
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 34,
+          "seen": 8,
+          "rate": 0.23529411764705882,
+          "baseline_high_score_rate": 0.5294117647058824
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 54,
+          "seen": 31,
+          "rate": 0.5740740740740741,
+          "baseline_high_score_rate": 0.6666666666666666
+        }
+      },
+      "treatment_gap_small": -0.15359477124183007,
+      "treatment_gap_large": -0.2097097097097097,
+      "gap_interaction_large_minus_small": -0.05611493846787963
+    },
+    {
+      "donor": "PDIO_14",
+      "experiment": "20221027_DIS3_plate006",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 23,
+          "seen": 16,
+          "rate": 0.6956521739130435,
+          "baseline_high_score_rate": 0.17391304347826086
+        },
+        "DMSO:large": {
+          "n": 44,
+          "seen": 41,
+          "rate": 0.9318181818181818,
+          "baseline_high_score_rate": 0.8636363636363636
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 30,
+          "seen": 14,
+          "rate": 0.4666666666666667,
+          "baseline_high_score_rate": 0.13333333333333333
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 50,
+          "seen": 44,
+          "rate": 0.88,
+          "baseline_high_score_rate": 0.76
+        }
+      },
+      "treatment_gap_small": -0.22898550724637678,
+      "treatment_gap_large": -0.05181818181818176,
+      "gap_interaction_large_minus_small": 0.17716732542819502
+    },
+    {
+      "donor": "PDIO_15",
+      "experiment": "20221020_DIS3_plate004",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 48,
+          "seen": 9,
+          "rate": 0.1875,
+          "baseline_high_score_rate": 0.5625
+        },
+        "DMSO:large": {
+          "n": 76,
+          "seen": 71,
+          "rate": 0.9342105263157895,
+          "baseline_high_score_rate": 0.9078947368421053
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 28,
+          "seen": 7,
+          "rate": 0.25,
+          "baseline_high_score_rate": 0.6428571428571429
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 55,
+          "seen": 46,
+          "rate": 0.8363636363636363,
+          "baseline_high_score_rate": 0.8
+        }
+      },
+      "treatment_gap_small": 0.0625,
+      "treatment_gap_large": -0.09784688995215318,
+      "gap_interaction_large_minus_small": -0.16034688995215318
+    },
+    {
+      "donor": "PDIO_15",
+      "experiment": "20221026_DIS3_plate005",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 10,
+          "seen": 8,
+          "rate": 0.8,
+          "baseline_high_score_rate": 0.3
+        },
+        "DMSO:large": {
+          "n": 45,
+          "seen": 43,
+          "rate": 0.9555555555555556,
+          "baseline_high_score_rate": 0.7111111111111111
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 3,
+          "seen": 3,
+          "rate": 1.0,
+          "baseline_high_score_rate": 0.0
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 48,
+          "seen": 45,
+          "rate": 0.9375,
+          "baseline_high_score_rate": 0.8125
+        }
+      },
+      "treatment_gap_small": 0.19999999999999996,
+      "treatment_gap_large": -0.018055555555555602,
+      "gap_interaction_large_minus_small": -0.21805555555555556
+    },
+    {
+      "donor": "PDIO_15",
+      "experiment": "20221027_DIS3_plate006",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 24,
+          "seen": 14,
+          "rate": 0.5833333333333334,
+          "baseline_high_score_rate": 0.16666666666666666
+        },
+        "DMSO:large": {
+          "n": 41,
+          "seen": 36,
+          "rate": 0.8780487804878049,
+          "baseline_high_score_rate": 0.7073170731707317
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 19,
+          "seen": 8,
+          "rate": 0.42105263157894735,
+          "baseline_high_score_rate": 0.15789473684210525
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 40,
+          "seen": 24,
+          "rate": 0.6,
+          "baseline_high_score_rate": 0.7
+        }
+      },
+      "treatment_gap_small": -0.16228070175438603,
+      "treatment_gap_large": -0.2780487804878049,
+      "gap_interaction_large_minus_small": -0.11576807873341888
+    },
+    {
+      "donor": "PDIO_16",
+      "experiment": "20221020_DIS3_plate004",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 37,
+          "seen": 6,
+          "rate": 0.16216216216216217,
+          "baseline_high_score_rate": 0.5675675675675675
+        },
+        "DMSO:large": {
+          "n": 57,
+          "seen": 49,
+          "rate": 0.8596491228070176,
+          "baseline_high_score_rate": 0.7894736842105263
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 47,
+          "seen": 16,
+          "rate": 0.3404255319148936,
+          "baseline_high_score_rate": 0.5106382978723404
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 85,
+          "seen": 69,
+          "rate": 0.8117647058823529,
+          "baseline_high_score_rate": 0.7411764705882353
+        }
+      },
+      "treatment_gap_small": 0.17826336975273144,
+      "treatment_gap_large": -0.04788441692466461,
+      "gap_interaction_large_minus_small": -0.22614778667739605
+    },
+    {
+      "donor": "PDIO_16",
+      "experiment": "20221027_DIS3_plate006",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 21,
+          "seen": 11,
+          "rate": 0.5238095238095238,
+          "baseline_high_score_rate": 0.2857142857142857
+        },
+        "DMSO:large": {
+          "n": 86,
+          "seen": 66,
+          "rate": 0.7674418604651163,
+          "baseline_high_score_rate": 0.5465116279069767
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 18,
+          "seen": 6,
+          "rate": 0.3333333333333333,
+          "baseline_high_score_rate": 0.05555555555555555
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 86,
+          "seen": 63,
+          "rate": 0.7325581395348837,
+          "baseline_high_score_rate": 0.627906976744186
+        }
+      },
+      "treatment_gap_small": -0.19047619047619052,
+      "treatment_gap_large": -0.03488372093023262,
+      "gap_interaction_large_minus_small": 0.1555924695459579
+    },
+    {
+      "donor": "PDIO_18",
+      "experiment": "20221020_DIS3_plate003",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n": 45,
+          "seen": 7,
+          "rate": 0.15555555555555556,
+          "baseline_high_score_rate": 0.5555555555555556
+        },
+        "DMSO:large": {
+          "n": 51,
+          "seen": 45,
+          "rate": 0.8823529411764706,
+          "baseline_high_score_rate": 0.6078431372549019
+        },
+        "VX445_VX661_VX770:small": {
+          "n": 16,
+          "seen": 9,
+          "rate": 0.5625,
+          "baseline_high_score_rate": 0.4375
+        },
+        "VX445_VX661_VX770:large": {
+          "n": 52,
+          "seen": 51,
+          "rate": 0.9807692307692307,
+          "baseline_high_score_rate": 0.4230769230769231
+        }
+      },
+      "treatment_gap_small": 0.40694444444444444,
+      "treatment_gap_large": 0.09841628959276016,
+      "gap_interaction_large_minus_small": -0.3085281548516843
+    }
+  ],
+  "limits": "Conditioned on source-detected t0 objects; no missing outcome identification or unseen baseline objects. Donor fixed effects and donor-cluster standard errors, not experiment fixed effects due to collinearity in original block subset; only 12 clusters and batch confounding. P-values descriptive and no original gate repair."
+}
