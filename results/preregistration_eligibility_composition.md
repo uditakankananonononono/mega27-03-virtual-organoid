@@ -1,0 +1,3 @@
+# Frozen descriptive composition audit of the min-10 sensitivity
+
+The min-3 primary and min-5/10/20 follow-up were already run; this audit cannot make them independent. Before inspecting donor identities for min 10, fix the question: are all six donors surviving min 10 a subset of the min-3 positive donors, and which min-3 negative donors are lost? Use only already computed `results/block_eligibility_sensitivity.json` and enumerate donor IDs and medians at each threshold, with transitions. Also report how many of the original 17 donor IDs never meet min 3. No p-value, no new threshold, no significance reassignment. The interpretation is selection of analyzable donors, not proof that the minimum causes an effect or that excluded donors would have the same response.
