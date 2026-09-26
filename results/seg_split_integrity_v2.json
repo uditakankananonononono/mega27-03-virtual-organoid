@@ -1,0 +1,50 @@
+{
+  "status": "split/hash/perceptual scout; no model gate",
+  "split_counts": {
+    "train": 184,
+    "val": 35,
+    "eval": 12
+  },
+  "cross_split_identical_image_hashes": 0,
+  "cross_split_identical_mask_hashes": 0,
+  "near_duplicate_threshold_cosine": 0.95,
+  "cross_split_near_duplicate_pairs": [
+    {
+      "a": "20210727_15879_ckunspgfb2th10z8253ca7pzf_img.jpg",
+      "split_a": "train",
+      "b": "20210727_11562_ckufm1p2h4vzp0y7jh0fyg2yo_img.jpg",
+      "split_b": "eval",
+      "normalized_thumbnail_cosine": 0.9965841983994399
+    },
+    {
+      "a": "20210727_11752_ckufmmv8203lp0y8xhq8k7lin_img.jpg",
+      "split_a": "train",
+      "b": "20210727_28190_ckw3itp398oe50zc3darma7i6_img.jpg",
+      "split_b": "val",
+      "normalized_thumbnail_cosine": 0.9951942060686703
+    },
+    {
+      "a": "20210727_11104_ckufl4yfh3f200y77899mcbro_img.jpg",
+      "split_a": "train",
+      "b": "20210727_16294_ckunspgrq2th20z824ozpde5m_img.jpg",
+      "split_b": "val",
+      "normalized_thumbnail_cosine": 0.9940350481758732
+    },
+    {
+      "a": "20210727_21543_ckwgdjdq763z90z6o7n0w8csg_img.jpg",
+      "split_a": "val",
+      "b": "20210727_26838_ckw3ig3xg5ngk0zbp0g7j7dqt_img.jpg",
+      "split_b": "eval",
+      "normalized_thumbnail_cosine": 0.9816121842485619
+    },
+    {
+      "a": "0003_3250648_ckmbz0c8v1vke345zguvwuom1_img.jpg",
+      "split_a": "train",
+      "b": "0003_6054432_cknj077t115y9345zmqfpq9s0_img.jpg",
+      "split_b": "val",
+      "normalized_thumbnail_cosine": 0.950646799129484
+    }
+  ],
+  "limit": "no acquisition metadata or donor identity in image filenames; thumbnail similarity cannot prove independence or leak absence",
+  "manifest_sha256": "ba003cd9645067eb455f5a2d0166a53a0a41aa73378f938e848f2ca9c73a9b65"
+}
