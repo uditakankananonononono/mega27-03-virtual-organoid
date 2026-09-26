@@ -13,3 +13,5 @@ Berical et al. 2022 (https://www.nature.com/articles/s41467-022-31854-8) is addi
 The 2021 *Cells* iPSC-intestinal study also tracked individual organoids over a four-hour CFTR FIS time course and tested VX-809/VX-770 rescue in one CF line; its public supplement contains figures rather than raw tracks (`results/ipsc_intestinal_source_suitability.md`). Single-organoid intestinal tracking is prior art, not our discovery.
 
 A pre-specified same-accession minimum-cell-count sensitivity further weakens the strict size H1: >=5 objects in all four cells gives 8/12 positive donor medians, p=.193848; >=10 retains only 6 donors and cannot meet the registered >=8-donor floor despite a nominal p=.015625 (`results/finding_block_eligibility_sensitivity.md`). The original primary fail remains the verdict.
+
+The frozen no-forskolin matched-pair specificity stress test is an additional negative: 3/11 donor medians are more positive at 0.128 µM than at zero forskolin, exact one-sided p=.967285 (`results/finding_zero_fsk_control.md`). This makes the specific CFTR-stimulated attenuation interpretation less credible without proving why the zero-dose size interaction appears.
