@@ -1,0 +1,223 @@
+Follow-up adversarial audit (based only on the revised synopsis)
+
+Scope limit: No, I cannot certify the full project from this exchange. I have not inspected the 61-page paper, code, raw datasets, preregistration record, analysis scripts, figures, or local result files. I can only audit whether the revised framing described here appears aligned with the supplied evidence.
+
+With the corrections, several weaknesses from the first pass are resolved. The remaining issues divide into fixable wording/documentation issues versus limitations that require new evidence.
+
+A. Remaining fixable overclaims or ambiguity
+1. “Negative Size-Hypothesis Tests” — mostly acceptable, but define scope
+
+Current title:
+
+“Exploratory CFTR-Modulator Swelling Analysis in Patient-Derived Intestinal Organoids: a Computational Workflow and Negative Size-Hypothesis Tests”
+
+This is substantially safer than a predictive claim.
+
+Potential remaining issue:
+
+“Negative size-hypothesis tests” could be interpreted as proving that size has no relationship with response.
+
+The reported evidence only supports:
+
+the preregistered tests failed to confirm the hypothesized relationship;
+
+the tested datasets did not provide sufficient evidence under those criteria.
+
+It does not prove absence of any size effect.
+
+Possible safer wording:
+
+“…and Tests of a Prespecified Size-Response Hypothesis”
+
+or keep the current title but clarify in the abstract:
+
+“The prespecified hypothesis was not supported under the tested criteria.”
+
+2. “Patient-derived intestinal organoids” should match dataset scope precisely
+
+This is acceptable if the actual data are patient-derived intestinal organoids.
+
+However, the abstract should avoid implying:
+
+all patient-derived organoids;
+
+broad CF population representation;
+
+clinical generalizability.
+
+The dataset should specify:
+
+number of donors;
+
+CF status;
+
+genotype distribution if available;
+
+source cohorts.
+
+3. “Computational workflow” needs a defined contribution
+
+This phrase is reasonable, but the manuscript should avoid implying the workflow itself is validated broadly.
+
+It should specify whether the contribution is:
+
+software architecture;
+
+segmentation/inference pipeline;
+
+analysis protocol;
+
+data harmonization workflow.
+
+A workflow contribution is different from a validated biological model.
+
+4. Segmentation language remains the main wording risk
+
+Given:
+
+U-Net AP50 = 0.738672
+
+published Mask R-CNN mean = 0.76 ± 0.12
+
+no paired comparator predictions
+
+The manuscript should avoid:
+
+“competitive performance”;
+
+“matches prior art”;
+
+“equivalent to Mask R-CNN”;
+
+“improved segmentation.”
+
+Safer:
+
+“The model achieved AP50 = 0.738672 on the sealed benchmark; comparison to published aggregate performance is descriptive because paired comparator outputs were unavailable.”
+
+This is a documentation issue, not a new experiment.
+
+B. Issues that are limitations unless new evidence is generated
+1. Biological validation of the size-response hypothesis
+
+Still unresolved.
+
+The revised framing correctly appears to acknowledge this.
+
+No wording change can create:
+
+independent donor confirmation;
+
+external validation;
+
+prospective prediction.
+
+Required evidence:
+
+new independent multi-donor dataset;
+
+blinded analysis;
+
+donor-level replication.
+
+2. Clinical or diagnostic relevance
+
+The revised abstract reportedly says:
+
+no diagnostic predictor
+
+That resolves the overclaim.
+
+A diagnostic claim would require substantially more:
+
+clinical cohorts;
+
+validation;
+
+sensitivity/specificity analysis;
+
+prospective testing.
+
+No manuscript repair substitutes for that.
+
+3. Generalization of segmentation
+
+The benchmark limitation remains.
+
+The current result demonstrates:
+
+performance on the supplied sealed set.
+
+It does not establish:
+
+superiority;
+
+robustness across laboratories;
+
+superiority over modern alternatives.
+
+A new sealed benchmark with paired competitors would be needed for those claims.
+
+4. Mechanistic interpretation
+
+Even if the descriptive curve remains:
+
+A correlation between starting size and swelling does not establish why.
+
+Mechanistic claims require additional measurements, for example:
+
+CFTR expression;
+
+differentiation markers;
+
+viability;
+
+cell composition;
+
+growth state.
+
+Specific correction from first review
+
+The earlier statement implying the 17-donor source was absent was incorrect based on your clarification.
+
+Updated interpretation:
+
+Primary object-level source: 17-donor OrgaSegment dataset.
+
+Separate one-donor/plate dataset: limited independent demonstration dataset.
+
+The remaining issue is not lack of all object-level data; it is lack of independent multi-donor validation beyond the primary source.
+
+Min-ten sensitivity interpretation
+
+Your chronology correction changes the criticism.
+
+The appropriate wording is:
+
+The cutoff was predefined for the sensitivity analysis.
+
+However, because the analysis retains only six donors after applying the threshold, it is not an independent validation.
+
+The nominal p-value should be interpreted as exploratory/sensitivity evidence, not confirmation.
+
+This is a reporting issue, not necessarily a methodological error if already disclosed.
+
+Remaining priority repairs
+Priority	Issue	Fix type
+1	Ensure “negative” does not imply proof of no biological relationship	Rewrite/clarify
+2	Explicitly state segmentation comparison is descriptive, not equivalent/noninferior	Rewrite
+3	Keep primary vs independent demonstration datasets clearly separated	Documentation
+4	Maintain no diagnostic/clinical language	Already repaired
+5	Add independent donor validation if making biological claims	New data required
+6	Add paired sealed segmentation benchmark if claiming model advantage	New data required
+Updated representation verdict (not certification)
+
+Based on the revised synopsis alone:
+
+The manuscript framing appears substantially more aligned with the reported evidence.
+
+The previously identified major overclaims appear largely repaired.
+
+Remaining concerns are mainly precision of wording and interpretation, plus unavoidable limitations around external validation.
+
+I cannot certify the full project, its code, statistical correctness, or whether all gates are satisfied without examining the underlying artifacts. The strongest defensible representation from this exchange is an exploratory computational workflow with preregistered size-hypothesis tests that did not confirm the proposed relationship, rather than a validated biological predictor.

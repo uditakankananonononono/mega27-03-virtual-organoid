@@ -20,10 +20,10 @@ rho, pv = spearmanr(R.overall, R.attenuation)
 S1 = json.load(open("results/seg_eval.json")); S2 = json.load(open("results/seg_eval_tuned_256.json")); S3 = json.load(open("results/seg_eval_512.json")); S4 = json.load(open("results/seg_eval_tuned_512.json"))
 
 P = Paper("Exploratory CFTR-Modulator Swelling Analysis in Patient-Derived Intestinal Organoids: "
-          "a Computational Workflow and Negative Size-Hypothesis Tests",
+          "a Computational Workflow and Unconfirmed Size-Response Hypothesis",
           "MEGA-PROGRAM-27, Item 3 - Udita Phookan (program owner); computational work by an AI research agent. Working draft of 26 September 2026.")
 P.h("Abstract")
-P.p("Novelty status. This working project tests whether baseline organoid size moderates CFTR-modulator swelling, using a donor-matched analysis and a swelling-geometry model. This is a testable candidate, NOT an established new biological discovery. Its stronger pre-registered donor x plate x dose check and a paired no-forskolin specificity test both failed; the tested segmentation pipeline does not match the published benchmark; no diagnostic tool has been validated. The contribution is a transparent, reproducible analysis with negative controls, not an award or clinical claim.")
+P.p("Novelty status. This working project tests whether baseline organoid size moderates CFTR-modulator swelling, using a donor-matched analysis and a swelling-geometry model. This is a testable candidate, NOT an established new biological discovery. Its stronger pre-registered donor x plate x dose check and a paired no-forskolin specificity test both failed to confirm the size-response hypothesis; this does not prove the absence of a size effect. The tested segmentation pipeline does not match the published benchmark; no diagnostic tool has been validated. The contribution is a transparent, reproducible analysis with negative controls, not an award or clinical claim.")
 P.p("The forskolin-induced swelling (FIS) assay on patient-derived intestinal organoids has been studied as an in-vitro guide to CFTR-modulator response; this work does not establish a patient-level predictor. Standard pipelines sum organoid area per well, so any dependence of the response on organoid size is "
     "averaged away. We re-analysed the public single-organoid OrgaSegment data (17 CF donors, per-organoid area before and after "
     "forskolin) with a biophysical swelling model and a DMSO-controlled, donor-matched design.")
