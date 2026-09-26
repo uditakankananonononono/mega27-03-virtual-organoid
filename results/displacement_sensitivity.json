@@ -1,0 +1,1346 @@
+{
+  "status": "post-result observed positive-pair displacement sensitivity; not missing-outcome recovery",
+  "protocol": "notes/postresult_displacement_sensitivity.md",
+  "source_url": "https://zenodo.org/records/10610438",
+  "source_sha256": "0e0e7913947a29c7b32ce87ca73a98614033d41ce63063a1d65053e766b2f315",
+  "derived_sha256": "a32e5cf8cb8f5f7cd92e57ef62881c7a25d559ff1a0018748d4fdded7f3fb5c7",
+  "n_positive_pairs_all_source": 29648,
+  "max_displacement_all_source": 50.0,
+  "n_above50_all_source": 0,
+  "n_original_blocks": 31,
+  "n_observed_pairs_original_extreme_cells": 4964,
+  "displacement_bins": [
+    {
+      "arm": "DMSO",
+      "size_bin": "large",
+      "displacement_bin": "0-10",
+      "n": 892,
+      "median_log_response": 0.33129925848184594,
+      "mean_log_response": 0.33556825955548725
+    },
+    {
+      "arm": "DMSO",
+      "size_bin": "large",
+      "displacement_bin": "10-25",
+      "n": 778,
+      "median_log_response": 0.31393990577544195,
+      "mean_log_response": 0.3023749137266535
+    },
+    {
+      "arm": "DMSO",
+      "size_bin": "large",
+      "displacement_bin": "25-40",
+      "n": 135,
+      "median_log_response": 0.17941927400214328,
+      "mean_log_response": 0.16250310652405567
+    },
+    {
+      "arm": "DMSO",
+      "size_bin": "large",
+      "displacement_bin": "40-50",
+      "n": 20,
+      "median_log_response": -0.0039371305130486995,
+      "mean_log_response": -0.4060065714264285
+    },
+    {
+      "arm": "DMSO",
+      "size_bin": "small",
+      "displacement_bin": "0-10",
+      "n": 328,
+      "median_log_response": 0.3534626493848344,
+      "mean_log_response": 0.3454169923271303
+    },
+    {
+      "arm": "DMSO",
+      "size_bin": "small",
+      "displacement_bin": "10-25",
+      "n": 189,
+      "median_log_response": 0.34086433791209003,
+      "mean_log_response": 0.38161712069474624
+    },
+    {
+      "arm": "DMSO",
+      "size_bin": "small",
+      "displacement_bin": "25-40",
+      "n": 41,
+      "median_log_response": 0.38513740860249396,
+      "mean_log_response": 0.6298657085913864
+    },
+    {
+      "arm": "DMSO",
+      "size_bin": "small",
+      "displacement_bin": "40-50",
+      "n": 5,
+      "median_log_response": 0.2696635669491026,
+      "mean_log_response": 1.2105047753367348
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size_bin": "large",
+      "displacement_bin": "0-10",
+      "n": 663,
+      "median_log_response": 0.9850014247583849,
+      "mean_log_response": 0.8855413511425995
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size_bin": "large",
+      "displacement_bin": "10-25",
+      "n": 1018,
+      "median_log_response": 1.042510706243287,
+      "mean_log_response": 0.95539715070441
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size_bin": "large",
+      "displacement_bin": "25-40",
+      "n": 268,
+      "median_log_response": 1.0854098510279973,
+      "mean_log_response": 1.006846025606405
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size_bin": "large",
+      "displacement_bin": "40-50",
+      "n": 56,
+      "median_log_response": 0.967399885452898,
+      "mean_log_response": 0.6320886699198905
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size_bin": "small",
+      "displacement_bin": "0-10",
+      "n": 332,
+      "median_log_response": 0.5668867749051543,
+      "mean_log_response": 0.5502657122157771
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size_bin": "small",
+      "displacement_bin": "10-25",
+      "n": 207,
+      "median_log_response": 0.6371358847121465,
+      "mean_log_response": 0.7133285475994666
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size_bin": "small",
+      "displacement_bin": "25-40",
+      "n": 27,
+      "median_log_response": 0.9371766228539895,
+      "mean_log_response": 1.0387290182312228
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size_bin": "small",
+      "displacement_bin": "40-50",
+      "n": 5,
+      "median_log_response": 0.5047200662035056,
+      "mean_log_response": 0.4777655067362204
+    }
+  ],
+  "arm_size_summary": [
+    {
+      "arm": "DMSO",
+      "size_bin": "large",
+      "n": 1825,
+      "median_displacement": 10.111874208078342,
+      "n_ge40": 20,
+      "fraction_ge40": 0.010958904109589041
+    },
+    {
+      "arm": "DMSO",
+      "size_bin": "small",
+      "n": 563,
+      "median_displacement": 8.514693182963201,
+      "n_ge40": 5,
+      "fraction_ge40": 0.008880994671403197
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size_bin": "large",
+      "n": 2005,
+      "median_displacement": 13.200378782444085,
+      "n_ge40": 56,
+      "fraction_ge40": 0.027930174563591023
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size_bin": "small",
+      "n": 571,
+      "median_displacement": 8.73212459828649,
+      "n_ge40": 5,
+      "fraction_ge40": 0.008756567425569177
+    }
+  ],
+  "all_positive_pair_score": {
+    "n_blocks": 31,
+    "n_donors": 12,
+    "equal_donor_mean_median": 0.2079781684567534,
+    "positive_donors": 9,
+    "donor_medians": {
+      "PDIO_01": 0.03895578283754192,
+      "PDIO_03": 0.3508821434068704,
+      "PDIO_05": 0.5396669946524568,
+      "PDIO_06": 0.37111822422156515,
+      "PDIO_09": 0.20085730910526345,
+      "PDIO_11": 0.36577963793801616,
+      "PDIO_12": 0.4180005333028193,
+      "PDIO_13": 0.2734739642741474,
+      "PDIO_14": -0.19347143095103012,
+      "PDIO_15": 0.30080490599578535,
+      "PDIO_16": -0.09719748643906656,
+      "PDIO_18": -0.07313255686332873
+    }
+  },
+  "under40_score": {
+    "n_blocks": 30,
+    "n_donors": 12,
+    "equal_donor_mean_median": 0.21247591795158435,
+    "positive_donors": 9,
+    "donor_medians": {
+      "PDIO_01": 0.026703287487938876,
+      "PDIO_03": 0.29752866752394436,
+      "PDIO_05": 0.5438979995569739,
+      "PDIO_06": 0.4197945349203961,
+      "PDIO_09": 0.16569130070005722,
+      "PDIO_11": 0.36577963793801616,
+      "PDIO_12": 0.4849325202372449,
+      "PDIO_13": 0.28603446353621675,
+      "PDIO_14": -0.17675120206279551,
+      "PDIO_15": 0.30080490599578535,
+      "PDIO_16": -0.09157254355143707,
+      "PDIO_18": -0.07313255686332873
+    }
+  },
+  "all_pairs_on_under40_eligible_blocks": {
+    "n_blocks": 30,
+    "n_donors": 12,
+    "equal_donor_mean_median": 0.21367453487332197,
+    "positive_donors": 9,
+    "donor_medians": {
+      "PDIO_01": 0.03895578283754192,
+      "PDIO_03": 0.3508821434068704,
+      "PDIO_05": 0.5396669946524568,
+      "PDIO_06": 0.37111822422156515,
+      "PDIO_09": 0.20085730910526345,
+      "PDIO_11": 0.36577963793801616,
+      "PDIO_12": 0.4863569303016417,
+      "PDIO_13": 0.2734739642741474,
+      "PDIO_14": -0.19347143095103012,
+      "PDIO_15": 0.30080490599578535,
+      "PDIO_16": -0.09719748643906656,
+      "PDIO_18": -0.07313255686332873
+    }
+  },
+  "delta_under40_minus_matched_all": -0.0011986169217376164,
+  "delta_under40_minus_all_unmatched": 0.004497749494830949,
+  "excluded_blocks_under40": [
+    {
+      "donor": "PDIO_12",
+      "experiment": "20221026_DIS3_plate005",
+      "dose": 0.128
+    }
+  ],
+  "dmso_control": [
+    {
+      "size_bin": "small",
+      "pooled_n": 563,
+      "pooled_spearman": 0.06920801493915857,
+      "n_wells_with_ge5": 48,
+      "n_donors": 10,
+      "median_well_rho_by_donor": {
+        "PDIO_03": 0.2416666666666667,
+        "PDIO_05": -0.1562540400775695,
+        "PDIO_06": 0.43333333333333335,
+        "PDIO_09": 0.14285714285714285,
+        "PDIO_11": -0.7857142857142859,
+        "PDIO_12": 0.049999999999999996,
+        "PDIO_13": -0.03636363636363637,
+        "PDIO_14": -0.39999999999999997,
+        "PDIO_15": -0.19825174825174813,
+        "PDIO_16": 0.20714285714285713
+      },
+      "equal_donor_median_well_rho": -0.050158371040724
+    },
+    {
+      "size_bin": "large",
+      "pooled_n": 1825,
+      "pooled_spearman": -0.05976051162111371,
+      "n_wells_with_ge5": 68,
+      "n_donors": 12,
+      "median_well_rho_by_donor": {
+        "PDIO_01": -0.1533151563186211,
+        "PDIO_03": -0.044117647058823525,
+        "PDIO_05": -0.024709016248516548,
+        "PDIO_06": -0.02647058823529412,
+        "PDIO_09": -0.1234059779925738,
+        "PDIO_11": -0.07099567099567097,
+        "PDIO_12": 0.1384759965522328,
+        "PDIO_13": -0.23085484969435047,
+        "PDIO_14": 0.08326266833064948,
+        "PDIO_15": 0.005212741222971402,
+        "PDIO_16": 0.051488772451393446,
+        "PDIO_18": -0.17338800279157876
+      },
+      "equal_donor_median_well_rho": -0.04740139423151518
+    }
+  ],
+  "blocks": [
+    {
+      "donor": "PDIO_01",
+      "experiment": "20230125_DIS3_plate014",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 5,
+          "n_under40": 5,
+          "mean_all": 0.17742610339667947,
+          "mean_under40": 0.17742610339667947
+        },
+        "DMSO:large": {
+          "n_all": 67,
+          "n_under40": 66,
+          "mean_all": 0.12403510608972101,
+          "mean_under40": 0.13628760143932406
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 6,
+          "n_under40": 6,
+          "mean_all": 1.001265834860962,
+          "mean_under40": 1.001265834860962
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 58,
+          "n_under40": 58,
+          "mean_all": 0.9868306203915455,
+          "mean_under40": 0.9868306203915455
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 0.03895578283754192,
+      "effect_under40": 0.026703287487938876
+    },
+    {
+      "donor": "PDIO_03",
+      "experiment": "HitCF_A1_DIS_20230207_plate001",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 36,
+          "n_under40": 36,
+          "mean_all": 0.866346078427247,
+          "mean_under40": 0.866346078427247
+        },
+        "DMSO:large": {
+          "n_all": 87,
+          "n_under40": 84,
+          "mean_all": 0.5737276904663723,
+          "mean_under40": 0.6240538997903469
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 29,
+          "n_under40": 28,
+          "mean_all": 1.029377302671624,
+          "mean_under40": 1.0354863125214344
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 99,
+          "n_under40": 94,
+          "mean_all": 1.0876410581176197,
+          "mean_under40": 1.0907228014084787
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 0.3508821434068704,
+      "effect_under40": 0.29752866752394436
+    },
+    {
+      "donor": "PDIO_03",
+      "experiment": "HitCF_A1_DIS_20230228_plate010",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 73,
+          "n_under40": 72,
+          "mean_all": 0.27966002654043925,
+          "mean_under40": 0.23771329633474952
+        },
+        "DMSO:large": {
+          "n_all": 82,
+          "n_under40": 80,
+          "mean_all": 0.27659940609855244,
+          "mean_under40": 0.2773248703011296
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 77,
+          "n_under40": 76,
+          "mean_all": 0.24717069721236734,
+          "mean_under40": 0.2560871395246629
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 67,
+          "n_under40": 65,
+          "mean_all": 0.8197959762625591,
+          "mean_under40": 0.8517017780884348
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 0.5756858994920786,
+      "effect_under40": 0.5560030645973919
+    },
+    {
+      "donor": "PDIO_03",
+      "experiment": "HitCF_A1_DIS_20230307_plate013",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 22,
+          "n_under40": 22,
+          "mean_all": 0.865855504562765,
+          "mean_under40": 0.865855504562765
+        },
+        "DMSO:large": {
+          "n_all": 48,
+          "n_under40": 48,
+          "mean_all": 0.7426481290532694,
+          "mean_under40": 0.7426481290532694
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 22,
+          "n_under40": 22,
+          "mean_all": 0.7812136708432763,
+          "mean_under40": 0.7812136708432763
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 55,
+          "n_under40": 53,
+          "mean_all": 0.9563583195536102,
+          "mean_under40": 0.9450182433229065
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 0.29835202421982954,
+      "effect_under40": 0.2870119479891259
+    },
+    {
+      "donor": "PDIO_05",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 24,
+          "n_under40": 24,
+          "mean_all": 0.29772311979356325,
+          "mean_under40": 0.29772311979356325
+        },
+        "DMSO:large": {
+          "n_all": 63,
+          "n_under40": 63,
+          "mean_all": 0.3475371902078135,
+          "mean_under40": 0.3475371902078135
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 27,
+          "n_under40": 27,
+          "mean_all": 0.6322241218185821,
+          "mean_under40": 0.6322241218185821
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 77,
+          "n_under40": 76,
+          "mean_all": 0.9129387224811091,
+          "mean_under40": 0.9244333459882866
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 0.23090053024827673,
+      "effect_under40": 0.24239515375545428
+    },
+    {
+      "donor": "PDIO_05",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.32,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 27,
+          "n_under40": 27,
+          "mean_all": 0.13532174093270297,
+          "mean_under40": 0.13532174093270297
+        },
+        "DMSO:large": {
+          "n_all": 105,
+          "n_under40": 105,
+          "mean_all": 0.17980290528210036,
+          "mean_under40": 0.17980290528210036
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 21,
+          "n_under40": 21,
+          "mean_all": 0.5176061948005193,
+          "mean_under40": 0.5176061948005193
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 84,
+          "n_under40": 81,
+          "mean_all": 1.1017543538023735,
+          "mean_under40": 1.1059853587068906
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 0.5396669946524568,
+      "effect_under40": 0.5438979995569739
+    },
+    {
+      "donor": "PDIO_05",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.8,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 38,
+          "n_under40": 38,
+          "mean_all": 0.12654099505366967,
+          "mean_under40": 0.12654099505366967
+        },
+        "DMSO:large": {
+          "n_all": 89,
+          "n_under40": 88,
+          "mean_all": 0.21431202303920707,
+          "mean_under40": 0.23354911323238195
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 42,
+          "n_under40": 42,
+          "mean_all": 0.7028489622083091,
+          "mean_under40": 0.7028489622083091
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 71,
+          "n_under40": 71,
+          "mean_all": 1.0829889437868057,
+          "mean_under40": 1.0829889437868057
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 0.2923689535929592,
+      "effect_under40": 0.27313186339978435
+    },
+    {
+      "donor": "PDIO_05",
+      "experiment": "20230301_DIS3_plate023",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 33,
+          "n_under40": 33,
+          "mean_all": 0.6565852839038461,
+          "mean_under40": 0.6565852839038461
+        },
+        "DMSO:large": {
+          "n_all": 54,
+          "n_under40": 54,
+          "mean_all": 0.3308935664642918,
+          "mean_under40": 0.3308935664642918
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 47,
+          "n_under40": 47,
+          "mean_all": 0.6556866079362526,
+          "mean_under40": 0.6556866079362526
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 90,
+          "n_under40": 86,
+          "mean_all": 1.1148724499524327,
+          "mean_under40": 1.1903375444255768
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 0.7848775594557345,
+      "effect_under40": 0.8603426539288785
+    },
+    {
+      "donor": "PDIO_05",
+      "experiment": "20230308_DIS3_plate025",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 18,
+          "n_under40": 18,
+          "mean_all": 0.360897302309187,
+          "mean_under40": 0.360897302309187
+        },
+        "DMSO:large": {
+          "n_all": 67,
+          "n_under40": 67,
+          "mean_all": 0.20250529880623358,
+          "mean_under40": 0.20250529880623358
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 26,
+          "n_under40": 26,
+          "mean_all": 0.24637931983610067,
+          "mean_under40": 0.24637931983610067
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 89,
+          "n_under40": 86,
+          "mean_all": 0.8792201642969946,
+          "mean_under40": 0.8825909672707307
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 0.7912328479638473,
+      "effect_under40": 0.7946036509375835
+    },
+    {
+      "donor": "PDIO_06",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 9,
+          "n_under40": 9,
+          "mean_all": 0.4809100038137522,
+          "mean_under40": 0.4809100038137522
+        },
+        "DMSO:large": {
+          "n_all": 46,
+          "n_under40": 44,
+          "mean_all": 0.03924163082379992,
+          "mean_under40": 0.14979413730580576
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 18,
+          "n_under40": 18,
+          "mean_all": 0.23724151020677123,
+          "mean_under40": 0.23724151020677123
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 109,
+          "n_under40": 108,
+          "mean_all": 0.8231149268090423,
+          "mean_under40": 0.825197730145341
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 1.0275417895922234,
+      "effect_under40": 0.9190720864465163
+    },
+    {
+      "donor": "PDIO_06",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.32,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 25,
+          "n_under40": 24,
+          "mean_all": 0.33955619738200093,
+          "mean_under40": 0.2388590630717314
+        },
+        "DMSO:large": {
+          "n_all": 74,
+          "n_under40": 74,
+          "mean_all": 0.19716246154128983,
+          "mean_under40": 0.19716246154128983
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 17,
+          "n_under40": 17,
+          "mean_all": 0.4506623649829713,
+          "mean_under40": 0.4506623649829713
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 69,
+          "n_under40": 66,
+          "mean_all": 1.0827848028167975,
+          "mean_under40": 1.076764709281107
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 0.7745161736745373,
+      "effect_under40": 0.6677989458285774
+    },
+    {
+      "donor": "PDIO_06",
+      "experiment": "20230222_DIS3_plate021",
+      "dose": 0.8,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 15,
+          "n_under40": 14,
+          "mean_all": 0.20080728082782293,
+          "mean_under40": 0.21924510668036948
+        },
+        "DMSO:large": {
+          "n_all": 65,
+          "n_under40": 65,
+          "mean_all": 0.18255792339852278,
+          "mean_under40": 0.18255792339852278
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 27,
+          "n_under40": 27,
+          "mean_all": 0.6052214652600272,
+          "mean_under40": 0.6052214652600272
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 96,
+          "n_under40": 92,
+          "mean_all": 0.9580903320522921,
+          "mean_under40": 0.9883288168985765
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 0.37111822422156515,
+      "effect_under40": 0.4197945349203961
+    },
+    {
+      "donor": "PDIO_06",
+      "experiment": "20230301_DIS3_plate023",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 23,
+          "n_under40": 23,
+          "mean_all": 0.1420757279676741,
+          "mean_under40": 0.1420757279676741
+        },
+        "DMSO:large": {
+          "n_all": 58,
+          "n_under40": 58,
+          "mean_all": 0.1191601194061342,
+          "mean_under40": 0.1191601194061342
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 32,
+          "n_under40": 32,
+          "mean_all": 0.734739906170836,
+          "mean_under40": 0.734739906170836
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 79,
+          "n_under40": 78,
+          "mean_all": 0.8312246225011082,
+          "mean_under40": 0.8720786731334093
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 0.11940032489181207,
+      "effect_under40": 0.16025437552411315
+    },
+    {
+      "donor": "PDIO_06",
+      "experiment": "20230308_DIS3_plate025",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 23,
+          "n_under40": 23,
+          "mean_all": 0.2823797223228217,
+          "mean_under40": 0.2823797223228217
+        },
+        "DMSO:large": {
+          "n_all": 64,
+          "n_under40": 62,
+          "mean_all": 0.1302482949258619,
+          "mean_under40": 0.12809337127037526
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 33,
+          "n_under40": 32,
+          "mean_all": 0.5560211695202312,
+          "mean_under40": 0.5675796268792681
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 101,
+          "n_under40": 100,
+          "mean_all": 0.6703701918476552,
+          "mean_under40": 0.6748179776583165
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 0.2664804497243839,
+      "effect_under40": 0.2615247018314949
+    },
+    {
+      "donor": "PDIO_09",
+      "experiment": "20230125_DIS3_plate014",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 10,
+          "n_under40": 10,
+          "mean_all": 0.20347938667229695,
+          "mean_under40": 0.20347938667229695
+        },
+        "DMSO:large": {
+          "n_all": 84,
+          "n_under40": 83,
+          "mean_all": 0.06470389328945536,
+          "mean_under40": 0.06455908999522952
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 7,
+          "n_under40": 7,
+          "mean_all": 0.6986217282649028,
+          "mean_under40": 0.6986217282649028
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 76,
+          "n_under40": 73,
+          "mean_all": 1.084521184887948,
+          "mean_under40": 1.0997912862886727
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 0.5246749500058868,
+      "effect_under40": 0.5400898547008374
+    },
+    {
+      "donor": "PDIO_09",
+      "experiment": "20230125_DIS3_plate015",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 13,
+          "n_under40": 13,
+          "mean_all": 0.4148000884035422,
+          "mean_under40": 0.4148000884035422
+        },
+        "DMSO:large": {
+          "n_all": 77,
+          "n_under40": 74,
+          "mean_all": 0.20034241401028532,
+          "mean_under40": 0.20675588746659768
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 9,
+          "n_under40": 9,
+          "mean_all": 0.9850597671873209,
+          "mean_under40": 0.9850597671873209
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 99,
+          "n_under40": 93,
+          "mean_all": 0.7141882711294163,
+          "mean_under40": 0.7041480772881795
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": -0.0564138216646477,
+      "effect_under40": -0.07286748896219686
+    },
+    {
+      "donor": "PDIO_09",
+      "experiment": "20230207_DIS3_plate017",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 31,
+          "n_under40": 30,
+          "mean_all": 0.1667778968699627,
+          "mean_under40": 0.16334837453399131
+        },
+        "DMSO:large": {
+          "n_all": 79,
+          "n_under40": 78,
+          "mean_all": 0.048401370596488934,
+          "mean_under40": 0.04799488315160885
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 19,
+          "n_under40": 18,
+          "mean_all": 1.1462447303701253,
+          "mean_under40": 1.181884989490493
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 52,
+          "n_under40": 51,
+          "mean_all": 1.228725513201915,
+          "mean_under40": 1.2322227988081678
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 0.20085730910526345,
+      "effect_under40": 0.16569130070005722
+    },
+    {
+      "donor": "PDIO_11",
+      "experiment": "20221027_DIS3_plate006",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 10,
+          "n_under40": 10,
+          "mean_all": 0.6032498695318396,
+          "mean_under40": 0.6032498695318396
+        },
+        "DMSO:large": {
+          "n_all": 31,
+          "n_under40": 31,
+          "mean_all": 0.4538997570563038,
+          "mean_under40": 0.4538997570563038
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 8,
+          "n_under40": 8,
+          "mean_all": 1.039867517690769,
+          "mean_under40": 1.039867517690769
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 54,
+          "n_under40": 54,
+          "mean_all": 1.2562970431532494,
+          "mean_under40": 1.2562970431532494
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 0.36577963793801616,
+      "effect_under40": 0.36577963793801616
+    },
+    {
+      "donor": "PDIO_12",
+      "experiment": "20221020_DIS3_plate004",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 15,
+          "n_under40": 15,
+          "mean_all": 0.1921448912825239,
+          "mean_under40": 0.1921448912825239
+        },
+        "DMSO:large": {
+          "n_all": 54,
+          "n_under40": 54,
+          "mean_all": 0.16539044943278042,
+          "mean_under40": 0.16539044943278042
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 4,
+          "n_under40": 4,
+          "mean_all": 0.28799741713427013,
+          "mean_under40": 0.28799741713427013
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 48,
+          "n_under40": 48,
+          "mean_all": 0.8159563025849907,
+          "mean_under40": 0.8159563025849907
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 0.5547133273004641,
+      "effect_under40": 0.5547133273004641
+    },
+    {
+      "donor": "PDIO_12",
+      "experiment": "20221026_DIS3_plate005",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 5,
+          "n_under40": 5,
+          "mean_all": 0.6051151229801373,
+          "mean_under40": 0.6051151229801373
+        },
+        "DMSO:large": {
+          "n_all": 46,
+          "n_under40": 46,
+          "mean_all": 0.4716389388607964,
+          "mean_under40": 0.4716389388607964
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 3,
+          "n_under40": 2,
+          "mean_all": 0.908101502885638,
+          "mean_under40": 0.7270968417826071
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 61,
+          "n_under40": 60,
+          "mean_all": 1.1144948651993483,
+          "mean_under40": 1.109721160503738
+        }
+      },
+      "eligible_under40": false,
+      "effect_all": 0.3398695464330511,
+      "effect_under40": null
+    },
+    {
+      "donor": "PDIO_12",
+      "experiment": "20221027_DIS3_plate006",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 10,
+          "n_under40": 10,
+          "mean_all": 0.8439254300531805,
+          "mean_under40": 0.8439254300531805
+        },
+        "DMSO:large": {
+          "n_all": 39,
+          "n_under40": 39,
+          "mean_all": 0.46836092092724657,
+          "mean_under40": 0.46836092092724657
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 7,
+          "n_under40": 7,
+          "mean_all": 1.212121999914498,
+          "mean_under40": 1.212121999914498
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 30,
+          "n_under40": 29,
+          "mean_all": 1.2545580240913834,
+          "mean_under40": 1.25170920396259
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 0.4180005333028193,
+      "effect_under40": 0.41515171317402577
+    },
+    {
+      "donor": "PDIO_13",
+      "experiment": "20221020_DIS3_plate004",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 15,
+          "n_under40": 15,
+          "mean_all": 0.22261386233456024,
+          "mean_under40": 0.22261386233456024
+        },
+        "DMSO:large": {
+          "n_all": 41,
+          "n_under40": 41,
+          "mean_all": 0.04579189575650698,
+          "mean_under40": 0.04579189575650698
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 11,
+          "n_under40": 11,
+          "mean_all": 0.646724612347492,
+          "mean_under40": 0.646724612347492
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 33,
+          "n_under40": 33,
+          "mean_all": 0.7207239144325069,
+          "mean_under40": 0.7207239144325069
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 0.2508212686630682,
+      "effect_under40": 0.2508212686630682
+    },
+    {
+      "donor": "PDIO_13",
+      "experiment": "20221027_DIS3_plate006",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 5,
+          "n_under40": 5,
+          "mean_all": 0.5276236831491646,
+          "mean_under40": 0.5276236831491646
+        },
+        "DMSO:large": {
+          "n_all": 25,
+          "n_under40": 25,
+          "mean_all": 0.3541720213112626,
+          "mean_under40": 0.3541720213112626
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 8,
+          "n_under40": 8,
+          "mean_all": 0.8316258684170079,
+          "mean_under40": 0.8316258684170079
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 35,
+          "n_under40": 34,
+          "mean_all": 0.9543008664643324,
+          "mean_under40": 0.9794218649884712
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 0.2961266598852266,
+      "effect_under40": 0.3212476584093653
+    },
+    {
+      "donor": "PDIO_14",
+      "experiment": "20221020_DIS3_plate004",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 7,
+          "n_under40": 7,
+          "mean_all": 0.04320102613770322,
+          "mean_under40": 0.04320102613770322
+        },
+        "DMSO:large": {
+          "n_all": 29,
+          "n_under40": 28,
+          "mean_all": 0.19908197224491564,
+          "mean_under40": 0.2075445201310301
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 8,
+          "n_under40": 8,
+          "mean_all": 1.184510354907149,
+          "mean_under40": 1.184510354907149
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 31,
+          "n_under40": 29,
+          "mean_all": 0.8008154507176369,
+          "mean_under40": 0.8140127455914152
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": -0.5395758502967244,
+      "effect_under40": -0.5348411033090605
+    },
+    {
+      "donor": "PDIO_14",
+      "experiment": "20221027_DIS3_plate006",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 16,
+          "n_under40": 15,
+          "mean_all": 0.3954944942778443,
+          "mean_under40": 0.4362560893187782
+        },
+        "DMSO:large": {
+          "n_all": 41,
+          "n_under40": 41,
+          "mean_all": 0.43529891901578244,
+          "mean_under40": 0.43529891901578244
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 14,
+          "n_under40": 14,
+          "mean_all": 1.0270349658122542,
+          "mean_under40": 1.0270349658122542
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 44,
+          "n_under40": 40,
+          "mean_all": 1.2194723789448565,
+          "mean_under40": 1.207416494692728
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 0.15263298839466416,
+      "effect_under40": 0.1813386991834695
+    },
+    {
+      "donor": "PDIO_15",
+      "experiment": "20221020_DIS3_plate004",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 9,
+          "n_under40": 9,
+          "mean_all": 0.1965148967518686,
+          "mean_under40": 0.1965148967518686
+        },
+        "DMSO:large": {
+          "n_all": 71,
+          "n_under40": 70,
+          "mean_all": 0.47229067104690253,
+          "mean_under40": 0.47701158058042564
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 7,
+          "n_under40": 7,
+          "mean_all": 0.9711904620445428,
+          "mean_under40": 0.9711904620445428
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 46,
+          "n_under40": 46,
+          "mean_all": 0.8473963320764628,
+          "mean_under40": 0.8473963320764628
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": -0.399569904263114,
+      "effect_under40": -0.404290813796637
+    },
+    {
+      "donor": "PDIO_15",
+      "experiment": "20221026_DIS3_plate005",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 8,
+          "n_under40": 8,
+          "mean_all": 0.7801506864472628,
+          "mean_under40": 0.7801506864472628
+        },
+        "DMSO:large": {
+          "n_all": 43,
+          "n_under40": 43,
+          "mean_all": 0.8445759173985425,
+          "mean_under40": 0.8445759173985425
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 3,
+          "n_under40": 3,
+          "mean_all": 0.760583093210569,
+          "mean_under40": 0.760583093210569
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 45,
+          "n_under40": 40,
+          "mean_all": 1.1507108626265656,
+          "mean_under40": 1.159002325000975
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 0.32570253846471686,
+      "effect_under40": 0.33399400083912634
+    },
+    {
+      "donor": "PDIO_15",
+      "experiment": "20221027_DIS3_plate006",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 14,
+          "n_under40": 14,
+          "mean_all": 0.8910351596994357,
+          "mean_under40": 0.8910351596994357
+        },
+        "DMSO:large": {
+          "n_all": 36,
+          "n_under40": 36,
+          "mean_all": 0.9251839856370638,
+          "mean_under40": 0.9251839856370638
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 8,
+          "n_under40": 8,
+          "mean_all": 0.8688119498669464,
+          "mean_under40": 0.8688119498669464
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 24,
+          "n_under40": 24,
+          "mean_all": 1.20376568180036,
+          "mean_under40": 1.20376568180036
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 0.30080490599578535,
+      "effect_under40": 0.30080490599578535
+    },
+    {
+      "donor": "PDIO_16",
+      "experiment": "20221020_DIS3_plate004",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 6,
+          "n_under40": 6,
+          "mean_all": -0.0008200173604058595,
+          "mean_under40": -0.0008200173604058595
+        },
+        "DMSO:large": {
+          "n_all": 49,
+          "n_under40": 49,
+          "mean_all": 0.5603039184995636,
+          "mean_under40": 0.5603039184995636
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 16,
+          "n_under40": 16,
+          "mean_all": 0.2794000308911152,
+          "mean_under40": 0.2794000308911152
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 69,
+          "n_under40": 67,
+          "mean_all": 0.4082390388819828,
+          "mean_under40": 0.44373771116344735
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": -0.4322849278691019,
+      "effect_under40": -0.39678625558763736
+    },
+    {
+      "donor": "PDIO_16",
+      "experiment": "20221027_DIS3_plate006",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 11,
+          "n_under40": 11,
+          "mean_all": 0.90188166229455,
+          "mean_under40": 0.90188166229455
+        },
+        "DMSO:large": {
+          "n_all": 66,
+          "n_under40": 64,
+          "mean_all": 0.805268306150173,
+          "mean_under40": 0.8295170926563785
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 6,
+          "n_under40": 6,
+          "mean_all": 0.8567699277491486,
+          "mean_under40": 0.8567699277491486
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 63,
+          "n_under40": 63,
+          "mean_all": 0.9980465265957403,
+          "mean_under40": 0.9980465265957403
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": 0.23788995499096877,
+      "effect_under40": 0.21364116848476322
+    },
+    {
+      "donor": "PDIO_18",
+      "experiment": "20221020_DIS3_plate003",
+      "dose": 0.128,
+      "cells": {
+        "DMSO:small": {
+          "n_all": 7,
+          "n_under40": 7,
+          "mean_all": 0.058931797770203555,
+          "mean_under40": 0.058931797770203555
+        },
+        "DMSO:large": {
+          "n_all": 45,
+          "n_under40": 45,
+          "mean_all": -0.19361871032386935,
+          "mean_under40": -0.19361871032386935
+        },
+        "VX445_VX661_VX770:small": {
+          "n_all": 9,
+          "n_under40": 9,
+          "mean_all": 0.4900051072777377,
+          "mean_under40": 0.4900051072777377
+        },
+        "VX445_VX661_VX770:large": {
+          "n_all": 51,
+          "n_under40": 51,
+          "mean_all": 0.1643220423203361,
+          "mean_under40": 0.1643220423203361
+        }
+      },
+      "eligible_under40": true,
+      "effect_all": -0.07313255686332873,
+      "effect_under40": -0.07313255686332873
+    }
+  ],
+  "limits": "Observed source pairs only; no x/y for missing endpoints. A <=50 radius may be tracking-algorithm support but source code not established. Restriction to <40 is a sensitivity, not a new eligibility gate; within-radius mistakes and never-detected baseline objects remain. No original biological gate repair."
+}
