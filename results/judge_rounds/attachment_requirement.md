@@ -1,0 +1,3 @@
+# Item-3 review validity status, 26 September 2026 13:10 IST
+
+The owner subsequently asked that the actual paper PDF be supplied to ChatGPT for every weakness review (authenticated WhatsApp request, 26 Sep 2026 13:09:44 IST). Rounds 1 and 2 in this directory were only summary-based and **do not satisfy that later attachment requirement**; their transcripts remain intact as provisional critiques, not artifact-grounded verification. The source-check and manuscript wording repairs remain independently testable, but neither round certifies the complete paper. A new round must attach the current 61-page PDF, verify in the UI and model reply that this PDF was read, and record the resulting transcript and attachment status. Do not quietly relabel rounds 1-2 as compliant.
