@@ -1,0 +1,111 @@
+{
+  "status": "POST-RESULT DESCRIPTIVE: proxy-group resampling does not establish donor independence",
+  "source": "results/group_disjoint_seg/exploratory_eval.json",
+  "graph_source": "results/scene_graph_forensics.json",
+  "threshold": 0.95,
+  "groups": [
+    {
+      "members": [
+        "0002_2013089_ckmbvhhhx0000345zlx7mhq1y_img.jpg"
+      ],
+      "n": 1,
+      "mean_author_ap50": 0.9577465057373047
+    },
+    {
+      "members": [
+        "0002_2423915_cknt06dr33pzv3b68t421bk27_img.jpg"
+      ],
+      "n": 1,
+      "mean_author_ap50": 0.5833333134651184
+    },
+    {
+      "members": [
+        "0002_7071445_ckm384kvx8ib3345zzs8qewl4_img.jpg"
+      ],
+      "n": 1,
+      "mean_author_ap50": 0.8113207817077637
+    },
+    {
+      "members": [
+        "0003_9960762_ckmdlvkmi14yv345z384v1grr_img.jpg"
+      ],
+      "n": 1,
+      "mean_author_ap50": 0.8918918967247009
+    },
+    {
+      "members": [
+        "20210727_11562_ckufm1p2h4vzp0y7jh0fyg2yo_img.jpg",
+        "20210727_15879_ckunspgfb2th10z8253ca7pzf_img.jpg"
+      ],
+      "n": 2,
+      "mean_author_ap50": 0.8723684251308441
+    },
+    {
+      "members": [
+        "20210727_11753_ckuf91aiz36dm0y9p2t9k5qoh_img.jpg"
+      ],
+      "n": 1,
+      "mean_author_ap50": 0.5538461804389954
+    },
+    {
+      "members": [
+        "20210727_12226_ckw3in2er4sqh10aofkm50w8l_img.jpg"
+      ],
+      "n": 1,
+      "mean_author_ap50": 0.7241379022598267
+    },
+    {
+      "members": [
+        "20210727_16063_ckw3j7wet8qan0zc39rca87mv_img.jpg"
+      ],
+      "n": 1,
+      "mean_author_ap50": 0.6323529481887817
+    },
+    {
+      "members": [
+        "20210727_18315_ckw3ky6ln8z8z0zbnfc0o1gam_img.jpg"
+      ],
+      "n": 1,
+      "mean_author_ap50": 0.7021276354789734
+    },
+    {
+      "members": [
+        "20210727_21543_ckwgdjdq763z90z6o7n0w8csg_img.jpg",
+        "20210727_26838_ckw3ig3xg5ngk0zbp0g7j7dqt_img.jpg"
+      ],
+      "n": 2,
+      "mean_author_ap50": 0.7361257374286652
+    },
+    {
+      "members": [
+        "20210727_33832_ckw3n2vrs9btz0zbn3jqgbv4y_img.jpg"
+      ],
+      "n": 1,
+      "mean_author_ap50": 0.6518987417221069
+    },
+    {
+      "members": [
+        "20210727_37653_ckwggbhda5ql20z7n9eveah6i_img.jpg"
+      ],
+      "n": 1,
+      "mean_author_ap50": 0.7799999713897705
+    }
+  ],
+  "n_groups": 12,
+  "n_images": 14,
+  "n_singleton_groups": 10,
+  "n_two_image_groups": 2,
+  "file_weighted_ap50": 0.7504031573023114,
+  "file_weighted_image_bootstrap_ci95": [
+    0.6893494729484831,
+    0.810721526720694
+  ],
+  "equal_group_weight_ap50": 0.7414291699727377,
+  "equal_group_bootstrap_ci95": [
+    0.6750480306024353,
+    0.8094978018353383
+  ],
+  "draws": 20000,
+  "seed": 20260927,
+  "limitations": "Proxy image groups are selected after original AP result, not known donor/plate units; 12 groups and previous test-set exposure; group and file means use different weights; no author-model paired predictions; no benchmark gate upgrade."
+}
