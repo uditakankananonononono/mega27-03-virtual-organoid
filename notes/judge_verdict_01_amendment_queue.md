@@ -49,3 +49,7 @@ D. (item 4 of top-5) Consolidated missing-data/selection-bias methods section fr
 E. (items 3,9,17,14) Prior-art subsection; exploratory errors-in-variables and Bayesian sensitivity; size-corrected patient-ranking exploratory.
 F. OPEN-EXTERNAL items reported as blockers: independent individual-organoid dataset, raw DIS masks/images, CFTR-inhibitor controls, independent annotation cohort, wet-lab mechanism.
 G. PROCESS item 2: authorship/AI-disclosure options prepared for owner decision.
+
+## Owner update 27 September 2026 12:02:56 IST
+
+WhatsApp wamid.HBgMOTE4MTM0MDk4NTcxFQIAEhgWM0VCMEFGRDY4MzY4OTkxNzFEQURGRAA=: "IGNORE ABOUT ISEF DELIVERABLES, IMPROVE PAGE COUNT". Queue B (12-slide story) was historically drafted but is now OWNER-CANCELLED as an active deliverable. No slides/poster/interview assets; prioritize substantive text-body analyses, methods and tables toward the 50+ body-page rule. Original failed gates and split-leakage correction stay recorded.
