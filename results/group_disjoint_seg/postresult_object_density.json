@@ -157,5 +157,5 @@
     ]
   },
   "spearman_gt_count_vs_author_ap50": -0.410989010989011,
-  "limits": "14 previously seen eval images; GT counts are annotation density, not validated acquisition conditions; detector and source fields vary; no significance claim, model retuning or benchmark gate upgrade."
+  "limits": "12 previously scored original eval images plus two known-source files moved from train/val; GT counts are annotation density, not validated acquisition conditions; detector and source fields vary; no significance claim, model retuning or benchmark gate upgrade."
 }

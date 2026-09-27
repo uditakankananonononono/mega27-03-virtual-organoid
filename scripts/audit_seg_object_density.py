@@ -29,6 +29,6 @@ rho=float(spearmanr([x['n_gt'] for x in rows],[x['ap_author'] for x in rows]).st
 out={'status':'POST-RESULT descriptive density stratification; not a causal effect or benchmark test',
      'median_gt_cutoff':med,'low_includes_median':True,'low':summary(lo),'high':summary(hi),
      'spearman_gt_count_vs_author_ap50':rho,
-     'limits':'14 previously seen eval images; GT counts are annotation density, not validated acquisition conditions; detector and source fields vary; no significance claim, model retuning or benchmark gate upgrade.'}
+     'limits':'12 previously scored original eval images plus two known-source files moved from train/val; GT counts are annotation density, not validated acquisition conditions; detector and source fields vary; no significance claim, model retuning or benchmark gate upgrade.'}
 Path('results/group_disjoint_seg/postresult_object_density.json').write_text(json.dumps(out,indent=2)+'\n')
 print({k:v if k not in ('low','high') else {q:w for q,w in v.items() if q!='images'} for k,v in out.items()})
