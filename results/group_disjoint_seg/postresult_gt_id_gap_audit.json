@@ -1,0 +1,36 @@
+{
+  "status": "POST-RESULT metric-accounting audit, no mask or model change",
+  "n_images": 14,
+  "n_gt_id_gap_images": 2,
+  "gap_images": [
+    {
+      "image": "20210727_21543_ckwgdjdq763z90z6o7n0w8csg_img.jpg",
+      "gt_id_gaps": 1,
+      "author_ap50": 0.767123281955719,
+      "unique_count_ap50": 0.7777777777777778,
+      "difference_unique_minus_author": 0.010654495822058796,
+      "author_tp_fp_fn": [
+        56,
+        14,
+        3
+      ]
+    },
+    {
+      "image": "20210727_37653_ckwggbhda5ql20z7n9eveah6i_img.jpg",
+      "gt_id_gaps": 1,
+      "author_ap50": 0.7799999713897705,
+      "unique_count_ap50": 0.7878787878787878,
+      "difference_unique_minus_author": 0.007878816489017337,
+      "author_tp_fp_fn": [
+        78,
+        13,
+        9
+      ]
+    }
+  ],
+  "mean_author": 0.7504031573023114,
+  "mean_unique_count": 0.7517269636795907,
+  "mean_difference_unique_minus_author": 0.0013238063772792463,
+  "n_other_images_with_difference_gt_1e_6": 0,
+  "limits": "Author scorer used for primary exploratory AP50; no independent author model predictions or benchmark repair."
+}
