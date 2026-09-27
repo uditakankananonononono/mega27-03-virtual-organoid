@@ -31,3 +31,7 @@ results/trainonly_seg/resume.pt
 
 # External mouse YOLO source data, downloaded and hashed; no archive commit.
 data/external/mouse_intestinal_yolo/
+
+# Generated group-disjoint symlinks and checkpoints
+data/derived/group_disjoint_seg/
+results/group_disjoint_seg/resume.pt

@@ -1,0 +1,62 @@
+{
+  "status": "exploratory previously seen eval; no benchmark win",
+  "protocol": "notes/prereg_group_disjoint_seg.md",
+  "source_manifest_sha256": "ba003cd9645067eb455f5a2d0166a53a0a41aa73378f938e848f2ca9c73a9b65",
+  "threshold": 0.95,
+  "component_count": 215,
+  "split_counts": {
+    "eval": 14,
+    "train": 180,
+    "val": 37
+  },
+  "n_moved": 5,
+  "moved": [
+    {
+      "image": "train/0003_3250648_ckmbz0c8v1vke345zguvwuom1_img.jpg",
+      "from": "train",
+      "to": "val",
+      "component": [
+        "train/0003_3250648_ckmbz0c8v1vke345zguvwuom1_img.jpg",
+        "val/0003_6054432_cknj077t115y9345zmqfpq9s0_img.jpg"
+      ]
+    },
+    {
+      "image": "train/20210727_11104_ckufl4yfh3f200y77899mcbro_img.jpg",
+      "from": "train",
+      "to": "val",
+      "component": [
+        "train/20210727_11104_ckufl4yfh3f200y77899mcbro_img.jpg",
+        "val/20210727_16294_ckunspgrq2th20z824ozpde5m_img.jpg"
+      ]
+    },
+    {
+      "image": "train/20210727_11752_ckufmmv8203lp0y8xhq8k7lin_img.jpg",
+      "from": "train",
+      "to": "val",
+      "component": [
+        "train/20210727_11752_ckufmmv8203lp0y8xhq8k7lin_img.jpg",
+        "val/20210727_28190_ckw3itp398oe50zc3darma7i6_img.jpg"
+      ]
+    },
+    {
+      "image": "train/20210727_15879_ckunspgfb2th10z8253ca7pzf_img.jpg",
+      "from": "train",
+      "to": "eval",
+      "component": [
+        "eval/20210727_11562_ckufm1p2h4vzp0y7jh0fyg2yo_img.jpg",
+        "train/20210727_15879_ckunspgfb2th10z8253ca7pzf_img.jpg"
+      ]
+    },
+    {
+      "image": "val/20210727_21543_ckwgdjdq763z90z6o7n0w8csg_img.jpg",
+      "from": "val",
+      "to": "eval",
+      "component": [
+        "eval/20210727_26838_ckw3ig3xg5ngk0zbp0g7j7dqt_img.jpg",
+        "val/20210727_21543_ckwgdjdq763z90z6o7n0w8csg_img.jpg"
+      ]
+    }
+  ],
+  "dest": "data/derived/group_disjoint_seg",
+  "limits": "Image-only group proxies, no donor/plate/field IDs. Previously scored eval; not independent."
+}
