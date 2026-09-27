@@ -28,3 +28,6 @@ data/drevinek_fis/source.zip
 data/vti_eti/code.zip
 # Transient resumable optimizer state; best model and history are committed.
 results/trainonly_seg/resume.pt
+
+# External mouse YOLO source data, downloaded and hashed; no archive commit.
+data/external/mouse_intestinal_yolo/
