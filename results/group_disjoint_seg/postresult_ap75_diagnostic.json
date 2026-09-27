@@ -1,0 +1,263 @@
+{
+  "status": "post-result strict-IoU diagnostic on known source files; not independent benchmark",
+  "protocol": "notes/postresult_ap75_boundary_protocol.md",
+  "checkpoint_sha256": "cc9f8ddfd07155854c8955ccd3089de777bd53fcf6131d0ef7aadb26142360f4",
+  "source_manifest_sha256": "ba003cd9645067eb455f5a2d0166a53a0a41aa73378f938e848f2ca9c73a9b65",
+  "author_release_commit": "aeaec17c42fefde61a8b2215a616d419e8126e9f",
+  "n_images": 14,
+  "ap50_reproduced_mean": 0.7504031573023114,
+  "ap75_mean": 0.5690972251551492,
+  "mean_ap75_minus_ap50": -0.1813059321471623,
+  "median_ap75_minus_ap50": -0.17241612076759338,
+  "tp_fp_fn_50_sums": [
+    901,
+    152,
+    187
+  ],
+  "tp_fp_fn_75_sums": [
+    738,
+    315,
+    350
+  ],
+  "per_image": [
+    {
+      "image": "0002_2013089_ckmbvhhhx0000345zlx7mhq1y_img.jpg",
+      "ap50_reproduced": 0.9577465057373047,
+      "ap75_author": 0.737500011920929,
+      "ap75_minus_ap50": -0.22024649381637573,
+      "n_gt": 70,
+      "tp_fp_fn_50": [
+        68,
+        1,
+        2
+      ],
+      "tp_fp_fn_75": [
+        59,
+        10,
+        11
+      ]
+    },
+    {
+      "image": "0002_2423915_cknt06dr33pzv3b68t421bk27_img.jpg",
+      "ap50_reproduced": 0.5833333134651184,
+      "ap75_author": 0.41489362716674805,
+      "ap75_minus_ap50": -0.16843968629837036,
+      "n_gt": 76,
+      "tp_fp_fn_50": [
+        49,
+        8,
+        27
+      ],
+      "tp_fp_fn_75": [
+        39,
+        18,
+        37
+      ]
+    },
+    {
+      "image": "0002_7071445_ckm384kvx8ib3345zzs8qewl4_img.jpg",
+      "ap50_reproduced": 0.8113207817077637,
+      "ap75_author": 0.6842105388641357,
+      "ap75_minus_ap50": -0.12711024284362793,
+      "n_gt": 44,
+      "tp_fp_fn_50": [
+        43,
+        9,
+        1
+      ],
+      "tp_fp_fn_75": [
+        39,
+        13,
+        5
+      ]
+    },
+    {
+      "image": "0003_9960762_ckmdlvkmi14yv345z384v1grr_img.jpg",
+      "ap50_reproduced": 0.8918918967247009,
+      "ap75_author": 0.6666666865348816,
+      "ap75_minus_ap50": -0.22522521018981934,
+      "n_gt": 36,
+      "tp_fp_fn_50": [
+        33,
+        1,
+        3
+      ],
+      "tp_fp_fn_75": [
+        28,
+        6,
+        8
+      ]
+    },
+    {
+      "image": "20210727_11562_ckufm1p2h4vzp0y7jh0fyg2yo_img.jpg",
+      "ap50_reproduced": 0.8947368264198303,
+      "ap75_author": 0.800000011920929,
+      "ap75_minus_ap50": -0.09473681449890137,
+      "n_gt": 52,
+      "tp_fp_fn_50": [
+        51,
+        5,
+        1
+      ],
+      "tp_fp_fn_75": [
+        48,
+        8,
+        4
+      ]
+    },
+    {
+      "image": "20210727_11753_ckuf91aiz36dm0y9p2t9k5qoh_img.jpg",
+      "ap50_reproduced": 0.5538461804389954,
+      "ap75_author": 0.4225352108478546,
+      "ap75_minus_ap50": -0.13131096959114075,
+      "n_gt": 50,
+      "tp_fp_fn_50": [
+        36,
+        15,
+        14
+      ],
+      "tp_fp_fn_75": [
+        30,
+        21,
+        20
+      ]
+    },
+    {
+      "image": "20210727_12226_ckw3in2er4sqh10aofkm50w8l_img.jpg",
+      "ap50_reproduced": 0.7241379022598267,
+      "ap75_author": 0.4084506928920746,
+      "ap75_minus_ap50": -0.3156872093677521,
+      "n_gt": 149,
+      "tp_fp_fn_50": [
+        126,
+        25,
+        23
+      ],
+      "tp_fp_fn_75": [
+        87,
+        64,
+        62
+      ]
+    },
+    {
+      "image": "20210727_15879_ckunspgfb2th10z8253ca7pzf_img.jpg",
+      "ap50_reproduced": 0.8500000238418579,
+      "ap75_author": 0.6086956262588501,
+      "ap75_minus_ap50": -0.2413043975830078,
+      "n_gt": 55,
+      "tp_fp_fn_50": [
+        51,
+        5,
+        4
+      ],
+      "tp_fp_fn_75": [
+        42,
+        14,
+        13
+      ]
+    },
+    {
+      "image": "20210727_16063_ckw3j7wet8qan0zc39rca87mv_img.jpg",
+      "ap50_reproduced": 0.6323529481887817,
+      "ap75_author": 0.5633803009986877,
+      "ap75_minus_ap50": -0.068972647190094,
+      "n_gt": 128,
+      "tp_fp_fn_50": [
+        86,
+        8,
+        42
+      ],
+      "tp_fp_fn_75": [
+        80,
+        14,
+        48
+      ]
+    },
+    {
+      "image": "20210727_18315_ckw3ky6ln8z8z0zbnfc0o1gam_img.jpg",
+      "ap50_reproduced": 0.7021276354789734,
+      "ap75_author": 0.6326530575752258,
+      "ap75_minus_ap50": -0.06947457790374756,
+      "n_gt": 75,
+      "tp_fp_fn_50": [
+        66,
+        19,
+        9
+      ],
+      "tp_fp_fn_75": [
+        62,
+        23,
+        13
+      ]
+    },
+    {
+      "image": "20210727_21543_ckwgdjdq763z90z6o7n0w8csg_img.jpg",
+      "ap50_reproduced": 0.767123281955719,
+      "ap75_author": 0.6329113841056824,
+      "ap75_minus_ap50": -0.13421189785003662,
+      "n_gt": 58,
+      "tp_fp_fn_50": [
+        56,
+        14,
+        3
+      ],
+      "tp_fp_fn_75": [
+        50,
+        20,
+        9
+      ]
+    },
+    {
+      "image": "20210727_26838_ckw3ig3xg5ngk0zbp0g7j7dqt_img.jpg",
+      "ap50_reproduced": 0.7051281929016113,
+      "ap75_author": 0.5287356376647949,
+      "ap75_minus_ap50": -0.1763925552368164,
+      "n_gt": 59,
+      "tp_fp_fn_50": [
+        55,
+        19,
+        4
+      ],
+      "tp_fp_fn_75": [
+        46,
+        28,
+        13
+      ]
+    },
+    {
+      "image": "20210727_33832_ckw3n2vrs9btz0zbn3jqgbv4y_img.jpg",
+      "ap50_reproduced": 0.6518987417221069,
+      "ap75_author": 0.34536081552505493,
+      "ap75_minus_ap50": -0.306537926197052,
+      "n_gt": 148,
+      "tp_fp_fn_50": [
+        103,
+        10,
+        45
+      ],
+      "tp_fp_fn_75": [
+        67,
+        46,
+        81
+      ]
+    },
+    {
+      "image": "20210727_37653_ckwggbhda5ql20z7n9eveah6i_img.jpg",
+      "ap50_reproduced": 0.7799999713897705,
+      "ap75_author": 0.5213675498962402,
+      "ap75_minus_ap50": -0.2586324214935303,
+      "n_gt": 86,
+      "tp_fp_fn_50": [
+        78,
+        13,
+        9
+      ],
+      "tp_fp_fn_75": [
+        61,
+        30,
+        26
+      ]
+    }
+  ],
+  "limits": "Post-result diagnostic; AP75 has no paired released-model comparison; 14 known source files and proxy acquisition groups; strict-IoU gap cannot isolate model localization from annotation and acquisition effects."
+}
