@@ -21,12 +21,14 @@ net=UNet();net.load_state_dict(ck['net']);net.eval();torch.set_num_threads(1)
 def bounds(mask):
  ys,xs=np.nonzero(mask);return [int(xs.min()),int(ys.min()),int(xs.max()+1),int(ys.max()+1)]
 def parse_yolo(file,W,H):
- out=[]; classes=[]
- for line in file.read_text().splitlines():
+ out=[]; classes=[]; invalid=[]
+ for lineno,line in enumerate(file.read_text().splitlines(),1):
   a=line.split();assert len(a)==5
-  c,x,y,w,h=map(float,a);assert c in (0,1,2,3) and 0<=x<=1 and 0<=y<=1 and 0<w<=1 and 0<h<=1
+  c,x,y,w,h=map(float,a);assert c in (0,1,2,3) and 0<=x<=1 and 0<=y<=1 and 0<=w<=1 and 0<=h<=1
+  if w==0 or h==0:
+   invalid.append({'line':lineno,'raw':line,'reason':'zero-area annotation'});continue
   out.append([max(0.,(x-w/2)*W),max(0.,(y-h/2)*H),min(W,(x+w/2)*W),min(H,(y+h/2)*H)]);classes.append(int(c))
- return np.array(out,dtype=float).reshape(-1,4),classes
+ return np.array(out,dtype=float).reshape(-1,4),classes,invalid
 def pair_score(gt,pred):
  ng,npred=len(gt),len(pred)
  if not ng or not npred:return 0,npred,ng
@@ -50,10 +52,10 @@ for file in files[len(allrows):]:
  markers,_=ndi.label(seeds);lab=watershed(-pu[1],markers,mask=fg)
  sizes=np.bincount(lab.ravel());minimum=int(40*W*H/(512*512))
  boxes=np.asarray([bounds(lab==i) for i in range(1,len(sizes)) if sizes[i]>=minimum],dtype=float).reshape(-1,4)
- gt,classes=parse_yolo(data/'val/labels'/(file.stem+'.txt'),W,H)
+ gt,classes,invalid=parse_yolo(data/'val/labels'/(file.stem+'.txt'),W,H)
  tp,fp,fn=pair_score(gt,boxes)
  row={'image':file.name,'image_sha256':hashlib.sha256(file.read_bytes()).hexdigest(),'annotation_sha256':hashlib.sha256((data/'val/labels'/(file.stem+'.txt')).read_bytes()).hexdigest(),
-      'size':[W,H],'n_truth':len(gt),'n_pred':len(boxes),'classes':{str(i):classes.count(i) for i in range(4)},
+      'size':[W,H],'n_truth':len(gt),'n_pred':len(boxes),'invalid_annotations':invalid,'classes':{str(i):classes.count(i) for i in range(4)},
       'tp':tp,'fp':fp,'fn':fn,'precision':tp/(tp+fp) if tp+fp else 0.,'recall':tp/(tp+fn) if tp+fn else 0.,
       'f1':2*tp/(2*tp+fp+fn) if 2*tp+fp+fn else 0.}
  allrows.append(row)
@@ -69,6 +71,7 @@ if len(allrows)==84:
  t=sum(r['tp'] for r in allrows);fp=sum(r['fp'] for r in allrows);fn=sum(r['fn'] for r in allrows)
  result['summary']={'tp':t,'fp':fp,'fn':fn,'micro_precision':t/(t+fp),'micro_recall':t/(t+fn),'micro_f1':2*t/(2*t+fp+fn),
     'macro_image_f1':float(np.mean([r['f1'] for r in allrows])),
+    'invalid_zero_area_annotations':sum(len(r.get('invalid_annotations',[])) for r in allrows),
     'zero_ground_truth_images':sum(r['n_truth']==0 for r in allrows),
     'zero_prediction_images':sum(r['n_pred']==0 for r in allrows)}
  outpath.write_text(json.dumps(result,indent=2)+'\n');print('SUMMARY',result['summary'],flush=True)
