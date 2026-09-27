@@ -1,0 +1,254 @@
+{
+  "status": "post-result source-baseline neighbor-spacing vs endpoint observability, same accession and donor set",
+  "protocol": "notes/postresult_neighbor_observability_protocol.md",
+  "source_url": "https://zenodo.org/records/10610438",
+  "source_sha256": "0e0e7913947a29c7b32ce87ca73a98614033d41ce63063a1d65053e766b2f315",
+  "n_particles_source": 47687,
+  "n_source_images": 705,
+  "n_original_blocks": 31,
+  "n_eligible_baseline": 6964,
+  "n_observed_endpoint": 4964,
+  "n_donors": 12,
+  "n_eligible_fields": 143,
+  "n_missing_nn1": 0,
+  "n_missing_nn3": 0,
+  "n_exact_coincident_neighbor": 0,
+  "nn1_quartile_cutoffs_px": [
+    70.89428723592812,
+    104.16933329920087,
+    152.0871460709287
+  ],
+  "quartile_rates": [
+    {
+      "arm": "DMSO",
+      "size": "large",
+      "quartile": 1,
+      "n": 391,
+      "observed": 324,
+      "rate": 0.8286445012787724,
+      "median_nn1": 55.2675311552814
+    },
+    {
+      "arm": "DMSO",
+      "size": "large",
+      "quartile": 2,
+      "n": 528,
+      "observed": 476,
+      "rate": 0.9015151515151515,
+      "median_nn1": 88.21912578352767
+    },
+    {
+      "arm": "DMSO",
+      "size": "large",
+      "quartile": 3,
+      "n": 566,
+      "observed": 510,
+      "rate": 0.901060070671378,
+      "median_nn1": 127.86857645194519
+    },
+    {
+      "arm": "DMSO",
+      "size": "large",
+      "quartile": 4,
+      "n": 573,
+      "observed": 515,
+      "rate": 0.8987783595113438,
+      "median_nn1": 199.12621625491707
+    },
+    {
+      "arm": "DMSO",
+      "size": "small",
+      "quartile": 1,
+      "n": 450,
+      "observed": 171,
+      "rate": 0.38,
+      "median_nn1": 44.78681584365748
+    },
+    {
+      "arm": "DMSO",
+      "size": "small",
+      "quartile": 2,
+      "n": 285,
+      "observed": 137,
+      "rate": 0.4807017543859649,
+      "median_nn1": 86.50144507463445
+    },
+    {
+      "arm": "DMSO",
+      "size": "small",
+      "quartile": 3,
+      "n": 252,
+      "observed": 125,
+      "rate": 0.49603174603174605,
+      "median_nn1": 125.86896138295978
+    },
+    {
+      "arm": "DMSO",
+      "size": "small",
+      "quartile": 4,
+      "n": 261,
+      "observed": 130,
+      "rate": 0.49808429118773945,
+      "median_nn1": 198.21263834579267
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size": "large",
+      "quartile": 1,
+      "n": 454,
+      "observed": 339,
+      "rate": 0.7466960352422908,
+      "median_nn1": 54.11330705103875
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size": "large",
+      "quartile": 2,
+      "n": 642,
+      "observed": 513,
+      "rate": 0.7990654205607477,
+      "median_nn1": 86.21049644483718
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size": "large",
+      "quartile": 3,
+      "n": 647,
+      "observed": 555,
+      "rate": 0.8578052550231839,
+      "median_nn1": 123.2000405844089
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size": "large",
+      "quartile": 4,
+      "n": 665,
+      "observed": 598,
+      "rate": 0.8992481203007519,
+      "median_nn1": 196.02295783912658
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size": "small",
+      "quartile": 1,
+      "n": 446,
+      "observed": 143,
+      "rate": 0.32062780269058294,
+      "median_nn1": 46.39233723991394
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size": "small",
+      "quartile": 2,
+      "n": 282,
+      "observed": 137,
+      "rate": 0.4858156028368794,
+      "median_nn1": 86.06608404528188
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size": "small",
+      "quartile": 3,
+      "n": 279,
+      "observed": 158,
+      "rate": 0.5663082437275986,
+      "median_nn1": 127.4872542648872
+    },
+    {
+      "arm": "VX445_VX661_VX770",
+      "size": "small",
+      "quartile": 4,
+      "n": 243,
+      "observed": 133,
+      "rate": 0.5473251028806584,
+      "median_nn1": 205.69941662532736
+    }
+  ],
+  "model_terms": {
+    "treatment": {
+      "beta": -0.009660573440457051,
+      "odds_ratio": 0.9903859399964803,
+      "cluster_se": 0.12937372918603893,
+      "cluster_p_two_sided": 0.9404758194652446,
+      "cluster_ci95_beta": [
+        -0.2632284231907318,
+        0.24390727630981768
+      ]
+    },
+    "large": {
+      "beta": 1.052080824759747,
+      "odds_ratio": 2.8636035801318123,
+      "cluster_se": 0.3767911966812904,
+      "cluster_p_two_sided": 0.00523490782786613,
+      "cluster_ci95_beta": [
+        0.31358364957266993,
+        1.7905779999468243
+      ]
+    },
+    "treatment:large": {
+      "beta": -0.4341752836292599,
+      "odds_ratio": 0.6477986970265273,
+      "cluster_se": 0.16576801324181142,
+      "cluster_p_two_sided": 0.008814295472767037,
+      "cluster_ci95_beta": [
+        -0.7590746193719691,
+        -0.1092759478865507
+      ]
+    },
+    "log_A0": {
+      "beta": 0.37978022942809797,
+      "odds_ratio": 1.4619632576246522,
+      "cluster_se": 0.09059547514284136,
+      "cluster_p_two_sided": 2.7645220704976004e-05,
+      "cluster_ci95_beta": [
+        0.2022163609858352,
+        0.5573440978703608
+      ]
+    },
+    "score0": {
+      "beta": 4.4096395027234525,
+      "odds_ratio": 82.23981093182232,
+      "cluster_se": 0.5653264178050728,
+      "cluster_p_two_sided": 6.182614029635487e-15,
+      "cluster_ci95_beta": [
+        3.3016200843164665,
+        5.5176589211304385
+      ]
+    },
+    "log_nn1": {
+      "beta": 0.5447124944590847,
+      "odds_ratio": 1.724112619181341,
+      "cluster_se": 0.06677475370002398,
+      "cluster_p_two_sided": 3.421385647730797e-16,
+      "cluster_ci95_beta": [
+        0.41383638213050494,
+        0.6755886067876644
+      ]
+    },
+    "log_nn1:large": {
+      "beta": 0.06103214038635654,
+      "odds_ratio": 1.0629330767179508,
+      "cluster_se": 0.11584479846195699,
+      "cluster_p_two_sided": 0.5983019045859277,
+      "cluster_ci95_beta": [
+        -0.1660194923953802,
+        0.2880837731680933
+      ]
+    }
+  },
+  "model_converged": true,
+  "within_field_close_minus_far": {
+    "n_usable_fields": 143,
+    "observed_mean_field_difference": -0.10133852072647292,
+    "within_field_permutation_seed": 20260927,
+    "n_permutations": 100,
+    "null_mean": -0.0007564687129449654,
+    "null_percentile_2_5_97_5": [
+      -0.018346633138109886,
+      0.02095851729175242
+    ]
+  },
+  "zero_fsk_source_rows": 22876,
+  "zero_fsk_rows_same_donor_experiment_as_original_blocks": 11693,
+  "limits": "Observability means positive finite source A1, not t1 row presence. Donor fixed-effects descriptive association with 12 clusters and within-field dependence. Zero FSK no clean mechanical control; no missing A1 identification, causality, original sign-gate repair or biology."
+}
