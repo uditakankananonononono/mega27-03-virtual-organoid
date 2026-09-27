@@ -1,0 +1,183 @@
+{
+  "status": "EXPLORATORY; formerly used eval images, not independent or prospective benchmark",
+  "protocol": "notes/prereg_group_disjoint_seg.md",
+  "source_manifest_sha256": "ba003cd9645067eb455f5a2d0166a53a0a41aa73378f938e848f2ca9c73a9b65",
+  "model": "results/group_disjoint_seg/best.pt",
+  "model_sha256": "cc9f8ddfd07155854c8955ccd3089de777bd53fcf6131d0ef7aadb26142360f4",
+  "selected_epoch": 60,
+  "selected_val_loss": 0.07703889503672316,
+  "params": [
+    0.5,
+    0.6,
+    0.3,
+    20
+  ],
+  "selection": "default in src/vorganoid/seg.py frozen in this script before new eval; no reassigned-val postprocessing grid",
+  "author_release": "https://github.com/Living-Technologies/OrgaSegment/tree/v1.0.1",
+  "author_release_commit": "aeaec17c42fefde61a8b2215a616d419e8126e9f",
+  "per_image": [
+    {
+      "image": "0002_2013089_ckmbvhhhx0000345zlx7mhq1y_img.jpg",
+      "ap_author": 0.9577465057373047,
+      "ap_ours": 0.9577464788732394,
+      "tp_author": 68,
+      "fp_author": 1,
+      "fn_author": 2,
+      "n_gt": 70,
+      "n_pred": 69,
+      "gt_id_gaps": 0
+    },
+    {
+      "image": "0002_2423915_cknt06dr33pzv3b68t421bk27_img.jpg",
+      "ap_author": 0.5833333134651184,
+      "ap_ours": 0.5833333333333334,
+      "tp_author": 49,
+      "fp_author": 8,
+      "fn_author": 27,
+      "n_gt": 76,
+      "n_pred": 57,
+      "gt_id_gaps": 0
+    },
+    {
+      "image": "0002_7071445_ckm384kvx8ib3345zzs8qewl4_img.jpg",
+      "ap_author": 0.8113207817077637,
+      "ap_ours": 0.8113207547169812,
+      "tp_author": 43,
+      "fp_author": 9,
+      "fn_author": 1,
+      "n_gt": 44,
+      "n_pred": 52,
+      "gt_id_gaps": 0
+    },
+    {
+      "image": "0003_9960762_ckmdlvkmi14yv345z384v1grr_img.jpg",
+      "ap_author": 0.8918918967247009,
+      "ap_ours": 0.8918918918918919,
+      "tp_author": 33,
+      "fp_author": 1,
+      "fn_author": 3,
+      "n_gt": 36,
+      "n_pred": 34,
+      "gt_id_gaps": 0
+    },
+    {
+      "image": "20210727_11562_ckufm1p2h4vzp0y7jh0fyg2yo_img.jpg",
+      "ap_author": 0.8947368264198303,
+      "ap_ours": 0.8947368421052632,
+      "tp_author": 51,
+      "fp_author": 5,
+      "fn_author": 1,
+      "n_gt": 52,
+      "n_pred": 56,
+      "gt_id_gaps": 0
+    },
+    {
+      "image": "20210727_11753_ckuf91aiz36dm0y9p2t9k5qoh_img.jpg",
+      "ap_author": 0.5538461804389954,
+      "ap_ours": 0.5538461538461539,
+      "tp_author": 36,
+      "fp_author": 15,
+      "fn_author": 14,
+      "n_gt": 50,
+      "n_pred": 51,
+      "gt_id_gaps": 0
+    },
+    {
+      "image": "20210727_12226_ckw3in2er4sqh10aofkm50w8l_img.jpg",
+      "ap_author": 0.7241379022598267,
+      "ap_ours": 0.7241379310344828,
+      "tp_author": 126,
+      "fp_author": 25,
+      "fn_author": 23,
+      "n_gt": 149,
+      "n_pred": 151,
+      "gt_id_gaps": 0
+    },
+    {
+      "image": "20210727_15879_ckunspgfb2th10z8253ca7pzf_img.jpg",
+      "ap_author": 0.8500000238418579,
+      "ap_ours": 0.85,
+      "tp_author": 51,
+      "fp_author": 5,
+      "fn_author": 4,
+      "n_gt": 55,
+      "n_pred": 56,
+      "gt_id_gaps": 0
+    },
+    {
+      "image": "20210727_16063_ckw3j7wet8qan0zc39rca87mv_img.jpg",
+      "ap_author": 0.6323529481887817,
+      "ap_ours": 0.6323529411764706,
+      "tp_author": 86,
+      "fp_author": 8,
+      "fn_author": 42,
+      "n_gt": 128,
+      "n_pred": 94,
+      "gt_id_gaps": 0
+    },
+    {
+      "image": "20210727_18315_ckw3ky6ln8z8z0zbnfc0o1gam_img.jpg",
+      "ap_author": 0.7021276354789734,
+      "ap_ours": 0.7021276595744681,
+      "tp_author": 66,
+      "fp_author": 19,
+      "fn_author": 9,
+      "n_gt": 75,
+      "n_pred": 85,
+      "gt_id_gaps": 0
+    },
+    {
+      "image": "20210727_21543_ckwgdjdq763z90z6o7n0w8csg_img.jpg",
+      "ap_author": 0.767123281955719,
+      "ap_ours": 0.7777777777777778,
+      "tp_author": 56,
+      "fp_author": 14,
+      "fn_author": 3,
+      "n_gt": 58,
+      "n_pred": 70,
+      "gt_id_gaps": 1
+    },
+    {
+      "image": "20210727_26838_ckw3ig3xg5ngk0zbp0g7j7dqt_img.jpg",
+      "ap_author": 0.7051281929016113,
+      "ap_ours": 0.7051282051282052,
+      "tp_author": 55,
+      "fp_author": 19,
+      "fn_author": 4,
+      "n_gt": 59,
+      "n_pred": 74,
+      "gt_id_gaps": 0
+    },
+    {
+      "image": "20210727_33832_ckw3n2vrs9btz0zbn3jqgbv4y_img.jpg",
+      "ap_author": 0.6518987417221069,
+      "ap_ours": 0.6518987341772152,
+      "tp_author": 103,
+      "fp_author": 10,
+      "fn_author": 45,
+      "n_gt": 148,
+      "n_pred": 113,
+      "gt_id_gaps": 0
+    },
+    {
+      "image": "20210727_37653_ckwggbhda5ql20z7n9eveah6i_img.jpg",
+      "ap_author": 0.7799999713897705,
+      "ap_ours": 0.7878787878787878,
+      "tp_author": 78,
+      "fp_author": 13,
+      "fn_author": 9,
+      "n_gt": 86,
+      "n_pred": 91,
+      "gt_id_gaps": 1
+    }
+  ],
+  "mean_author": 0.7504031573023114,
+  "mean_ours": 0.7517269636795907,
+  "image_bootstrap_ci95": [
+    0.6893494729484831,
+    0.810721526720694
+  ],
+  "bootstrap_seed": 20260927,
+  "bootstrap_draws": 20000,
+  "limitations": "14 previously used eval images; candidate scene groups do not prove donor/field independence; published author-model paired predictions unavailable; no benchmark-win claim"
+}
