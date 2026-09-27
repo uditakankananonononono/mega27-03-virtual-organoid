@@ -1,3 +1,7 @@
+# Current judge requirement, 27 September 2026
+
+The owner changed the requirement at 10:00 IST to one ChatGPT check per project, provided through her courier route. The four already verified ChatGPT novelty-producing critique rounds remain in the historical ledger: **4 of 1, requirement met**. The old ten-round target and the "more needed" counts below are historical and superseded, not current blockers. A future courier verdict is assessed on its own contents; supplementary Gemini and DeepSeek are never counted as ChatGPT. Meeting this review-count requirement does not repair donor-sign/specificity failures, independent validation, or paper-length gaps.
+
 # Virtual organoid ChatGPT judge ledger
 
 Old rounds 01/02 in `results/judge_rounds/` were weakness reviews before the new instruction that a counted round must produce a concrete novelty change. They are preserved as critique, but not counted under the stricter rule until a traceable, distinct novelty addition is established. Round 03 was blocked and has no response.
