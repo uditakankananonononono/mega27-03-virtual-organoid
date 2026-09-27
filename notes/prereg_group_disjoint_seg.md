@@ -1,6 +1,6 @@
 # Exploratory acquisition-candidate-group-disjoint segmentation re-evaluation
 
-Locked 27 September 2026 BEFORE group reassignment, model training, validation tuning, or scores from the new split. This is a new exploratory analysis motivated by the already observed 0.761108 AP50 and identified split overlap. It is NOT a prospective test of the original >0.76 gate, does not repair its withdrawn benchmark-win claim, and does not create an untouched independent acquisition cohort. The full original gate, repeated fields and all prior scores remain recorded.
+Protocol committed on 27 September 2026 at b8e5132, before THIS new reassignment, model training, validation tuning or scores from the reassigned split. The original 0.761108 AP50 and scene-overlap forensics were already known; this is a post-result exploratory analysis, not a prospective preregistration of the original benchmark. It is NOT a prospective test of the original >0.76 gate, does not repair its withdrawn benchmark-win claim, and does not create an untouched independent acquisition cohort. The full original gate, repeated fields and all prior scores remain recorded.
 
 ## Frozen input and groups
 
