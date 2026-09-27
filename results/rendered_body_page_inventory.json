@@ -1,16 +1,16 @@
 {
   "source_pdf": "paper/mega27-03-virtual-organoid-paper.pdf",
-  "sha256": "7e238ba278f206da56839be0f76afa73b6ab21fddfa606f9bac49892e115f32f",
-  "physical_pages": 86,
-  "body_candidate_pages": "2-55",
-  "candidate_count_before_qualitative_exclusions": 54,
+  "sha256": "cd640fdf8de73bf753c427b8d845a94785d92ad8b327d43060baf5b1c5d0b43e",
+  "physical_pages": 88,
+  "body_candidate_pages": "2-57",
+  "candidate_count_before_qualitative_exclusions": 56,
   "diagnostic_counts_not_a_rule": {
-    "200": 49,
-    "300": 45,
-    "350": 38,
-    "400": 27
+    "200": 51,
+    "300": 47,
+    "350": 40,
+    "400": 30
   },
-  "body_candidate_word_tokens": 19941,
+  "body_candidate_word_tokens": 20888,
   "per_page": [
     {
       "page": 1,
@@ -278,7 +278,7 @@
     },
     {
       "page": 34,
-      "word_tokens": 475,
+      "word_tokens": 488,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
       "images": 2,
@@ -286,22 +286,38 @@
     },
     {
       "page": 35,
-      "word_tokens": 418,
+      "word_tokens": 467,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
       "images": 2,
-      "excerpt": "On the 14 reassigned eval images, the pinned OrgaSegment v1.0.1 author AP50 implementation gives mean 0.750403; our unique-mask-count implementat"
+      "excerpt": "explain away the repeated scenes. Those denominator discrepancies were recorded separately from the split-integrity question; the original thresh"
     },
     {
       "page": 36,
-      "word_tokens": 374,
+      "word_tokens": 449,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
       "images": 2,
-      "excerpt": "paired published-model predictions is still required for a leading-tool claim (notes/group_disjoint_eval_design_limits.md). 4.5k.1 Same-file scor"
+      "excerpt": "would need to test, not a new benchmark failure or gain (results/group_disjoint_seg/postresult_ap75_diagnostic.json). A credible replacement comp"
     },
     {
       "page": 37,
+      "word_tokens": 410,
+      "contains_references_heading": false,
+      "contains_appendix_heading": false,
+      "images": 2,
+      "excerpt": "reassigned-eval score, as permitted by that protocol. Model checkpoint and full epoch history are retained under results/group_disjoint_seg/. On "
+    },
+    {
+      "page": 38,
+      "word_tokens": 400,
+      "contains_references_heading": false,
+      "contains_appendix_heading": false,
+      "images": 2,
+      "excerpt": "these are not verified independent donors or plates; the image-bootstrap interval ignores any hidden nesting. An untouched acquisition cohort wit"
+    },
+    {
+      "page": 39,
       "word_tokens": 449,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -309,7 +325,7 @@
       "excerpt": "4.5l Post-result candidate-scene-group uncertainty The 14-image bootstrap in Section 4.5k resamples image files as if they were exchangeable. A p"
     },
     {
-      "page": 38,
+      "page": 40,
       "word_tokens": 426,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -317,7 +333,7 @@
       "excerpt": "rises from 0.085 to 0.214; mean false positives per image rise from 9.7 to 12.0. A continuous GT-count/AP50 Spearman coefficient is -0.411. Both "
     },
     {
-      "page": 39,
+      "page": 41,
       "word_tokens": 315,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -325,7 +341,7 @@
       "excerpt": "Secondary exploratory analyses III: organoid-to-tissue fidelity across public transcriptomes Sections 4.6 through 4.13 are off-question secondary"
     },
     {
-      "page": 40,
+      "page": 42,
       "word_tokens": 265,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -333,7 +349,7 @@
       "excerpt": "CENT_N OCULT 0.258 0.059 1e-04 0.274 0.425 [0.34, 0.51] SALL_N ONPAR 0.417 0.103 1e-04 0.398 0.204 [0.13, 0.28] CENT_N ONPAR 0.331 0.088 1e-04 0."
     },
     {
-      "page": 41,
+      "page": 43,
       "word_tokens": 294,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -341,7 +357,7 @@
       "excerpt": "enhanced in any such cell type (NONPAR), or kept only the 9,699 genes enhanced solely in parenchymal types (PARONLY). Paired top-1 recovery per s"
     },
     {
-      "page": 42,
+      "page": 44,
       "word_tokens": 314,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -349,7 +365,7 @@
       "excerpt": "gene restriction to a supplied count matrix without asserting clinical or biological calibration. 4.8 What drives the text-filtered fibroblast ra"
     },
     {
-      "page": 43,
+      "page": 45,
       "word_tokens": 351,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -357,7 +373,7 @@
       "excerpt": "4.9 Sample-level audit and independent annotation: the attractor is mostly label contamination Series-level text says a study is about organoids;"
     },
     {
-      "page": 44,
+      "page": 46,
       "word_tokens": 340,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -365,7 +381,7 @@
       "excerpt": "from non-organoid samples inside organoid-titled series, not from organoids. We retract it as a general property of organoids; it persists only i"
     },
     {
-      "page": 45,
+      "page": 47,
       "word_tokens": 387,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -373,7 +389,7 @@
       "excerpt": "A direct mechanism test is inconclusive: the share of HPA parenchymal-only genes among the deficits is only modestly higher in unfaithful organs "
     },
     {
-      "page": 46,
+      "page": 48,
       "word_tokens": 362,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -381,7 +397,7 @@
       "excerpt": "E-MTAB-11221 intestine 1 Colon - Transverse E-MTAB-9134 intestine 1 Colon - Transverse E-MTAB-11297 intestine 1 Small Intestine - Terminal Ileum "
     },
     {
-      "page": 47,
+      "page": 49,
       "word_tokens": 400,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -389,7 +405,7 @@
       "excerpt": "and JAK-STAT and p53 lower in organoids across all five organs, a shared culture signature rather than an organ-specific mechanism (results/defic"
     },
     {
-      "page": 48,
+      "page": 50,
       "word_tokens": 384,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -397,7 +413,7 @@
       "excerpt": "source definition Fisher p EBI GOA 3 direct metabolic BP terms 11 2 0.0092 KEGG REST 9 fixed-title metabolic pathways 7 0 0.0070 Rhea curated Swi"
     },
     {
-      "page": 49,
+      "page": 51,
       "word_tokens": 409,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -405,7 +421,7 @@
       "excerpt": "thresholds were set after registration but before looking at marker coexpression; both runs count as one accession (results/sc_kidney_markers.jso"
     },
     {
-      "page": 50,
+      "page": 52,
       "word_tokens": 443,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -413,7 +429,7 @@
       "excerpt": "because this released workbook lacks paired tracks (results/berical_source_suitability.md). A 2021 Cells study also tracked individual iPSC-deriv"
     },
     {
-      "page": 51,
+      "page": 53,
       "word_tokens": 400,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -421,7 +437,7 @@
       "excerpt": "results/postresult_external_fis_dual_pipeline.json and notes/postresult_external_fis_dual_pipeline.md. No new swelling effect, independent cohort"
     },
     {
-      "page": 52,
+      "page": 54,
       "word_tokens": 317,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -429,7 +445,7 @@
       "excerpt": "measurement-bias test. Lumen maturity and cell composition are hypotheses, not measured explanations. Falsifiable prediction: in an independent, "
     },
     {
-      "page": 53,
+      "page": 55,
       "word_tokens": 171,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -437,7 +453,7 @@
       "excerpt": "(instance post- processing; watershed/labels) PyTorch library train_seg.py; tune_seg.py (U-Net CNN) counts Pillow library train_seg.py image load"
     },
     {
-      "page": 54,
+      "page": 56,
       "word_tokens": 149,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -445,7 +461,7 @@
       "excerpt": "thods.py (purity gene sets) statsmodels library src/ geo_mcnemar.py (exact McNemar tests) counts g:Profiler g:GOSt API (GO, Reactome, KEGG) web A"
     },
     {
-      "page": 55,
+      "page": 57,
       "word_tokens": 149,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -453,7 +469,7 @@
       "excerpt": "y OmniPath (CollecTRI TF regulons + PROGENy pathway footprints) database/service src/ deficit_decoupler.p y counts EBI Expression Atlas (baseline"
     },
     {
-      "page": 56,
+      "page": 58,
       "word_tokens": 203,
       "contains_references_heading": true,
       "contains_appendix_heading": false,
@@ -461,7 +477,7 @@
       "excerpt": "WikiPathways 2026-09-10 human GMT pathway database src/ deficit_wikipathwa ys.py; results/deficit_wiki pathways.json counts NCBI Gene human gene_"
     },
     {
-      "page": 57,
+      "page": 59,
       "word_tokens": 265,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -469,7 +485,7 @@
       "excerpt": "Karlsson M, et al. A single-cell type transcriptomics map of human tissues. Sci Adv 2021. https://www.proteinatlas.org Szklarczyk D, et al. The S"
     },
     {
-      "page": 58,
+      "page": 60,
       "word_tokens": 333,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -477,7 +493,7 @@
       "excerpt": "Human Cell Atlas GSE108291 kidney organoid single-cell project. https://explore.data.humancellatlas.org/projects/7b947aa2-43a7-4082-afff-222a3e3a"
     },
     {
-      "page": 59,
+      "page": 61,
       "word_tokens": 139,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -485,7 +501,7 @@
       "excerpt": "Gumienny R. GEOparse: Python library to access Gene Expression Omnibus. https://github.com/guma44/GEOparse Kolberg L, et al. g:Profiler - interop"
     },
     {
-      "page": 60,
+      "page": 62,
       "word_tokens": 365,
       "contains_references_heading": false,
       "contains_appendix_heading": true,
@@ -493,7 +509,7 @@
       "excerpt": "Appendix A. Patient, plate and dose-level treatment contrasts This appendix makes the two distinct well-level FIS rankings inspectable without do"
     },
     {
-      "page": 61,
+      "page": 63,
       "word_tokens": 294,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -501,7 +517,7 @@
       "excerpt": "2020-08-28 0.02048 +0.1137 +65.2 2020-08-28 0.0512 +0.1571 +50.4 2020-08-28 0.128 +0.2123 +77.5 2020-08-28 0.32 +0.1809 +89.4 2020-08-28 0.8 +0.3"
     },
     {
-      "page": 62,
+      "page": 64,
       "word_tokens": 287,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -509,7 +525,7 @@
       "excerpt": "2020-12-04 0.02048 +0.3061 +25.6 2020-12-04 0.0512 +0.1850 +113.5 2020-12-04 0.128 +0.3075 +76.1 2020-12-04 0.32 +0.2394 +1.4 2020-12-04 0.8 +0.3"
     },
     {
-      "page": 63,
+      "page": 65,
       "word_tokens": 308,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -517,7 +533,7 @@
       "excerpt": "A1.4. Source patient 20-CF 24 eligible of 24 blocks; median normalized treatment contrast +0.1534; median raw-area contrast +108.65. This is one "
     },
     {
-      "page": 64,
+      "page": 66,
       "word_tokens": 292,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -525,7 +541,7 @@
       "excerpt": "plate date fsk (uM) normalized delta raw delta or exclusion 2020-08-13 0.008192 +0.1814 +62.9 2020-08-13 0.02048 +0.1679 -10.0 2020-08-13 0.0512 "
     },
     {
-      "page": 65,
+      "page": 67,
       "word_tokens": 294,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -533,7 +549,7 @@
       "excerpt": "2020-08-27 2 +0.3405 +190.0 2020-08-27 5 +0.0314 -137.4 2020-09-01 0.008192 +0.1006 +86.2 2020-09-01 0.02048 +0.1493 -4.5 2020-09-01 0.0512 +0.17"
     },
     {
-      "page": 66,
+      "page": 68,
       "word_tokens": 294,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -541,7 +557,7 @@
       "excerpt": "2020-08-20 2 +0.3326 +50.8 2020-08-20 5 +0.3239 +7.4 2020-08-28 0.008192 +0.1596 +70.1 2020-08-28 0.02048 +0.1603 +49.8 2020-08-28 0.0512 +0.4934"
     },
     {
-      "page": 67,
+      "page": 69,
       "word_tokens": 301,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -549,7 +565,7 @@
       "excerpt": "2020-11-24 2 +0.3773 +187.2 2020-11-24 5 +0.2950 +148.1 A1.9. Source patient 57-CF 24 eligible of 24 blocks; median normalized treatment contrast"
     },
     {
-      "page": 68,
+      "page": 70,
       "word_tokens": 290,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -557,7 +573,7 @@
       "excerpt": "Table 36. A1 source patient 58-CF: 24 plate-dose blocks from results/drevinek_fis.json. Raw-area delta is not baseline normalized. plate date fsk"
     },
     {
-      "page": 69,
+      "page": 71,
       "word_tokens": 294,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -565,7 +581,7 @@
       "excerpt": "2020-08-13 0.128 +0.5715 +81.5 2020-08-13 0.32 +0.5435 +19.1 2020-08-13 0.8 +0.6986 +121.4 2020-08-13 2 +0.5563 +75.5 2020-08-13 5 +0.4616 +87.6 "
     },
     {
-      "page": 70,
+      "page": 72,
       "word_tokens": 297,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -573,7 +589,7 @@
       "excerpt": "2020-09-03 0.128 +0.3349 +83.3 2020-09-03 0.32 +0.2943 +82.1 2020-09-03 0.8 +0.4011 +101.6 2020-09-03 2 +0.3729 +196.5 2020-09-03 5 +0.4666 +158."
     },
     {
-      "page": 71,
+      "page": 73,
       "word_tokens": 294,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -581,7 +597,7 @@
       "excerpt": "2020-10-13 0.008192 +0.1148 +59.2 2020-10-13 0.02048 +0.1510 +134.3 2020-10-13 0.0512 +0.2029 +99.3 2020-10-13 0.128 +0.2730 +3.1 2020-10-13 0.32"
     },
     {
-      "page": 72,
+      "page": 74,
       "word_tokens": 308,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -589,7 +605,7 @@
       "excerpt": "A1.16. Source patient 64-CF 24 eligible of 24 blocks; median normalized treatment contrast +0.2636; median raw-area contrast +72.83. This is one "
     },
     {
-      "page": 73,
+      "page": 75,
       "word_tokens": 292,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -597,7 +613,7 @@
       "excerpt": "plate date fsk (uM) normalized delta raw delta or exclusion 2020-10-15 0.008192 +0.1919 +15.4 2020-10-15 0.02048 +0.1633 +42.4 2020-10-15 0.0512 "
     },
     {
-      "page": 74,
+      "page": 76,
       "word_tokens": 294,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -605,7 +621,7 @@
       "excerpt": "2020-10-15 2 +0.1706 +45.6 2020-10-15 5 +0.3330 +68.4 2020-10-27 0.008192 +0.1634 +66.3 2020-10-27 0.02048 +0.2660 +90.9 2020-10-27 0.0512 +0.303"
     },
     {
-      "page": 75,
+      "page": 77,
       "word_tokens": 313,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -613,7 +629,7 @@
       "excerpt": "2020-10-27 2 +0.2594 +176.9 2020-10-27 5 -0.0718 -87.1 2020-11-27 0.008192 +0.1909 -4.2 2020-11-27 0.02048 +0.2265 +82.5 2020-11-27 0.0512 +0.345"
     },
     {
-      "page": 76,
+      "page": 78,
       "word_tokens": 292,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -621,7 +637,7 @@
       "excerpt": "Table 47. A2 source patient 06: 24 plate-dose blocks from results/vti_eti.json. Raw- area delta is not baseline normalized. plate date fsk (uM) n"
     },
     {
-      "page": 77,
+      "page": 79,
       "word_tokens": 295,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -629,7 +645,7 @@
       "excerpt": "20240409 0.128 +0.2176 +48.1 20240409 0.32 -0.0955 -56.9 20240409 0.8 -0.0967 -102.1 20240409 2 -0.1990 +33.4 20240409 5 -0.0490 -5.1 20240416 0."
     },
     {
-      "page": 78,
+      "page": 80,
       "word_tokens": 229,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -637,7 +653,7 @@
       "excerpt": "20240523 0.128 -0.0575 -30.9 20240523 0.32 +0.0873 -109.2 20240523 0.8 -0.0168 +74.6 20240523 2 +0.2221 +129.3 20240523 5 -0.0983 -144.8 20240530"
     },
     {
-      "page": 79,
+      "page": 81,
       "word_tokens": 209,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -645,7 +661,7 @@
       "excerpt": "times 20240326 0.128 excluded missing matched times 20240326 0.32 excluded missing matched times 20240326 0.8 excluded missing matched times 2024"
     },
     {
-      "page": 80,
+      "page": 82,
       "word_tokens": 216,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -653,7 +669,7 @@
       "excerpt": "20241121 2 -0.0569 -260.8 20241121 5 +0.1733 +14.7 20241204 0.008192 +0.0137 +13.7 20241204 0.02048 +0.0022 +20.5 20241204 0.0512 -0.0329 +74.1 2"
     },
     {
-      "page": 81,
+      "page": 83,
       "word_tokens": 267,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -661,7 +677,7 @@
       "excerpt": "20240328 0.32 excluded missing matched times 20240328 0.8 excluded missing matched times 20240328 2 excluded missing matched times 20240328 5 exc"
     },
     {
-      "page": 82,
+      "page": 84,
       "word_tokens": 176,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -669,7 +685,7 @@
       "excerpt": "A2.8. Source patient 58 No eligible primary block for this ID under the fixed treatment arms and time/well criteria. 16 source blocks are retaine"
     },
     {
-      "page": 83,
+      "page": 85,
       "word_tokens": 310,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -677,7 +693,7 @@
       "excerpt": "A2.9. Source patient 68 24 eligible of 24 blocks; median normalized treatment contrast -0.0086; median raw-area contrast -6.57. This is one patie"
     },
     {
-      "page": 84,
+      "page": 86,
       "word_tokens": 293,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -685,7 +701,7 @@
       "excerpt": "plate date fsk (uM) normalized delta raw delta or exclusion 20240411 0.008192 +0.0229 -6.6 20240411 0.02048 -0.0303 -14.2 20240411 0.0512 -0.1336"
     },
     {
-      "page": 85,
+      "page": 87,
       "word_tokens": 295,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -693,7 +709,7 @@
       "excerpt": "20240517 2 +0.0201 -212.3 20240517 5 -0.2070 -9.6 20240523 0.008192 +0.0776 -5.9 20240523 0.02048 -0.0184 +2.2 20240523 0.0512 -0.0364 +111.8 202"
     },
     {
-      "page": 86,
+      "page": 88,
       "word_tokens": 153,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
