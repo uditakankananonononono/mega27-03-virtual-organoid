@@ -1,0 +1,83 @@
+{
+  "donor_equal_close_minus_far": -0.0769761317185081,
+  "donor_max": -0.002446363160648874,
+  "donor_median": -0.08304212063094168,
+  "donor_min": -0.15851715686274512,
+  "donors_sorted": [
+    {
+      "close_minus_far": -0.15851715686274512,
+      "donor": "PDIO_01",
+      "leave_this_donor_out_equal_mean": -0.0695633112508502
+    },
+    {
+      "close_minus_far": -0.11979761919601489,
+      "donor": "PDIO_15",
+      "leave_this_donor_out_equal_mean": -0.07308326922055296
+    },
+    {
+      "close_minus_far": -0.10961538461538461,
+      "donor": "PDIO_11",
+      "leave_this_donor_out_equal_mean": -0.07400892690970116
+    },
+    {
+      "close_minus_far": -0.10243376974285126,
+      "donor": "PDIO_05",
+      "leave_this_donor_out_equal_mean": -0.07466180098902238
+    },
+    {
+      "close_minus_far": -0.08727537091289707,
+      "donor": "PDIO_12",
+      "leave_this_donor_out_equal_mean": -0.07603983724629094
+    },
+    {
+      "close_minus_far": -0.083461539899558,
+      "donor": "PDIO_09",
+      "leave_this_donor_out_equal_mean": -0.0763865491565945
+    },
+    {
+      "close_minus_far": -0.08262270136232536,
+      "donor": "PDIO_03",
+      "leave_this_donor_out_equal_mean": -0.07646280720543383
+    },
+    {
+      "close_minus_far": -0.07973425499575008,
+      "donor": "PDIO_06",
+      "leave_this_donor_out_equal_mean": -0.07672539323875885
+    },
+    {
+      "close_minus_far": -0.04492739692610974,
+      "donor": "PDIO_16",
+      "leave_this_donor_out_equal_mean": -0.0798896530632716
+    },
+    {
+      "close_minus_far": -0.02895481254856253,
+      "donor": "PDIO_14",
+      "leave_this_donor_out_equal_mean": -0.08134170618850317
+    },
+    {
+      "close_minus_far": -0.023927210399249887,
+      "donor": "PDIO_13",
+      "leave_this_donor_out_equal_mean": -0.08179876092934978
+    },
+    {
+      "close_minus_far": -0.002446363160648874,
+      "donor": "PDIO_18",
+      "leave_this_donor_out_equal_mean": -0.08375156522376805
+    }
+  ],
+  "leave_one_out_equal_mean_range": [
+    -0.08375156522376805,
+    -0.0695633112508502
+  ],
+  "limits": "Previously seen source association; no post-hoc p-value or causal crowding claim. Absent endpoints and baseline-undetected objects remain unobserved. Original sign/specificity FAIL, benchmark win withdrawn.",
+  "n_eligible_objects": 6952,
+  "n_eligible_strata": 279,
+  "n_excluded_objects": 12,
+  "n_excluded_strata": 5,
+  "n_positive_A1": 4964,
+  "n_source_baseline_detected": 6964,
+  "protocol": "notes/postresult_neighbor_gradient_decomposition_protocol.md",
+  "source_sha256": "0e0e7913947a29c7b32ce87ca73a98614033d41ce63063a1d65053e766b2f315",
+  "source_url": "https://zenodo.org/records/10610438",
+  "status": "post-result accounting of known gradient, no additional scientific validation"
+}
