@@ -1,0 +1,87 @@
+{
+  "status": "post-result source-denominator and inclusion-scope audit, not missing-outcome correction",
+  "protocol": "notes/postresult_attrition_model_limit_audit.md",
+  "source_url": "https://zenodo.org/records/10610438",
+  "source_sha256": "0e0e7913947a29c7b32ce87ca73a98614033d41ce63063a1d65053e766b2f315",
+  "available_source_columns": [
+    "Unnamed: 0",
+    "t",
+    "model",
+    "date",
+    "experiment",
+    "well",
+    "condition",
+    "forskolin_concentration_\u00b5M",
+    "duplicate",
+    "particle",
+    "image",
+    "mask",
+    "name",
+    "id",
+    "y1",
+    "x1",
+    "y2",
+    "x2",
+    "class",
+    "score",
+    "size",
+    "x",
+    "y",
+    "type",
+    "t_in_hours",
+    "genotype",
+    "donor"
+  ],
+  "cells": [
+    {
+      "arm_size": "DMSO:large",
+      "baseline_detected": 2058,
+      "positive_A1": 1825,
+      "no_positive_A1": 233,
+      "positive_A1_rate": 0.8867832847424684
+    },
+    {
+      "arm_size": "DMSO:small",
+      "baseline_detected": 1248,
+      "positive_A1": 563,
+      "no_positive_A1": 685,
+      "positive_A1_rate": 0.4511217948717949
+    },
+    {
+      "arm_size": "VX445_VX661_VX770:large",
+      "baseline_detected": 2408,
+      "positive_A1": 2005,
+      "no_positive_A1": 403,
+      "positive_A1_rate": 0.832641196013289
+    },
+    {
+      "arm_size": "VX445_VX661_VX770:small",
+      "baseline_detected": 1250,
+      "positive_A1": 571,
+      "no_positive_A1": 679,
+      "positive_A1_rate": 0.4568
+    }
+  ],
+  "n_baseline_detected": 6964,
+  "n_positive_A1": 4964,
+  "n_without_positive_A1": 2000,
+  "n_derived_included_given_positive_A1": 4776,
+  "n_positive_pairs_excluded_from_derived": 188,
+  "crossfit_uses_endpoint_features": [
+    "log_A1",
+    "score1"
+  ],
+  "crossfit_target": "derived inclusion only among positive A0 and A1 source pairs",
+  "crossfit_cannot_weight_missing_A1_count": 2000,
+  "hypothetical_response_scenarios": {
+    "adverse_equal_donor_mean": -0.7449277765786227,
+    "favorable_equal_donor_mean": 1.3616328100255721,
+    "zero_contained": true
+  },
+  "unavailable_from_tabular_source": [
+    "raw t0/t1 image pixels and masks for these source rows",
+    "reasons for absent or nonpositive A1",
+    "objects never detected at t0"
+  ],
+  "limits": "Denominators conditional on source-detected positive A0 in the fixed 31 blocks/4 cells. Missing response scenario endpoints are assumed from observed 5th/95th percentiles, not empirical support or confidence bounds. Crossfit includes endpoint features and does not identify a full-population causal effect. Sign-only/specificity gates remain failed."
+}
