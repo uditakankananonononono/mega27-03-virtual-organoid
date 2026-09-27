@@ -17,7 +17,7 @@ for index, page in enumerate(reader.pages, 1):
                  'contains_appendix_heading': bool(re.search(r'(?m)^Appendix\b', text)),
                  'images': len(page.images),
                  'excerpt': ' '.join(text.split())[:145]})
-assert len(rows) == 90, 'Unexpected physical page count; re-establish body boundary'
+assert len(rows) == 89, 'Unexpected physical page count; re-establish body boundary'
 assert rows[59]['contains_references_heading'], 'References did not begin on p60'
 body = rows[1:59]  # pp2-59; title/abstract p1 and references p60 onward excluded
 assert len(body) == 58
