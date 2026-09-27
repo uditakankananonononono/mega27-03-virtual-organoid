@@ -68,6 +68,8 @@ class Paper:
         self.doc.add_page_break()
 
     def save(self, path: str):
+        cp = self.doc.core_properties
+        cp.author = ""; cp.last_modified_by = ""; cp.comments = ""
         # Table styles and equation italics can inherit substitution faces even when
         # Normal says Times New Roman. Pin every authored text run to the exact face.
         paragraphs = list(self.doc.paragraphs)
