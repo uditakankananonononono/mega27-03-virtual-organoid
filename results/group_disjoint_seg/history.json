@@ -1,0 +1,37 @@
+[
+  {
+    "epoch": 1,
+    "train_loss_sum": 33.57132871448994,
+    "val_loss": null,
+    "best_val_loss": Infinity,
+    "seconds": 42.3
+  },
+  {
+    "epoch": 2,
+    "train_loss_sum": 14.023699052631855,
+    "val_loss": null,
+    "best_val_loss": Infinity,
+    "seconds": 39.5
+  },
+  {
+    "epoch": 3,
+    "train_loss_sum": 10.3117512203753,
+    "val_loss": null,
+    "best_val_loss": Infinity,
+    "seconds": 39.8
+  },
+  {
+    "epoch": 4,
+    "train_loss_sum": 9.968595936894417,
+    "val_loss": null,
+    "best_val_loss": Infinity,
+    "seconds": 39.4
+  },
+  {
+    "epoch": 5,
+    "train_loss_sum": 9.076330080628395,
+    "val_loss": 0.09244759723141387,
+    "best_val_loss": 0.09244759723141387,
+    "seconds": 55.2
+  }
+]
