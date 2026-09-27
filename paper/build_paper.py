@@ -186,6 +186,8 @@ P.table(["forskolin (uM)", "paired wells / condition", "large-minus-small drug e
     "Pre-registered external single-plate demo assay; doses are correlated and not independent donors.")
 
 DV = json.load(open("results/drevinek_fis.json"))
+P.h("Secondary exploratory analyses I: well-level FIS drug-ranking replications", 2)
+P.p("Sections 4.3d (well-level ranking) and 4.3e below are off-question secondary analyses, retained for completeness and labeled exploratory.")
 P.h("4.3d Distinct multi-patient well-level FIS cohort: published drug ranking reproduced", 2)
 P.p(f"A genuinely distinct dataset (Drevinek et al., Zenodo 4771466) contains well-level area time series "
     f"from {DV['patients_source']} CF patient IDs on {DV['plates_source']} patient-date plates. "
@@ -248,6 +250,8 @@ P.table(["A0 small/large", "prior blocks eligible", "donors", "positive medians"
         [[str(q['cutoffs'][0])+"/"+str(q['cutoffs'][1]),q['eligible_prior_blocks'],q['eligible_donors'],q['positive_donors'],f"{q['equal_donor_mean']:+.4f}"] for q in MI['boundary_sensitivity'].values()],
         "Fixed +/-10% cutoff shifts in the same original-block population; eligibility and sign counts may change. These are descriptive perturbations, not substitute discovery gates.")
 P.p("The derived analysis CSV alone omits masks, detection confidence and excluded rows. On reviewing the accompanying source DIS database we found paired t=0/t=1 tabular particle rows, including blank endpoints and detection scores. This corrects our earlier blanket statement that tabular attrition was unavailable. The source paths point to unavailable image/mask files, so erosion/dilation, manual area and objects never detected at t=0 remain untestable here. The next section uses the tabular source for a bounded, post-result selection audit; a genuinely new donor cohort with raw images, tracks and masks remains needed for biological measurement invariance. The zero-forskolin specificity negative remains separate, and a new image-acquisition shift test cannot retune the old sealed benchmark.")
+P.h("4.3+ Track attrition and selection-bias methodology (exploratory)", 2)
+P.p("Sections 4.3h through 4.3p are the methodological spine of this paper: an explicit audit of how track attrition and selection can create or hide a size contrast. They are exploratory methods work, not independent replication of the size finding.")
 P.h("4.3h Source-table track retention and reanalysis", 2)
 TR = json.load(open("results/tabular_track_retention.json")); assert TR['n_original_eligible_blocks']==31
 D={(z['arm'],z['size_bin']):z for z in TR['retention_by_arm_size']}
@@ -305,6 +309,8 @@ P.h("4.4 Does size correction help theratyping? No", 2)
 P.p("Locked before running: per-donor standardised Trikafta-vs-DMSO separation with raw, size-adjusted and size-band well readouts. Median "
     "raw 4.73, adjusted 4.35, band 4.39; adjusted better in 8 of 17 donors. Excluding organoids below 1,069 px (a post-hoc threshold): median "
     "4.73 -> 4.75, better in 9 of 17, Wilcoxon p = 0.68. The size trend does not improve calls, and the stricter matched-block H1 fails.")
+P.h("Secondary exploratory analyses II: segmentation benchmark and split integrity", 2)
+P.p("Sections 4.5 through 4.5j are a secondary arm. Its benchmark-beat claim is withdrawn because repeated acquisition fields cross the splits; the arm is retained as an integrity case study and labeled exploratory.")
 P.h("4.5 Segmentation benchmark", 2)
 P.table(["model", "eval mAP@0.5", "sd", "source file"], [
     ["U-Net v1, 256 px, default post-processing", round(S1["mAP50"], 3), round(S1["sd"], 3), "results/seg_eval.json"],
@@ -397,6 +403,8 @@ MX=json.load(open("results/postresult_mouse_yolo_domain.json")); assert len(MX['
 P.p(f"We tested the fixed human-organoid segmentation checkpoint on a different image and annotation domain, not as a repaired version of the original human mask benchmark. The Domènech-Moreno mouse-intestinal 4x EVOS release (Zenodo 6768583) contains 756 train and 84 released validation JPEGs with manually drawn YOLO object boxes across four morphology classes. Its 193.9 MB archive matches the source MD5. Before reading target scores we fixed the existing v2 U-Net weights and the original human-validation parameters, converted its instance masks to tight object boxes, collapsed the target classes into one object class and matched boxes once at IoU >=0.5. Across all 84 validation images and {MX['summary']['tp']+MX['summary']['fn']:,} valid labeled boxes, there are {MX['summary']['tp']} true positives, {MX['summary']['fp']} false positives and {MX['summary']['fn']:,} false negatives. Micro precision {MX['summary']['micro_precision']:.3f}, recall {MX['summary']['micro_recall']:.3f}, F1 {MX['summary']['micro_f1']:.3f}; mean per-image F1 {MX['summary']['macro_image_f1']:.3f}. One released zero-width annotation was recorded and excluded from the valid-box denominator. The source hashes, every image count, protocol and implementation are in results/postresult_mouse_yolo_domain.json, notes/postresult_mouse_yolo_domain_protocol.md and scripts/audit_mouse_yolo_domain.py.")
 P.p("This is an external-domain negative for the current model's ready-to-use object detection. The target is mouse rather than human, class-specific loose boxes rather than pixel instance masks, and a different microscope/field density, so box F1 cannot be compared with the OrgaSegment paper's human mask AP50 0.76. No published comparator's predictions on the same 84 images are in hand, so this is NOT a leading-tool benchmark. No exact image-hash duplicates occur across target train/validation or original human source, but thumbnail similarity flags possible related target acquisition fields and lacks donor/session metadata. Because no mouse images trained our U-Net, this issue does not explain the low transfer recall, but it prevents an independent mouse split claim. Visual review of example low- and higher-scoring target images showed substantial contrast and object-density differences without identifying the cause of false negatives. The result narrows tool deployment; it neither tests CFTR swelling biology nor alters the failed original donor sign and specificity gates.")
 
+P.h("Secondary exploratory analyses III: organoid-to-tissue fidelity across public transcriptomes", 2)
+P.p("Sections 4.6 through 4.13 are off-question secondary analyses of organoid-to-tissue fidelity in public expression data, retained and labeled exploratory.")
 P.h("4.6 Organoid-to-tissue fidelity across 151 GEO series", 2)
 GM = json.load(open("results/geo_fidelity_methods.json")); GC = json.load(open("results/geo_fidelity_clean.json"))
 P.p(f"To test organoid fidelity at scale, we searched GEO through NCBI E-utilities for human organoid bulk RNA-seq series (2,838 hits; 1,545 with "
