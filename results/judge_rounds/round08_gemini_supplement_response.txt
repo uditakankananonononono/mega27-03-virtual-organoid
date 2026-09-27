@@ -1,0 +1,89 @@
+
+Look, as a judge evaluating this project, I am going to be blunt: you have done a commendable job documenting where your pipeline leaks, but you are still trying to analyze your way out of missing data.
+
+Right now, your biggest unmitigated vulnerability is tracking ambiguity masquerading as non-response. When 2,000 baseline organoids vanish between t=0 and t=1, assuming they "failed to swell" or were "lost at random" destroys your inferential validity. If small organoids drift out of focus or disintegrate, while large organoids persist, your observed treatment-by-size contrast is just an artifact of size-dependent tracking retention.
+
+Here is the ONE feasible, falsifiable, novelty-adding analysis you can run strictly on the metadata you already have in the released OrgaSegment paired DIS source table, without needing raw image paths or rewritten gates.
+
+The Proposed Analysis: Target-Density & Neighbor-Displacement Sensitivity Check
+1. The Falsifiable Hypothesis
+
+Hypothesis: Missing endpoints in small organoids are driven by localized object crowding and tracking confusion (neighbor density), rather than a differential biological swelling response.
+
+Mechanism: Smaller organoids in high-density fields are disproportionately mislinked or dropped by automated tracking algorithms between t=0 and t=1 due to overlapping search BBoxes or proximity to shifting neighbors.
+
+2. Concrete Methodology using the DIS Source Table
+
+Using the t=0 spatial coordinates (X
+0
+	​
+
+,Y
+0
+	​
+
+) and bounding boxes available in your 47,687 paired particle keys:
+
+Quantify Local Density (ρ
+t0
+	​
+
+): For every baseline-detected object (n=6,964 extreme-size objects), calculate the distance to its k-nearest neighbor (k=1,3,5) within the same acquisition field.
+
+Define the Negative Control Group: Extract zero-forskolin (control) wells from the same donor × accession blocks. Zero-forskolin objects undergo no biological swelling stimulus; thus, any apparent link failure or tracking drop out in this group is 100% computational/artifactual drift, not CFTR-mediated swelling.
+
+Execute the Contrast: Model endpoint observability (1=tracked at t=1,0=missing at t=1) as a function of:
+
+Observability∼Size Group×Density (ρ
+t0
+	​
+
+)+Treatment+(1∣Donor/Accession)
+3. Source & Provenance Check
+
+Required Quantities: t=0 Object Centroid (X
+0
+	​
+
+,Y
+0
+	​
+
+), Field/Well ID, Donor ID, Accession ID, Tracking Status Flag (t=1 paired Key Present/Absent).
+
+Provenance Verification: All metrics are calculated purely from the released DIS coordinate metadata. No image pixels required.
+
+Biological Quantity Check: Note: The DIS source table records BBox geometry and spatial locations, but it does not capture Z-axis focal drift or 3D volume. If small organoids are disappearing because they float out of the focal plane rather than moving in X/Y, the DIS table alone cannot measure this specific physical drop out mechanism.
+
+What a Negative Result Changes
+               [ Density / Tracking Sensitivity Analysis ]
+                                    |
+            +-----------------------+-----------------------+
+            |                                               |
+  [ Outcome A: Negative Result ]                 [ Outcome B: Positive Result ]
+  Observability rates are UNCORRELATED           Missingness is HIGHLY CORRELATED
+  with local neighbor density in zero-           with local density & small size in
+  forskolin negative controls.                   zero-forskolin controls.
+            |                                               |
+            v                                               v
+  Concludes missing endpoints are NOT            Confirms tracking pipeline artifact.
+  a artifact of local spatial tracking           The observed treatment-by-size
+  confusion. Size-dependent response             contrast is UNTENABLE without
+  hypothesis survives this check.                physical re-tracking or re-imaging.
+
+
+If the check yields a Negative Result (Observability is independent of ρ
+t0
+	​
+
+ in negative controls): You successfully falsify the hypothesis that spatial crowding causes the missing small-organoid endpoints. This proves your tracking pipeline is spatially robust, lending crucial defense to your claim that missingness might reflect true biological disintegration or distinct physical response regimes.
+
+If the check yields a Positive Result (Observability drops significantly in dense fields for small objects in controls): You prove that your tracking algorithm systematically fails on small objects in crowded environments. The +.195 size contrast is invalidated, as it is confounded by density-dependent tracking loss.
+
+Strict Methodological Constraints to Maintain
+
+To keep this critique defensible for your final submission:
+
+Keep Hierarchy Intact: You MUST nested-cluster random effects by (1 | Donor / Accession / Acquisition_Field). Treating repeated fields or wells as independent observations will immediately disqualify the statistical inference.
+
+Do Not Re-Fit Fails: Do not attempt to alter the 50-pixel or 40-pixel cutoff retroactively to maximize p-values. Report the density correlation across the continuous spectrum of nearest-neighbor distances.
