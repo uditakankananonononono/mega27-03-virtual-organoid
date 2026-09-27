@@ -37,8 +37,8 @@ assert 'TimesNewRomanPSMT' in fonts and 'TimesNewRomanPS-BoldMT' in fonts
 assert all(' yes ' in row for row in fonts.splitlines()[2:] if 'TimesNewRoman' in row)
 assert len(paper.tables)==53
 text='\n'.join(x.text for x in paper.paragraphs)
-assert 'a paired no-forskolin specificity test both failed' in text
+assert 'The original sign-only donor-block test (9/12, p=0.073) and zero-forskolin specificity test (3/11, p=0.967) failed' in text
 assert '3/11 donor-median paired deltas are positive' in text
-assert 'NOT an established new biological discovery' in text
+assert 'Independent novelty and mechanism remain unproved.' in text
 print('PASS: 40 unique tools, 168 unique primary entries, both negative size checks, '
       f'sealed segmentation below .76, frozen selection, checkpoint, {pages}-page Times New Roman PDF, 53 tables and explicit caveats')
