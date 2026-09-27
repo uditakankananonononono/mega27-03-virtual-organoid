@@ -1,0 +1,217 @@
+{
+  "status": "retrospective threshold-sensitivity audit; no independent benchmark gate",
+  "protocol": "notes/postresult_scene_overlap_score_audit.md",
+  "source_urls": [
+    "https://zenodo.org/records/10278229",
+    "https://www.nature.com/articles/s42003-024-05966-4"
+  ],
+  "inputs_sha256": {
+    "results/scene_graph_forensics.json": "c80583d905b29fc69f1911aa28ea11262f6689ae73d3bf2a15c407188a863b5a",
+    "results/trainonly_seg/sealed_eval_v2.json": "a6d91980e155022187586c5d5e8af94553e4a3252a5eaadd788c63d8ee461049",
+    "results/trainonly_seg/sealed_eval.json": "85a84a18f5cafb6609030f71bd1b6da8849f0da7339fef0bab9919ea35279aa8"
+  },
+  "full_eval_n": 12,
+  "full_eval_v2_mean": 0.7611081451177597,
+  "full_eval_v1_mean": 0.738671749830246,
+  "published_rounded_mean": 0.76,
+  "thresholds": [
+    {
+      "thumbnail_cosine_threshold": 0.95,
+      "flagged_eval": [
+        {
+          "image": "20210727_11562_ckufm1p2h4vzp0y7jh0fyg2yo_img.jpg",
+          "v2_ap50": 0.8793103694915771,
+          "v1_ap50": 0.8360655903816223
+        },
+        {
+          "image": "20210727_26838_ckw3ig3xg5ngk0zbp0g7j7dqt_img.jpg",
+          "v2_ap50": 0.7105262875556946,
+          "v1_ap50": 0.7368420958518982
+        }
+      ],
+      "n_kept": 10,
+      "v2_kept_mean": 0.7543461084365845,
+      "v2_flagged_mean": 0.7949183285236359,
+      "v1_kept_mean": 0.7291153311729431,
+      "v2_minus_v1_kept": 0.025230777263641358,
+      "kept_bootstrap_ci95": [
+        0.6909675067663192,
+        0.8270246249437331
+      ],
+      "retained_image_scores": [
+        {
+          "image": "0002_2013089_ckmbvhhhx0000345zlx7mhq1y_img.jpg",
+          "v2_ap50": 0.9577465057373047
+        },
+        {
+          "image": "0002_2423915_cknt06dr33pzv3b68t421bk27_img.jpg",
+          "v2_ap50": 0.6582278609275818
+        },
+        {
+          "image": "0002_7071445_ckm384kvx8ib3345zzs8qewl4_img.jpg",
+          "v2_ap50": 0.7962962985038757
+        },
+        {
+          "image": "0003_9960762_ckmdlvkmi14yv345z384v1grr_img.jpg",
+          "v2_ap50": 0.9444444179534912
+        },
+        {
+          "image": "20210727_11753_ckuf91aiz36dm0y9p2t9k5qoh_img.jpg",
+          "v2_ap50": 0.6666666865348816
+        },
+        {
+          "image": "20210727_12226_ckw3in2er4sqh10aofkm50w8l_img.jpg",
+          "v2_ap50": 0.729411780834198
+        },
+        {
+          "image": "20210727_16063_ckw3j7wet8qan0zc39rca87mv_img.jpg",
+          "v2_ap50": 0.6296296119689941
+        },
+        {
+          "image": "20210727_18315_ckw3ky6ln8z8z0zbnfc0o1gam_img.jpg",
+          "v2_ap50": 0.70652174949646
+        },
+        {
+          "image": "20210727_33832_ckw3n2vrs9btz0zbn3jqgbv4y_img.jpg",
+          "v2_ap50": 0.6645161509513855
+        },
+        {
+          "image": "20210727_37653_ckwggbhda5ql20z7n9eveah6i_img.jpg",
+          "v2_ap50": 0.7900000214576721
+        }
+      ]
+    },
+    {
+      "thumbnail_cosine_threshold": 0.97,
+      "flagged_eval": [
+        {
+          "image": "20210727_11562_ckufm1p2h4vzp0y7jh0fyg2yo_img.jpg",
+          "v2_ap50": 0.8793103694915771,
+          "v1_ap50": 0.8360655903816223
+        },
+        {
+          "image": "20210727_26838_ckw3ig3xg5ngk0zbp0g7j7dqt_img.jpg",
+          "v2_ap50": 0.7105262875556946,
+          "v1_ap50": 0.7368420958518982
+        }
+      ],
+      "n_kept": 10,
+      "v2_kept_mean": 0.7543461084365845,
+      "v2_flagged_mean": 0.7949183285236359,
+      "v1_kept_mean": 0.7291153311729431,
+      "v2_minus_v1_kept": 0.025230777263641358,
+      "kept_bootstrap_ci95": [
+        0.6909675067663192,
+        0.8270246249437331
+      ],
+      "retained_image_scores": [
+        {
+          "image": "0002_2013089_ckmbvhhhx0000345zlx7mhq1y_img.jpg",
+          "v2_ap50": 0.9577465057373047
+        },
+        {
+          "image": "0002_2423915_cknt06dr33pzv3b68t421bk27_img.jpg",
+          "v2_ap50": 0.6582278609275818
+        },
+        {
+          "image": "0002_7071445_ckm384kvx8ib3345zzs8qewl4_img.jpg",
+          "v2_ap50": 0.7962962985038757
+        },
+        {
+          "image": "0003_9960762_ckmdlvkmi14yv345z384v1grr_img.jpg",
+          "v2_ap50": 0.9444444179534912
+        },
+        {
+          "image": "20210727_11753_ckuf91aiz36dm0y9p2t9k5qoh_img.jpg",
+          "v2_ap50": 0.6666666865348816
+        },
+        {
+          "image": "20210727_12226_ckw3in2er4sqh10aofkm50w8l_img.jpg",
+          "v2_ap50": 0.729411780834198
+        },
+        {
+          "image": "20210727_16063_ckw3j7wet8qan0zc39rca87mv_img.jpg",
+          "v2_ap50": 0.6296296119689941
+        },
+        {
+          "image": "20210727_18315_ckw3ky6ln8z8z0zbnfc0o1gam_img.jpg",
+          "v2_ap50": 0.70652174949646
+        },
+        {
+          "image": "20210727_33832_ckw3n2vrs9btz0zbn3jqgbv4y_img.jpg",
+          "v2_ap50": 0.6645161509513855
+        },
+        {
+          "image": "20210727_37653_ckwggbhda5ql20z7n9eveah6i_img.jpg",
+          "v2_ap50": 0.7900000214576721
+        }
+      ]
+    },
+    {
+      "thumbnail_cosine_threshold": 0.99,
+      "flagged_eval": [
+        {
+          "image": "20210727_11562_ckufm1p2h4vzp0y7jh0fyg2yo_img.jpg",
+          "v2_ap50": 0.8793103694915771,
+          "v1_ap50": 0.8360655903816223
+        }
+      ],
+      "n_kept": 11,
+      "v2_kept_mean": 0.7503624883565035,
+      "v2_flagged_mean": 0.8793103694915771,
+      "v1_kept_mean": 0.7298177643255754,
+      "v2_minus_v1_kept": 0.020544724030928177,
+      "kept_bootstrap_ci95": [
+        0.6922351058233868,
+        0.8164503587917847
+      ],
+      "retained_image_scores": [
+        {
+          "image": "0002_2013089_ckmbvhhhx0000345zlx7mhq1y_img.jpg",
+          "v2_ap50": 0.9577465057373047
+        },
+        {
+          "image": "0002_2423915_cknt06dr33pzv3b68t421bk27_img.jpg",
+          "v2_ap50": 0.6582278609275818
+        },
+        {
+          "image": "0002_7071445_ckm384kvx8ib3345zzs8qewl4_img.jpg",
+          "v2_ap50": 0.7962962985038757
+        },
+        {
+          "image": "0003_9960762_ckmdlvkmi14yv345z384v1grr_img.jpg",
+          "v2_ap50": 0.9444444179534912
+        },
+        {
+          "image": "20210727_11753_ckuf91aiz36dm0y9p2t9k5qoh_img.jpg",
+          "v2_ap50": 0.6666666865348816
+        },
+        {
+          "image": "20210727_12226_ckw3in2er4sqh10aofkm50w8l_img.jpg",
+          "v2_ap50": 0.729411780834198
+        },
+        {
+          "image": "20210727_16063_ckw3j7wet8qan0zc39rca87mv_img.jpg",
+          "v2_ap50": 0.6296296119689941
+        },
+        {
+          "image": "20210727_18315_ckw3ky6ln8z8z0zbnfc0o1gam_img.jpg",
+          "v2_ap50": 0.70652174949646
+        },
+        {
+          "image": "20210727_26838_ckw3ig3xg5ngk0zbp0g7j7dqt_img.jpg",
+          "v2_ap50": 0.7105262875556946
+        },
+        {
+          "image": "20210727_33832_ckw3n2vrs9btz0zbn3jqgbv4y_img.jpg",
+          "v2_ap50": 0.6645161509513855
+        },
+        {
+          "image": "20210727_37653_ckwggbhda5ql20z7n9eveah6i_img.jpg",
+          "v2_ap50": 0.7900000214576721
+        }
+      ]
+    }
+  ],
+  "limits": "All exclusions and scores are post-result. Retained images may share unflagged fields or donors. Published author-model paired predictions and independent acquisition metadata unavailable. Do not infer a clean held-out win or tune the model."
+}
