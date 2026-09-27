@@ -1,0 +1,159 @@
+{
+  "associations": {
+    "pearson_r": 0.34912830874566936,
+    "spearman_rho": 0.2027972027972028
+  },
+  "donors": [
+    {
+      "baseline_detected": 167,
+      "id": "PDIO_01",
+      "observed_positive_pair_log_swelling_contrast": 0.038955782837541975,
+      "positive_A1": 136,
+      "visibility_gap_large_minus_small": -0.46681929181929177
+    },
+    {
+      "baseline_detected": 975,
+      "id": "PDIO_03",
+      "observed_positive_pair_log_swelling_contrast": 0.3508821434068704,
+      "positive_A1": 697,
+      "visibility_gap_large_minus_small": 0.03828349798090447
+    },
+    {
+      "baseline_detected": 1431,
+      "id": "PDIO_05",
+      "observed_positive_pair_log_swelling_contrast": 0.5396669946524568,
+      "positive_A1": 1092,
+      "visibility_gap_large_minus_small": -0.006484057619944528
+    },
+    {
+      "baseline_detected": 1407,
+      "id": "PDIO_06",
+      "observed_positive_pair_log_swelling_contrast": 0.37111822422156515,
+      "positive_A1": 983,
+      "visibility_gap_large_minus_small": -0.058998015549521776
+    },
+    {
+      "baseline_detected": 712,
+      "id": "PDIO_09",
+      "observed_positive_pair_log_swelling_contrast": 0.20085730910526345,
+      "positive_A1": 556,
+      "visibility_gap_large_minus_small": -0.2578956024966308
+    },
+    {
+      "baseline_detected": 139,
+      "id": "PDIO_11",
+      "observed_positive_pair_log_swelling_contrast": 0.36577963793801616,
+      "positive_A1": 103,
+      "visibility_gap_large_minus_small": 0.04721740248056039
+    },
+    {
+      "baseline_detected": 480,
+      "id": "PDIO_12",
+      "observed_positive_pair_log_swelling_contrast": 0.4180005333028193,
+      "positive_A1": 322,
+      "visibility_gap_large_minus_small": -0.02325738692946655
+    },
+    {
+      "baseline_detected": 325,
+      "id": "PDIO_13",
+      "observed_positive_pair_log_swelling_contrast": 0.2734739642741474,
+      "positive_A1": 173,
+      "visibility_gap_large_minus_small": 0.05038167236875993
+    },
+    {
+      "baseline_detected": 290,
+      "id": "PDIO_14",
+      "observed_positive_pair_log_swelling_contrast": -0.1934714309510302,
+      "positive_A1": 190,
+      "visibility_gap_large_minus_small": 0.07418192504574628
+    },
+    {
+      "baseline_detected": 437,
+      "id": "PDIO_15",
+      "observed_positive_pair_log_swelling_contrast": 0.30080490599578535,
+      "positive_A1": 314,
+      "visibility_gap_large_minus_small": -0.10368134124231687
+    },
+    {
+      "baseline_detected": 437,
+      "id": "PDIO_16",
+      "observed_positive_pair_log_swelling_contrast": -0.09719748643906656,
+      "positive_A1": 286,
+      "visibility_gap_large_minus_small": -0.07762406982007714
+    },
+    {
+      "baseline_detected": 164,
+      "id": "PDIO_18",
+      "observed_positive_pair_log_swelling_contrast": -0.0731325568633287,
+      "positive_A1": 112,
+      "visibility_gap_large_minus_small": -0.3085281548516843
+    }
+  ],
+  "leave_one_donor_out": {
+    "PDIO_01": {
+      "pearson_r": 0.27290909344736447,
+      "spearman_rho": 0.10909090909090911
+    },
+    "PDIO_03": {
+      "pearson_r": 0.3177813227484304,
+      "spearman_rho": 0.20000000000000004
+    },
+    "PDIO_05": {
+      "pearson_r": 0.31526471238007836,
+      "spearman_rho": 0.18181818181818182
+    },
+    "PDIO_06": {
+      "pearson_r": 0.3449889143648569,
+      "spearman_rho": 0.18181818181818182
+    },
+    "PDIO_09": {
+      "pearson_r": 0.36428989439430165,
+      "spearman_rho": 0.10000000000000002
+    },
+    "PDIO_11": {
+      "pearson_r": 0.3116568562473465,
+      "spearman_rho": 0.20000000000000004
+    },
+    "PDIO_12": {
+      "pearson_r": 0.32926865806526107,
+      "spearman_rho": 0.18181818181818182
+    },
+    "PDIO_13": {
+      "pearson_r": 0.33914017177712386,
+      "spearman_rho": 0.26363636363636367
+    },
+    "PDIO_14": {
+      "pearson_r": 0.6451882943869928,
+      "spearman_rho": 0.5636363636363637
+    },
+    "PDIO_15": {
+      "pearson_r": 0.3549519606483065,
+      "spearman_rho": 0.16363636363636366
+    },
+    "PDIO_16": {
+      "pearson_r": 0.39448737162918746,
+      "spearman_rho": 0.16363636363636366
+    },
+    "PDIO_18": {
+      "pearson_r": 0.23091159405126452,
+      "spearman_rho": 0.10909090909090911
+    }
+  },
+  "leave_one_out_ranges": {
+    "pearson_r": [
+      0.23091159405126452,
+      0.6451882943869928
+    ],
+    "spearman_rho": [
+      0.10000000000000002,
+      0.5636363636363637
+    ]
+  },
+  "limits": "No inferential p-values: outcomes and the selection question were known, n=12, unequal donor counts and different within-donor aggregation rules. Neither positive nor null association identifies 2,000 absent swelling responses, selection causality or original biological gate.",
+  "n_donors": 12,
+  "protocol": "notes/postresult_visibility_effect_concordance_protocol.md",
+  "sign_agreement": 5,
+  "source_sha256": "0e0e7913947a29c7b32ce87ca73a98614033d41ce63063a1d65053e766b2f315",
+  "source_url": "https://zenodo.org/records/10610438",
+  "status": "exploratory post-result donor observability and observed-size-contrast concordance; not mechanism or gate"
+}
