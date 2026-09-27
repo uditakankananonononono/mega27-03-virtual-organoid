@@ -1,0 +1,161 @@
+{
+  "status": "POST-RESULT descriptive density stratification; not a causal effect or benchmark test",
+  "median_gt_cutoff": 64.5,
+  "low_includes_median": true,
+  "low": {
+    "n_images": 7,
+    "n_moved_to_eval": 2,
+    "mean_author_ap50": 0.7820067405700684,
+    "median_author_ap50": 0.8113207817077637,
+    "sum_tp": 325,
+    "sum_fp": 68,
+    "sum_fn": 30,
+    "aggregate_fn_fraction": 0.08450704225352113,
+    "per_image_fn_fraction_mean": 0.08523753083075117,
+    "mean_fp_per_image": 9.714285714285714,
+    "images": [
+      {
+        "image": "0002_7071445_ckm384kvx8ib3345zzs8qewl4_img.jpg",
+        "n_gt": 44,
+        "author_ap50": 0.8113207817077637,
+        "tp": 43,
+        "fp": 9,
+        "fn": 1,
+        "moved_to_eval": false
+      },
+      {
+        "image": "0003_9960762_ckmdlvkmi14yv345z384v1grr_img.jpg",
+        "n_gt": 36,
+        "author_ap50": 0.8918918967247009,
+        "tp": 33,
+        "fp": 1,
+        "fn": 3,
+        "moved_to_eval": false
+      },
+      {
+        "image": "20210727_11562_ckufm1p2h4vzp0y7jh0fyg2yo_img.jpg",
+        "n_gt": 52,
+        "author_ap50": 0.8947368264198303,
+        "tp": 51,
+        "fp": 5,
+        "fn": 1,
+        "moved_to_eval": false
+      },
+      {
+        "image": "20210727_11753_ckuf91aiz36dm0y9p2t9k5qoh_img.jpg",
+        "n_gt": 50,
+        "author_ap50": 0.5538461804389954,
+        "tp": 36,
+        "fp": 15,
+        "fn": 14,
+        "moved_to_eval": false
+      },
+      {
+        "image": "20210727_15879_ckunspgfb2th10z8253ca7pzf_img.jpg",
+        "n_gt": 55,
+        "author_ap50": 0.8500000238418579,
+        "tp": 51,
+        "fp": 5,
+        "fn": 4,
+        "moved_to_eval": true
+      },
+      {
+        "image": "20210727_21543_ckwgdjdq763z90z6o7n0w8csg_img.jpg",
+        "n_gt": 58,
+        "author_ap50": 0.767123281955719,
+        "tp": 56,
+        "fp": 14,
+        "fn": 3,
+        "moved_to_eval": true
+      },
+      {
+        "image": "20210727_26838_ckw3ig3xg5ngk0zbp0g7j7dqt_img.jpg",
+        "n_gt": 59,
+        "author_ap50": 0.7051281929016113,
+        "tp": 55,
+        "fp": 19,
+        "fn": 4,
+        "moved_to_eval": false
+      }
+    ]
+  },
+  "high": {
+    "n_images": 7,
+    "n_moved_to_eval": 0,
+    "mean_author_ap50": 0.7187995740345546,
+    "median_author_ap50": 0.7021276354789734,
+    "sum_tp": 576,
+    "sum_fp": 84,
+    "sum_fn": 157,
+    "aggregate_fn_fraction": 0.21418826739427013,
+    "per_image_fn_fraction_mean": 0.1991177617842387,
+    "mean_fp_per_image": 12.0,
+    "images": [
+      {
+        "image": "0002_2013089_ckmbvhhhx0000345zlx7mhq1y_img.jpg",
+        "n_gt": 70,
+        "author_ap50": 0.9577465057373047,
+        "tp": 68,
+        "fp": 1,
+        "fn": 2,
+        "moved_to_eval": false
+      },
+      {
+        "image": "0002_2423915_cknt06dr33pzv3b68t421bk27_img.jpg",
+        "n_gt": 76,
+        "author_ap50": 0.5833333134651184,
+        "tp": 49,
+        "fp": 8,
+        "fn": 27,
+        "moved_to_eval": false
+      },
+      {
+        "image": "20210727_12226_ckw3in2er4sqh10aofkm50w8l_img.jpg",
+        "n_gt": 149,
+        "author_ap50": 0.7241379022598267,
+        "tp": 126,
+        "fp": 25,
+        "fn": 23,
+        "moved_to_eval": false
+      },
+      {
+        "image": "20210727_16063_ckw3j7wet8qan0zc39rca87mv_img.jpg",
+        "n_gt": 128,
+        "author_ap50": 0.6323529481887817,
+        "tp": 86,
+        "fp": 8,
+        "fn": 42,
+        "moved_to_eval": false
+      },
+      {
+        "image": "20210727_18315_ckw3ky6ln8z8z0zbnfc0o1gam_img.jpg",
+        "n_gt": 75,
+        "author_ap50": 0.7021276354789734,
+        "tp": 66,
+        "fp": 19,
+        "fn": 9,
+        "moved_to_eval": false
+      },
+      {
+        "image": "20210727_33832_ckw3n2vrs9btz0zbn3jqgbv4y_img.jpg",
+        "n_gt": 148,
+        "author_ap50": 0.6518987417221069,
+        "tp": 103,
+        "fp": 10,
+        "fn": 45,
+        "moved_to_eval": false
+      },
+      {
+        "image": "20210727_37653_ckwggbhda5ql20z7n9eveah6i_img.jpg",
+        "n_gt": 86,
+        "author_ap50": 0.7799999713897705,
+        "tp": 78,
+        "fp": 13,
+        "fn": 9,
+        "moved_to_eval": false
+      }
+    ]
+  },
+  "spearman_gt_count_vs_author_ap50": -0.410989010989011,
+  "limits": "14 previously seen eval images; GT counts are annotation density, not validated acquisition conditions; detector and source fields vary; no significance claim, model retuning or benchmark gate upgrade."
+}
