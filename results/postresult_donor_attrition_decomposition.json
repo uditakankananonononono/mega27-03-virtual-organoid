@@ -1,0 +1,440 @@
+{
+  "donor_gap_interaction_summary": {
+    "max": 0.07418192504574628,
+    "median": -0.04112770123949416,
+    "min": -0.46681929181929177,
+    "negative": 8,
+    "positive": 4,
+    "zero": 0
+  },
+  "donors": {
+    "PDIO_01": {
+      "cells": {
+        "DMSO:large": {
+          "baseline_detected": 72,
+          "missing_A1": 5,
+          "observability_rate": 0.9305555555555556,
+          "positive_A1": 67
+        },
+        "DMSO:small": {
+          "baseline_detected": 21,
+          "missing_A1": 16,
+          "observability_rate": 0.23809523809523808,
+          "positive_A1": 5
+        },
+        "VX445_VX661_VX770:large": {
+          "baseline_detected": 65,
+          "missing_A1": 7,
+          "observability_rate": 0.8923076923076924,
+          "positive_A1": 58
+        },
+        "VX445_VX661_VX770:small": {
+          "baseline_detected": 9,
+          "missing_A1": 3,
+          "observability_rate": 0.6666666666666666,
+          "positive_A1": 6
+        }
+      },
+      "gap_interaction_large_minus_small": -0.46681929181929177,
+      "gap_treatment_minus_dmso": {
+        "large": -0.03824786324786322,
+        "small": 0.42857142857142855
+      },
+      "n_baseline_detected": 167,
+      "n_positive_A1": 136
+    },
+    "PDIO_03": {
+      "cells": {
+        "DMSO:large": {
+          "baseline_detected": 238,
+          "missing_A1": 21,
+          "observability_rate": 0.9117647058823529,
+          "positive_A1": 217
+        },
+        "DMSO:small": {
+          "baseline_detected": 224,
+          "missing_A1": 93,
+          "observability_rate": 0.5848214285714286,
+          "positive_A1": 131
+        },
+        "VX445_VX661_VX770:large": {
+          "baseline_detected": 256,
+          "missing_A1": 35,
+          "observability_rate": 0.86328125,
+          "positive_A1": 221
+        },
+        "VX445_VX661_VX770:small": {
+          "baseline_detected": 257,
+          "missing_A1": 129,
+          "observability_rate": 0.4980544747081712,
+          "positive_A1": 128
+        }
+      },
+      "gap_interaction_large_minus_small": 0.03828349798090447,
+      "gap_treatment_minus_dmso": {
+        "large": -0.04848345588235292,
+        "small": -0.08676695386325739
+      },
+      "n_baseline_detected": 975,
+      "n_positive_A1": 697
+    },
+    "PDIO_05": {
+      "cells": {
+        "DMSO:large": {
+          "baseline_detected": 434,
+          "missing_A1": 56,
+          "observability_rate": 0.8709677419354839,
+          "positive_A1": 378
+        },
+        "DMSO:small": {
+          "baseline_detected": 255,
+          "missing_A1": 115,
+          "observability_rate": 0.5490196078431373,
+          "positive_A1": 140
+        },
+        "VX445_VX661_VX770:large": {
+          "baseline_detected": 460,
+          "missing_A1": 49,
+          "observability_rate": 0.8934782608695652,
+          "positive_A1": 411
+        },
+        "VX445_VX661_VX770:small": {
+          "baseline_detected": 282,
+          "missing_A1": 119,
+          "observability_rate": 0.5780141843971631,
+          "positive_A1": 163
+        }
+      },
+      "gap_interaction_large_minus_small": -0.006484057619944528,
+      "gap_treatment_minus_dmso": {
+        "large": 0.02251051893408129,
+        "small": 0.02899457655402582
+      },
+      "n_baseline_detected": 1431,
+      "n_positive_A1": 1092
+    },
+    "PDIO_06": {
+      "cells": {
+        "DMSO:large": {
+          "baseline_detected": 333,
+          "missing_A1": 26,
+          "observability_rate": 0.9219219219219219,
+          "positive_A1": 307
+        },
+        "DMSO:small": {
+          "baseline_detected": 202,
+          "missing_A1": 107,
+          "observability_rate": 0.47029702970297027,
+          "positive_A1": 95
+        },
+        "VX445_VX661_VX770:large": {
+          "baseline_detected": 564,
+          "missing_A1": 110,
+          "observability_rate": 0.8049645390070922,
+          "positive_A1": 454
+        },
+        "VX445_VX661_VX770:small": {
+          "baseline_detected": 308,
+          "missing_A1": 181,
+          "observability_rate": 0.41233766233766234,
+          "positive_A1": 127
+        }
+      },
+      "gap_interaction_large_minus_small": -0.058998015549521776,
+      "gap_treatment_minus_dmso": {
+        "large": -0.11695738291482971,
+        "small": -0.057959367365307934
+      },
+      "n_baseline_detected": 1407,
+      "n_positive_A1": 983
+    },
+    "PDIO_09": {
+      "cells": {
+        "DMSO:large": {
+          "baseline_detected": 267,
+          "missing_A1": 27,
+          "observability_rate": 0.898876404494382,
+          "positive_A1": 240
+        },
+        "DMSO:small": {
+          "baseline_detected": 118,
+          "missing_A1": 64,
+          "observability_rate": 0.4576271186440678,
+          "positive_A1": 54
+        },
+        "VX445_VX661_VX770:large": {
+          "baseline_detected": 273,
+          "missing_A1": 46,
+          "observability_rate": 0.8315018315018315,
+          "positive_A1": 227
+        },
+        "VX445_VX661_VX770:small": {
+          "baseline_detected": 54,
+          "missing_A1": 19,
+          "observability_rate": 0.6481481481481481,
+          "positive_A1": 35
+        }
+      },
+      "gap_interaction_large_minus_small": -0.2578956024966308,
+      "gap_treatment_minus_dmso": {
+        "large": -0.06737457299255045,
+        "small": 0.19052102950408034
+      },
+      "n_baseline_detected": 712,
+      "n_positive_A1": 556
+    },
+    "PDIO_11": {
+      "cells": {
+        "DMSO:large": {
+          "baseline_detected": 36,
+          "missing_A1": 5,
+          "observability_rate": 0.8611111111111112,
+          "positive_A1": 31
+        },
+        "DMSO:small": {
+          "baseline_detected": 13,
+          "missing_A1": 3,
+          "observability_rate": 0.7692307692307693,
+          "positive_A1": 10
+        },
+        "VX445_VX661_VX770:large": {
+          "baseline_detected": 76,
+          "missing_A1": 22,
+          "observability_rate": 0.7105263157894737,
+          "positive_A1": 54
+        },
+        "VX445_VX661_VX770:small": {
+          "baseline_detected": 14,
+          "missing_A1": 6,
+          "observability_rate": 0.5714285714285714,
+          "positive_A1": 8
+        }
+      },
+      "gap_interaction_large_minus_small": 0.04721740248056039,
+      "gap_treatment_minus_dmso": {
+        "large": -0.1505847953216375,
+        "small": -0.19780219780219788
+      },
+      "n_baseline_detected": 139,
+      "n_positive_A1": 103
+    },
+    "PDIO_12": {
+      "cells": {
+        "DMSO:large": {
+          "baseline_detected": 161,
+          "missing_A1": 22,
+          "observability_rate": 0.8633540372670807,
+          "positive_A1": 139
+        },
+        "DMSO:small": {
+          "baseline_detected": 104,
+          "missing_A1": 74,
+          "observability_rate": 0.28846153846153844,
+          "positive_A1": 30
+        },
+        "VX445_VX661_VX770:large": {
+          "baseline_detected": 166,
+          "missing_A1": 27,
+          "observability_rate": 0.8373493975903614,
+          "positive_A1": 139
+        },
+        "VX445_VX661_VX770:small": {
+          "baseline_detected": 49,
+          "missing_A1": 35,
+          "observability_rate": 0.2857142857142857,
+          "positive_A1": 14
+        }
+      },
+      "gap_interaction_large_minus_small": -0.02325738692946655,
+      "gap_treatment_minus_dmso": {
+        "large": -0.026004639676719288,
+        "small": -0.0027472527472527375
+      },
+      "n_baseline_detected": 480,
+      "n_positive_A1": 322
+    },
+    "PDIO_13": {
+      "cells": {
+        "DMSO:large": {
+          "baseline_detected": 80,
+          "missing_A1": 14,
+          "observability_rate": 0.825,
+          "positive_A1": 66
+        },
+        "DMSO:small": {
+          "baseline_detected": 85,
+          "missing_A1": 65,
+          "observability_rate": 0.23529411764705882,
+          "positive_A1": 20
+        },
+        "VX445_VX661_VX770:large": {
+          "baseline_detected": 78,
+          "missing_A1": 10,
+          "observability_rate": 0.8717948717948718,
+          "positive_A1": 68
+        },
+        "VX445_VX661_VX770:small": {
+          "baseline_detected": 82,
+          "missing_A1": 63,
+          "observability_rate": 0.23170731707317074,
+          "positive_A1": 19
+        }
+      },
+      "gap_interaction_large_minus_small": 0.05038167236875993,
+      "gap_treatment_minus_dmso": {
+        "large": 0.04679487179487185,
+        "small": -0.003586800573888077
+      },
+      "n_baseline_detected": 325,
+      "n_positive_A1": 173
+    },
+    "PDIO_14": {
+      "cells": {
+        "DMSO:large": {
+          "baseline_detected": 81,
+          "missing_A1": 11,
+          "observability_rate": 0.8641975308641975,
+          "positive_A1": 70
+        },
+        "DMSO:small": {
+          "baseline_detected": 41,
+          "missing_A1": 18,
+          "observability_rate": 0.5609756097560976,
+          "positive_A1": 23
+        },
+        "VX445_VX661_VX770:large": {
+          "baseline_detected": 104,
+          "missing_A1": 29,
+          "observability_rate": 0.7211538461538461,
+          "positive_A1": 75
+        },
+        "VX445_VX661_VX770:small": {
+          "baseline_detected": 64,
+          "missing_A1": 42,
+          "observability_rate": 0.34375,
+          "positive_A1": 22
+        }
+      },
+      "gap_interaction_large_minus_small": 0.07418192504574628,
+      "gap_treatment_minus_dmso": {
+        "large": -0.14304368471035134,
+        "small": -0.21722560975609762
+      },
+      "n_baseline_detected": 290,
+      "n_positive_A1": 190
+    },
+    "PDIO_15": {
+      "cells": {
+        "DMSO:large": {
+          "baseline_detected": 162,
+          "missing_A1": 12,
+          "observability_rate": 0.9259259259259259,
+          "positive_A1": 150
+        },
+        "DMSO:small": {
+          "baseline_detected": 82,
+          "missing_A1": 51,
+          "observability_rate": 0.3780487804878049,
+          "positive_A1": 31
+        },
+        "VX445_VX661_VX770:large": {
+          "baseline_detected": 143,
+          "missing_A1": 28,
+          "observability_rate": 0.8041958041958042,
+          "positive_A1": 115
+        },
+        "VX445_VX661_VX770:small": {
+          "baseline_detected": 50,
+          "missing_A1": 32,
+          "observability_rate": 0.36,
+          "positive_A1": 18
+        }
+      },
+      "gap_interaction_large_minus_small": -0.10368134124231687,
+      "gap_treatment_minus_dmso": {
+        "large": -0.12173012173012177,
+        "small": -0.018048780487804894
+      },
+      "n_baseline_detected": 437,
+      "n_positive_A1": 314
+    },
+    "PDIO_16": {
+      "cells": {
+        "DMSO:large": {
+          "baseline_detected": 143,
+          "missing_A1": 28,
+          "observability_rate": 0.8041958041958042,
+          "positive_A1": 115
+        },
+        "DMSO:small": {
+          "baseline_detected": 58,
+          "missing_A1": 41,
+          "observability_rate": 0.29310344827586204,
+          "positive_A1": 17
+        },
+        "VX445_VX661_VX770:large": {
+          "baseline_detected": 171,
+          "missing_A1": 39,
+          "observability_rate": 0.7719298245614035,
+          "positive_A1": 132
+        },
+        "VX445_VX661_VX770:small": {
+          "baseline_detected": 65,
+          "missing_A1": 43,
+          "observability_rate": 0.3384615384615385,
+          "positive_A1": 22
+        }
+      },
+      "gap_interaction_large_minus_small": -0.07762406982007714,
+      "gap_treatment_minus_dmso": {
+        "large": -0.0322659796344007,
+        "small": 0.045358090185676436
+      },
+      "n_baseline_detected": 437,
+      "n_positive_A1": 286
+    },
+    "PDIO_18": {
+      "cells": {
+        "DMSO:large": {
+          "baseline_detected": 51,
+          "missing_A1": 6,
+          "observability_rate": 0.8823529411764706,
+          "positive_A1": 45
+        },
+        "DMSO:small": {
+          "baseline_detected": 45,
+          "missing_A1": 38,
+          "observability_rate": 0.15555555555555556,
+          "positive_A1": 7
+        },
+        "VX445_VX661_VX770:large": {
+          "baseline_detected": 52,
+          "missing_A1": 1,
+          "observability_rate": 0.9807692307692307,
+          "positive_A1": 51
+        },
+        "VX445_VX661_VX770:small": {
+          "baseline_detected": 16,
+          "missing_A1": 7,
+          "observability_rate": 0.5625,
+          "positive_A1": 9
+        }
+      },
+      "gap_interaction_large_minus_small": -0.3085281548516843,
+      "gap_treatment_minus_dmso": {
+        "large": 0.09841628959276016,
+        "small": 0.40694444444444444
+      },
+      "n_baseline_detected": 164,
+      "n_positive_A1": 112
+    }
+  },
+  "limits": "Same selected blocks and previously seen endpoints. Donor differences may confound source batch, image, or genotype; no direct mask audit or missing response identification. No original gate change.",
+  "n_baseline_detected": 6964,
+  "n_missing_A1": 2000,
+  "n_positive_A1": 4964,
+  "protocol": "notes/postresult_donor_attrition_decomposition_protocol.md",
+  "source_sha256": "0e0e7913947a29c7b32ce87ca73a98614033d41ce63063a1d65053e766b2f315",
+  "source_url": "https://zenodo.org/records/10610438",
+  "status": "post-result donor-specific detection/attrition audit; not missing-value recovery or gate"
+}
