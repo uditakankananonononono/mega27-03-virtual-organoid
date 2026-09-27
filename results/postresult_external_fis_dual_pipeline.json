@@ -1,0 +1,74 @@
+{
+  "limits": "Same source images and one plate, not independent cohorts. Duplicate well/time/label groups in both pipelines; no ground-truth tracking. Original VO3 sign/specificity FAIL and benchmark win withdrawn.",
+  "pipelines": {
+    "CellProfiler": {
+      "arm_wells": {
+        "fsk": 16,
+        "fsk_770": 16,
+        "fsk_770_809": 16,
+        "fsk_809": 16
+      },
+      "dose_wells": {
+        "0.008": 8,
+        "0.02": 8,
+        "0.05": 8,
+        "0.128": 8,
+        "0.32": 8,
+        "0.8": 8,
+        "2": 8,
+        "5": 8
+      },
+      "duplicate_excess_object_rows": 965,
+      "example_duplicate_key": {
+        "label": "2",
+        "time": 2,
+        "well": "1"
+      },
+      "max_objects_per_well_time_label": 3,
+      "missing_label_rows": 1080,
+      "n_distinct_within_well_labels": 4265,
+      "n_duplicate_well_time_label_keys": 929,
+      "n_labels_with_baseline_and_final": 4265,
+      "rows": 31900,
+      "sha256": "1cb65d37fe78ad232c9829634c4ed7be8afc52e9e0308a519673eb3a9d91f807",
+      "times_per_well": 7,
+      "wells": 64
+    },
+    "Fiji/ImageJ": {
+      "arm_wells": {
+        "fsk": 16,
+        "fsk_770": 16,
+        "fsk_770_809": 16,
+        "fsk_809": 16
+      },
+      "dose_wells": {
+        "0.008": 8,
+        "0.02": 8,
+        "0.05": 8,
+        "0.128": 8,
+        "0.32": 8,
+        "0.8": 8,
+        "2": 8,
+        "5": 8
+      },
+      "duplicate_excess_object_rows": 66,
+      "example_duplicate_key": {
+        "label": "3",
+        "time": 6,
+        "well": "1"
+      },
+      "max_objects_per_well_time_label": 2,
+      "missing_label_rows": 0,
+      "n_distinct_within_well_labels": 4327,
+      "n_duplicate_well_time_label_keys": 66,
+      "n_labels_with_baseline_and_final": 4080,
+      "rows": 29291,
+      "sha256": "072554a0bf397adcaa53b83670626d8ed8e4e01d6617911534d0c5dc5bf10194",
+      "times_per_well": 7,
+      "wells": 64
+    }
+  },
+  "protocol": "notes/postresult_external_fis_dual_pipeline_protocol.md",
+  "source_url": "https://github.com/hmbotelho/FIS_analysis",
+  "status": "post-result source schema audit of two pipelines on same demo images"
+}
