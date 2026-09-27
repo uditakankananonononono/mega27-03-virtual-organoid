@@ -1,0 +1,43 @@
+{
+  "arm_wells": {
+    "fsk": 16,
+    "fsk_770": 16,
+    "fsk_770_809": 16,
+    "fsk_809": 16
+  },
+  "assay_limits": "TrackObjects_Label_4 is NOT one-to-one with well x time: multiple objects carry the same label in 929 well/time/label groups; cannot silently treat each label as one unique organoid track. One demonstration plate; README says homozygous for a class II CFTR mutation, but no independent donor IDs or multi-donor cohort. Fluorescent calcein time series, VX-809/VX-770, different from original VO3 brightfield VX445/VX661/VX770. Processed masks are not hand-annotated instance ground truth; track labels algorithm-derived. Not an independent phenotype validation or original benchmark gate.",
+  "dose_wells": {
+    "0.008": 8,
+    "0.02": 8,
+    "0.05": 8,
+    "0.128": 8,
+    "0.32": 8,
+    "0.8": 8,
+    "2": 8,
+    "5": 8
+  },
+  "frames_per_well": 7,
+  "infile_sha256": "70195928bdca463f287451bb3f056203a355893d8a6c37713c166461298d13f8",
+  "infile_url": "https://raw.githubusercontent.com/hmbotelho/FIS_analysis/master/demo_dataset/02-microscope_infile/demoplate_01.txt",
+  "max_rows_per_well_time_label": 3,
+  "n_cellprofiler_mask_png": 448,
+  "n_cftr_inhibitor_wells": 0,
+  "n_distinct_well_track_labels": 4265,
+  "n_duplicate_well_time_label_excess_rows": 965,
+  "n_duplicated_well_time_label_keys": 929,
+  "n_labels_with_baseline": 4265,
+  "n_labels_with_both": 4265,
+  "n_labels_with_endpoint": 4265,
+  "n_na_track_rows": 1080,
+  "n_object_csv": 64,
+  "n_object_rows": 31900,
+  "n_raw_exported_tiff": 448,
+  "n_wells": 64,
+  "n_zero_forskolin_wells": 0,
+  "readme_url": "https://raw.githubusercontent.com/hmbotelho/FIS_analysis/master/README.md",
+  "source_tree_snapshot": "GitHub API repos/hmbotelho/FIS_analysis/git/trees/master?recursive=1, inspected on 2026-09-27",
+  "source_url": "https://github.com/hmbotelho/FIS_analysis",
+  "summary_csv_sha256": "1cb65d37fe78ad232c9829634c4ed7be8afc52e9e0308a519673eb3a9d91f807",
+  "summary_csv_url": "https://raw.githubusercontent.com/hmbotelho/FIS_analysis/master/demo_dataset/05-images_analysis/demoplate_01--cellprofiler--analysis/FIS_rawdata.csv",
+  "wells_with_na_track": 63
+}
