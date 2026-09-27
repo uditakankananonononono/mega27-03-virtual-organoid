@@ -94,7 +94,7 @@ def main():
     a = np.array([r['ap_author'] for r in out])
     rng = np.random.default_rng(20260927)
     draws = rng.choice(a, size=(20000, len(a)), replace=True).mean(axis=1)
-    result = {'status': 'EXPLORATORY; formerly used eval images, not independent or prospective benchmark',
+    result = {'status': 'EXPLORATORY; reassigned eval on known source images, not independent or prospective benchmark',
               'protocol': 'notes/prereg_group_disjoint_seg.md', 'source_manifest_sha256': MANIFEST_SHA,
               'model': str(ROOT / 'best.pt'), 'model_sha256': SHA, 'selected_epoch': 60,
               'selected_val_loss': ck['val_loss'], 'params': PARAMS,
@@ -104,7 +104,7 @@ def main():
               'mean_author': float(a.mean()), 'mean_ours': float(np.mean([r['ap_ours'] for r in out])),
               'image_bootstrap_ci95': list(map(float, np.quantile(draws, [.025, .975]))),
               'bootstrap_seed': 20260927, 'bootstrap_draws': 20000,
-              'limitations': '14 previously used eval images; candidate scene groups do not prove donor/field independence; published author-model paired predictions unavailable; no benchmark-win claim'}
+              'limitations': '14 exploratory eval files: 12 previously scored original eval files plus one original-train and one original-val file moved into eval; all 14 were known source images, and the moved files have original-eval scene-proxy links. Candidate groups do not prove donor/field independence; published author-model paired predictions unavailable; no benchmark-win claim'}
     (ROOT / 'exploratory_eval.json').write_text(json.dumps(result, indent=2) + '\n')
     print('mean author', result['mean_author'], 'ours', result['mean_ours'], 'CI', result['image_bootstrap_ci95'], flush=True)
 

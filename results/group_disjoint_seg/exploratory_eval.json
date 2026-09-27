@@ -1,5 +1,5 @@
 {
-  "status": "EXPLORATORY; formerly used eval images, not independent or prospective benchmark",
+  "status": "EXPLORATORY; reassigned eval on known source images, not independent or prospective benchmark",
   "protocol": "notes/prereg_group_disjoint_seg.md",
   "source_manifest_sha256": "ba003cd9645067eb455f5a2d0166a53a0a41aa73378f938e848f2ca9c73a9b65",
   "model": "results/group_disjoint_seg/best.pt",
@@ -179,5 +179,5 @@
   ],
   "bootstrap_seed": 20260927,
   "bootstrap_draws": 20000,
-  "limitations": "14 previously used eval images; candidate scene groups do not prove donor/field independence; published author-model paired predictions unavailable; no benchmark-win claim"
+  "limitations": "14 exploratory eval files: 12 previously scored original eval files plus one original-train and one original-val file moved into eval; all 14 were known source images, and the moved files have original-eval scene-proxy links. Candidate groups do not prove donor/field independence; published author-model paired predictions unavailable; no benchmark-win claim"
 }
