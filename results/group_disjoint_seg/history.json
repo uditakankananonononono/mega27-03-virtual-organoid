@@ -131,5 +131,12 @@
     "val_loss": null,
     "best_val_loss": 0.08478287728251638,
     "seconds": 41.0
+  },
+  {
+    "epoch": 20,
+    "train_loss_sum": 7.3290049508214,
+    "val_loss": 0.08398926882324992,
+    "best_val_loss": 0.08398926882324992,
+    "seconds": 55.5
   }
 ]
