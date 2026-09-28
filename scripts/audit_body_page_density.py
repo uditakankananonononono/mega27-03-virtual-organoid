@@ -17,7 +17,7 @@ for index, page in enumerate(reader.pages, 1):
                  'contains_appendix_heading': bool(re.search(r'(?m)^Appendix\b', text)),
                  'images': len(page.images),
                  'excerpt': ' '.join(text.split())[:145]})
-assert len(rows) == 92, 'Unexpected physical page count; re-establish body boundary'
+assert len(rows) == 93, 'Unexpected physical page count; re-establish body boundary'
 ref_pages = [p['page'] for p in rows if p['contains_references_heading']]
 assert ref_pages == [63], f'References boundary changed: {ref_pages}'
 body = rows[1:ref_pages[0]-1]  # p2 until, but excluding, the References page

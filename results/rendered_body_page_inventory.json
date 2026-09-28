@@ -1,16 +1,16 @@
 {
   "source_pdf": "paper/mega27-03-virtual-organoid-paper.pdf",
-  "sha256": "1b0585d780705ea69c65a38b7568197f40de220763aff22a147f69bf0b5a1a1d",
-  "physical_pages": 92,
+  "sha256": "ca0eba5699d72b713bd5573d25414b43ca89bb20609864ef4dccefd36756be34",
+  "physical_pages": 93,
   "body_candidate_pages": "2-62",
   "candidate_count_before_qualitative_exclusions": 61,
   "diagnostic_counts_not_a_rule": {
-    "200": 56,
+    "200": 57,
     "300": 51,
     "350": 46,
     "400": 34
   },
-  "body_candidate_word_tokens": 23298,
+  "body_candidate_word_tokens": 23379,
   "per_page": [
     {
       "page": 1,
@@ -454,7 +454,7 @@
     },
     {
       "page": 56,
-      "word_tokens": 429,
+      "word_tokens": 437,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
       "images": 2,
@@ -462,78 +462,86 @@
     },
     {
       "page": 57,
-      "word_tokens": 399,
+      "word_tokens": 442,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
       "images": 2,
-      "excerpt": "Under MNAR masking, all 100 preregistered repetitions remained eligible. Complete- case and the favorable known-baseline-propensity weighted refe"
+      "excerpt": "intervals spanned zero in 100% of repetitions. These are finite simulation diagnostics, not confidence-interval coverage for real missing outcome"
     },
     {
       "page": 58,
-      "word_tokens": 421,
+      "word_tokens": 393,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
       "images": 2,
-      "excerpt": "6. Discussion The same-accession eligibility sensitivity weakens from 9/12 (p=0.073) at three measured objects per cell to 8/12 (p=0.194) at five"
+      "excerpt": "Fidelity claims narrowed after their controls: the broad culture-fibroblast attractor was retracted for strictly organoid-only samples, kidney ex"
     },
     {
       "page": 59,
-      "word_tokens": 190,
+      "word_tokens": 252,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
       "images": 2,
-      "excerpt": "study reported swelling variation in large structures (bioRxiv 2021.07.20.453105). The narrower intestinal question is unconfirmed and this was n"
+      "excerpt": "Independent novelty and mechanism remain unproved. We did not find the exact intestinal drug-by-starting-size interaction in the bounded literatu"
     },
     {
       "page": 60,
-      "word_tokens": 154,
+      "word_tokens": 163,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
       "images": 2,
-      "excerpt": "files GTEx v8 gene median TPM (GTEx portal bucket) reference data service data/ref/ gtex_v8_median_tp m.gct.gz; src/geo_fidelity.py counts MSigDB"
+      "excerpt": "rendered paper Git + GitHub service repo hosting and pushes infra (excluded) NCBI E-utilities (esearch/esummar y) web API src/ geo_candidates.py "
     },
     {
       "page": 61,
-      "word_tokens": 156,
+      "word_tokens": 149,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
       "images": 2,
-      "excerpt": "Reactome AnalysisService service src/ attractor_enrichr_re actome.py counts STRING functional enrichment API (string-db.org) service src/ strict_"
+      "excerpt": "thods.py (protein- coding robustness) GEOparse library src/ geo_sample_meta.p y counts Enrichr (Hallmark/CellMa rker/PanglaoDB libraries) service"
     },
     {
       "page": 62,
-      "word_tokens": 164,
+      "word_tokens": 158,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
       "images": 2,
-      "excerpt": "Lookup Service 4 (OLS4) ols_anatomy_audit. py; results/ols_anatomy .json Scanpy 1.11.5 library src/ sc_kidney_markers. py; results/sc_kidney_ mar"
+      "excerpt": "gene-level pLoF constraint deficit_gnomad.py; results/deficit_gno mad.json Ensembl REST lookup/id web API src/ deficit_ensembl_bi otype.py; resul"
     },
     {
       "page": 63,
-      "word_tokens": 269,
+      "word_tokens": 239,
       "contains_references_heading": true,
       "contains_appendix_heading": false,
       "images": 2,
-      "excerpt": "IntAct PSIQUIC interaction-count service protein interaction database src/ deficit_intact.py; results/deficit_intac t.json counts JASPAR CORE ver"
+      "excerpt": "GAF annotation database results/deficit_goa.j son KEGG REST human pathway- gene API database/service src/deficit_kegg.py; results/deficit_kegg .j"
     },
     {
       "page": 64,
-      "word_tokens": 279,
+      "word_tokens": 288,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
       "images": 2,
-      "excerpt": "EBI GOA human GAF. https://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/goa_human.gaf.gz IntAct PSIQUIC. https://www.ebi.ac.uk/Tools/webservices/psic"
+      "excerpt": "Turei D, et al. OmniPath: guidelines and gateway for literature-curated signaling pathway resources. Nat Methods 2016. https://omnipathdb.org/ Cl"
     },
     {
       "page": 65,
-      "word_tokens": 299,
+      "word_tokens": 331,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
       "images": 2,
-      "excerpt": "Kim S, et al. Comparison of Cell and Organoid-Level Analysis of Patient-Derived 3D Organoids to Evaluate Tumor Cell Growth Dynamics and Drug Resp"
+      "excerpt": "Berical A, et al. A multimodal iPSC platform for cystic fibrosis drug testing. Nat Commun 2022. https://www.nature.com/articles/s41467-022-31854-"
     },
     {
       "page": 66,
+      "word_tokens": 26,
+      "contains_references_heading": false,
+      "contains_appendix_heading": false,
+      "images": 2,
+      "excerpt": "Measuring cystic fibrosis drug responses in organoids derived from 2D differentiated nasal epithelia. bioRxiv 2021. https://www.biorxiv.org/conte"
+    },
+    {
+      "page": 67,
       "word_tokens": 365,
       "contains_references_heading": false,
       "contains_appendix_heading": true,
@@ -541,7 +549,7 @@
       "excerpt": "Appendix A. Patient, plate and dose-level treatment contrasts This appendix makes the two distinct well-level FIS rankings inspectable without do"
     },
     {
-      "page": 67,
+      "page": 68,
       "word_tokens": 294,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -549,7 +557,7 @@
       "excerpt": "2020-08-28 0.02048 +0.1137 +65.2 2020-08-28 0.0512 +0.1571 +50.4 2020-08-28 0.128 +0.2123 +77.5 2020-08-28 0.32 +0.1809 +89.4 2020-08-28 0.8 +0.3"
     },
     {
-      "page": 68,
+      "page": 69,
       "word_tokens": 287,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -557,7 +565,7 @@
       "excerpt": "2020-12-04 0.02048 +0.3061 +25.6 2020-12-04 0.0512 +0.1850 +113.5 2020-12-04 0.128 +0.3075 +76.1 2020-12-04 0.32 +0.2394 +1.4 2020-12-04 0.8 +0.3"
     },
     {
-      "page": 69,
+      "page": 70,
       "word_tokens": 308,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -565,7 +573,7 @@
       "excerpt": "A1.4. Source patient 20-CF 24 eligible of 24 blocks; median normalized treatment contrast +0.1534; median raw-area contrast +108.65. This is one "
     },
     {
-      "page": 70,
+      "page": 71,
       "word_tokens": 292,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -573,7 +581,7 @@
       "excerpt": "plate date fsk (uM) normalized delta raw delta or exclusion 2020-08-13 0.008192 +0.1814 +62.9 2020-08-13 0.02048 +0.1679 -10.0 2020-08-13 0.0512 "
     },
     {
-      "page": 71,
+      "page": 72,
       "word_tokens": 294,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -581,7 +589,7 @@
       "excerpt": "2020-08-27 2 +0.3405 +190.0 2020-08-27 5 +0.0314 -137.4 2020-09-01 0.008192 +0.1006 +86.2 2020-09-01 0.02048 +0.1493 -4.5 2020-09-01 0.0512 +0.17"
     },
     {
-      "page": 72,
+      "page": 73,
       "word_tokens": 294,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -589,7 +597,7 @@
       "excerpt": "2020-08-20 2 +0.3326 +50.8 2020-08-20 5 +0.3239 +7.4 2020-08-28 0.008192 +0.1596 +70.1 2020-08-28 0.02048 +0.1603 +49.8 2020-08-28 0.0512 +0.4934"
     },
     {
-      "page": 73,
+      "page": 74,
       "word_tokens": 301,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -597,7 +605,7 @@
       "excerpt": "2020-11-24 2 +0.3773 +187.2 2020-11-24 5 +0.2950 +148.1 A1.9. Source patient 57-CF 24 eligible of 24 blocks; median normalized treatment contrast"
     },
     {
-      "page": 74,
+      "page": 75,
       "word_tokens": 290,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -605,7 +613,7 @@
       "excerpt": "Table 36. A1 source patient 58-CF: 24 plate-dose blocks from results/drevinek_fis.json. Raw-area delta is not baseline normalized. plate date fsk"
     },
     {
-      "page": 75,
+      "page": 76,
       "word_tokens": 294,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -613,7 +621,7 @@
       "excerpt": "2020-08-13 0.128 +0.5715 +81.5 2020-08-13 0.32 +0.5435 +19.1 2020-08-13 0.8 +0.6986 +121.4 2020-08-13 2 +0.5563 +75.5 2020-08-13 5 +0.4616 +87.6 "
     },
     {
-      "page": 76,
+      "page": 77,
       "word_tokens": 297,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -621,7 +629,7 @@
       "excerpt": "2020-09-03 0.128 +0.3349 +83.3 2020-09-03 0.32 +0.2943 +82.1 2020-09-03 0.8 +0.4011 +101.6 2020-09-03 2 +0.3729 +196.5 2020-09-03 5 +0.4666 +158."
     },
     {
-      "page": 77,
+      "page": 78,
       "word_tokens": 294,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -629,7 +637,7 @@
       "excerpt": "2020-10-13 0.008192 +0.1148 +59.2 2020-10-13 0.02048 +0.1510 +134.3 2020-10-13 0.0512 +0.2029 +99.3 2020-10-13 0.128 +0.2730 +3.1 2020-10-13 0.32"
     },
     {
-      "page": 78,
+      "page": 79,
       "word_tokens": 308,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -637,7 +645,7 @@
       "excerpt": "A1.16. Source patient 64-CF 24 eligible of 24 blocks; median normalized treatment contrast +0.2636; median raw-area contrast +72.83. This is one "
     },
     {
-      "page": 79,
+      "page": 80,
       "word_tokens": 292,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -645,7 +653,7 @@
       "excerpt": "plate date fsk (uM) normalized delta raw delta or exclusion 2020-10-15 0.008192 +0.1919 +15.4 2020-10-15 0.02048 +0.1633 +42.4 2020-10-15 0.0512 "
     },
     {
-      "page": 80,
+      "page": 81,
       "word_tokens": 294,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -653,7 +661,7 @@
       "excerpt": "2020-10-15 2 +0.1706 +45.6 2020-10-15 5 +0.3330 +68.4 2020-10-27 0.008192 +0.1634 +66.3 2020-10-27 0.02048 +0.2660 +90.9 2020-10-27 0.0512 +0.303"
     },
     {
-      "page": 81,
+      "page": 82,
       "word_tokens": 313,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -661,7 +669,7 @@
       "excerpt": "2020-10-27 2 +0.2594 +176.9 2020-10-27 5 -0.0718 -87.1 2020-11-27 0.008192 +0.1909 -4.2 2020-11-27 0.02048 +0.2265 +82.5 2020-11-27 0.0512 +0.345"
     },
     {
-      "page": 82,
+      "page": 83,
       "word_tokens": 292,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -669,7 +677,7 @@
       "excerpt": "Table 47. A2 source patient 06: 24 plate-dose blocks from results/vti_eti.json. Raw- area delta is not baseline normalized. plate date fsk (uM) n"
     },
     {
-      "page": 83,
+      "page": 84,
       "word_tokens": 295,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -677,7 +685,7 @@
       "excerpt": "20240409 0.128 +0.2176 +48.1 20240409 0.32 -0.0955 -56.9 20240409 0.8 -0.0967 -102.1 20240409 2 -0.1990 +33.4 20240409 5 -0.0490 -5.1 20240416 0."
     },
     {
-      "page": 84,
+      "page": 85,
       "word_tokens": 229,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -685,7 +693,7 @@
       "excerpt": "20240523 0.128 -0.0575 -30.9 20240523 0.32 +0.0873 -109.2 20240523 0.8 -0.0168 +74.6 20240523 2 +0.2221 +129.3 20240523 5 -0.0983 -144.8 20240530"
     },
     {
-      "page": 85,
+      "page": 86,
       "word_tokens": 209,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -693,7 +701,7 @@
       "excerpt": "times 20240326 0.128 excluded missing matched times 20240326 0.32 excluded missing matched times 20240326 0.8 excluded missing matched times 2024"
     },
     {
-      "page": 86,
+      "page": 87,
       "word_tokens": 216,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -701,7 +709,7 @@
       "excerpt": "20241121 2 -0.0569 -260.8 20241121 5 +0.1733 +14.7 20241204 0.008192 +0.0137 +13.7 20241204 0.02048 +0.0022 +20.5 20241204 0.0512 -0.0329 +74.1 2"
     },
     {
-      "page": 87,
+      "page": 88,
       "word_tokens": 267,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -709,7 +717,7 @@
       "excerpt": "20240328 0.32 excluded missing matched times 20240328 0.8 excluded missing matched times 20240328 2 excluded missing matched times 20240328 5 exc"
     },
     {
-      "page": 88,
+      "page": 89,
       "word_tokens": 176,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -717,7 +725,7 @@
       "excerpt": "A2.8. Source patient 58 No eligible primary block for this ID under the fixed treatment arms and time/well criteria. 16 source blocks are retaine"
     },
     {
-      "page": 89,
+      "page": 90,
       "word_tokens": 310,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -725,7 +733,7 @@
       "excerpt": "A2.9. Source patient 68 24 eligible of 24 blocks; median normalized treatment contrast -0.0086; median raw-area contrast -6.57. This is one patie"
     },
     {
-      "page": 90,
+      "page": 91,
       "word_tokens": 293,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -733,7 +741,7 @@
       "excerpt": "plate date fsk (uM) normalized delta raw delta or exclusion 20240411 0.008192 +0.0229 -6.6 20240411 0.02048 -0.0303 -14.2 20240411 0.0512 -0.1336"
     },
     {
-      "page": 91,
+      "page": 92,
       "word_tokens": 295,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
@@ -741,7 +749,7 @@
       "excerpt": "20240517 2 +0.0201 -212.3 20240517 5 -0.2070 -9.6 20240523 0.008192 +0.0776 -5.9 20240523 0.02048 -0.0184 +2.2 20240523 0.0512 -0.0364 +111.8 202"
     },
     {
-      "page": 92,
+      "page": 93,
       "word_tokens": 153,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
