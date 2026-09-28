@@ -1,0 +1,4610 @@
+{
+  "status": "same-accession synthetic observed-track masking; not real-missing endpoint identification",
+  "protocol": "notes/prereg_masked_observability_method_benchmark_20260928.md",
+  "source_url": "https://zenodo.org/records/10610438",
+  "source_sha256": "0e0e7913947a29c7b32ce87ca73a98614033d41ce63063a1d65053e766b2f315",
+  "n_full_observed_tracks": 4964,
+  "n_fixed_blocks": 31,
+  "n_fixed_donors": 12,
+  "full_known_equal_donor_mean_median": 0.2079781684567534,
+  "mechanisms": {
+    "MCAR": {
+      "eligible_masks": 100,
+      "ineligible_masks": 0,
+      "missing_fraction_by_cell": {
+        "VX445_VX661_VX770:large": 0.20077805486284292,
+        "DMSO:large": 0.20159452054794522,
+        "VX445_VX661_VX770:small": 0.19611208406304723,
+        "DMSO:small": 0.20003552397868568
+      },
+      "complete_case_bias": 0.0028915974602837713,
+      "complete_case_mae": 0.02310510859213433,
+      "ipw_bias": 0.0028915974602837587,
+      "ipw_mae": 0.023105108592134327,
+      "hidden_outside_cell_percentile_fraction": 0.10267619363461868,
+      "intervals": {
+        "cell_interval": {
+          "containment": 1.0,
+          "median_width": 1.207843380141586,
+          "mean_width": 1.203119595648365,
+          "zero_contained_fraction": 1.0
+        },
+        "global_interval": {
+          "containment": 1.0,
+          "median_width": 1.3305334005688416,
+          "mean_width": 1.3300729414525647,
+          "zero_contained_fraction": 1.0
+        }
+      },
+      "replicates": [
+        {
+          "seed": 20260928,
+          "complete_case": 0.1905372833817814,
+          "ipw_known_baseline_propensity": 0.19053728338178152,
+          "cell_interval": [
+            -0.4975957268796878,
+            0.8263677034678856
+          ],
+          "global_interval": [
+            -0.6130445572441796,
+            0.8340776166306871
+          ],
+          "hidden_outside_cell_percentile": 109,
+          "n_hidden": 1044
+        },
+        {
+          "seed": 20260929,
+          "complete_case": 0.23321675469787082,
+          "ipw_known_baseline_propensity": 0.23321675469787073,
+          "cell_interval": [
+            -0.3839873597840711,
+            0.8431247324518533
+          ],
+          "global_interval": [
+            -0.4994302968030233,
+            0.8654199184584379
+          ],
+          "hidden_outside_cell_percentile": 108,
+          "n_hidden": 1012
+        },
+        {
+          "seed": 20260930,
+          "complete_case": 0.18849484687857196,
+          "ipw_known_baseline_propensity": 0.18849484687857176,
+          "cell_interval": [
+            -0.36322625104928496,
+            0.753264001878089
+          ],
+          "global_interval": [
+            -0.4913882506893506,
+            0.7447993098159301
+          ],
+          "hidden_outside_cell_percentile": 99,
+          "n_hidden": 975
+        },
+        {
+          "seed": 20260931,
+          "complete_case": 0.21196667091777166,
+          "ipw_known_baseline_propensity": 0.21196667091777158,
+          "cell_interval": [
+            -0.40397209184070076,
+            0.8284030067967713
+          ],
+          "global_interval": [
+            -0.508690702816934,
+            0.841944503879199
+          ],
+          "hidden_outside_cell_percentile": 104,
+          "n_hidden": 1004
+        },
+        {
+          "seed": 20260932,
+          "complete_case": 0.17714945590406891,
+          "ipw_known_baseline_propensity": 0.17714945590406875,
+          "cell_interval": [
+            -0.347491085091814,
+            0.7609318502934047
+          ],
+          "global_interval": [
+            -0.47825541318826353,
+            0.7509178189817806
+          ],
+          "hidden_outside_cell_percentile": 117,
+          "n_hidden": 988
+        },
+        {
+          "seed": 20260933,
+          "complete_case": 0.19591759387672072,
+          "ipw_known_baseline_propensity": 0.19591759387672072,
+          "cell_interval": [
+            -0.4022510188065997,
+            0.888921987542028
+          ],
+          "global_interval": [
+            -0.5218291827616967,
+            0.8942298329742658
+          ],
+          "hidden_outside_cell_percentile": 94,
+          "n_hidden": 1028
+        },
+        {
+          "seed": 20260934,
+          "complete_case": 0.19110815700761244,
+          "ipw_known_baseline_propensity": 0.19110815700761238,
+          "cell_interval": [
+            -0.4012897374623139,
+            0.861075729000001
+          ],
+          "global_interval": [
+            -0.5324878902879329,
+            0.8526238187632252
+          ],
+          "hidden_outside_cell_percentile": 104,
+          "n_hidden": 1010
+        },
+        {
+          "seed": 20260935,
+          "complete_case": 0.22390849630602241,
+          "ipw_known_baseline_propensity": 0.2239084963060223,
+          "cell_interval": [
+            -0.35157918597106225,
+            0.8196460224995983
+          ],
+          "global_interval": [
+            -0.503233828796424,
+            0.8012283147110101
+          ],
+          "hidden_outside_cell_percentile": 105,
+          "n_hidden": 996
+        },
+        {
+          "seed": 20260936,
+          "complete_case": 0.2034543207839599,
+          "ipw_known_baseline_propensity": 0.20345432078395986,
+          "cell_interval": [
+            -0.3938373058530844,
+            0.8608533383417295
+          ],
+          "global_interval": [
+            -0.5278935352009789,
+            0.8709842874775263
+          ],
+          "hidden_outside_cell_percentile": 113,
+          "n_hidden": 1043
+        },
+        {
+          "seed": 20260937,
+          "complete_case": 0.1600310521735686,
+          "ipw_known_baseline_propensity": 0.1600310521735686,
+          "cell_interval": [
+            -0.4411800700519463,
+            0.7711209610177323
+          ],
+          "global_interval": [
+            -0.5684910564236189,
+            0.7615367551510429
+          ],
+          "hidden_outside_cell_percentile": 96,
+          "n_hidden": 1006
+        },
+        {
+          "seed": 20260938,
+          "complete_case": 0.17958803873228077,
+          "ipw_known_baseline_propensity": 0.17958803873228077,
+          "cell_interval": [
+            -0.3943860805782047,
+            0.7909016379716026
+          ],
+          "global_interval": [
+            -0.5091130713443593,
+            0.7811846905059673
+          ],
+          "hidden_outside_cell_percentile": 89,
+          "n_hidden": 980
+        },
+        {
+          "seed": 20260939,
+          "complete_case": 0.2169316424775152,
+          "ipw_known_baseline_propensity": 0.21693164247751529,
+          "cell_interval": [
+            -0.35747795210824124,
+            0.8002344065254435
+          ],
+          "global_interval": [
+            -0.503128087574115,
+            0.7943899894960601
+          ],
+          "hidden_outside_cell_percentile": 115,
+          "n_hidden": 990
+        },
+        {
+          "seed": 20260940,
+          "complete_case": 0.23017125371581668,
+          "ipw_known_baseline_propensity": 0.23017125371581657,
+          "cell_interval": [
+            -0.3494552290740516,
+            0.7976235822082348
+          ],
+          "global_interval": [
+            -0.47276006782748264,
+            0.8138535395046135
+          ],
+          "hidden_outside_cell_percentile": 112,
+          "n_hidden": 1013
+        },
+        {
+          "seed": 20260941,
+          "complete_case": 0.19056225165919716,
+          "ipw_known_baseline_propensity": 0.19056225165919702,
+          "cell_interval": [
+            -0.4132948384911714,
+            0.8049016756521574
+          ],
+          "global_interval": [
+            -0.5273802659695277,
+            0.8162934854413514
+          ],
+          "hidden_outside_cell_percentile": 107,
+          "n_hidden": 962
+        },
+        {
+          "seed": 20260942,
+          "complete_case": 0.2027146671016532,
+          "ipw_known_baseline_propensity": 0.20271466710165312,
+          "cell_interval": [
+            -0.35549433010152787,
+            0.836945519314376
+          ],
+          "global_interval": [
+            -0.47973316916965086,
+            0.8147451403331231
+          ],
+          "hidden_outside_cell_percentile": 89,
+          "n_hidden": 945
+        },
+        {
+          "seed": 20260943,
+          "complete_case": 0.2813446637884294,
+          "ipw_known_baseline_propensity": 0.2813446637884294,
+          "cell_interval": [
+            -0.31294922521597,
+            0.8619494718848277
+          ],
+          "global_interval": [
+            -0.460785763152974,
+            0.8586754611519721
+          ],
+          "hidden_outside_cell_percentile": 99,
+          "n_hidden": 987
+        },
+        {
+          "seed": 20260944,
+          "complete_case": 0.2105145307411019,
+          "ipw_known_baseline_propensity": 0.21051453074110185,
+          "cell_interval": [
+            -0.3521547387221482,
+            0.8356751572706068
+          ],
+          "global_interval": [
+            -0.4882822851875961,
+            0.8399899390696076
+          ],
+          "hidden_outside_cell_percentile": 112,
+          "n_hidden": 1042
+        },
+        {
+          "seed": 20260945,
+          "complete_case": 0.22841525460308384,
+          "ipw_known_baseline_propensity": 0.22841525460308376,
+          "cell_interval": [
+            -0.40414238581186734,
+            0.8129858479448998
+          ],
+          "global_interval": [
+            -0.5251704783706977,
+            0.8010652552398199
+          ],
+          "hidden_outside_cell_percentile": 86,
+          "n_hidden": 966
+        },
+        {
+          "seed": 20260946,
+          "complete_case": 0.20449226587389094,
+          "ipw_known_baseline_propensity": 0.20449226587389105,
+          "cell_interval": [
+            -0.33143640693416504,
+            0.8152260640516954
+          ],
+          "global_interval": [
+            -0.44002253849820544,
+            0.8120498902659934
+          ],
+          "hidden_outside_cell_percentile": 91,
+          "n_hidden": 961
+        },
+        {
+          "seed": 20260947,
+          "complete_case": 0.27358948279742545,
+          "ipw_known_baseline_propensity": 0.2735894827974254,
+          "cell_interval": [
+            -0.28595693983314974,
+            0.8994942320168654
+          ],
+          "global_interval": [
+            -0.413763014755061,
+            0.8773630806418321
+          ],
+          "hidden_outside_cell_percentile": 101,
+          "n_hidden": 951
+        },
+        {
+          "seed": 20260948,
+          "complete_case": 0.22336601624103955,
+          "ipw_known_baseline_propensity": 0.22336601624103947,
+          "cell_interval": [
+            -0.37081519033737287,
+            0.8129599705322194
+          ],
+          "global_interval": [
+            -0.5153586387093126,
+            0.7949598620017242
+          ],
+          "hidden_outside_cell_percentile": 114,
+          "n_hidden": 1032
+        },
+        {
+          "seed": 20260949,
+          "complete_case": 0.19084323063709416,
+          "ipw_known_baseline_propensity": 0.1908432306370941,
+          "cell_interval": [
+            -0.3353990073789335,
+            0.8055682840647328
+          ],
+          "global_interval": [
+            -0.4693285300882419,
+            0.8009796978460858
+          ],
+          "hidden_outside_cell_percentile": 98,
+          "n_hidden": 953
+        },
+        {
+          "seed": 20260950,
+          "complete_case": 0.23360612077037435,
+          "ipw_known_baseline_propensity": 0.23360612077037426,
+          "cell_interval": [
+            -0.3258823236472636,
+            0.8390745623765188
+          ],
+          "global_interval": [
+            -0.4555753824370079,
+            0.817464611212429
+          ],
+          "hidden_outside_cell_percentile": 113,
+          "n_hidden": 982
+        },
+        {
+          "seed": 20260951,
+          "complete_case": 0.23441284391385686,
+          "ipw_known_baseline_propensity": 0.23441284391385683,
+          "cell_interval": [
+            -0.40993266120440025,
+            0.8967145819864649
+          ],
+          "global_interval": [
+            -0.5603621941089031,
+            0.8772349942597231
+          ],
+          "hidden_outside_cell_percentile": 101,
+          "n_hidden": 1038
+        },
+        {
+          "seed": 20260952,
+          "complete_case": 0.19471663565926148,
+          "ipw_known_baseline_propensity": 0.19471663565926142,
+          "cell_interval": [
+            -0.42438554378479504,
+            0.831518619720474
+          ],
+          "global_interval": [
+            -0.5604441082911671,
+            0.8424197182648467
+          ],
+          "hidden_outside_cell_percentile": 89,
+          "n_hidden": 995
+        },
+        {
+          "seed": 20260953,
+          "complete_case": 0.1826923796269304,
+          "ipw_known_baseline_propensity": 0.1826923796269304,
+          "cell_interval": [
+            -0.4263210785978951,
+            0.8557053806995506
+          ],
+          "global_interval": [
+            -0.5533203960552753,
+            0.8377246685296251
+          ],
+          "hidden_outside_cell_percentile": 103,
+          "n_hidden": 1043
+        },
+        {
+          "seed": 20260954,
+          "complete_case": 0.20615889119537312,
+          "ipw_known_baseline_propensity": 0.20615889119537312,
+          "cell_interval": [
+            -0.31689997709115053,
+            0.8413269499671937
+          ],
+          "global_interval": [
+            -0.4423872393954043,
+            0.8357694158430485
+          ],
+          "hidden_outside_cell_percentile": 82,
+          "n_hidden": 951
+        },
+        {
+          "seed": 20260955,
+          "complete_case": 0.23681638396457916,
+          "ipw_known_baseline_propensity": 0.23681638396457913,
+          "cell_interval": [
+            -0.35451447993269586,
+            0.9252527287008577
+          ],
+          "global_interval": [
+            -0.4908046075210047,
+            0.9222390745427159
+          ],
+          "hidden_outside_cell_percentile": 110,
+          "n_hidden": 1030
+        },
+        {
+          "seed": 20260956,
+          "complete_case": 0.1933428379631652,
+          "ipw_known_baseline_propensity": 0.1933428379631652,
+          "cell_interval": [
+            -0.3585777670168732,
+            0.8733221520882894
+          ],
+          "global_interval": [
+            -0.5075375258874366,
+            0.8811768918922555
+          ],
+          "hidden_outside_cell_percentile": 92,
+          "n_hidden": 953
+        },
+        {
+          "seed": 20260957,
+          "complete_case": 0.2502345115952116,
+          "ipw_known_baseline_propensity": 0.2502345115952116,
+          "cell_interval": [
+            -0.33208639634812404,
+            0.8783399822152029
+          ],
+          "global_interval": [
+            -0.47890907197246885,
+            0.8931714483174874
+          ],
+          "hidden_outside_cell_percentile": 101,
+          "n_hidden": 961
+        },
+        {
+          "seed": 20260958,
+          "complete_case": 0.2161183677621501,
+          "ipw_known_baseline_propensity": 0.21611836776214996,
+          "cell_interval": [
+            -0.30917730903084367,
+            0.8513863798305236
+          ],
+          "global_interval": [
+            -0.43488408909201076,
+            0.8501619672854818
+          ],
+          "hidden_outside_cell_percentile": 96,
+          "n_hidden": 926
+        },
+        {
+          "seed": 20260959,
+          "complete_case": 0.23432071478590688,
+          "ipw_known_baseline_propensity": 0.23432071478590696,
+          "cell_interval": [
+            -0.30013555221596877,
+            0.8415306420748623
+          ],
+          "global_interval": [
+            -0.4391857157354213,
+            0.820250125021441
+          ],
+          "hidden_outside_cell_percentile": 115,
+          "n_hidden": 1015
+        },
+        {
+          "seed": 20260960,
+          "complete_case": 0.2512096777355709,
+          "ipw_known_baseline_propensity": 0.2512096777355708,
+          "cell_interval": [
+            -0.3481931220002064,
+            0.8116784458493266
+          ],
+          "global_interval": [
+            -0.47112336492874984,
+            0.8250658925111248
+          ],
+          "hidden_outside_cell_percentile": 97,
+          "n_hidden": 967
+        },
+        {
+          "seed": 20260961,
+          "complete_case": 0.19948796889052878,
+          "ipw_known_baseline_propensity": 0.1994879688905288,
+          "cell_interval": [
+            -0.41974861994519713,
+            0.8684940997331388
+          ],
+          "global_interval": [
+            -0.5351799786005719,
+            0.8825809091360964
+          ],
+          "hidden_outside_cell_percentile": 104,
+          "n_hidden": 974
+        },
+        {
+          "seed": 20260962,
+          "complete_case": 0.19298992548854765,
+          "ipw_known_baseline_propensity": 0.19298992548854765,
+          "cell_interval": [
+            -0.39160002602812566,
+            0.8639853616439858
+          ],
+          "global_interval": [
+            -0.5182788246387845,
+            0.8460525587060355
+          ],
+          "hidden_outside_cell_percentile": 98,
+          "n_hidden": 995
+        },
+        {
+          "seed": 20260963,
+          "complete_case": 0.19771553881393075,
+          "ipw_known_baseline_propensity": 0.19771553881393075,
+          "cell_interval": [
+            -0.3739829713939173,
+            0.8293081852896637
+          ],
+          "global_interval": [
+            -0.5021352727758818,
+            0.8209264248477622
+          ],
+          "hidden_outside_cell_percentile": 101,
+          "n_hidden": 975
+        },
+        {
+          "seed": 20260964,
+          "complete_case": 0.2178236856092021,
+          "ipw_known_baseline_propensity": 0.21782368560920198,
+          "cell_interval": [
+            -0.3320708015392456,
+            0.752741693372168
+          ],
+          "global_interval": [
+            -0.44897320730685547,
+            0.7577233159619908
+          ],
+          "hidden_outside_cell_percentile": 106,
+          "n_hidden": 961
+        },
+        {
+          "seed": 20260965,
+          "complete_case": 0.19853442685777634,
+          "ipw_known_baseline_propensity": 0.19853442685777634,
+          "cell_interval": [
+            -0.392906498000202,
+            0.8031800346281183
+          ],
+          "global_interval": [
+            -0.5276398824453438,
+            0.8103245370400124
+          ],
+          "hidden_outside_cell_percentile": 112,
+          "n_hidden": 1011
+        },
+        {
+          "seed": 20260966,
+          "complete_case": 0.19737288606641348,
+          "ipw_known_baseline_propensity": 0.19737288606641346,
+          "cell_interval": [
+            -0.3790897099611472,
+            0.8260208587691094
+          ],
+          "global_interval": [
+            -0.5237388258481928,
+            0.8133544347944897
+          ],
+          "hidden_outside_cell_percentile": 126,
+          "n_hidden": 1049
+        },
+        {
+          "seed": 20260967,
+          "complete_case": 0.2059222438178646,
+          "ipw_known_baseline_propensity": 0.20592224381786448,
+          "cell_interval": [
+            -0.38075300167215714,
+            0.7433412848793273
+          ],
+          "global_interval": [
+            -0.5103975026138583,
+            0.7339385319488407
+          ],
+          "hidden_outside_cell_percentile": 102,
+          "n_hidden": 976
+        },
+        {
+          "seed": 20260968,
+          "complete_case": 0.22943369077664091,
+          "ipw_known_baseline_propensity": 0.22943369077664091,
+          "cell_interval": [
+            -0.3976036006957336,
+            0.8838322395648114
+          ],
+          "global_interval": [
+            -0.5120104286594238,
+            0.9149860612054082
+          ],
+          "hidden_outside_cell_percentile": 96,
+          "n_hidden": 1021
+        },
+        {
+          "seed": 20260969,
+          "complete_case": 0.19452020950994608,
+          "ipw_known_baseline_propensity": 0.1945202095099461,
+          "cell_interval": [
+            -0.38224148622548654,
+            0.8342998494226969
+          ],
+          "global_interval": [
+            -0.5373844185228709,
+            0.8210724467743041
+          ],
+          "hidden_outside_cell_percentile": 98,
+          "n_hidden": 1011
+        },
+        {
+          "seed": 20260970,
+          "complete_case": 0.1989073913265987,
+          "ipw_known_baseline_propensity": 0.19890739132659863,
+          "cell_interval": [
+            -0.3247105301693667,
+            0.7381304146298341
+          ],
+          "global_interval": [
+            -0.43833865692351415,
+            0.7397271811394917
+          ],
+          "hidden_outside_cell_percentile": 86,
+          "n_hidden": 937
+        },
+        {
+          "seed": 20260971,
+          "complete_case": 0.2087885101143394,
+          "ipw_known_baseline_propensity": 0.2087885101143394,
+          "cell_interval": [
+            -0.44733475243189597,
+            0.8754672797977939
+          ],
+          "global_interval": [
+            -0.5698829350147695,
+            0.905694089215141
+          ],
+          "hidden_outside_cell_percentile": 110,
+          "n_hidden": 1018
+        },
+        {
+          "seed": 20260972,
+          "complete_case": 0.22409349052819028,
+          "ipw_known_baseline_propensity": 0.22409349052819016,
+          "cell_interval": [
+            -0.34577105542559883,
+            0.8709598084368678
+          ],
+          "global_interval": [
+            -0.48426543774962744,
+            0.8379694107217036
+          ],
+          "hidden_outside_cell_percentile": 89,
+          "n_hidden": 995
+        },
+        {
+          "seed": 20260973,
+          "complete_case": 0.23281346187553834,
+          "ipw_known_baseline_propensity": 0.23281346187553842,
+          "cell_interval": [
+            -0.36860712857281636,
+            0.8103732035141312
+          ],
+          "global_interval": [
+            -0.5142014828225019,
+            0.8064602462081992
+          ],
+          "hidden_outside_cell_percentile": 121,
+          "n_hidden": 1026
+        },
+        {
+          "seed": 20260974,
+          "complete_case": 0.2296969133521105,
+          "ipw_known_baseline_propensity": 0.22969691335211048,
+          "cell_interval": [
+            -0.33049817284646676,
+            0.7995897213371173
+          ],
+          "global_interval": [
+            -0.45762627412930224,
+            0.8054582168113361
+          ],
+          "hidden_outside_cell_percentile": 110,
+          "n_hidden": 969
+        },
+        {
+          "seed": 20260975,
+          "complete_case": 0.20940792422555118,
+          "ipw_known_baseline_propensity": 0.2094079242255512,
+          "cell_interval": [
+            -0.4179626933803074,
+            0.8195899170623656
+          ],
+          "global_interval": [
+            -0.5452981781674452,
+            0.8370219320764929
+          ],
+          "hidden_outside_cell_percentile": 112,
+          "n_hidden": 1053
+        },
+        {
+          "seed": 20260976,
+          "complete_case": 0.19527184072337053,
+          "ipw_known_baseline_propensity": 0.19527184072337053,
+          "cell_interval": [
+            -0.41180026610169973,
+            0.7949927341510489
+          ],
+          "global_interval": [
+            -0.545246002671523,
+            0.7760974347288898
+          ],
+          "hidden_outside_cell_percentile": 103,
+          "n_hidden": 1017
+        },
+        {
+          "seed": 20260977,
+          "complete_case": 0.23482773222350575,
+          "ipw_known_baseline_propensity": 0.2348277322235058,
+          "cell_interval": [
+            -0.40111005194964955,
+            0.8704867549790495
+          ],
+          "global_interval": [
+            -0.5203393175537333,
+            0.8844069861725261
+          ],
+          "hidden_outside_cell_percentile": 86,
+          "n_hidden": 1012
+        },
+        {
+          "seed": 20260978,
+          "complete_case": 0.20801489108294532,
+          "ipw_known_baseline_propensity": 0.20801489108294516,
+          "cell_interval": [
+            -0.3101241826338429,
+            0.7684443694893816
+          ],
+          "global_interval": [
+            -0.4514592583187858,
+            0.7473931355796831
+          ],
+          "hidden_outside_cell_percentile": 118,
+          "n_hidden": 976
+        },
+        {
+          "seed": 20260979,
+          "complete_case": 0.2703368685085901,
+          "ipw_known_baseline_propensity": 0.2703368685085902,
+          "cell_interval": [
+            -0.2669816255646475,
+            0.8260839248317127
+          ],
+          "global_interval": [
+            -0.4192202670417322,
+            0.8079774002409783
+          ],
+          "hidden_outside_cell_percentile": 105,
+          "n_hidden": 973
+        },
+        {
+          "seed": 20260980,
+          "complete_case": 0.20478755822938569,
+          "ipw_known_baseline_propensity": 0.2047875582293858,
+          "cell_interval": [
+            -0.29163037836351446,
+            0.714982943727807
+          ],
+          "global_interval": [
+            -0.4288400119854987,
+            0.6897017664008809
+          ],
+          "hidden_outside_cell_percentile": 98,
+          "n_hidden": 977
+        },
+        {
+          "seed": 20260981,
+          "complete_case": 0.18525891528319924,
+          "ipw_known_baseline_propensity": 0.18525891528319927,
+          "cell_interval": [
+            -0.4383261552861337,
+            0.8079623968664711
+          ],
+          "global_interval": [
+            -0.5631929813860655,
+            0.8186456572688489
+          ],
+          "hidden_outside_cell_percentile": 103,
+          "n_hidden": 1005
+        },
+        {
+          "seed": 20260982,
+          "complete_case": 0.17741418632738673,
+          "ipw_known_baseline_propensity": 0.1774141863273868,
+          "cell_interval": [
+            -0.4019014344422662,
+            0.8218984814300437
+          ],
+          "global_interval": [
+            -0.537875483140058,
+            0.8328800450618142
+          ],
+          "hidden_outside_cell_percentile": 103,
+          "n_hidden": 997
+        },
+        {
+          "seed": 20260983,
+          "complete_case": 0.20924734392170505,
+          "ipw_known_baseline_propensity": 0.2092473439217051,
+          "cell_interval": [
+            -0.3756061272744829,
+            0.7784897937278848
+          ],
+          "global_interval": [
+            -0.4919281818758688,
+            0.7906592640036826
+          ],
+          "hidden_outside_cell_percentile": 107,
+          "n_hidden": 991
+        },
+        {
+          "seed": 20260984,
+          "complete_case": 0.16801257167451789,
+          "ipw_known_baseline_propensity": 0.1680125716745179,
+          "cell_interval": [
+            -0.43918093514861817,
+            0.8686863539387136
+          ],
+          "global_interval": [
+            -0.5664299412022104,
+            0.8733242822858568
+          ],
+          "hidden_outside_cell_percentile": 121,
+          "n_hidden": 1034
+        },
+        {
+          "seed": 20260985,
+          "complete_case": 0.22656546109022854,
+          "ipw_known_baseline_propensity": 0.22656546109022857,
+          "cell_interval": [
+            -0.4248195626462738,
+            0.9308343397028196
+          ],
+          "global_interval": [
+            -0.5592084927991995,
+            0.9456756325899995
+          ],
+          "hidden_outside_cell_percentile": 123,
+          "n_hidden": 1064
+        },
+        {
+          "seed": 20260986,
+          "complete_case": 0.1792069475740843,
+          "ipw_known_baseline_propensity": 0.1792069475740843,
+          "cell_interval": [
+            -0.3962889397675962,
+            0.8667365059441758
+          ],
+          "global_interval": [
+            -0.5399468628711462,
+            0.8761810390582506
+          ],
+          "hidden_outside_cell_percentile": 114,
+          "n_hidden": 1031
+        },
+        {
+          "seed": 20260987,
+          "complete_case": 0.17512224718106897,
+          "ipw_known_baseline_propensity": 0.17512224718106897,
+          "cell_interval": [
+            -0.49429289099099155,
+            0.9115454600461957
+          ],
+          "global_interval": [
+            -0.6051212359918022,
+            0.9175260906976385
+          ],
+          "hidden_outside_cell_percentile": 89,
+          "n_hidden": 1020
+        },
+        {
+          "seed": 20260988,
+          "complete_case": 0.2960639280955325,
+          "ipw_known_baseline_propensity": 0.2960639280955325,
+          "cell_interval": [
+            -0.3076584146161199,
+            0.9225199525234222
+          ],
+          "global_interval": [
+            -0.45662855446504236,
+            0.9237289737024024
+          ],
+          "hidden_outside_cell_percentile": 110,
+          "n_hidden": 995
+        },
+        {
+          "seed": 20260989,
+          "complete_case": 0.2148688755269378,
+          "ipw_known_baseline_propensity": 0.2148688755269378,
+          "cell_interval": [
+            -0.3538671600393067,
+            0.8264855435438606
+          ],
+          "global_interval": [
+            -0.49117893000644913,
+            0.8098505936115844
+          ],
+          "hidden_outside_cell_percentile": 104,
+          "n_hidden": 993
+        },
+        {
+          "seed": 20260990,
+          "complete_case": 0.23739878725753708,
+          "ipw_known_baseline_propensity": 0.23739878725753708,
+          "cell_interval": [
+            -0.2997324981436979,
+            0.7955072785765727
+          ],
+          "global_interval": [
+            -0.4234630184826314,
+            0.7913596838328898
+          ],
+          "hidden_outside_cell_percentile": 98,
+          "n_hidden": 959
+        },
+        {
+          "seed": 20260991,
+          "complete_case": 0.1470277158089827,
+          "ipw_known_baseline_propensity": 0.14702771580898263,
+          "cell_interval": [
+            -0.39268538474079445,
+            0.7329800829359471
+          ],
+          "global_interval": [
+            -0.5121357949554733,
+            0.7312875576566359
+          ],
+          "hidden_outside_cell_percentile": 82,
+          "n_hidden": 972
+        },
+        {
+          "seed": 20260992,
+          "complete_case": 0.25620084235485097,
+          "ipw_known_baseline_propensity": 0.2562008423548509,
+          "cell_interval": [
+            -0.3188286236430166,
+            0.8686133779731947
+          ],
+          "global_interval": [
+            -0.4521630804625906,
+            0.8764108581364786
+          ],
+          "hidden_outside_cell_percentile": 106,
+          "n_hidden": 978
+        },
+        {
+          "seed": 20260993,
+          "complete_case": 0.2206039210630176,
+          "ipw_known_baseline_propensity": 0.22060392106301766,
+          "cell_interval": [
+            -0.2764864972886096,
+            0.7644616156910774
+          ],
+          "global_interval": [
+            -0.38292313503112335,
+            0.7645140858381579
+          ],
+          "hidden_outside_cell_percentile": 111,
+          "n_hidden": 947
+        },
+        {
+          "seed": 20260994,
+          "complete_case": 0.21804834640142604,
+          "ipw_known_baseline_propensity": 0.218048346401426,
+          "cell_interval": [
+            -0.3652506609666206,
+            0.8188251017125205
+          ],
+          "global_interval": [
+            -0.48237712455168164,
+            0.8158937884812362
+          ],
+          "hidden_outside_cell_percentile": 91,
+          "n_hidden": 1000
+        },
+        {
+          "seed": 20260995,
+          "complete_case": 0.15316143547820918,
+          "ipw_known_baseline_propensity": 0.15316143547820918,
+          "cell_interval": [
+            -0.4372957158424972,
+            0.7770718443394711
+          ],
+          "global_interval": [
+            -0.5500073711974328,
+            0.7829032216290699
+          ],
+          "hidden_outside_cell_percentile": 106,
+          "n_hidden": 968
+        },
+        {
+          "seed": 20260996,
+          "complete_case": 0.26020228831014003,
+          "ipw_known_baseline_propensity": 0.26020228831014,
+          "cell_interval": [
+            -0.33339601196024643,
+            0.9011788847031013
+          ],
+          "global_interval": [
+            -0.47486032041924836,
+            0.8917782356683217
+          ],
+          "hidden_outside_cell_percentile": 90,
+          "n_hidden": 1022
+        },
+        {
+          "seed": 20260997,
+          "complete_case": 0.18728685989975294,
+          "ipw_known_baseline_propensity": 0.187286859899753,
+          "cell_interval": [
+            -0.3531725818446429,
+            0.7639621262883863
+          ],
+          "global_interval": [
+            -0.4731784589853841,
+            0.7863532683060646
+          ],
+          "hidden_outside_cell_percentile": 108,
+          "n_hidden": 971
+        },
+        {
+          "seed": 20260998,
+          "complete_case": 0.18080307714235658,
+          "ipw_known_baseline_propensity": 0.18080307714235655,
+          "cell_interval": [
+            -0.43468341029070223,
+            0.7730106851364567
+          ],
+          "global_interval": [
+            -0.5416372330591878,
+            0.7884323720077174
+          ],
+          "hidden_outside_cell_percentile": 96,
+          "n_hidden": 971
+        },
+        {
+          "seed": 20260999,
+          "complete_case": 0.201915490894632,
+          "ipw_known_baseline_propensity": 0.20191549089463198,
+          "cell_interval": [
+            -0.40979704959920277,
+            0.8294676598591061
+          ],
+          "global_interval": [
+            -0.5410196400327799,
+            0.8156803406975691
+          ],
+          "hidden_outside_cell_percentile": 88,
+          "n_hidden": 1006
+        },
+        {
+          "seed": 20261000,
+          "complete_case": 0.2044421776918228,
+          "ipw_known_baseline_propensity": 0.20444217769182282,
+          "cell_interval": [
+            -0.3857114457307866,
+            0.8195567286020607
+          ],
+          "global_interval": [
+            -0.5146142277832261,
+            0.8058573698482503
+          ],
+          "hidden_outside_cell_percentile": 107,
+          "n_hidden": 961
+        },
+        {
+          "seed": 20261001,
+          "complete_case": 0.24868128771786602,
+          "ipw_known_baseline_propensity": 0.24868128771786616,
+          "cell_interval": [
+            -0.3477780084619855,
+            0.773531165948386
+          ],
+          "global_interval": [
+            -0.474246541494122,
+            0.7536481676854057
+          ],
+          "hidden_outside_cell_percentile": 103,
+          "n_hidden": 951
+        },
+        {
+          "seed": 20261002,
+          "complete_case": 0.15711717332738517,
+          "ipw_known_baseline_propensity": 0.1571171733273852,
+          "cell_interval": [
+            -0.3415164630144001,
+            0.7573642360419738
+          ],
+          "global_interval": [
+            -0.4546498771139109,
+            0.7317419689422763
+          ],
+          "hidden_outside_cell_percentile": 86,
+          "n_hidden": 971
+        },
+        {
+          "seed": 20261003,
+          "complete_case": 0.19686042723545705,
+          "ipw_known_baseline_propensity": 0.19686042723545702,
+          "cell_interval": [
+            -0.44241278803042977,
+            0.8788723651868708
+          ],
+          "global_interval": [
+            -0.5535645161142638,
+            0.8836225697682671
+          ],
+          "hidden_outside_cell_percentile": 102,
+          "n_hidden": 1048
+        },
+        {
+          "seed": 20261004,
+          "complete_case": 0.16408152438983054,
+          "ipw_known_baseline_propensity": 0.16408152438983056,
+          "cell_interval": [
+            -0.45461717711770694,
+            0.7664179083802226
+          ],
+          "global_interval": [
+            -0.5738784643422621,
+            0.7864493523259474
+          ],
+          "hidden_outside_cell_percentile": 88,
+          "n_hidden": 1009
+        },
+        {
+          "seed": 20261005,
+          "complete_case": 0.2108785051104016,
+          "ipw_known_baseline_propensity": 0.21087850511040163,
+          "cell_interval": [
+            -0.3251996314467209,
+            0.7651174007837591
+          ],
+          "global_interval": [
+            -0.4559856890607008,
+            0.764289580104585
+          ],
+          "hidden_outside_cell_percentile": 123,
+          "n_hidden": 988
+        },
+        {
+          "seed": 20261006,
+          "complete_case": 0.2118258776727002,
+          "ipw_known_baseline_propensity": 0.21182587767270022,
+          "cell_interval": [
+            -0.3943701419265109,
+            0.8851251960127636
+          ],
+          "global_interval": [
+            -0.5325196317556875,
+            0.8553337408691052
+          ],
+          "hidden_outside_cell_percentile": 121,
+          "n_hidden": 999
+        },
+        {
+          "seed": 20261007,
+          "complete_case": 0.25348782012335597,
+          "ipw_known_baseline_propensity": 0.2534878201233561,
+          "cell_interval": [
+            -0.34266497655846945,
+            0.8860962419810648
+          ],
+          "global_interval": [
+            -0.4638971833619772,
+            0.8870132850302612
+          ],
+          "hidden_outside_cell_percentile": 97,
+          "n_hidden": 959
+        },
+        {
+          "seed": 20261008,
+          "complete_case": 0.19066926803555573,
+          "ipw_known_baseline_propensity": 0.19066926803555573,
+          "cell_interval": [
+            -0.406068288717248,
+            0.8614020996379786
+          ],
+          "global_interval": [
+            -0.5414500937474125,
+            0.8752159080778227
+          ],
+          "hidden_outside_cell_percentile": 99,
+          "n_hidden": 1025
+        },
+        {
+          "seed": 20261009,
+          "complete_case": 0.26932009865099066,
+          "ipw_known_baseline_propensity": 0.26932009865099055,
+          "cell_interval": [
+            -0.3148949726099904,
+            0.919259736206615
+          ],
+          "global_interval": [
+            -0.47101406290170283,
+            0.9211905654524443
+          ],
+          "hidden_outside_cell_percentile": 115,
+          "n_hidden": 1016
+        },
+        {
+          "seed": 20261010,
+          "complete_case": 0.22866368394685208,
+          "ipw_known_baseline_propensity": 0.22866368394685224,
+          "cell_interval": [
+            -0.35032706623789706,
+            0.8470906307115418
+          ],
+          "global_interval": [
+            -0.48678289083096987,
+            0.847810826735221
+          ],
+          "hidden_outside_cell_percentile": 94,
+          "n_hidden": 1007
+        },
+        {
+          "seed": 20261011,
+          "complete_case": 0.20088287898712207,
+          "ipw_known_baseline_propensity": 0.20088287898712207,
+          "cell_interval": [
+            -0.33339202975924914,
+            0.7875362381014105
+          ],
+          "global_interval": [
+            -0.4596073870523763,
+            0.7587745273539995
+          ],
+          "hidden_outside_cell_percentile": 88,
+          "n_hidden": 971
+        },
+        {
+          "seed": 20261012,
+          "complete_case": 0.20414469939093616,
+          "ipw_known_baseline_propensity": 0.20414469939093619,
+          "cell_interval": [
+            -0.42113617706450884,
+            0.8541809787100095
+          ],
+          "global_interval": [
+            -0.5270977920602501,
+            0.8348179190676887
+          ],
+          "hidden_outside_cell_percentile": 101,
+          "n_hidden": 1011
+        },
+        {
+          "seed": 20261013,
+          "complete_case": 0.2173793899215287,
+          "ipw_known_baseline_propensity": 0.21737938992152864,
+          "cell_interval": [
+            -0.33420261250095673,
+            0.787584673220152
+          ],
+          "global_interval": [
+            -0.4543049892116233,
+            0.7797899363520074
+          ],
+          "hidden_outside_cell_percentile": 108,
+          "n_hidden": 1001
+        },
+        {
+          "seed": 20261014,
+          "complete_case": 0.2571043753758797,
+          "ipw_known_baseline_propensity": 0.25710437537587966,
+          "cell_interval": [
+            -0.31952934408462064,
+            0.9048315618978598
+          ],
+          "global_interval": [
+            -0.4666971220859908,
+            0.8895036418817965
+          ],
+          "hidden_outside_cell_percentile": 103,
+          "n_hidden": 1000
+        },
+        {
+          "seed": 20261015,
+          "complete_case": 0.21338279854725686,
+          "ipw_known_baseline_propensity": 0.21338279854725695,
+          "cell_interval": [
+            -0.3151004411870828,
+            0.8649380236835814
+          ],
+          "global_interval": [
+            -0.45554407447662176,
+            0.8509407958307266
+          ],
+          "hidden_outside_cell_percentile": 118,
+          "n_hidden": 1006
+        },
+        {
+          "seed": 20261016,
+          "complete_case": 0.26316632987032146,
+          "ipw_known_baseline_propensity": 0.2631663298703214,
+          "cell_interval": [
+            -0.2813584602148669,
+            0.8338400111852066
+          ],
+          "global_interval": [
+            -0.3838504402520629,
+            0.8342076745432655
+          ],
+          "hidden_outside_cell_percentile": 88,
+          "n_hidden": 915
+        },
+        {
+          "seed": 20261017,
+          "complete_case": 0.18988995279527032,
+          "ipw_known_baseline_propensity": 0.18988995279527018,
+          "cell_interval": [
+            -0.3714265409205045,
+            0.7706041339139441
+          ],
+          "global_interval": [
+            -0.503861644534239,
+            0.7758633237069948
+          ],
+          "hidden_outside_cell_percentile": 90,
+          "n_hidden": 965
+        },
+        {
+          "seed": 20261018,
+          "complete_case": 0.20735892451201557,
+          "ipw_known_baseline_propensity": 0.20735892451201557,
+          "cell_interval": [
+            -0.4501230019388382,
+            0.8684327800188854
+          ],
+          "global_interval": [
+            -0.5720180880157913,
+            0.8800521541539634
+          ],
+          "hidden_outside_cell_percentile": 92,
+          "n_hidden": 1005
+        },
+        {
+          "seed": 20261019,
+          "complete_case": 0.1956806393216036,
+          "ipw_known_baseline_propensity": 0.19568063932160362,
+          "cell_interval": [
+            -0.3841917553025687,
+            0.840157819623511
+          ],
+          "global_interval": [
+            -0.5234960518054197,
+            0.8417096104525568
+          ],
+          "hidden_outside_cell_percentile": 108,
+          "n_hidden": 1018
+        },
+        {
+          "seed": 20261020,
+          "complete_case": 0.17663445068664194,
+          "ipw_known_baseline_propensity": 0.17663445068664188,
+          "cell_interval": [
+            -0.46481419693692727,
+            0.8367927386830925
+          ],
+          "global_interval": [
+            -0.5897515253102291,
+            0.8479411970379845
+          ],
+          "hidden_outside_cell_percentile": 85,
+          "n_hidden": 1009
+        },
+        {
+          "seed": 20261021,
+          "complete_case": 0.22579298281822469,
+          "ipw_known_baseline_propensity": 0.22579298281822466,
+          "cell_interval": [
+            -0.38967756158542105,
+            0.8183151032705921
+          ],
+          "global_interval": [
+            -0.5056728375771907,
+            0.825324358493587
+          ],
+          "hidden_outside_cell_percentile": 104,
+          "n_hidden": 1008
+        },
+        {
+          "seed": 20261022,
+          "complete_case": 0.22472242798652528,
+          "ipw_known_baseline_propensity": 0.22472242798652528,
+          "cell_interval": [
+            -0.3910676722544628,
+            0.8443795134579704
+          ],
+          "global_interval": [
+            -0.5464617795972188,
+            0.8348780137868856
+          ],
+          "hidden_outside_cell_percentile": 110,
+          "n_hidden": 1001
+        },
+        {
+          "seed": 20261023,
+          "complete_case": 0.15874382814145105,
+          "ipw_known_baseline_propensity": 0.15874382814145113,
+          "cell_interval": [
+            -0.446970290560796,
+            0.9141206564917165
+          ],
+          "global_interval": [
+            -0.5644367104652812,
+            0.9032037532734708
+          ],
+          "hidden_outside_cell_percentile": 94,
+          "n_hidden": 1025
+        },
+        {
+          "seed": 20261024,
+          "complete_case": 0.18054599247630987,
+          "ipw_known_baseline_propensity": 0.18054599247630987,
+          "cell_interval": [
+            -0.3676175472901689,
+            0.733533928251764
+          ],
+          "global_interval": [
+            -0.5069805156116498,
+            0.7266330178458192
+          ],
+          "hidden_outside_cell_percentile": 89,
+          "n_hidden": 972
+        },
+        {
+          "seed": 20261025,
+          "complete_case": 0.2717796301282022,
+          "ipw_known_baseline_propensity": 0.27177963012820217,
+          "cell_interval": [
+            -0.35984517651564024,
+            0.8980318272629698
+          ],
+          "global_interval": [
+            -0.5136430724764153,
+            0.8927459691784101
+          ],
+          "hidden_outside_cell_percentile": 109,
+          "n_hidden": 1029
+        },
+        {
+          "seed": 20261026,
+          "complete_case": 0.1856460952236987,
+          "ipw_known_baseline_propensity": 0.18564609522369888,
+          "cell_interval": [
+            -0.41457479218815907,
+            0.8467611770514832
+          ],
+          "global_interval": [
+            -0.5396251080057262,
+            0.8522052944238826
+          ],
+          "hidden_outside_cell_percentile": 109,
+          "n_hidden": 1000
+        },
+        {
+          "seed": 20261027,
+          "complete_case": 0.1909896570431117,
+          "ipw_known_baseline_propensity": 0.1909896570431117,
+          "cell_interval": [
+            -0.4293248804440785,
+            0.8043275018021125
+          ],
+          "global_interval": [
+            -0.5540519921278225,
+            0.7990459626057289
+          ],
+          "hidden_outside_cell_percentile": 94,
+          "n_hidden": 1038
+        }
+      ],
+      "median_cell_to_global_width_ratio": 0.9077888459058584
+    },
+    "MAR": {
+      "eligible_masks": 100,
+      "ineligible_masks": 0,
+      "missing_fraction_by_cell": {
+        "VX445_VX661_VX770:large": 0.2562793017456359,
+        "DMSO:large": 0.1984109589041096,
+        "VX445_VX661_VX770:small": 0.2757443082311734,
+        "DMSO:small": 0.2198401420959148
+      },
+      "complete_case_bias": 0.0008523936685937958,
+      "complete_case_mae": 0.02482446361290804,
+      "ipw_bias": 0.001076184189907233,
+      "ipw_mae": 0.025292589994246117,
+      "hidden_outside_cell_percentile_fraction": 0.10967368384665906,
+      "intervals": {
+        "cell_interval": {
+          "containment": 1.0,
+          "median_width": 1.4511592113087959,
+          "mean_width": 1.464662909566756,
+          "zero_contained_fraction": 1.0
+        },
+        "global_interval": {
+          "containment": 1.0,
+          "median_width": 1.61088349605545,
+          "mean_width": 1.6101989588816636,
+          "zero_contained_fraction": 1.0
+        }
+      },
+      "replicates": [
+        {
+          "seed": 20260928,
+          "complete_case": 0.20791019445571135,
+          "ipw_known_baseline_propensity": 0.20802796574637697,
+          "cell_interval": [
+            -0.547322627307961,
+            0.9544063977797023
+          ],
+          "global_interval": [
+            -0.6837389354689818,
+            0.9658131614400985
+          ],
+          "hidden_outside_cell_percentile": 139,
+          "n_hidden": 1187
+        },
+        {
+          "seed": 20260929,
+          "complete_case": 0.2239852110001497,
+          "ipw_known_baseline_propensity": 0.2236852719878313,
+          "cell_interval": [
+            -0.5164138687059375,
+            0.9250423307391165
+          ],
+          "global_interval": [
+            -0.6406728752214185,
+            0.9439493739113319
+          ],
+          "hidden_outside_cell_percentile": 130,
+          "n_hidden": 1162
+        },
+        {
+          "seed": 20260930,
+          "complete_case": 0.1788521998371765,
+          "ipw_known_baseline_propensity": 0.18316012789559447,
+          "cell_interval": [
+            -0.4942757347215662,
+            0.9385783353972448
+          ],
+          "global_interval": [
+            -0.632303310155797,
+            0.9310568887571864
+          ],
+          "hidden_outside_cell_percentile": 119,
+          "n_hidden": 1147
+        },
+        {
+          "seed": 20260931,
+          "complete_case": 0.19111098095143084,
+          "ipw_known_baseline_propensity": 0.1991269152060142,
+          "cell_interval": [
+            -0.5332859524734398,
+            0.9142681003187473
+          ],
+          "global_interval": [
+            -0.657374374550689,
+            0.9140606092895608
+          ],
+          "hidden_outside_cell_percentile": 140,
+          "n_hidden": 1179
+        },
+        {
+          "seed": 20260932,
+          "complete_case": 0.15546129998885655,
+          "ipw_known_baseline_propensity": 0.16205615887487715,
+          "cell_interval": [
+            -0.5156089349688822,
+            0.908188934817002
+          ],
+          "global_interval": [
+            -0.6457930099215771,
+            0.9223111312883804
+          ],
+          "hidden_outside_cell_percentile": 144,
+          "n_hidden": 1144
+        },
+        {
+          "seed": 20260933,
+          "complete_case": 0.2335649815862446,
+          "ipw_known_baseline_propensity": 0.23885416347235075,
+          "cell_interval": [
+            -0.4477649901647924,
+            1.009983187505478
+          ],
+          "global_interval": [
+            -0.5949203446889378,
+            1.021018583633706
+          ],
+          "hidden_outside_cell_percentile": 130,
+          "n_hidden": 1172
+        },
+        {
+          "seed": 20260934,
+          "complete_case": 0.19796926755366148,
+          "ipw_known_baseline_propensity": 0.1938395921485011,
+          "cell_interval": [
+            -0.48827122781861726,
+            0.9059070665810576
+          ],
+          "global_interval": [
+            -0.626440509965628,
+            0.9103032391116184
+          ],
+          "hidden_outside_cell_percentile": 128,
+          "n_hidden": 1153
+        },
+        {
+          "seed": 20260935,
+          "complete_case": 0.18593435416015058,
+          "ipw_known_baseline_propensity": 0.18797238620880072,
+          "cell_interval": [
+            -0.46534172123439127,
+            0.9352038771126109
+          ],
+          "global_interval": [
+            -0.6467286537254108,
+            0.9202571801984559
+          ],
+          "hidden_outside_cell_percentile": 138,
+          "n_hidden": 1154
+        },
+        {
+          "seed": 20260936,
+          "complete_case": 0.22167247254139544,
+          "ipw_known_baseline_propensity": 0.22810441242118376,
+          "cell_interval": [
+            -0.5258217552848116,
+            1.036202652225363
+          ],
+          "global_interval": [
+            -0.6779549687396291,
+            1.055457479825354
+          ],
+          "hidden_outside_cell_percentile": 129,
+          "n_hidden": 1223
+        },
+        {
+          "seed": 20260937,
+          "complete_case": 0.1564653167241946,
+          "ipw_known_baseline_propensity": 0.15354979527408777,
+          "cell_interval": [
+            -0.5385247180746976,
+            0.8741234911270163
+          ],
+          "global_interval": [
+            -0.6765772167450536,
+            0.8849287840537364
+          ],
+          "hidden_outside_cell_percentile": 117,
+          "n_hidden": 1144
+        },
+        {
+          "seed": 20260938,
+          "complete_case": 0.19839127679343208,
+          "ipw_known_baseline_propensity": 0.19493882574920318,
+          "cell_interval": [
+            -0.4959099896556332,
+            0.9184573617371558
+          ],
+          "global_interval": [
+            -0.6241076991329303,
+            0.9148957766184723
+          ],
+          "hidden_outside_cell_percentile": 111,
+          "n_hidden": 1135
+        },
+        {
+          "seed": 20260939,
+          "complete_case": 0.20157076942402796,
+          "ipw_known_baseline_propensity": 0.2070441122748441,
+          "cell_interval": [
+            -0.5377035877184555,
+            0.9511336387041397
+          ],
+          "global_interval": [
+            -0.6783208862578682,
+            0.9415840393747706
+          ],
+          "hidden_outside_cell_percentile": 135,
+          "n_hidden": 1161
+        },
+        {
+          "seed": 20260940,
+          "complete_case": 0.24794756959796602,
+          "ipw_known_baseline_propensity": 0.24895210388662517,
+          "cell_interval": [
+            -0.4679935816501068,
+            0.9694849822020334
+          ],
+          "global_interval": [
+            -0.6160766903421825,
+            0.9754049855652399
+          ],
+          "hidden_outside_cell_percentile": 148,
+          "n_hidden": 1195
+        },
+        {
+          "seed": 20260941,
+          "complete_case": 0.1754333935604064,
+          "ipw_known_baseline_propensity": 0.1824347279740279,
+          "cell_interval": [
+            -0.5597266669190949,
+            0.9782251478970108
+          ],
+          "global_interval": [
+            -0.6829145981459335,
+            0.9977475036730485
+          ],
+          "hidden_outside_cell_percentile": 139,
+          "n_hidden": 1122
+        },
+        {
+          "seed": 20260942,
+          "complete_case": 0.17623877296389143,
+          "ipw_known_baseline_propensity": 0.17526220786442248,
+          "cell_interval": [
+            -0.482246739025259,
+            1.0026991474010494
+          ],
+          "global_interval": [
+            -0.6367723395352954,
+            0.978571297877194
+          ],
+          "hidden_outside_cell_percentile": 109,
+          "n_hidden": 1110
+        },
+        {
+          "seed": 20260943,
+          "complete_case": 0.27531091343361336,
+          "ipw_known_baseline_propensity": 0.27893038033211875,
+          "cell_interval": [
+            -0.464330000479803,
+            0.9506972200542677
+          ],
+          "global_interval": [
+            -0.6278971882754273,
+            0.9551403440704357
+          ],
+          "hidden_outside_cell_percentile": 119,
+          "n_hidden": 1125
+        },
+        {
+          "seed": 20260944,
+          "complete_case": 0.21309052503573853,
+          "ipw_known_baseline_propensity": 0.21391625084340984,
+          "cell_interval": [
+            -0.45322283653101586,
+            0.9858243572702828
+          ],
+          "global_interval": [
+            -0.622616438443214,
+            0.9801458850997177
+          ],
+          "hidden_outside_cell_percentile": 140,
+          "n_hidden": 1196
+        },
+        {
+          "seed": 20260945,
+          "complete_case": 0.21641774513727308,
+          "ipw_known_baseline_propensity": 0.21224709825060914,
+          "cell_interval": [
+            -0.5131930268536437,
+            0.9606731173219808
+          ],
+          "global_interval": [
+            -0.6858924472598206,
+            0.9475791253790325
+          ],
+          "hidden_outside_cell_percentile": 114,
+          "n_hidden": 1138
+        },
+        {
+          "seed": 20260946,
+          "complete_case": 0.18344491133162777,
+          "ipw_known_baseline_propensity": 0.18517578982096497,
+          "cell_interval": [
+            -0.5233351374618701,
+            0.9219519153197115
+          ],
+          "global_interval": [
+            -0.6319478077837496,
+            0.9241418456282383
+          ],
+          "hidden_outside_cell_percentile": 117,
+          "n_hidden": 1137
+        },
+        {
+          "seed": 20260947,
+          "complete_case": 0.285619021599346,
+          "ipw_known_baseline_propensity": 0.28672024276980584,
+          "cell_interval": [
+            -0.3936379445218476,
+            1.0520855647093068
+          ],
+          "global_interval": [
+            -0.548336150024492,
+            1.033428003744449
+          ],
+          "hidden_outside_cell_percentile": 131,
+          "n_hidden": 1130
+        },
+        {
+          "seed": 20260948,
+          "complete_case": 0.22217517689335511,
+          "ipw_known_baseline_propensity": 0.23157051238970564,
+          "cell_interval": [
+            -0.5037217831605367,
+            0.9700290182108388
+          ],
+          "global_interval": [
+            -0.6644209003234495,
+            0.9561913939341994
+          ],
+          "hidden_outside_cell_percentile": 136,
+          "n_hidden": 1176
+        },
+        {
+          "seed": 20260949,
+          "complete_case": 0.19997870405162477,
+          "ipw_known_baseline_propensity": 0.2041247187236063,
+          "cell_interval": [
+            -0.46725666638277974,
+            0.9262746776990024
+          ],
+          "global_interval": [
+            -0.6150931498804043,
+            0.9363424285402937
+          ],
+          "hidden_outside_cell_percentile": 122,
+          "n_hidden": 1115
+        },
+        {
+          "seed": 20260950,
+          "complete_case": 0.248181675655479,
+          "ipw_known_baseline_propensity": 0.2434658294592407,
+          "cell_interval": [
+            -0.4382735349298768,
+            0.9617673102689644
+          ],
+          "global_interval": [
+            -0.5751738205359708,
+            0.9544463091698109
+          ],
+          "hidden_outside_cell_percentile": 145,
+          "n_hidden": 1130
+        },
+        {
+          "seed": 20260951,
+          "complete_case": 0.23788228963087654,
+          "ipw_known_baseline_propensity": 0.23822631590847068,
+          "cell_interval": [
+            -0.5155687298825803,
+            1.0185082952233169
+          ],
+          "global_interval": [
+            -0.6900154565920825,
+            0.9947739126928693
+          ],
+          "hidden_outside_cell_percentile": 126,
+          "n_hidden": 1198
+        },
+        {
+          "seed": 20260952,
+          "complete_case": 0.24330693152839386,
+          "ipw_known_baseline_propensity": 0.24211782956220676,
+          "cell_interval": [
+            -0.46979577569737324,
+            1.003503985887
+          ],
+          "global_interval": [
+            -0.6363776666484556,
+            1.0062171987447963
+          ],
+          "hidden_outside_cell_percentile": 128,
+          "n_hidden": 1171
+        },
+        {
+          "seed": 20260953,
+          "complete_case": 0.19466563845180176,
+          "ipw_known_baseline_propensity": 0.19810461302602736,
+          "cell_interval": [
+            -0.49661780375799025,
+            0.9581465660674144
+          ],
+          "global_interval": [
+            -0.6290721909294495,
+            0.9472505763182225
+          ],
+          "hidden_outside_cell_percentile": 135,
+          "n_hidden": 1180
+        },
+        {
+          "seed": 20260954,
+          "complete_case": 0.20183239954193619,
+          "ipw_known_baseline_propensity": 0.19536955615330118,
+          "cell_interval": [
+            -0.4680385282730238,
+            0.9792505480402633
+          ],
+          "global_interval": [
+            -0.6006036840408754,
+            0.9773499965039164
+          ],
+          "hidden_outside_cell_percentile": 114,
+          "n_hidden": 1129
+        },
+        {
+          "seed": 20260955,
+          "complete_case": 0.2192975943508755,
+          "ipw_known_baseline_propensity": 0.21752546984748325,
+          "cell_interval": [
+            -0.49954528461925807,
+            1.0815815827440796
+          ],
+          "global_interval": [
+            -0.6455915654415056,
+            1.082429669323591
+          ],
+          "hidden_outside_cell_percentile": 136,
+          "n_hidden": 1178
+        },
+        {
+          "seed": 20260956,
+          "complete_case": 0.19630832912148274,
+          "ipw_known_baseline_propensity": 0.20063422573910739,
+          "cell_interval": [
+            -0.46219312439588545,
+            1.0054307668099765
+          ],
+          "global_interval": [
+            -0.6178083945084997,
+            1.0151087472992881
+          ],
+          "hidden_outside_cell_percentile": 116,
+          "n_hidden": 1110
+        },
+        {
+          "seed": 20260957,
+          "complete_case": 0.24303047344546058,
+          "ipw_known_baseline_propensity": 0.24221544807795278,
+          "cell_interval": [
+            -0.4691662043631226,
+            0.9717819208209413
+          ],
+          "global_interval": [
+            -0.6300628957711777,
+            1.000095764884769
+          ],
+          "hidden_outside_cell_percentile": 117,
+          "n_hidden": 1101
+        },
+        {
+          "seed": 20260958,
+          "complete_case": 0.22688156827579434,
+          "ipw_known_baseline_propensity": 0.23312176898311324,
+          "cell_interval": [
+            -0.42932436877273905,
+            0.9933042777888011
+          ],
+          "global_interval": [
+            -0.5736579825961198,
+            1.006911154784179
+          ],
+          "hidden_outside_cell_percentile": 117,
+          "n_hidden": 1076
+        },
+        {
+          "seed": 20260959,
+          "complete_case": 0.22096285360383341,
+          "ipw_known_baseline_propensity": 0.22156282469987434,
+          "cell_interval": [
+            -0.4223342917270482,
+            0.9391619144891211
+          ],
+          "global_interval": [
+            -0.5886442165106077,
+            0.9169477196965845
+          ],
+          "hidden_outside_cell_percentile": 145,
+          "n_hidden": 1188
+        },
+        {
+          "seed": 20260960,
+          "complete_case": 0.19115941122911492,
+          "ipw_known_baseline_propensity": 0.18492959600307837,
+          "cell_interval": [
+            -0.4978088868051354,
+            0.9606740686604769
+          ],
+          "global_interval": [
+            -0.6368738598840452,
+            0.9776732636134798
+          ],
+          "hidden_outside_cell_percentile": 130,
+          "n_hidden": 1138
+        },
+        {
+          "seed": 20260961,
+          "complete_case": 0.1965966462654655,
+          "ipw_known_baseline_propensity": 0.19363824601735732,
+          "cell_interval": [
+            -0.5478111196450871,
+            0.9722739160520298
+          ],
+          "global_interval": [
+            -0.6725681438946669,
+            0.9936579522223227
+          ],
+          "hidden_outside_cell_percentile": 130,
+          "n_hidden": 1137
+        },
+        {
+          "seed": 20260962,
+          "complete_case": 0.19318726103397277,
+          "ipw_known_baseline_propensity": 0.19352742661630662,
+          "cell_interval": [
+            -0.5173429640400883,
+            1.0069235049539371
+          ],
+          "global_interval": [
+            -0.6464062065104071,
+            1.0072846368059796
+          ],
+          "hidden_outside_cell_percentile": 127,
+          "n_hidden": 1153
+        },
+        {
+          "seed": 20260963,
+          "complete_case": 0.19951279544169673,
+          "ipw_known_baseline_propensity": 0.19392362114630635,
+          "cell_interval": [
+            -0.4659054741538367,
+            0.9280227749127711
+          ],
+          "global_interval": [
+            -0.5976524723291067,
+            0.9169643842148677
+          ],
+          "hidden_outside_cell_percentile": 116,
+          "n_hidden": 1130
+        },
+        {
+          "seed": 20260964,
+          "complete_case": 0.20578413937451748,
+          "ipw_known_baseline_propensity": 0.19798998149039074,
+          "cell_interval": [
+            -0.47127361595785144,
+            0.8967819842113882
+          ],
+          "global_interval": [
+            -0.5957495866923217,
+            0.9054071500696638
+          ],
+          "hidden_outside_cell_percentile": 116,
+          "n_hidden": 1112
+        },
+        {
+          "seed": 20260965,
+          "complete_case": 0.194063303402663,
+          "ipw_known_baseline_propensity": 0.18876862358122856,
+          "cell_interval": [
+            -0.5159447605205765,
+            0.9777274225160983
+          ],
+          "global_interval": [
+            -0.6434130272931128,
+            0.9814517221092643
+          ],
+          "hidden_outside_cell_percentile": 133,
+          "n_hidden": 1193
+        },
+        {
+          "seed": 20260966,
+          "complete_case": 0.24666412693571008,
+          "ipw_known_baseline_propensity": 0.24354026616815114,
+          "cell_interval": [
+            -0.4633707294529346,
+            1.0676351165205864
+          ],
+          "global_interval": [
+            -0.6199028654298289,
+            1.0560600129911049
+          ],
+          "hidden_outside_cell_percentile": 153,
+          "n_hidden": 1210
+        },
+        {
+          "seed": 20260967,
+          "complete_case": 0.18840059671595463,
+          "ipw_known_baseline_propensity": 0.19298547699540816,
+          "cell_interval": [
+            -0.513876349700101,
+            0.8748593282830992
+          ],
+          "global_interval": [
+            -0.6576525145932903,
+            0.8615256394968654
+          ],
+          "hidden_outside_cell_percentile": 134,
+          "n_hidden": 1129
+        },
+        {
+          "seed": 20260968,
+          "complete_case": 0.2051495136144579,
+          "ipw_known_baseline_propensity": 0.21194719679802787,
+          "cell_interval": [
+            -0.5793884264133702,
+            0.9936680024219465
+          ],
+          "global_interval": [
+            -0.7202432278847986,
+            1.0419184285285652
+          ],
+          "hidden_outside_cell_percentile": 124,
+          "n_hidden": 1207
+        },
+        {
+          "seed": 20260969,
+          "complete_case": 0.2207434888739163,
+          "ipw_known_baseline_propensity": 0.2240630634825885,
+          "cell_interval": [
+            -0.5144236464561426,
+            1.0651486570057835
+          ],
+          "global_interval": [
+            -0.6872474338320621,
+            1.0524356927726264
+          ],
+          "hidden_outside_cell_percentile": 107,
+          "n_hidden": 1176
+        },
+        {
+          "seed": 20260970,
+          "complete_case": 0.2028953335057325,
+          "ipw_known_baseline_propensity": 0.20162958740070477,
+          "cell_interval": [
+            -0.42390928280113194,
+            0.8427183872609092
+          ],
+          "global_interval": [
+            -0.5506324307411956,
+            0.840971422681247
+          ],
+          "hidden_outside_cell_percentile": 115,
+          "n_hidden": 1102
+        },
+        {
+          "seed": 20260971,
+          "complete_case": 0.19736722239574953,
+          "ipw_known_baseline_propensity": 0.19203759642327786,
+          "cell_interval": [
+            -0.5597177856518648,
+            0.9800881268776478
+          ],
+          "global_interval": [
+            -0.6775349479986877,
+            1.0123286089073746
+          ],
+          "hidden_outside_cell_percentile": 127,
+          "n_hidden": 1158
+        },
+        {
+          "seed": 20260972,
+          "complete_case": 0.19699600474789536,
+          "ipw_known_baseline_propensity": 0.1902666103538175,
+          "cell_interval": [
+            -0.49289016883747966,
+            0.970392166963162
+          ],
+          "global_interval": [
+            -0.638526972651298,
+            0.9586688930003175
+          ],
+          "hidden_outside_cell_percentile": 114,
+          "n_hidden": 1163
+        },
+        {
+          "seed": 20260973,
+          "complete_case": 0.20722072602417793,
+          "ipw_known_baseline_propensity": 0.21150294785273602,
+          "cell_interval": [
+            -0.519562095824425,
+            0.9773182516028532
+          ],
+          "global_interval": [
+            -0.6629232098936543,
+            0.996136195009249
+          ],
+          "hidden_outside_cell_percentile": 138,
+          "n_hidden": 1168
+        },
+        {
+          "seed": 20260974,
+          "complete_case": 0.21405885372231767,
+          "ipw_known_baseline_propensity": 0.21132379799494846,
+          "cell_interval": [
+            -0.5374243534810966,
+            0.9465472398789937
+          ],
+          "global_interval": [
+            -0.6684356884086823,
+            0.957615298163057
+          ],
+          "hidden_outside_cell_percentile": 131,
+          "n_hidden": 1162
+        },
+        {
+          "seed": 20260975,
+          "complete_case": 0.16021205769369706,
+          "ipw_known_baseline_propensity": 0.1547568661829626,
+          "cell_interval": [
+            -0.5667959184913167,
+            0.9472023063818265
+          ],
+          "global_interval": [
+            -0.7074601335768458,
+            0.9535666356445339
+          ],
+          "hidden_outside_cell_percentile": 134,
+          "n_hidden": 1219
+        },
+        {
+          "seed": 20260976,
+          "complete_case": 0.19470246924795057,
+          "ipw_known_baseline_propensity": 0.199681930045657,
+          "cell_interval": [
+            -0.5385930912295118,
+            0.9867234291006083
+          ],
+          "global_interval": [
+            -0.6898362158532074,
+            0.9824032375282045
+          ],
+          "hidden_outside_cell_percentile": 131,
+          "n_hidden": 1193
+        },
+        {
+          "seed": 20260977,
+          "complete_case": 0.2832407236810599,
+          "ipw_known_baseline_propensity": 0.2761402467352902,
+          "cell_interval": [
+            -0.5316182106283863,
+            1.0618958499870166
+          ],
+          "global_interval": [
+            -0.6613607589923246,
+            1.088254902686147
+          ],
+          "hidden_outside_cell_percentile": 109,
+          "n_hidden": 1192
+        },
+        {
+          "seed": 20260978,
+          "complete_case": 0.20562366189386372,
+          "ipw_known_baseline_propensity": 0.21268264749398505,
+          "cell_interval": [
+            -0.46480204556463417,
+            0.9229071931058463
+          ],
+          "global_interval": [
+            -0.6093631101367938,
+            0.8967871939078744
+          ],
+          "hidden_outside_cell_percentile": 137,
+          "n_hidden": 1142
+        },
+        {
+          "seed": 20260979,
+          "complete_case": 0.25150321445525486,
+          "ipw_known_baseline_propensity": 0.25449444103015467,
+          "cell_interval": [
+            -0.36960000865053266,
+            0.9056904805644691
+          ],
+          "global_interval": [
+            -0.5263671648192655,
+            0.8941059413973377
+          ],
+          "hidden_outside_cell_percentile": 123,
+          "n_hidden": 1100
+        },
+        {
+          "seed": 20260980,
+          "complete_case": 0.16883006014982238,
+          "ipw_known_baseline_propensity": 0.16282918479793354,
+          "cell_interval": [
+            -0.4493301215377739,
+            0.8266541608784
+          ],
+          "global_interval": [
+            -0.5889099430152798,
+            0.8080804427700087
+          ],
+          "hidden_outside_cell_percentile": 118,
+          "n_hidden": 1150
+        },
+        {
+          "seed": 20260981,
+          "complete_case": 0.16858610717383135,
+          "ipw_known_baseline_propensity": 0.16675977400458594,
+          "cell_interval": [
+            -0.5859608323603704,
+            0.9689642309212774
+          ],
+          "global_interval": [
+            -0.7250097756235353,
+            0.97487776652471
+          ],
+          "hidden_outside_cell_percentile": 121,
+          "n_hidden": 1186
+        },
+        {
+          "seed": 20260982,
+          "complete_case": 0.19196480325736218,
+          "ipw_known_baseline_propensity": 0.19820186661623282,
+          "cell_interval": [
+            -0.4928870042144142,
+            0.9323939497337771
+          ],
+          "global_interval": [
+            -0.6451533487489293,
+            0.9345811349900086
+          ],
+          "hidden_outside_cell_percentile": 123,
+          "n_hidden": 1154
+        },
+        {
+          "seed": 20260983,
+          "complete_case": 0.20901412770103633,
+          "ipw_known_baseline_propensity": 0.21379738666398926,
+          "cell_interval": [
+            -0.5083231316397847,
+            0.9157442438127591
+          ],
+          "global_interval": [
+            -0.6579035518506596,
+            0.9341307771311675
+          ],
+          "hidden_outside_cell_percentile": 138,
+          "n_hidden": 1165
+        },
+        {
+          "seed": 20260984,
+          "complete_case": 0.18027066605011047,
+          "ipw_known_baseline_propensity": 0.1827088248359359,
+          "cell_interval": [
+            -0.5649605543007695,
+            0.9795187446917947
+          ],
+          "global_interval": [
+            -0.6923083427784428,
+            0.9939110708405003
+          ],
+          "hidden_outside_cell_percentile": 147,
+          "n_hidden": 1200
+        },
+        {
+          "seed": 20260985,
+          "complete_case": 0.214377628253002,
+          "ipw_known_baseline_propensity": 0.21570549275885542,
+          "cell_interval": [
+            -0.5301293420118071,
+            1.0413618651237395
+          ],
+          "global_interval": [
+            -0.6848847412647441,
+            1.060428062331159
+          ],
+          "hidden_outside_cell_percentile": 146,
+          "n_hidden": 1217
+        },
+        {
+          "seed": 20260986,
+          "complete_case": 0.2012734925799733,
+          "ipw_known_baseline_propensity": 0.21077909530382985,
+          "cell_interval": [
+            -0.4590976741684158,
+            0.9879204419162294
+          ],
+          "global_interval": [
+            -0.6150569366495616,
+            1.0001483917420175
+          ],
+          "hidden_outside_cell_percentile": 138,
+          "n_hidden": 1161
+        },
+        {
+          "seed": 20260987,
+          "complete_case": 0.1729855793880324,
+          "ipw_known_baseline_propensity": 0.16488100198057112,
+          "cell_interval": [
+            -0.6494597222406685,
+            1.0283402045667716
+          ],
+          "global_interval": [
+            -0.7613693173122679,
+            1.0515223770587219
+          ],
+          "hidden_outside_cell_percentile": 112,
+          "n_hidden": 1196
+        },
+        {
+          "seed": 20260988,
+          "complete_case": 0.2890474260769183,
+          "ipw_known_baseline_propensity": 0.2843970297955957,
+          "cell_interval": [
+            -0.43210376224610386,
+            1.0081004975151986
+          ],
+          "global_interval": [
+            -0.584863981883432,
+            1.0034236945734456
+          ],
+          "hidden_outside_cell_percentile": 148,
+          "n_hidden": 1177
+        },
+        {
+          "seed": 20260989,
+          "complete_case": 0.22384522431262344,
+          "ipw_known_baseline_propensity": 0.22825414804344835,
+          "cell_interval": [
+            -0.4876154669988397,
+            0.9140311441356183
+          ],
+          "global_interval": [
+            -0.6555546714202778,
+            0.9113402864939214
+          ],
+          "hidden_outside_cell_percentile": 144,
+          "n_hidden": 1166
+        },
+        {
+          "seed": 20260990,
+          "complete_case": 0.22678745854298712,
+          "ipw_known_baseline_propensity": 0.22210528617746972,
+          "cell_interval": [
+            -0.48550658943931085,
+            0.9083707890716588
+          ],
+          "global_interval": [
+            -0.6127840524335123,
+            0.9088289668428745
+          ],
+          "hidden_outside_cell_percentile": 118,
+          "n_hidden": 1124
+        },
+        {
+          "seed": 20260991,
+          "complete_case": 0.16899985248627236,
+          "ipw_known_baseline_propensity": 0.17314812320388587,
+          "cell_interval": [
+            -0.4647969162756093,
+            0.8877777573342901
+          ],
+          "global_interval": [
+            -0.61694976181204,
+            0.8855722759617501
+          ],
+          "hidden_outside_cell_percentile": 113,
+          "n_hidden": 1137
+        },
+        {
+          "seed": 20260992,
+          "complete_case": 0.2320842301491395,
+          "ipw_known_baseline_propensity": 0.22661235122691115,
+          "cell_interval": [
+            -0.44260478219873356,
+            1.0003715313446855
+          ],
+          "global_interval": [
+            -0.6183584690115155,
+            1.0233475417114615
+          ],
+          "hidden_outside_cell_percentile": 146,
+          "n_hidden": 1140
+        },
+        {
+          "seed": 20260993,
+          "complete_case": 0.190947746862282,
+          "ipw_known_baseline_propensity": 0.19454966373449809,
+          "cell_interval": [
+            -0.4909840568749362,
+            0.9001349847038297
+          ],
+          "global_interval": [
+            -0.6067520896223546,
+            0.9097807761922724
+          ],
+          "hidden_outside_cell_percentile": 137,
+          "n_hidden": 1110
+        },
+        {
+          "seed": 20260994,
+          "complete_case": 0.2423988408232751,
+          "ipw_known_baseline_propensity": 0.24747483147057528,
+          "cell_interval": [
+            -0.46889216613042023,
+            0.9702414389937984
+          ],
+          "global_interval": [
+            -0.6086955891460358,
+            0.9757001323572142
+          ],
+          "hidden_outside_cell_percentile": 115,
+          "n_hidden": 1146
+        },
+        {
+          "seed": 20260995,
+          "complete_case": 0.14852012368776865,
+          "ipw_known_baseline_propensity": 0.14601721851527602,
+          "cell_interval": [
+            -0.5846714651392053,
+            0.9532393570314639
+          ],
+          "global_interval": [
+            -0.7038940432639036,
+            0.9705179218951415
+          ],
+          "hidden_outside_cell_percentile": 129,
+          "n_hidden": 1123
+        },
+        {
+          "seed": 20260996,
+          "complete_case": 0.24035362684123007,
+          "ipw_known_baseline_propensity": 0.23115943504263212,
+          "cell_interval": [
+            -0.4964216954914121,
+            1.0595831580198727
+          ],
+          "global_interval": [
+            -0.6794113712974843,
+            1.069086980665028
+          ],
+          "hidden_outside_cell_percentile": 114,
+          "n_hidden": 1211
+        },
+        {
+          "seed": 20260997,
+          "complete_case": 0.18395597692036403,
+          "ipw_known_baseline_propensity": 0.18912535788998672,
+          "cell_interval": [
+            -0.4280987072752685,
+            0.8932318186932023
+          ],
+          "global_interval": [
+            -0.5624417701485188,
+            0.9180664129454873
+          ],
+          "hidden_outside_cell_percentile": 126,
+          "n_hidden": 1103
+        },
+        {
+          "seed": 20260998,
+          "complete_case": 0.19192987953549404,
+          "ipw_known_baseline_propensity": 0.1943359427622774,
+          "cell_interval": [
+            -0.5038855090809234,
+            0.8614349132495657
+          ],
+          "global_interval": [
+            -0.6380870272013232,
+            0.8842808590060484
+          ],
+          "hidden_outside_cell_percentile": 121,
+          "n_hidden": 1146
+        },
+        {
+          "seed": 20260999,
+          "complete_case": 0.18489045967805803,
+          "ipw_known_baseline_propensity": 0.18238604641481693,
+          "cell_interval": [
+            -0.5788758496814104,
+            0.9907933384884133
+          ],
+          "global_interval": [
+            -0.7014247138036133,
+            0.9821153372390876
+          ],
+          "hidden_outside_cell_percentile": 108,
+          "n_hidden": 1165
+        },
+        {
+          "seed": 20261000,
+          "complete_case": 0.22355130218914074,
+          "ipw_known_baseline_propensity": 0.21853135947620297,
+          "cell_interval": [
+            -0.47760814970955806,
+            0.9439558883857737
+          ],
+          "global_interval": [
+            -0.6286019979347547,
+            0.9307635364293848
+          ],
+          "hidden_outside_cell_percentile": 138,
+          "n_hidden": 1118
+        },
+        {
+          "seed": 20261001,
+          "complete_case": 0.2522525203679849,
+          "ipw_known_baseline_propensity": 0.2577882329677806,
+          "cell_interval": [
+            -0.45225256761886395,
+            0.9551628582557083
+          ],
+          "global_interval": [
+            -0.6020615013011046,
+            0.9410366687905327
+          ],
+          "hidden_outside_cell_percentile": 133,
+          "n_hidden": 1123
+        },
+        {
+          "seed": 20261002,
+          "complete_case": 0.16608805298820084,
+          "ipw_known_baseline_propensity": 0.1633596706392792,
+          "cell_interval": [
+            -0.46792840190374635,
+            0.901896867923214
+          ],
+          "global_interval": [
+            -0.5923108527077091,
+            0.8744070522987641
+          ],
+          "hidden_outside_cell_percentile": 105,
+          "n_hidden": 1141
+        },
+        {
+          "seed": 20261003,
+          "complete_case": 0.17918529979990616,
+          "ipw_known_baseline_propensity": 0.1769803008824591,
+          "cell_interval": [
+            -0.5486310142027374,
+            1.004000534434092
+          ],
+          "global_interval": [
+            -0.6823306361270487,
+            1.007570365919754
+          ],
+          "hidden_outside_cell_percentile": 125,
+          "n_hidden": 1214
+        },
+        {
+          "seed": 20261004,
+          "complete_case": 0.16083590910344492,
+          "ipw_known_baseline_propensity": 0.1612241828532478,
+          "cell_interval": [
+            -0.5809063487978643,
+            0.896114593997669
+          ],
+          "global_interval": [
+            -0.7260818328946096,
+            0.9192059691877547
+          ],
+          "hidden_outside_cell_percentile": 101,
+          "n_hidden": 1171
+        },
+        {
+          "seed": 20261005,
+          "complete_case": 0.20793333321679944,
+          "ipw_known_baseline_propensity": 0.21071219072556657,
+          "cell_interval": [
+            -0.468437925923713,
+            0.9467296464346489
+          ],
+          "global_interval": [
+            -0.614612285582587,
+            0.9371040983934953
+          ],
+          "hidden_outside_cell_percentile": 138,
+          "n_hidden": 1159
+        },
+        {
+          "seed": 20261006,
+          "complete_case": 0.19531990840671878,
+          "ipw_known_baseline_propensity": 0.1960692230177088,
+          "cell_interval": [
+            -0.5617276532025376,
+            1.0712342141609543
+          ],
+          "global_interval": [
+            -0.7043198312241566,
+            1.0795784177139225
+          ],
+          "hidden_outside_cell_percentile": 140,
+          "n_hidden": 1179
+        },
+        {
+          "seed": 20261007,
+          "complete_case": 0.26345315233691896,
+          "ipw_known_baseline_propensity": 0.25882898575942376,
+          "cell_interval": [
+            -0.49424919623741764,
+            1.0615163001060544
+          ],
+          "global_interval": [
+            -0.6268849840047205,
+            1.0656612173773572
+          ],
+          "hidden_outside_cell_percentile": 114,
+          "n_hidden": 1129
+        },
+        {
+          "seed": 20261008,
+          "complete_case": 0.16359555381320395,
+          "ipw_known_baseline_propensity": 0.15840381223175662,
+          "cell_interval": [
+            -0.549286746199627,
+            0.9541016490754864
+          ],
+          "global_interval": [
+            -0.6822672559597872,
+            0.9837441256752534
+          ],
+          "hidden_outside_cell_percentile": 125,
+          "n_hidden": 1188
+        },
+        {
+          "seed": 20261009,
+          "complete_case": 0.23269949777058505,
+          "ipw_known_baseline_propensity": 0.23418137402384423,
+          "cell_interval": [
+            -0.4350067008880534,
+            1.0457510657839617
+          ],
+          "global_interval": [
+            -0.6149922006278328,
+            1.0483055826222094
+          ],
+          "hidden_outside_cell_percentile": 136,
+          "n_hidden": 1143
+        },
+        {
+          "seed": 20261010,
+          "complete_case": 0.20871256060948717,
+          "ipw_known_baseline_propensity": 0.20722310815125622,
+          "cell_interval": [
+            -0.4739286830513152,
+            1.0163521847133405
+          ],
+          "global_interval": [
+            -0.6281526852602453,
+            1.0248012617869469
+          ],
+          "hidden_outside_cell_percentile": 129,
+          "n_hidden": 1177
+        },
+        {
+          "seed": 20261011,
+          "complete_case": 0.24670016602168968,
+          "ipw_known_baseline_propensity": 0.24816708192049763,
+          "cell_interval": [
+            -0.43360385356007036,
+            0.9998322047594911
+          ],
+          "global_interval": [
+            -0.5631770695239704,
+            0.9644550616229276
+          ],
+          "hidden_outside_cell_percentile": 107,
+          "n_hidden": 1143
+        },
+        {
+          "seed": 20261012,
+          "complete_case": 0.21940250798307834,
+          "ipw_known_baseline_propensity": 0.22659644444988103,
+          "cell_interval": [
+            -0.5597526493845283,
+            0.9861925157675112
+          ],
+          "global_interval": [
+            -0.6679249390127086,
+            0.9710774513171984
+          ],
+          "hidden_outside_cell_percentile": 121,
+          "n_hidden": 1184
+        },
+        {
+          "seed": 20261013,
+          "complete_case": 0.18708855743281763,
+          "ipw_known_baseline_propensity": 0.17993539278767287,
+          "cell_interval": [
+            -0.5328362181008094,
+            0.9108475043697578
+          ],
+          "global_interval": [
+            -0.6638421726788798,
+            0.9069443503845451
+          ],
+          "hidden_outside_cell_percentile": 137,
+          "n_hidden": 1174
+        },
+        {
+          "seed": 20261014,
+          "complete_case": 0.25494150573853647,
+          "ipw_known_baseline_propensity": 0.25321713568509685,
+          "cell_interval": [
+            -0.4013399671227946,
+            0.986294114720561
+          ],
+          "global_interval": [
+            -0.5677282420542921,
+            0.9771869236646306
+          ],
+          "hidden_outside_cell_percentile": 133,
+          "n_hidden": 1132
+        },
+        {
+          "seed": 20261015,
+          "complete_case": 0.21288459979187166,
+          "ipw_known_baseline_propensity": 0.21369279916812492,
+          "cell_interval": [
+            -0.4534279424297987,
+            1.0159813589173197
+          ],
+          "global_interval": [
+            -0.5908625457534377,
+            1.0144984693596897
+          ],
+          "hidden_outside_cell_percentile": 137,
+          "n_hidden": 1166
+        },
+        {
+          "seed": 20261016,
+          "complete_case": 0.3023724582637793,
+          "ipw_known_baseline_propensity": 0.30412966335517794,
+          "cell_interval": [
+            -0.40765380118300776,
+            0.9781970575638499
+          ],
+          "global_interval": [
+            -0.5278964300719017,
+            0.9821319796827698
+          ],
+          "hidden_outside_cell_percentile": 116,
+          "n_hidden": 1099
+        },
+        {
+          "seed": 20261017,
+          "complete_case": 0.20793250404703137,
+          "ipw_known_baseline_propensity": 0.20782039211811124,
+          "cell_interval": [
+            -0.4810683188955484,
+            0.9281192551822061
+          ],
+          "global_interval": [
+            -0.6410320905098826,
+            0.9283233875607344
+          ],
+          "hidden_outside_cell_percentile": 113,
+          "n_hidden": 1140
+        },
+        {
+          "seed": 20261018,
+          "complete_case": 0.22744837549790778,
+          "ipw_known_baseline_propensity": 0.22904989575711635,
+          "cell_interval": [
+            -0.5600497948802136,
+            1.014457078943853
+          ],
+          "global_interval": [
+            -0.6945158916923254,
+            1.043171055739527
+          ],
+          "hidden_outside_cell_percentile": 117,
+          "n_hidden": 1156
+        },
+        {
+          "seed": 20261019,
+          "complete_case": 0.2103568816857061,
+          "ipw_known_baseline_propensity": 0.20859436836865056,
+          "cell_interval": [
+            -0.5236743447898283,
+            0.9898743004579443
+          ],
+          "global_interval": [
+            -0.6694891611192878,
+            1.003898639967879
+          ],
+          "hidden_outside_cell_percentile": 121,
+          "n_hidden": 1195
+        },
+        {
+          "seed": 20261020,
+          "complete_case": 0.16362764701101007,
+          "ipw_known_baseline_propensity": 0.1600659214557277,
+          "cell_interval": [
+            -0.5674505547501308,
+            0.9447415050771412
+          ],
+          "global_interval": [
+            -0.6994316420116528,
+            0.933191617111451
+          ],
+          "hidden_outside_cell_percentile": 101,
+          "n_hidden": 1157
+        },
+        {
+          "seed": 20261021,
+          "complete_case": 0.20431776165662371,
+          "ipw_known_baseline_propensity": 0.20430925626902155,
+          "cell_interval": [
+            -0.5211560054156208,
+            0.9666805293758957
+          ],
+          "global_interval": [
+            -0.6507754908150091,
+            0.9738628275503619
+          ],
+          "hidden_outside_cell_percentile": 134,
+          "n_hidden": 1169
+        },
+        {
+          "seed": 20261022,
+          "complete_case": 0.22810971075679484,
+          "ipw_known_baseline_propensity": 0.22991583285490177,
+          "cell_interval": [
+            -0.4852678119538875,
+            0.9317608410879815
+          ],
+          "global_interval": [
+            -0.6546469335898205,
+            0.9307462022482808
+          ],
+          "hidden_outside_cell_percentile": 136,
+          "n_hidden": 1127
+        },
+        {
+          "seed": 20261023,
+          "complete_case": 0.16262232412136957,
+          "ipw_known_baseline_propensity": 0.1655138112315582,
+          "cell_interval": [
+            -0.5844389149956271,
+            1.0466631418695662
+          ],
+          "global_interval": [
+            -0.7102491920287896,
+            1.034982149544011
+          ],
+          "hidden_outside_cell_percentile": 116,
+          "n_hidden": 1189
+        },
+        {
+          "seed": 20261024,
+          "complete_case": 0.1849466342370488,
+          "ipw_known_baseline_propensity": 0.18276227908455114,
+          "cell_interval": [
+            -0.48981192858924905,
+            0.8982083607514243
+          ],
+          "global_interval": [
+            -0.6343613323407472,
+            0.8961022230548231
+          ],
+          "hidden_outside_cell_percentile": 114,
+          "n_hidden": 1132
+        },
+        {
+          "seed": 20261025,
+          "complete_case": 0.25828125890642545,
+          "ipw_known_baseline_propensity": 0.25338957046432187,
+          "cell_interval": [
+            -0.4452929535593579,
+            0.9948193640095854
+          ],
+          "global_interval": [
+            -0.6156100780562664,
+            0.9916097905571083
+          ],
+          "hidden_outside_cell_percentile": 137,
+          "n_hidden": 1193
+        },
+        {
+          "seed": 20261026,
+          "complete_case": 0.22026980456806933,
+          "ipw_known_baseline_propensity": 0.22735047593444915,
+          "cell_interval": [
+            -0.5399525101985437,
+            1.047141198403046
+          ],
+          "global_interval": [
+            -0.6949882514079629,
+            1.0379632141788078
+          ],
+          "hidden_outside_cell_percentile": 137,
+          "n_hidden": 1193
+        },
+        {
+          "seed": 20261027,
+          "complete_case": 0.17108675126060946,
+          "ipw_known_baseline_propensity": 0.1705266304092529,
+          "cell_interval": [
+            -0.6035149343351549,
+            0.9116930413644412
+          ],
+          "global_interval": [
+            -0.735890361506915,
+            0.9118439913075352
+          ],
+          "hidden_outside_cell_percentile": 125,
+          "n_hidden": 1198
+        }
+      ],
+      "median_cell_to_global_width_ratio": 0.9008467805786273
+    },
+    "MNAR": {
+      "eligible_masks": 100,
+      "ineligible_masks": 0,
+      "missing_fraction_by_cell": {
+        "VX445_VX661_VX770:large": 0.3603291770573566,
+        "DMSO:large": 0.15564931506849317,
+        "VX445_VX661_VX770:small": 0.28714535901926447,
+        "DMSO:small": 0.1924333925399645
+      },
+      "complete_case_bias": -0.0038940901455181026,
+      "complete_case_mae": 0.029501055408984855,
+      "ipw_bias": -0.005712452134784813,
+      "ipw_mae": 0.03028987944583547,
+      "hidden_outside_cell_percentile_fraction": 0.14215448616693516,
+      "intervals": {
+        "cell_interval": {
+          "containment": 1.0,
+          "median_width": 1.555780415326279,
+          "mean_width": 1.5523628148619897,
+          "zero_contained_fraction": 1.0
+        },
+        "global_interval": {
+          "containment": 1.0,
+          "median_width": 1.725508783299793,
+          "mean_width": 1.715804329149486,
+          "zero_contained_fraction": 1.0
+        }
+      },
+      "replicates": [
+        {
+          "seed": 20260928,
+          "complete_case": 0.1822811809935524,
+          "ipw_known_baseline_propensity": 0.18070291998260377,
+          "cell_interval": [
+            -0.6618491552781707,
+            0.9309454819430204
+          ],
+          "global_interval": [
+            -0.8124207375428764,
+            0.9446396034579609
+          ],
+          "hidden_outside_cell_percentile": 207,
+          "n_hidden": 1321
+        },
+        {
+          "seed": 20260929,
+          "complete_case": 0.21219901721689013,
+          "ipw_known_baseline_propensity": 0.2168670364228268,
+          "cell_interval": [
+            -0.6474756501537378,
+            0.9374095774576615
+          ],
+          "global_interval": [
+            -0.7870755665717506,
+            0.9466145452918822
+          ],
+          "hidden_outside_cell_percentile": 171,
+          "n_hidden": 1286
+        },
+        {
+          "seed": 20260930,
+          "complete_case": 0.15320678857225903,
+          "ipw_known_baseline_propensity": 0.1535426013829281,
+          "cell_interval": [
+            -0.6178848769863973,
+            0.8963001227732578
+          ],
+          "global_interval": [
+            -0.7708858166249857,
+            0.8906407339193673
+          ],
+          "hidden_outside_cell_percentile": 160,
+          "n_hidden": 1245
+        },
+        {
+          "seed": 20260931,
+          "complete_case": 0.2621597632829536,
+          "ipw_known_baseline_propensity": 0.26468972153062653,
+          "cell_interval": [
+            -0.5056087840172171,
+            0.9976282365044131
+          ],
+          "global_interval": [
+            -0.6727905127342518,
+            0.9844494114162458
+          ],
+          "hidden_outside_cell_percentile": 181,
+          "n_hidden": 1277
+        },
+        {
+          "seed": 20260932,
+          "complete_case": 0.1776957276755764,
+          "ipw_known_baseline_propensity": 0.18511002531974186,
+          "cell_interval": [
+            -0.5867892655354126,
+            0.9029889734662028
+          ],
+          "global_interval": [
+            -0.7343111746227072,
+            0.9104491776056404
+          ],
+          "hidden_outside_cell_percentile": 191,
+          "n_hidden": 1247
+        },
+        {
+          "seed": 20260933,
+          "complete_case": 0.15379901551487998,
+          "ipw_known_baseline_propensity": 0.15011893704122428,
+          "cell_interval": [
+            -0.6341428034230151,
+            0.9310484010800866
+          ],
+          "global_interval": [
+            -0.7959418373277195,
+            0.9405630724482409
+          ],
+          "hidden_outside_cell_percentile": 203,
+          "n_hidden": 1304
+        },
+        {
+          "seed": 20260934,
+          "complete_case": 0.2252808406115792,
+          "ipw_known_baseline_propensity": 0.22696453797194838,
+          "cell_interval": [
+            -0.5829076269066419,
+            0.9179885015801146
+          ],
+          "global_interval": [
+            -0.7195325316393797,
+            0.919934759140811
+          ],
+          "hidden_outside_cell_percentile": 194,
+          "n_hidden": 1280
+        },
+        {
+          "seed": 20260935,
+          "complete_case": 0.17967420705178425,
+          "ipw_known_baseline_propensity": 0.18125721254908675,
+          "cell_interval": [
+            -0.5617339516966002,
+            0.9374816190889813
+          ],
+          "global_interval": [
+            -0.7246312254921897,
+            0.9267224620779847
+          ],
+          "hidden_outside_cell_percentile": 166,
+          "n_hidden": 1233
+        },
+        {
+          "seed": 20260936,
+          "complete_case": 0.2571879667922273,
+          "ipw_known_baseline_propensity": 0.2555829089467445,
+          "cell_interval": [
+            -0.5452131894697493,
+            1.0446112355628838
+          ],
+          "global_interval": [
+            -0.7081387973084068,
+            1.051621026753982
+          ],
+          "hidden_outside_cell_percentile": 180,
+          "n_hidden": 1319
+        },
+        {
+          "seed": 20260937,
+          "complete_case": 0.17625336322810078,
+          "ipw_known_baseline_propensity": 0.1692571459444784,
+          "cell_interval": [
+            -0.6244681534111568,
+            0.9485808797497755
+          ],
+          "global_interval": [
+            -0.7813173634967133,
+            0.9455867951517744
+          ],
+          "hidden_outside_cell_percentile": 175,
+          "n_hidden": 1298
+        },
+        {
+          "seed": 20260938,
+          "complete_case": 0.23239757244025247,
+          "ipw_known_baseline_propensity": 0.2244834982602912,
+          "cell_interval": [
+            -0.5495846375285603,
+            0.9556718463435869
+          ],
+          "global_interval": [
+            -0.7227230331177866,
+            0.953465733953795
+          ],
+          "hidden_outside_cell_percentile": 204,
+          "n_hidden": 1297
+        },
+        {
+          "seed": 20260939,
+          "complete_case": 0.18105474828259696,
+          "ipw_known_baseline_propensity": 0.1825213842371356,
+          "cell_interval": [
+            -0.6308295020772764,
+            0.9878621714911215
+          ],
+          "global_interval": [
+            -0.7864159469736426,
+            0.988248685936886
+          ],
+          "hidden_outside_cell_percentile": 181,
+          "n_hidden": 1291
+        },
+        {
+          "seed": 20260940,
+          "complete_case": 0.2284345682328692,
+          "ipw_known_baseline_propensity": 0.22796930852205224,
+          "cell_interval": [
+            -0.5743612812021989,
+            0.9731745858664462
+          ],
+          "global_interval": [
+            -0.7003139944440915,
+            0.9947653676413006
+          ],
+          "hidden_outside_cell_percentile": 202,
+          "n_hidden": 1264
+        },
+        {
+          "seed": 20260941,
+          "complete_case": 0.22731766835779021,
+          "ipw_known_baseline_propensity": 0.2247602126246855,
+          "cell_interval": [
+            -0.5802672744032281,
+            0.9898535609035987
+          ],
+          "global_interval": [
+            -0.7352884812519139,
+            0.993859420730169
+          ],
+          "hidden_outside_cell_percentile": 169,
+          "n_hidden": 1215
+        },
+        {
+          "seed": 20260942,
+          "complete_case": 0.1611256062271033,
+          "ipw_known_baseline_propensity": 0.15989532102060192,
+          "cell_interval": [
+            -0.5609201995970423,
+            0.9890020275051508
+          ],
+          "global_interval": [
+            -0.7250580937683639,
+            1.0203948708134492
+          ],
+          "hidden_outside_cell_percentile": 178,
+          "n_hidden": 1232
+        },
+        {
+          "seed": 20260943,
+          "complete_case": 0.2797517307933206,
+          "ipw_known_baseline_propensity": 0.2805935350153466,
+          "cell_interval": [
+            -0.5696630958963906,
+            0.9869725078372777
+          ],
+          "global_interval": [
+            -0.7530766358287883,
+            0.9951746231180426
+          ],
+          "hidden_outside_cell_percentile": 172,
+          "n_hidden": 1269
+        },
+        {
+          "seed": 20260944,
+          "complete_case": 0.23141312623020374,
+          "ipw_known_baseline_propensity": 0.22980861426662438,
+          "cell_interval": [
+            -0.535208741677267,
+            1.0192975341664408
+          ],
+          "global_interval": [
+            -0.7137800174373768,
+            1.0069536816069822
+          ],
+          "hidden_outside_cell_percentile": 168,
+          "n_hidden": 1285
+        },
+        {
+          "seed": 20260945,
+          "complete_case": 0.17066396399389497,
+          "ipw_known_baseline_propensity": 0.1673970203436859,
+          "cell_interval": [
+            -0.5872585637843085,
+            0.9696397434183028
+          ],
+          "global_interval": [
+            -0.7596485563772403,
+            0.9560869084329277
+          ],
+          "hidden_outside_cell_percentile": 181,
+          "n_hidden": 1283
+        },
+        {
+          "seed": 20260946,
+          "complete_case": 0.21032141677419167,
+          "ipw_known_baseline_propensity": 0.2196848276817331,
+          "cell_interval": [
+            -0.5946273575479143,
+            0.8775021590174054
+          ],
+          "global_interval": [
+            -0.7055490107174305,
+            0.875735823318036
+          ],
+          "hidden_outside_cell_percentile": 161,
+          "n_hidden": 1280
+        },
+        {
+          "seed": 20260947,
+          "complete_case": 0.23179221770945602,
+          "ipw_known_baseline_propensity": 0.23685735539838415,
+          "cell_interval": [
+            -0.54562245799192,
+            0.9984661922893016
+          ],
+          "global_interval": [
+            -0.6985206113019483,
+            0.9763232987991256
+          ],
+          "hidden_outside_cell_percentile": 202,
+          "n_hidden": 1273
+        },
+        {
+          "seed": 20260948,
+          "complete_case": 0.22954143302518462,
+          "ipw_known_baseline_propensity": 0.2383699573703968,
+          "cell_interval": [
+            -0.6212222631667396,
+            0.9851470384956494
+          ],
+          "global_interval": [
+            -0.7617876212927751,
+            0.9768989224739681
+          ],
+          "hidden_outside_cell_percentile": 167,
+          "n_hidden": 1278
+        },
+        {
+          "seed": 20260949,
+          "complete_case": 0.19366729939804203,
+          "ipw_known_baseline_propensity": 0.1917898894114961,
+          "cell_interval": [
+            -0.5519838628959095,
+            0.9200006359438898
+          ],
+          "global_interval": [
+            -0.7162325888783282,
+            0.9017245175041624
+          ],
+          "hidden_outside_cell_percentile": 163,
+          "n_hidden": 1258
+        },
+        {
+          "seed": 20260950,
+          "complete_case": 0.2673976758250878,
+          "ipw_known_baseline_propensity": 0.2606043345993205,
+          "cell_interval": [
+            -0.5166909618544491,
+            0.9634042815606375
+          ],
+          "global_interval": [
+            -0.6605935691640071,
+            0.9616251136171664
+          ],
+          "hidden_outside_cell_percentile": 191,
+          "n_hidden": 1253
+        },
+        {
+          "seed": 20260951,
+          "complete_case": 0.2364701471725541,
+          "ipw_known_baseline_propensity": 0.24021018053601165,
+          "cell_interval": [
+            -0.6295123639485123,
+            0.9700471058439796
+          ],
+          "global_interval": [
+            -0.8007034293747638,
+            0.9885603028449035
+          ],
+          "hidden_outside_cell_percentile": 197,
+          "n_hidden": 1297
+        },
+        {
+          "seed": 20260952,
+          "complete_case": 0.18553949475329876,
+          "ipw_known_baseline_propensity": 0.18262684977681706,
+          "cell_interval": [
+            -0.6657460932642614,
+            0.9628385427372222
+          ],
+          "global_interval": [
+            -0.8378835555361129,
+            0.9657775141816507
+          ],
+          "hidden_outside_cell_percentile": 175,
+          "n_hidden": 1317
+        },
+        {
+          "seed": 20260953,
+          "complete_case": 0.16982443186701068,
+          "ipw_known_baseline_propensity": 0.16424659059833985,
+          "cell_interval": [
+            -0.6346298341251947,
+            0.9111007264311738
+          ],
+          "global_interval": [
+            -0.7696382679914135,
+            0.9073983792652647
+          ],
+          "hidden_outside_cell_percentile": 177,
+          "n_hidden": 1234
+        },
+        {
+          "seed": 20260954,
+          "complete_case": 0.19179536190992486,
+          "ipw_known_baseline_propensity": 0.17992507154600965,
+          "cell_interval": [
+            -0.5955305869447057,
+            0.9681392448121744
+          ],
+          "global_interval": [
+            -0.7429361780490366,
+            0.9939526454560106
+          ],
+          "hidden_outside_cell_percentile": 156,
+          "n_hidden": 1251
+        },
+        {
+          "seed": 20260955,
+          "complete_case": 0.18504230853678108,
+          "ipw_known_baseline_propensity": 0.18517581331292965,
+          "cell_interval": [
+            -0.5828106122115332,
+            1.0041538087428958
+          ],
+          "global_interval": [
+            -0.7550638111208817,
+            1.0256150160757478
+          ],
+          "hidden_outside_cell_percentile": 184,
+          "n_hidden": 1305
+        },
+        {
+          "seed": 20260956,
+          "complete_case": 0.18939570497316918,
+          "ipw_known_baseline_propensity": 0.19201013799765412,
+          "cell_interval": [
+            -0.6009669433898452,
+            0.9415143093292101
+          ],
+          "global_interval": [
+            -0.7498169819882139,
+            0.95963621424079
+          ],
+          "hidden_outside_cell_percentile": 171,
+          "n_hidden": 1282
+        },
+        {
+          "seed": 20260957,
+          "complete_case": 0.1973457466788647,
+          "ipw_known_baseline_propensity": 0.19660140412976201,
+          "cell_interval": [
+            -0.5790564321569662,
+            0.9710791622917837
+          ],
+          "global_interval": [
+            -0.7515229777475773,
+            0.9938032887279168
+          ],
+          "hidden_outside_cell_percentile": 166,
+          "n_hidden": 1208
+        },
+        {
+          "seed": 20260958,
+          "complete_case": 0.23354963301349374,
+          "ipw_known_baseline_propensity": 0.23069651657702547,
+          "cell_interval": [
+            -0.5246320608542013,
+            0.9015738267720561
+          ],
+          "global_interval": [
+            -0.687353000966013,
+            0.9137522840334591
+          ],
+          "hidden_outside_cell_percentile": 153,
+          "n_hidden": 1217
+        },
+        {
+          "seed": 20260959,
+          "complete_case": 0.18973328254275224,
+          "ipw_known_baseline_propensity": 0.1877642866953462,
+          "cell_interval": [
+            -0.5326497746338124,
+            0.9299410074655818
+          ],
+          "global_interval": [
+            -0.6946450891318495,
+            0.9266164433798517
+          ],
+          "hidden_outside_cell_percentile": 191,
+          "n_hidden": 1305
+        },
+        {
+          "seed": 20260960,
+          "complete_case": 0.17751695021159006,
+          "ipw_known_baseline_propensity": 0.17481296480312727,
+          "cell_interval": [
+            -0.585828613539113,
+            0.9247903532645149
+          ],
+          "global_interval": [
+            -0.7254128368644098,
+            0.9199903105522115
+          ],
+          "hidden_outside_cell_percentile": 174,
+          "n_hidden": 1272
+        },
+        {
+          "seed": 20260961,
+          "complete_case": 0.20276046317375382,
+          "ipw_known_baseline_propensity": 0.19281145572940883,
+          "cell_interval": [
+            -0.6489780447035457,
+            0.9568194900619998
+          ],
+          "global_interval": [
+            -0.7983447909515391,
+            1.0017840143217456
+          ],
+          "hidden_outside_cell_percentile": 170,
+          "n_hidden": 1258
+        },
+        {
+          "seed": 20260962,
+          "complete_case": 0.15532319605743475,
+          "ipw_known_baseline_propensity": 0.14370357785551555,
+          "cell_interval": [
+            -0.6006372391736806,
+            0.9277366252816406
+          ],
+          "global_interval": [
+            -0.7375169238006904,
+            0.9398922827770638
+          ],
+          "hidden_outside_cell_percentile": 200,
+          "n_hidden": 1266
+        },
+        {
+          "seed": 20260963,
+          "complete_case": 0.22787010538713867,
+          "ipw_known_baseline_propensity": 0.21988977246260225,
+          "cell_interval": [
+            -0.5199079618310004,
+            0.9626611504210273
+          ],
+          "global_interval": [
+            -0.6833749019447963,
+            0.9582630137209396
+          ],
+          "hidden_outside_cell_percentile": 206,
+          "n_hidden": 1264
+        },
+        {
+          "seed": 20260964,
+          "complete_case": 0.20487326832532493,
+          "ipw_known_baseline_propensity": 0.20142589891930926,
+          "cell_interval": [
+            -0.5388125638779108,
+            0.921093565570393
+          ],
+          "global_interval": [
+            -0.6697739474207981,
+            0.9227762994533742
+          ],
+          "hidden_outside_cell_percentile": 172,
+          "n_hidden": 1228
+        },
+        {
+          "seed": 20260965,
+          "complete_case": 0.21639292025105913,
+          "ipw_known_baseline_propensity": 0.21255532413640044,
+          "cell_interval": [
+            -0.5511854610713361,
+            1.0037769840494388
+          ],
+          "global_interval": [
+            -0.712785312142893,
+            1.0113280958082054
+          ],
+          "hidden_outside_cell_percentile": 189,
+          "n_hidden": 1298
+        },
+        {
+          "seed": 20260966,
+          "complete_case": 0.2286835027429958,
+          "ipw_known_baseline_propensity": 0.22066942306124707,
+          "cell_interval": [
+            -0.6099832892538058,
+            0.9871217047742643
+          ],
+          "global_interval": [
+            -0.781653207633943,
+            1.0174994327848397
+          ],
+          "hidden_outside_cell_percentile": 206,
+          "n_hidden": 1320
+        },
+        {
+          "seed": 20260967,
+          "complete_case": 0.18475258371247646,
+          "ipw_known_baseline_propensity": 0.1808419681518765,
+          "cell_interval": [
+            -0.5877955750195921,
+            0.9128881275837504
+          ],
+          "global_interval": [
+            -0.7480102338139272,
+            0.9068342738002294
+          ],
+          "hidden_outside_cell_percentile": 203,
+          "n_hidden": 1238
+        },
+        {
+          "seed": 20260968,
+          "complete_case": 0.2347700433507113,
+          "ipw_known_baseline_propensity": 0.23180162820729608,
+          "cell_interval": [
+            -0.6318036723919366,
+            0.9869989621120451
+          ],
+          "global_interval": [
+            -0.780808326245421,
+            1.0089753531488068
+          ],
+          "hidden_outside_cell_percentile": 162,
+          "n_hidden": 1310
+        },
+        {
+          "seed": 20260969,
+          "complete_case": 0.24304804043186756,
+          "ipw_known_baseline_propensity": 0.24557641908800606,
+          "cell_interval": [
+            -0.649976082256028,
+            1.0610043375881013
+          ],
+          "global_interval": [
+            -0.8315818838100317,
+            1.0575234654802068
+          ],
+          "hidden_outside_cell_percentile": 199,
+          "n_hidden": 1352
+        },
+        {
+          "seed": 20260970,
+          "complete_case": 0.11537909937206337,
+          "ipw_known_baseline_propensity": 0.11026923736225201,
+          "cell_interval": [
+            -0.6026153152365114,
+            0.8047062857566796
+          ],
+          "global_interval": [
+            -0.7214367898120767,
+            0.8198681315684194
+          ],
+          "hidden_outside_cell_percentile": 181,
+          "n_hidden": 1229
+        },
+        {
+          "seed": 20260971,
+          "complete_case": 0.17314761188071193,
+          "ipw_known_baseline_propensity": 0.172228633310008,
+          "cell_interval": [
+            -0.6176164486115595,
+            0.9328886097224459
+          ],
+          "global_interval": [
+            -0.7757563807892848,
+            0.9392900985812225
+          ],
+          "hidden_outside_cell_percentile": 202,
+          "n_hidden": 1265
+        },
+        {
+          "seed": 20260972,
+          "complete_case": 0.14630992678485333,
+          "ipw_known_baseline_propensity": 0.13631483267124989,
+          "cell_interval": [
+            -0.5982960644142828,
+            0.89937530173087
+          ],
+          "global_interval": [
+            -0.7576277333631679,
+            0.8996726284845362
+          ],
+          "hidden_outside_cell_percentile": 142,
+          "n_hidden": 1288
+        },
+        {
+          "seed": 20260973,
+          "complete_case": 0.23321278824623082,
+          "ipw_known_baseline_propensity": 0.23199434578686828,
+          "cell_interval": [
+            -0.558309164503424,
+            1.0077223794797894
+          ],
+          "global_interval": [
+            -0.7199552074300666,
+            1.0115082847982533
+          ],
+          "hidden_outside_cell_percentile": 171,
+          "n_hidden": 1289
+        },
+        {
+          "seed": 20260974,
+          "complete_case": 0.1448986665589782,
+          "ipw_known_baseline_propensity": 0.1439514802190536,
+          "cell_interval": [
+            -0.625782875128215,
+            0.9242858152071523
+          ],
+          "global_interval": [
+            -0.7669945265886807,
+            0.9168830126594391
+          ],
+          "hidden_outside_cell_percentile": 156,
+          "n_hidden": 1258
+        },
+        {
+          "seed": 20260975,
+          "complete_case": 0.19948275637793014,
+          "ipw_known_baseline_propensity": 0.19741062549533114,
+          "cell_interval": [
+            -0.6741248215357397,
+            0.9967987178889559
+          ],
+          "global_interval": [
+            -0.8281417210454337,
+            1.0309885323169812
+          ],
+          "hidden_outside_cell_percentile": 193,
+          "n_hidden": 1334
+        },
+        {
+          "seed": 20260976,
+          "complete_case": 0.22643421189933813,
+          "ipw_known_baseline_propensity": 0.22000260816952708,
+          "cell_interval": [
+            -0.6360177421382508,
+            1.0273464371939778
+          ],
+          "global_interval": [
+            -0.8115221439793078,
+            1.0463442211423573
+          ],
+          "hidden_outside_cell_percentile": 180,
+          "n_hidden": 1333
+        },
+        {
+          "seed": 20260977,
+          "complete_case": 0.2623115700106617,
+          "ipw_known_baseline_propensity": 0.2583975810532088,
+          "cell_interval": [
+            -0.5787420663016575,
+            1.0438758992855801
+          ],
+          "global_interval": [
+            -0.7405401231884094,
+            1.0538226043548329
+          ],
+          "hidden_outside_cell_percentile": 183,
+          "n_hidden": 1306
+        },
+        {
+          "seed": 20260978,
+          "complete_case": 0.21902256362562392,
+          "ipw_known_baseline_propensity": 0.21754388758410523,
+          "cell_interval": [
+            -0.5347369256838559,
+            0.8898482538434683
+          ],
+          "global_interval": [
+            -0.6855254748415734,
+            0.8773553648180474
+          ],
+          "hidden_outside_cell_percentile": 179,
+          "n_hidden": 1257
+        },
+        {
+          "seed": 20260979,
+          "complete_case": 0.20192423415006178,
+          "ipw_known_baseline_propensity": 0.20452551984515976,
+          "cell_interval": [
+            -0.5418653832314206,
+            0.8475898387026944
+          ],
+          "global_interval": [
+            -0.6883668263002786,
+            0.8487540029104671
+          ],
+          "hidden_outside_cell_percentile": 175,
+          "n_hidden": 1240
+        },
+        {
+          "seed": 20260980,
+          "complete_case": 0.17677653755938272,
+          "ipw_known_baseline_propensity": 0.1739688155620184,
+          "cell_interval": [
+            -0.5691215104738973,
+            0.9302693930482556
+          ],
+          "global_interval": [
+            -0.7260451577664652,
+            0.9376395686487505
+          ],
+          "hidden_outside_cell_percentile": 181,
+          "n_hidden": 1285
+        },
+        {
+          "seed": 20260981,
+          "complete_case": 0.20669762875463207,
+          "ipw_known_baseline_propensity": 0.2063371278649612,
+          "cell_interval": [
+            -0.6297442514989663,
+            0.9297996980430877
+          ],
+          "global_interval": [
+            -0.7787005060461523,
+            0.9377923878014438
+          ],
+          "hidden_outside_cell_percentile": 181,
+          "n_hidden": 1311
+        },
+        {
+          "seed": 20260982,
+          "complete_case": 0.16147658376355453,
+          "ipw_known_baseline_propensity": 0.1695884762867724,
+          "cell_interval": [
+            -0.5789227784365648,
+            0.8738878461654468
+          ],
+          "global_interval": [
+            -0.7422185700217465,
+            0.8772113011863375
+          ],
+          "hidden_outside_cell_percentile": 192,
+          "n_hidden": 1292
+        },
+        {
+          "seed": 20260983,
+          "complete_case": 0.18206027440585917,
+          "ipw_known_baseline_propensity": 0.1803418714852587,
+          "cell_interval": [
+            -0.627315124139738,
+            0.9056809327451888
+          ],
+          "global_interval": [
+            -0.7758207978894541,
+            0.9348516204981854
+          ],
+          "hidden_outside_cell_percentile": 216,
+          "n_hidden": 1300
+        },
+        {
+          "seed": 20260984,
+          "complete_case": 0.19608241378131228,
+          "ipw_known_baseline_propensity": 0.1969953449653836,
+          "cell_interval": [
+            -0.6399040738926307,
+            0.9186223792201798
+          ],
+          "global_interval": [
+            -0.8065388742004781,
+            0.9342189947718026
+          ],
+          "hidden_outside_cell_percentile": 196,
+          "n_hidden": 1303
+        },
+        {
+          "seed": 20260985,
+          "complete_case": 0.19693826795339034,
+          "ipw_known_baseline_propensity": 0.19491514410650204,
+          "cell_interval": [
+            -0.6843254155843189,
+            1.006949705650155
+          ],
+          "global_interval": [
+            -0.8151339772400465,
+            1.0399769890120678
+          ],
+          "hidden_outside_cell_percentile": 217,
+          "n_hidden": 1305
+        },
+        {
+          "seed": 20260986,
+          "complete_case": 0.23884400954020787,
+          "ipw_known_baseline_propensity": 0.2420992577087838,
+          "cell_interval": [
+            -0.5342065053372488,
+            1.00330546318747
+          ],
+          "global_interval": [
+            -0.7091209195832481,
+            1.0074930004928555
+          ],
+          "hidden_outside_cell_percentile": 189,
+          "n_hidden": 1293
+        },
+        {
+          "seed": 20260987,
+          "complete_case": 0.1955424556349479,
+          "ipw_known_baseline_propensity": 0.18886936333422497,
+          "cell_interval": [
+            -0.6677529662790294,
+            1.028537942304876
+          ],
+          "global_interval": [
+            -0.8036768463007532,
+            1.050177465145312
+          ],
+          "hidden_outside_cell_percentile": 158,
+          "n_hidden": 1297
+        },
+        {
+          "seed": 20260988,
+          "complete_case": 0.2678914440078236,
+          "ipw_known_baseline_propensity": 0.265044248045539,
+          "cell_interval": [
+            -0.5367128339410915,
+            0.9950397203093558
+          ],
+          "global_interval": [
+            -0.7081616846179445,
+            0.998879265851634
+          ],
+          "hidden_outside_cell_percentile": 194,
+          "n_hidden": 1263
+        },
+        {
+          "seed": 20260989,
+          "complete_case": 0.2541712818942435,
+          "ipw_known_baseline_propensity": 0.249502284802683,
+          "cell_interval": [
+            -0.5682366608469863,
+            0.968177468571566
+          ],
+          "global_interval": [
+            -0.7529320816351581,
+            0.9547519675122026
+          ],
+          "hidden_outside_cell_percentile": 172,
+          "n_hidden": 1285
+        },
+        {
+          "seed": 20260990,
+          "complete_case": 0.19901342114947373,
+          "ipw_known_baseline_propensity": 0.1914262999458398,
+          "cell_interval": [
+            -0.5578143378492842,
+            0.8791971996144982
+          ],
+          "global_interval": [
+            -0.7050328598371086,
+            0.8930067224274779
+          ],
+          "hidden_outside_cell_percentile": 177,
+          "n_hidden": 1248
+        },
+        {
+          "seed": 20260991,
+          "complete_case": 0.12060208728315484,
+          "ipw_known_baseline_propensity": 0.1210574172328198,
+          "cell_interval": [
+            -0.6460681258799411,
+            0.8727730933283419
+          ],
+          "global_interval": [
+            -0.7974156364506889,
+            0.8749980723917328
+          ],
+          "hidden_outside_cell_percentile": 156,
+          "n_hidden": 1277
+        },
+        {
+          "seed": 20260992,
+          "complete_case": 0.24346045402391556,
+          "ipw_known_baseline_propensity": 0.2466001872315248,
+          "cell_interval": [
+            -0.5727302827051497,
+            1.0187867688771732
+          ],
+          "global_interval": [
+            -0.7409005913159779,
+            1.0360717179459862
+          ],
+          "hidden_outside_cell_percentile": 196,
+          "n_hidden": 1300
+        },
+        {
+          "seed": 20260993,
+          "complete_case": 0.25264757509837327,
+          "ipw_known_baseline_propensity": 0.2588085320594137,
+          "cell_interval": [
+            -0.5682473479952616,
+            0.9883510375365215
+          ],
+          "global_interval": [
+            -0.7254571628821181,
+            1.0176402219914071
+          ],
+          "hidden_outside_cell_percentile": 202,
+          "n_hidden": 1256
+        },
+        {
+          "seed": 20260994,
+          "complete_case": 0.24638486888525368,
+          "ipw_known_baseline_propensity": 0.24453547869130451,
+          "cell_interval": [
+            -0.5846742415068362,
+            0.977076840669668
+          ],
+          "global_interval": [
+            -0.7565306486254494,
+            0.9992935603824028
+          ],
+          "hidden_outside_cell_percentile": 208,
+          "n_hidden": 1299
+        },
+        {
+          "seed": 20260995,
+          "complete_case": 0.21347406185198944,
+          "ipw_known_baseline_propensity": 0.2142167940629934,
+          "cell_interval": [
+            -0.589454326061236,
+            0.9677839932466245
+          ],
+          "global_interval": [
+            -0.7501119124549668,
+            0.9954371180412407
+          ],
+          "hidden_outside_cell_percentile": 185,
+          "n_hidden": 1222
+        },
+        {
+          "seed": 20260996,
+          "complete_case": 0.1964115702394398,
+          "ipw_known_baseline_propensity": 0.19489473996849607,
+          "cell_interval": [
+            -0.5965917840711086,
+            1.0128811951524477
+          ],
+          "global_interval": [
+            -0.7644650467119732,
+            1.0059043659429299
+          ],
+          "hidden_outside_cell_percentile": 199,
+          "n_hidden": 1312
+        },
+        {
+          "seed": 20260997,
+          "complete_case": 0.19291461469373214,
+          "ipw_known_baseline_propensity": 0.18492405225121944,
+          "cell_interval": [
+            -0.5188656680925527,
+            0.8832930605013908
+          ],
+          "global_interval": [
+            -0.6498444504302647,
+            0.9235577990712667
+          ],
+          "hidden_outside_cell_percentile": 201,
+          "n_hidden": 1239
+        },
+        {
+          "seed": 20260998,
+          "complete_case": 0.20192300576206249,
+          "ipw_known_baseline_propensity": 0.20479995918860086,
+          "cell_interval": [
+            -0.6416560384135047,
+            0.9397073873746052
+          ],
+          "global_interval": [
+            -0.7862206478424606,
+            0.9684958960836424
+          ],
+          "hidden_outside_cell_percentile": 192,
+          "n_hidden": 1294
+        },
+        {
+          "seed": 20260999,
+          "complete_case": 0.23226204960568578,
+          "ipw_known_baseline_propensity": 0.2336224667108103,
+          "cell_interval": [
+            -0.6099123481853955,
+            1.0321286899756197
+          ],
+          "global_interval": [
+            -0.791783465410195,
+            1.039326000718033
+          ],
+          "hidden_outside_cell_percentile": 188,
+          "n_hidden": 1288
+        },
+        {
+          "seed": 20261000,
+          "complete_case": 0.18063844312698582,
+          "ipw_known_baseline_propensity": 0.17643480871262704,
+          "cell_interval": [
+            -0.5796500148390028,
+            0.8883749454639481
+          ],
+          "global_interval": [
+            -0.7122904989332445,
+            0.8879045823733923
+          ],
+          "hidden_outside_cell_percentile": 206,
+          "n_hidden": 1242
+        },
+        {
+          "seed": 20261001,
+          "complete_case": 0.22446013626297878,
+          "ipw_known_baseline_propensity": 0.21913300150759837,
+          "cell_interval": [
+            -0.5549652894960961,
+            0.9283429540424758
+          ],
+          "global_interval": [
+            -0.6994881023200786,
+            0.9270861013452992
+          ],
+          "hidden_outside_cell_percentile": 170,
+          "n_hidden": 1246
+        },
+        {
+          "seed": 20261002,
+          "complete_case": 0.2394561051007621,
+          "ipw_known_baseline_propensity": 0.23295228784379163,
+          "cell_interval": [
+            -0.4958747023750429,
+            0.9191058025724207
+          ],
+          "global_interval": [
+            -0.6306192316391718,
+            0.9180746811897763
+          ],
+          "hidden_outside_cell_percentile": 159,
+          "n_hidden": 1256
+        },
+        {
+          "seed": 20261003,
+          "complete_case": 0.18564241581673147,
+          "ipw_known_baseline_propensity": 0.18031022071118993,
+          "cell_interval": [
+            -0.6597081919347896,
+            0.9571054990156561
+          ],
+          "global_interval": [
+            -0.7903863790082188,
+            0.9712707056355833
+          ],
+          "hidden_outside_cell_percentile": 163,
+          "n_hidden": 1319
+        },
+        {
+          "seed": 20261004,
+          "complete_case": 0.24554997261400802,
+          "ipw_known_baseline_propensity": 0.24733788108070054,
+          "cell_interval": [
+            -0.6098564198118193,
+            1.0084816611010143
+          ],
+          "global_interval": [
+            -0.7613879035785732,
+            1.0295142431302937
+          ],
+          "hidden_outside_cell_percentile": 155,
+          "n_hidden": 1281
+        },
+        {
+          "seed": 20261005,
+          "complete_case": 0.22511580614436752,
+          "ipw_known_baseline_propensity": 0.2294161626239365,
+          "cell_interval": [
+            -0.573376721220644,
+            0.9642269846968604
+          ],
+          "global_interval": [
+            -0.7277487870251944,
+            0.9461119976246999
+          ],
+          "hidden_outside_cell_percentile": 166,
+          "n_hidden": 1279
+        },
+        {
+          "seed": 20261006,
+          "complete_case": 0.16868053594659674,
+          "ipw_known_baseline_propensity": 0.16924068695852368,
+          "cell_interval": [
+            -0.650361557616594,
+            1.0063782133584744
+          ],
+          "global_interval": [
+            -0.8099603345610676,
+            1.0084067566557573
+          ],
+          "hidden_outside_cell_percentile": 193,
+          "n_hidden": 1277
+        },
+        {
+          "seed": 20261007,
+          "complete_case": 0.2568873431229098,
+          "ipw_known_baseline_propensity": 0.2527844214883354,
+          "cell_interval": [
+            -0.54651516673835,
+            1.0259006845637482
+          ],
+          "global_interval": [
+            -0.7305458820923484,
+            1.0323889518225566
+          ],
+          "hidden_outside_cell_percentile": 174,
+          "n_hidden": 1243
+        },
+        {
+          "seed": 20261008,
+          "complete_case": 0.09759995274836242,
+          "ipw_known_baseline_propensity": 0.09333192900431497,
+          "cell_interval": [
+            -0.7063145976042295,
+            0.908331529389158
+          ],
+          "global_interval": [
+            -0.823946057108739,
+            0.9331946635380012
+          ],
+          "hidden_outside_cell_percentile": 189,
+          "n_hidden": 1291
+        },
+        {
+          "seed": 20261009,
+          "complete_case": 0.1811158450913063,
+          "ipw_known_baseline_propensity": 0.17794317164537313,
+          "cell_interval": [
+            -0.6020307022457227,
+            0.9736051316899025
+          ],
+          "global_interval": [
+            -0.7736504459084165,
+            0.9941227170539259
+          ],
+          "hidden_outside_cell_percentile": 219,
+          "n_hidden": 1296
+        },
+        {
+          "seed": 20261010,
+          "complete_case": 0.19231175710084492,
+          "ipw_known_baseline_propensity": 0.1827958388710871,
+          "cell_interval": [
+            -0.5685277418150012,
+            0.9584903474174976
+          ],
+          "global_interval": [
+            -0.7361104399870113,
+            0.9727541785972941
+          ],
+          "hidden_outside_cell_percentile": 180,
+          "n_hidden": 1285
+        },
+        {
+          "seed": 20261011,
+          "complete_case": 0.20746215724044445,
+          "ipw_known_baseline_propensity": 0.20629575156061586,
+          "cell_interval": [
+            -0.5572173113924376,
+            0.8983007929247823
+          ],
+          "global_interval": [
+            -0.6873728401360922,
+            0.8944181915056882
+          ],
+          "hidden_outside_cell_percentile": 175,
+          "n_hidden": 1290
+        },
+        {
+          "seed": 20261012,
+          "complete_case": 0.2409847537467202,
+          "ipw_known_baseline_propensity": 0.23300670198220128,
+          "cell_interval": [
+            -0.6325784247136227,
+            0.9087988312957546
+          ],
+          "global_interval": [
+            -0.7901891901995479,
+            0.9257147374059499
+          ],
+          "hidden_outside_cell_percentile": 167,
+          "n_hidden": 1317
+        },
+        {
+          "seed": 20261013,
+          "complete_case": 0.21131081442512759,
+          "ipw_known_baseline_propensity": 0.20863195995088238,
+          "cell_interval": [
+            -0.5897037441539036,
+            0.8757757025549124
+          ],
+          "global_interval": [
+            -0.7400440534380285,
+            0.8848407222349817
+          ],
+          "hidden_outside_cell_percentile": 188,
+          "n_hidden": 1299
+        },
+        {
+          "seed": 20261014,
+          "complete_case": 0.24713804543321224,
+          "ipw_known_baseline_propensity": 0.24604334541604642,
+          "cell_interval": [
+            -0.5252279311093185,
+            1.0477186995363366
+          ],
+          "global_interval": [
+            -0.709343212832259,
+            1.0271375672956304
+          ],
+          "hidden_outside_cell_percentile": 213,
+          "n_hidden": 1301
+        },
+        {
+          "seed": 20261015,
+          "complete_case": 0.1589737026475837,
+          "ipw_known_baseline_propensity": 0.16487121839651073,
+          "cell_interval": [
+            -0.6205548043549252,
+            0.9767166414607703
+          ],
+          "global_interval": [
+            -0.7706487547365053,
+            0.965757540251487
+          ],
+          "hidden_outside_cell_percentile": 173,
+          "n_hidden": 1297
+        },
+        {
+          "seed": 20261016,
+          "complete_case": 0.20836476253010874,
+          "ipw_known_baseline_propensity": 0.2070147185368838,
+          "cell_interval": [
+            -0.5514925781493687,
+            0.9407221869760339
+          ],
+          "global_interval": [
+            -0.7018070079778108,
+            0.9535569936605897
+          ],
+          "hidden_outside_cell_percentile": 170,
+          "n_hidden": 1254
+        },
+        {
+          "seed": 20261017,
+          "complete_case": 0.23013915074179023,
+          "ipw_known_baseline_propensity": 0.23034557351295085,
+          "cell_interval": [
+            -0.5554880856104182,
+            1.003077241730109
+          ],
+          "global_interval": [
+            -0.7265148332562902,
+            1.0066169963764586
+          ],
+          "hidden_outside_cell_percentile": 160,
+          "n_hidden": 1272
+        },
+        {
+          "seed": 20261018,
+          "complete_case": 0.21666868605481113,
+          "ipw_known_baseline_propensity": 0.21063912672441085,
+          "cell_interval": [
+            -0.6437097335047431,
+            1.0640670998582515
+          ],
+          "global_interval": [
+            -0.7766274525055327,
+            1.0724233567335095
+          ],
+          "hidden_outside_cell_percentile": 193,
+          "n_hidden": 1266
+        },
+        {
+          "seed": 20261019,
+          "complete_case": 0.1331471021446605,
+          "ipw_known_baseline_propensity": 0.12925707956181173,
+          "cell_interval": [
+            -0.6941842051679847,
+            0.9189639607403786
+          ],
+          "global_interval": [
+            -0.8426686915162018,
+            0.9452189790901441
+          ],
+          "hidden_outside_cell_percentile": 184,
+          "n_hidden": 1331
+        },
+        {
+          "seed": 20261020,
+          "complete_case": 0.20403651981898707,
+          "ipw_known_baseline_propensity": 0.20160068426160416,
+          "cell_interval": [
+            -0.6083774567923882,
+            0.9067800763734245
+          ],
+          "global_interval": [
+            -0.7559436249612747,
+            0.9159289808497694
+          ],
+          "hidden_outside_cell_percentile": 171,
+          "n_hidden": 1278
+        },
+        {
+          "seed": 20261021,
+          "complete_case": 0.19132133453324607,
+          "ipw_known_baseline_propensity": 0.18689654113658968,
+          "cell_interval": [
+            -0.6452377169455152,
+            0.9619691714174402
+          ],
+          "global_interval": [
+            -0.8181579460725849,
+            0.9672158545078874
+          ],
+          "hidden_outside_cell_percentile": 190,
+          "n_hidden": 1255
+        },
+        {
+          "seed": 20261022,
+          "complete_case": 0.2157532731249069,
+          "ipw_known_baseline_propensity": 0.22052627751704038,
+          "cell_interval": [
+            -0.6439035871920558,
+            0.9946546148386676
+          ],
+          "global_interval": [
+            -0.8035608491779037,
+            1.0253451244060563
+          ],
+          "hidden_outside_cell_percentile": 173,
+          "n_hidden": 1271
+        },
+        {
+          "seed": 20261023,
+          "complete_case": 0.14378172583314416,
+          "ipw_known_baseline_propensity": 0.14629150378741357,
+          "cell_interval": [
+            -0.7014547846835105,
+            0.9784962983123338
+          ],
+          "global_interval": [
+            -0.8508617454235851,
+            1.003293472544024
+          ],
+          "hidden_outside_cell_percentile": 166,
+          "n_hidden": 1303
+        },
+        {
+          "seed": 20261024,
+          "complete_case": 0.24077207657859875,
+          "ipw_known_baseline_propensity": 0.2360729384000191,
+          "cell_interval": [
+            -0.5580709695689147,
+            0.9492057357170882
+          ],
+          "global_interval": [
+            -0.7264818329247419,
+            0.9467357049840367
+          ],
+          "hidden_outside_cell_percentile": 154,
+          "n_hidden": 1253
+        },
+        {
+          "seed": 20261025,
+          "complete_case": 0.16854135493468633,
+          "ipw_known_baseline_propensity": 0.16881964276147324,
+          "cell_interval": [
+            -0.6533539620311829,
+            1.0055661194192682
+          ],
+          "global_interval": [
+            -0.8168158403532294,
+            0.993882281068013
+          ],
+          "hidden_outside_cell_percentile": 161,
+          "n_hidden": 1313
+        },
+        {
+          "seed": 20261026,
+          "complete_case": 0.23864681797251822,
+          "ipw_known_baseline_propensity": 0.2299964834721906,
+          "cell_interval": [
+            -0.6046020719430459,
+            1.0111830452961383
+          ],
+          "global_interval": [
+            -0.7820595633372275,
+            1.0065561584118183
+          ],
+          "hidden_outside_cell_percentile": 193,
+          "n_hidden": 1293
+        },
+        {
+          "seed": 20261027,
+          "complete_case": 0.17690512217024354,
+          "ipw_known_baseline_propensity": 0.17122147234017435,
+          "cell_interval": [
+            -0.6677989539374672,
+            0.9357400948515776
+          ],
+          "global_interval": [
+            -0.8279709673455041,
+            0.9612519584352749
+          ],
+          "hidden_outside_cell_percentile": 194,
+          "n_hidden": 1296
+        }
+      ],
+      "median_cell_to_global_width_ratio": 0.9016357554269111
+    }
+  },
+  "locked_method_gate": "FAIL",
+  "limitations": "Same-source post-result simulated masks over preselected positive tracks; true missing endpoints and never-detected objects remain unknown. 5/95 percentiles are scenarios not support bounds; IPW knows simulator propensity and MNAR is misspecified. Original biological/segmentation gates unchanged."
+}
