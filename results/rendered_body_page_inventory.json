@@ -1,16 +1,16 @@
 {
   "source_pdf": "paper/mega27-03-virtual-organoid-paper.pdf",
-  "sha256": "b60b27975767b00be286d9e847557845784e06a72ed9b083c3187104e6055d0e",
+  "sha256": "1b0585d780705ea69c65a38b7568197f40de220763aff22a147f69bf0b5a1a1d",
   "physical_pages": 92,
-  "body_candidate_pages": "2-61",
-  "candidate_count_before_qualitative_exclusions": 60,
+  "body_candidate_pages": "2-62",
+  "candidate_count_before_qualitative_exclusions": 61,
   "diagnostic_counts_not_a_rule": {
     "200": 56,
     "300": 51,
-    "350": 45,
-    "400": 33
+    "350": 46,
+    "400": 34
   },
-  "body_candidate_word_tokens": 23055,
+  "body_candidate_word_tokens": 23298,
   "per_page": [
     {
       "page": 1,
@@ -454,83 +454,83 @@
     },
     {
       "page": 56,
-      "word_tokens": 454,
+      "word_tokens": 429,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
       "images": 2,
-      "excerpt": "4.6a Synthetic masking does not validate the missing-track envelope We tested one candidate method contribution rather than simply naming it: the"
+      "excerpt": "Two other public microscopy deposits illustrate the assay-unit boundary. A 2025 Zenodo release of human iPSC-derived gut-organoid images (https:/"
     },
     {
       "page": 57,
-      "word_tokens": 398,
+      "word_tokens": 399,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
       "images": 2,
-      "excerpt": "This one-source study gives no superior-algorithm claim; it makes the method's uncertainty boundary inspectable. The original donor sign and zero"
+      "excerpt": "Under MNAR masking, all 100 preregistered repetitions remained eligible. Complete- case and the favorable known-baseline-propensity weighted refe"
     },
     {
       "page": 58,
-      "word_tokens": 349,
+      "word_tokens": 421,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
       "images": 2,
-      "excerpt": "alpha 0.05, while the later locked magnitude-aware donor test and mixed model detect a same-accession positive interaction. This conflict of esti"
+      "excerpt": "6. Discussion The same-accession eligibility sensitivity weakens from 9/12 (p=0.073) at three measured objects per cell to 8/12 (p=0.194) at five"
     },
     {
       "page": 59,
-      "word_tokens": 168,
+      "word_tokens": 190,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
       "images": 2,
-      "excerpt": "y pandas library src/geo_fidelity.py; paper/build_paper.p y counts scikit-image library src/vorganoid (instance post- processing; watershed/label"
+      "excerpt": "study reported swelling variation in large structures (bioRxiv 2021.07.20.453105). The narrower intestinal question is unconfirmed and this was n"
     },
     {
       "page": 60,
-      "word_tokens": 151,
+      "word_tokens": 154,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
       "images": 2,
-      "excerpt": "g) Human Protein Atlas single-cell type API database/web API data/ref/ hpa_single_cell_typ e_v_api.tsv.gz; src/geo_fidelity_me thods.py (purity g"
+      "excerpt": "files GTEx v8 gene median TPM (GTEx portal bucket) reference data service data/ref/ gtex_v8_median_tp m.gct.gz; src/geo_fidelity.py counts MSigDB"
     },
     {
       "page": 61,
-      "word_tokens": 150,
+      "word_tokens": 156,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
       "images": 2,
-      "excerpt": "Platform GraphQL API (v26.9) deficit_opentargets. py decoupler 2.1.4 (ulm) library src/ deficit_decoupler.p y counts OmniPath (CollecTRI TF regul"
+      "excerpt": "Reactome AnalysisService service src/ attractor_enrichr_re actome.py counts STRING functional enrichment API (string-db.org) service src/ strict_"
     },
     {
       "page": 62,
-      "word_tokens": 166,
-      "contains_references_heading": true,
+      "word_tokens": 164,
+      "contains_references_heading": false,
       "contains_appendix_heading": false,
       "images": 2,
-      "excerpt": "rt_review.md InterPro protein- domain API database/service src/ deficit_interpro.py; results/deficit_inter pro.json counts WikiPathways 2026-09-1"
+      "excerpt": "Lookup Service 4 (OLS4) ols_anatomy_audit. py; results/ols_anatomy .json Scanpy 1.11.5 library src/ sc_kidney_markers. py; results/sc_kidney_ mar"
     },
     {
       "page": 63,
-      "word_tokens": 294,
-      "contains_references_heading": false,
+      "word_tokens": 269,
+      "contains_references_heading": true,
       "contains_appendix_heading": false,
       "images": 2,
-      "excerpt": "Boj SF, Vonk AM, et al. Forskolin-induced swelling in intestinal organoids: an in vitro assay for assessing drug response in cystic fibrosis pati"
+      "excerpt": "IntAct PSIQUIC interaction-count service protein interaction database src/ deficit_intact.py; results/deficit_intac t.json counts JASPAR CORE ver"
     },
     {
       "page": 64,
-      "word_tokens": 325,
+      "word_tokens": 279,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
       "images": 2,
-      "excerpt": "Human Phenotype Ontology gene-to-phenotype annotation. https://obophenotype.github.io/human-phenotype-ontology/annotations/ genes_to_phenotype/ E"
+      "excerpt": "EBI GOA human GAF. https://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/goa_human.gaf.gz IntAct PSIQUIC. https://www.ebi.ac.uk/Tools/webservices/psic"
     },
     {
       "page": 65,
-      "word_tokens": 171,
+      "word_tokens": 299,
       "contains_references_heading": false,
       "contains_appendix_heading": false,
       "images": 2,
-      "excerpt": "Kuleshov MV, et al. Enrichr: a comprehensive gene set enrichment analysis web server 2016 update. Nucleic Acids Res 2016. Milacic M, et al. The R"
+      "excerpt": "Kim S, et al. Comparison of Cell and Organoid-Level Analysis of Patient-Derived 3D Organoids to Evaluate Tumor Cell Growth Dynamics and Drug Resp"
     },
     {
       "page": 66,

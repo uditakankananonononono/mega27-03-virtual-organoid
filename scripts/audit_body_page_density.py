@@ -18,14 +18,15 @@ for index, page in enumerate(reader.pages, 1):
                  'images': len(page.images),
                  'excerpt': ' '.join(text.split())[:145]})
 assert len(rows) == 92, 'Unexpected physical page count; re-establish body boundary'
-assert rows[61]['contains_references_heading'], 'References did not begin on p62'
-body = rows[1:61]  # pp2-61; title/abstract p1 and references p62 onward excluded
-assert len(body) == 60
+ref_pages = [p['page'] for p in rows if p['contains_references_heading']]
+assert ref_pages == [63], f'References boundary changed: {ref_pages}'
+body = rows[1:ref_pages[0]-1]  # p2 until, but excluding, the References page
+assert len(body) == 61
 result = {
     'source_pdf': str(PDF.relative_to(ROOT)),
     'sha256': __import__('hashlib').sha256(PDF.read_bytes()).hexdigest(),
     'physical_pages': len(rows),
-    'body_candidate_pages': '2-61',
+    'body_candidate_pages': f'2-{ref_pages[0]-1}',
     'candidate_count_before_qualitative_exclusions': len(body),
     'diagnostic_counts_not_a_rule': {str(n): sum(p['word_tokens'] >= n for p in body) for n in (200, 300, 350, 400)},
     'body_candidate_word_tokens': sum(p['word_tokens'] for p in body),
